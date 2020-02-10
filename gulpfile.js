@@ -4,13 +4,13 @@ var paths = {
   src: 'src/**/*',
   srcHTML: 'src/**/*.html',
   srcCSS: 'src/**/*.css',
-  srcJS: 'src/**/*.js',
+  //srcJS: 'src/**/*.js',
   srcSVG: 'src/**/*.svg',
   srcPNG: 'src/**/*.png',
   dist: 'dist',
   distHTML: 'dist/**/*.html',
   distCSS: 'dist/**/*.css',
-  distJS: 'dist/**/*.js',
+  //distJS: 'dist/**/*.js',
   distSVG: 'dist/**/*.svg',
   distPNG: 'dist/**/*.png'
 };
@@ -26,9 +26,9 @@ gulp.task('html', () => {
 gulp.task('css', () => {
   return gulp.src(paths.srcCSS).pipe(gulp.dest(paths.dist));
 });
-gulp.task('js', () => {
-  return gulp.src(paths.srcJS).pipe(gulp.dest(paths.dist));
-});
+// gulp.task('js', () => {
+//   return gulp.src(paths.srcJS).pipe(gulp.dest(paths.dist));
+// });
 gulp.task('svg', () => {
   return gulp.src(paths.srcSVG).pipe(gulp.dest(paths.dist));
 });
@@ -37,4 +37,4 @@ gulp.task('png', () => {
 });
 
 /*łączenie zadań*/
-gulp.task('copy', gulp.series(gulp.parallel('html', 'css', 'js', 'svg', 'png')));
+gulp.task('copy', gulp.series(gulp.parallel('html', 'css', 'svg', 'png')));
