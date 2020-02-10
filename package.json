@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "structure": "npm run init:dirs && npm run init:folders && npm run init:filesSrc && npm run init:filesDist",
+    "init:dirs": "mkdir -p src dist",
+    "init:folders": "mkdir -p src/app src/css src/sass src/js src/images src/lib",
+    "init:filesSrc": "touch src/index.html src/css/style.css src/js/app.js src/sass/style.scss src/sass/_variables.scss src/sass/_reset.scss",
+    "init:filesDist": "mkdir -p dist/css dist/images dist/js touch dist/js/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Web-ski/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Web-ski/portfolio/issues"
+  },
+  "homepage": "https://github.com/Web-ski/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
