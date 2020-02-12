@@ -27,6 +27,7 @@
   @media screen and (min-width: $min-xl) {}
 
   .navbar__brand {
+    position: relative;
     .brand {
       font-family: $brand-font;
     }
