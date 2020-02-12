@@ -162,7 +162,10 @@ section {
 
 .text__stain {
   position: absolute;
-  background-color: grey;
+  top: 0;
+}
+
+.page__stain {
   top: 0;
 }
 
@@ -243,6 +246,10 @@ section {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.hero {
+  position: relative;
 }
 
 /*Pages*/
