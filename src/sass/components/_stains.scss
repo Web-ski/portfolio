@@ -1,5 +1,5 @@
 .text__stain {
-    //position: absolute;
+    position: absolute;
     //background-color: lightgrey;
     // top: -15px;
     // left: -12px;
@@ -7,10 +7,27 @@
     //width: 100%;
     // transform: rotateZ(180deg);
     z-index: 1;
+    animation: move 5s infinite backwards;
+
 }
 
 .page__stain {
-    //position: absolute;
+    position: absolute;
     top: 0;
     //background-color: lightgrey;
+    animation: move 5s infinite backwards;
+}
+
+@keyframes move {
+    0% {
+       transform: scale(1) skewY(0deg);
+    }
+
+    50% {
+        transform: scale(0.8) skewY(10deg);
+    }
+
+    100% {
+        transform: scale(1) skewY(0deg);
+    }
 }
