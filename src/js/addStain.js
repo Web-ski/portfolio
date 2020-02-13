@@ -3,15 +3,25 @@ const stainPage = document.getElementsByClassName("page__stain");
 const stainsTextArr = Array.from(stainText);
 const stainsPageArr = Array.from(stainPage);
 
+
 //deklaracja klasy
 class Stain {
   constructor(item, index) {
     this.item = item;
     this.index = index;
-    
+
     addSmallStain(item, index);
+    //addAnimations(item, index);
   }
 }
+
+//kontrukcja funcji rysującej
+/*function addAnimations(item, index) {
+  item.style.animationName = "move2";
+  item.style.animationDelay = "10s";
+  item.style.animationIterationCount = "infinite"; 
+  item.style.animationFillMode = "backwards";
+}*/
 
 //kontrukcja funcji rysującej
 function addSmallStain(item, index) {
