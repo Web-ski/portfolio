@@ -28,8 +28,10 @@
 
   .navbar__brand {
     position: relative;
+
     .brand {
       font-family: $brand-font;
+      z-index: 3;
     }
   }
 
@@ -37,7 +39,8 @@
     .navbar__links {
       @include flex;
       justify-content: space-between;
-height: 25px;
+      height: 25px;
+      position: relative;
     }
   }
 }

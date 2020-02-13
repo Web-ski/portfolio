@@ -1,7 +1,12 @@
 .text__stain {
-    position: absolute;
+    //position: absolute;
     //background-color: lightgrey;
-    top: 0;
+    // top: -15px;
+    // left: -12px;
+    //height: 100%;
+    //width: 100%;
+    // transform: rotateZ(180deg);
+    z-index: 1;
 }
 
 .page__stain {

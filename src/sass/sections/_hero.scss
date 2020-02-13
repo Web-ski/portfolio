@@ -1,3 +1,30 @@
 .hero {
   position: relative;
+  @include flex;
+  justify-content: space-between;
+  //height: 80vh;
+
+  @media screen and (min-width: $min-md) {}
+
+  @media screen and (min-width: $min-lg) {}
+
+  @media screen and (min-width: $min-xl) {
+    min-height: 800px;
+  }
+
+  .article {
+    @include flex;
+    flex: 1;
+
+    &:first-of-type {
+
+      .project__link {}
+
+    }
+
+    &:last-of-type {
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
 }

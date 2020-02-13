@@ -1,36 +1,38 @@
-function addSmallStain() {
-  const stainText = document.getElementsByClassName("text__stain");
-  const ctx = stainText[0].getContext("2d");
-  ctx.fillStyle = "#FF0000";
-  ctx.beginPath();
-  ctx.moveTo(12, 10);
-  ctx.quadraticCurveTo(20, 5, 40, 10);
-  ctx.lineTo(40, 40);
-  ctx.lineTo(10, 40);
-  ctx.lineTo(12, 10);
-  ctx.stroke();
+const stainText = document.getElementsByClassName("text__stain");
+const stainPage = document.getElementsByClassName("page__stain");
+const stainsTextArr = Array.from(stainText);
+const stainsPageArr = Array.from(stainPage);
+
+function addStains(collection) {
+
+  collection.map((item, index) => {
+    addSmallStain(item, 'AliceBlue')
+  })
+
+  function addSmallStain(item, color) {
+
+    let x = item.offsetWidth;
+    let y = item.offsetHeight;
+    console.log(x, y)
+
+    const ctx = item.getContext("2d");
+    const grd = ctx.createRadialGradient(x*0.5, y*0.5, x, x*0.6, y*0.5, 0);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1, color);
+    ctx.fillStyle = grd;
+    //ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.moveTo(x*0.2, y*0.4);
+    ctx.quadraticCurveTo(x*0.9, y*(-0.2), x*0.9, y*0.4);
+    ctx.quadraticCurveTo(x*0.9, y*1.30, x*0.2, y*0.6);
+    ctx.quadraticCurveTo(x*0.1, y*0.5, x*0.2, y*0.4);
+    ctx.fill();
+  }
 }
 
-addSmallStain();
+addStains(stainsTextArr);
+addStains(stainsPageArr);
 
-function addBigStain() {
-  const stainPage = document.getElementsByClassName("page__stain");
-  const ctx = stainPage[0].getContext("2d");
-  const grd = ctx.createRadialGradient(250, 250, 500, 300, 250, 0);
-  grd.addColorStop(0,"transparent");
-  grd.addColorStop(1,"blue");
-  ctx.fillStyle = grd;
-  ctx.beginPath();
-  ctx.moveTo(100, 200);
-  ctx.quadraticCurveTo(450, -100, 450, 200);
-  ctx.quadraticCurveTo(450, 650, 100, 300);
-  ctx.quadraticCurveTo(50, 250, 100, 200);
-  //ctx.stroke();
-  ctx.fill(); 
-
-}
-
-addBigStain();
 
 
 
