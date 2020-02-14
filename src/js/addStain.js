@@ -10,7 +10,7 @@ class Stain {
     this.item = item;
     this.index = index;
   }
-  
+
 
   //addAnimations(item, index);
 }
@@ -25,10 +25,10 @@ class Stain {
 }*/
 
 //kontrukcja funcji rysującej
-function addSmallStain(item, index, startX, startY, startX2, startY2) {
+function addSmallStain(item, index, startX, startY) {
 
   let color1 = function () {
-    let x = 'rgba(255, 0, 0, 0.5)';
+    let x = 'rgba(255, 0, 0, 0.3)';
     return x;
   };
   let color2 = function () {
@@ -38,14 +38,29 @@ function addSmallStain(item, index, startX, startY, startX2, startY2) {
 
   let x = item.offsetWidth;
   let y = item.offsetHeight;
-  
-  console.log(startX, startY)
+
+
+  let pointX = Math.ceil(Math.random() * (10 - 8) + 2) / 10;
+  let pointY = Math.ceil(Math.random() * (10 - 8) + 2) / 10;
 
   //points
   /* boki a-b, b-c itd. i proporcje do nich */
   let pointA = x * startX;
   let pointB = y * startY;
 
+  /* boki a-b, b-c itd. i proporcje do nich */
+  let pointC = x * (pointX + pointX);
+  let pointD = y * (startY);
+
+  /* boki a-b, b-c itd. i proporcje do nich */
+  let pointE = x * (pointX + pointX);
+  let pointF = y * (pointY + pointY);
+
+  /* boki a-b, b-c itd. i proporcje do nich */
+  let pointG = x * (startX);
+  let pointH = y * (pointY + pointY);
+
+  console.log((pointC /2));
 
   // setInterval(function() {
   //   let nmbr = Math.floor(Math.random() *10);
@@ -53,24 +68,40 @@ function addSmallStain(item, index, startX, startY, startX2, startY2) {
 
   //   console.log(startX)
 
+  /*koordynaty łuków*/
+  let AB = (pointC - pointA);
+  let FD = (pointF - pointD);
+  let EG = (pointE - pointG);
+  let HB = (pointH - pointB);
+  
+  let arc1X = (pointA + pointC)/2;
+  let arc1Y = pointD -FD/2;
+
+  let arc2X = pointC + AB/2;
+  let arc2Y = (pointH + pointD)/2;
+
+  let arc3X = (pointE + pointG)/2;
+  let arc3Y = pointH + HB/2;
+
+  let arc4X = pointG - (EG)/2;
+  let arc4Y = (pointH + pointB)/2;
+
   const ctx = item.getContext("2d");
 
   ctx.fillStyle = color1();
   ctx.beginPath();
   ctx.moveTo(pointA, pointB);
-  //ctx.quadraticCurveTo(x * 0.9, y * (-0.2), x * (startX + 0.4), y * (startY + startY2));
-  //ctx.quadraticCurveTo(x * 0.9, y * 1.30, x * startX, y * 0.6);
-  //ctx.quadraticCurveTo(x * (startX - 0.1), y * 0.5, x * startX, y * startY);
-  ctx.lineTo(x * (startX + 0.4), y * (startY + startY2));
-  ctx.lineTo(x * (startX + 0.4), y * (startY + 0.4));
-  ctx.lineTo(x * (startX + startX2), y * (startY + 0.4));
-  ctx.lineTo(pointA, pointB);
+  ctx.quadraticCurveTo(arc1X, arc1Y, pointC, pointD);
+  ctx.quadraticCurveTo(arc2X, arc2Y, pointE, pointF);
+  //ctx.lineTo(pointC, pointD);
+  //ctx.lineTo(pointE, pointF);
+  ctx.quadraticCurveTo(arc3X, arc3Y, pointG, pointH);
+  ctx.quadraticCurveTo(arc4X, arc4Y, pointA, pointB);
+  //ctx.lineTo(pointG, pointH);
+  //ctx.lineTo(pointA, pointB);
   ctx.fill();
 
-
   //}, 50)
-
-
 }
 
 
@@ -78,28 +109,18 @@ function addStains(collection) {
 
   collection.map((item, index) => {
 
-    function loteryX() {
-      let startX = Math.floor(Math.random()*(10-5)) / 10;
+    function randomX() {
+      let startX = Math.floor(Math.random() * (10 - 8) + 2) / 10;
       return startX;
     }
-    
-    function loteryY() {
-      let startY = Math.floor(Math.random()*(10-5)) / 10;
+
+    function randomY() {
+      let startY = Math.floor(Math.random() * (10 - 8) + 2) / 10;
       return startY;
     }
 
-    function loteryX2() {
-      let startX2 = Math.floor(Math.random()*(10-7)) / 10;
-      return startX2;
-    }
-    
-    function loteryY2() {
-      let startY2 = Math.floor(Math.random()*(10-7)) / 10;
-      return startY2;
-    }
-
     let elem = new Stain(item, index);
-    addSmallStain(elem.item, elem.index, loteryX(), loteryY(), loteryX2(), loteryY2());
+    addSmallStain(elem.item, elem.index, randomX(), randomY());
   })
 }
 
@@ -115,7 +136,7 @@ ctx.fillRect(0, 0, 10, 10);
 */
 
 /* radial*/
-  // const grd = ctx.createRadialGradient(x * 0.5, y * 0.5, x, x * 0.6, y * 0.5, 0);
-  // grd.addColorStop(0, color1());
-  // grd.addColorStop(1, color2());
-  // ctx.fillStyle = grd;
+// const grd = ctx.createRadialGradient(x * 0.5, y * 0.5, x, x * 0.6, y * 0.5, 0);
+// grd.addColorStop(0, color1());
+// grd.addColorStop(1, color2());
+// ctx.fillStyle = grd;
