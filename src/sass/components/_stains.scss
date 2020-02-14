@@ -1,36 +1,42 @@
 .text__stain {
     position: absolute;
     //background-color: lightgrey;
-    // top: -15px;
-    // left: -12px;
-    //height: 100%;
-    //width: 100%;
-    // transform: rotateZ(180deg);
     z-index: 1;
+    //animation: move1 10s infinite linear both;
+
+
 }
 
 .page__stain {
     position: absolute;
     top: 0;
     //background-color: lightgrey;
+    //animation: move1 12s infinite linear both;
 }
 
 
-/*
+
 @keyframes move1 {
     0% {
-       transform: scale(1) skewY(0deg);
-    }
-
-    50% {
-        transform: scale(0.8) skewY(10deg);
+        transform: rotateZ(0deg);
     }
 
     100% {
-        transform: scale(1) skewY(0deg);
+        transform: rotateZ(360deg);
     }
 }
 
+@keyframes move2 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+
+/*
 @keyframes move2 {
     0% {
        transform: scaleY(1) skewY(0deg);

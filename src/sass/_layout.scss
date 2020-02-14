@@ -1,5 +1,5 @@
 body {
-  background-color: black; //$main-grey;
+  background-color: $main-grey;
   min-height: 100vh;
 }
 
@@ -7,4 +7,5 @@ header,
 section {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }

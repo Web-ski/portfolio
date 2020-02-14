@@ -4,7 +4,8 @@ const stainsTextArr = Array.from(stainText);
 const stainsPageArr = Array.from(stainPage);
 
 const colorsArr = ['rgba(255, 0, 0, 0.3)', 'rgba(255, 55, 0, 0.3)', 'rgba(255, 0, 50, 0.3)', 'rgba(155, 0, 150, 0.3)']
-
+const speedsArr = ['11s', '12s', '13s', '14s'];
+const animationsArr = ['move1', 'move2'];
 
 //deklaracja klasy
 class Stain {
@@ -16,18 +17,18 @@ class Stain {
   color1() {
     let nmbr = Math.floor(Math.random() * (10 - 6));
     return colorsArr[nmbr];
-  };
-
-  //addAnimations(item, index);
+  }  
 }
 
 //kontrukcja funcji rysującej
-/*function addAnimations(item, index) {
-  item.style.animationName = "move2";
-  item.style.animationDelay = "10s";
+
+function addAnimations(item) {
+  item.style.animationName = animationsArr[Math.floor(Math.random() * animationsArr.length)];
+  item.style.animationDuration = speedsArr[Math.floor(Math.random() * speedsArr.length)];
   item.style.animationIterationCount = "infinite"; 
-  item.style.animationFillMode = "backwards";
-}*/
+  item.style.animationTimingFunction = 'linear';
+  item.style.animationFillMode = "both";
+}
 
 //kontrukcja funcji rysującej
 function addSmallStain(item, index, startX, startY, colorM) {
@@ -38,7 +39,7 @@ function addSmallStain(item, index, startX, startY, colorM) {
   let y = item.offsetHeight;
 
   let pointX = Math.ceil(Math.random() * (10 - 8) + 2) / 10;
-  let pointY = Math.ceil(Math.random() * (10 - 8) + 2) / 10;
+  let pointY = pointX;//Math.ceil(Math.random() * (10 - 8) + 1.8) / 10;
 
   //points
   let pointA = x * startX;
@@ -71,15 +72,15 @@ function addSmallStain(item, index, startX, startY, colorM) {
     ctx.clearRect(0, 0, innerWidth, innerHeight);
 
     let arc1X = ((pointA + pointC) / 2);
-    let arc1Y = (pointD - FD / 2);
+    let arc1Y = (pointD - FD / 2) - ((pointD - FD/2) / 200) * pPlus;
 
-    let arc2X = (pointC + AB / 2);
+    let arc2X = (pointC + AB / 2) - ((pointD - FD/2) / 200) * pPlus;
     let arc2Y = ((pointH + pointD) / 2);
 
-    let arc3X = (pointE) - ((pointE - pointG)/2);
-    let arc3Y = pointH + HB / 2;
+    let arc3X = (pointE) - ((pointE - pointG) / 2);
+    let arc3Y = (pointH + HB / 2) + ((pointD - HB/2) / 200) * pPlus;
 
-    let arc4X = (pointG - (EG) / 2);
+    let arc4X = (pointG - (EG) / 2) + ((pointD - FD/2) / 200) * pPlus;
     let arc4Y = (pointH) - ((pointH - pointB) / 2);
 
     ctx.fillStyle = 'rgba(255, 0, 0, 0.3)';
@@ -91,11 +92,11 @@ function addSmallStain(item, index, startX, startY, colorM) {
     ctx.quadraticCurveTo(arc4X, arc4Y, pointA, pointB);
     ctx.fill();
 
-    /*switch (z) {
+    switch (z) {
       case -1:
-        if (pPlus < 600) {
+        if (pPlus < 140) {
           pPlus = pPlus - z;
-        } else if (pPlus === 600) {
+        } else if (pPlus === 140) {
           z = 1;
         };
         break;
@@ -106,8 +107,7 @@ function addSmallStain(item, index, startX, startY, colorM) {
           z = -1;
         };
         break;
-    }*/
-
+    }
 
     console.log(pPlus)
   }
@@ -119,6 +119,8 @@ function addSmallStain(item, index, startX, startY, colorM) {
 function addStains(collection) {
 
   collection.map((item, index) => {
+
+    addAnimations(item);
 
     function randomX() {
       let startX = Math.floor(Math.random() * (10 - 8) + 2) / 10;

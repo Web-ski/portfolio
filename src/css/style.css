@@ -144,7 +144,7 @@ table {
 /*Media*/
 /* Actions */
 body {
-  background-color: black;
+  background-color: #EFEFEF;
   min-height: 100vh;
 }
 
@@ -152,6 +152,7 @@ header,
 section {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* Components */
@@ -176,21 +177,51 @@ section {
   top: 0;
 }
 
-/*
-@keyframes move1 {
-    0% {
-       transform: scale(1) skewY(0deg);
-    }
-
-    50% {
-        transform: scale(0.8) skewY(10deg);
-    }
-
-    100% {
-        transform: scale(1) skewY(0deg);
-    }
+@-webkit-keyframes move1 {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
 }
 
+@keyframes move1 {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes move2 {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+            transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+            transform: rotateZ(-360deg);
+  }
+}
+
+/*
 @keyframes move2 {
     0% {
        transform: scaleY(1) skewY(0deg);
