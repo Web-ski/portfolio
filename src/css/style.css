@@ -348,6 +348,12 @@ section {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    min-height: 500px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
     min-height: 800px;

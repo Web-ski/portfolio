@@ -17,7 +17,7 @@ class Stain {
   color1() {
     let nmbr = Math.floor(Math.random() * (10 - 6));
     return colorsArr[nmbr];
-  }  
+  }
 }
 
 //kontrukcja funcji rysującej
@@ -25,7 +25,7 @@ class Stain {
 function addAnimations(item) {
   item.style.animationName = animationsArr[Math.floor(Math.random() * animationsArr.length)];
   item.style.animationDuration = speedsArr[Math.floor(Math.random() * speedsArr.length)];
-  item.style.animationIterationCount = "infinite"; 
+  item.style.animationIterationCount = "infinite";
   item.style.animationTimingFunction = 'linear';
   item.style.animationFillMode = "both";
 }
@@ -39,7 +39,7 @@ function addSmallStain(item, index, startX, startY, colorM) {
   let y = item.offsetHeight;
 
   let pointX = Math.ceil(Math.random() * (10 - 8) + 2) / 10;
-  let pointY = pointX;//Math.ceil(Math.random() * (10 - 8) + 1.8) / 10;
+  let pointY = pointX; //Math.ceil(Math.random() * (10 - 8) + 1.8) / 10;
 
   //points
   let pointA = x * startX;
@@ -72,18 +72,18 @@ function addSmallStain(item, index, startX, startY, colorM) {
     ctx.clearRect(0, 0, innerWidth, innerHeight);
 
     let arc1X = ((pointA + pointC) / 2);
-    let arc1Y = (pointD - FD / 2) - ((pointD - FD/2) / 200) * pPlus;
+    let arc1Y = (pointD - FD / 2) - ((pointD - FD / 2) / 200) * pPlus;
 
-    let arc2X = (pointC + AB / 2) - ((pointD - FD/2) / 200) * pPlus;
+    let arc2X = (pointC + AB / 2) - ((pointD - FD / 2) / 200) * pPlus;
     let arc2Y = ((pointH + pointD) / 2);
 
     let arc3X = (pointE) - ((pointE - pointG) / 2);
-    let arc3Y = (pointH + HB / 2) + ((pointD - HB/2) / 200) * pPlus;
+    let arc3Y = (pointH + HB / 2) + ((pointD - HB / 2) / 200) * pPlus;
 
-    let arc4X = (pointG - (EG) / 2) + ((pointD - FD/2) / 200) * pPlus;
+    let arc4X = (pointG - (EG) / 2) + ((pointD - FD / 2) / 200) * pPlus;
     let arc4Y = (pointH) - ((pointH - pointB) / 2);
 
-    ctx.fillStyle = 'rgba(255, 0, 0, 0.3)';
+    ctx.fillStyle = 'rgba(255, 10, 50, 0.3)';
     ctx.beginPath();
     ctx.moveTo(pointA, pointB);
     ctx.quadraticCurveTo(arc1X, arc1Y, pointC, pointD);
@@ -91,6 +91,13 @@ function addSmallStain(item, index, startX, startY, colorM) {
     ctx.quadraticCurveTo(arc3X, arc3Y, pointG, pointH);
     ctx.quadraticCurveTo(arc4X, arc4Y, pointA, pointB);
     ctx.fill();
+    /*shadows*/
+    /*var gr = ctx.createLinearGradient(0, 0, 50, 50); 
+    gr.addColorStop("0", "red"); 
+    gr.addColorStop("1", "rgba(255, 0, 0, 0.3)");
+    ctx.strokeStyle = gr;
+    ctx.lineWidth = "5"; 
+    ctx.stroke(); */
 
     switch (z) {
       case -1:

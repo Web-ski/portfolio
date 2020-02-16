@@ -4,7 +4,9 @@
   justify-content: space-between;
   //height: 80vh;
 
-  @media screen and (min-width: $min-md) {}
+  @media screen and (min-width: $min-md) {
+    min-height: 500px;
+  }
 
   @media screen and (min-width: $min-lg) {}
 
