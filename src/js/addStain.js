@@ -116,7 +116,7 @@ function addSmallStain(item, index, startX, startY, colorM) {
         break;
     }
 
-    console.log(pPlus)
+    //console.log(pPlus)
   }
 
   animate();

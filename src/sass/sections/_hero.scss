@@ -20,13 +20,20 @@
 
     &:first-of-type {
 
-      .project__link {}
+      .project__link {
+        position: absolute;
+      }
 
     }
 
     &:last-of-type {
       justify-content: flex-end;
       align-items: center;
+
+      [data-stain='stain'] {
+        position: absolute;
+      }
+
     }
   }
 }

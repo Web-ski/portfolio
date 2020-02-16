@@ -13,6 +13,7 @@ const heroLinksArr = ["Art", "UX", "Webs", "Dev"];
 heroLinksArr.map((item, index) => {
   let projectLink = document.createElement('div');
   projectLink.setAttribute("class", "project__link");
+  projectLink.setAttribute("data-stain", index);
   container.appendChild(projectLink);
 
   let canvas = document.createElement('canvas');

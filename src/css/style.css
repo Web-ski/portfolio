@@ -162,7 +162,7 @@ section {
 }
 
 .project__link {
-  position: relative;
+  position: absolute;
   height: 100px;
   width: 100px;
 }
@@ -382,6 +382,10 @@ section {
   }
 }
 
+.hero .article:first-of-type .project__link {
+  position: absolute;
+}
+
 .hero .article:last-of-type {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -389,6 +393,10 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hero .article:last-of-type [data-stain='stain'] {
+  position: absolute;
 }
 
 /*Pages*/
