@@ -1,11 +1,10 @@
 body {
   background-color: $main-grey;
   min-height: 100vh;
+  overflow: hidden;
 }
 
-header,
-section {
+header {
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
 }

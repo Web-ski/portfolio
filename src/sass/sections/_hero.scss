@@ -2,10 +2,13 @@
   position: relative;
   @include flex;
   justify-content: space-between;
-  //height: 80vh;
+  height: 100vh;
+  width: 100vw;
 
   @media screen and (min-width: $min-md) {
     min-height: 500px;
+    height: 100vh;
+    width: 100vw;
   }
 
   @media screen and (min-width: $min-lg) {}

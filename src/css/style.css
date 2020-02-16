@@ -146,13 +146,12 @@ table {
 body {
   background-color: #EFEFEF;
   min-height: 100vh;
+  overflow: hidden;
 }
 
-header,
-section {
+header {
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 /* Components */
@@ -175,11 +174,6 @@ section {
 .page__stain {
   position: absolute;
   top: 0;
-}
-
-[data-stain] {
-  -webkit-animation: move1 15s infinite;
-          animation: move1 15s infinite;
 }
 
 @-webkit-keyframes round1 {
@@ -226,50 +220,27 @@ section {
   }
 }
 
-@-webkit-keyframes move1 {
-  0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(100%, 100%);
-            transform: translate(100%, 100%);
-  }
-}
-
+/*
 @keyframes move1 {
-  0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(100%, 100%);
-            transform: translate(100%, 100%);
-  }
-}
+    0% {
+        transform: translate(0, 0);
+    }
 
-@-webkit-keyframes move2 {
-  0% {
-    -webkit-transform: translate(100%, 100%);
-            transform: translate(100%, 100%);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
+    100% {
+        transform: translate(100%, 100%);
+    }
 }
 
 @keyframes move2 {
-  0% {
-    -webkit-transform: translate(100%, 100%);
-            transform: translate(100%, 100%);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
+    0% {
+        transform: translate(100%, 100%);
+    }
 
+    100% {
+        transform: translate(0, 0);
+    }
+}
+*/
 /*
 @keyframes move2 {
     0% {
@@ -386,6 +357,8 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -400,6 +373,8 @@ section {
 @media screen and (min-width: 768px) {
   .hero {
     min-height: 500px;
+    height: 100vh;
+    width: 100vw;
   }
 }
 

@@ -3,7 +3,8 @@ const moveStains = function () {
   const stainBox = document.querySelectorAll("[data-stain]");
   console.log(stainBox)
   const stainsBoxArr = Array.from(stainBox);
-  const speedsArr = ['15s', '16s', '17s', '18s'];
+  const speedsArr = ['15', '16', '17', '18', '19'];
+  const animationsArr = ['move1', 'move2'];
 
 
   const heroHeight = hero.offsetHeight;
@@ -17,16 +18,30 @@ const moveStains = function () {
   const mover = function (collection) {
 
     collection.map((item, index) => {
-        item.style.animationName = 'move1';
-        item.style.animationDuration = speedsArr[Math.floor(Math.random() * speedsArr.length)];
-        item.style.animationIterationCount = "infinite";
-        item.style.animationTimingFunction = 'linear';
-        item.style.animationDirection = "alternate";
-      }
-    )
+      let x = (Math.ceil(Math.random() * (heroWidth - 0.7 * heroWidth)))
+      let y = (Math.ceil(Math.random() * (heroHeight - 0.8 * heroHeight)))
+      item.style.left = `${x}px`;
+      item.style.top = `${y}px`;
+      //item.style.animationName = animationsArr[Math.floor(Math.random() * animationsArr.length)];
+      //item.style.animationDuration = speedsArr[Math.floor(Math.random() * speedsArr.length)];
+      //item.style.animationIterationCount = "infinite";
+      //item.style.animationTimingFunction = 'linear';
+
+      item.animate([{
+          transform: 'translateX(0px)'
+        },
+        {
+          transform: `translateX(${heroWidth}px)`
+        }
+      ], {
+        duration: speedsArr[Math.floor(Math.random() * speedsArr.length)] * 10000,
+        iterations: Infinity
+      })
+      //item.style.animationDirection = "alternate-reverse";
+      //item.style.animationFillMode = 'both';
+      
+    })
   }
-
-
 
   mover(stainsBoxArr);
 }

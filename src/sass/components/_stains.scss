@@ -14,7 +14,7 @@
 
 
 [data-stain] {
-    animation: move1 15s infinite;
+    //animation: move1 15s infinite;
 }
 
 @keyframes round1 {
@@ -37,6 +37,7 @@
     }
 }
 
+/*
 @keyframes move1 {
     0% {
         transform: translate(0, 0);
@@ -56,7 +57,7 @@
         transform: translate(0, 0);
     }
 }
-
+*/
 /*
 @keyframes move2 {
     0% {
