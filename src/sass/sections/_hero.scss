@@ -30,8 +30,9 @@
       justify-content: flex-end;
       align-items: center;
 
-      [data-stain='stain'] {
+      .stain__box {
         position: absolute;
+        left: 50%;
       }
 
     }

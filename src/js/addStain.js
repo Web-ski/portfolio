@@ -5,7 +5,7 @@ const stainsPageArr = Array.from(stainPage);
 
 const colorsArr = ['rgba(255, 0, 0, 0.3)', 'rgba(255, 55, 0, 0.3)', 'rgba(255, 0, 50, 0.3)', 'rgba(155, 0, 150, 0.3)']
 const speedsArr = ['11s', '12s', '13s', '14s'];
-const animationsArr = ['move1', 'move2'];
+const animationsArr = ['round1', 'round2'];
 
 //deklaracja klasy
 class Stain {

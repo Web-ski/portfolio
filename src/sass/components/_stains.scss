@@ -3,8 +3,6 @@
     //background-color: lightgrey;
     z-index: 1;
     //animation: move1 10s infinite linear both;
-
-
 }
 
 .page__stain {
@@ -15,24 +13,47 @@
 }
 
 
+[data-stain] {
+    animation: move1 15s infinite;
+}
 
-@keyframes move1 {
+@keyframes round1 {
     0% {
-        transform: rotateZ(0deg);
+        transform: translate(0, 0) rotateZ(0deg);
     }
 
     100% {
-        transform: rotateZ(360deg);
+        transform: translate(100%, 100%) rotateZ(360deg);
+    }
+}
+
+@keyframes round2 {
+    0% {
+        transform: translate(100%, 100%) rotateZ(0deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotateZ(-360deg);
+    }
+}
+
+@keyframes move1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(100%, 100%);
     }
 }
 
 @keyframes move2 {
     0% {
-        transform: rotateZ(0deg);
+        transform: translate(100%, 100%);
     }
 
     100% {
-        transform: rotateZ(-360deg);
+        transform: translate(0, 0);
     }
 }
 
