@@ -38,18 +38,21 @@ function addSmallStain(item, index, startX, startY, colorM) {
   let x = item.offsetWidth;
   let y = item.offsetHeight;
 
-  let pointX = Math.ceil(Math.random() * (10 - 8) + 2) / 10;
+  let pointX = [35, 38][Math.floor(Math.random() * 2)] / 100; //Math.ceil(Math.random() * (10 - 8) + 2) / 10;
   let pointY = pointX; //Math.ceil(Math.random() * (10 - 8) + 1.8) / 10;
 
+  function addPointX(point) {return point * x};
+  function addPointY(point) {return point * y};
+
   //points
-  let pointA = x * startX;
-  let pointB = y * startY;
-  let pointC = x * (pointX + pointX);
-  let pointD = y * (startY);
-  let pointE = x * (pointX + pointX);
-  let pointF = y * (pointY + pointY);
-  let pointG = x * (startX);
-  let pointH = y * (pointY + pointY);
+  let pointA = addPointX(startX);
+  let pointB = addPointY(startY);
+  let pointC = addPointX((pointX + pointX));
+  let pointD = addPointY(startY);
+  let pointE = addPointX((pointX + pointX));
+  let pointF = addPointY((pointY + pointY));
+  let pointG = addPointX(startX);
+  let pointH = addPointY((pointY + pointY));
 
   /*koordynaty łuków*/
   let AB = (pointC - pointA);
@@ -101,9 +104,9 @@ function addSmallStain(item, index, startX, startY, colorM) {
 
     switch (z) {
       case -1:
-        if (pPlus < 140) {
+        if (pPlus < 150) {
           pPlus = pPlus - z;
-        } else if (pPlus === 140) {
+        } else if (pPlus === 110) {
           z = 1;
         };
         break;
@@ -130,12 +133,12 @@ function addStains(collection) {
     addAnimations(item);
 
     function randomX() {
-      let startX = Math.floor(Math.random() * (10 - 8) + 2) / 10;
+      let startX = [2, 3][Math.floor(Math.random() * 2)] / 10; //Math.floor(Math.random() * (10 - 8) + 2) / 10;  
       return startX;
     }
 
     function randomY() {
-      let startY = Math.floor(Math.random() * (10 - 8) + 2) / 10;
+      let startY = [2, 3][Math.floor(Math.random() * 2)] / 10;//Math.floor(Math.random() * (10 - 8) + 2) / 10;
       return startY;
     }
 
