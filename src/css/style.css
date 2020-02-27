@@ -204,5 +204,9 @@ header {
   height: 20%;
 }
 
+.hero .red {
+  background-color: red;
+}
+
 /*Pages*/
 /*# sourceMappingURL=style.css.map */
