@@ -15,9 +15,59 @@
     margin: 0 auto;
   }
 
-  .article {
-    width: 12.5%;
-    height: 20%;
+  @media screen and (min-width: $min-xxl) {
+    width: 1500px;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .box {
+    }
+
+    @media screen and (min-width: $min-md) {}
+
+    @media screen and (min-width: $min-lg) {}
+
+    @media screen and (min-width: $min-xl) {}
+
+    @media screen and (min-width: $min-xxl) {
+      width: calc(25%); 
+      height: calc(100%);
+
+      .box {
+        width: calc(50%);
+        height: calc(16.6%);  
+      }
+    }
+  }
+
+  .jumbotron {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .box {
+    }
+
+    @media screen and (min-width: $min-md) {}
+
+    @media screen and (min-width: $min-lg) {}
+
+    @media screen and (min-width: $min-xl) {}
+
+    @media screen and (min-width: $min-xxl) {
+      width: calc(75%); 
+      height: calc(100%);
+
+      .box {
+        width: calc(16.6%);
+        height: calc(16.6%);  
+      }
+    }
   }
 
   .red {

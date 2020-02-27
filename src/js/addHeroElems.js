@@ -1,6 +1,9 @@
 const addHeroElems = function () {
 
   const hero = document.querySelector('.hero');
+  const navbar = hero.querySelector('.navbar');
+  const jumbotron = hero.querySelector('.jumbotron');
+
 
   const colorArr = ['azure', 'beige', 'gainsboro', 'lightgrey', 'lavenderblush', 'grey'];
 
@@ -9,16 +12,18 @@ const addHeroElems = function () {
     return color;
   }
 
-  const addArticles = function () {
-    let article = document.createElement('article');
-    article.setAttribute('class', 'article');
-    //article.style.backgroundColor = randomColor();
-    hero.appendChild(article);
+  const addArticleElems = function (parent) {
+    let articleElem = document.createElement('div');
+    articleElem.setAttribute('class', 'box');
+    articleElem.style.backgroundColor = randomColor();
+    parent.appendChild(articleElem);
   }
 
-  for (let i = 0; i <= 40; i++) {
-    addArticles();
+  for (let i = 0; i <= 48; i++) {
+    let parent = i < 12 ? navbar : jumbotron;
+    addArticleElems(parent);
   }
+
 
   //tworzenie elementów
   const elemsArr = [];
@@ -33,7 +38,9 @@ const addHeroElems = function () {
     }
   }
 
-  const brand = new Elem(0, 'div', 'brand', {'text':'Web-ski'});
+  const brand = new Elem(0, 'div', 'brand', {
+    'text': 'Web-ski'
+  });
 
 
   const addElemsContent = function (collection) {
