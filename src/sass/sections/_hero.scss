@@ -1,43 +1,22 @@
 .hero {
   position: relative;
   @include flex;
-  justify-content: space-between;
-  height: 100vh;
+  height: 100vh;  
   width: 100vw;
+  flex-wrap: wrap;
 
-  @media screen and (min-width: $min-md) {
-    min-height: 500px;
-    height: 100vh;
-    width: 100vw;
-  }
+  @media screen and (min-width: $min-md) {}
 
   @media screen and (min-width: $min-lg) {}
 
   @media screen and (min-width: $min-xl) {
-    min-height: 800px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   .article {
-    @include flex;
-    flex: 1;
-
-    &:first-of-type {
-
-      .project__link {
-        position: absolute;
-      }
-
-    }
-
-    &:last-of-type {
-      justify-content: flex-end;
-      align-items: center;
-
-      .stain__box {
-        position: absolute;
-        left: 50%;
-      }
-
-    }
+    width: 12.5%;
+    height: 20%;
   }
 }
