@@ -167,6 +167,36 @@ header {
 }
 
 /* Sections */
+.navbar .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.navbar .box .brand {
+  font-size: 25px;
+  font-family: Satisfy, sans-serif;
+}
+
 .hero {
   position: relative;
   display: -webkit-box;
@@ -218,6 +248,10 @@ header {
       flex-wrap: wrap;
 }
 
+.hero .navbar .box {
+  font-size: 0;
+}
+
 @media screen and (min-width: 1500px) {
   .hero .navbar {
     width: calc(25%);
@@ -241,6 +275,10 @@ header {
       flex-wrap: wrap;
 }
 
+.hero .jumbotron .box {
+  font-size: 0;
+}
+
 @media screen and (min-width: 1500px) {
   .hero .jumbotron {
     width: calc(75%);
@@ -253,7 +291,11 @@ header {
 }
 
 .hero .red {
-  background-color: red;
+  background-color: lightgrey;
+}
+
+.hero .hide {
+  display: none;
 }
 
 /*Pages*/

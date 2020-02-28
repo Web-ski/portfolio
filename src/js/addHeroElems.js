@@ -4,7 +4,6 @@ const addHeroElems = function () {
   const navbar = hero.querySelector('.navbar');
   const jumbotron = hero.querySelector('.jumbotron');
 
-
   const colorArr = ['azure', 'beige', 'gainsboro', 'lightgrey', 'lavenderblush', 'grey'];
 
   const randomColor = function () {
@@ -15,7 +14,7 @@ const addHeroElems = function () {
   const addArticleElems = function (parent) {
     let articleElem = document.createElement('div');
     articleElem.setAttribute('class', 'box');
-    articleElem.style.backgroundColor = randomColor();
+    //articleElem.style.backgroundColor = randomColor();
     parent.appendChild(articleElem);
   }
 
@@ -24,12 +23,12 @@ const addHeroElems = function () {
     addArticleElems(parent);
   }
 
-
   //tworzenie elementów
   const elemsArr = [];
 
   class Elem {
-    constructor(parentIndex, tagName, className, content) {
+    constructor(superParent, parentIndex, tagName, className, content) {
+      this.superParent = superParent;
       this.parentIndex = parentIndex;
       this.tagName = tagName;
       this.className = className;
@@ -38,15 +37,14 @@ const addHeroElems = function () {
     }
   }
 
-  const brand = new Elem(0, 'div', 'brand', {
+  const brand = new Elem('navbar', 0, 'div', 'brand', {
     'text': 'Web-ski'
   });
 
-
-  const addElemsContent = function (collection) {
+  const addElemsContent = function (collection, superParent) {
 
     const addElem = function (item) {
-      let parent = hero.children[item.parentIndex];
+      let parent = superParent.children[item.parentIndex];
       let child = document.createElement(item.tagName);
       parent.appendChild(child);
       child.setAttribute('class', item.className);
@@ -55,12 +53,14 @@ const addHeroElems = function () {
     }
 
     collection.map((item) => {
-      item.tagName && addElem(item);
+      item.superParent === superParent.className && (
+        item.tagName && addElem(item)
+      );
     })
   }
 
-  addElemsContent(elemsArr);
-
+  Array.from(hero.children).map(item => addElemsContent(elemsArr, item));
+  
 }
 
 addHeroElems();

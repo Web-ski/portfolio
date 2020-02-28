@@ -26,6 +26,7 @@
     flex-wrap: wrap;
 
     .box {
+      font-size: 0;
     }
 
     @media screen and (min-width: $min-md) {}
@@ -51,6 +52,7 @@
     flex-wrap: wrap;
 
     .box {
+      font-size: 0;
     }
 
     @media screen and (min-width: $min-md) {}
@@ -71,6 +73,11 @@
   }
 
   .red {
-    background-color: red;
+    background-color: lightgrey;
+  }
+
+  .hide {
+    //visibility: hidden;
+    display: none;
   }
 }

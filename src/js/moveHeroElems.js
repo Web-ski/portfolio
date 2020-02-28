@@ -1,18 +1,21 @@
 const moveHeroElems = function () {
 
   const hero = document.querySelector('.hero');
-  const articles = hero.getElementsByClassName('article');
-  const articlesArr = Array.from(articles);
+  const boxes = hero.getElementsByClassName('box');
+  const boxesArr = Array.from(boxes);
 
-  articlesArr.map((item, index) => {
+  boxesArr.map((item, index) => {
     item.addEventListener('mouseover', function(event) {
       item.classList.toggle('red');
+      item.children[0] && item.children[0].classList.toggle('hide');
+      console.log(item.children[0] && item.children[0]);
     });
+    /*
     item.addEventListener('mouseleave', function(event) {
       item.classList.toggle('red');
     });
+    */
   })
-
 }
 
 moveHeroElems();

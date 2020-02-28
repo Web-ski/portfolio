@@ -1,0 +1,12 @@
+.navbar {
+  .box {
+    @include flex;
+    align-items: center;
+    justify-content: center;
+
+    .brand {
+      font-size: 25px;
+      font-family: $brand-font;
+    }
+  }
+}
