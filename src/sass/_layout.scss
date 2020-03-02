@@ -1,7 +1,11 @@
 body {
-  background-color: $main-grey;
+  background-color: $bg-black;
   min-height: 100vh;
   overflow: hidden;
+}
+
+.wrapper {
+  //background-color: $bg-black;
 }
 
 header {

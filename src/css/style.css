@@ -144,7 +144,7 @@ table {
 /*Media*/
 /* Actions */
 body {
-  background-color: #EFEFEF;
+  background-color: #111111;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -155,6 +155,10 @@ header {
 }
 
 /* Components */
+.brand {
+  color: #FFFFFF;
+}
+
 .navbar__link {
   font-family: Montserrat, sans-serif;
   color: #000000;
@@ -164,6 +168,60 @@ header {
   position: absolute;
   height: 100px;
   width: 100px;
+}
+
+.tile {
+  -webkit-animation: tileMoveTo 1s;
+          animation: tileMoveTo 1s;
+}
+
+@-webkit-keyframes tileMoveTo {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes tileMoveTo {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+.tileBack {
+  -webkit-animation: tileMoveBack 1s;
+          animation: tileMoveBack 1s;
+}
+
+@-webkit-keyframes tileMoveBack {
+  from {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes tileMoveBack {
+  from {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
 }
 
 /* Sections */
@@ -236,6 +294,11 @@ header {
   }
 }
 
+.hero .navbar .box,
+.hero .jumbotron .box {
+  background-color: #111111;
+}
+
 .hero .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,6 +309,8 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff006a), to(#ff009d));
+  background-image: linear-gradient(to right, #ff006a, #ff009d);
 }
 
 .hero .navbar .box {
@@ -273,6 +338,8 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff009d), to(blue));
+  background-image: linear-gradient(to right, #ff009d, blue);
 }
 
 .hero .jumbotron .box {
@@ -292,10 +359,6 @@ header {
 
 .hero .red {
   background-color: lightgrey;
-}
-
-.hero .hide {
-  display: none;
 }
 
 /*Pages*/
