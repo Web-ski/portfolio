@@ -156,7 +156,20 @@ header {
 
 /* Components */
 .brand {
-  color: #FFFFFF;
+  color: grey;
+}
+
+.area {
+  color: grey;
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1500px) {
+  .area {
+    font-size: 40px;
+  }
 }
 
 .navbar__link {
@@ -319,12 +332,12 @@ header {
 
 @media screen and (min-width: 1500px) {
   .hero .navbar {
-    width: calc(25%);
+    width: calc(20%);
     height: calc(100%);
   }
   .hero .navbar .box {
     width: calc(100% / 2);
-    height: calc(100% / 6);
+    height: calc(100% / 10);
   }
 }
 
@@ -348,12 +361,12 @@ header {
 
 @media screen and (min-width: 1500px) {
   .hero .jumbotron {
-    width: calc(75%);
+    width: calc(80%);
     height: calc(100%);
   }
   .hero .jumbotron .box {
-    width: calc(100% / 6);
-    height: calc(100% / 6);
+    width: calc(100% / 8);
+    height: calc(100% / 10);
   }
 }
 

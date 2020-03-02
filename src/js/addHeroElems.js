@@ -18,8 +18,8 @@ const addHeroElems = function () {
     parent.appendChild(articleElem);
   }
 
-  for (let i = 0; i <= 48; i++) {
-    let parent = i < 12 ? navbar : jumbotron;
+  for (let i = 0; i <= 100; i++) {
+    let parent = i < 20 ? navbar : jumbotron;
     addArticleElems(parent);
   }
 
@@ -39,6 +39,33 @@ const addHeroElems = function () {
 
   const brand = new Elem('navbar', 0, 'div', 'brand', {
     'text': 'Web-ski'
+  });
+  const nav2 = new Elem('navbar', 2, 'div', 'area', {
+    'text': 'P'
+  });
+  const nav3 = new Elem('navbar', 4, 'div', 'area', {
+    'text': 'O'
+  });
+  const nav4 = new Elem('navbar', 6, 'div', 'area', {
+    'text': 'R'
+  });
+  const nav5 = new Elem('navbar', 8, 'div', 'area', {
+    'text': 'T'
+  });
+  const nav6 = new Elem('navbar', 10, 'div', 'area', {
+    'text': 'F'
+  });
+  const nav7 = new Elem('navbar', 12, 'div', 'area', {
+    'text': 'O'
+  });
+  const nav8 = new Elem('navbar', 14, 'div', 'area', {
+    'text': 'L'
+  });
+  const nav9 = new Elem('navbar', 16, 'div', 'area', {
+    'text': 'I'
+  });
+  const nav10 = new Elem('navbar', 18, 'div', 'area', {
+    'text': 'O'
   });
 
   const addElemsContent = function (collection, superParent) {
