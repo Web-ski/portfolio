@@ -1,7 +1,21 @@
 .brand {
   color: grey;
-  font-size: 25px;
+  font-size: 20px;
   font-family: $brand-font;
+  text-align: center;
+  line-height: 100%;
+  padding-top: 10px;
+
+  @media screen and (min-width: $min-md) {
+    font-size: 25px;
+    padding-top: 0;
+  }
+
+  @media screen and (min-width: $min-lg) {}
+
+  @media screen and (min-width: $min-xl) {}
+
+  @media screen and (min-width: $min-xxl) {}
 }
 
 .area {

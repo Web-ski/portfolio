@@ -15,3 +15,9 @@
     to {transform: rotateY(0deg);}
   }
 }
+
+
+.hide {
+  transform: rotateY(180deg);
+  display: none;
+}

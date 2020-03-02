@@ -20,7 +20,7 @@
   @media screen and (min-width: $min-xxl) {}
 
   .box {
-    @include flex;
+    @include flex-column;
     background-color: $bg-black;
     height: calc(100% / 10);
     justify-content: center;

@@ -163,8 +163,18 @@ header {
 /* Components */
 .brand {
   color: grey;
-  font-size: 25px;
+  font-size: 20px;
   font-family: Satisfy, sans-serif;
+  text-align: center;
+  line-height: 100%;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .brand {
+    font-size: 25px;
+    padding-top: 0;
+  }
 }
 
 .area {
@@ -245,6 +255,12 @@ header {
   }
 }
 
+.hide {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  display: none;
+}
+
 /* Sections */
 .hero {
   display: -webkit-box;
@@ -289,15 +305,6 @@ header {
           align-items: center;
   margin: 0;
   padding: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .hero .box {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
 }
 
 .hero .red {
