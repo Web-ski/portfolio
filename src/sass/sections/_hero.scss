@@ -40,8 +40,8 @@
       height: calc(100%);
 
       .box {
-        width: calc(50%);
-        height: calc(16.6%);  
+        width: calc(100% / 2);
+        height: calc(100% / 6);  
       }
     }
   }
@@ -66,8 +66,8 @@
       height: calc(100%);
 
       .box {
-        width: calc(16.6%);
-        height: calc(16.6%);  
+        width: calc(100% / 6);
+        height: calc(100% / 6);  
       }
     }
   }
