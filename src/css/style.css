@@ -149,6 +149,12 @@ body {
   overflow: hidden;
 }
 
+.wrapper {
+  background-color: #111111;
+  width: 100vw;
+  height: 100vh;
+}
+
 header {
   max-width: 1200px;
   margin: 0 auto;
@@ -157,6 +163,8 @@ header {
 /* Components */
 .brand {
   color: grey;
+  font-size: 25px;
+  font-family: Satisfy, sans-serif;
 }
 
 .area {
@@ -238,7 +246,7 @@ header {
 }
 
 /* Sections */
-.navbar .box {
+.hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,127 +254,49 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff006a), to(#01e9d6));
+  background-image: linear-gradient(to right, #ff006a, #01e9d6);
+}
+
+.hero .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #111111;
+  height: calc(100% / 10);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .navbar .box {
+  .hero .box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-}
-
-.navbar .box .brand {
-  font-size: 25px;
-  font-family: Satisfy, sans-serif;
-}
-
-.hero {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  .hero {
-    width: 1500px;
-    margin: 0 auto;
-  }
-}
-
-.hero .navbar .box,
-.hero .jumbotron .box {
-  background-color: #111111;
-}
-
-.hero .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff006a), to(#ff009d));
-  background-image: linear-gradient(to right, #ff006a, #ff009d);
-}
-
-.hero .navbar .box {
-  font-size: 0;
-}
-
-@media screen and (min-width: 1500px) {
-  .hero .navbar {
-    width: calc(20%);
-    height: calc(100%);
-  }
-  .hero .navbar .box {
-    width: calc(100% / 2);
-    height: calc(100% / 10);
-  }
-}
-
-.hero .jumbotron {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff009d), to(blue));
-  background-image: linear-gradient(to right, #ff009d, blue);
-}
-
-.hero .jumbotron .box {
-  font-size: 0;
-}
-
-@media screen and (min-width: 1500px) {
-  .hero .jumbotron {
-    width: calc(80%);
-    height: calc(100%);
-  }
-  .hero .jumbotron .box {
-    width: calc(100% / 8);
-    height: calc(100% / 10);
   }
 }
 

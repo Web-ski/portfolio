@@ -1,85 +1,32 @@
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
   position: relative;
-  @include flex;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
   flex-wrap: wrap;
+  background-image: linear-gradient(to right, #ff006a, #01e9d6);
 
   @media screen and (min-width: $min-md) {}
 
   @media screen and (min-width: $min-lg) {}
 
-  @media screen and (min-width: $min-xl) {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
+  @media screen and (min-width: $min-xl) {}
 
-  @media screen and (min-width: $min-xxl) {
-    width: 1500px;
-    margin: 0 auto;
-  }
+  @media screen and (min-width: $min-xxl) {}
 
-  .navbar,
-  .jumbotron {
-
-    .box {
-      background-color: $bg-black;
-    }
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-image: linear-gradient(to right, #ff006a, #ff009d);
-
-    .box {
-      font-size: 0;
-    }
-
-    @media screen and (min-width: $min-md) {}
-
-    @media screen and (min-width: $min-lg) {}
-
-    @media screen and (min-width: $min-xl) {}
-
-    @media screen and (min-width: $min-xxl) {
-      width: calc(20%);
-      height: calc(100%);
-
-      .box {
-        width: calc(100% / 2);
-        height: calc(100% / 10);
-      }
-    }
-  }
-
-  .jumbotron {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-image: linear-gradient(to right, #ff009d, blue);
-
-    .box {
-      font-size: 0;
-    }
-
-    @media screen and (min-width: $min-md) {}
-
-    @media screen and (min-width: $min-lg) {}
-
-    @media screen and (min-width: $min-xl) {}
-
-    @media screen and (min-width: $min-xxl) {
-      width: calc(80%);
-      height: calc(100%);
-
-      .box {
-        width: calc(100% / 8);
-        height: calc(100% / 10);
-      }
-    }
+  .box {
+    @include flex;
+    background-color: $bg-black;
+    height: calc(100% / 10);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
 
   .red {

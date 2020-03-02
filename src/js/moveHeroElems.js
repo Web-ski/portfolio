@@ -11,14 +11,13 @@ const moveHeroElems = function () {
       //item.classList.toggle('red');
       //item.children[0] && item.children[0].classList.toggle('hide');
       console.log(item.children[0] && item.children[0]);
-    });
+    }, false);
 
-    item.addEventListener('mouseleave', function(event) {
-      setTimeout(function() {
+    item.addEventListener('mouseleave', function (event) {
+      setTimeout(function () {
         item.classList.toggle('tile');
       }, 1000)
     });
-
   })
 }
 
