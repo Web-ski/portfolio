@@ -56,10 +56,17 @@ const addHeroElems = function () {
   ]);
 
   /* dodawanie napisów */
-  const addPortfolioText = function (text, nmbr) {
+  const addPortfolioText = function (text) {
 
-    (Array.from(text)).map((item, index) => {
-      let letter = new Elem((nmbr + index), [{
+    let nmbr = function() {
+      let x = lettersArr[Math.floor(Math.random() * lettersArr.length)];
+      lettersArr.splice(x, 1);
+      //x !== 0 ? x : nmbr();
+      return x;
+    }
+
+    (text.split('')).map((item, index) => {
+      let letter = new Elem(nmbr, [{
         'tagName': 'div',
         'attr': [{
           'attrType': 'class',
@@ -70,15 +77,12 @@ const addHeroElems = function () {
     })
   }
 
-  addPortfolioText('portfolio', 1);
-  addPortfolioText('paweł', 15);
-  addPortfolioText('nieczuja-', 21);
-  addPortfolioText('ostrowski', 31);
-  addPortfolioText('UX', 11);
-  addPortfolioText('UI', 13);
-  addPortfolioText('art', 41);
-  addPortfolioText('web', 44);
-  addPortfolioText('dev', 47);
+  const lettersArr = [];
+  Array.from(hero.children).map((item, index) => lettersArr.push(index));
+  const portfolioTextsArr = ['portfolio', 'paweł', 'nieczuja-', 'ostrowski', 'ux', 'ui', 'art', 'web', 'dev']
+
+  portfolioTextsArr.map(item => addPortfolioText(item));
+ 
 
   const addElemsContent = function (collection) {
 
