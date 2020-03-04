@@ -1,0 +1,35 @@
+/* colors */
+$bg-white: #FFFFFF;
+$bg-black: #111111;
+$text-black: #000000;
+$text-white: #FFFFFF;
+$main-grey: #EFEFEF;
+$stain-color: rgba(240, 248, 255, 0.5);
+$main-red: rgba(255, 0, 0, 0.5);
+$main-blue: rgb(10, 10, 53);
+
+/* Fonts */
+$main-font: Montserrat, sans-serif;
+//$main-font: Roboto, sans-serif;
+$brand-font: Satisfy, sans-serif;
+
+/* Borders */
+$brdr-radius: 5px;
+$brdr-weight: 3px;
+
+/*Media*/
+$max-xs: 575.99px;
+
+$min-sm: 576px;
+$max-sm: 767.99px;
+
+$min-md: 768px;
+
+$min-lg: 960px;
+
+$min-xl: 1200px;
+
+$min-xxl: 1500px;
+
+/* Actions */
+$transition: .2s;

@@ -9,8 +9,14 @@
     "init:dirs": "mkdir -p src dist",
     "init:folders": "mkdir -p src/app src/css src/sass src/js src/images src/lib",
     "init:filesSrc": "touch src/index.html src/css/style.css src/js/app.js src/sass/style.scss src/sass/_variables.scss src/sass/_reset.scss",
-    "init:filesDist": "mkdir -p dist/css dist/images dist/js touch dist/js/bundle.js"
+    "init:filesDist": "mkdir -p dist/css dist/images dist/js",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Web-ski/portfolio.git"
@@ -23,6 +29,11 @@
   },
   "homepage": "https://github.com/Web-ski/portfolio#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "gulp": "^4.0.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   }
 }

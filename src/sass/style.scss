@@ -1,0 +1,16 @@
+@import "reset";
+@import "variables";
+@import "extends";
+@import "layout";
+
+/* Components */
+@import "components/texts";
+@import "components/links";
+@import "components/tile";
+
+/* Sections */
+@import "sections/navbar";
+@import "sections/hero";
+@import "sections/footer";
+
+/*Pages*/
