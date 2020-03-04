@@ -6,16 +6,16 @@ const addHeroElems = function () {
   const nmbrElems = (wrapper.offsetWidth / elemWidth) * 10;
   hero.style.width = (wrapper.offsetWidth - (wrapper.offsetWidth % elemWidth)) + 'px';
 
-  const addArticleElems = function (parent) {
+  const addArticleElems = function (parent, index) {
     let articleElem = document.createElement('div');
     articleElem.setAttribute('class', 'box');
     articleElem.style.width = elemWidth + 'px';
     parent.appendChild(articleElem);
   }
 
-  for (let i = 0; i <= nmbrElems; i++) {
+  for (let i = 0; i <= nmbrElems + 1; i++) {
     //let parent = i < 20 ? navbar : jumbotron;
-    addArticleElems(hero);
+    addArticleElems(hero, i);
   }
 
   //tworzenie elementów
@@ -47,7 +47,7 @@ const addHeroElems = function () {
     }
   ]);
 
-  /* portfolio napis */
+  /* dodawanie napisów */
   const addPortfolioText = function (text, nmbr) {
 
     (Array.from(text)).map((item, index) => {
@@ -75,6 +75,7 @@ const addHeroElems = function () {
   const addElemsContent = function (collection) {
 
     const createElem = function (tag, attr, index) {
+
       let elem = document.createElement(tag);
       attr && attr.map((item) => {
         elem.setAttribute(item.attrType, item.attrName)
@@ -83,9 +84,12 @@ const addHeroElems = function () {
     }
 
     const addElem = function (parentIndex, elems) {
+
       elems.map((item, index) => {
+
         item.tagName && createElem(item.tagName, item.attr, parentIndex);
         item.textNode && (hero.children[parentIndex].children[index].textContent = item.textNode);
+
       })
     }
 
@@ -98,4 +102,18 @@ const addHeroElems = function () {
 
 }
 
+
+const removeHeroElems = function() {
+  while(typeof hero.children[0] !== 'undefined') {
+    hero.removeChild(hero.children[0]);
+  }
+}
+
+
 addHeroElems();
+
+window.addEventListener('resize', function () {
+  removeHeroElems();
+  addHeroElems();
+  //console.log(this.innerWidth);
+});

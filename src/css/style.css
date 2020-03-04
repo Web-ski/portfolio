@@ -287,15 +287,6 @@ header {
   background-image: linear-gradient(to right, #ff006a, #01e9d6);
 }
 
-@media screen and (min-width: 768px) {
-  .hero {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
 .hero .box {
   display: -webkit-box;
   display: -ms-flexbox;
