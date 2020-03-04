@@ -7,7 +7,7 @@
   padding-top: 10px;
 
   @media screen and (min-width: $min-md) {
-    font-size: 25px;
+    font-size: 22px;
     padding-top: 0;
   }
 
@@ -16,21 +16,4 @@
   @media screen and (min-width: $min-xl) {}
 
   @media screen and (min-width: $min-xxl) {}
-}
-
-.area {
-  color: grey;
-  font-size: 20px;
-  font-family: $main-font;
-  font-weight: bold;
-
-  @media screen and (min-width: $min-md) {}
-
-  @media screen and (min-width: $min-lg) {}
-
-  @media screen and (min-width: $min-xl) {}
-
-  @media screen and (min-width: $min-xxl) {
-    font-size: 40px;
-  }
 }

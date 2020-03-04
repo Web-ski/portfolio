@@ -11,7 +11,10 @@
   flex-wrap: wrap;
   background-image: linear-gradient(to right, #ff006a, #01e9d6);
 
-  @media screen and (min-width: $min-md) {}
+  @media screen and (min-width: $min-md) {
+    flex-direction: row;
+
+  }
 
   @media screen and (min-width: $min-lg) {}
 

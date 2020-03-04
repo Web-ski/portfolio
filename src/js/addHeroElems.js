@@ -47,22 +47,30 @@ const addHeroElems = function () {
     }
   ]);
 
-  const addPortfolioText = function () {
+  /* portfolio napis */
+  const addPortfolioText = function (text, nmbr) {
 
-    (Array.from('portfolio')).map((item, index) => {
-      let letter = new Elem((index + 1), [{
+    (Array.from(text)).map((item, index) => {
+      let letter = new Elem((nmbr + index), [{
         'tagName': 'div',
         'attr': [{
           'attrType': 'class',
-          'attrName': 'area'
+          'attrName': 'pageTitle'
         }],
         'textNode': item.toUpperCase()
       }])
     })
   }
 
-  addPortfolioText();
-
+  addPortfolioText('portfolio', 1);
+  addPortfolioText('paweł', 15);
+  addPortfolioText('nieczuja-', 21);
+  addPortfolioText('ostrowski', 31);
+  addPortfolioText('UX', 11);
+  addPortfolioText('UI', 13);
+  addPortfolioText('art', 41);
+  addPortfolioText('web', 44);
+  addPortfolioText('dev', 47);
 
   const addElemsContent = function (collection) {
 

@@ -172,21 +172,8 @@ header {
 
 @media screen and (min-width: 768px) {
   .brand {
-    font-size: 25px;
+    font-size: 22px;
     padding-top: 0;
-  }
-}
-
-.area {
-  color: grey;
-  font-size: 20px;
-  font-family: Montserrat, sans-serif;
-  font-weight: bold;
-}
-
-@media screen and (min-width: 1500px) {
-  .area {
-    font-size: 40px;
   }
 }
 
@@ -199,6 +186,19 @@ header {
   position: absolute;
   height: 100px;
   width: 100px;
+}
+
+.pageTitle {
+  color: grey;
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1500px) {
+  .pageTitle {
+    font-size: 40px;
+  }
 }
 
 .tile {
@@ -285,6 +285,15 @@ header {
       flex-wrap: wrap;
   background-image: -webkit-gradient(linear, left top, right top, from(#ff006a), to(#01e9d6));
   background-image: linear-gradient(to right, #ff006a, #01e9d6);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .hero .box {
