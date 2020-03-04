@@ -6,6 +6,14 @@ const addHeroElems = function () {
   const nmbrElems = (wrapper.offsetWidth / elemWidth) * 10;
   hero.style.width = (wrapper.offsetWidth - (wrapper.offsetWidth % elemWidth)) + 'px';
 
+  const removeHeroElems = function() {
+    while(typeof hero.children[0] !== 'undefined') {
+      hero.removeChild(hero.children[0]);
+    }
+  }
+
+  removeHeroElems();
+  
   const addArticleElems = function (parent, index) {
     let articleElem = document.createElement('div');
     articleElem.setAttribute('class', 'box');
@@ -99,21 +107,10 @@ const addHeroElems = function () {
   }
 
   addElemsContent(elemsArr);
-
 }
-
-
-const removeHeroElems = function() {
-  while(typeof hero.children[0] !== 'undefined') {
-    hero.removeChild(hero.children[0]);
-  }
-}
-
 
 addHeroElems();
 
 window.addEventListener('resize', function () {
-  removeHeroElems();
   addHeroElems();
-  //console.log(this.innerWidth);
 });
