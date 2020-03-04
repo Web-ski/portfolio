@@ -31,49 +31,46 @@ const addHeroElems = function () {
 
   const brand = new Elem(0, [{
       'tagName': 'div',
-      'attr': [{'attrType': 'class', 'attrName': 'brand'}],
+      'attr': [{
+        'attrType': 'class',
+        'attrName': 'brand'
+      }],
       'textNode': 'Web-ski'
     },
     {
       'tagName': 'div',
-      'attr': [{'attrType': 'class', 'attrName': 'brand hide'}],
+      'attr': [{
+        'attrType': 'class',
+        'attrName': 'brand hide'
+      }],
       'textNode': 'Blalbla'
     }
   ]);
-  /*
-  const nav2 = new Elem(1, 'div', 'area', {
-    'text': 'P'
-  });
-  const nav3 = new Elem(2, 'div', 'area', {
-    'text': 'O'
-  });
-  const nav4 = new Elem(3, 'div', 'area', {
-    'text': 'R'
-  });
-  const nav5 = new Elem(4, 'div', 'area', {
-    'text': 'T'
-  });
-  const nav6 = new Elem(5, 'div', 'area', {
-    'text': 'F'
-  });
-  const nav7 = new Elem(6, 'div', 'area', {
-    'text': 'O'
-  });
-  const nav8 = new Elem(7, 'div', 'area', {
-    'text': 'L'
-  });
-  const nav9 = new Elem(8, 'div', 'area', {
-    'text': 'I'
-  });
-  const nav10 = new Elem(9, 'div', 'area', {
-    'text': 'O'
-  });*/
+
+  const addPortfolioText = function () {
+
+    (Array.from('portfolio')).map((item, index) => {
+      let letter = new Elem((index + 1), [{
+        'tagName': 'div',
+        'attr': [{
+          'attrType': 'class',
+          'attrName': 'area'
+        }],
+        'textNode': item.toUpperCase()
+      }])
+    })
+  }
+
+  addPortfolioText();
+
 
   const addElemsContent = function (collection) {
 
-    const createElem = function(tag, attr, index) {
+    const createElem = function (tag, attr, index) {
       let elem = document.createElement(tag);
-      attr && attr.map((item) => {elem.setAttribute(item.attrType, item.attrName)})
+      attr && attr.map((item) => {
+        elem.setAttribute(item.attrType, item.attrName)
+      })
       hero.children[index].appendChild(elem);
     }
 
