@@ -1,7 +1,27 @@
 .brand {
-  color: grey;
+  color: black;
   font-size: 20px;
   font-family: $brand-font;
+  text-align: center;
+  line-height: 100%;
+  padding-top: 10px;
+
+  @media screen and (min-width: $min-md) {
+    font-size: 22px;
+    padding-top: 0;
+  }
+
+  @media screen and (min-width: $min-lg) {}
+
+  @media screen and (min-width: $min-xl) {}
+
+  @media screen and (min-width: $min-xxl) {}
+}
+
+.textConnector {
+  color: black;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   line-height: 100%;
   padding-top: 10px;
