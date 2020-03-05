@@ -6,14 +6,16 @@ const addHeroElems = function () {
   const nmbrElems = (wrapper.offsetWidth / elemWidth) * 10;
   hero.style.width = (wrapper.offsetWidth - (wrapper.offsetWidth % elemWidth)) + 'px';
 
-  const removeHeroElems = function() {
-    while(typeof hero.children[0] !== 'undefined') {
+  //usuwanie poprzednich elementów hero
+  const removeHeroElems = function () {
+    while (typeof hero.children[0] !== 'undefined') {
       hero.removeChild(hero.children[0]);
     }
   }
 
   removeHeroElems();
-  
+
+  //tworzenie nowych elementów hero
   const addArticleElems = function (parent, index) {
     let articleElem = document.createElement('div');
     articleElem.setAttribute('class', 'box');
@@ -21,11 +23,16 @@ const addHeroElems = function () {
     parent.appendChild(articleElem);
   }
 
-  for (let i = 0; i <= nmbrElems + 1; i++) {
-    //let parent = i < 20 ? navbar : jumbotron;
-    addArticleElems(hero, i);
+  const addHeroElems = function () {
+    for (let i = 0; i <= nmbrElems + 1; i++) {
+      //let parent = i < 20 ? navbar : jumbotron;
+      addArticleElems(hero, i);
+    }
   }
 
+  addHeroElems();
+
+  /*
   //tworzenie elementów
   const elemsArr = [];
 
@@ -55,18 +62,22 @@ const addHeroElems = function () {
     }
   ]);
 
-  /* dodawanie napisów */
+  // dodawanie napisów
+  const nmbr = function () {
+    let x = lettersArr[Math.floor(Math.random() * lettersArr.length)];
+    lettersArr.splice(x, 1);
+    //console.log(x)
+    if (x !== 0) {
+      return x
+    } else {
+      nmbr
+    };
+  }
+
   const addPortfolioText = function (text) {
 
-    let nmbr = function() {
-      let x = lettersArr[Math.floor(Math.random() * lettersArr.length)];
-      lettersArr.splice(x, 1);
-      //x !== 0 ? x : nmbr();
-      return x;
-    }
-
-    (text.split('')).map((item, index) => {
-      let letter = new Elem(nmbr, [{
+    (Array.from(text)).map((item, index) => {
+      let letter = new Elem(nmbr(), [{
         'tagName': 'div',
         'attr': [{
           'attrType': 'class',
@@ -79,10 +90,11 @@ const addHeroElems = function () {
 
   const lettersArr = [];
   Array.from(hero.children).map((item, index) => lettersArr.push(index));
+  console.log(lettersArr);
   const portfolioTextsArr = ['portfolio', 'paweł', 'nieczuja-', 'ostrowski', 'ux', 'ui', 'art', 'web', 'dev']
 
   portfolioTextsArr.map(item => addPortfolioText(item));
- 
+
 
   const addElemsContent = function (collection) {
 
@@ -109,6 +121,8 @@ const addHeroElems = function () {
       item.elems && addElem(item.parentIndex, item.elems);
     })
   }
+
+  */
 
   addElemsContent(elemsArr);
 }
