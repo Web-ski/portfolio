@@ -1,0 +1,21 @@
+.pageTitle {
+  color: $text-white;
+  font-size: 20px;
+  font-family: $main-font;
+  font-weight: bold;
+
+  //animation: glow 1s ease-in-out infinite alternate;
+
+  @media screen and (min-width: $min-md) {
+    font-size: calc(20px + 1vw);
+
+  }
+
+  @media screen and (min-width: $min-lg) {}
+
+  @media screen and (min-width: $min-xl) {}
+
+  @media screen and (min-width: $min-xxl) {
+    font-size: 40px;
+  }
+}

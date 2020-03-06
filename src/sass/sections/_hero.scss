@@ -24,7 +24,7 @@
 
   .box {
     @include flex-column;
-    background-color: $bg-hero;
+    background-color: $bg-wrapper;
     height: calc(100% / 10);
     justify-content: center;
     align-items: center;
