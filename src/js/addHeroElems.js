@@ -7,6 +7,9 @@ const addHeroElems = function () {
   const nmbrElems = elemsInRow * 10;
   hero.style.width = (wrapper.offsetWidth - (wrapper.offsetWidth % elemWidth)) + 'px';
 
+  //bg-colors
+  const bgColors = ['rgb(243, 102, 82)', 'rgb(238, 85, 65)', 'rgb(238, 94, 75)']
+
   //usuwanie poprzednich elementów hero
   const removeHeroElems = function () {
     while (typeof hero.children[0] !== 'undefined') {
@@ -21,6 +24,7 @@ const addHeroElems = function () {
     let articleElem = document.createElement('div');
     articleElem.setAttribute('class', 'box');
     articleElem.style.width = elemWidth + 'px';
+    articleElem.style.backgroundColor = bgColors[Math.floor(Math.random() * bgColors.length)];
     parent.appendChild(articleElem);
   }
 

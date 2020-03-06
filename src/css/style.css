@@ -278,8 +278,6 @@ header {
 }
 
 .hide {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
   display: none;
 }
 
@@ -305,8 +303,8 @@ header {
   padding: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff006a), to(#01e9d6));
-  background-image: linear-gradient(to right, #ff006a, #01e9d6);
+  background-image: -webkit-gradient(linear, left top, right top, from(#0b224b), to(#2d4b85));
+  background-image: linear-gradient(to right, #0b224b, #2d4b85);
 }
 
 .hero .box {
@@ -317,6 +315,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   background-color: #ee5541;
   height: calc(100% / 10);
   -webkit-box-pack: center;
@@ -327,6 +326,7 @@ header {
           align-items: center;
   margin: 0;
   padding: 0;
+  z-index: 2;
 }
 
 .hero .red {

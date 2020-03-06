@@ -9,7 +9,8 @@
   margin: 0 auto;
   padding: 0;
   flex-wrap: wrap;
-  background-image: linear-gradient(to right, #ff006a, #01e9d6);
+  background-image: linear-gradient(to right, rgb(11, 34, 75), rgb(45, 75, 133));
+  //background-color: $text-navy;
 
   @media screen and (min-width: $min-md) {
     //flex-direction: row;
@@ -24,12 +25,14 @@
 
   .box {
     @include flex-column;
+    position: relative;
     background-color: $bg-wrapper;
     height: calc(100% / 10);
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
+    z-index: 2;
   }
 
   .red {
