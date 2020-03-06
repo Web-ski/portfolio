@@ -8,7 +8,7 @@ const addHeroElems = function () {
   hero.style.width = (wrapper.offsetWidth - (wrapper.offsetWidth % elemWidth)) + 'px';
 
   //bg-colors
-  const bgColors = ['rgb(243, 102, 82)', 'rgb(238, 85, 65)', 'rgb(238, 94, 75)']
+  const bgColors = ['rgb(240, 90, 69)', 'rgb(238, 85, 65)', 'rgb(238, 94, 75)']
 
   //usuwanie poprzednich elementów hero
   const removeHeroElems = function () {
@@ -50,22 +50,13 @@ const addHeroElems = function () {
 
   //dodanie brand
   const brand = new Elem(0, [{
-      'tagName': 'div',
-      'attr': [{
-        'attrType': 'class',
-        'attrName': 'brand'
-      }],
-      'textNode': 'Web-ski'
-    },
-    {
-      'tagName': 'div',
-      'attr': [{
-        'attrType': 'class',
-        'attrName': 'brand hide'
-      }],
-      'textNode': 'Blalbla'
-    }
-  ]);
+    'tagName': 'div',
+    'attr': [{
+      'attrType': 'class',
+      'attrName': 'brand'
+    }],
+    'textNode': 'Nieczuja'
+  }]);
 
   /*
   const randomNmbr = function () {
@@ -100,7 +91,7 @@ const addHeroElems = function () {
 
   //1.1
   const addLetters = function (item, position, index, style, className) {
-    
+
     let letter = new Elem(position + index, [{
       'tagName': 'div',
       'attr': [{
@@ -109,6 +100,8 @@ const addHeroElems = function () {
       }],
       'textNode': `${style === 'upper' ? item.toUpperCase() : item}`
     }])
+
+    //console.log(letter)
   }
 
   //switch 1.1.1
@@ -136,6 +129,10 @@ const addHeroElems = function () {
         position = columnsNmbr(4);
         break;
       }
+      case 5: {
+        position = columnsNmbr(1) - 1;
+        break;
+      }
       default: {
         position = 11;
         break;
@@ -156,6 +153,11 @@ const addHeroElems = function () {
     if (portfolioTextsArr2.includes(text) === true) {
       addLetters(text, textSwitcher(indx), 0, 'lower', 'textConnector');
     }
+
+    if (portfolioTextsArr3.includes(text) === true) {
+      addLetters(text, textSwitcher(indx), 0, 'lower', 'menu brand');
+      addLetters(text, textSwitcher(indx), 0, 'lower', 'menu brand hide');
+    }
   }
 
   const lettersArr = [];
@@ -165,34 +167,24 @@ const addHeroElems = function () {
   //console.log(lettersArr);
   const portfolioTextsArr1 = ['portfolio', 'paweł', 'nieczuja-', 'ostrowski']; //, 'ux', 'ui', 'art', 'webs', 'dev']
   const portfolioTextsArr2 = ['of'];
+  const portfolioTextsArr3 = ['menu'];
 
   portfolioTextsArr1.map((item, index) => addPortfolioText(item, index));
   addPortfolioText(portfolioTextsArr2[0], 4);
+  addPortfolioText(portfolioTextsArr3[0], 5);
 
-
+  //tworzenie elementó
   const addElemsContent = function (collection) {
 
-    const createElem = function (tag, attr, index) {
+    collection.map(item => {
+      let parent = item.parentIndex;
 
-      let elem = document.createElement(tag);
-      attr && attr.map((item) => {
-        elem.setAttribute(item.attrType, item.attrName)
+      item.elems.map((item, index) => {
+        let tag = document.createElement(item.tagName);
+        item.attr.map(item => tag.setAttribute(item.attrType, item.attrName));
+        hero.children[parent].appendChild(tag);
+        item.textNode && (tag.textContent = item.textNode);
       })
-      hero.children[index].appendChild(elem);
-    }
-
-    const addElem = function (parentIndex, elems) {
-
-      elems.map((item, index) => {
-
-        item.tagName && createElem(item.tagName, item.attr, parentIndex);
-        item.textNode && (hero.children[parentIndex].children[index].textContent = item.textNode);
-
-      })
-    }
-
-    collection.map((item) => {
-      item.elems && addElem(item.parentIndex, item.elems);
     })
   }
 

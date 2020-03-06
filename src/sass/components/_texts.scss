@@ -1,10 +1,11 @@
 .brand {
   color: $text-white;
-  font-size: 20px;
+  font-size: 18px;
   font-family: $brand-font;
   text-align: center;
   line-height: 100%;
   padding-top: 10px;
+  cursor: pointer;
 
   @media screen and (min-width: $min-md) {
     font-size: 22px;
@@ -16,12 +17,17 @@
   @media screen and (min-width: $min-xl) {}
 
   @media screen and (min-width: $min-xxl) {}
+
+  &:active {
+    color: $text-navy;
+    text-shadow: none;
+  }
 }
 
 .textConnector {
   color: $text-white;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
   text-align: center;
   line-height: 100%;
   padding-top: 10px;

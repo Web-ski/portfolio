@@ -4,13 +4,13 @@
   justify-content: stretch;
   align-items: stretch;
   position: relative;
-  height: 95%;
+  height: 99%;
   width: 100%;
   margin: 0 auto;
   padding: 0;
   flex-wrap: wrap;
-  background-image: linear-gradient(to right, rgb(11, 34, 75), rgb(45, 75, 133));
-  //background-color: $text-navy;
+  //background-image: linear-gradient(to right, rgb(11, 34, 75), rgb(45, 75, 133), rgb(11, 34, 75));
+  background-color: grey;
 
   @media screen and (min-width: $min-md) {
     //flex-direction: row;
@@ -33,6 +33,15 @@
     margin: 0;
     padding: 0;
     z-index: 2;
+    transition: .1s;
+
+    &:hover {
+      box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+      div {
+        text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+      }
+    }
   }
 
   .red {
