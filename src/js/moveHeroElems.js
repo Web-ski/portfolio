@@ -31,12 +31,6 @@ const moveHeroElems = function () {
   menusArr.map(item => item.addEventListener('click', function (event) {
     delayedMove();
   }));
-
-  /*
-  setTimeout(function () {delayedMove();}, 3000)
-  setTimeout(function () {delayedMove();}, 3000 *2)
-  */
-
 }
 
 moveHeroElems();

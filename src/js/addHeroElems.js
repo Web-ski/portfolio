@@ -58,30 +58,6 @@ const addHeroElems = function () {
     'textNode': 'Nieczuja'
   }]);
 
-  /*
-  const randomNmbr = function () {
-    let x = lettersArr[Math.floor(Math.random() * lettersArr.length)];
-    console.log(x, '0')
-
-    if (lettersArr.includes(x) === true) {
-      console.log(x, '1')
-      return x;
-    } else {
-      randomNmbr();
-    }
-  }
-
-  //wybieranie indexy
-  const indx = function () {
-    let x = randomNmbr();
-    console.log(x, '2');
-    lettersArr.splice(lettersArr.indexOf(x), 1);
-    lettersOrder.push(x);
-    //console.log(lettersOrder);
-    return x;
-  }
-  */
-
   //sprawdzanie ilości kolumn 1.1.1.1
   const columnsNmbr = function (choice, indx) {
     if (choice === 'col') {
@@ -162,7 +138,10 @@ const addHeroElems = function () {
 
     if (portfolioTextsArr4.includes(text) === true) {
       (Array.from(text)).map((item, index) => {
-        addLetters(item, (index * 10), (indxArr + 1), 'upper', 'pageTitle hide');
+        let group;
+        indxArr === indxArr && (group = text); //naprawić, ART jest undefined
+        console.log(text)
+        addLetters(item, (index * 10), (indxArr + 1), 'upper', `pageTitle ${group} hide`);
       })
     }
   }
@@ -172,17 +151,17 @@ const addHeroElems = function () {
   Array.from(hero.children).map((item, index) => lettersArr.push(index));
   //lettersArr.shift();
   //console.log(lettersArr);
-  const portfolioTextsArr1 = ['portfolio', 'paweł', 'nieczuja-', 'ostrowski']; //, 'ux', 'ui', 'art', 'webs', 'dev']
+  const portfolioTextsArr1 = ['portfolio', 'paweł', 'nieczuja-', 'ostrowski'];
   const portfolioTextsArr2 = ['of'];
   const portfolioTextsArr3 = ['menu'];
-  const portfolioTextsArr4 = ['art', 'ux', 'ui', 'webs', 'dev', 'cv', 'find'];
+  const portfolioTextsArr4 = ['art', 'ux', 'ui', 'webs', 'repo', 'cv', 'sayhi'];
 
   portfolioTextsArr1.map((item, index) => addPortfolioText(item, index));
   addPortfolioText(portfolioTextsArr2[0], 4);
   addPortfolioText(portfolioTextsArr3[0], 5);
   portfolioTextsArr4.map((item, index) => addPortfolioText(item, index));
 
-  //tworzenie elementó
+  //tworzenie elementów
   const addElemsContent = function (collection) {
 
     collection.map(item => {
