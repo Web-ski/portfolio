@@ -12,9 +12,12 @@ const moveHeroElems = function () {
   const moveRows = function (row) {
     for (let i = row; i < boxesArr.length; i = i + 10) {
       setTimeout(function () {
-        boxesArr[i].classList.contains('tile') ? boxesArr[i].classList.toggle('tileBack') : boxesArr[i].classList.toggle('tile');
-        typeof boxesArr[i].children[0] !== 'undefined' && boxesArr[i].children[0].classList.toggle('hide');
-        typeof boxesArr[i].children[1] !== 'undefined' && boxesArr[i].children[1].classList.toggle('hide');
+        let child = boxesArr[i].children[0];
+        if (typeof child === 'undefined' || child.classList.contains('brand') !== true) {
+          boxesArr[i].classList.contains('tile') ? boxesArr[i].classList.toggle('tileBack') : boxesArr[i].classList.toggle('tile');
+          typeof boxesArr[i].children[0] !== 'undefined' && setTimeout(function() {boxesArr[i].children[0].classList.toggle('hide')}, 400);
+          typeof boxesArr[i].children[1] !== 'undefined' && setTimeout(function() {boxesArr[i].children[1].classList.toggle('hide')}, 400);
+        }
       }, (5 + row) * i)
     }
   }

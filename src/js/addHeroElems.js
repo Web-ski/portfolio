@@ -156,7 +156,6 @@ const addHeroElems = function () {
 
     if (portfolioTextsArr3.includes(text) === true) {
       addLetters(text, textSwitcher(indx), 0, 'lower', 'menu brand');
-      addLetters(text, textSwitcher(indx), 0, 'lower', 'menu brand hide');
     }
   }
 
