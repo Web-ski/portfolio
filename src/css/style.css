@@ -262,24 +262,24 @@ header {
 }
 
 @-webkit-keyframes tileMoveBack {
-  from {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
   to {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
+  }
+  from {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
 }
 
 @keyframes tileMoveBack {
-  from {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
   to {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
+  }
+  from {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
 }
 

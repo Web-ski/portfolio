@@ -83,10 +83,12 @@ const addHeroElems = function () {
   */
 
   //sprawdzanie ilości kolumn 1.1.1.1
-  const columnsNmbr = function (indx) {
-    let x = lettersArr.length;
-    x = x - 10 * indx + 1;
-    return x;
+  const columnsNmbr = function (choice, indx) {
+    if (choice === 'col') {
+      let x = lettersArr.length;
+      x = x - 10 * indx + 1;
+      return x;
+    }
   }
 
   //1.1
@@ -114,23 +116,23 @@ const addHeroElems = function () {
         break;
       }
       case 1: {
-        position = columnsNmbr(3);
+        position = columnsNmbr('col', 3);
         break;
       }
       case 2: {
-        position = columnsNmbr(2);
+        position = columnsNmbr('col', 2);
         break;
       }
       case 3: {
-        position = columnsNmbr(1);
+        position = columnsNmbr('col', 1);
         break;
       }
       case 4: {
-        position = columnsNmbr(4);
+        position = columnsNmbr('col', 4);
         break;
       }
       case 5: {
-        position = columnsNmbr(1) - 1;
+        position = columnsNmbr('col', 1) - 1;
         break;
       }
       default: {
@@ -142,20 +144,26 @@ const addHeroElems = function () {
   }
 
   // dodawanie napisów 1
-  const addPortfolioText = function (text, indx) {
+  const addPortfolioText = function (text, indxArr) {
 
     if (portfolioTextsArr1.includes(text) === true) {
       (Array.from(text)).map((item, index) => {
-        addLetters(item, textSwitcher(indx), index, 'upper', 'pageTitle');
+        addLetters(item, textSwitcher(indxArr), index, 'upper', 'pageTitle');
       })
     }
 
     if (portfolioTextsArr2.includes(text) === true) {
-      addLetters(text, textSwitcher(indx), 0, 'lower', 'textConnector');
+      addLetters(text, textSwitcher(indxArr), 0, 'lower', 'textConnector');
     }
 
     if (portfolioTextsArr3.includes(text) === true) {
-      addLetters(text, textSwitcher(indx), 0, 'lower', 'menu brand');
+      addLetters(text, textSwitcher(indxArr), 0, 'lower', 'menu brand');
+    }
+
+    if (portfolioTextsArr4.includes(text) === true) {
+      (Array.from(text)).map((item, index) => {
+        addLetters(item, (index * 10), (indxArr + 1), 'upper', 'pageTitle hide');
+      })
     }
   }
 
@@ -167,10 +175,12 @@ const addHeroElems = function () {
   const portfolioTextsArr1 = ['portfolio', 'paweł', 'nieczuja-', 'ostrowski']; //, 'ux', 'ui', 'art', 'webs', 'dev']
   const portfolioTextsArr2 = ['of'];
   const portfolioTextsArr3 = ['menu'];
+  const portfolioTextsArr4 = ['art', 'ux', 'ui', 'webs', 'dev', 'cv', 'find'];
 
   portfolioTextsArr1.map((item, index) => addPortfolioText(item, index));
   addPortfolioText(portfolioTextsArr2[0], 4);
   addPortfolioText(portfolioTextsArr3[0], 5);
+  portfolioTextsArr4.map((item, index) => addPortfolioText(item, index));
 
   //tworzenie elementó
   const addElemsContent = function (collection) {

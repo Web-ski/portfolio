@@ -40,6 +40,10 @@ const moveHeroElems = function () {
 }
 
 moveHeroElems();
+
+window.addEventListener('resize', function () {
+  moveHeroElems();
+});
 /*
 boxesArr.map((item, index) => {
   item.addEventListener('mouseenter', function (event) {

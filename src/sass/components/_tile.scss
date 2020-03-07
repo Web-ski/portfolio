@@ -1,6 +1,6 @@
 .tile {
   animation: tileMoveTo 1s;
-
+  
   @keyframes tileMoveTo {
     from {transform: rotateY(0deg);}
     to {transform: rotateY(180deg);}
@@ -9,10 +9,10 @@
 
 .tileBack {
   animation: tileMoveBack 1s;
-
+  
   @keyframes tileMoveBack {
-    from {transform: rotateY(180deg);}
     to {transform: rotateY(0deg);}
+    from {transform: rotateY(180deg);}
   }
 }
 
