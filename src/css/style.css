@@ -240,8 +240,8 @@ header {
             transform: rotateY(0deg);
   }
   to {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
@@ -251,8 +251,8 @@ header {
             transform: rotateY(0deg);
   }
   to {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
@@ -267,8 +267,8 @@ header {
             transform: rotateY(0deg);
   }
   from {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
@@ -278,14 +278,12 @@ header {
             transform: rotateY(0deg);
   }
   from {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
 .hide {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
   display: none;
 }
 
