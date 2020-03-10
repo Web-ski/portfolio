@@ -140,14 +140,14 @@ const addHeroElems = function () {
       (Array.from(text)).map((item, index) => {
         let group;
         indxArr === indxArr && (group = text); //naprawić, ART jest undefined
-        console.log(text)
+        //console.log(text)
         addLetters(item, (index * 10), (indxArr + 1), 'upper', `pageTitle ${group} hide`);
       })
     }
   }
 
   const lettersArr = [];
-  console.log(lettersArr);
+  //console.log(lettersArr);
   Array.from(hero.children).map((item, index) => lettersArr.push(index));
   //lettersArr.shift();
   //console.log(lettersArr);

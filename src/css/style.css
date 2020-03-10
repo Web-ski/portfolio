@@ -337,15 +337,6 @@ header {
   transition: .1s;
 }
 
-.hero .box:hover {
-  -webkit-box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
-}
-
-.hero .box:hover div {
-  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
-}
-
 .hero .red {
   background-color: lightgrey;
 }
