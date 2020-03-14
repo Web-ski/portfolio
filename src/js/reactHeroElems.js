@@ -10,6 +10,15 @@ const reactHeroElems = function () {
     elemsArr.push(arr);
   })
 
+  //znajdź 9 elementów w środku
+  // const columnsNmbr = function (choice, indx) {
+  //   if (choice === 'col') {
+  //     let x = lettersArr.length;
+  //     x = x - 10 * indx + 1;
+  //     return x;
+  //   }
+  // }
+
   const reactElems = function (collection) {
     collection.map((item, index) => {
       item.parentElement.style.cursor = 'pointer';
