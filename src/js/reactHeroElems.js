@@ -1,12 +1,14 @@
 const reactHeroElems = function () {
 
   const hero = document.querySelector('.hero');
-  const art = hero.getElementsByClassName('art');
-  const ux = hero.getElementsByClassName('ux');
-  const ui = hero.getElementsByClassName('ui');
 
-  const elemsArr = [Array.from(art), Array.from(ux), Array.from(ui)];
-
+  const elemsArr = [];
+  const portfolioTextsArr4 = ['ux', 'ui', 'art', 'webs', 'repo', 'cv', 'find'];
+  portfolioTextsArr4.map((item, index) => {
+    let elem = hero.getElementsByClassName(item);
+    let arr = Array.from(elem);
+    elemsArr.push(arr);
+  })
 
   const reactElems = function (collection) {
     collection.map((item, index) => {
@@ -17,14 +19,14 @@ const reactHeroElems = function () {
           item.style.color = "black";
         })
 
-        setTimeout(function () {  
+        setTimeout(function () {
           elemsArr.map(item => {
             item.map(item => {
               item.classList[1] !== currentClass && (item.style.color = "white");
-            
+
             })
-          })  
-        }, 100)
+          })
+        }, 0)
 
       }, false);
 
