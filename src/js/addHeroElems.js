@@ -8,7 +8,8 @@ const addHeroElems = function () {
   hero.style.width = (wrapper.offsetWidth - (wrapper.offsetWidth % elemWidth)) + 'px';
 
   //bg-colors
-  const bgColors = ['rgb(240, 90, 69)', 'rgb(238, 85, 65)', 'rgb(238, 94, 75)']
+  //const bgColors = ['rgb(240, 90, 69)', 'rgb(238, 85, 65)', 'rgb(238, 94, 75)']
+  const bgColors = ['rgba(5, 5, 5, 1)', 'rgba(15, 15, 15, 1)', 'rgba(10, 10, 10, 1)']
 
   //usuwanie poprzednich elementów hero
   const removeHeroElems = function () {

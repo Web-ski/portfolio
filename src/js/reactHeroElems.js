@@ -12,17 +12,18 @@ const reactHeroElems = function () {
 
   const reactElems = function (collection) {
     collection.map((item, index) => {
+      item.parentElement.style.cursor = 'pointer';
       item.parentElement.addEventListener('mouseenter', function (event) {
         //(console.log(item.classList[1]))
         let currentClass = item.classList[1];
         collection.map(item => {
-          item.style.color = "black";
+          item.style.color = "white"; //"black";
         })
 
         setTimeout(function () {
           elemsArr.map(item => {
             item.map(item => {
-              item.classList[1] !== currentClass && (item.style.color = "white");
+              item.classList[1] !== currentClass && (item.style.color = "cyan");
 
             })
           })

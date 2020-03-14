@@ -9,8 +9,10 @@
   margin: 0 auto;
   padding: 0;
   flex-wrap: wrap;
-  background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-  background-color: rgb(214, 76, 57);
+  //background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: radial-gradient(orangered, darkred);
+  //background-color: rgb(214, 76, 57);
+  background-color: red;
 
   @media screen and (min-width: $min-md) {
     //flex-direction: row;
