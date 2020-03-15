@@ -9,32 +9,38 @@ const addHeroPicture = function () {
   const pictureElems = function () {
     //console.log(nmbrElems + ' ' + elemsInRow)   
     console.log(boxes.length)
-    let nmbr = (Math.floor(elemsInRow / 2) * 10) + 4;
-    let box = boxes[nmbr];
-    let box1 = boxes[nmbr - 10];
-    let boxesArr = [box, box1];
+    let nmbr = (Math.floor(elemsInRow / 4) * 10) + 2;
 
-    class Dottes {
-      constructor(tagName, className) {
+    //7 x 7
+    let boxesArr = [0, 1, 2, 3, 4, 5, 6, 7];
+
+    class Photos {
+      constructor(tagName, className, picture) {
         this.tagName = tagName;
         this.className = className;
+        this.picture = picture;
       }
     }
 
     const position = function (axis, i) {
 
-
     }
 
-    boxesArr.map(item => {
-      for (let i = 0; i < 4; i++) {
-        let dott = new Dottes('div', 'picture')
-        console.log(item);
-        let child = document.createElement(dott.tagName);
-        child.classList.add(dott.className);
-        child.style.top = position('y', i) + '%';
-        child.style.left = position('x', i) + '%';
-        item.appendChild(child);
+    boxesArr.map((item, index) => {
+
+      for (let i = 0; i < boxesArr.length; i++) {
+
+        let parent = boxes[nmbr + i + index * 10];
+
+        //let img = new Photos('div', 'picture', `./images/ostry01bBLUE_0${i + 1}_0${index + 1}.png`);
+        let img = new Photos('div', 'picture', `./images/ostry01bBLUE.png`);
+        console.log(img);
+        let child = document.createElement(img.tagName);
+        child.classList.add(img.className);
+        child.style.backgroundImage = 'url(' + img.picture + ')';
+        child.style.left = `-${index * 100}%`;
+        child.style.top = `-${i * 100}%`;
+        parent.appendChild(child);
       }
     })
   }
