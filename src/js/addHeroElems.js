@@ -180,7 +180,6 @@ const addHeroElems = function () {
   addElemsContent(elemsArr);
 
   //dodanie data do elementów menu
-
   const addDataTag = function (collection) {
     collection.map(item => {
       let elem = hero.getElementsByClassName(item);
@@ -188,9 +187,7 @@ const addHeroElems = function () {
       (Array.from(elem)).map(item => {
         let parent = item.parentElement;
         parent.setAttribute('data-menu', name);
-        console.log(parent);
       })
-
     })
   }
 
