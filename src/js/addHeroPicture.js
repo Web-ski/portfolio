@@ -8,7 +8,7 @@ const addHeroPicture = function () {
   //znajdź 9 elementów w środku
   const pictureElems = function () {
     //console.log(nmbrElems + ' ' + elemsInRow)   
-    console.log(boxes.length)
+    //console.log(boxes.length)
     let nmbr = (Math.floor(elemsInRow / 4) * 10) + 2;
 
     //7 x 7
@@ -34,7 +34,7 @@ const addHeroPicture = function () {
 
         //let img = new Photos('div', 'picture', `./images/ostry01bBLUE_0${i + 1}_0${index + 1}.png`);
         let img = new Photos('div', 'picture', `./images/ostry01bBLUE.png`);
-        console.log(img);
+        //console.log(img);
         let child = document.createElement(img.tagName);
         child.classList.add(img.className);
         child.style.backgroundImage = 'url(' + img.picture + ')';

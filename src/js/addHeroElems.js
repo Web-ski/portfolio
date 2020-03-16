@@ -175,27 +175,26 @@ const addHeroElems = function () {
         item.textNode && (tag.textContent = item.textNode);
       })
     })
-  }
+  } 
 
   addElemsContent(elemsArr);
 
-  //znajdź 9 elementów w środku
-  // const pictureElems = function () {
-  //   //console.log(nmbrElems + ' ' + elemsInRow)   
-  //   console.log(Math.floor(elemsInRow / 2 * 10))
-  //   let nmbr = (Math.floor(elemsInRow / 2) * 10) + 4;
-  //   let box = hero.getElementsByClassName('box')[nmbr];
-  //   let box1 = hero.getElementsByClassName('box')[nmbr -10];
-  //   let boxesArr = [box, box1];
-  //   boxesArr.map(item => {
-  //     console.log(item);
-  //     let child = document.createElement('div');
-  //     child.classList.add('picture');
-  //     item.appendChild(child);
-  //   })
-  // }
+  //dodanie data do elementów menu
 
-  // pictureElems();
+  const addDataTag = function (collection) {
+    collection.map(item => {
+      let elem = hero.getElementsByClassName(item);
+      let name = item;
+      (Array.from(elem)).map(item => {
+        let parent = item.parentElement;
+        parent.setAttribute('data-menu', name);
+        console.log(parent);
+      })
+
+    })
+  }
+
+  addDataTag(portfolioTextsArr4);
 }
 
 addHeroElems();
