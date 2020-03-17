@@ -8,9 +8,11 @@ const addArticlesContent = function () {
   const addText = function (collection) {
     collection.map((item, index) => {
       let article = item.querySelector('.description');
-      let articleText = document.createElement('p');
-      articleText.setAttribute('class', 'article__text');
-      article.appendChild(articleText);
+      for(let i = 0; i < 2; i++) {
+        let articleText = document.createElement('p');
+        articleText.setAttribute('class', 'article__text');
+        article.appendChild(articleText);
+      }
     })
   }
   
@@ -24,7 +26,8 @@ const addArticlesContent = function () {
       .then(data => {
         let texts = data.texts;
         texts.map((item, index) => {
-          articles[index].querySelector('.article__text').textContent = item.text;
+          articles[index].querySelectorAll('.article__text')[0].textContent = item.text;
+          articles[index].querySelectorAll('.article__text')[1].textContent = item.text2;
         })
       });
   }

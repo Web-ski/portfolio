@@ -277,6 +277,7 @@ header {
   color: cyan;
   font-family: Montserrat, sans-serif;
   line-height: 180%;
+  margin-bottom: 2vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -457,15 +458,15 @@ header {
 .section .description {
   background-color: #050505;
   min-height: 60vh;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .section .photos {
   background-color: rgba(5, 5, 5, 0.3);
   min-height: 60vh;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .section:nth-of-type(odd) .description {
