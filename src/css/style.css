@@ -190,8 +190,34 @@ header {
 }
 
 .sectionTitle {
-  color: cyan;
+  color: #f3f5dd;
   text-transform: uppercase;
+  font-size: calc(25px + 1vh);
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionTitle {
+    font-size: calc(25px + 1vw);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .sectionTitle {
+    font-size: calc(30px + 1vw);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sectionTitle {
+    font-size: calc(35px + 1vw);
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .sectionTitle {
+    font-size: calc(40px + 1vw);
+  }
 }
 
 .brand {
@@ -367,6 +393,25 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding: 25px;
+}
+
+@media screen and (min-width: 960px) {
+  .section .article {
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section .article {
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .section .article {
+    padding: 50px;
+  }
 }
 
 .section .description {

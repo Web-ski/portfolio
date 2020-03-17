@@ -22,6 +22,26 @@
 
 .sectionTitle {
   @extend .pageTitle;
-  color: $text-blue;
+  color: $text-white;
   text-transform: uppercase;
+  font-size: calc(25px + 1vh);
+  font-weight: bold;
+
+  @media screen and (min-width: $min-md) {
+    font-size: calc(25px + 1vw);
+  }
+
+  @media screen and (min-width: $min-lg) {
+    font-size: calc(30px + 1vw);
+
+  }
+
+  @media screen and (min-width: $min-xl) {
+    font-size: calc(35px + 1vw);
+
+  }
+
+  @media screen and (min-width: $min-xxl) {
+    font-size: calc(40px + 1vw);
+  }
 }
