@@ -147,7 +147,6 @@ body {
   background-color: darkcyan;
   height: auto;
   min-height: 100vh;
-  width: calc(100vw - 15px);
 }
 
 .wrapper {
@@ -194,6 +193,7 @@ header {
   text-transform: uppercase;
   font-size: calc(25px + 1vh);
   font-weight: bold;
+  margin-bottom: 2vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -255,6 +255,30 @@ header {
   .textConnector {
     font-size: 22px;
     padding-top: 0;
+  }
+}
+
+.article__text {
+  color: cyan;
+  font-family: Montserrat, sans-serif;
+  line-height: 180%;
+}
+
+@media screen and (min-width: 768px) {
+  .article__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .article__text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .article__text {
+    font-size: 20px;
   }
 }
 
