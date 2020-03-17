@@ -143,6 +143,10 @@ table {
 /* Borders */
 /*Media*/
 /* Actions */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: darkcyan;
   height: auto;
@@ -171,9 +175,20 @@ header {
 
 /* Components */
 .pageTitle, .sectionTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: cyan;
   font-size: 20px;
   font-family: Montserrat, sans-serif;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 768px) {

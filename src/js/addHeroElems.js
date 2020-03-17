@@ -70,7 +70,6 @@ const addHeroElems = function () {
 
   //1.1
   const addLetters = function (item, position, index, style, className) {
-
     let letter = new Elem(position + index, [{
       'tagName': 'div',
       'attr': [{
@@ -79,8 +78,21 @@ const addHeroElems = function () {
       }],
       'textNode': `${style === 'upper' ? item.toUpperCase() : item}`
     }])
+  }
 
-    //console.log(letter)
+  //1.1
+  const addLettersLink = function (item, position, index, style, className, id) {
+    let letter = new Elem(position + index, [{
+      'tagName': 'a',
+      'attr': [{
+        'attrType': 'class',
+        'attrName': className
+      }, {
+        'attrType': 'href',
+        'attrName': `#${id}`
+      }],
+      'textNode': `${style === 'upper' ? item.toUpperCase() : item}`
+    }])
   }
 
   //switch 1.1.1
@@ -141,8 +153,8 @@ const addHeroElems = function () {
       (Array.from(text)).map((item, index) => {
         let group;
         indxArr === indxArr && (group = text); //naprawić, ART jest undefined
-        //console.log(text)
-        addLetters(item, (index * 10), (indxArr + 1), 'upper', `pageTitle ${group} hide`);
+        console.log(text)
+        addLettersLink(item, (index * 10), (indxArr + 1), 'upper', `pageTitle ${group} hide`, text);
       })
     }
   }
@@ -175,7 +187,7 @@ const addHeroElems = function () {
         item.textNode && (tag.textContent = item.textNode);
       })
     })
-  } 
+  }
 
   addElemsContent(elemsArr);
 
