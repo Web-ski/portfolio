@@ -208,7 +208,6 @@ header {
   color: #f3f5dd;
   text-transform: uppercase;
   font-size: calc(25px + 1vh);
-  font-weight: bold;
   margin-bottom: 2vh;
 }
 
@@ -458,6 +457,28 @@ header {
 .section .description {
   background-color: #050505;
   min-height: 60vh;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.section:nth-of-type(odd) .description {
+  -webkit-transform: perspective(200px) rotateY(0deg);
+          transform: perspective(200px) rotateY(0deg);
+}
+
+.section:nth-of-type(odd) .description:hover {
+  -webkit-transform: perspective(200px) rotateY(5deg);
+          transform: perspective(200px) rotateY(5deg);
+}
+
+.section:nth-of-type(even) .description {
+  -webkit-transform: perspective(200px) rotateY(0deg);
+          transform: perspective(200px) rotateY(0deg);
+}
+
+.section:nth-of-type(even) .description:hover {
+  -webkit-transform: perspective(200px) rotateY(-5deg);
+          transform: perspective(200px) rotateY(-5deg);
 }
 
 /* Sections */

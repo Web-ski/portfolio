@@ -7,8 +7,8 @@
   justify-content: center;
   align-items: center;
   background-image: radial-gradient(circle at right, transparent 20%, rgba(0, 0, 0, 0.5)),
-  radial-gradient(circle at 70%, transparent 10%, rgba(0, 0, 0, 0.5)),
-  radial-gradient(circle at left, transparent 10%, rgba(0, 0, 0, 0.5));
+    radial-gradient(circle at 70%, transparent 10%, rgba(0, 0, 0, 0.5)),
+    radial-gradient(circle at left, transparent 10%, rgba(0, 0, 0, 0.5));
 
 
   @media screen and (min-width: $min-md) {
@@ -29,11 +29,11 @@
     padding: 25px;
 
     @media screen and (min-width: $min-lg) {
-    padding: 30px;
+      padding: 30px;
     }
 
     @media screen and (min-width: $min-xl) {
-    padding: 40px;
+      padding: 40px;
     }
 
     @media screen and (min-width: $min-xxl) {
@@ -44,5 +44,26 @@
   .description {
     background-color: $bg-wrapper;
     min-height: 60vh;
+    transition: .2s;
+  }
+
+  &:nth-of-type(odd) {
+    .description {
+      transform: perspective(200px) rotateY(0deg);
+
+      &:hover {
+        transform: perspective(200px) rotateY(5deg);
+      }
+    }
+  }
+
+  &:nth-of-type(even) {
+    .description {
+      transform: perspective(200px) rotateY(0deg);
+
+      &:hover {
+        transform: perspective(200px) rotateY(-5deg);
+      }
+    }
   }
 }
