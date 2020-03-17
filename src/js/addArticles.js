@@ -15,11 +15,10 @@ const addArticles = function () {
       }
     })
   }
-  
+
   //nadawanie cech artykułom
   const addSpecify = function (collection) {
     collection.map((item, index) => {
-      console.log(item);
       let sepcify1 = 'description';
       let sepcify2 = 'photos';
 
@@ -30,11 +29,25 @@ const addArticles = function () {
         item.firstElementChild.classList.add(sepcify2);
         item.lastElementChild.classList.add(sepcify1);
       }
-    })    
+    })
   }
-  
+
+  //nadawanie treści artykułom-description
+  const addTextContent = function (collection) {
+    collection.map((item) => {
+      let title = item.getAttribute('id');
+      let article = item.querySelector('.description');
+      let articleTitle = document.createElement('h2');
+      articleTitle.setAttribute('class', 'sectionTitle');
+      articleTitle.textContent = title;
+      article.appendChild(articleTitle);      
+      console.log(article)
+    })
+  }
+
   createIdArr(sections)
   addSpecify(sections);
+  addTextContent(sections);
 }
 
 addArticles();

@@ -171,22 +171,27 @@ header {
 }
 
 /* Components */
-.pageTitle {
+.pageTitle, .sectionTitle {
   color: cyan;
   font-size: 20px;
   font-family: Montserrat, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
-  .pageTitle {
+  .pageTitle, .sectionTitle {
     font-size: calc(20px + 1vw);
   }
 }
 
 @media screen and (min-width: 1500px) {
-  .pageTitle {
+  .pageTitle, .sectionTitle {
     font-size: 40px;
   }
+}
+
+.sectionTitle {
+  color: cyan;
+  text-transform: uppercase;
 }
 
 .brand {

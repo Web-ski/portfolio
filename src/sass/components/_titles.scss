@@ -9,7 +9,6 @@
 
   @media screen and (min-width: $min-md) {
     font-size: calc(20px + 1vw);
-
   }
 
   @media screen and (min-width: $min-lg) {}
@@ -19,4 +18,10 @@
   @media screen and (min-width: $min-xxl) {
     font-size: 40px;
   }
+}
+
+.sectionTitle {
+  @extend .pageTitle;
+  color: $text-blue;
+  text-transform: uppercase;
 }
