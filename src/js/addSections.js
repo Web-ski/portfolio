@@ -19,8 +19,6 @@ const addSections = function () {
   }
 
   createSections(menuArr);
-
-  console.log(main.children)
 }
 
 addSections();
