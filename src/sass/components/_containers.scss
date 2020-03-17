@@ -6,6 +6,10 @@
   padding: 5vh 5vw;
   justify-content: center;
   align-items: center;
+  background-image: radial-gradient(circle at right, transparent 20%, rgba(0, 0, 0, 0.5)),
+  radial-gradient(circle at 70%, transparent 10%, rgba(0, 0, 0, 0.5)),
+  radial-gradient(circle at left, transparent 10%, rgba(0, 0, 0, 0.5));
+
 
   @media screen and (min-width: $min-md) {
     padding: calc(20px + 5vh) calc(20px + 5vw);

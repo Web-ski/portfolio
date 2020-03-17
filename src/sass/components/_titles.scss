@@ -23,7 +23,7 @@
 }
 
 .sectionTitle {
-  @extend .pageTitle;
+  font-family: $main-font;
   color: $text-white;
   text-transform: uppercase;
   font-size: calc(25px + 1vh);
