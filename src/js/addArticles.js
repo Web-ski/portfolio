@@ -41,7 +41,6 @@ const addArticles = function () {
       articleTitle.setAttribute('class', 'sectionTitle');
       articleTitle.textContent = title;
       article.appendChild(articleTitle);      
-      console.log(article)
     })
   }
 
