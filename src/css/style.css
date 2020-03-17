@@ -461,6 +461,13 @@ header {
   transition: .2s;
 }
 
+.section .photos {
+  background-color: rgba(5, 5, 5, 0.3);
+  min-height: 60vh;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 .section:nth-of-type(odd) .description {
   -webkit-transform: perspective(200px) rotateY(0deg);
           transform: perspective(200px) rotateY(0deg);
@@ -471,6 +478,16 @@ header {
           transform: perspective(200px) rotateY(5deg);
 }
 
+.section:nth-of-type(odd) .photos {
+  -webkit-transform: perspective(200px) rotateY(0deg);
+          transform: perspective(200px) rotateY(0deg);
+}
+
+.section:nth-of-type(odd) .photos:hover {
+  -webkit-transform: perspective(200px) rotateY(-5deg);
+          transform: perspective(200px) rotateY(-5deg);
+}
+
 .section:nth-of-type(even) .description {
   -webkit-transform: perspective(200px) rotateY(0deg);
           transform: perspective(200px) rotateY(0deg);
@@ -479,6 +496,16 @@ header {
 .section:nth-of-type(even) .description:hover {
   -webkit-transform: perspective(200px) rotateY(-5deg);
           transform: perspective(200px) rotateY(-5deg);
+}
+
+.section:nth-of-type(even) .photos {
+  -webkit-transform: perspective(200px) rotateY(0deg);
+          transform: perspective(200px) rotateY(0deg);
+}
+
+.section:nth-of-type(even) .photos:hover {
+  -webkit-transform: perspective(200px) rotateY(5deg);
+          transform: perspective(200px) rotateY(5deg);
 }
 
 /* Sections */

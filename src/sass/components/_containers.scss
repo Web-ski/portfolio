@@ -47,12 +47,26 @@
     transition: .2s;
   }
 
+  .photos {
+    background-color:rgba(5, 5, 5, 0.3);
+    min-height: 60vh;
+    transition: .2s;
+  }
+
   &:nth-of-type(odd) {
     .description {
       transform: perspective(200px) rotateY(0deg);
 
       &:hover {
         transform: perspective(200px) rotateY(5deg);
+      }
+    }
+
+    .photos {
+      transform: perspective(200px) rotateY(0deg);
+
+      &:hover {
+        transform: perspective(200px) rotateY(-5deg);
       }
     }
   }
@@ -63,6 +77,14 @@
 
       &:hover {
         transform: perspective(200px) rotateY(-5deg);
+      }
+    }
+
+    .photos {
+      transform: perspective(200px) rotateY(0deg);
+
+      &:hover {
+        transform: perspective(200px) rotateY(5deg);
       }
     }
   }
