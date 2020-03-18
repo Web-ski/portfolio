@@ -7,12 +7,18 @@ const addArticlesContent = function () {
   //tworzenie artykułów
   const addText = function (collection) {
     collection.map((item, index) => {
+      let id = item.getAttribute('id');
       let article = item.querySelector('.description');
       for(let i = 0; i < 2; i++) {
         let articleText = document.createElement('p');
         articleText.setAttribute('class', 'article__text');
         article.appendChild(articleText);
       }
+      let articleLink = document.createElement('a');
+      articleLink.setAttribute('class', 'article__link');
+      articleLink.setAttribute('href', `${id}.html`);
+      articleLink.textContent = 'Go for more';
+      article.appendChild(articleLink);
     })
   }
   
