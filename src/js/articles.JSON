@@ -29,5 +29,17 @@
       "text": "And here you can find contact with me.",
       "text2": "Please, send me an email, look at my LinkedIn profile or find me in Zeton project's team."
     }
+  ],
+  "icons": [
+    {
+      "icon1": "figma.png",
+      "icon2": "invision.png"
+    },
+    {
+
+    },
+    {
+      "icon1": "hej"
+    }
   ]
 }
