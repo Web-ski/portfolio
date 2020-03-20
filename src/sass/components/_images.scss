@@ -1,4 +1,4 @@
-.picture {  
+.picture {
   display: none;
   width: 100%;
   height: 100%;
@@ -35,15 +35,33 @@
     @media screen and (min-width: $min-md) {
       font-size: 16px;
     }
-  
+
     @media screen and (min-width: $min-lg) {
       font-size: 18px;
     }
-  
+
     @media screen and (min-width: $min-xl) {}
-  
+
     @media screen and (min-width: $min-xxl) {
       font-size: 20px;
     }
+  }
+}
+
+.photos {
+
+  .article__photo {
+    width: 80%;
+    padding: 10px 0;
+
+    @media screen and (min-width: $min-md) {}
+
+    @media screen and (min-width: $min-lg) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: $min-xl) {}
+
+    @media screen and (min-width: $min-xxl) {}
   }
 }

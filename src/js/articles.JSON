@@ -57,5 +57,19 @@
       "icon6": "gulp.png",
       "icon7": "slack.png"
     }
+  ],
+  "photos": [
+    {
+      "photo1": "ejts-screen.png",
+      "photo2": "ibo-screen.png"
+    },
+    {
+      "photo1": "ibo-screen.png",
+      "photo2": "ejts-screen.png"
+    },
+    {
+      "photo1": "ibo-screen.png",
+      "photo2": "ejts-screen.png"
+    }
   ]
 }

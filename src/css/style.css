@@ -437,6 +437,17 @@ header {
   }
 }
 
+.photos .article__photo {
+  width: 80%;
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 960px) {
+  .photos .article__photo {
+    width: 50%;
+  }
+}
+
 .section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,6 +529,11 @@ header {
 }
 
 .section .photos {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(5, 5, 5, 0.3);
   min-height: 60vh;
   -webkit-transition: .3s;

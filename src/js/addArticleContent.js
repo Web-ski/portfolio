@@ -38,27 +38,41 @@ const addArticlesContent = function () {
     parent.appendChild(icon);
   }
 
-  const getTexts = function () {
-    let articles = Array.from(main.getElementsByClassName('description'));
+  const createPhotos = function(parent, link) {
+    let photo = document.createElement('img');
+    photo.setAttribute('class', 'article__photo');
+    photo.setAttribute('src', `./images/photos/${link}`);
+    parent.appendChild(photo);
+  }
+
+  const getTextsAndIcons = function () {
+    let articles1 = Array.from(main.getElementsByClassName('description'));
+    let articles2 = Array.from(main.getElementsByClassName('photos'));
     fetch('http://localhost/my-test/portfolio/portfolio/src/js/articles.JSON')
       .then(resp => resp.json())
       .then(data => {
         let texts = data.texts;
         let icons = data.icons;
+        let photos = data.photos;
         texts.map((item, index) => {
-          articles[index].querySelectorAll('.article__text')[0].textContent = item.text;
-          articles[index].querySelectorAll('.article__text')[1].textContent = item.text2;
+          articles1[index].querySelectorAll('.article__text')[0].textContent = item.text;
+          articles1[index].querySelectorAll('.article__text')[1].textContent = item.text2;
         });
         icons.map((item, index) => {
-          let parent = articles[index].querySelector('.article__icons');       
+          let parent = articles1[index].querySelector('.article__icons');       
           for (let i = 1; i < 9; i++) {
             item[`icon${i}`] !== undefined && (createIcons(parent, item[`icon${i}`]));
           }
         });
+        photos.map((item, index) => {
+          let parent = articles2[index];       
+          item.photo1 !== undefined && (createPhotos(parent, item.photo1));
+          item.photo2 !== undefined && (createPhotos(parent, item.photo2));
+        })
       });
   }
 
-  getTexts();
+  getTextsAndIcons();
 }
 
 addArticlesContent();
