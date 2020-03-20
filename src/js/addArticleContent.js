@@ -38,11 +38,16 @@ const addArticlesContent = function () {
     parent.appendChild(icon);
   }
 
-  const createPhotos = function(parent, link) {
+  const createPhotos = function(parent, src) {
+    let box = document.createElement('a');
     let photo = document.createElement('img');
+    box.setAttribute('class', 'photo__link');
+    box.setAttribute('href', `${src[0]}`);
+    box.setAttribute('target', `_blank`);
+    parent.appendChild(box);
     photo.setAttribute('class', 'article__photo');
-    photo.setAttribute('src', `./images/photos/${link}`);
-    parent.appendChild(photo);
+    photo.setAttribute('src', `./images/photos/${src[1]}`);
+    box.appendChild(photo);
   }
 
   const getTextsAndIcons = function () {
@@ -65,7 +70,8 @@ const addArticlesContent = function () {
           }
         });
         photos.map((item, index) => {
-          let parent = articles2[index];       
+          let parent = articles2[index]; 
+          console.log(item.photo1)      
           item.photo1 !== undefined && (createPhotos(parent, item.photo1));
           item.photo2 !== undefined && (createPhotos(parent, item.photo2));
         })

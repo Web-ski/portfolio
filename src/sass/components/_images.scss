@@ -50,9 +50,13 @@
 
 .photos {
 
-  .article__photo {
+  .photo__link {
     width: 80%;
-    padding: 10px 0;
+    cursor: pointer;
+    transition: .2s;
+    margin: 10px 0;
+    line-height: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
     @media screen and (min-width: $min-md) {}
 
@@ -63,5 +67,18 @@
     @media screen and (min-width: $min-xl) {}
 
     @media screen and (min-width: $min-xxl) {}
+
+    &:hover {
+      width: 85%;
+
+      @media screen and (min-width: $min-lg) {
+        width: 55%;
+      }
+    }
+
+    .article__photo {
+      width: 100%;
+      margin: 0;
+    }
   }
 }

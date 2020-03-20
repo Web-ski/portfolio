@@ -437,15 +437,36 @@ header {
   }
 }
 
-.photos .article__photo {
+.photos .photo__link {
   width: 80%;
-  padding: 10px 0;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+  margin: 10px 0;
+  line-height: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-width: 960px) {
-  .photos .article__photo {
+  .photos .photo__link {
     width: 50%;
   }
+}
+
+.photos .photo__link:hover {
+  width: 85%;
+}
+
+@media screen and (min-width: 960px) {
+  .photos .photo__link:hover {
+    width: 55%;
+  }
+}
+
+.photos .photo__link .article__photo {
+  width: 100%;
+  margin: 0;
 }
 
 .section {
@@ -538,46 +559,6 @@ header {
   min-height: 60vh;
   -webkit-transition: .3s;
   transition: .3s;
-}
-
-.section:nth-of-type(odd) .description {
-  -webkit-transform: perspective(200px) rotateY(0deg);
-          transform: perspective(200px) rotateY(0deg);
-}
-
-.section:nth-of-type(odd) .description:hover {
-  -webkit-transform: perspective(200px) rotateY(5deg);
-          transform: perspective(200px) rotateY(5deg);
-}
-
-.section:nth-of-type(odd) .photos {
-  -webkit-transform: perspective(200px) rotateY(0deg);
-          transform: perspective(200px) rotateY(0deg);
-}
-
-.section:nth-of-type(odd) .photos:hover {
-  -webkit-transform: perspective(200px) rotateY(-5deg);
-          transform: perspective(200px) rotateY(-5deg);
-}
-
-.section:nth-of-type(even) .description {
-  -webkit-transform: perspective(200px) rotateY(0deg);
-          transform: perspective(200px) rotateY(0deg);
-}
-
-.section:nth-of-type(even) .description:hover {
-  -webkit-transform: perspective(200px) rotateY(-5deg);
-          transform: perspective(200px) rotateY(-5deg);
-}
-
-.section:nth-of-type(even) .photos {
-  -webkit-transform: perspective(200px) rotateY(0deg);
-          transform: perspective(200px) rotateY(0deg);
-}
-
-.section:nth-of-type(even) .photos:hover {
-  -webkit-transform: perspective(200px) rotateY(5deg);
-          transform: perspective(200px) rotateY(5deg);
 }
 
 .button__back-top, .arrow__top {

@@ -60,7 +60,7 @@
   ],
   "photos": [
     {
-      "photo1": "ejts-screen.png",
+      "photo1": [{"photo": "ejts-screen.png", "link": "...."}],
       "photo2": "ibo-screen.png"
     },
     {
@@ -68,8 +68,8 @@
       "photo2": "ejts-screen.png"
     },
     {
-      "photo1": "ibo-screen.png",
-      "photo2": "ejts-screen.png"
+      "photo1": ["https://www.armenian-institute-ibo.org/","ibo-screen.png"],
+      "photo2": ["https://www.journal-transformation.org/", "ejts-screen.png"]
     }
   ]
 }

@@ -57,40 +57,40 @@
     transition: .3s;
   }
 
-  &:nth-of-type(odd) {
-    .description {
-      transform: perspective(200px) rotateY(0deg);
+  // &:nth-of-type(odd) {
+  //   .description {
+  //     transform: perspective(200px) rotateY(0deg);
 
-      &:hover {
-        transform: perspective(200px) rotateY(5deg);
+  //     &:hover {
+  //       transform: perspective(200px) rotateY(5deg);
 
-      }
-    }
+  //     }
+  //   }
 
-    .photos {
-      transform: perspective(200px) rotateY(0deg);
+  //   .photos {
+  //     transform: perspective(200px) rotateY(0deg);
 
-      &:hover {
-        transform: perspective(200px) rotateY(-5deg);
-      }
-    }
-  }
+  //     &:hover {
+  //       transform: perspective(200px) rotateY(-5deg);
+  //     }
+  //   }
+  // }
 
-  &:nth-of-type(even) {
-    .description {
-      transform: perspective(200px) rotateY(0deg);
+  // &:nth-of-type(even) {
+  //   .description {
+  //     transform: perspective(200px) rotateY(0deg);
 
-      &:hover {
-        transform: perspective(200px) rotateY(-5deg);
-      }
-    }
+  //     &:hover {
+  //       transform: perspective(200px) rotateY(-5deg);
+  //     }
+  //   }
 
-    .photos {
-      transform: perspective(200px) rotateY(0deg);
+  //   .photos {
+  //     transform: perspective(200px) rotateY(0deg);
 
-      &:hover {
-        transform: perspective(200px) rotateY(5deg);
-      }
-    }
-  }
+  //     &:hover {
+  //       transform: perspective(200px) rotateY(5deg);
+  //     }
+  //   }
+  // }
 }
