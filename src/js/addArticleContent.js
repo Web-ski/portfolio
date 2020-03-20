@@ -51,7 +51,7 @@ const addArticlesContent = function () {
         });
         icons.map((item, index) => {
           let parent = articles[index].querySelector('.article__icons');       
-          for (let i = 1; i < 6; i++) {
+          for (let i = 1; i < 9; i++) {
             item[`icon${i}`] !== undefined && (createIcons(parent, item[`icon${i}`]));
           }
         });

@@ -9,16 +9,16 @@
       "text2": "I designed logos of organization and events, icons for websites, posters, infographics, book covers, as well as the layouts of websites."
     },
     {
+      "text": "Here you can see my last realizations of websites. From 2018 I done some courses in front-end technologies for get professional skills.",
+      "text2": "I have been started do websites in 2015, but at first on wix CMS. No, I make websites in front-end technologies: HTML5, CSS, Sass, JavaScript, jQuery, PHP."
+    },
+    {
+      "text": "Here you can see my front-end repositories. There are projects of websites and games, parts of code and steps of learning, on GitHub, GitLab and CodePen.",
+      "text2": "Apart my own repositories, look at repositories and site of Zeton project, in wich I'm engaging. It help me to learn cooperation's skills and technologies."
+    },
+    {
       "text": "Here you can find some exemples of my artistic activity. Because a part of me is an artist, creator and free soul.",
       "text2": "I have started my artistic way on early period of my life. Let see my works, paintings, drawings, and some information on my artistic activities."
-    },
-    {
-      "text": "Here you can see my last realizations of websites. From 2018 I done some courses in front-end technologies for get professional skills.",
-      "text2": "I have been started do websites in 2015, but at first on wix CMS. No, I make websites in front-end technologies: HTML5, CSS, SASS, JavaScript, jQuery."
-    },
-    {
-      "text": "Here you can see my front-end repositories. There are projects of websites, games, and parts of code, and steps of learning, on GitHub, GitLab and CodePen.",
-      "text2": "Apart my own repositories, look at repositories and site of Zeton project, in wich I'm engaging. It help me to learn cooperation's skills and technologies."
     },
     {
       "text": "Here you can find my CV. And this is also the path to my certificates and diplomas.",
@@ -40,7 +40,22 @@
       "icon2": "inkscape.png"
     },
     {
-      "icon1": "hej"
+      "icon1": "html5.png",
+      "icon2": "css3.png",
+      "icon3": "sass.png",
+      "icon4": "Bootstrap.png",
+      "icon5": "jQuery.png",
+      "icon6": "js.png",
+      "icon7": "php.png"
+    },
+    {
+      "icon1": "git.png",
+      "icon2": "github.png",
+      "icon3": "gitlab.png",
+      "icon4": "codepen.png",
+      "icon5": "npm.png",
+      "icon6": "gulp.png",
+      "icon7": "slack.png"
     }
   ]
 }
