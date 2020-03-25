@@ -64,12 +64,16 @@
       "photo2": ["https://www.figma.com/proto/DXcTKUZn5tQlgpQBuDQedR/%C5%BBeton?node-id=1%3A2&scaling=scale-down","zeton-prototype.png"]
     },
     {
-      "photo1": "ibo-screen.png",
-      "photo2": "ejts-screen.png"
+      "photo1": ["ui.html","icons-set.png"],
+      "photo2": ["https://pandemium.pl/?p=1185","pandemium-info.png"]
     },
     {
       "photo1": ["https://www.armenian-institute-ibo.org/","ibo-screen.png"],
       "photo2": ["https://www.journal-transformation.org/", "ejts-screen.png"]
+    },
+    {
+      "photo1": ["https://github.com/Web-ski","github-screen.png"],
+      "photo2": ["https://gitlab.com/Web-ski", "gitlab-screen.png"]
     }
   ]
 }
