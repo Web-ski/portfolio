@@ -1,7 +1,33 @@
 .brand {
-  color: grey;
-  font-size: 20px;
+  color: $text-blue;
+  font-size: 18px;
   font-family: $brand-font;
+  text-align: center;
+  line-height: 100%;
+  padding-top: 10px;
+  cursor: pointer;
+
+  @media screen and (min-width: $min-md) {
+    font-size: 22px;
+    padding-top: 0;
+  }
+
+  @media screen and (min-width: $min-lg) {}
+
+  @media screen and (min-width: $min-xl) {}
+
+  @media screen and (min-width: $min-xxl) {}
+
+  &:active {
+    color: $text-navy;
+    text-shadow: none;
+  }
+}
+
+.textConnector {
+  color: $text-blue;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
   text-align: center;
   line-height: 100%;
   padding-top: 10px;
@@ -16,4 +42,25 @@
   @media screen and (min-width: $min-xl) {}
 
   @media screen and (min-width: $min-xxl) {}
+}
+
+.article__text {
+  color: $text-blue;
+  font-family: $main-font;
+  line-height: 180%;
+  margin-bottom: 2vh;
+
+  @media screen and (min-width: $min-md) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $min-lg) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $min-xl) {}
+
+  @media screen and (min-width: $min-xxl) {
+    font-size: 20px;
+  }
 }

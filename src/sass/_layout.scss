@@ -1,13 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: $bg-black;
+  background-color: cyan; //darkcyan; //$bg-black;
+  height: auto;
   min-height: 100vh;
-  overflow: hidden;
+  //width: calc(100vw - 15px);
 }
 
 .wrapper {
-  background-color: $bg-white; //$bg-black;
-  width: 100vw;
+  background-color: $bg-wrapper;
+  max-width: 100vw;
+  width: 100%;
   height: 100vh;
+  overflow: hidden;  
+}
+
+.main {
+  height: 100%;
+  max-width: 100vw;
+  width: 100%;
+  overflow: hidden;
 }
 
 header {

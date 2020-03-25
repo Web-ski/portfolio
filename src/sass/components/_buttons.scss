@@ -1,0 +1,78 @@
+.button__back-top {
+  display: none;
+  background-color: $bg-black;
+  color: $text-white;
+  font-family: $main-font;
+  font-size: 14px;
+  position: fixed;
+  bottom: 25px;
+  right: 5vw;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  z-index: 99;
+  transition: .2s;
+  animation: none;  
+  
+  &:hover {
+    background-color: cyan;
+    color: $text-black;
+  }
+  
+  @media screen and (min-width: $min-md) {
+    right: calc(25px + 5vw);
+  }
+  
+  @media screen and (min-width: $min-lg) {}
+  
+  @media screen and (min-width: $min-xl) {}
+  
+  @media screen and (min-width: $min-xxl) {}
+  
+  
+}
+
+.arrow__top {
+  @extend .button__back-top;
+  line-height: 30px;
+  background-color: $bg-black;
+  z-index: 98;
+  font-size: 16px;
+  animation: around 3s infinite linear;
+  
+  @keyframes around {
+    from {
+      transform: rotateZ(0deg);
+    }
+    
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  &:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 20%;
+    background-color: cyan;
+    border-radius: 50%;
+    left: -5px;
+    top: -5px;
+  }
+
+  @media screen and (min-width: $min-md) {
+    right: calc(25px + 5vw);
+  }
+
+  @media screen and (min-width: $min-lg) {}
+
+  @media screen and (min-width: $min-xl) {}
+
+  @media screen and (min-width: $min-xxl) {}
+}
