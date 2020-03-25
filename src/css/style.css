@@ -438,6 +438,7 @@ header {
 }
 
 .photos .photo__link {
+  position: relative;
   width: 80%;
   cursor: pointer;
   -webkit-transition: .2s;
@@ -454,14 +455,32 @@ header {
   }
 }
 
-.photos .photo__link:hover {
-  width: 85%;
+.photos .photo__link:hover:after {
+  position: absolute;
+  content: 'See';
+  left: 50%;
+  top: 50%;
+  color: white;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  border: solid 1px white;
+  font-size: 16px;
+  line-height: 160%;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (min-width: 960px) {
-  .photos .photo__link:hover {
-    width: 55%;
-  }
+.photos .photo__link:hover .article__photo {
+  opacity: .5;
 }
 
 .photos .photo__link .article__photo {
