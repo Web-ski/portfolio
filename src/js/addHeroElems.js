@@ -166,7 +166,7 @@ const addHeroElems = function () {
   const portfolioTextsArr1 = ['portfolio', 'paweł', 'nieczuja-', 'ostrowski'];
   const portfolioTextsArr2 = ['of'];
   const portfolioTextsArr3 = ['menu'];
-  const portfolioTextsArr4 = ['ux', 'ui', 'webs', 'repo', 'art', 'cv', 'find'];
+  const portfolioTextsArr4 = ['ux', 'ui', 'webs', 'repo', 'cv', 'find'];
 
   portfolioTextsArr1.map((item, index) => addPortfolioText(item, index));
   addPortfolioText(portfolioTextsArr2[0], 4);
