@@ -71,7 +71,6 @@ const addArticlesContent = function () {
         });
         photos.map((item, index) => {
           let parent = articles2[index]; 
-          console.log(item.photo1)      
           item.photo1 !== undefined && (createPhotos(parent, item.photo1));
           item.photo2 !== undefined && (createPhotos(parent, item.photo2));
         })

@@ -66,6 +66,12 @@ const addHeroElems = function () {
       x = x - 10 * indx + 1;
       return x;
     }
+
+    if (choice === 'row') {
+      let x = lettersArr.length;
+      x = (x - 10) + indx;
+      return x;
+    }
   }
 
   //1.1
@@ -150,10 +156,11 @@ const addHeroElems = function () {
     }
 
     if (portfolioTextsArr4.includes(text) === true) {
-      (Array.from(text)).map((item, index) => {
+      ((Array.from(text)).reverse()).map((item, index) => {
         let group;
-        indxArr === indxArr && (group = text); //naprawić, ART jest undefined
-        addLettersLink(item, (index * 10), (indxArr + 1), 'upper', `pageTitle ${group} hide`, text);
+        indxArr === indxArr && (group = text); 
+        addLettersLink(item, ((index * 10) * -1), columnsNmbr('row', indxArr + 2), 'upper', `pageTitle ${group} hide`, text);
+        //addLettersLink(item, (index * 10), (indxArr + 1), 'upper', `pageTitle ${group} hide`, text);
       })
     }
   }
@@ -178,7 +185,7 @@ const addHeroElems = function () {
 
     collection.map(item => {
       let parent = item.parentIndex;
-
+      
       item.elems.map((item, index) => {
         let tag = document.createElement(item.tagName);
         item.attr.map(item => tag.setAttribute(item.attrType, item.attrName));

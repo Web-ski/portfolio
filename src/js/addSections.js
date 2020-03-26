@@ -4,11 +4,13 @@ const addSections = function () {
   const main = document.querySelector('.main');
   const menuArr = [];
 
-  Array.from(hero.children).map(item => {
+  const lastColumn = Array.from(hero.children).slice(-10);
+
+  lastColumn.map(item => {
     let dataMenu = item.getAttribute('data-menu');
     dataMenu !== null && (menuArr.includes(dataMenu) !== true && menuArr.push(dataMenu));
   })
-
+  
   const createSections = function (collection) {
     collection.map(item => {
       let elem = document.createElement('section');
