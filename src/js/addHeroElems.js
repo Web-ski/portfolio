@@ -51,11 +51,16 @@ const addHeroElems = function () {
 
   //dodanie brand
   const brand = new Elem(0, [{
-    'tagName': 'div',
+    'tagName': 'a',
     'attr': [{
       'attrType': 'class',
       'attrName': 'brand'
-    }],
+    },
+    {
+      'attrType': 'href',
+      'attrName': 'index.html'
+    }
+  ],
     'textNode': 'Nieczuja'
   }]);
 

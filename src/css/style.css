@@ -569,12 +569,6 @@ header {
   transition: .3s;
 }
 
-@media screen and (min-width: 1500px) {
-  .section .description {
-    height: 60vh;
-  }
-}
-
 .section .photos {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -585,12 +579,6 @@ header {
   min-height: 60vh;
   -webkit-transition: .3s;
   transition: .3s;
-}
-
-@media screen and (min-width: 1500px) {
-  .section .photos {
-    height: 60vh;
-  }
 }
 
 .button__back-top, .arrow__top {
