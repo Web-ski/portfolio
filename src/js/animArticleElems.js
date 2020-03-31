@@ -1,21 +1,29 @@
 const animArticleElems = function () {
   const hero = document.querySelector('.hero');
-  const description = Array.from(document.querySelectorAll('.description'));
+  const descriptionArr = Array.from(document.querySelectorAll('.section'));
+  const heroHeight = hero.offsetHeight;
+  const distanceArr = [];
   
-  const animArticleTitle = function () {
-    console.log(description);
-    const heroHeigth = hero.offsetHeight;
-    console.log(heroHeigth)
-  }
+  descriptionArr.map((item, index) => {
+    let sectionHeight = item.offsetHeight;
+    const distance = heroHeight + (sectionHeight * (index));
+    distanceArr.push(distance);
 
-  const animLoad = () =>  {
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-      animArticleTitle();
-      document.removeEventListener("scroll", animLoad);
-    } 
-  }
+    const animArticleTitle = function () {
+      console.log(descriptionArr);
+      console.log(index + ';' + distance)
+    }
+    
+    const animLoad = function () {
+      if (document.body.scrollTop > distance || document.documentElement.scrollTop > distance) {
+        animArticleTitle();
+        document.removeEventListener("scroll", animLoad);
+      } 
+    }
   
-  document.addEventListener('scroll', animLoad);
+    document.addEventListener('scroll', animLoad);
+
+  })  
 }
 
 animArticleElems();
