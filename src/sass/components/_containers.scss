@@ -52,6 +52,14 @@
     @media screen and (min-width: $min-xxl) {
       //height: 60vh;
     }
+
+    .sectionTitle, .article__text, .article__link, .article__icons {
+      visibility: hidden;
+    }
+
+    .sectionTitle--show {
+      visibility: visible;
+    }
   }
 
   .photos {

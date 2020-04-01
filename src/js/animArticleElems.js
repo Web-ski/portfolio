@@ -9,14 +9,14 @@ const animArticleElems = function () {
     const distance = heroHeight + (sectionHeight * (index));
     distanceArr.push(distance);
 
-    const animArticleTitle = function () {
-      console.log(descriptionArr);
-      console.log(index + ';' + distance)
+    const animArticleTitle = function (item) {
+      let child = item.querySelector('.description');
+      Array.from(child.children).map((item) => item.classList.add('sectionTitle--show'));
     }
     
     const animLoad = function () {
       if (document.body.scrollTop > distance || document.documentElement.scrollTop > distance) {
-        animArticleTitle();
+        animArticleTitle(item);
         document.removeEventListener("scroll", animLoad);
       } 
     }

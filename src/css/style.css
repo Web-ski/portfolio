@@ -569,6 +569,14 @@ header {
   transition: .3s;
 }
 
+.section .description .sectionTitle, .section .description .article__text, .section .description .article__link, .section .description .article__icons {
+  visibility: hidden;
+}
+
+.section .description .sectionTitle--show {
+  visibility: visible;
+}
+
 .section .photos {
   -ms-flex-pack: distribute;
       justify-content: space-around;
