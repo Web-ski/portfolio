@@ -569,12 +569,35 @@ header {
   transition: .3s;
 }
 
-.section .description .sectionTitle, .section .description .article__text, .section .description .article__link, .section .description .article__icons {
+.section .description .sectionTitle,
+.section .description .article__text,
+.section .description .article__link,
+.section .description .article__icons {
   visibility: hidden;
 }
 
 .section .description .sectionTitle--show {
   visibility: visible;
+  -webkit-animation: showElem 1s;
+          animation: showElem 1s;
+}
+
+@-webkit-keyframes showElem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showElem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .section .photos {

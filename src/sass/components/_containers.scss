@@ -19,9 +19,8 @@
 
   @media screen and (min-width: $min-xl) {}
 
-  @media screen and (min-width: $min-xxl) {
-  }
-  
+  @media screen and (min-width: $min-xxl) {}
+
   .article {
     @include flex-column;
     justify-content: space-between;
@@ -29,15 +28,15 @@
     height: 100%;
     flex: 1;
     padding: 25px;
-    
+
     @media screen and (min-width: $min-lg) {
       padding: 30px;
     }
-    
+
     @media screen and (min-width: $min-xl) {
       padding: 40px;
     }
-    
+
     @media screen and (min-width: $min-xxl) {
       padding: 50px;
       max-width: 700px;
@@ -53,12 +52,26 @@
       //height: 60vh;
     }
 
-    .sectionTitle, .article__text, .article__link, .article__icons {
+    .sectionTitle,
+    .article__text,
+    .article__link,
+    .article__icons {
       visibility: hidden;
     }
 
     .sectionTitle--show {
       visibility: visible;
+      animation: showElem 1s;
+
+      @keyframes showElem {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
     }
   }
 

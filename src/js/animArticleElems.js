@@ -10,8 +10,14 @@ const animArticleElems = function () {
     distanceArr.push(distance);
 
     const animArticleTitle = function (item) {
-      let child = item.querySelector('.description');
-      Array.from(child.children).map((item) => item.classList.add('sectionTitle--show'));
+      let children = Array.from(item.querySelectorAll('.article'));
+      children.map(item => {
+        console.log(item)
+        Array.from(item.children).map((item, index) => {
+          setTimeout(function() {
+            item.classList.add('sectionTitle--show')
+        }, index * 100) });      
+      })
     }
     
     const animLoad = function () {
