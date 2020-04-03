@@ -51,6 +51,11 @@
       "icon5": "npm.png",
       "icon6": "gulp.png",
       "icon7": "slack.png"
+    },
+    {
+    },
+    {
+      "icon1": "linkedin.png"
     }
   ],
   "photos": [
@@ -100,7 +105,7 @@
     {
       "photo1": [
         "https://github.com/Web-ski",
-        "envelop.png"
+        "mail.gif"
       ],
       "photo2": [
         "https://www.linkedin.com/in/pawe%C5%82-nieczuja-ostrowski-6b084a88/",
