@@ -9,11 +9,6 @@ const addArticles = function () {
     collection.map(item => {
       sectionsArr.push(item.getAttribute('id'));
 
-      //tworzenie radia
-      let aside = document.createElement('aside');
-      aside.setAttribute('class', 'section__radio');
-      item.appendChild(aside);
-
       for (let i = 0; i < 2; i++) {
         let article = document.createElement('article');
         article.setAttribute('class', 'article');
@@ -22,18 +17,6 @@ const addArticles = function () {
     })
   }
 
-  //nadawanie cech radiu
-  const addRadioSpecify = function (collection) {
-    collection.map((item, index) => {
-      for (let i = 0; i < collection.length; i++) {
-        let radioElem = document.createElement('a');
-        radioElem.setAttribute('class', 'radio__elem');
-        radioElem.setAttribute('href', `#${sectionsArr[i]}`);
-        index === i && radioElem.classList.add('radio__elem--active');
-        item.children[0].appendChild(radioElem);
-      }
-  })}
-
   //nadawanie cech artykułom
   const addArticleSpecify = function (collection) {
     collection.map((item, index) => {
@@ -41,10 +24,10 @@ const addArticles = function () {
       let sepcify2 = 'photos';
 
       if (index % 2 === 0) {
-        item.children[1].classList.add(sepcify1);
+        item.children[0].classList.add(sepcify1);
         item.lastElementChild.classList.add(sepcify2);
       } else {
-        item.children[1].classList.add(sepcify2);
+        item.children[0].classList.add(sepcify2);
         item.lastElementChild.classList.add(sepcify1);
       }
     })
@@ -63,7 +46,6 @@ const addArticles = function () {
   }
 
   createIdArr(sections);
-  addRadioSpecify(sections);
   addArticleSpecify(sections);
   addTextContent(sections);
 }

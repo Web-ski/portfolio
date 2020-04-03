@@ -12,7 +12,6 @@ const animArticleElems = function () {
     const animArticleTitle = function (item) {
       let children = Array.from(item.querySelectorAll('.article'));
       children.map(item => {
-        console.log(item)
         Array.from(item.children).map((item, index) => {
           setTimeout(function() {
             item.classList.add('sectionTitle--show')
