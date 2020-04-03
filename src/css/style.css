@@ -582,6 +582,28 @@ header {
           animation: showElem 1s;
 }
 
+.section .photos {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(5, 5, 5, 0.3);
+  min-height: 60vh;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.section .photos .photo__link {
+  visibility: hidden;
+}
+
+.section .photos .sectionTitle--show {
+  visibility: visible;
+  -webkit-animation: showElem 1s;
+          animation: showElem 1s;
+}
+
 @-webkit-keyframes showElem {
   from {
     opacity: 0;
@@ -598,18 +620,6 @@ header {
   to {
     opacity: 1;
   }
-}
-
-.section .photos {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(5, 5, 5, 0.3);
-  min-height: 60vh;
-  -webkit-transition: .3s;
-  transition: .3s;
 }
 
 .button__back-top, .arrow__top {

@@ -62,16 +62,6 @@
     .sectionTitle--show {
       visibility: visible;
       animation: showElem 1s;
-
-      @keyframes showElem {
-        from {
-          opacity: 0;
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
     }
   }
 
@@ -85,6 +75,25 @@
 
     @media screen and (min-width: $min-xxl) {
       //height: 60vh;
+    }
+
+    .photo__link {
+      visibility: hidden;
+    }
+
+    .sectionTitle--show {
+      visibility: visible;
+      animation: showElem 1s;
+    }
+
+    @keyframes showElem {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
   }
 
