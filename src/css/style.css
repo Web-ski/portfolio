@@ -349,18 +349,39 @@ header {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100vw;
-  left: 0%;
-  top: 40px;
+  width: 100%;
+  left: 50%;
+  top: 11px;
   padding: 0 5vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .section__radio {
+    top: 40px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .section__radio {
+    max-width: 700px;
+  }
 }
 
 .section__radio .radio__elem {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background-color: black;
+  background-color: cyan;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .section__radio .radio__elem {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .section__radio .radio__elem:hover {
@@ -368,7 +389,33 @@ header {
 }
 
 .section__radio .radio__elem--active {
+  position: relative;
   background-color: cyan;
+}
+
+.section__radio .radio__elem--active:after {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: solid 1px cyan;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+  .section__radio .radio__elem--active:after {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.section__radio .radio__elem--active:hover {
+  border: none;
 }
 
 .tile {
