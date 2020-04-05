@@ -53,7 +53,7 @@ const addArticlesContent = function () {
   const getTextsAndIcons = function () {
     let articles1 = Array.from(main.getElementsByClassName('description'));
     let articles2 = Array.from(main.getElementsByClassName('photos'));
-    fetch('http://localhost/my-test/portfolio/portfolio/src/js/articles.JSON')
+    fetch('http://192.168.0.172/my-test/portfolio/portfolio/src/js/articles.JSON')
       .then(resp => resp.json())
       .then(data => {
         let texts = data.texts;
