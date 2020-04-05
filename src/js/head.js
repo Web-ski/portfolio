@@ -1,4 +1,4 @@
-const head = function () {
+//const head = function () {
 
   const getPageName = () => {
     const pathArray = window.location.href.split('/');
@@ -6,6 +6,7 @@ const head = function () {
     return pathArrayLastElem[0];
   }
 
+  const pageTitle = document.title;
   const pageName = getPageName();
 
   const setHeadName = (item) => {
@@ -14,6 +15,7 @@ const head = function () {
 
   setHeadName(pageName);
 
-}
+//}
 
-head();
+//head();
+

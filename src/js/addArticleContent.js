@@ -3,6 +3,8 @@ const addArticlesContent = function () {
   const main = document.querySelector('.main');
   const sections = Array.from(main.getElementsByClassName('section'));
   const textsArr = [];
+  const url = 'http://localhost/my-test/portfolio/portfolio/src/js/articles.json';
+  //const url = 'http://192.168.0.172/my-test/portfolio/portfolio/src/js/articles.JSON';
 
   //tworzenie artykułów
   const addText = function (collection) {
@@ -53,7 +55,7 @@ const addArticlesContent = function () {
   const getTextsAndIcons = function () {
     let articles1 = Array.from(main.getElementsByClassName('description'));
     let articles2 = Array.from(main.getElementsByClassName('photos'));
-    fetch('http://192.168.0.172/my-test/portfolio/portfolio/src/js/articles.JSON')
+    fetch(url)
       .then(resp => resp.json())
       .then(data => {
         let texts = data.texts;
@@ -74,7 +76,10 @@ const addArticlesContent = function () {
           item.photo1 !== undefined && (createPhotos(parent, item.photo1));
           item.photo2 !== undefined && (createPhotos(parent, item.photo2));
         })
-      });
+      })
+      .catch(function(error) {
+        console.log('Looks like there was a problem: \n', error);
+      });      
   }
 
   getTextsAndIcons();
