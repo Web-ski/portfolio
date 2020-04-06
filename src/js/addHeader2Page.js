@@ -1,7 +1,7 @@
 const addHeader = function () {
 
   //konstruktor elementów
-  const header = document.querySelector('.header-for2Page');
+  const header = document.querySelector('.header2Page');
   const headerElemsArr = [];
 
   class Elem {
@@ -26,7 +26,6 @@ const addHeader = function () {
       })
       item.text !== undefined && (elem.textContent = item.text);
       item.parent.appendChild(elem);
-      console.log(elem)
     })
   }
 

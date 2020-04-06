@@ -1,0 +1,12 @@
+.header2Page {
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+
+  .brand {};
+  .pageTitle {
+    text-transform: uppercase;
+    max-width: min-content;
+  };
+}
