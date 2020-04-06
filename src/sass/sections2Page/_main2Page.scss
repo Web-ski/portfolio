@@ -1,0 +1,42 @@
+.main2Page {
+  .section {
+    min-height: auto;
+    background-color: white;
+
+    .sectionTitle {}
+
+    .sectionText {
+      color: $text-white;
+      font-family: $main-font;
+      line-height: 180%;
+      margin-bottom: 2vh;
+
+      @media screen and (min-width: $min-md) {
+        font-size: 16px;
+      }
+
+      @media screen and (min-width: $min-lg) {
+        font-size: 18px;
+      }
+
+      @media screen and (min-width: $min-xl) {}
+
+      @media screen and (min-width: $min-xxl) {
+        font-size: 20px;
+      }
+    }
+
+    .article {
+      width: 100%;
+
+      @media screen and (min-width: $min-xxl) {
+        max-width: 1200px;
+        min-width: 200px;
+      }
+
+      .articlePhoto {
+        width: 10%;
+      }
+    }
+  }
+}

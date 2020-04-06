@@ -877,4 +877,49 @@ header {
   max-width: -moz-min-content;
   max-width: min-content;
 }
+
+.main2Page .section {
+  min-height: auto;
+  background-color: white;
+}
+
+.main2Page .section .sectionText {
+  color: #FFFFFF;
+  font-family: Montserrat, sans-serif;
+  line-height: 180%;
+  margin-bottom: 2vh;
+}
+
+@media screen and (min-width: 768px) {
+  .main2Page .section .sectionText {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main2Page .section .sectionText {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .main2Page .section .sectionText {
+    font-size: 20px;
+  }
+}
+
+.main2Page .section .article {
+  width: 100%;
+}
+
+@media screen and (min-width: 1500px) {
+  .main2Page .section .article {
+    max-width: 1200px;
+    min-width: 200px;
+  }
+}
+
+.main2Page .section .article .articlePhoto {
+  width: 10%;
+}
 /*# sourceMappingURL=style.css.map */
