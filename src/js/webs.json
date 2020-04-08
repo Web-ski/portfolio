@@ -19,7 +19,7 @@
           },
           {
             "p": "sectionText",
-            "text": "In 2018, I started learning how to create websites professionally. In 2019, I also started creating the first pages myself, using HTML, CSS, Sass, JavaScript, jQuery, Bootstrap. I present them here."
+            "text": "In 2018, I started learning how to create websites professionally. In 2019, I also started creating the first pages myself, using HTML, CSS, Sass, JavaScript, jQuery, Bootstrap. I present them in sections below."
           }
         ]
       },
@@ -27,23 +27,26 @@
         "article": "article",
         "children": [
           {
-            "img": "articlePhoto",
+            "div": "photo__box"
+          },
+          {
+            "img": "article__photo",
             "src": "riep-wix-screen.png"
           },
           {
-            "img": "articlePhoto",
+            "img": "article__photo",
             "src": "diaspora-screen.png"
           },
           {
-            "img": "articlePhoto",
+            "img": "article__photo",
             "src": "ibo-screen.png"
           },
           {
-            "img": "articlePhoto",
+            "img": "article__photo",
             "src": "ibo-screen.png"
           },
           {
-            "img": "articlePhoto",
+            "img": "article__photo",
             "src": "ibo-screen.png"
           }        
         ]

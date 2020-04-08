@@ -1,8 +1,8 @@
 .main2Page {
   background-color: white;
   background-image: radial-gradient(circle at right, transparent 20%, rgba(0, 0, 0, 0.5)),
-  radial-gradient(circle at 70%, transparent 10%, rgba(0, 0, 0, 0.5)),
-  radial-gradient(circle at left, transparent 10%, rgba(0, 0, 0, 0.5));
+    radial-gradient(circle at 70%, transparent 10%, rgba(0, 0, 0, 0.5)),
+    radial-gradient(circle at left, transparent 10%, rgba(0, 0, 0, 0.5));
   @include flex-column;
   justify-content: flex-start;
   align-items: center;
@@ -53,20 +53,35 @@
       &:last-of-type {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
       }
 
-      .articlePhoto {
-        width: 50%;
-        
-        &:first-of-type {
-          width: 100%;
+      .photo__box {
+        width: 300px;
+        height: 200px;
+        background-color: grey;
+        margin: 1%;
+
+        @media screen and (min-width: $min-md) {
+          width: 500px;
+          height: 300px;
+          margin: 3px;
         }
       }
 
-      .articlePhoto--active {
-        
+      .article__photo {
+        width: 31%;
+        margin: 1%;
+
+        @media screen and (min-width: $min-md) {
+          width: 160px;
+          margin: 3px;
+        }
+      }
+
+      .article__photo--active {
+        border: solid 2px cyan;
       }
     }
   }

@@ -956,19 +956,42 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
-.main2Page .section .article .articlePhoto {
-  width: 50%;
+.main2Page .section .article .photo__box {
+  width: 300px;
+  height: 200px;
+  background-color: grey;
+  margin: 1%;
 }
 
-.main2Page .section .article .articlePhoto:first-of-type {
-  width: 100%;
+@media screen and (min-width: 768px) {
+  .main2Page .section .article .photo__box {
+    width: 500px;
+    height: 300px;
+    margin: 3px;
+  }
+}
+
+.main2Page .section .article .article__photo {
+  width: 31%;
+  margin: 1%;
+}
+
+@media screen and (min-width: 768px) {
+  .main2Page .section .article .article__photo {
+    width: 160px;
+    margin: 3px;
+  }
+}
+
+.main2Page .section .article .article__photo--active {
+  border: solid 2px cyan;
 }
 /*# sourceMappingURL=style.css.map */
