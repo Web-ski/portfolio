@@ -878,9 +878,39 @@ header {
   max-width: min-content;
 }
 
+.main2Page {
+  background-color: white;
+  background-image: radial-gradient(circle at right, transparent 20%, rgba(0, 0, 0, 0.5)), radial-gradient(circle at 70%, transparent 10%, rgba(0, 0, 0, 0.5)), radial-gradient(circle at left, transparent 10%, rgba(0, 0, 0, 0.5));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main2Page .section {
   min-height: auto;
-  background-color: white;
+  background-image: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1500px) {
+  .main2Page .section {
+    min-width: 200px;
+  }
 }
 
 .main2Page .section .sectionText {
@@ -910,16 +940,35 @@ header {
 
 .main2Page .section .article {
   width: 100%;
+  max-width: 60%;
 }
 
-@media screen and (min-width: 1500px) {
-  .main2Page .section .article {
-    max-width: 1200px;
-    min-width: 200px;
-  }
+.main2Page .section .article:first-of-type {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.main2Page .section .article:last-of-type {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .main2Page .section .article .articlePhoto {
-  width: 10%;
+  width: 50%;
+}
+
+.main2Page .section .article .articlePhoto:first-of-type {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

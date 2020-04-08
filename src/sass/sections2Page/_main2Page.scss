@@ -1,7 +1,22 @@
 .main2Page {
+  background-color: white;
+  background-image: radial-gradient(circle at right, transparent 20%, rgba(0, 0, 0, 0.5)),
+  radial-gradient(circle at 70%, transparent 10%, rgba(0, 0, 0, 0.5)),
+  radial-gradient(circle at left, transparent 10%, rgba(0, 0, 0, 0.5));
+  @include flex-column;
+  justify-content: flex-start;
+  align-items: center;
+
   .section {
     min-height: auto;
-    background-color: white;
+    background-image: none;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: $min-xxl) {
+      //max-width: 1200px;
+      min-width: 200px;
+    }
 
     .sectionTitle {}
 
@@ -28,14 +43,30 @@
 
     .article {
       width: 100%;
+      max-width: 60%;
 
-      @media screen and (min-width: $min-xxl) {
-        max-width: 1200px;
-        min-width: 200px;
+      &:first-of-type {
+        flex: 2;
+        //width: 60%;
+      }
+
+      &:last-of-type {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
       }
 
       .articlePhoto {
-        width: 10%;
+        width: 50%;
+        
+        &:first-of-type {
+          width: 100%;
+        }
+      }
+
+      .articlePhoto--active {
+        
       }
     }
   }
