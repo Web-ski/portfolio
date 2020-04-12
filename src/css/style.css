@@ -176,7 +176,7 @@ header {
 }
 
 /* Components */
-.pageTitle {
+.pageTitle, .articleTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,13 +194,13 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .pageTitle {
+  .pageTitle, .articleTitle {
     font-size: calc(20px + 1vw);
   }
 }
 
 @media screen and (min-width: 1500px) {
-  .pageTitle {
+  .pageTitle, .articleTitle {
     font-size: 40px;
   }
 }
@@ -234,6 +234,89 @@ header {
 @media screen and (min-width: 1500px) {
   .sectionTitle {
     font-size: calc(40px + 1vw);
+  }
+}
+
+.articleTitle {
+  position: relative;
+  font-size: calc(20px);
+  margin-bottom: 2vh;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: flex-start;
+  line-height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .articleTitle {
+    font-size: calc(20px + 1vw);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .articleTitle {
+    font-size: calc(25px + 1vw);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .articleTitle {
+    font-size: calc(30px + 1vw);
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .articleTitle {
+    font-size: calc(30px + 1vw);
+  }
+}
+
+.articleNumber {
+  color: cyan;
+  background-color: #111111;
+  font-family: Montserrat, sans-serif;
+  position: absolute;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  padding: 5px 10px;
+  font-size: 30px;
+  height: 100px;
+  width: 90px;
+  left: -13px;
+  top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .articleNumber {
+    top: calc(20px + 25px + 5vh);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .articleNumber {
+    top: calc(20px + 30px + 5vh);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .articleNumber {
+    top: calc(20px + 40px + 5vh);
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .articleNumber {
+    top: calc(20px + 50px + 5vh);
   }
 }
 
@@ -337,6 +420,10 @@ header {
   .article__link {
     font-size: 20px;
   }
+}
+
+.article__link:hover {
+  color: cyan;
 }
 
 .section__radio {
@@ -871,7 +958,7 @@ header {
   }
 }
 
-.header2Page .pageTitle {
+.header2Page .pageTitle, .header2Page .articleTitle {
   text-transform: uppercase;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
@@ -941,6 +1028,7 @@ header {
 .main2Page .section .article {
   width: 100%;
   max-width: 60%;
+  position: relative;
 }
 
 .main2Page .section .article:first-of-type {

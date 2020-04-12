@@ -28,13 +28,19 @@ const addSections2Page = function () {
   }
 
   //tworzenie sekcji
+  let sectionNumber = 0.1;
+
   const addSections = function (collection, parent) {
     collection.map((item, index) => {
+      if (item.section !== undefined) {
+        sectionNumber = index;
+      }
       let elem = document.createElement(Object.keys(item)[0]);
       elem.setAttribute('class', Object.values(item)[0]);
       item.text !== undefined && (elem.textContent = item.text);
       item.src !== undefined && (elem.setAttribute('src', `./images/photos/${item.src}`));
-      item.data !== undefined && (elem.setAttribute(`data-${item.data}`, item.data + index));
+      item.href !== undefined && (elem.setAttribute('href', `${item.href}`));
+      item.data !== undefined && (elem.setAttribute(`data-${item.data}`, item.data + sectionNumber));
       parent.appendChild(elem);
       item.children !== undefined && (addSections(item.children, elem));
       //parent.children[0].getAttribute(`data-${item.data}`) !== null && (addPhotoViewer(item.data, index));

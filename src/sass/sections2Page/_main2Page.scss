@@ -20,6 +20,8 @@
 
     .sectionTitle {}
 
+    .articleTitle {}
+
     .sectionText {
       color: $text-white;
       font-family: $main-font;
@@ -44,6 +46,7 @@
     .article {
       width: 100%;
       max-width: 60%;
+      position: relative;
 
       &:first-of-type {
         flex: 2;

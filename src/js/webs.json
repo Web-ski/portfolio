@@ -53,8 +53,76 @@
           {
             "img": "article__photo",
             "src": "ibo-wix-screen.png"
-          }         
+          }
         ]
+      }
+    ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "articleTitle",
+            "text": "Research Institute of Armenian Studies"
+          },
+          {
+            "p": "sectionText",
+            "text": "In 2019 I made the website of the academic association 'Research Institute of Armenian Studies' (originally: 'Instytut Badań Ormiańskich')."
+          },
+          {
+            "p": "sectionText",
+            "text": "In the first version I had created this project by CMS wix in 2018. It was a part of my professional activity at that time."
+          },
+          {
+            "p": "sectionText",
+            "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub. I was also UX and UI designer of this website."
+          },
+          {
+            "a": "article__link",
+            "href": "https://www.armenian-institute-ibo.org/",
+            "text": "Go to the website"
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "children": [
+          {
+            "div": "photo__box",
+            "data": "viewer"
+          },
+          {
+            "img": "article__photo",
+            "src": "missionart-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "riep-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "diaspora-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ejts-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "wierszoatak-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ibo-wix-screen.png"
+          }
+        ]
+      },
+      {
+        "aside": "articleNumber",
+        "text": "2019"
       }
     ]
   }
