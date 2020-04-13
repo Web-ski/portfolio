@@ -989,9 +989,9 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 1500px) {
@@ -1051,9 +1051,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1127,5 +1127,9 @@ header {
 
 .main2Page .section .article .article__photo--active {
   border: solid 5px cyan;
+}
+
+.main2Page .section:first-of-type .article {
+  background-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,7 +11,7 @@
     min-height: auto;
     background-image: none;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     @media screen and (min-width: $min-xxl) {
       //max-width: 1200px;
@@ -41,6 +41,7 @@
       @media screen and (min-width: $min-xxl) {
         font-size: 20px;
       }
+
     }
 
     .article {
@@ -49,7 +50,6 @@
       position: relative;
       align-items: flex-start;
       height: auto;
-
 
       &:first-of-type {
         flex: 2;
@@ -60,7 +60,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
+        //background-color: $bg-black;
 
         @media screen and (min-width: $min-md) {
           width: min-content;
@@ -120,6 +121,12 @@
 
       .article__photo--active {
         border: solid 5px cyan;
+      }
+    }
+
+    &:first-of-type {
+      .article {
+        background-color: transparent;
       }
     }
   }

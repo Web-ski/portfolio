@@ -113,5 +113,61 @@
         "text": "2019"
       }
     ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "articleTitle",
+            "text": "European Journal of Transformation Studies"
+          },
+          {
+            "p": "sectionText",
+            "text": "In 2019 I made the website of the academic association 'Research Institute of Armenian Studies' (originally: 'Instytut Badań Ormiańskich')."
+          },
+          {
+            "p": "sectionText",
+            "text": "In the first version I had created this project by CMS wix in 2018. It was a part of my professional activity at that time."
+          },
+          {
+            "p": "sectionText",
+            "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+          },
+          {
+            "a": "article__link",
+            "href": "https://www.armenian-institute-ibo.org/",
+            "text": "Go to the website"
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "children": [
+          {
+            "div": "photo__box popup",
+            "data": "viewer"
+          },
+          {
+            "img": "article__photo",
+            "src": "ejts-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ibo2-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ibo3-screen.png"
+          }
+        ]
+      },
+      {
+        "aside": "articleNumber",
+        "text": "2019"
+      }
+    ]
   }
 ]
