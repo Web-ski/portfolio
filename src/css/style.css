@@ -989,9 +989,9 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media screen and (min-width: 1500px) {
@@ -1029,6 +1029,10 @@ header {
   width: 100%;
   max-width: 60%;
   position: relative;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: auto;
 }
 
 .main2Page .section .article:first-of-type {
@@ -1066,7 +1070,7 @@ header {
   margin: 1%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
 }
 
 @media screen and (min-width: 768px) {

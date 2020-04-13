@@ -78,7 +78,7 @@
           },
           {
             "p": "sectionText",
-            "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub. I was also UX and UI designer of this website."
+            "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
           },
           {
             "a": "article__link",
@@ -91,32 +91,20 @@
         "article": "article",
         "children": [
           {
-            "div": "photo__box",
+            "div": "photo__box popup",
             "data": "viewer"
           },
           {
             "img": "article__photo",
-            "src": "missionart-wix-screen.png"
+            "src": "ibo-screen.png"
           },
           {
             "img": "article__photo",
-            "src": "riep-wix-screen.png"
+            "src": "ibo2-screen.png"
           },
           {
             "img": "article__photo",
-            "src": "diaspora-screen.png"
-          },
-          {
-            "img": "article__photo",
-            "src": "ejts-wix-screen.png"
-          },
-          {
-            "img": "article__photo",
-            "src": "wierszoatak-wix-screen.png"
-          },
-          {
-            "img": "article__photo",
-            "src": "ibo-wix-screen.png"
+            "src": "ibo3-screen.png"
           }
         ]
       },

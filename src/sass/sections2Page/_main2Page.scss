@@ -11,7 +11,7 @@
     min-height: auto;
     background-image: none;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     @media screen and (min-width: $min-xxl) {
       //max-width: 1200px;
@@ -47,6 +47,9 @@
       width: 100%;
       max-width: 60%;
       position: relative;
+      align-items: flex-start;
+      height: auto;
+
 
       &:first-of-type {
         flex: 2;
@@ -71,7 +74,7 @@
         margin: 1%;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: center;
 
         @media screen and (min-width: $min-md) {
           width: 100%;
