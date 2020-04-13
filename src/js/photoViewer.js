@@ -9,12 +9,9 @@ const photoViewer = function (name) {
   //tworzenie sekcji
   const addViewer = function (collection) {
     collection.shift();
-
     //console.log(collection[0].getAttributeNode('src').value)
     collection[0].classList.add('article__photo--active');
     photoBox.style.backgroundImage = `url(${collection[0].getAttributeNode('src').value})`;
-    //elem.style.backgroundImage =  
-
     collection.map((item, index) => {
       item.addEventListener("click", function () {
         collection.map((item) => {
@@ -22,21 +19,28 @@ const photoViewer = function (name) {
         });
         item.classList.add('article__photo--active');
         photoBox.style.backgroundImage = `url(${item.getAttributeNode('src').value})`;
+        if (photoBox.children[0] !== undefined) {
+          photoBox.children[0].style.backgroundImage = `url(${item.getAttributeNode('src').value})`;
+        }
       })
     });
   }
 
+  //tworzenie modala
+  const addModal = function (parent) {
+    console.log(parent)
+    let modal = document.createElement('aside');
+    modal.setAttribute('class', 'modal');
+    modal.style.backgroundImage = parent.style.backgroundImage;
+    parent.appendChild(modal);
+    parent.addEventListener("click", function () {
+      modal.classList.toggle('modal--active');
+    });
+  }
 
   addViewer(parentArticleChildren);
 
-  // function addPopup(elem) {
-  //   elem.addEventListener("click", function () {
-  //     alert(elem)
-  //   })
-  // }
-
-  // addPopup(photoBox)
-  //console.log(photoBox)
+  photoBox.classList.contains('modal__parent') === true && (addModal(photoBox));
 }
 
 //photoViewer();

@@ -91,7 +91,7 @@
         "article": "article",
         "children": [
           {
-            "div": "photo__box popup",
+            "div": "photo__box modal__parent",
             "data": "viewer"
           },
           {
@@ -147,7 +147,7 @@
         "article": "article",
         "children": [
           {
-            "div": "photo__box popup",
+            "div": "photo__box modal__parent",
             "data": "viewer"
           },
           {
@@ -203,7 +203,7 @@
         "article": "article",
         "children": [
           {
-            "div": "photo__box popup",
+            "div": "photo__box modal__parent",
             "data": "viewer"
           },
           {
