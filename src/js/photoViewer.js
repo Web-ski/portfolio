@@ -36,6 +36,7 @@ const photoViewer = function (name) {
   // }
 
   // addPopup(photoBox)
+  //console.log(photoBox)
 }
 
 //photoViewer();

@@ -5,25 +5,27 @@ const addSections2Page = function () {
   let url = `http://localhost/my-test/portfolio/portfolio/src/js/${pageName}.json`;
 
   //dodawanie data-viewer
+  let viewerNumber = 0.1;
+
   const setPhotoViewer = function (item) {
     let dataName = Object.keys(item)[1];
     let viewerName = Object.values(item)[1];
-
-    let dataElems = Array.from(main.querySelectorAll(`[${dataName}-${viewerName}]`));
-    dataElems.map((item, index) => {
-      let name = viewerName + index;
-      let elem = document.createElement('script');
-      elem.setAttribute('type', 'text/javascript');
-      elem.textContent = `photoViewer("${name}")`;
-      document.body.appendChild(elem);
-    })
+    let name = viewerName + viewerNumber;
+    let elem = document.createElement('script');
+    elem.setAttribute('type', 'text/javascript');
+    elem.textContent = `photoViewer("${name}")`;
+    document.body.appendChild(elem);
   }
 
   const addPhotoViewer = (collection, parent) => {
     collection.map((item, index) => {
+      if (item.section !== undefined) {
+        viewerNumber = index;
+      }
       item.section !== undefined && (addPhotoViewer(item.children, item.section));
       item.article !== undefined && (addPhotoViewer(item.children, item.article));
       item.data !== undefined && (setPhotoViewer(item));
+      //item.section !== undefined && (console.log(viewerNumber));
     })
   }
 
