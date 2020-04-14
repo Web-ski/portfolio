@@ -53,14 +53,14 @@ const addHeroElems = function () {
   const brand = new Elem(0, [{
     'tagName': 'a',
     'attr': [{
-      'attrType': 'class',
-      'attrName': 'brand'
-    },
-    {
-      'attrType': 'href',
-      'attrName': 'index.html'
-    }
-  ],
+        'attrType': 'class',
+        'attrName': 'brand'
+      },
+      {
+        'attrType': 'href',
+        'attrName': 'index.html'
+      }
+    ],
     'textNode': 'Nieczuja'
   }]);
 
@@ -68,8 +68,8 @@ const addHeroElems = function () {
   const columnsNmbr = function (choice, indx) {
 
     function evenTest(nmbr) {
-      if(nmbr % 2 === 0) {
-        return nmbr; 
+      if (nmbr % 2 === 0) {
+        return nmbr;
       } else {
         return nmbr + 5;
       }
@@ -82,8 +82,8 @@ const addHeroElems = function () {
     }
 
     if (choice === 'row') {
-            let x = evenTest(lettersArr.length / 2);
-            console.log(x)
+      let x = evenTest(lettersArr.length / 2);
+      // console.log(x)
       x = (x - 20) + indx;
       return x;
     }
@@ -103,7 +103,7 @@ const addHeroElems = function () {
 
   //1.1
   const addLettersLink = function (item, position, index, style, className, id) {
-    console.log(position,index)
+    //console.log(position, index)
     let letter = new Elem(position + index, [{
       'tagName': 'a',
       'attr': [{
@@ -174,13 +174,13 @@ const addHeroElems = function () {
     if (portfolioTextsArr4.includes(text) === true) {
       (Array.from(text)).map((item, index) => {
         let group;
-        indxArr === indxArr && (group = text); 
-        if(text.length < 3) {
+        indxArr === indxArr && (group = text);
+        if (text.length < 3) {
           addLettersLink(item, ((index + 1) * 10), columnsNmbr('row', indxArr + 2), 'upper', `pageTitle ${group} hide`, text);
           //addLettersLink(item, (index * 10), (indxArr + 1), 'upper', `pageTitle ${group} hide`, text);
           //console.log((index * 1) * 1)
         }
-        if(text.length >= 3) {
+        if (text.length >= 3) {
           addLettersLink(item, (index * 10), columnsNmbr('row', indxArr + 2), 'upper', `pageTitle ${group} hide`, text);
         }
       })
@@ -208,7 +208,7 @@ const addHeroElems = function () {
     collection.map(item => {
       //console.log(item.parentIndex)
       let parent = item.parentIndex;
-      
+
       item.elems.map((item, index) => {
         let tag = document.createElement(item.tagName);
         item.attr.map(item => tag.setAttribute(item.attrType, item.attrName));
