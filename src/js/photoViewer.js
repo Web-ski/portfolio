@@ -2,6 +2,7 @@ const photoViewer = function (name) {
   //console.log(name)
 
   const main = document.querySelector(".main2Page");
+  const wrapper = document.querySelector(".wrapper2Page");
   const photoBox = main.querySelector(`[data-viewer="${name}"]`);
   const parentArticle = photoBox.parentElement;
   const parentArticleChildren = Array.from(parentArticle.children);
@@ -33,9 +34,16 @@ const photoViewer = function (name) {
     modal.setAttribute('class', 'modal');
     modal.style.backgroundImage = parent.style.backgroundImage;
     parent.appendChild(modal);
-    parent.addEventListener("click", function () {
+    parent.addEventListener("click", function (event) {
+      event.stopPropagation();
       modal.classList.toggle('modal--active');
-    });
+      wrapper.style.backgroundColor = 'red';
+
+      window.addEventListener("click", function (event) {
+        event.stopPropagation();
+        modal.classList.contains('modal--active') === true && modal.classList.remove('modal--active');
+      }, false);
+    }, false);
   }
 
   addViewer(parentArticleChildren);

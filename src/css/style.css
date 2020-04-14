@@ -657,22 +657,30 @@ header {
   margin: 0;
 }
 
-.modal {
-  position: fixed;
-  display: none;
-  height: calc(80vw * 0.6);
-  width: 80vw;
-  top: 50%;
-  left: 50%;
-  padding: 10px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.modal__parent {
+  cursor: pointer;
 }
 
-.modal--active {
+.modal__parent .modal {
+  position: fixed;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__parent .modal {
+    background-size: 70%;
+  }
+}
+
+.modal__parent .modal--active {
   display: block;
   z-index: 99;
 }
@@ -987,7 +995,7 @@ header {
 
 .main2Page {
   background-color: white;
-  background-image: radial-gradient(circle at right, transparent 20%, rgba(0, 0, 0, 0.5)), radial-gradient(circle at 70%, transparent 10%, rgba(0, 0, 0, 0.5)), radial-gradient(circle at left, transparent 10%, rgba(0, 0, 0, 0.5));
+  background-image: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1005,7 +1013,7 @@ header {
 
 .main2Page .section {
   min-height: auto;
-  background-image: none;
+  background-image: radial-gradient(circle at right, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.4)), radial-gradient(circle at 70%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.4)), radial-gradient(circle at left, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.4));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
