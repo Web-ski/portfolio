@@ -506,64 +506,6 @@ header {
   border: none;
 }
 
-.tile {
-  -webkit-animation: tileMoveTo 1s;
-          animation: tileMoveTo 1s;
-}
-
-@-webkit-keyframes tileMoveTo {
-  from {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@keyframes tileMoveTo {
-  from {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-.tileBack {
-  -webkit-animation: tileMoveBack 1s;
-          animation: tileMoveBack 1s;
-}
-
-@-webkit-keyframes tileMoveBack {
-  to {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  from {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@keyframes tileMoveBack {
-  to {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  from {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-.hide {
-  display: none;
-}
-
 .picture {
   display: none;
   width: 100%;
@@ -580,6 +522,10 @@ header {
     background-size: cover;
     background-position: center;
   }
+}
+
+.picture--hide {
+  display: none;
 }
 
 .article__icons .article__icon {
@@ -719,6 +665,64 @@ header {
 .modal__parent .modal--active {
   display: block;
   z-index: 99;
+}
+
+.tile {
+  -webkit-animation: tileMoveTo 1s;
+          animation: tileMoveTo 1s;
+}
+
+@-webkit-keyframes tileMoveTo {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes tileMoveTo {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.tileBack {
+  -webkit-animation: tileMoveBack 1s;
+          animation: tileMoveBack 1s;
+}
+
+@-webkit-keyframes tileMoveBack {
+  to {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  from {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes tileMoveBack {
+  to {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  from {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.hide {
+  display: none;
 }
 
 .section {

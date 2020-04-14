@@ -25,6 +25,10 @@
   @media screen and (min-width: $min-xxl) {}
 }
 
+.picture--hide {
+  display: none;
+}
+
 .article__icons {
   .article__icon {
     //width: 40px;
