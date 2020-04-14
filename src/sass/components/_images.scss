@@ -120,10 +120,20 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%;
+    animation: sizeMover .5s ease-in;
+
+    @keyframes sizeMover {
+      from{background-size: 10%;} to {background-size: 80%;}
+    }
 
     @media screen and (min-width: $min-xl) {
     background-size: 70%;
+
+    @keyframes sizeMover {
+      from{background-size: 5%;} to {background-size: 70%;}
     }
+   }
+
   }
   
   .modal--active {

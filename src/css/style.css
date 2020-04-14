@@ -672,11 +672,47 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
+  -webkit-animation: sizeMover .5s ease-in;
+          animation: sizeMover .5s ease-in;
+}
+
+@-webkit-keyframes sizeMover {
+  from {
+    background-size: 10%;
+  }
+  to {
+    background-size: 80%;
+  }
+}
+
+@keyframes sizeMover {
+  from {
+    background-size: 10%;
+  }
+  to {
+    background-size: 80%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .modal__parent .modal {
     background-size: 70%;
+  }
+  @-webkit-keyframes sizeMover {
+    from {
+      background-size: 5%;
+    }
+    to {
+      background-size: 70%;
+    }
+  }
+  @keyframes sizeMover {
+    from {
+      background-size: 5%;
+    }
+    to {
+      background-size: 70%;
+    }
   }
 }
 

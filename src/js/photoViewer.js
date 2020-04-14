@@ -37,7 +37,6 @@ const photoViewer = function (name) {
     parent.addEventListener("click", function (event) {
       event.stopPropagation();
       modal.classList.toggle('modal--active');
-      wrapper.style.backgroundColor = 'red';
 
       window.addEventListener("click", function (event) {
         event.stopPropagation();
