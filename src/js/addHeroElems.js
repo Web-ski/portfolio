@@ -66,6 +66,15 @@ const addHeroElems = function () {
 
   //sprawdzanie ilości kolumn 1.1.1.1
   const columnsNmbr = function (choice, indx) {
+
+    function evenTest(nmbr) {
+      if(nmbr % 2 === 0) {
+        return nmbr; 
+      } else {
+        return nmbr + 5;
+      }
+    }
+
     if (choice === 'col') {
       let x = lettersArr.length;
       x = x - 10 * indx + 1;
@@ -73,8 +82,9 @@ const addHeroElems = function () {
     }
 
     if (choice === 'row') {
-      let x = lettersArr.length;
-      x = (x - 10) + indx;
+            let x = evenTest(lettersArr.length / 2);
+            console.log(x)
+      x = (x - 20) + indx;
       return x;
     }
   }
@@ -93,6 +103,7 @@ const addHeroElems = function () {
 
   //1.1
   const addLettersLink = function (item, position, index, style, className, id) {
+    console.log(position,index)
     let letter = new Elem(position + index, [{
       'tagName': 'a',
       'attr': [{
@@ -161,11 +172,17 @@ const addHeroElems = function () {
     }
 
     if (portfolioTextsArr4.includes(text) === true) {
-      ((Array.from(text)).reverse()).map((item, index) => {
+      (Array.from(text)).map((item, index) => {
         let group;
         indxArr === indxArr && (group = text); 
-        addLettersLink(item, ((index * 10) * -1), columnsNmbr('row', indxArr + 2), 'upper', `pageTitle ${group} hide`, text);
-        //addLettersLink(item, (index * 10), (indxArr + 1), 'upper', `pageTitle ${group} hide`, text);
+        if(text.length < 3) {
+          addLettersLink(item, ((index + 1) * 10), columnsNmbr('row', indxArr + 2), 'upper', `pageTitle ${group} hide`, text);
+          //addLettersLink(item, (index * 10), (indxArr + 1), 'upper', `pageTitle ${group} hide`, text);
+          //console.log((index * 1) * 1)
+        }
+        if(text.length >= 3) {
+          addLettersLink(item, (index * 10), columnsNmbr('row', indxArr + 2), 'upper', `pageTitle ${group} hide`, text);
+        }
       })
     }
   }
@@ -189,6 +206,7 @@ const addHeroElems = function () {
   const addElemsContent = function (collection) {
 
     collection.map(item => {
+      //console.log(item.parentIndex)
       let parent = item.parentIndex;
       
       item.elems.map((item, index) => {

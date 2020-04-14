@@ -3,7 +3,7 @@ const reactHeroElems = function () {
   const hero = document.querySelector('.hero');
 
   const elemsArr = [];
-  const portfolioTextsArr4 = ['ux', 'ui', 'art', 'webs', 'repo', 'cv', 'find'];
+  const portfolioTextsArr4 = ['ux', 'ui', 'webs', 'repo', 'cv', 'find'];
   portfolioTextsArr4.map((item, index) => {
     let elem = hero.getElementsByClassName(item);
     let arr = Array.from(elem);
