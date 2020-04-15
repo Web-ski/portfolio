@@ -32,6 +32,13 @@ const addSections2Page = function () {
   //tworzenie sekcji
   let sectionNumber = 0.1;
 
+  ///tworzenie specyfiki abbrewiacji
+  const addingAbbrElems = (elem, parent) => {
+    let span = document.createElement("span");
+    parent.lastChild.classList.contains('article__abbr--last') === true ? (span.textContent = '') : (span.textContent = ', ');    
+    parent.appendChild(span);
+  }
+
   const addSections = function (collection, parent) {
     collection.map((item, index) => {
       if (item.section !== undefined) {
@@ -42,8 +49,10 @@ const addSections2Page = function () {
       item.text !== undefined && (elem.textContent = item.text);
       item.src !== undefined && (elem.setAttribute('src', `./images/photos/${item.src}`));
       item.href !== undefined && (elem.setAttribute('href', `${item.href}`));
+      item.title !== undefined && (elem.setAttribute('title', `${item.title}`));
       item.data !== undefined && (elem.setAttribute(`data-${item.data}`, item.data + sectionNumber));
       parent.appendChild(elem);
+      item.abbr !== undefined && (addingAbbrElems(elem, parent));
       item.children !== undefined && (addSections(item.children, elem));
       //parent.children[0].getAttribute(`data-${item.data}`) !== null && (addPhotoViewer(item.data, index));
     });

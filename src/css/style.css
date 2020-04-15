@@ -383,6 +383,12 @@ header {
   }
 }
 
+.article__abbr, .article__abbr--last {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  cursor: help;
+}
+
 .navbar__link {
   font-family: Montserrat, sans-serif;
   color: #000000;
