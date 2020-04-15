@@ -20,10 +20,11 @@ const addArticlesContent = function () {
     collection.map((item, index) => {
       let elem = document.createElement(Object.keys(item)[0]);
       elem.setAttribute('class', Object.values(item)[0]);
-      Object.values(item)[0] === 'sectionTitle' && (elem.textContent = sections[0].getAttribute('id'));
+      Object.values(item)[0] === 'sectionTitle' && (elem.textContent = sections[sectionNumber].getAttribute('id'));
       item.text !== undefined && (elem.textContent = item.text);
       item.src !== undefined && (elem.setAttribute('src', `${item.src}`));
       item.href !== undefined && (elem.setAttribute('href', `${item.href}`));
+      item.target !== undefined && (elem.setAttribute('target', `${item.target}`));
       item.title !== undefined && (elem.setAttribute('title', `${item.title}`));
       item.data !== undefined && (elem.setAttribute(`data-${item.data}`, item.data + sectionNumber));
       parent.appendChild(elem);
@@ -34,8 +35,9 @@ const addArticlesContent = function () {
   
   const getSections = function (collection) {
     collection.map((item, index) => {      
-      addSections(item.children, sections[index]);
       sectionNumber = index;
+      addSections(item.children, sections[index]);
+      console.log(sectionNumber)
     })
   }
 
