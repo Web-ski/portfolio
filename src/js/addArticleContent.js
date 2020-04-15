@@ -7,82 +7,51 @@ const addArticlesContent = function () {
   //const url = 'http://192.168.0.172/my-test/portfolio/portfolio/src/js/articles.JSON';
 
   //tworzenie artykułów
-  const addText = function (collection) {
+  let sectionNumber = 0.1;
+
+  ///tworzenie specyfiki abbrewiacji
+  const addingAbbrElems = (elem, parent) => {
+    let span = document.createElement("span");
+    parent.lastChild.classList.contains('article__abbr--last') === true ? (span.textContent = '') : (span.textContent = ', ');    
+    parent.appendChild(span);
+  }
+
+  const addSections = function (collection, parent) {
     collection.map((item, index) => {
-      let id = item.getAttribute('id');
-      let article = item.querySelector('.description');
-      //paragrafy
-      for (let i = 0; i < 2; i++) {
-        let articleText = document.createElement('p');
-        articleText.setAttribute('class', 'article__text');
-        article.appendChild(articleText);
-      }
-      //link do strony z więcej
-      let articleLink = document.createElement('a');
-      articleLink.setAttribute('class', 'article__link');
-      articleLink.setAttribute('href', `${id}.html`);
-      articleLink.textContent = 'Go for more';
-      article.appendChild(articleLink);
-      //moje technologie
-      let articleIcons = document.createElement('div');
-      articleIcons.setAttribute('class', 'article__icons');
-      article.appendChild(articleIcons);
+      let elem = document.createElement(Object.keys(item)[0]);
+      elem.setAttribute('class', Object.values(item)[0]);
+      Object.values(item)[0] === 'sectionTitle' && (elem.textContent = sections[0].getAttribute('id'));
+      item.text !== undefined && (elem.textContent = item.text);
+      item.src !== undefined && (elem.setAttribute('src', `${item.src}`));
+      item.href !== undefined && (elem.setAttribute('href', `${item.href}`));
+      item.title !== undefined && (elem.setAttribute('title', `${item.title}`));
+      item.data !== undefined && (elem.setAttribute(`data-${item.data}`, item.data + sectionNumber));
+      parent.appendChild(elem);
+      item.abbr !== undefined && (addingAbbrElems(elem, parent));
+      item.children !== undefined && (addSections(item.children, elem));
+    });
+  }
+  
+  const getSections = function (collection) {
+    collection.map((item, index) => {      
+      addSections(item.children, sections[index]);
+      sectionNumber = index;
     })
   }
 
-  addText(sections);
-
-  //pobieranie tekstu i ikon
-  const createIcons = function(parent, link) {
-    let icon = document.createElement('img');
-    icon.setAttribute('class', 'article__icon');
-    icon.setAttribute('src', `./images/icons/${link}`);
-    parent.appendChild(icon);
-  }
-
-  const createPhotos = function(parent, src) {
-    let box = document.createElement('a');
-    let photo = document.createElement('img');
-    box.setAttribute('class', 'photo__link');
-    box.setAttribute('href', `${src[0]}`);
-    box.setAttribute('target', `_blank`);
-    parent.appendChild(box);
-    photo.setAttribute('class', 'article__photo');
-    photo.setAttribute('src', `./images/photos/${src[1]}`);
-    box.appendChild(photo);
-  }
-
-  const getTextsAndIcons = function () {
-    let articles1 = Array.from(main.getElementsByClassName('description'));
-    let articles2 = Array.from(main.getElementsByClassName('photos'));
+  //pobranie danych
+  const getContent = function () {
     fetch(url)
       .then(resp => resp.json())
       .then(data => {
-        let texts = data.texts;
-        let icons = data.icons;
-        let photos = data.photos;
-        texts.map((item, index) => {
-          articles1[index].querySelectorAll('.article__text')[0].textContent = item.text;
-          articles1[index].querySelectorAll('.article__text')[1].textContent = item.text2;
-        });
-        icons.map((item, index) => {
-          let parent = articles1[index].querySelector('.article__icons');       
-          for (let i = 1; i < 9; i++) {
-            item[`icon${i}`] !== undefined && (createIcons(parent, item[`icon${i}`]));
-          }
-        });
-        photos.map((item, index) => {
-          let parent = articles2[index]; 
-          item.photo1 !== undefined && (createPhotos(parent, item.photo1));
-          item.photo2 !== undefined && (createPhotos(parent, item.photo2));
-        })
+        getSections(data);
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.log('Looks like there was a problem: \n', error);
-      });      
+      });
   }
 
-  getTextsAndIcons();
+  getContent();
 }
 
 addArticlesContent();
