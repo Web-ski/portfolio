@@ -176,9 +176,13 @@ const addHeroElems = function () {
         let group;
         indxArr === indxArr && (group = text);
         if (text.length < 3) {
-          addLettersLink(item, ((index + 1) * 10), columnsNmbr('row', indxArr + 2), 'upper', `pageTitle ${group} hide`, text);
-          //addLettersLink(item, (index * 10), (indxArr + 1), 'upper', `pageTitle ${group} hide`, text);
-          //console.log((index * 1) * 1)
+          function choosePosition () {
+            //console.log(elemsInRow);
+            let x;
+            elemsInRow === 5 ? (x = 2) : (x = 1);
+            return x;
+          }          
+          addLettersLink(item, ((index + choosePosition()) * 10), columnsNmbr('row', indxArr + 2), 'upper', `pageTitle ${group} hide`, text);
         }
         if (text.length >= 3) {
           addLettersLink(item, (index * 10), columnsNmbr('row', indxArr + 2), 'upper', `pageTitle ${group} hide`, text);
