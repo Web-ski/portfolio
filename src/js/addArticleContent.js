@@ -32,12 +32,22 @@ const addArticlesContent = function () {
       item.children !== undefined && (addSections(item.children, elem));
     });
   }
+
+  //dodanie kodu animacji do sekcji
+  const addAnimArticle = (item, index) => {
+
+      let name = item.getAttribute('id');
+      let elem = document.createElement('script');
+      elem.setAttribute('type', 'text/javascript');
+      elem.textContent = `animArticleElems("${name}", "${index}")`;
+      document.body.appendChild(elem);    
+  }
   
   const getSections = function (collection) {
     collection.map((item, index) => {      
       sectionNumber = index;
       addSections(item.children, sections[index]);
-      console.log(sectionNumber)
+      addAnimArticle(sections[index], index);
     })
   }
 
