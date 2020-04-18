@@ -1,5 +1,6 @@
 .section {
   @include flex;
+  position: relative;
   width: 100%;
   height: 100%;
   min-height: 100vh;
@@ -9,7 +10,6 @@
   background-image: radial-gradient(circle at right, transparent 20%, rgba(0, 0, 0, 0.5)),
     radial-gradient(circle at 70%, transparent 10%, rgba(0, 0, 0, 0.5)),
     radial-gradient(circle at left, transparent 10%, rgba(0, 0, 0, 0.5));
-
 
   @media screen and (min-width: $min-md) {
     padding: calc(20px + 5vh) calc(20px + 5vw);
@@ -39,6 +39,7 @@
 
     @media screen and (min-width: $min-xxl) {
       padding: 50px;
+      max-width: 700px;
     }
   }
 
@@ -46,6 +47,22 @@
     background-color: $bg-wrapper;
     min-height: 60vh;
     transition: .3s;
+
+    @media screen and (min-width: $min-xxl) {
+      //height: 60vh;
+    }
+
+    .sectionTitle,
+    .article__text,
+    .article__link,
+    .article__icons {
+      visibility: hidden;
+    }
+
+    .sectionTitle--show {
+      visibility: visible;
+      animation: showElem 1s;
+    }
   }
 
   .photos {
@@ -55,6 +72,29 @@
     background-color: rgba(5, 5, 5, 0.3);
     min-height: 60vh;
     transition: .3s;
+
+    @media screen and (min-width: $min-xxl) {
+      //height: 60vh;
+    }
+
+    .photo__link {
+      visibility: hidden;
+    }
+
+    .sectionTitle--show {
+      visibility: visible;
+      animation: showElem 1s;
+    }
+
+    @keyframes showElem {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
   }
 
   // &:nth-of-type(odd) {

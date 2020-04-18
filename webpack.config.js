@@ -2,12 +2,20 @@ const path = require('path');
 //const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: [
-    './src/js/main.js'
-  ],
+  entry: {
+    addHeroElems: './src/js/addHeroElems.js',
+    addHeroPicture: './src/js/addHeroPicture.js',
+    moveHeroElems: './src/js/moveHeroElems.js',
+    reactHeroElems: './src/js/reactHeroElems.js',
+    addSections: './src/js/addSections.js',
+    addArticleContent: './src/js/addArticleContent.js',
+    addBtnBackTop: './src/js/addBtnBackTop.js',
+    addSectionsRadio: './src/js/addSectionsRadio.js',
+    animArticleElems: './src/js/animArticleElems.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist/js'),
-    filename: 'main.js'
+    filename: '[name].js'
   },
   module: {
     rules: [{

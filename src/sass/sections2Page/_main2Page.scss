@@ -1,0 +1,133 @@
+.main2Page {
+  background-color: white;
+  background-image: none;
+  @include flex-column;
+  justify-content: flex-start;
+  align-items: center;
+  
+  .section {
+    min-height: auto;
+    background-image: radial-gradient(circle at right, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.4)),
+      radial-gradient(circle at 70%, rgba(0, 0, 0, 0.2)  10%, rgba(0, 0, 0, 0.4)),
+      radial-gradient(circle at left, rgba(0, 0, 0, 0.1)  10%, rgba(0, 0, 0, 0.4));
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: $min-xxl) {
+      //max-width: 1200px;
+      min-width: 200px;
+    }
+
+    .sectionTitle {}
+
+    .articleTitle {}
+
+    .sectionText {
+      color: $text-white;
+      font-family: $main-font;
+      line-height: 180%;
+      margin-bottom: 2vh;
+
+      @media screen and (min-width: $min-md) {
+        font-size: 16px;
+      }
+
+      @media screen and (min-width: $min-lg) {
+        font-size: 18px;
+      }
+
+      @media screen and (min-width: $min-xl) {}
+
+      @media screen and (min-width: $min-xxl) {
+        font-size: 20px;
+      }
+
+    }
+
+    .article {
+      width: 100%;
+      max-width: 60%;
+      position: relative;
+      align-items: flex-start;
+      height: auto;
+
+      &:first-of-type {
+        flex: 2;
+        //width: 60%;
+      }
+
+      &:last-of-type {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        //background-color: $bg-black;
+
+        @media screen and (min-width: $min-md) {
+          width: min-content;
+        }
+      }
+
+      .photo__box {
+        width: 300px;
+        height: calc(300px * 0.6);
+        //background-color: grey;
+        margin: 1%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media screen and (min-width: $min-md) {
+          width: 100%;
+          height: calc(400px * 0.6);
+          margin: 3px;
+        }
+
+        @media screen and (min-width: $min-lg) {
+          width: 100%;
+          height: calc(400px * 0.6);
+          margin: 3px;
+        }
+
+        @media screen and (min-width: $min-xl) {
+          width: 100%;
+          height: calc(450px * 0.6);
+          margin: 3px;
+        }
+
+        @media screen and (min-width: $min-xxl) {
+          width: 100%;
+          height: calc(600px * 0.6);
+          margin: 3px;
+        }
+      }
+
+      .article__photo {
+        width: 31%;
+        margin: 1%;
+        border: solid 5px grey;
+        cursor: pointer;
+        transition: .2s;
+
+        @media screen and (min-width: $min-md) {
+          width: 31%;
+          margin: 3px;
+        }
+
+        &:hover {
+          border: solid 5px cyan;
+        }
+      }
+
+      .article__photo--active {
+        border: solid 5px cyan;
+      }
+    }
+
+    &:first-of-type {
+      .article {
+        background-color: transparent;
+      }
+    }
+  }
+}
