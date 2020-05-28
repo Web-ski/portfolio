@@ -897,7 +897,7 @@ header {
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   position: fixed;
-  bottom: 25px;
+  bottom: calc(25px + 1vh);
   right: 5vw;
   border: none;
   width: 50px;
@@ -921,6 +921,7 @@ header {
 @media screen and (min-width: 768px) {
   .button__back-top, .arrow__top {
     right: calc(25px + 5vw);
+    bottom: calc(25px + 2vw);
   }
 }
 
