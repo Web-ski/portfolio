@@ -371,7 +371,17 @@
       {
         "article": "article photos",
         "children": [
- 
+          {
+            "a": "photo__link",
+            "href": "content/Nieczuja CV 2020.pdf",
+            "target": "blank",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/Nieczuja CV 2020.png"
+              }
+            ]
+          }
         ]
       }
     ]
