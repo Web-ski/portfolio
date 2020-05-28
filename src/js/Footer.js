@@ -10,14 +10,18 @@ class FooterText extends React.Component {
 
 class FooterLink extends React.Component {
   render() {
-    return <a className="footer__link">{this.props.text}</a>
+    return <a className="footer__link" href={this.props.data.href}>{
+      ((this.props.data.href).split("."))[0]
+      }</a>
   }
 }
 
-function createElems(props) {
+const findLink = (elem) => {
   return (
-    console.log(props) //!!!!tu robię
+    elem.children !== undefined && (
+      (elem.children).map(item => (item.a !== undefined && item.a === "article__link") ? (<FooterLink data={item}/>) : findLink(item))
     )
+  )
 }
 
 class FooterInfo extends React.Component {
@@ -33,7 +37,7 @@ class FooterInfo extends React.Component {
 
   render() {
     return <article id={this.props.id} className={this.props.className}>
-      {createElems(this.state.data)}
+      {(this.state.data).map(item => findLink(item))}
     </article>;
   }
 }

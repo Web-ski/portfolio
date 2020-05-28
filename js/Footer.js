@@ -46,8 +46,8 @@ var FooterLink = function (_React$Component2) {
     value: function render() {
       return React.createElement(
         "a",
-        { className: "footer__link" },
-        this.props.text
+        { className: "footer__link", href: this.props.data.href },
+        this.props.data.href.split(".")[0]
       );
     }
   }]);
@@ -55,10 +55,11 @@ var FooterLink = function (_React$Component2) {
   return FooterLink;
 }(React.Component);
 
-function createElems(props) {
-  return console.log(props) //!!!!tu robię
-  ;
-}
+var findLink = function findLink(elem) {
+  return elem.children !== undefined && elem.children.map(function (item) {
+    return item.a !== undefined && item.a === "article__link" ? React.createElement(FooterLink, { data: item }) : findLink(item);
+  });
+};
 
 var FooterInfo = function (_React$Component3) {
   _inherits(FooterInfo, _React$Component3);
@@ -89,7 +90,9 @@ var FooterInfo = function (_React$Component3) {
       return React.createElement(
         "article",
         { id: this.props.id, className: this.props.className },
-        createElems(this.state.data)
+        this.state.data.map(function (item) {
+          return findLink(item);
+        })
       );
     }
   }]);
