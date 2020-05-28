@@ -54,7 +54,6 @@ const addSections2Page = function () {
       parent.appendChild(elem);
       item.abbr !== undefined && (addingAbbrElems(elem, parent));
       item.children !== undefined && (addSections(item.children, elem));
-      //parent.children[0].getAttribute(`data-${item.data}`) !== null && (addPhotoViewer(item.data, index));
     });
   }
 

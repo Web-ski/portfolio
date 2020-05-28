@@ -3,7 +3,6 @@ const addArticlesContent = function () {
   const main = document.querySelector('.main');
   const sections = Array.from(main.getElementsByClassName('section'));
   const textsArr = [];
-  //const url = 'http://localhost/my-test/portfolio/portfolio/dist/js/articles.json';
   const url = 'js/articles.json';
 
   //tworzenie artykułów

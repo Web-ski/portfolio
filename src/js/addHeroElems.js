@@ -244,30 +244,3 @@ addHeroElems();
 window.addEventListener('resize', function () {
   addHeroElems();
 });
-
-
-
-
-/*losowanie 
-const randomNmbr = function () {
-  let x = lettersArr[Math.floor(Math.random() * lettersArr.length)];
-  console.log(x, '0')
-
-  if (lettersArr.includes(x) === true) {
-    console.log(x, '1')
-    return x;
-  } else {
-    randomNmbr();
-  }
-}
-
-//wybieranie indexy
-const indx = function () {
-  let x = randomNmbr();
-  console.log(x, '2');
-  lettersArr.splice(lettersArr.indexOf(x), 1);
-  lettersOrder.push(x);
-  //console.log(lettersOrder);
-  return x;
-}
-*/

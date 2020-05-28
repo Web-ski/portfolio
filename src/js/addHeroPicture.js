@@ -32,7 +32,6 @@ const addHeroPicture = function () {
 
         let parent = boxes[nmbr + i + index * 10];
 
-        //let img = new Photos('div', 'picture', `./images/ostry01bBLUE_0${i + 1}_0${index + 1}.png`);
         let img = new Photos('div', 'picture', `./images/ostry01bBLUE.png`);
         //console.log(img);
         let child = document.createElement(img.tagName);
