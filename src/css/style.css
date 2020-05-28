@@ -358,7 +358,7 @@ header {
   }
 }
 
-.article__text {
+.article__text, .footer__text {
   color: cyan;
   font-family: Montserrat, sans-serif;
   line-height: 180%;
@@ -366,19 +366,19 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .article__text {
+  .article__text, .footer__text {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width: 960px) {
-  .article__text {
+  .article__text, .footer__text {
     font-size: 18px;
   }
 }
 
 @media screen and (min-width: 1500px) {
-  .article__text {
+  .article__text, .footer__text {
     font-size: 20px;
   }
 }
@@ -387,6 +387,29 @@ header {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
   cursor: help;
+}
+
+.footer__text {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .footer__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .footer__text {
+    font-size: 18px;
+  }
 }
 
 .navbar__link {
@@ -815,6 +838,7 @@ header {
 
 .section .description .sectionTitle,
 .section .description .article__text,
+.section .description .footer__text,
 .section .description .article__link,
 .section .description .article__icons {
   visibility: hidden;
@@ -1003,6 +1027,26 @@ header {
 
 .hero .red {
   background-color: lightgrey;
+}
+
+.footer {
+  height: 100%;
+  background-color: transparent;
+}
+
+.footer .article {
+  min-height: 50px;
+  padding: 3% 2%;
+  background-color: #111111;
+}
+
+.footer #footer-author {
+  background-color: #000000;
+}
+
+.footer #footer-author .article__text, .footer #footer-author .footer__text {
+  font-family: Satisfy, sans-serif;
+  text-align: center;
 }
 
 /*Pages*/

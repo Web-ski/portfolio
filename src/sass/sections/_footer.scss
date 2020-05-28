@@ -1,0 +1,20 @@
+.footer {
+  height: 100%;
+  background-color: transparent;
+  
+  .article {
+    min-height: 50px;
+    padding: 3% 2%;
+    background-color: $bg-black;
+
+  }
+  
+  #footer-author {
+    background-color: $text-black;
+    .article__text {
+      font-family: $brand-font;
+      text-align: center;
+    }
+  }
+
+}
