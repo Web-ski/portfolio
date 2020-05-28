@@ -3,7 +3,7 @@ const addArticlesContent = function () {
   const main = document.querySelector('.main');
   const sections = Array.from(main.getElementsByClassName('section'));
   const textsArr = [];
-  const url = 'js/articles.json';
+  const url = 'content/articles.json';
 
   //tworzenie artykułów
   let sectionNumber = 0.1;
