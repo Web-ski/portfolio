@@ -23,7 +23,7 @@
               },
               {
                 "span": "span",
-                "text": ". No, I make websites in front-end technologies: "
+                "text": ". Now, I make websites in front-end technologies: "
               },
               {
                 "abbr": "article__abbr",
@@ -49,6 +49,11 @@
                 "abbr": "article__abbr",
                 "title": "JavaScript library",
                 "text": "jQuery"
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript library",
+                "text": "React"
               },
               {
                 "abbr": "article__abbr--last",
@@ -207,7 +212,7 @@
           },
           {
             "p": "article__text",
-            "text": "I designed logos of organization and events, icons for websites, posters, infographics, book covers, as well as the layouts of websites."
+            "text": "I designed logos of organizations and events, icons for websites, posters, infographics, book covers, as well as the layouts of websites."
           },
           {
             "a": "article__link",
