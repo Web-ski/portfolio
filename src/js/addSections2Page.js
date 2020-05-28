@@ -2,7 +2,7 @@ const addSections2Page = function () {
 
   const main = document.querySelector('.main2Page');
 
-  let url = `http://localhost/my-test/portfolio/portfolio/dist/js/${pageName}.json`;
+  let url = `content/${pageName}.json`;
 
   //dodawanie data-viewer
   let viewerNumber = 0.1;

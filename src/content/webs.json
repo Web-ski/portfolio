@@ -79,7 +79,7 @@
               },
               {
                 "span": "span",
-                "text": ". I present them in sections below."
+                "text": ". I present my works in sections below."
               }
              ]
           }
@@ -117,6 +117,62 @@
             "src": "ibo-wix-screen.png"
           }
         ]
+      }
+    ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "articleTitle",
+            "text": "XI Festival of Literature and Theatre: Kosmopolis 2020"
+          },
+          {
+            "p": "sectionText",
+            "text": "In 2020 I made the website for the experimental online edition of the bilingual Festival of Literature and Theatre: Between.Pomiędzy."
+          },
+          {
+            "p": "sectionText",
+            "text": "It was an extraordinary project in the unusual situation of the world coronavirus epidemic."
+          },
+          {
+            "p": "sectionText",
+            "text": "I used the front-end technologies and tools, such as: HTML5, SCSS, JavaScript, React, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+          },
+          {
+            "a": "article__link",
+            "href": "https://www.kosmopolis-between.pl/",
+            "text": "Go to the website"
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "children": [
+          {
+            "div": "photo__box modal__parent",
+            "data": "viewer"
+          },
+          {
+            "img": "article__photo",
+            "src": "cosmopolis-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "cosmopolis2-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "cosmopolis3-screen.png"
+          }
+        ]
+      },
+      {
+        "aside": "articleNumber",
+        "text": "2020"
       }
     ]
   },
@@ -218,11 +274,11 @@
           },
           {
             "img": "article__photo",
-            "src": "ibo2-screen.png"
+            "src": "ejts2-screen.png"
           },
           {
             "img": "article__photo",
-            "src": "ibo3-screen.png"
+            "src": "ejts3-screen.png"
           }
         ]
       },
@@ -274,11 +330,11 @@
           },
           {
             "img": "article__photo",
-            "src": "ibo2-screen.png"
+            "src": "riep2-screen.png"
           },
           {
             "img": "article__photo",
-            "src": "ibo3-screen.png"
+            "src": "riep3-screen.png"
           }
         ]
       },
