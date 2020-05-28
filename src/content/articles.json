@@ -10,6 +10,133 @@
           },
           {
             "p": "article__text",
+            "text": "Here you can see my last realizations of websites. From 2018 I done some courses in front-end technologies for get professional skills."
+          },
+          {
+            "p": "article__text",
+            "text": "I have been started do websites in 2015, but at first on ",
+            "children": [
+              {
+                "abbr": "article__abbr--last",
+                "title": "Content Management System",
+                "text": "CMS"
+              },
+              {
+                "span": "span",
+                "text": ". No, I make websites in front-end technologies: "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "HyperText Markup Language",
+                "text": "HTML"
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "Cascading Style Sheets",
+                "text": "CSS"
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "Sassy CSS",
+                "text": "SCSS"
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript",
+                "text": "JS"
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript library",
+                "text": "jQuery"
+              },
+              {
+                "abbr": "article__abbr--last",
+                "title": "general-purpose scripting language (oryginally: Personal Home Page, next: Hypertext Preprocessor)",
+                "text": "PHP."
+              }
+            ]
+          },
+          {
+            "a": "article__link",
+            "href": "webs.html",
+            "text": "Go for details..."
+          },
+          {
+            "div": "article__icons",
+            "children": [
+              {
+                "img": "article__icon",
+                "src": "./images/icons/html5.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/css3.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/sass.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/Bootstrap.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/jQuery.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/js.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/php.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article photos",
+        "children": [
+          {
+            "a": "photo__link",
+            "href": "http://www.kosmopolis-between.pl/",
+            "target": "blank",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/cosmopolis-screen.png"
+              }
+            ]
+          },
+          {
+            "a": "photo__link",
+            "href": "https://www.journal-transformation.org/",
+            "target": "blank",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/ejts-screen.png"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article description",
+        "children": [
+          {
+            "h1": "sectionTitle"
+          },
+          {
+            "p": "article__text",
             "text": "Here you can see my last UX projects. If you want, you can find more realized projects and works, and more information about my experience in research conducting, wireframing, prototypin, etc."
           },
           {
@@ -123,133 +250,6 @@
               {
                 "img": "article__photo",
                 "src": "./images/photos/pandemium-info.png"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "section": "section",
-    "children": [
-      {
-        "article": "article description",
-        "children": [
-          {
-            "h1": "sectionTitle"
-          },
-          {
-            "p": "article__text",
-            "text": "Here you can see my last realizations of websites. From 2018 I done some courses in front-end technologies for get professional skills."
-          },
-          {
-            "p": "article__text",
-            "text": "I have been started do websites in 2015, but at first on ",
-            "children": [
-              {
-                "abbr": "article__abbr--last",
-                "title": "Content Management System",
-                "text": "CMS"
-              },
-              {
-                "span": "span",
-                "text": ". No, I make websites in front-end technologies: "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "HyperText Markup Language",
-                "text": "HTML"
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "Cascading Style Sheets",
-                "text": "CSS"
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "Sassy CSS",
-                "text": "SCSS"
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "JavaScript",
-                "text": "JS"
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "JavaScript library",
-                "text": "jQuery"
-              },
-              {
-                "abbr": "article__abbr--last",
-                "title": "general-purpose scripting language (oryginally: Personal Home Page, next: Hypertext Preprocessor)",
-                "text": "PHP."
-              }
-            ]
-          },
-          {
-            "a": "article__link",
-            "href": "webs.html",
-            "text": "Go for details..."
-          },
-          {
-            "div": "article__icons",
-            "children": [
-              {
-                "img": "article__icon",
-                "src": "./images/icons/html5.png"
-              },
-              {
-                "img": "article__icon",
-                "src": "./images/icons/css3.png"
-              },
-              {
-                "img": "article__icon",
-                "src": "./images/icons/sass.png"
-              },
-              {
-                "img": "article__icon",
-                "src": "./images/icons/Bootstrap.png"
-              },
-              {
-                "img": "article__icon",
-                "src": "./images/icons/jQuery.png"
-              },
-              {
-                "img": "article__icon",
-                "src": "./images/icons/js.png"
-              },
-              {
-                "img": "article__icon",
-                "src": "./images/icons/php.png"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "article": "article photos",
-        "children": [
-          {
-            "a": "photo__link",
-            "href": "https://www.armenian-institute-ibo.org/",
-            "target": "blank",
-            "children": [
-              {
-                "img": "article__photo",
-                "src": "./images/photos/ibo-screen.png"
-              }
-            ]
-          },
-          {
-            "a": "photo__link",
-            "href": "https://www.journal-transformation.org/",
-            "target": "blank",
-            "children": [
-              {
-                "img": "article__photo",
-                "src": "./images/photos/ejts-screen.png"
               }
             ]
           }
