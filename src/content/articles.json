@@ -314,6 +314,10 @@
               {
                 "img": "article__icon",
                 "src": "./images/icons/slack.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/jira.png"
               }
             ]
           }
