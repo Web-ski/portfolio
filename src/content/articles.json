@@ -96,6 +96,10 @@
               },
               {
                 "img": "article__icon",
+                "src": "./images/icons/react.png"
+              },
+              {
+                "img": "article__icon",
                 "src": "./images/icons/php.png"
               }
             ]
