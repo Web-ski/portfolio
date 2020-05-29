@@ -1083,10 +1083,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1096,15 +1096,6 @@ header {
   height: 100px;
   padding: 0 20px;
   min-width: 300px;
-}
-
-@media screen and (min-width: 768px) {
-  .header2Page {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
 }
 
 .header2Page .pageTitle, .header2Page .articleTitle {
@@ -1176,7 +1167,6 @@ header {
 
 .main2Page .section .article {
   width: 100%;
-  max-width: 60%;
   position: relative;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -1188,6 +1178,7 @@ header {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  padding-bottom: 5px;
 }
 
 .main2Page .section .article:last-of-type {
@@ -1207,6 +1198,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .main2Page .section .article:last-of-type {
+    max-width: 60%;
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;

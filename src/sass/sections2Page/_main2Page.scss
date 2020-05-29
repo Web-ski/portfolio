@@ -46,24 +46,24 @@
 
     .article {
       width: 100%;
-      max-width: 60%;
       position: relative;
       align-items: flex-start;
       height: auto;
-
+      
       &:first-of-type {
         flex: 2;
-        //width: 60%;
+        padding-bottom: 5px;
       }
-
+      
       &:last-of-type {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         //background-color: $bg-black;
-
+        
         @media screen and (min-width: $min-md) {
+          max-width: 60%;
           width: min-content;
         }
       }
