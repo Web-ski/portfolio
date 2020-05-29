@@ -36,27 +36,27 @@
           },
           {
             "img": "article__photo",
-            "src": "missionart-wix-screen.png"
+            "src": "booksUX.png"
           },
           {
             "img": "article__photo",
-            "src": "riep-wix-screen.png"
+            "src": "personaUX.jpg"
           },
           {
             "img": "article__photo",
-            "src": "diaspora-screen.png"
+            "src": "mapa-emaptiiUX.jpg"
           },
           {
             "img": "article__photo",
-            "src": "ejts-wix-screen.png"
+            "src": "UXproject1.png"
           },
           {
             "img": "article__photo",
-            "src": "wierszoatak-wix-screen.png"
+            "src": "ux-course.jpg"
           },
           {
             "img": "article__photo",
-            "src": "ibo-wix-screen.png"
+            "src": "certyfikatUX.jpg"
           }
         ]
       }
@@ -198,8 +198,8 @@
           },
           {
             "a": "article__link",
-            "href": "https://www.journal-transformation.org/",
-            "text": "Go to the website"
+            "href": "https://projects.invisionapp.com/prototype/Z-Pasj-Wypiekane-projekt-2-ck58hetm900307i01ttckoyjn/play/1dadc98b",
+            "text": "Go to the prototype"
           }
         ]
       },
@@ -212,15 +212,19 @@
           },
           {
             "img": "article__photo",
-            "src": "ejts-screen.png"
+            "src": "zielone-slodzone.png"
           },
           {
             "img": "article__photo",
-            "src": "ejts2-screen.png"
+            "src": "zielone-slodzone-1.png"
           },
           {
             "img": "article__photo",
-            "src": "ejts3-screen.png"
+            "src": "zielone-slodzone-2.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "zielone-slodzone-3.png"
           }
         ]
       },
@@ -254,8 +258,8 @@
           },
           {
             "a": "article__link",
-            "href": "https://www.riep.org/",
-            "text": "Go to the website"
+            "href": "https://www.figma.com/proto/GebAOBKbK8USdqcghdviHq/skycash_v3?node-id=1%3A2&scaling=scale-down",
+            "text": "Go to the prototype"
           }
         ]
       },
@@ -272,7 +276,7 @@
           },
           {
             "img": "article__photo",
-            "src": "riep2-screen.png"
+            "src": "sky-cash-UX2.jpg"
           },
           {
             "img": "article__photo",
