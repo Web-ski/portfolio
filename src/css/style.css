@@ -280,11 +280,11 @@ header {
   -webkit-transform: rotateZ(-90deg);
           transform: rotateZ(-90deg);
   padding: 5px 10px;
-  font-size: 30px;
-  height: 100px;
-  width: 90px;
-  left: -13px;
-  top: 5vh;
+  font-size: 20px;
+  height: calc(20px + 5vw);
+  width: 80px;
+  left: -25px;
+  top: calc(45px + 5vh);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,6 +298,10 @@ header {
 
 @media screen and (min-width: 768px) {
   .articleNumber {
+    left: -15px;
+    font-size: 30px;
+    height: 100px;
+    width: 90px;
     top: calc(20px + 25px + 5vh);
   }
 }

@@ -81,17 +81,21 @@
   position: absolute;
   transform: rotateZ(-90deg);
   padding: 5px 10px;
-  font-size: 30px;
-  height: 100px;
-  width: 90px;
+  font-size: 20px;
+  height: calc(20px + 5vw);
+  width: 80px;
   //line-height: 90px;
-  left: -13px;
-  top: 5vh;
+  left: -25px;
+  top: calc(45px + 5vh);
   display: flex;
   justify-content: center;
   align-items: flex-end;
 
   @media screen and (min-width: $min-md) {
+    left: -15px;
+    font-size: 30px;
+    height: 100px;
+    width: 90px;
     top: calc(20px + 25px + 5vh);
   }
 
