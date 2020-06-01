@@ -246,20 +246,33 @@
           },
           {
             "p": "sectionText",
-            "text": "In 2019 I made the website of the academic association 'Research Institute for European Policy' (originally: 'Instytut Badań nad Polityką Europejską'). It was may first website made by front-end technologies."
+            "text": "During the 'UX Designer' course, our team carried out a project to improve the smoothness of operations in the application on the example of the SkyCash application."
           },
           {
             "p": "sectionText",
-            "text": "At the beginning, in 2015 I had created this project by CMS of home.pl, and recreated on CMS wix in 2016. It was a part of my professional activity at that time."
+            "text": "The team included: Paweł Nieczuja-Ostrowski, Marta Gołyszyn, Krzysztof Osiak, Sylwia Tokarska, Magdalena Mańko."
           },
           {
             "p": "sectionText",
-            "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, jQuery, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+            "text": "To thoroughly understand the needs and problems of users we have created a questionnaire. Then we carried out: 1) direct research combined with in-depth interview, regarding behavior, 2) field research, using the appropriate tool (application) to register the ticket purchase process."
+          },
+          {
+            "p": "sectionText",
+            "text": "In the research, we used a program recording the operation of purchasing tickets on the phone and an application for quick assessment of purchase satisfaction by the respondent - created especially for this task by me - which I called SkyFace."
+          },
+          {
+            "p": "sectionText",
+            "text": "We developed the prototype in Figma program, and its final version was made by Krzysztof Osiak."
           },
           {
             "a": "article__link",
             "href": "https://www.figma.com/proto/GebAOBKbK8USdqcghdviHq/skycash_v3?node-id=1%3A2&scaling=scale-down",
             "text": "Go to the prototype"
+          },
+          {
+            "a": "article__link",
+            "href": "https://web-ski.github.io/skyFace/",
+            "text": "Go to SkyFace"
           }
         ]
       },
@@ -272,15 +285,23 @@
           },
           {
             "img": "article__photo",
-            "src": "riep-screen.png"
+            "src": "sky-cash-UX1.png"
           },
           {
             "img": "article__photo",
-            "src": "sky-cash-UX2.jpg"
+            "src": "sky-cash-UX2.png"
           },
           {
             "img": "article__photo",
-            "src": "riep3-screen.png"
+            "src": "sky-cash-UX2-1.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "sky-cash-UX3.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "sky-cash-UX4.jpg"
           }
         ]
       },
