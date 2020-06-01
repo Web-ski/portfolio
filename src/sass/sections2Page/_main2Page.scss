@@ -45,6 +45,20 @@
       position: relative;
       align-items: flex-start;
       height: auto;
+
+      .article__link {
+        background-color: $text-blue2;
+        color: $text-black;
+        padding: 10px;
+        display: inline-block;
+        margin-right: 10px;
+
+        &:hover {
+          background-color: $text-black;
+          color: $text-blue;
+          font-weight: normal;
+        }
+      }
       
       &:first-of-type {
         flex: 2;

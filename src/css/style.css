@@ -1178,6 +1178,20 @@ header {
   height: auto;
 }
 
+.main2Page .section .article .article__link, .main2Page .section .article .footer__link {
+  background-color: rgba(0, 255, 255, 0.8);
+  color: #000000;
+  padding: 10px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.main2Page .section .article .article__link:hover, .main2Page .section .article .footer__link:hover {
+  background-color: #000000;
+  color: cyan;
+  font-weight: normal;
+}
+
 .main2Page .section .article:first-of-type {
   -webkit-box-flex: 2;
       -ms-flex: 2;

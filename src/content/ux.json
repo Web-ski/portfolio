@@ -265,14 +265,19 @@
             "text": "We developed the prototype in Figma program, and its final version was made by Krzysztof Osiak."
           },
           {
-            "a": "article__link",
-            "href": "https://www.figma.com/proto/GebAOBKbK8USdqcghdviHq/skycash_v3?node-id=1%3A2&scaling=scale-down",
-            "text": "Go to the prototype"
-          },
-          {
-            "a": "article__link",
-            "href": "https://web-ski.github.io/skyFace/",
-            "text": "Go to SkyFace"
+            "div": "container",
+            "children": [
+              {
+                "a": "article__link",
+                "href": "https://www.figma.com/proto/GebAOBKbK8USdqcghdviHq/skycash_v3?node-id=1%3A2&scaling=scale-down",
+                "text": "Go to the prototype"
+              },
+              {
+                "a": "article__link",
+                "href": "https://web-ski.github.io/skyFace/",
+                "text": "Go to SkyFace"
+              }
+            ]
           }
         ]
       },
@@ -294,6 +299,10 @@
           {
             "img": "article__photo",
             "src": "sky-cash-UX2-1.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "sky-cash-UX2-2.png"
           },
           {
             "img": "article__photo",
