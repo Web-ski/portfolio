@@ -186,15 +186,19 @@
           },
           {
             "p": "sectionText",
-            "text": "In 2018 I made the website of the academic journal 'European Journal of Transformation Studies'."
+            "text": "In 2020, I designed a website for a micro home patisserie."
           },
           {
             "p": "sectionText",
-            "text": "In the first version I had created this project by CMS wix in 2018. It was a part of my professional activity at that time."
+            "text": "Brief UX helped me know the client's needs, and 'screener' and 'persona' helped identify the specifics of potential customers."
           },
           {
             "p": "sectionText",
-            "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+            "text": "The client offered only two products, so the entire offer could be presented on the landing page. The site was to be ultimately connected to the blog that the client intended to create."
+          },
+          {
+            "p": "sectionText",
+            "text": "I prepared the prototype in InVision."
           },
           {
             "a": "article__link",
@@ -225,6 +229,14 @@
           {
             "img": "article__photo",
             "src": "zielone-slodzone-3.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "zielone-slodzone-4.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "zielone-slodzone-5.png"
           }
         ]
       },
