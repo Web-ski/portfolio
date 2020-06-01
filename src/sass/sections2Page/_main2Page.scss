@@ -49,14 +49,18 @@
       .article__link {
         background-color: $text-blue2;
         color: $text-black;
-        padding: 10px;
+        padding: 10px 15px;
         display: inline-block;
-        margin-right: 10px;
+        margin: 20px auto;
 
         &:hover {
           background-color: $text-black;
           color: $text-blue;
           font-weight: normal;
+        }
+
+        @media screen and (min-width: $min-md) {
+          margin: 10px 10px 10px 0;
         }
       }
       
