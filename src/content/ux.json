@@ -134,7 +134,7 @@
           },
           {
             "p": "sectionText",
-            "text": "In early 2020, I made a website design for the application that the team started working on. During content consultation with therapists, we decided to redesign some elements."
+            "text": "In early 2020, I made a design for the website of the application that the team started working on. During content consultation with therapists, we decided to redesign some elements."
           },
           {
             "p": "sectionText",
@@ -142,8 +142,8 @@
           },
           {
             "a": "article__link",
-            "href": "https://www.armenian-institute-ibo.org/",
-            "text": "Go to the website"
+            "href": "https://www.figma.com/proto/DXcTKUZn5tQlgpQBuDQedR/%C5%BBeton?node-id=161%3A42&viewport=601%2C-1855%2C0.26817017793655396&scaling=min-zoom",
+            "text": "Go to the prototype"
           }
         ]
       },
@@ -156,15 +156,15 @@
           },
           {
             "img": "article__photo",
-            "src": "ibo-screen.png"
+            "src": "zeton-landing-page-v2.jpg"
           },
           {
             "img": "article__photo",
-            "src": "ibo2-screen.png"
+            "src": "zeton-landing-page-v2b.jpg"
           },
           {
             "img": "article__photo",
-            "src": "ibo3-screen.png"
+            "src": "zeton-landing-page-v1b.jpg"
           }
         ]
       },
