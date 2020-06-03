@@ -167,6 +167,10 @@
               {
                 "img": "article__icon",
                 "src": "./images/icons/invision.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/balsamiq-logo-noborder-screen.png"
               }
             ]
           }
@@ -188,12 +192,12 @@
           },
           {
             "a": "photo__link",
-            "href": "https://www.figma.com/proto/DXcTKUZn5tQlgpQBuDQedR/%C5%BBeton?node-id=1%3A2&scaling=scale-down",
+            "href": "https://projects.invisionapp.com/prototype/Z-Pasj-Wypiekane-projekt-2-ck58hetm900307i01ttckoyjn/play/1dadc98b",
             "target": "blank",
             "children": [
               {
                 "img": "article__photo",
-                "src": "./images/photos/zeton-prototype.png"
+                "src": "./images/photos/zielone-slodzone-3.png"
               }
             ]
           }
