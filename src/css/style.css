@@ -388,6 +388,7 @@ header {
 }
 
 .article__abbr, .article__abbr--last {
+  color: #fca2d3;
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
   cursor: help;
