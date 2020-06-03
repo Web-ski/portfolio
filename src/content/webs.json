@@ -145,6 +145,7 @@
           {
             "a": "article__link",
             "href": "https://www.kosmopolis-between.pl/",
+            "target": "blank",
             "text": "Go to the website"
           }
         ]
@@ -201,6 +202,7 @@
           {
             "a": "article__link",
             "href": "https://www.armenian-institute-ibo.org/",
+            "target": "blank",     
             "text": "Go to the website"
           }
         ]
@@ -257,6 +259,7 @@
           {
             "a": "article__link",
             "href": "https://www.journal-transformation.org/",
+            "target": "blank",
             "text": "Go to the website"
           }
         ]
@@ -313,6 +316,7 @@
           {
             "a": "article__link",
             "href": "https://www.riep.org/",
+            "target": "blank",
             "text": "Go to the website"
           }
         ]
