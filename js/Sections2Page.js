@@ -10,8 +10,175 @@ var addSections2Page = function addSections2Page() {
 
   var URL = "content/" + pageName + ".json";
 
-  var Article = function (_React$Component) {
-    _inherits(Article, _React$Component);
+  var Aside = function (_React$Component) {
+    _inherits(Aside, _React$Component);
+
+    function Aside() {
+      _classCallCheck(this, Aside);
+
+      return _possibleConstructorReturn(this, (Aside.__proto__ || Object.getPrototypeOf(Aside)).apply(this, arguments));
+    }
+
+    _createClass(Aside, [{
+      key: "render",
+      value: function render() {
+        return React.createElement(
+          "aside",
+          { className: this.props.elems.aside },
+          this.props.elems.text
+        );
+      }
+    }]);
+
+    return Aside;
+  }(React.Component);
+
+  var Abbr = function (_React$Component2) {
+    _inherits(Abbr, _React$Component2);
+
+    function Abbr() {
+      _classCallCheck(this, Abbr);
+
+      return _possibleConstructorReturn(this, (Abbr.__proto__ || Object.getPrototypeOf(Abbr)).apply(this, arguments));
+    }
+
+    _createClass(Abbr, [{
+      key: "render",
+      value: function render() {
+        return React.createElement(
+          "abbr",
+          { className: this.props.elems.abbr, title: this.props.elems.title },
+          this.props.elems.text
+        );
+      }
+    }]);
+
+    return Abbr;
+  }(React.Component);
+
+  var Paragraph = function (_React$Component3) {
+    _inherits(Paragraph, _React$Component3);
+
+    function Paragraph() {
+      _classCallCheck(this, Paragraph);
+
+      return _possibleConstructorReturn(this, (Paragraph.__proto__ || Object.getPrototypeOf(Paragraph)).apply(this, arguments));
+    }
+
+    _createClass(Paragraph, [{
+      key: "render",
+      value: function render() {
+        return React.createElement(
+          "p",
+          { className: this.props.elems.p },
+          this.props.elems.text !== undefined && this.props.elems.text,
+          this.props.elems.children !== undefined && this.props.elems.children.map(function (item) {
+            return addElems(item);
+          })
+        );
+      }
+    }]);
+
+    return Paragraph;
+  }(React.Component);
+
+  var ArticleTitle = function (_React$Component4) {
+    _inherits(ArticleTitle, _React$Component4);
+
+    function ArticleTitle() {
+      _classCallCheck(this, ArticleTitle);
+
+      return _possibleConstructorReturn(this, (ArticleTitle.__proto__ || Object.getPrototypeOf(ArticleTitle)).apply(this, arguments));
+    }
+
+    _createClass(ArticleTitle, [{
+      key: "render",
+      value: function render() {
+        return React.createElement(
+          "h1",
+          { className: this.props.elems.h1 },
+          this.props.elems.text
+        );
+      }
+    }]);
+
+    return ArticleTitle;
+  }(React.Component);
+
+  var ArticleLink = function (_React$Component5) {
+    _inherits(ArticleLink, _React$Component5);
+
+    function ArticleLink() {
+      _classCallCheck(this, ArticleLink);
+
+      return _possibleConstructorReturn(this, (ArticleLink.__proto__ || Object.getPrototypeOf(ArticleLink)).apply(this, arguments));
+    }
+
+    _createClass(ArticleLink, [{
+      key: "render",
+      value: function render() {
+        return React.createElement(
+          "a",
+          { className: this.props.elems.a, href: this.props.elems.href, target: this.props.elems.target },
+          this.props.elems.text
+        );
+      }
+    }]);
+
+    return ArticleLink;
+  }(React.Component);
+
+  var Picture = function (_React$Component6) {
+    _inherits(Picture, _React$Component6);
+
+    function Picture() {
+      _classCallCheck(this, Picture);
+
+      return _possibleConstructorReturn(this, (Picture.__proto__ || Object.getPrototypeOf(Picture)).apply(this, arguments));
+    }
+
+    _createClass(Picture, [{
+      key: "render",
+      value: function render() {
+        return React.createElement("img", { className: this.props.elems.img, src: "./images/photos/" + this.props.elems.src, title: this.props.elems.title });
+      }
+    }]);
+
+    return Picture;
+  }(React.Component);
+
+  var Div = function (_React$Component7) {
+    _inherits(Div, _React$Component7);
+
+    function Div() {
+      _classCallCheck(this, Div);
+
+      return _possibleConstructorReturn(this, (Div.__proto__ || Object.getPrototypeOf(Div)).apply(this, arguments));
+    }
+
+    _createClass(Div, [{
+      key: "render",
+
+      // constructor(props) {
+      //   super(props);
+      //   this.state = { data: "data-" + (props.elems.data)};
+      // }
+      value: function render() {
+        return React.createElement(
+          "div",
+          { className: this.props.elems.div, "data-viewer": this.props.elems.data },
+          this.props.elems.children !== undefined && this.props.elems.children.map(function (item) {
+            return addElems(item);
+          })
+        );
+      }
+    }]);
+
+    return Div;
+  }(React.Component);
+
+  var Article = function (_React$Component8) {
+    _inherits(Article, _React$Component8);
 
     function Article() {
       _classCallCheck(this, Article);
@@ -25,7 +192,9 @@ var addSections2Page = function addSections2Page() {
         return React.createElement(
           "article",
           { className: this.props.elems.article },
-          "hej"
+          this.props.elems.children.map(function (item) {
+            return addElems(item);
+          })
         );
       }
     }]);
@@ -33,8 +202,8 @@ var addSections2Page = function addSections2Page() {
     return Article;
   }(React.Component);
 
-  var Section = function (_React$Component2) {
-    _inherits(Section, _React$Component2);
+  var Section = function (_React$Component9) {
+    _inherits(Section, _React$Component9);
 
     function Section() {
       _classCallCheck(this, Section);
@@ -59,34 +228,41 @@ var addSections2Page = function addSections2Page() {
   }(React.Component);
 
   function addElems(elem) {
-    return elem.p !== undefined && React.createElement(
-      "p",
-      null,
-      "Hej-P"
-    ), elem.article !== undefined && React.createElement(Article, { elems: elem });
+
+    var tag = void 0;
+    elem.article !== undefined && (tag = React.createElement(Article, { elems: elem }));
+    elem.div !== undefined && (tag = React.createElement(Div, { elems: elem }));
+    elem.h1 !== undefined && (tag = React.createElement(ArticleTitle, { elems: elem }));
+    elem.a !== undefined && (tag = React.createElement(ArticleLink, { elems: elem }));
+    elem.p !== undefined && (tag = React.createElement(Paragraph, { elems: elem }));
+    elem.abbr !== undefined && (tag = React.createElement(Abbr, { elems: elem }));
+    elem.img !== undefined && (tag = React.createElement(Picture, { elems: elem }));
+    elem.aside !== undefined && (tag = React.createElement(Aside, { elems: elem }));
+
+    return tag;
   }
 
-  var Main = function (_React$Component3) {
-    _inherits(Main, _React$Component3);
+  var Main = function (_React$Component10) {
+    _inherits(Main, _React$Component10);
 
     function Main(props) {
       _classCallCheck(this, Main);
 
-      var _this3 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+      var _this10 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-      _this3.state = { data: [] };
-      return _this3;
+      _this10.state = { data: [] };
+      return _this10;
     }
 
     _createClass(Main, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this4 = this;
+        var _this11 = this;
 
         fetch(URL).then(function (response) {
           return response.json();
         }).then(function (json) {
-          return _this4.setState({ data: json });
+          return _this11.setState({ data: json });
         });
       }
     }, {
