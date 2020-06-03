@@ -29,11 +29,8 @@
       },
       {
         "article": "article",
+        "data": "viewer-box",
         "children": [
-          {
-            "div": "photo__box",
-            "data": "viewer"
-          },
           {
             "img": "article__photo",
             "src": "booksUX.png"

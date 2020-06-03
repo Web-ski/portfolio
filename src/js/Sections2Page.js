@@ -15,7 +15,7 @@ const addSections2Page = function () {
       </abbr>;
     }
   }
-  
+
   class Paragraph extends React.Component {
     render() {
       return <p className={this.props.elems.p}>
@@ -39,22 +39,12 @@ const addSections2Page = function () {
     render() {
       return <a className={this.props.elems.a} href={this.props.elems.href} target={this.props.elems.target}>
         {this.props.elems.text}
-        </a>;
+      </a>;
     }
   }
 
-  class Picture extends React.Component {
-    render() {
-      return <img className={this.props.elems.img} src={`./images/photos/${this.props.elems.src}`} title={this.props.elems.title}>
-        </img>;
-    }
-  }
 
   class Div extends React.Component {
-    // constructor(props) {
-    //   super(props);
-    //   this.state = { data: "data-" + (props.elems.data)};
-    // }
     render() {
       return <div className={this.props.elems.div} data-viewer={this.props.elems.data}>
         {
@@ -64,7 +54,39 @@ const addSections2Page = function () {
     }
   }
 
+  class Picture extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = { isToggleOn: true };
+      // Poniższe wiązanie jest niezbędne do prawidłowego przekazania `this` przy wywołaniu funkcji
+      this.handleClick = this.handleClick.bind(this);
+    }
+  
+    handleClick() {
+      this.setState(state => ({
+        isToggleOn: !state.isToggleOn
+      }));
+    }
+
+    render() {
+      return <img onClick={this.handleClick} className={this.state.isToggleOn ? this.props.elems.img : (this.props.elems.img + '--active')} src={`./images/photos/${this.props.elems.src}`} title={this.props.elems.title}>
+      </img>;
+    }
+  }
+
+  class ViewerBox extends React.Component {
+
+    render() {
+      return <article className={this.props.elems.article}>
+          {(this.props.elems.children).map((item, index) =>
+            <Picture elems={item} />
+          )}
+      </article>;
+    }
+  }
+
   class Article extends React.Component {
+
     render() {
       return <article className={this.props.elems.article}>
         {(this.props.elems.children).map(item => addElems(item))}
@@ -83,7 +105,7 @@ const addSections2Page = function () {
   function addElems(elem) {
 
     let tag;
-    elem.article !== undefined && (tag = <Article elems={elem} />);
+    elem.article !== undefined && (elem.data !== undefined ? (tag = <ViewerBox elems={elem} />) : (tag = <Article elems={elem} />));
     elem.div !== undefined && (tag = <Div elems={elem} />);
     elem.h1 !== undefined && (tag = <ArticleTitle elems={elem} />);
     elem.a !== undefined && (tag = <ArticleLink elems={elem} />);
