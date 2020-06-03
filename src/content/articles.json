@@ -181,12 +181,12 @@
         "children": [
           {
             "a": "photo__link",
-            "href": "https://www.figma.com/proto/DXcTKUZn5tQlgpQBuDQedR/%C5%BBeton?node-id=1%3A2&scaling=scale-down",
+            "href": "https://www.figma.com/proto/3TXaZfAxlemdGzV3XROUMn/Between2020?node-id=1%3A4&viewport=411%2C-209%2C0.36153680086135864&scaling=min-zoom",
             "target": "blank",
             "children": [
               {
                 "img": "article__photo",
-                "src": "./images/photos/zeton-prototype.png"
+                "src": "./images/photos/cosmopolis-UX2.png"
               }
             ]
           },

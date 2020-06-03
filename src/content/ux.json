@@ -78,16 +78,28 @@
           },
           {
             "p": "sectionText",
-            "text": "It was an extraordinary project in the unusual situation of the world coronavirus epidemic."
+            "text": "It was an extraordinary project in the unusual situation of the world coronavirus epidemic. The festival lasted only one week and contained incoming materials. Its layout and design had to be prepared for quickly placing various elements."
           },
           {
             "p": "sectionText",
-            "text": "I used the front-end technologies and tools, such as: HTML5, SCSS, JavaScript, React, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+            "text": "I prepared the prototype in Figma."
           },
           {
-            "a": "article__link",
-            "href": "https://www.kosmopolis-between.pl/",
-            "text": "Go to the website"
+            "div": "container",
+            "children": [
+              {
+                "a": "article__link",
+                "href": "https://www.figma.com/proto/3TXaZfAxlemdGzV3XROUMn/Between2020?node-id=1%3A4&viewport=411%2C-209%2C0.36153680086135864&scaling=min-zoom",
+                "target": "blank",
+                "text": "Go to the prototype"
+              },
+              {
+                "a": "article__link",
+                "href": "https://www.kosmopolis-between.pl/",
+                "target": "blank",
+                "text": "Go to the website"
+              }
+            ]
           }
         ]
       },
@@ -104,7 +116,7 @@
           },
           {
             "img": "article__photo",
-            "src": "cosmopolis2-screen.png"
+            "src": "cosmopolis-UX2.png"
           },
           {
             "img": "article__photo",
@@ -143,6 +155,7 @@
           {
             "a": "article__link",
             "href": "https://www.figma.com/proto/DXcTKUZn5tQlgpQBuDQedR/%C5%BBeton?node-id=161%3A42&viewport=601%2C-1855%2C0.26817017793655396&scaling=min-zoom",
+            "target": "blank",
             "text": "Go to the prototype"
           }
         ]
@@ -203,6 +216,7 @@
           {
             "a": "article__link",
             "href": "https://projects.invisionapp.com/prototype/Z-Pasj-Wypiekane-projekt-2-ck58hetm900307i01ttckoyjn/play/1dadc98b",
+            "target": "blank",
             "text": "Go to the prototype"
           }
         ]
@@ -282,11 +296,13 @@
               {
                 "a": "article__link",
                 "href": "https://www.figma.com/proto/GebAOBKbK8USdqcghdviHq/skycash_v3?node-id=1%3A2&scaling=scale-down",
+                "target": "blank",
                 "text": "Go to the prototype"
               },
               {
                 "a": "article__link",
                 "href": "https://web-ski.github.io/skyFace/",
+                "target": "blank",
                 "text": "Go to SkyFace"
               }
             ]
