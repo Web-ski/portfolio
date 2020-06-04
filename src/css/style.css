@@ -1256,22 +1256,34 @@ header {
 }
 
 .main2Page .section .photo__box {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 50vh;
+  width: 100%;
 }
 
 .main2Page .section .photo__box .viewer__box {
   width: 100%;
   padding: 5px;
+  height: 100%;
+  min-height: 200px;
   cursor: pointer;
 }
 
 .main2Page .section .photo__box .viewer__box .article__photo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
+  height: auto;
+  min-height: 200px;
 }
 
 @media screen and (min-width: 768px) {
   .main2Page .section .photo__box {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
     -ms-grid-rows: (1fr)[auto-fill];
@@ -1282,6 +1294,7 @@ header {
             align-items: stretch;
     justify-items: stretch;
     height: 90%;
+    min-height: 50vh;
     max-height: 60vh;
   }
   .main2Page .section .photo__box .viewer__box {
@@ -1293,6 +1306,7 @@ header {
             align-items: stretch;
     background-color: black;
     height: 100%;
+    min-height: auto;
     padding: 0;
     -webkit-box-shadow: 0 0 10px black;
             box-shadow: 0 0 10px black;
@@ -1304,6 +1318,7 @@ header {
     opacity: .8;
     -webkit-transition: .3s;
     transition: .3s;
+    min-height: auto;
   }
   .main2Page .section .photo__box .viewer__box .article__photo:hover {
     opacity: 1;
