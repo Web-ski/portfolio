@@ -57,20 +57,20 @@ const addSections2Page = function () {
   class Picture extends React.Component {
     constructor(props) {
       super(props);
-      this.state = { isToggleOn: true };
-      // Poniższe wiązanie jest niezbędne do prawidłowego przekazania `this` przy wywołaniu funkcji
+      this.state = { toggleOn: true }
       this.handleClick = this.handleClick.bind(this);
-    }
-  
+    };
     handleClick() {
-      this.setState(state => ({
-        isToggleOn: !state.isToggleOn
-      }));
+      this.setState(state => ({ toggleOn: !state.toggleOn }))
     }
 
     render() {
-      return <img onClick={this.handleClick} className={this.state.isToggleOn ? this.props.elems.img : (this.props.elems.img + '--active')} src={`./images/photos/${this.props.elems.src}`} title={this.props.elems.title}>
-      </img>;
+      return <div className="viewer__box">
+        <img onClick={this.handleClick} className={this.props.elems.img} src={'./images/photos/' + this.props.elems.src} />
+        <div onClick={this.handleClick} className={this.state.toggleOn ? 'viewer__modal' : 'viewer__modal--active'} >
+          <img className="modal" src={'./images/photos/' + this.props.elems.src} />
+        </div>
+      </div>;
     }
   }
 
@@ -78,9 +78,9 @@ const addSections2Page = function () {
 
     render() {
       return <article className={this.props.elems.article}>
-          {(this.props.elems.children).map((item, index) =>
-            <Picture elems={item} />
-          )}
+        {(this.props.elems.children).map((item, index) =>
+          <Picture elems={item} />
+        )}
       </article>;
     }
   }

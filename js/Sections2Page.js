@@ -161,8 +161,7 @@ var addSections2Page = function addSections2Page() {
 
       var _this7 = _possibleConstructorReturn(this, (Picture.__proto__ || Object.getPrototypeOf(Picture)).call(this, props));
 
-      _this7.state = { isToggleOn: true };
-      // Poniższe wiązanie jest niezbędne do prawidłowego przekazania `this` przy wywołaniu funkcji
+      _this7.state = { toggleOn: true };
       _this7.handleClick = _this7.handleClick.bind(_this7);
       return _this7;
     }
@@ -171,15 +170,22 @@ var addSections2Page = function addSections2Page() {
       key: 'handleClick',
       value: function handleClick() {
         this.setState(function (state) {
-          return {
-            isToggleOn: !state.isToggleOn
-          };
+          return { toggleOn: !state.toggleOn };
         });
       }
     }, {
       key: 'render',
       value: function render() {
-        return React.createElement('img', { onClick: this.handleClick, className: this.state.isToggleOn ? this.props.elems.img : this.props.elems.img + '--active', src: './images/photos/' + this.props.elems.src, title: this.props.elems.title });
+        return React.createElement(
+          'div',
+          { className: 'viewer__box' },
+          React.createElement('img', { onClick: this.handleClick, className: this.props.elems.img, src: './images/photos/' + this.props.elems.src }),
+          React.createElement(
+            'div',
+            { onClick: this.handleClick, className: this.state.toggleOn ? 'viewer__modal' : 'viewer__modal--active' },
+            React.createElement('img', { className: 'modal', src: './images/photos/' + this.props.elems.src })
+          )
+        );
       }
     }]);
 
