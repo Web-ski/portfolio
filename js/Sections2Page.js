@@ -206,7 +206,7 @@ var addSections2Page = function addSections2Page() {
       value: function render() {
         return React.createElement(
           'article',
-          { className: this.props.elems.article },
+          { className: this.props.elems.article + ' photo__box' },
           this.props.elems.children.map(function (item, index) {
             return React.createElement(Picture, { elems: item });
           })

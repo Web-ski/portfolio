@@ -102,11 +102,8 @@
       },
       {
         "article": "article",
+        "data": "viewer-box",
         "children": [
-          {
-            "div": "photo__box modal__parent",
-            "data": "viewer"
-          },
           {
             "img": "article__photo",
             "src": "cosmopolis-screen.png"
@@ -159,11 +156,8 @@
       },
       {
         "article": "article",
+        "data": "viewer-box",
         "children": [
-          {
-            "div": "photo__box modal__parent",
-            "data": "viewer"
-          },
           {
             "img": "article__photo",
             "src": "zeton-landing-page-v2.jpg"
@@ -220,11 +214,8 @@
       },
       {
         "article": "article",
+        "data": "viewer-box",
         "children": [
-          {
-            "div": "photo__box modal__parent",
-            "data": "viewer"
-          },
           {
             "img": "article__photo",
             "src": "zielone-slodzone.png"
@@ -308,11 +299,8 @@
       },
       {
         "article": "article",
+        "data": "viewer-box",
         "children": [
-          {
-            "div": "photo__box modal__parent",
-            "data": "viewer"
-          },
           {
             "img": "article__photo",
             "src": "sky-cash-UX1.png"

@@ -77,7 +77,7 @@ const addSections2Page = function () {
   class ViewerBox extends React.Component {
 
     render() {
-      return <article className={this.props.elems.article}>
+      return <article className={this.props.elems.article + ' photo__box'}>
         {(this.props.elems.children).map((item, index) =>
           <Picture elems={item} />
         )}
