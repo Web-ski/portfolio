@@ -1276,7 +1276,7 @@ header {
         grid-template-columns: repeat(5, 1fr);
     -ms-grid-rows: (1fr)[auto-fill];
         grid-template-rows: repeat(auto-fill, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -1293,9 +1293,22 @@ header {
             align-items: stretch;
     background-color: black;
     height: 100%;
+    padding: 0;
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
   }
   .main2Page .section .photo__box .viewer__box .article__photo {
-    display: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .main2Page .section .photo__box .viewer__box .article__photo:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   .main2Page .section .photo__box .viewer__box:nth-of-type(1), .main2Page .section .photo__box .viewer__box:nth-of-type(5) {
     -ms-grid-column: 1;

@@ -179,7 +179,7 @@ var addSections2Page = function addSections2Page() {
         return React.createElement(
           'div',
           { className: 'viewer__box' },
-          React.createElement('img', { onClick: this.handleClick, className: this.props.elems.img, src: './images/photos/' + this.props.elems.src }),
+          React.createElement('div', { onClick: this.handleClick, className: this.props.elems.img, style: { backgroundImage: 'url(./images/photos/' + this.props.elems.src + ')' } }),
           React.createElement(
             'div',
             { onClick: this.handleClick, className: this.state.toggleOn ? 'viewer__modal' : 'viewer__modal--active' },
