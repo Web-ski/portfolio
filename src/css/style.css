@@ -1506,14 +1506,40 @@ header {
     border-radius: 5%;
     z-index: 0;
     left: 20%;
-    background-image: radial-gradient(circle at 50%, cyan 20%, rgba(0, 255, 255, 0.671) 50%, rgba(128, 128, 128, 0.11)), radial-gradient(circle at 10% 10%, rgba(0, 255, 255, 0.2) 10%, darkorchid 40%);
+    background-image: radial-gradient(circle at center, cyan, rgba(0, 255, 255, 0.2)), radial-gradient(circle at bottom, rgba(0, 255, 255, 0.1), darkorchid 10%), -webkit-gradient(linear, left bottom, left top, from(darkorchid), to(purple));
+    background-image: radial-gradient(circle at center, cyan, rgba(0, 255, 255, 0.2)), radial-gradient(circle at bottom, rgba(0, 255, 255, 0.1), darkorchid 10%), linear-gradient(to top, darkorchid, purple);
     background-size: 100%;
     background-attachment: fixed;
+    background-position: center;
     transform: rotateZ(0deg);
     -webkit-transform: rotateZ(0deg);
     -moz-transform: rotateZ(0deg);
     -ms-transform: rotateZ(0deg);
     -o-transform: rotateZ(0deg);
+    -webkit-animation: pulsar 4s infinite;
+            animation: pulsar 4s infinite;
+  }
+  @-webkit-keyframes pulsar {
+    0% {
+      background-size: 100%;
+    }
+    50% {
+      background-size: 150%;
+    }
+    100% {
+      background-size: 100%;
+    }
+  }
+  @keyframes pulsar {
+    0% {
+      background-size: 100%;
+    }
+    50% {
+      background-size: 150%;
+    }
+    100% {
+      background-size: 100%;
+    }
   }
   .ux-page .main2Page .section .photo__box .viewer__box {
     overflow: hidden;

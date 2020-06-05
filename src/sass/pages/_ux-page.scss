@@ -90,11 +90,13 @@
             left: 20%;
             //background-image: radial-gradient(rgba(255, 0, 0, .5), rgba(255, 69, 0, .3));
             //background-image: radial-gradient(rgba(0, 217, 255, 0.5), rgba(0, 204, 255, 0.3));
-            background-image: radial-gradient(circle at 50%, cyan 20%, rgba(0, 255, 255, 0.671) 50%, rgba(128, 128, 128, 0.11)),
-              radial-gradient(circle at 10% 10%, rgba(0, 255, 255, 0.2) 10%, darkorchid 40%);
+            background-image: radial-gradient(circle at center, cyan, rgba(0, 255, 255, 0.2)),
+              radial-gradient(circle at bottom, rgba(0, 255, 255, .1), darkorchid 10%),
+              linear-gradient(to top, darkorchid, purple);
             //oranred-ok,navy-ok,
             background-size: 100%;
             background-attachment: fixed;
+            background-position: center;
 
 
             transform: rotateZ(0deg);
@@ -102,6 +104,23 @@
             -moz-transform: rotateZ(0deg);
             -ms-transform: rotateZ(0deg);
             -o-transform: rotateZ(0deg);
+
+            animation: pulsar 4s infinite;
+
+            @keyframes pulsar {
+              0% {
+                background-size: 100%;
+              }
+
+              50% {
+                background-size: 150%;
+              }
+
+              100% {
+                background-size: 100%;
+              }
+            }
+
           }
 
           .viewer__box {
