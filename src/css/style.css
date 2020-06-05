@@ -1456,7 +1456,7 @@ header {
   z-index: 0;
   left: 0;
   top: 0;
-  background-image: radial-gradient(rgba(0, 255, 255, 0.788), rgba(0, 0, 0, 0.459));
+  background-image: radial-gradient(circle at 60%, rgba(0, 153, 255, 0.295), rgba(0, 255, 255, 0.733));
   background-size: 200%;
   background-attachment: fixed;
 }
@@ -1509,7 +1509,7 @@ header {
     border-radius: 2px;
     z-index: 0;
     left: 20%;
-    background-image: radial-gradient(rgba(0, 255, 255, 0.788), rgba(0, 0, 0, 0.459));
+    background-image: radial-gradient(circle at 60%, rgba(0, 153, 255, 0.295), rgba(0, 255, 255, 0.733));
     background-size: 100%;
     background-attachment: fixed;
     background-position: left;
