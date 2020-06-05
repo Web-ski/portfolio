@@ -209,7 +209,8 @@ var addSections2Page = function addSections2Page() {
           { className: this.props.elems.article + ' photo__box' },
           this.props.elems.children.map(function (item, index) {
             return React.createElement(Picture, { elems: item });
-          })
+          }),
+          React.createElement('div', { className: 'article__pattern' })
         );
       }
     }]);

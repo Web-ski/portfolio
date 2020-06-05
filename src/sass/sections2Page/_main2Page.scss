@@ -18,6 +18,12 @@
       min-width: 200px;
     }
 
+    .articleTitle {
+      // background: -webkit-linear-gradient(rgba(0, 255, 255, 0.9) 80%, darkorchid);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+    }
+
     .sectionText {
       color: $text-white;
       font-family: $main-font;
@@ -87,8 +93,7 @@
         background-color: transparent;
       }
 
-      .photo__box {
-      }
+      .photo__box {}
     }
 
     .photo__box {
@@ -112,6 +117,7 @@
       }
 
       @media screen and (min-width: $min-md) {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(auto-fill, 1fr);
@@ -123,6 +129,26 @@
         max-height: 60vh;
         //background-color: grey;
 
+        .article__pattern {
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: 85%;
+          border-radius: 5%;
+          z-index: 0;
+          left: 20%;
+          //background-image: radial-gradient(rgba(255, 0, 0, .5), rgba(255, 69, 0, .3));
+          //background-image: radial-gradient(rgba(0, 217, 255, 0.5), rgba(0, 204, 255, 0.3));
+          background-image: radial-gradient(circle at 50%, cyan 20%, rgba(0, 255, 255, 0.671) 50%, rgba(128, 128, 128, 0.11)), radial-gradient(circle at 10% 10%, rgba(0, 255, 255, 0.2) 10%, darkorchid 40%);
+          //oranred-ok,navy-ok,
+
+          transform: rotateZ(0deg);
+          -webkit-transform: rotateZ(0deg);
+          -moz-transform: rotateZ(0deg);
+          -ms-transform: rotateZ(0deg);
+          -o-transform: rotateZ(0deg);
+        }
+
         .viewer__box {
           overflow: hidden;
           display: grid;
@@ -132,13 +158,14 @@
           min-height: auto;
           padding: 0;
           box-shadow: 0 0 10px black;
+          border-radius: 5%;
+          z-index: 1;
 
           .article__photo {
             @include img;
             opacity: .8;
             transition: .3s;
             min-height: auto;
-
 
             &:hover {
               opacity: 1;
