@@ -16,26 +16,30 @@
           {
             "p": "sectionText",
             "text": "I started creating the first websites eight years ago using ",
-            "children":  [
+            "children": [
               {
                 "abbr": "article__abbr",
                 "title": "Content Management System",
-                "text": "CMS"
+                "text": "CMS "
               },
               {
                 "span": "span",
                 "text": "for my own needs and for my professional activity. Mainly it was conceptual work and involved the creation and addition of visual and substantive content. I've created 6 such websites in wix CMS. However, CMS quickly showed its limitations."
               }
-            ] 
+            ]
           },
           {
             "p": "sectionText",
             "text": "In 2018, I started learning how to create websites professionally. In 2019, I also started creating the first pages myself, using: ",
-            "children":  [
+            "children": [
               {
                 "abbr": "article__abbr",
                 "title": "HyperText Markup Language",
                 "text": "HTML5"
+              },
+              {
+                "span": "span",
+                "text": ", "
               },
               {
                 "abbr": "article__abbr",
@@ -43,9 +47,17 @@
                 "text": "CSS"
               },
               {
+                "span": "span",
+                "text": ", "
+              },
+              {
                 "abbr": "article__abbr",
                 "title": "Sassy CSS",
                 "text": "SCSS"
+              },
+              {
+                "span": "span",
+                "text": ", "
               },
               {
                 "abbr": "article__abbr",
@@ -53,9 +65,17 @@
                 "text": "ES6"
               },
               {
+                "span": "span",
+                "text": ", "
+              },
+              {
                 "abbr": "article__abbr",
                 "title": "JavaScript library",
                 "text": "jQuery"
+              },
+              {
+                "span": "span",
+                "text": ", "
               },
               {
                 "abbr": "article__abbr",
@@ -63,14 +83,35 @@
                 "text": "Bootstrap4"
               },
               {
+                "span": "span",
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript library",
+                "text": "React"
+              },
+              {
+                "span": "span",
+                "text": ", "
+              },
+              {
                 "abbr": "article__abbr",
                 "title": "distributed version-control system",
                 "text": "Git"
               },
               {
+                "span": "span",
+                "text": ", "
+              },
+              {
                 "abbr": "article__abbr",
                 "title": "platform for software development version control",
                 "text": "GitHub"
+              },
+              {
+                "span": "span",
+                "text": ", "
               },
               {
                 "abbr": "article__abbr--last",
@@ -81,7 +122,7 @@
                 "span": "span",
                 "text": ". I present my works in sections below."
               }
-             ]
+            ]
           }
         ]
       },
@@ -196,7 +237,7 @@
           {
             "a": "article__link",
             "href": "https://www.armenian-institute-ibo.org/",
-            "target": "blank",     
+            "target": "blank",
             "text": "Go to the website"
           }
         ]

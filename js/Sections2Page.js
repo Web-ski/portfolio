@@ -105,8 +105,31 @@ var addSections2Page = function addSections2Page() {
     return ArticleTitle;
   }(React.Component);
 
-  var ArticleLink = function (_React$Component5) {
-    _inherits(ArticleLink, _React$Component5);
+  var Span = function (_React$Component5) {
+    _inherits(Span, _React$Component5);
+
+    function Span() {
+      _classCallCheck(this, Span);
+
+      return _possibleConstructorReturn(this, (Span.__proto__ || Object.getPrototypeOf(Span)).apply(this, arguments));
+    }
+
+    _createClass(Span, [{
+      key: 'render',
+      value: function render() {
+        return React.createElement(
+          'span',
+          { className: this.props.elems.span },
+          this.props.elems.text
+        );
+      }
+    }]);
+
+    return Span;
+  }(React.Component);
+
+  var ArticleLink = function (_React$Component6) {
+    _inherits(ArticleLink, _React$Component6);
 
     function ArticleLink() {
       _classCallCheck(this, ArticleLink);
@@ -128,8 +151,8 @@ var addSections2Page = function addSections2Page() {
     return ArticleLink;
   }(React.Component);
 
-  var Div = function (_React$Component6) {
-    _inherits(Div, _React$Component6);
+  var Div = function (_React$Component7) {
+    _inherits(Div, _React$Component7);
 
     function Div() {
       _classCallCheck(this, Div);
@@ -153,17 +176,17 @@ var addSections2Page = function addSections2Page() {
     return Div;
   }(React.Component);
 
-  var Picture = function (_React$Component7) {
-    _inherits(Picture, _React$Component7);
+  var Picture = function (_React$Component8) {
+    _inherits(Picture, _React$Component8);
 
     function Picture(props) {
       _classCallCheck(this, Picture);
 
-      var _this7 = _possibleConstructorReturn(this, (Picture.__proto__ || Object.getPrototypeOf(Picture)).call(this, props));
+      var _this8 = _possibleConstructorReturn(this, (Picture.__proto__ || Object.getPrototypeOf(Picture)).call(this, props));
 
-      _this7.state = { toggleOn: true };
-      _this7.handleClick = _this7.handleClick.bind(_this7);
-      return _this7;
+      _this8.state = { toggleOn: true };
+      _this8.handleClick = _this8.handleClick.bind(_this8);
+      return _this8;
     }
 
     _createClass(Picture, [{
@@ -192,8 +215,8 @@ var addSections2Page = function addSections2Page() {
     return Picture;
   }(React.Component);
 
-  var ViewerBox = function (_React$Component8) {
-    _inherits(ViewerBox, _React$Component8);
+  var ViewerBox = function (_React$Component9) {
+    _inherits(ViewerBox, _React$Component9);
 
     function ViewerBox() {
       _classCallCheck(this, ViewerBox);
@@ -222,8 +245,8 @@ var addSections2Page = function addSections2Page() {
     return ViewerBox;
   }(React.Component);
 
-  var Article = function (_React$Component9) {
-    _inherits(Article, _React$Component9);
+  var Article = function (_React$Component10) {
+    _inherits(Article, _React$Component10);
 
     function Article() {
       _classCallCheck(this, Article);
@@ -247,8 +270,8 @@ var addSections2Page = function addSections2Page() {
     return Article;
   }(React.Component);
 
-  var Section = function (_React$Component10) {
-    _inherits(Section, _React$Component10);
+  var Section = function (_React$Component11) {
+    _inherits(Section, _React$Component11);
 
     function Section() {
       _classCallCheck(this, Section);
@@ -283,31 +306,32 @@ var addSections2Page = function addSections2Page() {
     elem.abbr !== undefined && (tag = React.createElement(Abbr, { elems: elem }));
     elem.img !== undefined && (tag = React.createElement(Picture, { elems: elem }));
     elem.aside !== undefined && (tag = React.createElement(Aside, { elems: elem }));
+    elem.span !== undefined && (tag = React.createElement(Span, { elems: elem }));
 
     return tag;
   }
 
-  var Main = function (_React$Component11) {
-    _inherits(Main, _React$Component11);
+  var Main = function (_React$Component12) {
+    _inherits(Main, _React$Component12);
 
     function Main(props) {
       _classCallCheck(this, Main);
 
-      var _this11 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+      var _this12 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-      _this11.state = { data: [] };
-      return _this11;
+      _this12.state = { data: [] };
+      return _this12;
     }
 
     _createClass(Main, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        var _this12 = this;
+        var _this13 = this;
 
         fetch(URL).then(function (response) {
           return response.json();
         }).then(function (json) {
-          return _this12.setState({ data: json });
+          return _this13.setState({ data: json });
         });
       }
     }, {

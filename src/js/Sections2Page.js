@@ -35,6 +35,12 @@ const addSections2Page = function () {
     }
   }
 
+  class Span extends React.Component {
+    render() {
+      return <span className={this.props.elems.span}>{this.props.elems.text}</span>;
+    }
+  }
+
   class ArticleLink extends React.Component {
     render() {
       return <a className={this.props.elems.a} href={this.props.elems.href} target={this.props.elems.target}>
@@ -116,6 +122,7 @@ const addSections2Page = function () {
     elem.abbr !== undefined && (tag = <Abbr elems={elem} />);
     elem.img !== undefined && (tag = <Picture elems={elem} />);
     elem.aside !== undefined && (tag = <Aside elems={elem} />);
+    elem.span !== undefined && (tag = <Span elems={elem} />);
 
     return tag;
   }
