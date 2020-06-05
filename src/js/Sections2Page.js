@@ -71,12 +71,12 @@ const addSections2Page = function () {
     }
 
     render() {
-      return <div className="viewer__box">
+      return (<div className="viewer__box">
         <div onClick={this.handleClick} className={this.props.elems.img} style={{ backgroundImage: `url(./images/photos/${this.props.elems.src})` }}></div>
         <div onClick={this.handleClick} className={this.state.toggleOn ? 'viewer__modal' : 'viewer__modal--active'} >
           <img className="modal" src={'./images/photos/' + this.props.elems.src} />
         </div>
-      </div>;
+      </div>);
     }
   }
 

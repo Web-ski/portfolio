@@ -666,7 +666,13 @@ header {
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 99;
+  z-index: 100;
+}
+
+@media screen and (min-width: 768px) {
+  .viewer__modal--active {
+    z-index: 100;
+  }
 }
 
 .viewer__modal--active .modal {
@@ -674,6 +680,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  z-index: 100;
   -webkit-animation: sizeMover .3s ease-in;
           animation: sizeMover .3s ease-in;
 }
@@ -1277,14 +1284,11 @@ header {
   height: auto;
   min-height: 200px;
   cursor: pointer;
+  z-index: 1;
 }
 
-.main2Page .section .photo__box .viewer__box .article__pattern {
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 85%;
-  z-index: 0;
+.main2Page .section .photo__box .viewer__box div.viewer__modal--active {
+  z-index: 99;
 }
 
 .main2Page .section .photo__box .viewer__box .article__photo {
@@ -1294,6 +1298,15 @@ header {
   width: 100%;
   height: auto;
   min-height: 200px;
+  z-index: 0;
+}
+
+.main2Page .section .photo__box .article__pattern {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 85%;
+  z-index: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1319,7 +1332,6 @@ header {
     display: block;
     height: 100%;
     width: 85%;
-    z-index: 0;
   }
   .main2Page .section .photo__box .viewer__box {
     overflow: hidden;
@@ -1335,7 +1347,6 @@ header {
     margin: 0;
     -webkit-box-shadow: 0 0 10px black;
             box-shadow: 0 0 10px black;
-    z-index: 1;
   }
   .main2Page .section .photo__box .viewer__box .article__photo {
     background-position: center;
@@ -1453,7 +1464,6 @@ header {
   border-radius: 2px;
   -webkit-box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.308);
           box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.308);
-  z-index: 0;
   left: 0;
   top: 0;
   background-image: radial-gradient(circle at 60%, rgba(0, 153, 255, 0.295), rgba(0, 255, 255, 0.733));
@@ -1469,7 +1479,6 @@ header {
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
   border-radius: 2px;
-  z-index: 1;
   padding: 10px;
   background-color: black;
 }
@@ -1507,7 +1516,6 @@ header {
     height: 100%;
     width: 85%;
     border-radius: 2px;
-    z-index: 0;
     left: 20%;
     background-image: radial-gradient(circle at 60%, rgba(0, 153, 255, 0.295), rgba(0, 255, 255, 0.733));
     background-size: 100%;
@@ -1533,7 +1541,6 @@ header {
     padding: 0;
     margin: 0;
     border-radius: 2px;
-    z-index: 1;
     padding: 10px;
   }
   .webs-page .main2Page .section .photo__box .viewer__box .article__photo {
@@ -1658,7 +1665,6 @@ header {
   border-radius: 5%;
   -webkit-box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.308);
           box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.308);
-  z-index: 0;
   left: 0;
   top: 0;
   background-image: radial-gradient(circle at 50%, cyan 20%, rgba(0, 255, 255, 0.671) 50%, rgba(128, 128, 128, 0.11)), radial-gradient(circle at 10% 10%, rgba(0, 255, 255, 0.2) 10%, darkorchid 40%);
@@ -1673,7 +1679,6 @@ header {
   cursor: pointer;
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
-  z-index: 1;
 }
 
 .ux-page .main2Page .section .photo__box .viewer__box .article__photo {
@@ -1703,49 +1708,6 @@ header {
     min-height: 50vh;
     max-height: 60vh;
   }
-  .ux-page .main2Page .section .photo__box .article__pattern {
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 85%;
-    border-radius: 5%;
-    z-index: 0;
-    left: 20%;
-    background-image: radial-gradient(circle at center, cyan, rgba(0, 255, 255, 0.2)), radial-gradient(circle at bottom, rgba(0, 255, 255, 0.1), darkorchid 10%), -webkit-gradient(linear, left bottom, left top, from(darkorchid), to(purple));
-    background-image: radial-gradient(circle at center, cyan, rgba(0, 255, 255, 0.2)), radial-gradient(circle at bottom, rgba(0, 255, 255, 0.1), darkorchid 10%), linear-gradient(to top, darkorchid, purple);
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    transform: rotateZ(0deg);
-    -webkit-transform: rotateZ(0deg);
-    -moz-transform: rotateZ(0deg);
-    -ms-transform: rotateZ(0deg);
-    -o-transform: rotateZ(0deg);
-    -webkit-animation: pulsar 4s infinite;
-            animation: pulsar 4s infinite;
-  }
-  @-webkit-keyframes pulsar {
-    0% {
-      background-size: 100%;
-    }
-    50% {
-      background-size: 150%;
-    }
-    100% {
-      background-size: 100%;
-    }
-  }
-  @keyframes pulsar {
-    0% {
-      background-size: 100%;
-    }
-    50% {
-      background-size: 150%;
-    }
-    100% {
-      background-size: 100%;
-    }
-  }
   .ux-page .main2Page .section .photo__box .viewer__box {
     overflow: hidden;
     display: -ms-grid;
@@ -1760,7 +1722,6 @@ header {
     padding: 0;
     margin: 0;
     border-radius: 5%;
-    z-index: 1;
   }
   .ux-page .main2Page .section .photo__box .viewer__box .article__photo {
     background-position: center;
@@ -1797,6 +1758,48 @@ header {
     -ms-grid-column: 3;
         grid-column-start: 3;
     grid-column-end: 6;
+  }
+  .ux-page .main2Page .section .photo__box .article__pattern {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 85%;
+    border-radius: 5%;
+    left: 20%;
+    background-image: radial-gradient(circle at center, cyan, rgba(0, 255, 255, 0.2)), radial-gradient(circle at bottom, rgba(0, 255, 255, 0.1), darkorchid 10%), -webkit-gradient(linear, left bottom, left top, from(darkorchid), to(purple));
+    background-image: radial-gradient(circle at center, cyan, rgba(0, 255, 255, 0.2)), radial-gradient(circle at bottom, rgba(0, 255, 255, 0.1), darkorchid 10%), linear-gradient(to top, darkorchid, purple);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -webkit-animation: pulsar 4s infinite;
+            animation: pulsar 4s infinite;
+  }
+  @-webkit-keyframes pulsar {
+    0% {
+      background-size: 100%;
+    }
+    50% {
+      background-size: 150%;
+    }
+    100% {
+      background-size: 100%;
+    }
+  }
+  @keyframes pulsar {
+    0% {
+      background-size: 100%;
+    }
+    50% {
+      background-size: 150%;
+    }
+    100% {
+      background-size: 100%;
+    }
   }
 }
 

@@ -111,15 +111,10 @@
         height: auto;
         min-height: 200px;
         cursor: pointer;
+        z-index: 1;
 
-        .article__pattern {
-          position: absolute;
-          display: block;
-          height: 100%;
-          width: 85%;
-          z-index: 0;
-
-          .pattern {}
+        div.viewer__modal--active {
+          z-index: 99;
         }
 
         .article__photo {
@@ -127,7 +122,18 @@
           width: 100%;
           height: auto;
           min-height: 200px;
+          z-index: 0;
         }
+      }
+
+      .article__pattern {
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 85%;
+        z-index: 0;
+
+        .pattern {}
       }
 
       @media screen and (min-width: $min-md) {
@@ -148,7 +154,6 @@
           display: block;
           height: 100%;
           width: 85%;
-          z-index: 0;
         }
 
         .viewer__box {
@@ -161,7 +166,6 @@
           padding: 0;
           margin: 0;
           box-shadow: 0 0 10px black;
-          z-index: 1;
 
           .article__photo {
             @include img;

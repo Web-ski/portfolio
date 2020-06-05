@@ -123,12 +123,16 @@
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 99;
+  z-index: 100;
 
+  @media screen and (min-width: $min-md) {
+    z-index: 100;
+  }
 
   .modal {
     display: flex;
     width: 100%;
+    z-index: 100;
     animation: sizeMover .3s ease-in;
 
     @keyframes sizeMover {
