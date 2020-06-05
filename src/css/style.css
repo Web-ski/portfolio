@@ -1450,13 +1450,13 @@ header {
   display: block;
   height: 250px;
   width: 100%;
-  border-radius: 5%;
+  border-radius: 2px;
   -webkit-box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.308);
           box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.308);
   z-index: 0;
   left: 0;
   top: 0;
-  background-image: radial-gradient(circle at 50%, cyan 20%, rgba(0, 255, 255, 0.671) 50%, rgba(128, 128, 128, 0.11)), radial-gradient(circle at 10% 10%, rgba(0, 255, 255, 0.2) 10%, darkorchid 40%);
+  background-image: url("../images/photos/vs-screen.png");
   background-size: 100%;
   background-attachment: fixed;
 }
@@ -1468,6 +1468,7 @@ header {
   cursor: pointer;
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
+  border-radius: 2px;
   z-index: 1;
 }
 
@@ -1503,11 +1504,10 @@ header {
     display: block;
     height: 100%;
     width: 85%;
-    border-radius: 5%;
+    border-radius: 2px;
     z-index: 0;
     left: 20%;
-    background-image: radial-gradient(circle at center, cyan, rgba(0, 255, 255, 0.2)), radial-gradient(circle at bottom, rgba(0, 255, 255, 0.1), darkorchid 10%), -webkit-gradient(linear, left bottom, left top, from(darkorchid), to(purple));
-    background-image: radial-gradient(circle at center, cyan, rgba(0, 255, 255, 0.2)), radial-gradient(circle at bottom, rgba(0, 255, 255, 0.1), darkorchid 10%), linear-gradient(to top, darkorchid, purple);
+    background-image: url("../images/photos/vs-screen.png");
     background-size: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -1516,30 +1516,6 @@ header {
     -moz-transform: rotateZ(0deg);
     -ms-transform: rotateZ(0deg);
     -o-transform: rotateZ(0deg);
-    -webkit-animation: pulsar 4s infinite;
-            animation: pulsar 4s infinite;
-  }
-  @-webkit-keyframes pulsar {
-    0% {
-      background-size: 100%;
-    }
-    50% {
-      background-size: 150%;
-    }
-    100% {
-      background-size: 100%;
-    }
-  }
-  @keyframes pulsar {
-    0% {
-      background-size: 100%;
-    }
-    50% {
-      background-size: 150%;
-    }
-    100% {
-      background-size: 100%;
-    }
   }
   .webs-page .main2Page .section .photo__box .viewer__box {
     overflow: hidden;
@@ -1554,7 +1530,7 @@ header {
     min-height: auto;
     padding: 0;
     margin: 0;
-    border-radius: 5%;
+    border-radius: 2px;
     z-index: 1;
   }
   .webs-page .main2Page .section .photo__box .viewer__box .article__photo {
