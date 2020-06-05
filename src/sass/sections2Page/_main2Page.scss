@@ -50,6 +50,14 @@
       width: 100%;
       align-items: flex-start;
       height: auto;
+      flex: none;
+
+      @media screen and (min-width: $min-md) {
+        &:first-of-type {
+          flex: 2;
+          padding-bottom: 5px;
+        }
+      }
 
       .article__link {
         background-color: $text-blue2;
@@ -69,11 +77,6 @@
         }
       }
 
-      &:first-of-type {
-        flex: 2;
-        padding-bottom: 5px;
-      }
-
       &:last-of-type {
         flex-direction: row;
         flex-wrap: wrap;
@@ -82,8 +85,9 @@
         //background-color: $bg-black;
 
         @media screen and (min-width: $min-md) {
-          max-width: 60%;
+          max-width: 50%;
           width: min-content;
+          flex: 1;
         }
       }
     }
@@ -100,13 +104,23 @@
       display: flex;
       min-height: 50vh;
       width: 100%;
+      position: relative;
 
       .viewer__box {
         width: 100%;
-        padding: 5px;
-        height: 100%;
+        height: auto;
         min-height: 200px;
         cursor: pointer;
+
+        .article__pattern {
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: 85%;
+          z-index: 0;
+
+          .pattern {}
+        }
 
         .article__photo {
           @include img;
@@ -134,19 +148,7 @@
           display: block;
           height: 100%;
           width: 85%;
-          border-radius: 5%;
           z-index: 0;
-          left: 20%;
-          //background-image: radial-gradient(rgba(255, 0, 0, .5), rgba(255, 69, 0, .3));
-          //background-image: radial-gradient(rgba(0, 217, 255, 0.5), rgba(0, 204, 255, 0.3));
-          background-image: radial-gradient(circle at 50%, cyan 20%, rgba(0, 255, 255, 0.671) 50%, rgba(128, 128, 128, 0.11)), radial-gradient(circle at 10% 10%, rgba(0, 255, 255, 0.2) 10%, darkorchid 40%);
-          //oranred-ok,navy-ok,
-
-          transform: rotateZ(0deg);
-          -webkit-transform: rotateZ(0deg);
-          -moz-transform: rotateZ(0deg);
-          -ms-transform: rotateZ(0deg);
-          -o-transform: rotateZ(0deg);
         }
 
         .viewer__box {
@@ -157,8 +159,8 @@
           height: 100%;
           min-height: auto;
           padding: 0;
+          margin: 0;
           box-shadow: 0 0 10px black;
-          border-radius: 5%;
           z-index: 1;
 
           .article__photo {

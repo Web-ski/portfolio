@@ -81,7 +81,9 @@ const addSections2Page = function () {
         {(this.props.elems.children).map((item, index) =>
           <Picture elems={item} />
         )}
-        <div className="article__pattern"></div>
+        <div className="article__pattern">
+          <div className="pattern"></div>
+        </div>
       </article>;
     }
   }

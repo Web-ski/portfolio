@@ -210,7 +210,11 @@ var addSections2Page = function addSections2Page() {
           this.props.elems.children.map(function (item, index) {
             return React.createElement(Picture, { elems: item });
           }),
-          React.createElement('div', { className: 'article__pattern' })
+          React.createElement(
+            'div',
+            { className: 'article__pattern' },
+            React.createElement('div', { className: 'pattern' })
+          )
         );
       }
     }]);
