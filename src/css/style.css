@@ -1456,20 +1456,22 @@ header {
   z-index: 0;
   left: 0;
   top: 0;
-  background-image: url("../images/photos/vs-screen.png");
-  background-size: 100%;
+  background-image: radial-gradient(rgba(0, 255, 255, 0.788), rgba(0, 0, 0, 0.459));
+  background-size: 200%;
   background-attachment: fixed;
 }
 
 .webs-page .main2Page .section .photo__box .viewer__box {
   width: 90%;
-  margin: 0px auto 10px;
+  margin: 0px auto 20px;
   height: auto;
   cursor: pointer;
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
   border-radius: 2px;
   z-index: 1;
+  padding: 10px;
+  background-color: black;
 }
 
 .webs-page .main2Page .section .photo__box .viewer__box .article__photo {
@@ -1478,7 +1480,7 @@ header {
   background-size: cover;
   width: 100%;
   height: auto;
-  min-height: 200px;
+  min-height: 180px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1507,10 +1509,10 @@ header {
     border-radius: 2px;
     z-index: 0;
     left: 20%;
-    background-image: url("../images/photos/vs-screen.png");
+    background-image: radial-gradient(rgba(0, 255, 255, 0.788), rgba(0, 0, 0, 0.459));
     background-size: 100%;
     background-attachment: fixed;
-    background-position: center;
+    background-position: left;
     transform: rotateZ(0deg);
     -webkit-transform: rotateZ(0deg);
     -moz-transform: rotateZ(0deg);
@@ -1532,6 +1534,7 @@ header {
     margin: 0;
     border-radius: 2px;
     z-index: 1;
+    padding: 10px;
   }
   .webs-page .main2Page .section .photo__box .viewer__box .article__photo {
     background-position: center;
@@ -1577,7 +1580,7 @@ header {
   }
 }
 
-.webs-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box:nth-of-type(3), .webs-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box:nth-of-type(3) {
+.webs-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box:nth-of-type(3), .webs-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box:nth-of-type(3), .webs-page .main2Page .section:nth-of-type(4) .photo__box .viewer__box:nth-of-type(3), .webs-page .main2Page .section:nth-of-type(5) .photo__box .viewer__box:nth-of-type(3) {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 6;
