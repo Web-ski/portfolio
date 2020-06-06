@@ -1284,21 +1284,26 @@ header {
   height: auto;
   min-height: 200px;
   cursor: pointer;
-  z-index: 1;
-}
-
-.main2Page .section .photo__box .viewer__box div.viewer__modal--active {
-  z-index: 99;
+  padding: 10px;
 }
 
 .main2Page .section .photo__box .viewer__box .article__photo {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  z-index: 1;
+}
+
+.main2Page .section .photo__box .viewer__box .article__photo .inner__picture {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: auto;
-  min-height: 200px;
-  z-index: 0;
+  height: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .main2Page .section .photo__box .article__pattern {
@@ -1306,7 +1311,6 @@ header {
   display: block;
   height: 100%;
   width: 85%;
-  z-index: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1318,7 +1322,6 @@ header {
         grid-template-columns: repeat(5, 1fr);
     -ms-grid-rows: (1fr)[auto-fill];
         grid-template-rows: repeat(auto-fill, 1fr);
-    grid-gap: 20px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -1340,24 +1343,19 @@ header {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    background-color: black;
     height: 100%;
     min-height: auto;
-    padding: 0;
     margin: 0;
-    -webkit-box-shadow: 0 0 10px black;
-            box-shadow: 0 0 10px black;
   }
   .main2Page .section .photo__box .viewer__box .article__photo {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .8;
-    -webkit-transition: .3s;
-    transition: .3s;
+    position: relative;
     min-height: auto;
+    overflow: hidden;
   }
-  .main2Page .section .photo__box .viewer__box .article__photo:hover {
+  .main2Page .section .photo__box .viewer__box .article__photo .inner__picture {
+    opacity: .8;
+  }
+  .main2Page .section .photo__box .viewer__box .article__photo:hover .inner__picture {
     opacity: 1;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
@@ -1547,7 +1545,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: .8;
     -webkit-transition: .3s;
     transition: .3s;
     min-height: auto;
@@ -1677,8 +1674,6 @@ header {
   margin: 0px auto 10px;
   height: auto;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px black;
-          box-shadow: 0 0 10px black;
 }
 
 .ux-page .main2Page .section .photo__box .viewer__box .article__photo {
@@ -1688,6 +1683,7 @@ header {
   width: 100%;
   height: auto;
   min-height: 200px;
+  border-radius: 5%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1699,7 +1695,6 @@ header {
         grid-template-columns: repeat(5, 1fr);
     -ms-grid-rows: (1fr)[auto-fill];
         grid-template-rows: repeat(auto-fill, 1fr);
-    grid-gap: 20px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -1715,11 +1710,9 @@ header {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    background-color: black;
     height: 100%;
     width: 100%;
     min-height: auto;
-    padding: 0;
     margin: 0;
     border-radius: 5%;
   }
@@ -1727,15 +1720,14 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: .8;
+    background-color: black;
+    border-radius: 5%;
     -webkit-transition: .3s;
     transition: .3s;
     min-height: auto;
   }
   .ux-page .main2Page .section .photo__box .viewer__box .article__photo:hover {
     opacity: 1;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
   .ux-page .main2Page .section .photo__box .viewer__box:nth-of-type(1), .ux-page .main2Page .section .photo__box .viewer__box:nth-of-type(5) {
     -ms-grid-column: 1;
@@ -1813,5 +1805,15 @@ header {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 6;
+}
+
+.ui-page .main2Page .section .photo__box .article__pattern {
+  background-color: red;
+}
+
+@media screen and (min-width: 1500px) {
+  .ui-page .main2Page .section .photo__box {
+    width: 33%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,7 +8,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var addSections2Page = function addSections2Page() {
 
-  var URL = 'content/' + pageName + '.json';
+  var URL = "content/" + pageName + ".json";
 
   var Aside = function (_React$Component) {
     _inherits(Aside, _React$Component);
@@ -20,10 +20,10 @@ var addSections2Page = function addSections2Page() {
     }
 
     _createClass(Aside, [{
-      key: 'render',
+      key: "render",
       value: function render() {
         return React.createElement(
-          'aside',
+          "aside",
           { className: this.props.elems.aside },
           this.props.elems.text
         );
@@ -43,10 +43,10 @@ var addSections2Page = function addSections2Page() {
     }
 
     _createClass(Abbr, [{
-      key: 'render',
+      key: "render",
       value: function render() {
         return React.createElement(
-          'abbr',
+          "abbr",
           { className: this.props.elems.abbr, title: this.props.elems.title },
           this.props.elems.text
         );
@@ -66,10 +66,10 @@ var addSections2Page = function addSections2Page() {
     }
 
     _createClass(Paragraph, [{
-      key: 'render',
+      key: "render",
       value: function render() {
         return React.createElement(
-          'p',
+          "p",
           { className: this.props.elems.p },
           this.props.elems.text !== undefined && this.props.elems.text,
           this.props.elems.children !== undefined && this.props.elems.children.map(function (item) {
@@ -92,10 +92,10 @@ var addSections2Page = function addSections2Page() {
     }
 
     _createClass(ArticleTitle, [{
-      key: 'render',
+      key: "render",
       value: function render() {
         return React.createElement(
-          'h1',
+          "h1",
           { className: this.props.elems.h1 },
           this.props.elems.text
         );
@@ -115,10 +115,10 @@ var addSections2Page = function addSections2Page() {
     }
 
     _createClass(Span, [{
-      key: 'render',
+      key: "render",
       value: function render() {
         return React.createElement(
-          'span',
+          "span",
           { className: this.props.elems.span },
           this.props.elems.text
         );
@@ -138,10 +138,10 @@ var addSections2Page = function addSections2Page() {
     }
 
     _createClass(ArticleLink, [{
-      key: 'render',
+      key: "render",
       value: function render() {
         return React.createElement(
-          'a',
+          "a",
           { className: this.props.elems.a, href: this.props.elems.href, target: this.props.elems.target },
           this.props.elems.text
         );
@@ -161,11 +161,11 @@ var addSections2Page = function addSections2Page() {
     }
 
     _createClass(Div, [{
-      key: 'render',
+      key: "render",
       value: function render() {
         return React.createElement(
-          'div',
-          { className: this.props.elems.div, 'data-viewer': this.props.elems.data },
+          "div",
+          { className: this.props.elems.div, "data-viewer": this.props.elems.data },
           this.props.elems.children !== undefined && this.props.elems.children.map(function (item) {
             return addElems(item);
           })
@@ -190,23 +190,27 @@ var addSections2Page = function addSections2Page() {
     }
 
     _createClass(Picture, [{
-      key: 'handleClick',
+      key: "handleClick",
       value: function handleClick() {
         this.setState(function (state) {
           return { toggleOn: !state.toggleOn };
         });
       }
     }, {
-      key: 'render',
+      key: "render",
       value: function render() {
         return React.createElement(
-          'div',
-          { className: 'viewer__box' },
-          React.createElement('div', { onClick: this.handleClick, className: this.props.elems.img, style: { backgroundImage: 'url(./images/photos/' + this.props.elems.src + ')' } }),
+          "div",
+          { className: "viewer__box" },
           React.createElement(
-            'div',
+            "div",
+            { onClick: this.handleClick, className: this.props.elems.img },
+            React.createElement("div", { className: "inner__picture", style: { backgroundImage: "url(./images/photos/" + this.props.elems.src + ")" } })
+          ),
+          React.createElement(
+            "div",
             { onClick: this.handleClick, className: this.state.toggleOn ? 'viewer__modal' : 'viewer__modal--active' },
-            React.createElement('img', { className: 'modal', src: './images/photos/' + this.props.elems.src })
+            React.createElement("img", { className: "modal", src: './images/photos/' + this.props.elems.src })
           )
         );
       }
@@ -225,18 +229,18 @@ var addSections2Page = function addSections2Page() {
     }
 
     _createClass(ViewerBox, [{
-      key: 'render',
+      key: "render",
       value: function render() {
         return React.createElement(
-          'article',
+          "article",
           { className: this.props.elems.article + ' photo__box' },
           this.props.elems.children.map(function (item, index) {
             return React.createElement(Picture, { elems: item });
           }),
           React.createElement(
-            'div',
-            { className: 'article__pattern' },
-            React.createElement('div', { className: 'pattern' })
+            "div",
+            { className: "article__pattern" },
+            React.createElement("div", { className: "pattern" })
           )
         );
       }
@@ -255,10 +259,10 @@ var addSections2Page = function addSections2Page() {
     }
 
     _createClass(Article, [{
-      key: 'render',
+      key: "render",
       value: function render() {
         return React.createElement(
-          'article',
+          "article",
           { className: this.props.elems.article },
           this.props.elems.children.map(function (item) {
             return addElems(item);
@@ -280,10 +284,10 @@ var addSections2Page = function addSections2Page() {
     }
 
     _createClass(Section, [{
-      key: 'render',
+      key: "render",
       value: function render() {
         return React.createElement(
-          'section',
+          "section",
           { className: this.props.elems.section },
           this.props.elems.children.map(function (item) {
             return addElems(item);
@@ -324,7 +328,7 @@ var addSections2Page = function addSections2Page() {
     }
 
     _createClass(Main, [{
-      key: 'componentDidMount',
+      key: "componentDidMount",
       value: function componentDidMount() {
         var _this13 = this;
 
@@ -335,11 +339,11 @@ var addSections2Page = function addSections2Page() {
         });
       }
     }, {
-      key: 'render',
+      key: "render",
       value: function render() {
         return React.createElement(
-          'div',
-          { id: this.props.id, className: 'main2Page' },
+          "div",
+          { id: this.props.id, className: "main2Page" },
           this.state.data.map(function (item) {
             return item.section !== undefined && React.createElement(Section, { elems: item });
           })

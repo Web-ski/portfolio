@@ -1,0 +1,54 @@
+.ui-page {
+
+  .main2Page {
+    .section {
+
+      .article {
+      }
+
+      .photo__box {
+
+        .article__pattern {
+
+          background-color: red;
+        }
+
+        .viewer__box {
+
+
+          .article__photo {
+
+          }
+        }
+
+        @media screen and (min-width: $min-md) {
+
+          .article__pattern {
+
+          }
+
+          .viewer__box {
+
+          }
+        }
+
+        @media screen and (min-width: $min-lg) {}
+
+        @media screen and (min-width: $min-xl) {}
+
+        @media screen and (min-width: $min-xxl) {
+          width: 33%;
+        }
+      }
+
+      &:nth-of-type(2),
+      &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {
+        .photo__box {
+          .viewer__box {
+
+          }
+        }
+      }
+    }
+  }
+}
