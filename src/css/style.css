@@ -1493,20 +1493,15 @@ header {
   margin: 0px auto 20px;
   height: auto;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px black;
-          box-shadow: 0 0 10px black;
-  border-radius: 2px;
-  padding: 10px;
-  background-color: black;
 }
 
 .webs-page .main2Page .section .photo__box .viewer__box .article__photo {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  min-height: 180px;
+  padding: 10px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1518,7 +1513,6 @@ header {
         grid-template-columns: repeat(5, 1fr);
     -ms-grid-rows: (1fr)[auto-fill];
         grid-template-rows: repeat(auto-fill, 1fr);
-    grid-gap: 20px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -1527,23 +1521,6 @@ header {
     min-height: 50vh;
     max-height: 60vh;
   }
-  .webs-page .main2Page .section .photo__box .article__pattern {
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 85%;
-    border-radius: 2px;
-    left: 20%;
-    background-image: radial-gradient(circle at 60%, rgba(0, 153, 255, 0.295), rgba(0, 255, 255, 0.733));
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: left;
-    transform: rotateZ(0deg);
-    -webkit-transform: rotateZ(0deg);
-    -moz-transform: rotateZ(0deg);
-    -ms-transform: rotateZ(0deg);
-    -o-transform: rotateZ(0deg);
-  }
   .webs-page .main2Page .section .photo__box .viewer__box {
     overflow: hidden;
     display: -ms-grid;
@@ -1551,27 +1528,11 @@ header {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    background-color: black;
     height: 100%;
     width: 100%;
     min-height: auto;
-    padding: 0;
     margin: 0;
     border-radius: 2px;
-    padding: 10px;
-  }
-  .webs-page .main2Page .section .photo__box .viewer__box .article__photo {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-transition: .3s;
-    transition: .3s;
-    min-height: auto;
-  }
-  .webs-page .main2Page .section .photo__box .viewer__box .article__photo:hover {
-    opacity: 1;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
   .webs-page .main2Page .section .photo__box .viewer__box:nth-of-type(1), .webs-page .main2Page .section .photo__box .viewer__box:nth-of-type(5) {
     -ms-grid-column: 1;
@@ -1594,6 +1555,23 @@ header {
     -ms-grid-column: 3;
         grid-column-start: 3;
     grid-column-end: 6;
+  }
+  .webs-page .main2Page .section .photo__box .article__pattern {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 85%;
+    border-radius: 2px;
+    left: 20%;
+    background-image: radial-gradient(circle at 60%, rgba(0, 153, 255, 0.295), rgba(0, 255, 255, 0.733));
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: left;
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
   }
 }
 
