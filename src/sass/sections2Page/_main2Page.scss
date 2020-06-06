@@ -122,8 +122,8 @@
           width: 100%;
           height: auto;
           min-height: 200px;
-          box-shadow: 0 0 10px black;
           z-index: 1;
+          box-shadow: 0 0 10px black;
           
           .inner__picture {
             @include img;
@@ -177,16 +177,19 @@
             //@include img;
             min-height: auto;
             overflow: hidden;
+            @include img;
+            background-size: 40px;
+            background-image: url('../images/icons/search.svg');
+            background-color: black;
             
             .inner__picture {
-              opacity: .8;
             }
             
             &:hover {
-              
+
               .inner__picture {
-                opacity: 1;
-                transform: scale(1.2);                
+                opacity: .5;
+                transform: scale(1.2);
               }
             }
           }

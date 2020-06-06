@@ -57,10 +57,6 @@
           cursor: pointer;
 
           .article__photo {
-            @include img;
-            width: 100%;
-            height: auto;
-            min-height: 200px;
             border-radius: 5%;
           }
         }
@@ -89,17 +85,6 @@
             border-radius: 5%;
 
             .article__photo {
-              //position: relative;
-              @include img;
-              background-color: black;
-              border-radius: 5%;
-              //opacity: .8;
-              transition: .3s;
-              min-height: auto;
-
-              &:hover {
-                opacity: 1;
-              }
             }
 
             &:nth-of-type(1),
