@@ -205,7 +205,8 @@ var addSections2Page = function addSections2Page() {
           React.createElement(
             "div",
             { onClick: this.handleClick, className: this.props.elems.img },
-            React.createElement("div", { className: "inner__picture", style: { backgroundImage: "url(./images/photos/" + this.props.elems.src + ")" } })
+            React.createElement("div", { className: "inner__picture", style: { backgroundImage: "url(./images/photos/" + this.props.elems.src + ")" } }),
+            React.createElement("div", { className: "inner__icon" })
           ),
           React.createElement(
             "div",
