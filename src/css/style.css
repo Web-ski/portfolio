@@ -1820,8 +1820,19 @@ header {
   grid-column-end: 6;
 }
 
+.ui-page .main2Page .section .photo__box {
+  overflow: visible;
+}
+
 .ui-page .main2Page .section .photo__box .article__pattern {
-  background-color: red;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/icons/circle.svg");
+  background-size: cover;
+  background-position: top;
+  padding: 1%;
+  overflow: visible;
 }
 
 @media screen and (min-width: 1500px) {

@@ -3,33 +3,31 @@
   .main2Page {
     .section {
 
-      .article {
-      }
+      .article {}
 
       .photo__box {
+        overflow: visible;
 
         .article__pattern {
-
-          background-color: red;
+          @include img;
+          background-image: url('../images/icons/circle.svg');
+          background-size: cover;
+          background-position: top;
+          padding: 1%;
+          overflow: visible;
         }
 
         .viewer__box {
 
 
-          .article__photo {
-
-          }
+          .article__photo {}
         }
 
         @media screen and (min-width: $min-md) {
 
-          .article__pattern {
+          .article__pattern {}
 
-          }
-
-          .viewer__box {
-
-          }
+          .viewer__box {}
         }
 
         @media screen and (min-width: $min-lg) {}
@@ -42,11 +40,11 @@
       }
 
       &:nth-of-type(2),
-      &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {
+      &:nth-of-type(3),
+      &:nth-of-type(4),
+      &:nth-of-type(5) {
         .photo__box {
-          .viewer__box {
-
-          }
+          .viewer__box {}
         }
       }
     }
