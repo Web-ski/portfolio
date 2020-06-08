@@ -1271,12 +1271,12 @@ header {
 }
 
 .main2Page .section .photo__box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-height: 50vh;
   width: 100%;
-  position: relative;
 }
 
 .main2Page .section .photo__box .viewer__box {
@@ -1288,22 +1288,56 @@ header {
 }
 
 .main2Page .section .photo__box .viewer__box .article__photo {
+  position: relative;
   width: 100%;
   height: auto;
   min-height: 200px;
-  z-index: 99;
+  z-index: 1;
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
+  overflow: hidden;
+  background-color: black;
 }
 
 .main2Page .section .photo__box .viewer__box .article__photo .inner__picture {
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
+  min-height: 200px;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+.main2Page .section .photo__box .viewer__box .article__photo .inner__icon {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 40px;
+  background-image: url("../images/icons/search.svg");
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .0;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.main2Page .section .photo__box .viewer__box .article__photo:hover .inner__picture {
+  opacity: .5;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main2Page .section .photo__box .viewer__box .article__photo:hover .inner__icon {
+  opacity: 1;
 }
 
 .main2Page .section .photo__box .article__pattern {
@@ -1348,10 +1382,7 @@ header {
     margin: 0;
   }
   .main2Page .section .photo__box .viewer__box .article__photo {
-    position: relative;
     min-height: auto;
-    overflow: hidden;
-    background-color: black;
   }
   .main2Page .section .photo__box .viewer__box .article__photo .inner__icon {
     position: absolute;
