@@ -212,7 +212,10 @@
             //@include img;
             min-height: auto;
 
-            .inner__picture {}
+            .inner__picture {
+              background-size: cover;
+              min-height: 50px;
+            }
 
             .inner__icon {
               position: absolute;

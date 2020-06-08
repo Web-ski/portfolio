@@ -1384,6 +1384,10 @@ header {
   .main2Page .section .photo__box .viewer__box .article__photo {
     min-height: auto;
   }
+  .main2Page .section .photo__box .viewer__box .article__photo .inner__picture {
+    background-size: cover;
+    min-height: 50px;
+  }
   .main2Page .section .photo__box .viewer__box .article__photo .inner__icon {
     position: absolute;
     background-position: center;
