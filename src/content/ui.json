@@ -7,7 +7,7 @@
         "children": [
           {
             "h1": "sectionTitle",
-            "text": "UX-DESIGN"
+            "text": "UI, DESIGN & ART"
           },
           {
             "p": "sectionText",
@@ -46,14 +46,6 @@
           {
             "img": "article__photo",
             "src": "UXproject1.png"
-          },
-          {
-            "img": "article__photo",
-            "src": "ux-course.jpg"
-          },
-          {
-            "img": "article__photo",
-            "src": "certyfikatUX.jpg"
           }
         ]
       }

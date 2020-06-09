@@ -1822,6 +1822,17 @@ header {
 
 .ui-page .main2Page .section .photo__box {
   overflow: visible;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[auto-fill];
+      grid-template-rows: repeat(auto-fill, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 .ui-page .main2Page .section .photo__box .article__pattern {
@@ -1833,6 +1844,29 @@ header {
   background-position: center;
   overflow: visible;
   opacity: 0.5;
+  left: 25px;
+}
+
+.ui-page .main2Page .section .photo__box .viewer__box {
+  width: 100px;
+  height: 100px;
+  min-height: 100px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ui-page .main2Page .section .photo__box .viewer__box .article__photo {
+  width: 100px;
+  height: 100px;
+  min-height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 @media screen and (min-width: 1500px) {
