@@ -11,10 +11,11 @@
         .article__pattern {
           @include img;
           background-image: url('../images/icons/circle.svg');
-          background-size: cover;
-          background-position: top;
-          padding: 1%;
+          //background-image: radial-gradient(circle, transparent, $text-blue2);
+          background-size: contain;
+          background-position: center;
           overflow: visible;
+          opacity: 0.5;
         }
 
         .viewer__box {

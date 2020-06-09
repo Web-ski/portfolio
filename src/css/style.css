@@ -1829,10 +1829,10 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../images/icons/circle.svg");
-  background-size: cover;
-  background-position: top;
-  padding: 1%;
+  background-size: contain;
+  background-position: center;
   overflow: visible;
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 1500px) {
