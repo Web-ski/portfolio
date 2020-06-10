@@ -63,30 +63,38 @@
           },
           {
             "p": "sectionText",
-            "text": "In 2020 I made the website for the experimental online edition of the bilingual Festival of Literature and Theatre: Between.Pomiędzy."
+            "text": "So far, I've made several UI projects for websites, such as: Research Institute for European Policy (two versions), European Journal of Transformation Studies (two versions), International Conference: 'Diasporas: Past and Present', Instytut Badań Ormiańskich (two versions), landing page for Żeton project, 'Zielone Słodzone' online home patisserie, Festiwal Literatury i Teatru: Kosmopolis 2020."
           },
           {
             "p": "sectionText",
-            "text": "It was an extraordinary project in the unusual situation of the world coronavirus epidemic. The festival lasted only one week and contained incoming materials. Its layout and design had to be prepared for quickly placing various elements."
-          },
-          {
-            "p": "sectionText",
-            "text": "I prepared the prototype in Figma."
+            "text": "The projects involved, in most cases, creating a visual identity with a logo. I used GIMP, Inkscape and Figma to create them."
           },
           {
             "div": "container",
             "children": [
               {
                 "a": "article__link",
-                "href": "https://www.figma.com/proto/3TXaZfAxlemdGzV3XROUMn/Between2020?node-id=1%3A4&viewport=411%2C-209%2C0.36153680086135864&scaling=min-zoom",
+                "href": "https://www.riep.org",
                 "target": "blank",
-                "text": "Go to the prototype"
+                "text": "Website of RIEP"
+              },
+              {
+                "a": "article__link",
+                "href": "https://www.journal-transformation.org/",
+                "target": "blank",
+                "text": "Website of EJTS"
+              },
+              {
+                "a": "article__link",
+                "href": "https://www.armenian-institute-ibo.org/",
+                "target": "blank",
+                "text": "Website of IBO"
               },
               {
                 "a": "article__link",
                 "href": "https://www.kosmopolis-between.pl/",
                 "target": "blank",
-                "text": "Go to the website"
+                "text": "Website of Kosmopolis"
               }
             ]
           }
@@ -98,15 +106,39 @@
         "children": [
           {
             "img": "article__photo",
+            "src": "riep-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "riep-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ejts-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "diaspora-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ibo-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ibo-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "zeton-landing-page-v1b.jpg"
+          },
+          {
+            "img": "article__photo",
+            "src": "zielone-slodzone.png"
+          },
+          {
+            "img": "article__photo",
             "src": "cosmopolis-screen.png"
-          },
-          {
-            "img": "article__photo",
-            "src": "cosmopolis-UX2.png"
-          },
-          {
-            "img": "article__photo",
-            "src": "cosmopolis3-screen.png"
           }
         ]
       },
