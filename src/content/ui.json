@@ -7,23 +7,23 @@
         "children": [
           {
             "h1": "sectionTitle",
-            "text": "UI, DESIGN & ART"
+            "text": "UI-DESIGN & OTHER"
           },
           {
             "p": "sectionText",
-            "text": "This site presents my user experience projects."
+            "text": "My interest in user interface design comes from my personal passion for art and design."
           },
           {
             "p": "sectionText",
-            "text": "When creating websites, it is crucial to define the user and his needs, capabilities, functionality and design the website in such a way as to best suit the product to them."
+            "text": "Often, a client who wants to create a website expects comprehensive work, not only to design what the website should contain, but also to design the user's interface."
           },
           {
             "p": "sectionText",
-            "text": "In 2019 I did the 'UX design' course of InfoShare Academy, led by Karolina Troka (PGS Software S.A.), which allowed me to carry out this process better. In 2020, I also participated in the UX design workshops for the 'Żeton' application project, led by Weronik Spaleniak (Digital Toucan: Panorama & JQL Search Extensions for Jira)."
+            "text": "Knowledge of such tools as Gimp, Inkscape and Figma allow to realize these expectations."
           },
           {
             "p": "sectionText",
-            "text": "I present here some photos from the course."
+            "text": "Below I present selected projects, such as: UI of websites, icons and logos, graphic design (eg. book covers, infographics) as well as my art activities (paintings and drawings)."
           }
         ]
       },
@@ -59,7 +59,7 @@
         "children": [
           {
             "h1": "articleTitle",
-            "text": "XI Festival of Literature and Theatre: Kosmopolis 2020"
+            "text": "UI-design of websites"
           },
           {
             "p": "sectionText",
@@ -124,7 +124,7 @@
         "children": [
           {
             "h1": "articleTitle",
-            "text": "Landing page of the app 'Żeton'"
+            "text": "Icons and logos"
           },
           {
             "p": "sectionText",
@@ -178,7 +178,7 @@
         "children": [
           {
             "h1": "articleTitle",
-            "text": "'Zielone Słodzone' - online home patisserie"
+            "text": "Graphic design"
           },
           {
             "p": "sectionText",
@@ -248,7 +248,7 @@
         "children": [
           {
             "h1": "articleTitle",
-            "text": "Redesigning of SkyCash"
+            "text": "Art"
           },
           {
             "p": "sectionText",

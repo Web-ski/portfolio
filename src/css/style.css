@@ -1838,7 +1838,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../images/icons/plus-cyan.svg"), url("../images/icons/plus-cyan.svg"), url("../images/icons/plus-cyan.svg"), url("../images/icons/plus-cyan.svg"), url("../images/icons/plus-cyan.svg");
-  background-size: 80%, 10%, 10%, 10%, 10%;
+  background-size: 71%, 10%, 10%, 10%, 10%;
   background-position: center, right bottom, right top, left bottom, left top;
   overflow: visible;
 }
