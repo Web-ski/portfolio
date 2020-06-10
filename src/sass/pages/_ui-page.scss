@@ -22,7 +22,7 @@
           background-size: contain;
           background-position: center;
           overflow: visible;
-          opacity: 0.5;
+         // opacity: 0.5;
           left: calc(50%);
           transform: translateX(-50%);
           -webkit-transform: translateX(-50%);
@@ -113,6 +113,9 @@
             }
 
             &:nth-of-type(1) {
+              justify-self: end;
+              align-self: end;
+
               .article__photo {
                 &:after {
                   content: 'websites';
@@ -123,6 +126,9 @@
             }
 
             &:nth-of-type(2) {
+              justify-self: start;
+              align-self: end;
+
               .article__photo {
                 &:after {
                   content: 'icons';
@@ -132,6 +138,9 @@
             }
 
             &:nth-of-type(3) {
+              justify-self: end;
+              align-self: start;
+
               .article__photo {
                 &:after {
                   content: 'commercial graphics';
@@ -141,6 +150,9 @@
             }
 
             &:nth-of-type(4) {
+              justify-self: start;
+              align-self: start;
+
               .article__photo {
                 &:after {
                   content: 'Art';
