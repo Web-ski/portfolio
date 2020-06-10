@@ -37,12 +37,13 @@
           height: 250px;
           width: 100%;
           border-radius: 2px;
-          box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.308);
+          //box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.308);
           left: 0;
           top: 0;
           //background-image: radial-gradient(rgba(255, 0, 0, .5), rgba(255, 69, 0, .3));
           //background-image: radial-gradient(rgba(0, 217, 255, 0.5), rgba(0, 204, 255, 0.3));
-          background-image: radial-gradient(circle at 60%, rgba(0, 153, 255, 0.295), rgba(0, 255, 255, 0.733));
+          //background-image: radial-gradient(circle at 60%, rgba(0, 153, 255, 0.295), rgba(0, 255, 255, 0.733));
+          background-color: $text-blue2;
           //oranred-ok,navy-ok,
           background-size: 200%;
           background-attachment: fixed;
@@ -124,7 +125,7 @@
             border-radius: 2px;
             left: 20%;
             //background-image: radial-gradient(rgba(255, 0, 0, .5), rgba(255, 69, 0, .3));
-            background-image: radial-gradient(circle at 60%, rgba(0, 153, 255, 0.295), rgba(0, 255, 255, 0.733));
+            //background-image: radial-gradient(circle at 60%, rgba(0, 153, 255, 0.295), rgba(0, 255, 255, 0.733));
             //background-image: url('../images/photos/01-screen.jpg');
             //oranred-ok,navy-ok,
             background-size: 100%;

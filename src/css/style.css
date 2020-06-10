@@ -1514,11 +1514,9 @@ header {
   height: 250px;
   width: 100%;
   border-radius: 2px;
-  -webkit-box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.308);
-          box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.308);
   left: 0;
   top: 0;
-  background-image: radial-gradient(circle at 60%, rgba(0, 153, 255, 0.295), rgba(0, 255, 255, 0.733));
+  background-color: rgba(0, 255, 255, 0.8);
   background-size: 200%;
   background-attachment: fixed;
 }
@@ -1598,7 +1596,6 @@ header {
     width: 85%;
     border-radius: 2px;
     left: 20%;
-    background-image: radial-gradient(circle at 60%, rgba(0, 153, 255, 0.295), rgba(0, 255, 255, 0.733));
     background-size: 100%;
     background-attachment: fixed;
     background-position: left;
@@ -1840,15 +1837,10 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 70%;
-  background-position: center;
+  background-image: url("../images/icons/plus-cyan.svg"), url("../images/icons/plus-cyan.svg"), url("../images/icons/plus-cyan.svg"), url("../images/icons/plus-cyan.svg"), url("../images/icons/plus-cyan.svg");
+  background-size: 80%, 10%, 10%, 10%, 10%;
+  background-position: center, right bottom, right top, left bottom, left top;
   overflow: visible;
-  left: calc(50%);
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
 }
 
 .ui-page .main2Page .section .photo__box .viewer__box {
@@ -1947,7 +1939,7 @@ header {
   content: '';
   display: block;
   width: 100%;
-  color: cyan;
+  color: white;
   text-align: center;
   z-index: 99;
   top: 50%;
