@@ -1838,7 +1838,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../images/icons/plus-cyan.svg"), url("../images/icons/plus-cyan.svg"), url("../images/icons/plus-cyan.svg"), url("../images/icons/plus-cyan.svg"), url("../images/icons/plus-cyan.svg");
-  background-size: 71%, 10%, 10%, 10%, 10%;
+  background-size: 220px, 10%, 10%, 10%, 10%;
   background-position: center, right bottom, right top, left bottom, left top;
   overflow: visible;
 }
@@ -1894,6 +1894,9 @@ header {
             align-items: center;
     justify-items: center;
   }
+  .ui-page .main2Page .section .photo__box .article__pattern {
+    background-size: 280px, 10%, 10%, 10%, 10%;
+  }
   .ui-page .main2Page .section .photo__box .viewer__box {
     overflow: visible;
     width: 140px;
@@ -1932,6 +1935,13 @@ header {
   .ui-page .main2Page .section .photo__box {
     width: 33%;
   }
+}
+
+.ui-page .main2Page .section:nth-of-type(2) .photo__box, .ui-page .main2Page .section:nth-of-type(3) .photo__box, .ui-page .main2Page .section:nth-of-type(4) .photo__box, .ui-page .main2Page .section:nth-of-type(5) .photo__box {
+  -ms-grid-columns: (1fr)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
 }
 
 .ui-page .main2Page .section:first-of-type .photo__box .viewer__box .article__photo:after {

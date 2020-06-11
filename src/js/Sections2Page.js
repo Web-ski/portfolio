@@ -88,7 +88,11 @@ const addSections2Page = function () {
     render() {
       return <article className={this.props.elems.article + ' photo__box'}>
         {(this.props.elems.children).map((item, index) =>
-          <Picture elems={item} />
+          item.container !== undefined ? (<div className={item.container}>
+            {(item.children).map((item, index) =>
+              <Picture elems={item} />
+            )}
+          </div>) : <Picture elems={item} />
         )}
         <div className="article__pattern">
           <div className="pattern"></div>
