@@ -15,15 +15,16 @@
         align-items: center;
         justify-items: center;
 
+        @include img;
+        background-image: url('../images/icons/plus-cyan.svg'), url('../images/icons/plus-cyan.svg'), url('../images/icons/plus-cyan.svg'), url('../images/icons/plus-cyan.svg'), url('../images/icons/plus-cyan.svg');
+        background-size: 220px, 10%, 10%, 10%, 10%;
+        background-position: center, right bottom, right top, left bottom, left top;
+        overflow: visible;
+
         .article__pattern {
-          @include img;
           //background-image: url('../images/icons/circle.svg');
           //background-image: radial-gradient(circle, transparent, $text-blue2);
           //background-color: white;
-          background-image: url('../images/icons/plus-cyan.svg'), url('../images/icons/plus-cyan.svg'), url('../images/icons/plus-cyan.svg'), url('../images/icons/plus-cyan.svg'), url('../images/icons/plus-cyan.svg');
-          background-size: 220px, 10%, 10%, 10%, 10%;
-          background-position: center, right bottom, right top, left bottom, left top;
-          overflow: visible;
           //opacity: 0.5;
           // left: calc(50%);
           // transform: translateX(-50%);
@@ -78,10 +79,9 @@
           grid-gap: 2px;
           align-items: center;
           justify-items: center;
+          background-size: 280px, 10%, 10%, 10%, 10%;
 
           .article__pattern {
-            background-size: 280px, 10%, 10%, 10%, 10%;
-
           }
 
           .viewer__box {
@@ -134,11 +134,33 @@
       &:nth-of-type(4),
       &:nth-of-type(5) {
         .photo__box {
+          position: relative;
+          display: flex;
+          overflow-x: scroll;
+          min-height: calc(222px + 60px);
+          width: calc(222px + 60px);
+          padding: 30px;
+          box-shadow: inset 0 0 20px grey;
+          
+          .article__elems-container {
+            //padding: 0px 25px;
+            overflow: visible;
+            //position: relative;
+            display: grid;
+            grid-gap: 2px;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: [row1-start] 1fr [row1-end] 1fr;
+            width: 100%;
+            height: 100%;
 
-          grid-template-columns: repeat(auto-fill, 1fr);
-          grid-template-rows: repeat(1, 1fr);
+            .viewer__box {}
+          }
 
-          .viewer__box {}
+          .article__pattern {
+            position: absolute;
+          }
         }
       }
 
