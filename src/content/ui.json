@@ -105,45 +105,40 @@
         "data": "viewer-box",
         "children": [
           {
-            "container": "article__elems-container",
-            "children": [
-              {
-                "img": "article__photo",
-                "src": "riep-wix-screen.png"
-              },
-              {
-                "img": "article__photo",
-                "src": "riep-screen.png"
-              },
-              {
-                "img": "article__photo",
-                "src": "ejts-screen.png"
-              },
-              {
-                "img": "article__photo",
-                "src": "diaspora-screen.png"
-              },
-              {
-                "img": "article__photo",
-                "src": "ibo-wix-screen.png"
-              },
-              {
-                "img": "article__photo",
-                "src": "ibo-screen.png"
-              },
-              {
-                "img": "article__photo",
-                "src": "zeton-landing-page-v1b.jpg"
-              },
-              {
-                "img": "article__photo",
-                "src": "zielone-slodzone.png"
-              },
-              {
-                "img": "article__photo",
-                "src": "cosmopolis-screen.png"
-              }
-            ]
+            "img": "article__photo",
+            "src": "riep-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "riep-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ejts-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "diaspora-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ibo-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ibo-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "zeton-landing-page-v1b.jpg"
+          },
+          {
+            "img": "article__photo",
+            "src": "zielone-slodzone.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "cosmopolis-screen.png"
           }
         ]
       },
