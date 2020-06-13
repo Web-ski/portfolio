@@ -158,6 +158,30 @@
               //align-self: end;
             }
           }
+
+          @media screen and (min-width: $min-md) {
+
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 90px);
+            background-size: 0px, 10%, 10%, 10%, 10%;
+            align-items: center;
+            justify-items: center;
+            align-content: center;
+
+            .viewer__box {
+              overflow: visible;
+              width: 90px;
+              height: 90px;
+              min-height: 90px;
+
+              .article__photo {
+                position: relative;
+                width: 90px;
+                height: 90px;
+                min-height: 90px;
+              }
+            }
+          }
         }
       }
 
