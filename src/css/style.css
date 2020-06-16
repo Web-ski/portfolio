@@ -2039,61 +2039,93 @@ header {
   min-height: 90px;
 }
 
+.ui-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box .inner__picture, .ui-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box .inner__picture, .ui-page .main2Page .section:nth-of-type(4) .photo__box .viewer__box .inner__picture, .ui-page .main2Page .section:nth-of-type(5) .photo__box .viewer__box .inner__picture {
+  opacity: 1;
+}
+
 .ui-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box:nth-of-type(odd) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box:nth-of-type(odd) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(4) .photo__box .viewer__box:nth-of-type(odd) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(5) .photo__box .viewer__box:nth-of-type(odd) .article__photo .inner__picture {
-  animation: boxSwitcher1 15s infinite;
-  -webkit-animation: boxSwitcher1 15s infinite;
+  animation: boxSwitcher1 10s infinite;
+  -webkit-animation: boxSwitcher1 10s infinite;
+}
+
+.ui-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box:nth-of-type(3) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box:nth-of-type(3) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(4) .photo__box .viewer__box:nth-of-type(3) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(5) .photo__box .viewer__box:nth-of-type(3) .article__photo .inner__picture {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.ui-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box:nth-of-type(5) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box:nth-of-type(5) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(4) .photo__box .viewer__box:nth-of-type(5) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(5) .photo__box .viewer__box:nth-of-type(5) .article__photo .inner__picture {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.ui-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box:nth-of-type(7) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box:nth-of-type(7) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(4) .photo__box .viewer__box:nth-of-type(7) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(5) .photo__box .viewer__box:nth-of-type(7) .article__photo .inner__picture {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.ui-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box:nth-of-type(9) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box:nth-of-type(9) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(4) .photo__box .viewer__box:nth-of-type(9) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(5) .photo__box .viewer__box:nth-of-type(9) .article__photo .inner__picture {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
 }
 
 .ui-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box:nth-of-type(even) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box:nth-of-type(even) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(4) .photo__box .viewer__box:nth-of-type(even) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(5) .photo__box .viewer__box:nth-of-type(even) .article__photo .inner__picture {
-  animation: boxSwitcher2 15s infinite;
-  -webkit-animation: boxSwitcher2 15s infinite;
+  animation: boxSwitcher1 10s 4s infinite;
+  -webkit-animation: boxSwitcher1 10s 4s infinite;
+}
+
+.ui-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box:nth-of-type(2) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box:nth-of-type(2) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(4) .photo__box .viewer__box:nth-of-type(2) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(5) .photo__box .viewer__box:nth-of-type(2) .article__photo .inner__picture {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.ui-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box:nth-of-type(4) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box:nth-of-type(4) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(4) .photo__box .viewer__box:nth-of-type(4) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(5) .photo__box .viewer__box:nth-of-type(4) .article__photo .inner__picture {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+.ui-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box:nth-of-type(6) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box:nth-of-type(6) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(4) .photo__box .viewer__box:nth-of-type(6) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(5) .photo__box .viewer__box:nth-of-type(6) .article__photo .inner__picture {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+.ui-page .main2Page .section:nth-of-type(2) .photo__box .viewer__box:nth-of-type(8) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(3) .photo__box .viewer__box:nth-of-type(8) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(4) .photo__box .viewer__box:nth-of-type(8) .article__photo .inner__picture, .ui-page .main2Page .section:nth-of-type(5) .photo__box .viewer__box:nth-of-type(8) .article__photo .inner__picture {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
 }
 
 @-webkit-keyframes boxSwitcher1 {
   0% {
-    opacity: 0;
+    width: 100%;
+  }
+  3% {
+    width: 0%;
   }
   50% {
-    opacity: 1;
+    width: 0%;
+  }
+  53% {
+    width: 100%;
   }
   100% {
-    opacity: 0;
+    width: 100%;
   }
 }
 
 @keyframes boxSwitcher1 {
   0% {
-    opacity: 0;
+    width: 100%;
+  }
+  3% {
+    width: 0%;
   }
   50% {
-    opacity: 1;
+    width: 0%;
+  }
+  53% {
+    width: 100%;
   }
   100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes boxSwitcher2 {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes boxSwitcher2 {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+    width: 100%;
   }
 }
 
