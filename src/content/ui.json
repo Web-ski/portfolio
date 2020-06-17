@@ -156,25 +156,19 @@
         "children": [
           {
             "h1": "articleTitle",
-            "text": "Icons and logos"
+            "text": "Icons & logos"
           },
           {
             "p": "sectionText",
-            "text": "Since 2019 I'am a member of the 'Żeton' team working on the application developing children's social competences."
+            "text": "I have prepared several dozen icons for various web projects. I used some of them on the websites I created."
           },
           {
             "p": "sectionText",
-            "text": "In early 2020, I made a design for the website of the application that the team started working on. During content consultation with therapists, we decided to redesign some elements."
+            "text": "I have also created several logo designs, including for scientific institutions (such as Research Institute for European Policy and Instytut Badań Ormiańskich), events (International Conference: 'Diasporas: Past and Present') and business ('Zielone Słodzone' online home patisserie)"
           },
           {
             "p": "sectionText",
-            "text": "I prepared mokups, wireframe and prototype using Balsamique and Figma."
-          },
-          {
-            "a": "article__link",
-            "href": "https://www.figma.com/proto/DXcTKUZn5tQlgpQBuDQedR/%C5%BBeton?node-id=161%3A42&viewport=601%2C-1855%2C0.26817017793655396&scaling=min-zoom",
-            "target": "blank",
-            "text": "Go to the prototype"
+            "text": "I used programs like Inkscape and GIMP."
           }
         ]
       },
@@ -184,15 +178,39 @@
         "children": [
           {
             "img": "article__photo",
-            "src": "zeton-landing-page-v2.jpg"
+            "src": "beetroot.svg"
           },
           {
             "img": "article__photo",
-            "src": "zeton-landing-page-v2b.jpg"
+            "src": "bush.svg"
           },
           {
             "img": "article__photo",
-            "src": "zeton-landing-page-v1b.jpg"
+            "src": "sunrise.svg"
+          },
+          {
+            "img": "article__photo",
+            "src": "phone-wh.svg"
+          },
+          {
+            "img": "article__photo",
+            "src": "drawn-heart-pink.svg"
+          },
+          {
+            "img": "article__photo",
+            "src": "facebook.svg"
+          },
+          {
+            "img": "article__photo",
+            "src": "logo riep 3.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "logo 8 d.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "gree-sweet-color.svg"
           }
         ]
       },
