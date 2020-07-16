@@ -144,7 +144,7 @@
       },
       {
         "aside": "articleNumber",
-        "text": "2020"
+        "text": "1"
       }
     ]
   },
@@ -190,15 +190,15 @@
           },
           {
             "img": "article__photo",
-            "src": "phone-wh.svg"
+            "src": "phone-blue.svg"
           },
           {
             "img": "article__photo",
-            "src": "drawn-heart-pink.svg"
+            "src": "gree-sweet-color.svg"
           },
           {
             "img": "article__photo",
-            "src": "facebook.svg"
+            "src": "facebook-blue.svg"
           },
           {
             "img": "article__photo",
@@ -210,13 +210,13 @@
           },
           {
             "img": "article__photo",
-            "src": "gree-sweet-color.svg"
+            "src": "dzieci_1white.svg"
           }
         ]
       },
       {
         "aside": "articleNumber",
-        "text": "2020"
+        "text": "2"
       }
     ]
   },
@@ -232,25 +232,21 @@
           },
           {
             "p": "sectionText",
-            "text": "In 2020, I designed a website for a micro home patisserie."
+            "text": "I have created also graphics for commercial and professional use."
           },
           {
             "p": "sectionText",
-            "text": "Brief UX helped me know the client's needs, and 'screener' and 'persona' helped identify the specifics of potential customers."
+            "text": "In my achievements I have infographics, book illustrations (eg. for T. Stężała: 'Elbing 1945', Wyd. Erica, 2011) and covers (eg. for T. Stężała: 'Kapitanowie 1941. Kryptonim Ubezpieczalnia', Wyd. Erica, 2014 & 'Pułkownicy 1944. Rzeczpospolita Partyzancka', Wyd. Erica, 2015) and magazine cover ('Biuletyn Instytutu Badań Ormiańskich')."
           },
           {
             "p": "sectionText",
-            "text": "The client offered only two products, so the entire offer could be presented on the landing page. The site was to be ultimately connected to the blog that the client intended to create."
-          },
-          {
-            "p": "sectionText",
-            "text": "I prepared the prototype in InVision."
+            "text": "I prepared its in GIMP and SketchBook."
           },
           {
             "a": "article__link",
-            "href": "https://projects.invisionapp.com/prototype/Z-Pasj-Wypiekane-projekt-2-ck58hetm900307i01ttckoyjn/play/1dadc98b",
+            "href": "https://historia.org.pl/2010/11/25/elbing-1945%E2%80%A6-t-stezala-recenzja/",
             "target": "blank",
-            "text": "Go to the prototype"
+            "text": "Book revie 'Elbing 1945'"
           }
         ]
       },
@@ -281,12 +277,24 @@
           {
             "img": "article__photo",
             "src": "zielone-slodzone-5.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "zielone-slodzone-4.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "zielone-slodzone-5.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "zielone-slodzone-5.png"
           }
         ]
       },
       {
         "aside": "articleNumber",
-        "text": "2020"
+        "text": "3"
       }
     ]
   },
@@ -371,7 +379,7 @@
       },
       {
         "aside": "articleNumber",
-        "text": "2019"
+        "text": "4"
       }
     ]
   }
