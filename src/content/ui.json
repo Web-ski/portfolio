@@ -240,13 +240,13 @@
           },
           {
             "p": "sectionText",
-            "text": "I prepared its in GIMP and SketchBook."
+            "text": "I prepared its in GIMP and SketchBook (Autodesk Inc.)."
           },
           {
             "a": "article__link",
             "href": "https://historia.org.pl/2010/11/25/elbing-1945%E2%80%A6-t-stezala-recenzja/",
             "target": "blank",
-            "text": "Book revie 'Elbing 1945'"
+            "text": "Book review 'Elbing 1945'"
           }
         ]
       },
@@ -256,11 +256,11 @@
         "children": [
           {
             "img": "article__photo",
-            "src": "zielone-slodzone.png"
+            "src": "1941.jpg"
           },
           {
             "img": "article__photo",
-            "src": "zielone-slodzone-1.png"
+            "src": "1944.jpg"
           },
           {
             "img": "article__photo",
