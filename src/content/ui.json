@@ -327,38 +327,42 @@
           },
           {
             "p": "sectionText",
-            "text": "During the 'UX Designer' course, our team carried out a project to improve the smoothness of operations in the application on the example of the SkyCash application."
+            "text": "My interest in applied graphics results from my artistic activity, which I have been running since my youth."
           },
           {
             "p": "sectionText",
-            "text": "The team included: Paweł Nieczuja-Ostrowski, Marta Gołyszyn, Krzysztof Osiak, Sylwia Tokarska, Magdalena Mańko."
+            "text": "I mainly do acrylic painting, but also drawing. I had several individual exhibitions, mainly in Elblag, where I come from (e.g. in custody), as well as collective exhibitions (e.g. in Duseldorf in 2009, at Galeria El - 'Salon Elbląski' in 2009, 2011, 2013)."
           },
           {
             "p": "sectionText",
-            "text": "To thoroughly understand the needs and problems of users we have created a questionnaire. Then we carried out: 1) direct research combined with in-depth interview, regarding behavior, 2) field research, using the appropriate tool (application) to register the ticket purchase process."
-          },
-          {
-            "p": "sectionText",
-            "text": "In the research, we used a program recording the operation of purchasing tickets on the phone and an application for quick assessment of purchase satisfaction by the respondent - created especially for this task by me - which I called SkyFace."
-          },
-          {
-            "p": "sectionText",
-            "text": "We developed the prototype in Figma program, and its final version was made by Krzysztof Osiak."
+            "text": "I was also a co-founder of Klaster Biznesu Kultury 'BizArt' (Business of Culture Cluster), which was established on May 11, 2011 in Elbląg."
           },
           {
             "div": "container",
             "children": [
               {
                 "a": "article__link",
-                "href": "https://www.figma.com/proto/GebAOBKbK8USdqcghdviHq/skycash_v3?node-id=1%3A2&scaling=scale-down",
+                "href": "https://pawelnieczuja.wixsite.com/missionart",
                 "target": "blank",
-                "text": "Go to the prototype"
+                "text": "First project of my online exhibition"
               },
               {
                 "a": "article__link",
-                "href": "https://web-ski.github.io/skyFace/",
+                "href": "http://archiwalna.galeria-el.pl/artysta/pawel-nieczuja-ostrowski.html",
                 "target": "blank",
-                "text": "Go to SkyFace"
+                "text": "Galeria El"
+              },
+              {
+                "a": "article__link",
+                "href": "http://archiwalna.galeria-el.pl/klub-srodowisk-tworczych.html",
+                "target": "blank",
+                "text": "'Klub Środowisk Twórczych'"
+              },
+              {
+                "a": "article__link",
+                "href": "https://www.portel.pl/kultura/czlowiek-i-materia/36921",
+                "target": "blank",
+                "text": "About exhibition in Galeria Nobilis"
               }
             ]
           }
@@ -391,6 +395,18 @@
           {
             "img": "article__photo",
             "src": "sky-cash-UX4.jpg"
+          },
+          {
+            "img": "article__photo",
+            "src": "sky-cash-UX4.jpg"
+          },
+          {
+            "img": "article__photo",
+            "src": "rysunek_1.jpg"
+          },
+          {
+            "img": "article__photo",
+            "src": "rysunek_2.jpg"
           }
         ]
       },
