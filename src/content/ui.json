@@ -236,17 +236,34 @@
           },
           {
             "p": "sectionText",
-            "text": "In my achievements I have infographics, book illustrations (eg. for T. Stężała: 'Elbing 1945', Wyd. Erica, 2011) and covers (eg. for T. Stężała: 'Kapitanowie 1941. Kryptonim Ubezpieczalnia', Wyd. Erica, 2014 & 'Pułkownicy 1944. Rzeczpospolita Partyzancka', Wyd. Erica, 2015) and magazine cover ('Biuletyn Instytutu Badań Ormiańskich')."
+            "text": "In my achievements I have infographics, posters, book illustrations (eg. for T. Stężała: 'Elbing 1945', Wyd. Erica, 2011) and covers (eg. for T. Stężała: 'Kapitanowie 1941. Kryptonim Ubezpieczalnia', Wyd. Erica, 2014 & 'Pułkownicy 1944. Rzeczpospolita Partyzancka', Wyd. Erica, 2015) and magazine covers (eg. 'European Journal of Transformation Studies' & 'Biuletyn Instytutu Badań Ormiańskich')."
           },
           {
             "p": "sectionText",
             "text": "I prepared its in GIMP and SketchBook (Autodesk Inc.)."
           },
           {
-            "a": "article__link",
-            "href": "https://historia.org.pl/2010/11/25/elbing-1945%E2%80%A6-t-stezala-recenzja/",
-            "target": "blank",
-            "text": "Book review 'Elbing 1945'"
+            "div": "container",
+            "children": [
+              {
+                "a": "article__link",
+                "href": "https://historia.org.pl/2010/11/25/elbing-1945%E2%80%A6-t-stezala-recenzja/",
+                "target": "blank",
+                "text": "Book review 'Elbing 1945'"
+              },
+              {
+                "a": "article__link",
+                "href": "https://www.journal-transformation.org/issues.html",
+                "target": "blank",
+                "text": "Issues of 'EJTS'"
+              },
+              {
+                "a": "article__link",
+                "href": "https://www.armenian-institute-ibo.org/publications.html",
+                "target": "blank",
+                "text": "Issues of 'BIBO'"
+              }
+            ]
           }
         ]
       },
@@ -254,6 +271,26 @@
         "article": "article",
         "data": "viewer-box",
         "children": [
+          {
+            "img": "article__photo",
+            "src": "Apokalipsa-poster.jpg"
+          },
+          {
+            "img": "article__photo",
+            "src": "diapsora-poster.jpg"
+          },
+          {
+            "img": "article__photo",
+            "src": "IBO-poster.jpg"
+          },
+          {
+            "img": "article__photo",
+            "src": "Genocyde-poster.jpg"
+          },
+          {
+            "img": "article__photo",
+            "src": "wykres2.jpg"
+          },
           {
             "img": "article__photo",
             "src": "1941.jpg"
@@ -264,31 +301,11 @@
           },
           {
             "img": "article__photo",
-            "src": "zielone-slodzone-2.png"
+            "src": "ejots_03b2.jpg"
           },
           {
             "img": "article__photo",
-            "src": "zielone-slodzone-3.png"
-          },
-          {
-            "img": "article__photo",
-            "src": "zielone-slodzone-4.png"
-          },
-          {
-            "img": "article__photo",
-            "src": "zielone-slodzone-5.png"
-          },
-          {
-            "img": "article__photo",
-            "src": "zielone-slodzone-4.png"
-          },
-          {
-            "img": "article__photo",
-            "src": "zielone-slodzone-5.png"
-          },
-          {
-            "img": "article__photo",
-            "src": "zielone-slodzone-5.png"
+            "src": "bibo_05b.jpg"
           }
         ]
       },
