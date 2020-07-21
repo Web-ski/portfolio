@@ -237,6 +237,10 @@
               {
                 "img": "article__icon",
                 "src": "./images/icons/inkscape.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/sketchbook.png"
               }
             ]
           }
@@ -257,12 +261,11 @@
           },
           {
             "a": "photo__link",
-            "href": "https://pandemium.pl/?p=1185g",
-            "target": "blank",
+            "href": "ui.html",
             "children": [
               {
                 "img": "article__photo",
-                "src": "./images/photos/pandemium-info.png"
+                "src": "./images/photos/Apokalipsa-poster.jpg"
               }
             ]
           }
