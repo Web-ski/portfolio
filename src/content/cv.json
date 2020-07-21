@@ -1,0 +1,60 @@
+[
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "sectionTitle",
+            "text": "PROFESSIONAL INFO"
+          },
+          {
+            "p": "sectionText",
+            "text": "I'm the junior front-end developer and UX/UI-designer."
+          },
+          {
+            "p": "sectionText",
+            "text": "For two years I have been gradually developing professionally in the direction of designing and programming websites and web applications."
+          },
+          {
+            "p": "sectionText",
+            "text": "I was prompted to enter this new career path by the willingness to use my own potential, through the possibility of further development and qualifications, my own interests in design, as well as searching for a work environment that is innovation-friendly and open to challenges."
+          },
+          {
+            "p": "sectionText",
+            "text": "In 2018, I completed my first online front-end course, and in 2019-2020 I was taking more advanced classroom courses. At the same time, I used the experience gained in the implementation of the first website designs, so far 5."
+          },
+          {
+            "a": "article__link",
+            "href": "./content/Nieczuja CV 2020.pdf",
+            "target": "blank",
+            "text": "Take my CV"
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "data": "viewer-box",
+        "children": [
+          {
+            "img": "article__photo",
+            "src": "ibo-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "icons-group.svg"
+          },
+          {
+            "img": "article__photo",
+            "src": "ejots_03b2.jpg"
+          },
+          {
+            "img": "article__photo",
+            "src": "obraz_1.jpg"
+          }
+        ]
+      }
+    ]
+  }
+]
