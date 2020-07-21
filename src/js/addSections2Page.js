@@ -2,7 +2,7 @@ const addSections2Page = function () {
 
   const main = document.querySelector('.main2Page');
 
-  let url = `http://localhost/my-test/portfolio/portfolio/dist/js/${pageName}.json`;
+  let url = `content/${pageName}.json`;
 
   //dodawanie data-viewer
   let viewerNumber = 0.1;
@@ -54,7 +54,6 @@ const addSections2Page = function () {
       parent.appendChild(elem);
       item.abbr !== undefined && (addingAbbrElems(elem, parent));
       item.children !== undefined && (addSections(item.children, elem));
-      //parent.children[0].getAttribute(`data-${item.data}`) !== null && (addPhotoViewer(item.data, index));
     });
   }
 

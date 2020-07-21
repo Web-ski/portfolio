@@ -40,17 +40,3 @@ moveHeroElems();
 window.addEventListener('resize', function () {
   moveHeroElems();
 });
-/*
-boxesArr.map((item, index) => {
-  item.addEventListener('mouseenter', function (event) {
-    item.classList.toggle('tile');
-    item.children[0] && (Array.from(item.children).map((item) => item.classList.toggle('hide')));
-  }, false);
-  
-  item.addEventListener('mouseleave', function (event) {
-    setTimeout(function () {
-      item.classList.toggle('tile');
-    }, 1000)
-  }, false);
-})
-*/

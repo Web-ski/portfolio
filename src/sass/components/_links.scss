@@ -15,6 +15,7 @@
   font-size: 14px;
   width: max-content;
   margin-bottom: 2vh;
+  transition: .2s;
 
   @media screen and (min-width: $min-md) {
     font-size: 16px;
@@ -31,8 +32,16 @@
   }
 
   &:hover {
-    color: $text-blue;
+    font-weight: bold;
   }
+}
+
+.footer__link {
+  @extend .article__link;
+  line-height: 180%;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .section__radio {
@@ -90,7 +99,7 @@
       @media screen and (min-width: $min-md) {
         height: 25px;
         width: 25px;
-  
+
       }
     }
 

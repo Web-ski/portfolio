@@ -1,0 +1,179 @@
+.ux-page {
+
+  .main2Page {
+    .section {
+      overflow-y: hidden;
+
+      .article {
+        width: 100%;
+        align-items: flex-start;
+        height: auto;
+
+        &:last-of-type {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          //background-color: $bg-black;
+
+          @media screen and (min-width: $min-md) {
+            max-width: 40%;
+            width: min-content;
+          }
+
+          @media screen and (min-width: $min-xxl) {
+            max-width: 500px;
+            width: min-content;
+          }
+        }
+      }
+
+      .photo__box {
+        @include flex;
+
+        .article__pattern {
+          position: absolute;
+          display: block;
+          height: 250px;
+          width: 100%;
+          border-radius: 5%;
+          box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.308);
+          left: 0;
+          top: 0;
+          //background-image: radial-gradient(rgba(255, 0, 0, .5), rgba(255, 69, 0, .3));
+          //background-image: radial-gradient(rgba(0, 217, 255, 0.5), rgba(0, 204, 255, 0.3));
+          background-image: radial-gradient(circle at 50%, cyan 20%, rgba(0, 255, 255, 0.671) 50%, rgba(128, 128, 128, 0.11)),
+            radial-gradient(circle at 10% 10%, rgba(0, 255, 255, 0.2) 10%, darkorchid 40%);
+          //oranred-ok,navy-ok,
+          background-size: 100%;
+          background-attachment: fixed;
+        }
+
+        .viewer__box {
+          width: 90%;
+          margin: 0px auto 10px;
+          height: auto;
+          //min-height: 200px;
+          cursor: pointer;
+
+          .article__photo {
+            border-radius: 5%;
+          }
+        }
+
+        @media screen and (min-width: $min-md) {
+          position: relative;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(auto-fill, 1fr);
+          //grid-gap: 20px;
+          align-items: stretch;
+          justify-items: stretch;
+          height: 90%;
+          min-height: 50vh;
+          max-height: 60vh;
+          //background-color: grey;
+
+          .viewer__box {
+            overflow: hidden;
+            display: grid;
+            align-items: stretch;
+            height: 100%;
+            width: 100%;
+            min-height: auto;
+            margin: 0;
+            border-radius: 5%;
+
+            .article__photo {
+            }
+
+            &:nth-of-type(1),
+            &:nth-of-type(5) {
+              grid-column-start: 1;
+              grid-column-end: 4;
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(6) {
+              grid-column-start: 4;
+              grid-column-end: 6;
+              grid-row: 1fr;
+            }
+
+            &:nth-of-type(3) {
+              grid-column-start: 1;
+              grid-column-end: 3;
+            }
+
+            &:nth-of-type(4) {
+              grid-column-start: 3;
+              grid-column-end: 6;
+            }
+          }
+
+          .article__pattern {
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 85%;
+            border-radius: 5%;
+            left: 20%;
+            //background-image: radial-gradient(rgba(255, 0, 0, .5), rgba(255, 69, 0, .3));
+            //background-image: radial-gradient(rgba(0, 217, 255, 0.5), rgba(0, 204, 255, 0.3));
+            background-image: radial-gradient(circle at center, cyan, rgba(0, 255, 255, 0.2)),
+              radial-gradient(circle at bottom, rgba(0, 255, 255, .1), darkorchid 10%),
+              linear-gradient(to top, darkorchid, purple);
+            //oranred-ok,navy-ok,
+            background-size: 100%;
+            background-attachment: fixed;
+            background-position: center;
+
+
+            transform: rotateZ(0deg);
+            -webkit-transform: rotateZ(0deg);
+            -moz-transform: rotateZ(0deg);
+            -ms-transform: rotateZ(0deg);
+            -o-transform: rotateZ(0deg);
+
+            animation: pulsar 4s infinite;
+
+            @keyframes pulsar {
+              0% {
+                background-size: 100%;
+              }
+
+              50% {
+                background-size: 150%;
+              }
+
+              100% {
+                background-size: 100%;
+              }
+            }
+
+          }
+        }
+
+        @media screen and (min-width: $min-lg) {}
+
+        @media screen and (min-width: $min-xl) {}
+
+        @media screen and (min-width: $min-xxl) {
+          width: 33%;
+        }
+      }
+
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        .photo__box {
+          .viewer__box {
+            &:nth-of-type(3) {
+              grid-column-start: 1;
+              grid-column-end: 6;
+            }
+          }
+        }
+      }
+    }
+  }
+}

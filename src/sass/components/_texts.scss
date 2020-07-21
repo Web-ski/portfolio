@@ -66,11 +66,27 @@
 }
 
 .article__abbr, .article__abbr--last {
-  //color: red;
+  color: $text-light;
   text-decoration: underline dotted;
   cursor: help;
 }
 
-.article__span {
+.footer__text {
+  @extend .article__text;
+  text-align: center;
+  margin-bottom: 0;
 
+  @media screen and (min-width: $min-md) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $min-lg) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $min-xl) {}
+
+  @media screen and (min-width: $min-xxl) {
+    font-size: 18px;
+  }
 }

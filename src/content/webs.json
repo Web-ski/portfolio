@@ -1,0 +1,377 @@
+[
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "sectionTitle",
+            "text": "My Websites"
+          },
+          {
+            "p": "sectionText",
+            "text": "This site presents websites made by me."
+          },
+          {
+            "p": "sectionText",
+            "text": "I started creating the first websites eight years ago using ",
+            "children": [
+              {
+                "abbr": "article__abbr",
+                "title": "Content Management System",
+                "text": "CMS "
+              },
+              {
+                "span": "span",
+                "text": "for my own needs and for my professional activity. Mainly it was conceptual work and involved the creation and addition of visual and substantive content. I've created 6 such websites in wix CMS. However, CMS quickly showed its limitations."
+              }
+            ]
+          },
+          {
+            "p": "sectionText",
+            "text": "In 2018, I started learning how to create websites professionally. In 2019, I also started creating the first pages myself, using: ",
+            "children": [
+              {
+                "abbr": "article__abbr",
+                "title": "HyperText Markup Language",
+                "text": "HTML5"
+              },
+              {
+                "span": "span",
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "Cascading Style Sheets",
+                "text": "CSS"
+              },
+              {
+                "span": "span",
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "Sassy CSS",
+                "text": "SCSS"
+              },
+              {
+                "span": "span",
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript in the ECMAScript 6 standard",
+                "text": "ES6"
+              },
+              {
+                "span": "span",
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript library",
+                "text": "jQuery"
+              },
+              {
+                "span": "span",
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "CSS framework",
+                "text": "Bootstrap4"
+              },
+              {
+                "span": "span",
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript library",
+                "text": "React"
+              },
+              {
+                "span": "span",
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "distributed version-control system",
+                "text": "Git"
+              },
+              {
+                "span": "span",
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "platform for software development version control",
+                "text": "GitHub"
+              },
+              {
+                "span": "span",
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr--last",
+                "title": "Visual Studio Code",
+                "text": "VSCode"
+              },
+              {
+                "span": "span",
+                "text": ". I present my works in sections below."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "data": "viewer-box",
+        "children": [
+          {
+            "img": "article__photo",
+            "src": "missionart-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "riep-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "diaspora-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ejts-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "wierszoatak-wix-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ibo-wix-screen.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "articleTitle",
+            "text": "XI Festival of Literature and Theatre: Kosmopolis 2020"
+          },
+          {
+            "p": "sectionText",
+            "text": "In 2020 I made the website for the experimental online edition of the bilingual Festival of Literature and Theatre: Between.Pomiędzy."
+          },
+          {
+            "p": "sectionText",
+            "text": "It was an extraordinary project in the unusual situation of the world coronavirus epidemic."
+          },
+          {
+            "p": "sectionText",
+            "text": "I used the front-end technologies and tools, such as: HTML5, SCSS, JavaScript, React, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+          },
+          {
+            "a": "article__link",
+            "href": "https://www.kosmopolis-between.pl/",
+            "target": "blank",
+            "text": "Go to the website"
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "data": "viewer-box",
+        "children": [
+          {
+            "img": "article__photo",
+            "src": "cosmopolis-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "cosmopolis2-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "cosmopolis3-screen.png"
+          }
+        ]
+      },
+      {
+        "aside": "articleNumber",
+        "text": "2020"
+      }
+    ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "articleTitle",
+            "text": "Research Institute of Armenian Studies"
+          },
+          {
+            "p": "sectionText",
+            "text": "In 2019 I made the website of the academic association 'Research Institute of Armenian Studies' (originally: 'Instytut Badań Ormiańskich')."
+          },
+          {
+            "p": "sectionText",
+            "text": "In the first version I had created this project by CMS wix in 2018. It was a part of my professional activity at that time."
+          },
+          {
+            "p": "sectionText",
+            "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+          },
+          {
+            "a": "article__link",
+            "href": "https://www.armenian-institute-ibo.org/",
+            "target": "blank",
+            "text": "Go to the website"
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "data": "viewer-box",
+        "children": [
+          {
+            "img": "article__photo",
+            "src": "ibo-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ibo2-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ibo3-screen.png"
+          }
+        ]
+      },
+      {
+        "aside": "articleNumber",
+        "text": "2019"
+      }
+    ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "articleTitle",
+            "text": "European Journal of Transformation Studies"
+          },
+          {
+            "p": "sectionText",
+            "text": "In 2018 I made the website of the academic journal 'European Journal of Transformation Studies'."
+          },
+          {
+            "p": "sectionText",
+            "text": "In the first version I had created this project by CMS wix in 2018. It was a part of my professional activity at that time."
+          },
+          {
+            "p": "sectionText",
+            "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+          },
+          {
+            "a": "article__link",
+            "href": "https://www.journal-transformation.org/",
+            "target": "blank",
+            "text": "Go to the website"
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "data": "viewer-box",
+        "children": [
+          {
+            "img": "article__photo",
+            "src": "ejts-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ejts2-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "ejts3-screen.png"
+          }
+        ]
+      },
+      {
+        "aside": "articleNumber",
+        "text": "2019"
+      }
+    ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "articleTitle",
+            "text": "Research Institute for European Policy"
+          },
+          {
+            "p": "sectionText",
+            "text": "In 2019 I made the website of the academic association 'Research Institute for European Policy' (originally: 'Instytut Badań nad Polityką Europejską'). It was may first website made by front-end technologies."
+          },
+          {
+            "p": "sectionText",
+            "text": "At the beginning, in 2015 I had created this project by CMS of home.pl, and recreated on CMS wix in 2016. It was a part of my professional activity at that time."
+          },
+          {
+            "p": "sectionText",
+            "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, jQuery, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+          },
+          {
+            "a": "article__link",
+            "href": "https://www.riep.org/",
+            "target": "blank",
+            "text": "Go to the website"
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "data": "viewer-box",
+        "children": [
+          {
+            "img": "article__photo",
+            "src": "riep-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "riep2-screen.png"
+          },
+          {
+            "img": "article__photo",
+            "src": "riep3-screen.png"
+          }
+        ]
+      },
+      {
+        "aside": "articleNumber",
+        "text": "2019"
+      }
+    ]
+  }
+]
