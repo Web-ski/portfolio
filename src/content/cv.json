@@ -39,19 +39,11 @@
         "children": [
           {
             "img": "article__photo",
-            "src": "ibo-wix-screen.png"
+            "src": "certyfikatUX.jpg"
           },
           {
             "img": "article__photo",
-            "src": "icons-group.svg"
-          },
-          {
-            "img": "article__photo",
-            "src": "ejots_03b2.jpg"
-          },
-          {
-            "img": "article__photo",
-            "src": "obraz_1.jpg"
+            "src": "certyficatReact.png"
           }
         ]
       }
