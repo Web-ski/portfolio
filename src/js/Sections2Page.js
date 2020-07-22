@@ -101,6 +101,16 @@ const addSections2Page = function () {
     }
   }
 
+  
+  class SliderBox extends React.Component {
+
+    render() {
+      return <article className={this.props.elems.article + ' slider__box'}>
+
+      </article>;
+    }
+  }
+
   class Article extends React.Component {
 
     render() {

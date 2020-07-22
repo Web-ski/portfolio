@@ -35,7 +35,7 @@
       },
       {
         "article": "article",
-        "data": "viewer-box",
+        "data": "slider-box",
         "children": [
           {
             "img": "article__photo",
