@@ -101,12 +101,34 @@ const addSections2Page = function () {
     }
   }
 
-  
+
   class SliderBox extends React.Component {
-
+    constructor(props) {
+      super(props);
+      this.state = [
+        { toggleSlide: true }
+      ]      //this.handleClick = this.handleClick.bind(this);
+    };
+    handleClick() {
+      this.setState(state => ({ toggleSlide: !state.toggleSlide }))
+    }
     render() {
+      const activeSlide1 = (this.state.toggleSlide ? '' : 'show');
+      const activeSlide = (this.state.toggleSlide ? 'show' : '');
+      
       return <article className={this.props.elems.article + ' slider__box'}>
-
+        <div className='slides__container'>
+          {(this.props.elems.children).map((item, index) =>
+          //console.log(item),
+          {
+            //let active;
+            //index === 0 ? (active = 'slide--show') : (active = 'slide--hide');
+            return <div key={index} className={item.img + ' ' + (index === 0 ? activeSlide1 : activeSlide)} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
+          }
+          )}
+        </div>
+        <button onClick={this.handleClick.bind(this)} className="slider__arrow">L</button>
+        <button onClick={this.handleClick.bind(this)} className="slider__arrow">R</button>
       </article>;
     }
   }
@@ -131,7 +153,7 @@ const addSections2Page = function () {
   function addElems(elem) {
 
     let tag;
-    elem.article !== undefined && (elem.data !== undefined ? (tag = <ViewerBox elems={elem} />) : (tag = <Article elems={elem} />));
+    elem.article !== undefined && (elem.data !== undefined ? ((elem.data === 'viewer-box' && (tag = <ViewerBox elems={elem} />)) || (elem.data === 'slider-box' && (tag = <SliderBox elems={elem} />))) : (tag = <Article elems={elem} />));
     elem.div !== undefined && (tag = <Div elems={elem} />);
     elem.h1 !== undefined && (tag = <ArticleTitle elems={elem} />);
     elem.a !== undefined && (tag = <ArticleLink elems={elem} />);

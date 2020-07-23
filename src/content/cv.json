@@ -38,12 +38,16 @@
         "data": "slider-box",
         "children": [
           {
-            "img": "article__photo",
+            "img": "slider__photo",
             "src": "certyfikatUX.jpg"
           },
           {
-            "img": "article__photo",
+            "img": "slider__photo",
             "src": "certyficatReact.png"
+          },
+          {
+            "img": "slider__photo",
+            "src": "Hack4Change.jpg"
           }
         ]
       }

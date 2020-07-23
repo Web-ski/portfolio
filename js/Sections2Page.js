@@ -256,8 +256,64 @@ var addSections2Page = function addSections2Page() {
     return ViewerBox;
   }(React.Component);
 
-  var Article = function (_React$Component10) {
-    _inherits(Article, _React$Component10);
+  var SliderBox = function (_React$Component10) {
+    _inherits(SliderBox, _React$Component10);
+
+    function SliderBox(props) {
+      _classCallCheck(this, SliderBox);
+
+      var _this10 = _possibleConstructorReturn(this, (SliderBox.__proto__ || Object.getPrototypeOf(SliderBox)).call(this, props));
+
+      _this10.state = [{ toggleSlide: true }]; //this.handleClick = this.handleClick.bind(this);
+      return _this10;
+    }
+
+    _createClass(SliderBox, [{
+      key: "handleClick",
+      value: function handleClick() {
+        this.setState(function (state) {
+          return { toggleSlide: !state.toggleSlide };
+        });
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var activeSlide1 = this.state.toggleSlide ? '' : 'show';
+        var activeSlide = this.state.toggleSlide ? 'show' : '';
+
+        return React.createElement(
+          "article",
+          { className: this.props.elems.article + ' slider__box' },
+          React.createElement(
+            "div",
+            { className: "slides__container" },
+            this.props.elems.children.map(function (item, index)
+            //console.log(item),
+            {
+              //let active;
+              //index === 0 ? (active = 'slide--show') : (active = 'slide--hide');
+              return React.createElement("div", { key: index, className: item.img + ' ' + (index === 0 ? activeSlide1 : activeSlide), style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
+            })
+          ),
+          React.createElement(
+            "button",
+            { onClick: this.handleClick.bind(this), className: "slider__arrow" },
+            "L"
+          ),
+          React.createElement(
+            "button",
+            { onClick: this.handleClick.bind(this), className: "slider__arrow" },
+            "R"
+          )
+        );
+      }
+    }]);
+
+    return SliderBox;
+  }(React.Component);
+
+  var Article = function (_React$Component11) {
+    _inherits(Article, _React$Component11);
 
     function Article() {
       _classCallCheck(this, Article);
@@ -281,8 +337,8 @@ var addSections2Page = function addSections2Page() {
     return Article;
   }(React.Component);
 
-  var Section = function (_React$Component11) {
-    _inherits(Section, _React$Component11);
+  var Section = function (_React$Component12) {
+    _inherits(Section, _React$Component12);
 
     function Section() {
       _classCallCheck(this, Section);
@@ -309,7 +365,7 @@ var addSections2Page = function addSections2Page() {
   function addElems(elem) {
 
     var tag = void 0;
-    elem.article !== undefined && (elem.data !== undefined ? tag = React.createElement(ViewerBox, { elems: elem }) : tag = React.createElement(Article, { elems: elem }));
+    elem.article !== undefined && (elem.data !== undefined ? elem.data === 'viewer-box' && (tag = React.createElement(ViewerBox, { elems: elem })) || elem.data === 'slider-box' && (tag = React.createElement(SliderBox, { elems: elem })) : tag = React.createElement(Article, { elems: elem }));
     elem.div !== undefined && (tag = React.createElement(Div, { elems: elem }));
     elem.h1 !== undefined && (tag = React.createElement(ArticleTitle, { elems: elem }));
     elem.a !== undefined && (tag = React.createElement(ArticleLink, { elems: elem }));
@@ -322,27 +378,27 @@ var addSections2Page = function addSections2Page() {
     return tag;
   }
 
-  var Main = function (_React$Component12) {
-    _inherits(Main, _React$Component12);
+  var Main = function (_React$Component13) {
+    _inherits(Main, _React$Component13);
 
     function Main(props) {
       _classCallCheck(this, Main);
 
-      var _this12 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+      var _this13 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-      _this12.state = { data: [] };
-      return _this12;
+      _this13.state = { data: [] };
+      return _this13;
     }
 
     _createClass(Main, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this13 = this;
+        var _this14 = this;
 
         fetch(URL).then(function (response) {
           return response.json();
         }).then(function (json) {
-          return _this13.setState({ data: json });
+          return _this14.setState({ data: json });
         });
       }
     }, {
