@@ -256,6 +256,9 @@ var addSections2Page = function addSections2Page() {
     return ViewerBox;
   }(React.Component);
 
+  //--SLIDER--
+
+
   var SliderBox = function (_React$Component10) {
     _inherits(SliderBox, _React$Component10);
 
@@ -264,46 +267,66 @@ var addSections2Page = function addSections2Page() {
 
       var _this10 = _possibleConstructorReturn(this, (SliderBox.__proto__ || Object.getPrototypeOf(SliderBox)).call(this, props));
 
-      _this10.state = [{ toggleSlide: true }]; //this.handleClick = this.handleClick.bind(this);
+      var elemsArr = new Array(props.elems.children.length);
+      var fullArr = elemsArr.fill(0).map(function (item, i) {
+        return i;
+      });
+      //console.log(fullArr);
+      _this10.state = { slides: fullArr };
+      //this.handleClick = this.handleClick.bind(this);
       return _this10;
     }
 
     _createClass(SliderBox, [{
       key: "handleClick",
-      value: function handleClick() {
-        this.setState(function (state) {
-          return { toggleSlide: !state.toggleSlide };
-        });
+      value: function handleClick(i) {
+        //this.setState(state => ({ toggleSlide: !state.toggleSlide }))      
+        function moveRight(arr) {
+          var A = arr[0];
+          arr.push(A);
+          arr.shift();
+          return arr;
+        }
+
+        function moveLeft(arr) {
+          var Z = arr[arr.length - 1];
+          arr.unshift(Z);
+          arr.pop();
+          return arr;
+        }
+
+        var slides = void 0;
+        i === 0 && (slides = moveLeft(this.state.slides));
+        i === 1 && (slides = moveRight(this.state.slides));
+        this.setState({ slides: slides });
       }
     }, {
       key: "render",
       value: function render() {
-        var activeSlide1 = this.state.toggleSlide ? '' : 'show';
-        var activeSlide = this.state.toggleSlide ? 'show' : '';
+        var _this11 = this;
+
+        //const activeSlide1 = (this.state.toggleSlide ? '' : 'show');
+        //const activeSlide = (this.state.toggleSlide ? 'show-slide' : '');
 
         return React.createElement(
           "article",
-          { className: this.props.elems.article + ' slider__box' },
+          { className: this.props.elems.article + ' photo__box' },
+          React.createElement(
+            "button",
+            { onClick: this.handleClick.bind(this, 0), className: "slider__arrow" },
+            "<"
+          ),
           React.createElement(
             "div",
             { className: "slides__container" },
-            this.props.elems.children.map(function (item, index)
-            //console.log(item),
-            {
-              //let active;
-              //index === 0 ? (active = 'slide--show') : (active = 'slide--hide');
-              return React.createElement("div", { key: index, className: item.img + ' ' + (index === 0 ? activeSlide1 : activeSlide), style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
+            this.props.elems.children.map(function (item, index) {
+              return index === _this11.state.slides[0] && React.createElement("div", { className: "slide", style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
             })
           ),
           React.createElement(
             "button",
-            { onClick: this.handleClick.bind(this), className: "slider__arrow" },
-            "L"
-          ),
-          React.createElement(
-            "button",
-            { onClick: this.handleClick.bind(this), className: "slider__arrow" },
-            "R"
+            { onClick: this.handleClick.bind(this, 1), className: "slider__arrow" },
+            ">"
           )
         );
       }
@@ -384,21 +407,21 @@ var addSections2Page = function addSections2Page() {
     function Main(props) {
       _classCallCheck(this, Main);
 
-      var _this13 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+      var _this14 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-      _this13.state = { data: [] };
-      return _this13;
+      _this14.state = { data: [] };
+      return _this14;
     }
 
     _createClass(Main, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this14 = this;
+        var _this15 = this;
 
         fetch(URL).then(function (response) {
           return response.json();
         }).then(function (json) {
-          return _this14.setState({ data: json });
+          return _this15.setState({ data: json });
         });
       }
     }, {

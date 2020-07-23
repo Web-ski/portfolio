@@ -101,34 +101,50 @@ const addSections2Page = function () {
     }
   }
 
-
+  //--SLIDER--
   class SliderBox extends React.Component {
     constructor(props) {
       super(props);
-      this.state = [
-        { toggleSlide: true }
-      ]      //this.handleClick = this.handleClick.bind(this);
+      const elemsArr = new Array((props.elems.children).length);
+      const fullArr = elemsArr.fill(0).map((item, i) => i);
+      //console.log(fullArr);
+      this.state =
+        { slides: fullArr };
+      //this.handleClick = this.handleClick.bind(this);
     };
-    handleClick() {
-      this.setState(state => ({ toggleSlide: !state.toggleSlide }))
+    handleClick(i) {
+      //this.setState(state => ({ toggleSlide: !state.toggleSlide }))      
+      function moveRight(arr) {
+        let A = arr[0];
+        arr.push(A);
+        arr.shift();
+        return arr;
+      }
+
+      function moveLeft(arr) {
+        let Z = arr[arr.length - 1];
+        arr.unshift(Z);
+        arr.pop();
+        return arr;
+      }
+
+      let slides;
+      i === 0 && (slides = moveLeft(this.state.slides));
+      i === 1 && (slides = moveRight(this.state.slides));
+      this.setState({ slides: slides });
     }
     render() {
-      const activeSlide1 = (this.state.toggleSlide ? '' : 'show');
-      const activeSlide = (this.state.toggleSlide ? 'show' : '');
-      
-      return <article className={this.props.elems.article + ' slider__box'}>
+      //const activeSlide1 = (this.state.toggleSlide ? '' : 'show');
+      //const activeSlide = (this.state.toggleSlide ? 'show-slide' : '');
+
+      return <article className={this.props.elems.article + ' photo__box'}>
+        <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow">{`<`}</button>
         <div className='slides__container'>
           {(this.props.elems.children).map((item, index) =>
-          //console.log(item),
-          {
-            //let active;
-            //index === 0 ? (active = 'slide--show') : (active = 'slide--hide');
-            return <div key={index} className={item.img + ' ' + (index === 0 ? activeSlide1 : activeSlide)} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
-          }
+            index === this.state.slides[0] && <div className={"slide"} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
           )}
         </div>
-        <button onClick={this.handleClick.bind(this)} className="slider__arrow">L</button>
-        <button onClick={this.handleClick.bind(this)} className="slider__arrow">R</button>
+        <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow">{`>`}</button>
       </article>;
     }
   }
