@@ -138,13 +138,13 @@ const addSections2Page = function () {
       //const activeSlide = (this.state.toggleSlide ? 'show-slide' : '');
 
       return <article className={this.props.elems.article + ' photo__box'}>
-        <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow">{`<`}</button>
+        <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow slider__arrow--left"></button>
         <div className='slides__container'>
           {(this.props.elems.children).map((item, index) =>
             index === this.state.slides[0] && <div className={"slide"} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
           )}
         </div>
-        <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow">{`>`}</button>
+        <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow slider__arrow--right"></button>
       </article>;
     }
   }

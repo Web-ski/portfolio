@@ -2174,6 +2174,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
 }
 
 .cv-page .main2Page .section .photo__box .slides__container {
@@ -2182,6 +2183,7 @@ header {
   width: 80%;
   min-height: 100px;
   min-width: 100px;
+  margin: 0 auto;
 }
 
 .cv-page .main2Page .section .photo__box .slides__container .slide {
@@ -2193,9 +2195,15 @@ header {
 }
 
 .cv-page .main2Page .section .photo__box .slider__arrow {
-  width: 30px;
-  height: 30px;
+  position: absolute;
+  width: 35px;
+  height: 35px;
   background-color: transparent;
+  background-image: url("../images/icons/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 90%;
   border: none;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -2212,5 +2220,15 @@ header {
 
 .cv-page .main2Page .section .photo__box .slider__arrow:hover {
   background-color: #111111;
+}
+
+.cv-page .main2Page .section .photo__box .slider__arrow--left {
+  left: 1%;
+}
+
+.cv-page .main2Page .section .photo__box .slider__arrow--right {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+  right: 1%;
 }
 /*# sourceMappingURL=style.css.map */

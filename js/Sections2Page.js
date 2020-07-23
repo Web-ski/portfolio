@@ -311,11 +311,7 @@ var addSections2Page = function addSections2Page() {
         return React.createElement(
           "article",
           { className: this.props.elems.article + ' photo__box' },
-          React.createElement(
-            "button",
-            { onClick: this.handleClick.bind(this, 0), className: "slider__arrow" },
-            "<"
-          ),
+          React.createElement("button", { onClick: this.handleClick.bind(this, 0), className: "slider__arrow slider__arrow--left" }),
           React.createElement(
             "div",
             { className: "slides__container" },
@@ -323,11 +319,7 @@ var addSections2Page = function addSections2Page() {
               return index === _this11.state.slides[0] && React.createElement("div", { className: "slide", style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
             })
           ),
-          React.createElement(
-            "button",
-            { onClick: this.handleClick.bind(this, 1), className: "slider__arrow" },
-            ">"
-          )
+          React.createElement("button", { onClick: this.handleClick.bind(this, 1), className: "slider__arrow slider__arrow--right" })
         );
       }
     }]);

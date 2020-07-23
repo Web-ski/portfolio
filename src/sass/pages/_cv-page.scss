@@ -4,6 +4,7 @@
 
       .photo__box {
         @include flex-row;
+        position: relative;
 
         .slides__container {
           display: block;
@@ -11,6 +12,7 @@
           width: 80%;
           min-height: 100px;
           min-width: 100px;
+          margin: 0 auto;
 
           .slide {
             height: 100%;
@@ -22,9 +24,13 @@
         }
 
         .slider__arrow {
-          width: 30px;
-          height: 30px;
+          position: absolute;
+          width: 35px;
+          height: 35px;
           background-color: transparent;
+          background-image: url('../images/icons/arrow.svg');
+          @include img;
+          background-size: 90%;
           border: none;
           transition: $transition;
           border-radius: 50%;
@@ -38,6 +44,15 @@
           &:hover {
             background-color: $bg-black;
           }
+        }
+
+        .slider__arrow--left {
+          left: 1%;
+        }
+
+        .slider__arrow--right {
+          transform: rotateZ(180deg);
+          right: 1%;
         }
       }
     }
