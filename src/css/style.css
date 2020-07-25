@@ -2188,10 +2188,23 @@ header {
 
 .cv-page .main2Page .section .photo__box .slides__container .slide {
   height: 100%;
+  min-height: 200px;
   width: auto;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .cv-page .main2Page .section .photo__box .slides__container .slide {
+    min-height: 300px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .cv-page .main2Page .section .photo__box .slides__container .slide {
+    min-height: 350px;
+  }
 }
 
 .cv-page .main2Page .section .photo__box .slider__arrow {

@@ -141,7 +141,7 @@ const addSections2Page = function () {
         <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow slider__arrow--left"></button>
         <div className='slides__container'>
           {(this.props.elems.children).map((item, index) =>
-            index === this.state.slides[0] && <div className={"slide"} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
+            index === this.state.slides[0] && <div className={"slide slide__move--toLeft"} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
           )}
         </div>
         <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow slider__arrow--right"></button>

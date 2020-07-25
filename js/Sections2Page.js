@@ -316,7 +316,7 @@ var addSections2Page = function addSections2Page() {
             "div",
             { className: "slides__container" },
             this.props.elems.children.map(function (item, index) {
-              return index === _this11.state.slides[0] && React.createElement("div", { className: "slide", style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
+              return index === _this11.state.slides[0] && React.createElement("div", { className: "slide slide__move--toLeft", style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
             })
           ),
           React.createElement("button", { onClick: this.handleClick.bind(this, 1), className: "slider__arrow slider__arrow--right" })
