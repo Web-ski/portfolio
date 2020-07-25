@@ -102,6 +102,66 @@
           transform: rotateZ(180deg);
           right: 1%;
         }
+
+        .slider__sizer,
+        .slider__resizer {
+          @extend .slider__arrow;
+          //position: relative;
+          background-image: url('../images/icons/');
+          margin: 0 auto;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          color: white;
+        }
+
+        .slides__modal {
+          display: none;
+        }
+
+        .modal--open {
+          position: fixed;
+          display: flex;
+          width: 100vw;
+          height: 100vh;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, .6);
+
+          .slides__container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .slide {
+              //top: 50%;
+              height: 80%;
+              width: auto;
+              min-width: 90%;
+              //transform: translateY(-50%);
+            }
+          }
+
+          .slider__arrow--left {
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2%;
+            background-color: rgba(0, 0, 0, .2);
+          }
+
+          .slider__arrow--right {
+            top: 50%;
+            transform: translateY(-50%) rotateZ(180deg);
+            right: 2%;
+            background-color: rgba(0, 0, 0, .2);
+          }
+        }
+
+        .slider__resizer {
+          bottom: 5%;
+        }
       }
     }
   }

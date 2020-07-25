@@ -272,7 +272,11 @@ var addSections2Page = function addSections2Page() {
         return i;
       });
       //console.log(fullArr);
-      _this10.state = { slides: fullArr };
+      _this10.state = {
+        slides: fullArr,
+        animationToggle: '',
+        modalToogle: true
+      };
       //this.handleClick = this.handleClick.bind(this);
       return _this10;
     }
@@ -296,9 +300,17 @@ var addSections2Page = function addSections2Page() {
         }
 
         var slides = void 0;
+        var animation = void 0;
         i === 0 && (slides = moveLeft(this.state.slides));
+        i === 0 && (animation = 'slide__move--toRight');
         i === 1 && (slides = moveRight(this.state.slides));
-        this.setState({ slides: slides });
+        i === 1 && (animation = 'slide__move--toLeft');
+        this.setState({ slides: slides, animationToggle: animation });
+      }
+    }, {
+      key: "updateState",
+      value: function updateState() {
+        this.setState({ modalToogle: !this.state.modalToogle });
       }
     }, {
       key: "render",
@@ -316,10 +328,33 @@ var addSections2Page = function addSections2Page() {
             "div",
             { className: "slides__container" },
             this.props.elems.children.map(function (item, index) {
-              return index === _this11.state.slides[0] && React.createElement("div", { className: "slide slide__move--toLeft", style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
+              return index === _this11.state.slides[0] && React.createElement("div", { className: "slide " + _this11.state.animationToggle, style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
             })
           ),
-          React.createElement("button", { onClick: this.handleClick.bind(this, 1), className: "slider__arrow slider__arrow--right" })
+          React.createElement("button", { onClick: this.handleClick.bind(this, 1), className: "slider__arrow slider__arrow--right" }),
+          React.createElement(
+            "button",
+            { onClick: this.updateState.bind(this), className: "slider__sizer" },
+            "+"
+          ),
+          React.createElement(
+            "div",
+            { className: "slides__modal " + (this.state.modalToogle ? '' : 'modal--open') },
+            React.createElement("button", { onClick: this.handleClick.bind(this, 0), className: "slider__arrow slider__arrow--left" }),
+            React.createElement(
+              "div",
+              { className: "slides__container" },
+              this.props.elems.children.map(function (item, index) {
+                return index === _this11.state.slides[0] && React.createElement("div", { className: "slide " + _this11.state.toggleOn, style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
+              })
+            ),
+            React.createElement("button", { onClick: this.handleClick.bind(this, 1), className: "slider__arrow slider__arrow--right" }),
+            React.createElement(
+              "button",
+              { onClick: this.updateState.bind(this), className: "slider__resizer" },
+              "Zamknij"
+            )
+          )
         );
       }
     }]);

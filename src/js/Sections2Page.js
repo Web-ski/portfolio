@@ -109,7 +109,11 @@ const addSections2Page = function () {
       const fullArr = elemsArr.fill(0).map((item, i) => i);
       //console.log(fullArr);
       this.state =
-        { slides: fullArr };
+      {
+        slides: fullArr,
+        animationToggle: '',
+        modalToogle: true
+      };
       //this.handleClick = this.handleClick.bind(this);
     };
     handleClick(i) {
@@ -129,9 +133,15 @@ const addSections2Page = function () {
       }
 
       let slides;
+      let animation;
       i === 0 && (slides = moveLeft(this.state.slides));
+      i === 0 && (animation = 'slide__move--toRight');
       i === 1 && (slides = moveRight(this.state.slides));
-      this.setState({ slides: slides });
+      i === 1 && (animation = 'slide__move--toLeft');
+      this.setState({ slides: slides, animationToggle: animation });
+    };
+    updateState() {
+      this.setState({ modalToogle: !this.state.modalToogle })
     }
     render() {
       //const activeSlide1 = (this.state.toggleSlide ? '' : 'show');
@@ -141,10 +151,21 @@ const addSections2Page = function () {
         <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow slider__arrow--left"></button>
         <div className='slides__container'>
           {(this.props.elems.children).map((item, index) =>
-            index === this.state.slides[0] && <div className={"slide " + "slide__move--toLeft"} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
+            index === this.state.slides[0] && <div className={"slide " + this.state.animationToggle} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
           )}
         </div>
         <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow slider__arrow--right"></button>
+        <button onClick={this.updateState.bind(this)} className="slider__sizer">+</button>
+        <div className={"slides__modal " + (this.state.modalToogle ? '' : 'modal--open')}>
+          <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow slider__arrow--left"></button>
+          <div className='slides__container'>
+            {(this.props.elems.children).map((item, index) =>
+              index === this.state.slides[0] && <div className={"slide " + this.state.toggleOn} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
+            )}
+          </div>
+          <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow slider__arrow--right"></button>
+          <button onClick={this.updateState.bind(this)} className="slider__resizer">Zamknij</button>
+        </div>
       </article>;
     }
   }
