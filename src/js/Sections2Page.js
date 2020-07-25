@@ -155,16 +155,16 @@ const addSections2Page = function () {
           )}
         </div>
         <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow slider__arrow--right"></button>
-        <button onClick={this.updateState.bind(this)} className="slider__sizer">+</button>
+        <button onClick={this.updateState.bind(this)} className="slider__sizer"></button>
         <div className={"slides__modal " + (this.state.modalToogle ? '' : 'modal--open')}>
           <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow slider__arrow--left"></button>
           <div className='slides__container'>
             {(this.props.elems.children).map((item, index) =>
-              index === this.state.slides[0] && <div className={"slide " + this.state.toggleOn} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
+              index === this.state.slides[0] && <div className={"slide " + this.state.animationToggle} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
             )}
           </div>
           <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow slider__arrow--right"></button>
-          <button onClick={this.updateState.bind(this)} className="slider__resizer">Zamknij</button>
+          <button onClick={this.updateState.bind(this)} className="slider__resizer"></button>
         </div>
       </article>;
     }

@@ -2279,12 +2279,12 @@ header {
   position: absolute;
   width: 35px;
   height: 35px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.1);
   background-image: url("../images/icons/arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 90%;
+  background-size: 85%;
   border: none;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -2297,12 +2297,14 @@ header {
   .cv-page .main2Page .section .photo__box .slider__resizer {
     width: 50px;
     height: 50px;
+    background-size: 60%;
   }
 }
 
 .cv-page .main2Page .section .photo__box .slider__arrow:hover, .cv-page .main2Page .section .photo__box .slider__sizer:hover,
 .cv-page .main2Page .section .photo__box .slider__resizer:hover {
   background-color: #111111;
+  background-size: 85%;
 }
 
 .cv-page .main2Page .section .photo__box .slider__arrow--left {
@@ -2317,13 +2319,17 @@ header {
 
 .cv-page .main2Page .section .photo__box .slider__sizer,
 .cv-page .main2Page .section .photo__box .slider__resizer {
-  background-image: url("../images/icons/");
+  background-image: url("../images/icons/full-screen.svg");
   margin: 0 auto;
-  bottom: 0;
+  bottom: 10%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: white;
+}
+
+.cv-page .main2Page .section .photo__box .slider__resizer {
+  background-image: url("../images/icons/small-screen.svg");
 }
 
 .cv-page .main2Page .section .photo__box .slides__modal {
@@ -2380,5 +2386,18 @@ header {
 
 .cv-page .main2Page .section .photo__box .slider__resizer {
   bottom: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .cv-page .main2Page .section .photo__box .slider__resizer {
+    width: 50px;
+    height: 50px;
+    background-size: 85%;
+  }
+}
+
+.cv-page .main2Page .section .photo__box .slider__resizer:hover {
+  background-color: #111111;
+  background-size: 60%;
 }
 /*# sourceMappingURL=style.css.map */
