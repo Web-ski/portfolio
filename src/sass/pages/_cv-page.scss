@@ -13,6 +13,7 @@
           min-height: 100px;
           min-width: 100px;
           margin: 0 auto;
+          overflow: hidden;
 
           .slide {
             height: 100%;
@@ -21,7 +22,6 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            background-color: red;
 
             @media screen and (min-width: $min-md) {
               min-height: 300px;
@@ -35,27 +35,40 @@
               min-height: 400px;
             }
 
-            @media screen and (min-width: $min-Xxl) {
+            @media screen and (min-width: $min-xxl) {
               min-height: 450px;
             }
 
             @keyframes moveToLeft {
               from {
-                opacity: 0;
+                transform: translateX(100%);
               }
 
               to {
-                opacity: 1;
+                transform: translateX(0%);
+              }
+            }
+
+            @keyframes moveToRight {
+              from {
+                transform: translateX(-100%);
+              }
+
+              to {
+                transform: translateX(0%);
               }
             }
           }
 
           .slide__move--toLeft {
-            animation: moveToLeft 2s;
-            -webkit-animation: moveToLeft 2s;
+            animation: moveToLeft .2s;
+            -webkit-animation: moveToLeft .2s;
           }
 
-          .slide__move--toRight {}
+          .slide__move--toRight {
+            animation: moveToRight .2s;
+            -webkit-animation: moveToRight .2s;
+          }
         }
 
         .slider__arrow {
