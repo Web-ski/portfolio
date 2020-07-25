@@ -172,9 +172,23 @@ const addSections2Page = function () {
 
   //--TIME LINE--
   class TimeLineBox extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = { toggleOn: true }
+      this.handleClick = this.handleClick.bind(this);
+    };
+    handleClick() {
+      this.setState(state => ({ toggleOn: !state.toggleOn }))
+    }
     render() {
       return <article className={this.props.elems.article}>
-        {(this.props.elems.children).map(item => addElems(item))}
+        <div className={this.props.elems.children[0].div + ' ' + (this.state.toggleOn ? 'time-line--off' : 'time-line--active')}>
+          {(this.props.elems.children[0].children).map(item => addElems(item))}
+        </div>
+        <button onClick={this.handleClick} className="time-line__switcher">Przełącz</button>
+        <div className={this.props.elems.children[1].div + ' ' + (this.state.toggleOn ? 'time-line--active' : 'time-line--off')}>
+          {(this.props.elems.children[1].children).map(item => addElems(item))}
+        </div>
       </article>;
     }
   }

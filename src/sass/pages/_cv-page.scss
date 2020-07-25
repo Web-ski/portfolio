@@ -133,6 +133,7 @@
           top: 0;
           left: 0;
           background-color: rgba(0, 0, 0, .6);
+          z-index: 99;
 
           .slides__container {
             height: 100%;
@@ -191,6 +192,58 @@
 
         .articleTitle {
           justify-content: center;
+        }
+
+        .time-line__switcher {
+          z-index: 1;
+          cursor: pointer;
+        }
+
+        .time-line__container {
+        }
+
+        .time-line--active {
+          opacity: 1;
+          height: 100%;
+          animation: timeLineOpen .5s;
+          -webkit-animation: timeLineOpen .5s;
+
+          @keyframes timeLineOpen {
+            from {
+              height: 0%;
+            }
+
+            to {
+              height: 100%;
+            }
+          }
+
+          .time-line__box {
+            display: flex;
+            z-index: 1;
+          }
+        }
+
+        .time-line--off {
+          opacity: 0;
+          height: 0%;
+          animation: timeLineClose .5s;
+          -webkit-animation: timeLineClose .5s;
+
+          @keyframes timeLineClose {
+            from {
+              height: 100%;
+            }
+
+            to {
+              height: 0%;
+            }
+          }
+
+          .time-line__box {
+            display: flex;
+            z-index: -1;
+          }
         }
       }
 

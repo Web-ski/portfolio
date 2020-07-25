@@ -360,21 +360,48 @@ var addSections2Page = function addSections2Page() {
   var TimeLineBox = function (_React$Component11) {
     _inherits(TimeLineBox, _React$Component11);
 
-    function TimeLineBox() {
+    function TimeLineBox(props) {
       _classCallCheck(this, TimeLineBox);
 
-      return _possibleConstructorReturn(this, (TimeLineBox.__proto__ || Object.getPrototypeOf(TimeLineBox)).apply(this, arguments));
+      var _this12 = _possibleConstructorReturn(this, (TimeLineBox.__proto__ || Object.getPrototypeOf(TimeLineBox)).call(this, props));
+
+      _this12.state = { toggleOn: true };
+      _this12.handleClick = _this12.handleClick.bind(_this12);
+      return _this12;
     }
 
     _createClass(TimeLineBox, [{
+      key: "handleClick",
+      value: function handleClick() {
+        this.setState(function (state) {
+          return { toggleOn: !state.toggleOn };
+        });
+      }
+    }, {
       key: "render",
       value: function render() {
         return React.createElement(
           "article",
           { className: this.props.elems.article },
-          this.props.elems.children.map(function (item) {
-            return addElems(item);
-          })
+          React.createElement(
+            "div",
+            { className: this.props.elems.children[0].div + ' ' + (this.state.toggleOn ? 'time-line--off' : 'time-line--active') },
+            this.props.elems.children[0].children.map(function (item) {
+              return addElems(item);
+            })
+          ),
+          React.createElement(
+            "button",
+            { onClick: this.handleClick, className: "time-line__switcher" },
+            "Prze\u0142\u0105cz"
+          ),
+          React.createElement(
+            "div",
+            { className: this.props.elems.children[1].div + ' ' + (this.state.toggleOn ? 'time-line--active' : 'time-line--off') },
+            this.props.elems.children[1].children.map(function (item) {
+              return addElems(item);
+            })
+          )
         );
       }
     }]);

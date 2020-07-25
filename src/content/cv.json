@@ -73,8 +73,22 @@
             "div": "time-line__container",
             "children": [
               {
-                "p": "sectionText",
-                "text": "Before This site presents websites made by me."
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "sectionText",
+                    "text": "Before This site presents websites made by me."
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "sectionText",
+                    "text": "Before This site presents websites made by me."
+                  }
+                ]
               }
             ]
           },
@@ -82,8 +96,22 @@
             "div": "time-line__container",
             "children": [
               {
-                "p": "sectionText",
-                "text": "After This site presents websites made by me."
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "sectionText",
+                    "text": "After This site presents websites made by me."
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "sectionText",
+                    "text": "After This site presents websites made by me."
+                  }
+                ]
               }
             ]
           }
