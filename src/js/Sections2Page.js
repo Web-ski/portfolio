@@ -170,8 +170,16 @@ const addSections2Page = function () {
     }
   }
 
-  class Article extends React.Component {
+  //--TIME LINE--
+  class TimeLineBox extends React.Component {
+    render() {
+      return <article className={this.props.elems.article}>
+        {(this.props.elems.children).map(item => addElems(item))}
+      </article>;
+    }
+  }
 
+  class Article extends React.Component {
     render() {
       return <article className={this.props.elems.article}>
         {(this.props.elems.children).map(item => addElems(item))}
@@ -190,7 +198,16 @@ const addSections2Page = function () {
   function addElems(elem) {
 
     let tag;
-    elem.article !== undefined && (elem.data !== undefined ? ((elem.data === 'viewer-box' && (tag = <ViewerBox elems={elem} />)) || (elem.data === 'slider-box' && (tag = <SliderBox elems={elem} />))) : (tag = <Article elems={elem} />));
+    if (elem.article !== undefined) {
+      if (elem.data !== undefined) {
+        (elem.data === 'viewer-box' && (tag = <ViewerBox elems={elem} />));
+        (elem.data === 'slider-box' && (tag = <SliderBox elems={elem} />));
+        (elem.data === 'time-line-box' && (tag = <TimeLineBox elems={elem} />));
+      }
+      else {
+        (tag = <Article elems={elem} />);
+      }
+    }
     elem.div !== undefined && (tag = <Div elems={elem} />);
     elem.h1 !== undefined && (tag = <ArticleTitle elems={elem} />);
     elem.a !== undefined && (tag = <ArticleLink elems={elem} />);

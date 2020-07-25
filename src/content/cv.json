@@ -52,5 +52,43 @@
         ]
       }
     ]
+  },
+  {
+    "section": "section section__time-line",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "articleTitle",
+            "text": "Time-line"
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "data": "time-line-box",
+        "children": [
+          {
+            "div": "time-line__container",
+            "children": [
+              {
+                "p": "sectionText",
+                "text": "Before This site presents websites made by me."
+              }
+            ]
+          },
+          {
+            "div": "time-line__container",
+            "children": [
+              {
+                "p": "sectionText",
+                "text": "After This site presents websites made by me."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

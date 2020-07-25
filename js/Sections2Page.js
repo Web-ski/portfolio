@@ -354,8 +354,36 @@ var addSections2Page = function addSections2Page() {
     return SliderBox;
   }(React.Component);
 
-  var Article = function (_React$Component11) {
-    _inherits(Article, _React$Component11);
+  //--TIME LINE--
+
+
+  var TimeLineBox = function (_React$Component11) {
+    _inherits(TimeLineBox, _React$Component11);
+
+    function TimeLineBox() {
+      _classCallCheck(this, TimeLineBox);
+
+      return _possibleConstructorReturn(this, (TimeLineBox.__proto__ || Object.getPrototypeOf(TimeLineBox)).apply(this, arguments));
+    }
+
+    _createClass(TimeLineBox, [{
+      key: "render",
+      value: function render() {
+        return React.createElement(
+          "article",
+          { className: this.props.elems.article },
+          this.props.elems.children.map(function (item) {
+            return addElems(item);
+          })
+        );
+      }
+    }]);
+
+    return TimeLineBox;
+  }(React.Component);
+
+  var Article = function (_React$Component12) {
+    _inherits(Article, _React$Component12);
 
     function Article() {
       _classCallCheck(this, Article);
@@ -379,8 +407,8 @@ var addSections2Page = function addSections2Page() {
     return Article;
   }(React.Component);
 
-  var Section = function (_React$Component12) {
-    _inherits(Section, _React$Component12);
+  var Section = function (_React$Component13) {
+    _inherits(Section, _React$Component13);
 
     function Section() {
       _classCallCheck(this, Section);
@@ -407,7 +435,15 @@ var addSections2Page = function addSections2Page() {
   function addElems(elem) {
 
     var tag = void 0;
-    elem.article !== undefined && (elem.data !== undefined ? elem.data === 'viewer-box' && (tag = React.createElement(ViewerBox, { elems: elem })) || elem.data === 'slider-box' && (tag = React.createElement(SliderBox, { elems: elem })) : tag = React.createElement(Article, { elems: elem }));
+    if (elem.article !== undefined) {
+      if (elem.data !== undefined) {
+        elem.data === 'viewer-box' && (tag = React.createElement(ViewerBox, { elems: elem }));
+        elem.data === 'slider-box' && (tag = React.createElement(SliderBox, { elems: elem }));
+        elem.data === 'time-line-box' && (tag = React.createElement(TimeLineBox, { elems: elem }));
+      } else {
+        tag = React.createElement(Article, { elems: elem });
+      }
+    }
     elem.div !== undefined && (tag = React.createElement(Div, { elems: elem }));
     elem.h1 !== undefined && (tag = React.createElement(ArticleTitle, { elems: elem }));
     elem.a !== undefined && (tag = React.createElement(ArticleLink, { elems: elem }));
@@ -420,27 +456,27 @@ var addSections2Page = function addSections2Page() {
     return tag;
   }
 
-  var Main = function (_React$Component13) {
-    _inherits(Main, _React$Component13);
+  var Main = function (_React$Component14) {
+    _inherits(Main, _React$Component14);
 
     function Main(props) {
       _classCallCheck(this, Main);
 
-      var _this14 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+      var _this15 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-      _this14.state = { data: [] };
-      return _this14;
+      _this15.state = { data: [] };
+      return _this15;
     }
 
     _createClass(Main, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this15 = this;
+        var _this16 = this;
 
         fetch(URL).then(function (response) {
           return response.json();
         }).then(function (json) {
-          return _this15.setState({ data: json });
+          return _this16.setState({ data: json });
         });
       }
     }, {
