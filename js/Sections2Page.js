@@ -394,8 +394,8 @@ var addSections2Page = function addSections2Page() {
             "button",
             { onClick: this.handleClick, className: "time-line__switcher " + (this.state.toggleOn ? 'switcher--top-left' : 'switcher--bottom-right') },
             React.createElement(
-              "h2",
-              { className: "article__title " + (this.state.toggleOn ? 'text--top-left' : 'text--bottom-right') },
+              "p",
+              { className: "article__text " + (this.state.toggleOn ? 'text--top-left' : 'text--bottom-right') },
               this.state.toggleOn ? 'Before' : 'After'
             )
           ),

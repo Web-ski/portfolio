@@ -99,7 +99,7 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "sectionText",
+                    "p": "text",
                     "text": "After This site presents websites made by me."
                   }
                 ]
@@ -108,7 +108,25 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "sectionText",
+                    "p": "text",
+                    "text": "After This site presents websites made by me."
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "text",
+                    "text": "After This site presents websites made by me."
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "text",
                     "text": "After This site presents websites made by me."
                   }
                 ]
