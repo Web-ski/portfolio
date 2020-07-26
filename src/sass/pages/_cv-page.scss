@@ -195,27 +195,71 @@
         }
 
         .time-line__switcher {
+          display: flex;
+          height: 10%;
+          width: 100%;
           z-index: 1;
           cursor: pointer;
+          background-color: transparent;
+          color: $text-white;
+          box-shadow: none;
+          border: none;
+
+          @media screen and (min-width: $min-md) {
+            height: 100%;
+            width: 10%;
+          }
+        }
+
+        .switcher--top-left {
+
+
+          @media screen and (min-width: $min-md) {
+
+          }
+        }
+
+        .switcher--bottom-right {
+
+          @media screen and (min-width: $min-md) {
+
+          }
         }
 
         .time-line__container {
+          @include flex;
+
+          &:first-of-type {
+            padding-bottom: 20px;
+            border-bottom: solid 2px $bg-white;
+  
+            @media screen and (min-width: $min-md) {
+              padding-bottom: 0;
+              padding-right: 20px;
+              border: none;
+              border-right: solid 2px $bg-white;
+            }
+          }
+
+          &:last-of-type {
+            border-top: solid 2px $bg-white;
+            padding-top: 20px;
+  
+            @media screen and (min-width: $min-md) {
+              padding-top: 0;
+              padding-left: 20px;
+              border: none;
+              border-left: solid 2px $bg-white;
+            }
+          }
         }
 
         .time-line--active {
           opacity: 1;
-          height: 100%;
-          animation: timeLineOpen .5s;
-          -webkit-animation: timeLineOpen .5s;
+          height: 90%;
 
-          @keyframes timeLineOpen {
-            from {
-              height: 0%;
-            }
-
-            to {
-              height: 100%;
-            }
+          @media screen and (min-width: $min-md) {
+            width: 90%;
           }
 
           .time-line__box {
@@ -226,18 +270,13 @@
 
         .time-line--off {
           opacity: 0;
-          height: 0%;
-          animation: timeLineClose .5s;
-          -webkit-animation: timeLineClose .5s;
+          display: none;
+          height: 0px;
+          max-height: 0px;
 
-          @keyframes timeLineClose {
-            from {
-              height: 100%;
-            }
-
-            to {
-              height: 0%;
-            }
+          @media screen and (min-width: $min-md) {
+            height: 100%;
+            width: 0px;
           }
 
           .time-line__box {
