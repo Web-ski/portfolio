@@ -238,8 +238,55 @@
         .time-line__container {
           @include flex;
 
+          //TIME-LINE BOX !!
           .time-line__box {
-            @include flex;
+            @include flex-row;
+
+            @media screen and (min-width: $min-md) {
+              @include flex-column;
+            }
+
+            .time-line__item {
+              display: flex;
+              justify-content: center;
+              align-items: center;              
+
+              .text {
+                color: $text-white;
+              }
+
+              .item-circle {
+                height: 30px;
+                width: 30px;
+                background-color: $bg-black;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+              }
+            }
+
+            .time-line__item--1 {
+              width: 35%;
+              height: auto;
+            }
+            .time-line__item--2 {
+              width: 30%;
+              height: auto;
+            }
+            .time-line__item--3 {
+              width: 35%;
+              height: auto;
+            }
+
+            &:nth-of-type(odd) {
+              flex-direction: row-reverse;
+
+              @media screen and (min-width: $min-md) {
+                flex-direction: column-reverse;
+              }
+            }
           }
 
           &:first-of-type {

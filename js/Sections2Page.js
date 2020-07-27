@@ -357,17 +357,55 @@ var addSections2Page = function addSections2Page() {
   //--TIME LINE--
 
 
-  var TimeLineBox = function (_React$Component11) {
-    _inherits(TimeLineBox, _React$Component11);
+  var TimeLineItem = function (_React$Component11) {
+    _inherits(TimeLineItem, _React$Component11);
+
+    function TimeLineItem() {
+      _classCallCheck(this, TimeLineItem);
+
+      return _possibleConstructorReturn(this, (TimeLineItem.__proto__ || Object.getPrototypeOf(TimeLineItem)).apply(this, arguments));
+    }
+
+    _createClass(TimeLineItem, [{
+      key: "render",
+      value: function render() {
+        console.log(this.props.elems.children[0]);
+        return React.createElement(
+          "div",
+          { className: this.props.elems.div },
+          React.createElement(
+            "div",
+            { className: "time-line__item time-line__item--1" },
+            React.createElement(
+              "p",
+              { className: this.props.elems.children[0].p },
+              this.props.elems.children[0].text
+            )
+          ),
+          React.createElement(
+            "div",
+            { className: "time-line__item time-line__item--2" },
+            React.createElement("div", { className: "item-circle" })
+          ),
+          React.createElement("div", { className: "time-line__item time-line__item--3" })
+        );
+      }
+    }]);
+
+    return TimeLineItem;
+  }(React.Component);
+
+  var TimeLineBox = function (_React$Component12) {
+    _inherits(TimeLineBox, _React$Component12);
 
     function TimeLineBox(props) {
       _classCallCheck(this, TimeLineBox);
 
-      var _this12 = _possibleConstructorReturn(this, (TimeLineBox.__proto__ || Object.getPrototypeOf(TimeLineBox)).call(this, props));
+      var _this13 = _possibleConstructorReturn(this, (TimeLineBox.__proto__ || Object.getPrototypeOf(TimeLineBox)).call(this, props));
 
-      _this12.state = { toggleOn: true };
-      _this12.handleClick = _this12.handleClick.bind(_this12);
-      return _this12;
+      _this13.state = { toggleOn: true };
+      _this13.handleClick = _this13.handleClick.bind(_this13);
+      return _this13;
     }
 
     _createClass(TimeLineBox, [{
@@ -387,7 +425,7 @@ var addSections2Page = function addSections2Page() {
             "div",
             { className: this.props.elems.children[0].div + ' ' + (this.state.toggleOn ? 'time-line--off' : 'time-line--active') },
             this.props.elems.children[0].children.map(function (item) {
-              return addElems(item);
+              return React.createElement(TimeLineItem, { elems: item });
             })
           ),
           React.createElement(
@@ -403,7 +441,7 @@ var addSections2Page = function addSections2Page() {
             "div",
             { className: this.props.elems.children[1].div + ' ' + (this.state.toggleOn ? 'time-line--active' : 'time-line--off') },
             this.props.elems.children[1].children.map(function (item) {
-              return addElems(item);
+              return React.createElement(TimeLineItem, { elems: item });
             })
           )
         );
@@ -413,8 +451,8 @@ var addSections2Page = function addSections2Page() {
     return TimeLineBox;
   }(React.Component);
 
-  var Article = function (_React$Component12) {
-    _inherits(Article, _React$Component12);
+  var Article = function (_React$Component13) {
+    _inherits(Article, _React$Component13);
 
     function Article() {
       _classCallCheck(this, Article);
@@ -438,8 +476,8 @@ var addSections2Page = function addSections2Page() {
     return Article;
   }(React.Component);
 
-  var Section = function (_React$Component13) {
-    _inherits(Section, _React$Component13);
+  var Section = function (_React$Component14) {
+    _inherits(Section, _React$Component14);
 
     function Section() {
       _classCallCheck(this, Section);
@@ -487,27 +525,27 @@ var addSections2Page = function addSections2Page() {
     return tag;
   }
 
-  var Main = function (_React$Component14) {
-    _inherits(Main, _React$Component14);
+  var Main = function (_React$Component15) {
+    _inherits(Main, _React$Component15);
 
     function Main(props) {
       _classCallCheck(this, Main);
 
-      var _this15 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+      var _this16 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-      _this15.state = { data: [] };
-      return _this15;
+      _this16.state = { data: [] };
+      return _this16;
     }
 
     _createClass(Main, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this16 = this;
+        var _this17 = this;
 
         fetch(URL).then(function (response) {
           return response.json();
         }).then(function (json) {
-          return _this16.setState({ data: json });
+          return _this17.setState({ data: json });
         });
       }
     }, {
