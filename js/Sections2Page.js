@@ -451,8 +451,33 @@ var addSections2Page = function addSections2Page() {
     return TimeLineBox;
   }(React.Component);
 
-  var Article = function (_React$Component13) {
-    _inherits(Article, _React$Component13);
+  var FlowToolsBox = function (_React$Component13) {
+    _inherits(FlowToolsBox, _React$Component13);
+
+    function FlowToolsBox() {
+      _classCallCheck(this, FlowToolsBox);
+
+      return _possibleConstructorReturn(this, (FlowToolsBox.__proto__ || Object.getPrototypeOf(FlowToolsBox)).apply(this, arguments));
+    }
+
+    _createClass(FlowToolsBox, [{
+      key: "render",
+      value: function render() {
+        return React.createElement(
+          "div",
+          { className: this.props.elems.article },
+          this.props.elems.children.map(function (item) {
+            return addElems(item);
+          })
+        );
+      }
+    }]);
+
+    return FlowToolsBox;
+  }(React.Component);
+
+  var Article = function (_React$Component14) {
+    _inherits(Article, _React$Component14);
 
     function Article() {
       _classCallCheck(this, Article);
@@ -476,8 +501,8 @@ var addSections2Page = function addSections2Page() {
     return Article;
   }(React.Component);
 
-  var Section = function (_React$Component14) {
-    _inherits(Section, _React$Component14);
+  var Section = function (_React$Component15) {
+    _inherits(Section, _React$Component15);
 
     function Section() {
       _classCallCheck(this, Section);
@@ -509,6 +534,7 @@ var addSections2Page = function addSections2Page() {
         elem.data === 'viewer-box' && (tag = React.createElement(ViewerBox, { elems: elem }));
         elem.data === 'slider-box' && (tag = React.createElement(SliderBox, { elems: elem }));
         elem.data === 'time-line-box' && (tag = React.createElement(TimeLineBox, { elems: elem }));
+        elem.data === 'flow-tools-box' && (tag = React.createElement(FlowToolsBox, { elems: elem }));
       } else {
         tag = React.createElement(Article, { elems: elem });
       }
@@ -525,27 +551,27 @@ var addSections2Page = function addSections2Page() {
     return tag;
   }
 
-  var Main = function (_React$Component15) {
-    _inherits(Main, _React$Component15);
+  var Main = function (_React$Component16) {
+    _inherits(Main, _React$Component16);
 
     function Main(props) {
       _classCallCheck(this, Main);
 
-      var _this16 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+      var _this17 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-      _this16.state = { data: [] };
-      return _this16;
+      _this17.state = { data: [] };
+      return _this17;
     }
 
     _createClass(Main, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this17 = this;
+        var _this18 = this;
 
         fetch(URL).then(function (response) {
           return response.json();
         }).then(function (json) {
-          return _this17.setState({ data: json });
+          return _this18.setState({ data: json });
         });
       }
     }, {

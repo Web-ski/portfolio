@@ -219,7 +219,7 @@
     ]
   },
   {
-    "section": "section section__flow-tools",
+    "section": "section section__tools-n-techs",
     "children": [
       {
         "article": "article",
@@ -227,6 +227,102 @@
           {
             "h1": "articleTitle",
             "text": "TOOLS & TECHOLOGIES"
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "children": [
+          {
+            "div": "flow-tools__container",
+            "data": "flow-tools-box",
+            "children": [
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Frameworks"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "jeden"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "jeden"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Libraries"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "dwa"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "dwa"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Tools"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "trzy"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "trzey"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Languages"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "4"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "4"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Design"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "5"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "5"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

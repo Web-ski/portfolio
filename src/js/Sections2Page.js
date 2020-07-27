@@ -212,6 +212,14 @@ const addSections2Page = function () {
     }
   }
 
+  class FlowToolsBox extends React.Component {
+    render() {
+      return <div className={this.props.elems.article}>
+        {(this.props.elems.children).map(item => addElems(item))}
+      </div>;
+    }
+  }
+
   class Article extends React.Component {
     render() {
       return <article className={this.props.elems.article}>
@@ -236,6 +244,7 @@ const addSections2Page = function () {
         (elem.data === 'viewer-box' && (tag = <ViewerBox elems={elem} />));
         (elem.data === 'slider-box' && (tag = <SliderBox elems={elem} />));
         (elem.data === 'time-line-box' && (tag = <TimeLineBox elems={elem} />));
+        (elem.data === 'flow-tools-box' && (tag = <FlowToolsBox elems={elem} />));
       }
       else {
         (tag = <Article elems={elem} />);
