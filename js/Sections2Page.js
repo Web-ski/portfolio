@@ -454,21 +454,43 @@ var addSections2Page = function addSections2Page() {
   var FlowToolsBox = function (_React$Component13) {
     _inherits(FlowToolsBox, _React$Component13);
 
-    function FlowToolsBox() {
+    function FlowToolsBox(props) {
       _classCallCheck(this, FlowToolsBox);
 
-      return _possibleConstructorReturn(this, (FlowToolsBox.__proto__ || Object.getPrototypeOf(FlowToolsBox)).apply(this, arguments));
+      var _this14 = _possibleConstructorReturn(this, (FlowToolsBox.__proto__ || Object.getPrototypeOf(FlowToolsBox)).call(this, props));
+
+      _this14.state = { counter: null };
+      return _this14;
     }
 
     _createClass(FlowToolsBox, [{
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        var _this15 = this;
+
+        this.timer = setInterval(function () {
+          return _this15.count();
+        }, 1000);
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        clearInterval(this.timer);
+      }
+    }, {
+      key: "count",
+      value: function count() {
+        var a = this.state.counter + 1;
+        this.setState({ counter: a });
+      }
+    }, {
       key: "render",
       value: function render() {
+
         return React.createElement(
-          "div",
+          "article",
           { className: this.props.elems.article },
-          this.props.elems.children.map(function (item) {
-            return addElems(item);
-          })
+          this.state.counter
         );
       }
     }]);
@@ -557,21 +579,21 @@ var addSections2Page = function addSections2Page() {
     function Main(props) {
       _classCallCheck(this, Main);
 
-      var _this17 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+      var _this18 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-      _this17.state = { data: [] };
-      return _this17;
+      _this18.state = { data: [] };
+      return _this18;
     }
 
     _createClass(Main, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this18 = this;
+        var _this19 = this;
 
         fetch(URL).then(function (response) {
           return response.json();
         }).then(function (json) {
-          return _this18.setState({ data: json });
+          return _this19.setState({ data: json });
         });
       }
     }, {

@@ -213,10 +213,29 @@ const addSections2Page = function () {
   }
 
   class FlowToolsBox extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = { counter: null }
+    };
+
+    componentDidMount() {
+      this.timer = setInterval(() => this.count(), 1000);
+    }
+
+    componentWillUnmount() {
+      clearInterval(this.timer);
+    }
+
+    count() {
+      let a = (this.state.counter) + 1;
+      this.setState({  counter: a });
+    }
+
     render() {
-      return <div className={this.props.elems.article}>
-        {(this.props.elems.children).map(item => addElems(item))}
-      </div>;
+
+      return <article className={this.props.elems.article}>
+        {this.state.counter}
+      </article>;
     }
   }
 

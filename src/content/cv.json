@@ -232,10 +232,10 @@
       },
       {
         "article": "article",
+        "data": "flow-tools-box",
         "children": [
           {
             "div": "flow-tools__container",
-            "data": "flow-tools-box",
             "children": [
               {
                 "div": "flow-tools__box",
