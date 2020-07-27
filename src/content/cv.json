@@ -76,7 +76,7 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "text",
+                    "p": "item-text",
                     "text": "Before This site presents websites made by me."
                   }
                 ]
@@ -85,7 +85,7 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "text",
+                    "p": "item-text",
                     "text": "Before This site presents websites made by me."
                   }
                 ]
@@ -94,7 +94,7 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "text",
+                    "p": "item-text",
                     "text": "Before This site presents websites made by me."
                   }
                 ]
@@ -103,7 +103,7 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "text",
+                    "p": "item-text",
                     "text": "Before This site presents websites made by me."
                   }
                 ]
@@ -117,8 +117,12 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "text",
-                    "text": "After This site presents websites made by me."
+                    "p": "item-text",
+                    "text": "2018/2019"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "first front-end courses"
                   }
                 ]
               },
@@ -126,8 +130,12 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "text",
-                    "text": "After This site presents websites made by me."
+                    "p": "item-text",
+                    "text": "2019"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "website of RIEP"
                   }
                 ]
               },
@@ -135,8 +143,12 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "text",
-                    "text": "After This site presents websites made by me."
+                    "p": "item-text",
+                    "text": "2019"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "website of EJTS"
                   }
                 ]
               },
@@ -144,8 +156,51 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "text",
-                    "text": "After This site presents websites made by me."
+                    "p": "item-text",
+                    "text": "2019"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "website of IBO"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "2019"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "end of 'UX Design' course"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "2019"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "end of 'JavaScript + React' course"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "2020"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "website of 'Festival of Literature and Theatre'"
                   }
                 ]
               }

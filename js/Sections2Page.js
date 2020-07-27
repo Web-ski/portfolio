@@ -376,16 +376,16 @@ var addSections2Page = function addSections2Page() {
           React.createElement(
             "div",
             { className: "time-line__item time-line__item--1" },
-            React.createElement(
-              "p",
-              { className: this.props.elems.children[0].p },
-              this.props.elems.children[0].text
-            )
+            this.props.elems.children.map(function (item) {
+              return addElems(item);
+            })
           ),
           React.createElement(
             "div",
             { className: "time-line__item time-line__item--2" },
-            React.createElement("div", { className: "item-circle" })
+            React.createElement("div", { className: "item-circle" }),
+            React.createElement("div", { className: "item-line" }),
+            React.createElement("div", { className: "text-line" })
           ),
           React.createElement("div", { className: "time-line__item time-line__item--3" })
         );

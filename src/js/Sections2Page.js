@@ -176,10 +176,12 @@ const addSections2Page = function () {
       console.log(this.props.elems.children[0])
       return <div className={this.props.elems.div}>
         <div className="time-line__item time-line__item--1">
-          <p className={this.props.elems.children[0].p}>{this.props.elems.children[0].text}</p>
+          {(this.props.elems.children).map(item => addElems(item))}
         </div>
         <div className="time-line__item time-line__item--2">
           <div className="item-circle"></div>
+          <div className="item-line"></div>
+          <div className="text-line"></div>
         </div>
         <div className="time-line__item time-line__item--3"></div>
       </div>;
