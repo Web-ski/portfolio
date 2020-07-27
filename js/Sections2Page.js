@@ -429,7 +429,7 @@ var addSections2Page = function addSections2Page() {
             })
           ),
           React.createElement(
-            "button",
+            "div",
             { onClick: this.handleClick, className: "time-line__switcher " + (this.state.toggleOn ? 'switcher--top-left' : 'switcher--bottom-right') },
             React.createElement(
               "p",

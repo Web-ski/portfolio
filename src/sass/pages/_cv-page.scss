@@ -183,12 +183,21 @@
       }
     }
 
+    //--!! TIME-LINE SECTION !!--
+
     .section__time-line {
       @include flex-column;
 
       .article {
         width: 100%;
         max-width: 100%;
+
+        @media screen and (min-width: $min-md) {
+          //height: 100%;
+          //align-items: stretch;
+          //justify-content: stretch;
+          width: 100%;
+        }
 
         .articleTitle {
           justify-content: center;
@@ -204,6 +213,15 @@
           color: $text-white;
           box-shadow: none;
           border: none;
+
+          .article__text {
+            text-align: center;
+            margin: 20px auto;
+
+            &:hover {
+              color: white;
+            }
+          }
 
           @media screen and (min-width: $min-md) {
             display: block;
@@ -239,10 +257,14 @@
 
         .time-line__container {
           @include flex;
+          margin: 0 auto;
 
           @media screen and (min-width: $min-md) {
             min-height: 300px;
             height: 100%;
+            align-items: stretch;
+            justify-content: flex-end;
+            width: max-content;
           }
 
           //--!! TIME-LINE BOX !!---
@@ -266,7 +288,7 @@
               .time-line__item--1 {
                 background-color: $text-time-line;
                 
-                .item-text {
+                .item-text, .item-link {
                   color: $text-black;                  
                 }
               }
@@ -291,6 +313,12 @@
 
                 @media screen and (min-width: $min-md) {
                 }
+              }
+
+              .item-link {
+                color: $text-blue;
+                font-family: $main-font;
+                font-weight: bold;
               }
 
               .item-circle {
@@ -390,25 +418,23 @@
 
           &:first-of-type {
             padding-bottom: 20px;
-            border-bottom: solid 2px $bg-white;
 
             @media screen and (min-width: $min-md) {
               padding-bottom: 0;
               padding-right: 20px;
               border: none;
-              border-right: solid 2px $bg-white;
+              //border-right: solid 2px rgba(0, 0, 0, .2);
             }
           }
 
           &:last-of-type {
-            border-top: solid 2px $bg-white;
             padding-top: 20px;
 
             @media screen and (min-width: $min-md) {
               padding-top: 0;
               padding-left: 20px;
               border: none;
-              border-left: solid 2px $bg-white;
+              //border-left: solid 2px rgba(0, 0, 0, .2);
             }
           }
         }

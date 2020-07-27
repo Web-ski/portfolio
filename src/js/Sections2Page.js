@@ -202,9 +202,9 @@ const addSections2Page = function () {
         <div className={this.props.elems.children[0].div + ' ' + (this.state.toggleOn ? 'time-line--off' : 'time-line--active')}>
           {(this.props.elems.children[0].children).map(item => (<TimeLineItem elems={item} />))}
         </div>
-        <button onClick={this.handleClick} className={"time-line__switcher " + (this.state.toggleOn ? 'switcher--top-left' : 'switcher--bottom-right')}>
+        <div onClick={this.handleClick} className={"time-line__switcher " + (this.state.toggleOn ? 'switcher--top-left' : 'switcher--bottom-right')}>
           <p className={"article__text " + (this.state.toggleOn ? 'text--top-left' : 'text--bottom-right')}>{this.state.toggleOn ? 'Before' : 'After'}</p>
-        </button>
+        </div>
         <div className={this.props.elems.children[1].div + ' ' + (this.state.toggleOn ? 'time-line--active' : 'time-line--off')}>
           {(this.props.elems.children[1].children).map(item => (<TimeLineItem elems={item} />))}
         </div>

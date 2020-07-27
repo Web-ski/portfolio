@@ -61,7 +61,7 @@
         "children": [
           {
             "h1": "articleTitle",
-            "text": "Time-line"
+            "text": "TIME-LINE"
           }
         ]
       },
@@ -77,7 +77,11 @@
                 "children": [
                   {
                     "p": "item-text",
-                    "text": "Before This site presents websites made by me."
+                    "text": "since 2005"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "research & studies on social questions"
                   }
                 ]
               },
@@ -86,7 +90,11 @@
                 "children": [
                   {
                     "p": "item-text",
-                    "text": "Before This site presents websites made by me."
+                    "text": "since 2010"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "lecturer at universities"
                   }
                 ]
               },
@@ -95,7 +103,11 @@
                 "children": [
                   {
                     "p": "item-text",
-                    "text": "Before This site presents websites made by me."
+                    "text": "since 2011"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "design of covers & logos"
                   }
                 ]
               },
@@ -104,7 +116,11 @@
                 "children": [
                   {
                     "p": "item-text",
-                    "text": "Before This site presents websites made by me."
+                    "text": "2015-2018"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "design of websites (by CMS)"
                   }
                 ]
               }
@@ -135,7 +151,12 @@
                   },
                   {
                     "p": "item-text",
-                    "text": "website of RIEP"
+                    "text": "websites of RIEP, EJTS & IBO"
+                  },
+                  {
+                    "a": "item-link",
+                    "href": "webs.html",
+                    "text": "see more"
                   }
                 ]
               },
@@ -148,20 +169,7 @@
                   },
                   {
                     "p": "item-text",
-                    "text": "website of EJTS"
-                  }
-                ]
-              },
-              {
-                "div": "time-line__box",
-                "children": [
-                  {
-                    "p": "item-text",
-                    "text": "2019"
-                  },
-                  {
-                    "p": "item-text",
-                    "text": "website of IBO"
+                    "text": "join to 'Żeton' team"
                   }
                 ]
               },
@@ -200,11 +208,25 @@
                   },
                   {
                     "p": "item-text",
-                    "text": "website of 'Festival of Literature and Theatre'"
+                    "text": "website of 'Kosmopolis'"
                   }
                 ]
               }
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "section section__flow-tools",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "articleTitle",
+            "text": "TOOLS & TECHOLOGIES"
           }
         ]
       }
