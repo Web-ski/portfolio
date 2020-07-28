@@ -501,21 +501,43 @@
         }
 
         .flow-tools__container {
-          position: absolute;
+          //position: absolute;
           @include flex-row;
+          height: 100%;
+          width: 100%;
           justify-content: space-between;
           background-color: palevioletred;
-          animation: flowTools 10s linear;
+          //animation: flowTools 10s linear infinite;
+          //-webkit-animation: flowTools 10s linear infinite;
 
           @keyframes flowTools {
-            from {left: 0;}
+            from {
+              left: 0;
+            }
 
-            to {left: -200%;}
+            to {
+              left: -100%;
+            }
           }
 
           .flow-tools__box {
+            position: absolute;
             padding: 20px;
+            width: 100px;
+            left: 100%;
             //background-color: royalblue;
+            animation: flowTool 15s linear infinite;
+            -webkit-animation: flowTool 15s linear infinite;
+
+            @keyframes flowTool {
+              from {
+                left: 100%;
+              }
+
+              to {
+                left: -100%;
+              }
+            }
           }
         }
       }

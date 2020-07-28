@@ -173,7 +173,6 @@ const addSections2Page = function () {
   //--TIME LINE--
   class TimeLineItem extends React.Component {
     render() {
-      console.log(this.props.elems.children[0])
       return <div className={this.props.elems.div}>
         <div className="time-line__item time-line__item--1">
           {(this.props.elems.children).map(item => addElems(item))}
@@ -215,11 +214,15 @@ const addSections2Page = function () {
   class FlowToolsBox extends React.Component {
     constructor(props) {
       super(props);
-      this.state = { counter: null }
+      const elemsArr = (props.elems.children[0].children);
+      //const fullArr = elemsArr.fill(0).map((item, i) => i);
+      console.log(elemsArr)
+      this.state = { tools: elemsArr }
     };
 
     componentDidMount() {
-      this.timer = setInterval(() => this.count(), 1000);
+      this.timer = setInterval(() => this.count(), 2000);
+      //dodać ładowanie każdego elementu w odstepie czasu
     }
 
     componentWillUnmount() {
@@ -227,14 +230,25 @@ const addSections2Page = function () {
     }
 
     count() {
-      let a = (this.state.counter) + 1;
-      this.setState({  counter: a });
+      function changeArr(arr) {
+        let a = arr[0];
+        //console.log(a);
+        arr.push(a);
+        arr.shift();
+        return arr;
+      }
+
+      let newArr = changeArr(this.state.tools);
+      //let a =  (this.props.elems.children).map(item => addElems(item));
+      this.setState({ tools: newArr });
     }
 
     render() {
 
       return <article className={this.props.elems.article}>
-        {this.state.counter}
+        <div className={this.props.elems.children[0].div}>
+          {(this.state.tools).map(item => addElems(item))}
+        </div>
       </article>;
     }
   }

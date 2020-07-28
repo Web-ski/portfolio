@@ -2786,7 +2786,6 @@ header {
 }
 
 .cv-page .main2Page .section__tools-n-techs .article .flow-tools__container {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2794,12 +2793,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 100%;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: palevioletred;
-  -webkit-animation: flowTools 10s linear;
-          animation: flowTools 10s linear;
 }
 
 @-webkit-keyframes flowTools {
@@ -2807,7 +2806,7 @@ header {
     left: 0;
   }
   to {
-    left: -200%;
+    left: -100%;
   }
 }
 
@@ -2816,11 +2815,34 @@ header {
     left: 0;
   }
   to {
-    left: -200%;
+    left: -100%;
   }
 }
 
 .cv-page .main2Page .section__tools-n-techs .article .flow-tools__container .flow-tools__box {
+  position: absolute;
   padding: 20px;
+  width: 100px;
+  left: 100%;
+  animation: flowTool 15s linear infinite;
+  -webkit-animation: flowTool 15s linear infinite;
+}
+
+@-webkit-keyframes flowTool {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes flowTool {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

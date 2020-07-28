@@ -369,7 +369,6 @@ var addSections2Page = function addSections2Page() {
     _createClass(TimeLineItem, [{
       key: "render",
       value: function render() {
-        console.log(this.props.elems.children[0]);
         return React.createElement(
           "div",
           { className: this.props.elems.div },
@@ -459,7 +458,10 @@ var addSections2Page = function addSections2Page() {
 
       var _this14 = _possibleConstructorReturn(this, (FlowToolsBox.__proto__ || Object.getPrototypeOf(FlowToolsBox)).call(this, props));
 
-      _this14.state = { counter: null };
+      var elemsArr = props.elems.children[0].children;
+      //const fullArr = elemsArr.fill(0).map((item, i) => i);
+      console.log(elemsArr);
+      _this14.state = { tools: elemsArr };
       return _this14;
     }
 
@@ -470,7 +472,8 @@ var addSections2Page = function addSections2Page() {
 
         this.timer = setInterval(function () {
           return _this15.count();
-        }, 1000);
+        }, 2000);
+        //dodać ładowanie każdego elementu w odstepie czasu
       }
     }, {
       key: "componentWillUnmount",
@@ -480,8 +483,17 @@ var addSections2Page = function addSections2Page() {
     }, {
       key: "count",
       value: function count() {
-        var a = this.state.counter + 1;
-        this.setState({ counter: a });
+        function changeArr(arr) {
+          var a = arr[0];
+          //console.log(a);
+          arr.push(a);
+          arr.shift();
+          return arr;
+        }
+
+        var newArr = changeArr(this.state.tools);
+        //let a =  (this.props.elems.children).map(item => addElems(item));
+        this.setState({ tools: newArr });
       }
     }, {
       key: "render",
@@ -490,7 +502,13 @@ var addSections2Page = function addSections2Page() {
         return React.createElement(
           "article",
           { className: this.props.elems.article },
-          this.state.counter
+          React.createElement(
+            "div",
+            { className: this.props.elems.children[0].div },
+            this.state.tools.map(function (item) {
+              return addElems(item);
+            })
+          )
         );
       }
     }]);
