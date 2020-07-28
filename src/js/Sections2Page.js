@@ -215,43 +215,51 @@ const addSections2Page = function () {
     constructor(props) {
       super(props);
       const elemsArr = (props.elems.children[0].children);
-      //const fullArr = elemsArr.fill(0).map((item, i) => i);
-      console.log(elemsArr)
       this.state = { tools: elemsArr }
     };
-
-    componentDidMount() {
-      this.timer = setInterval(() => this.count(), 2000);
-      //dodać ładowanie każdego elementu w odstepie czasu
-    }
-
-    componentWillUnmount() {
-      clearInterval(this.timer);
-    }
-
-    count() {
-      function changeArr(arr) {
-        let a = arr[0];
-        //console.log(a);
-        arr.push(a);
-        arr.shift();
-        return arr;
-      }
-
-      let newArr = changeArr(this.state.tools);
-      //let a =  (this.props.elems.children).map(item => addElems(item));
-      this.setState({ tools: newArr });
-    }
 
     render() {
 
       return <article className={this.props.elems.article}>
         <div className={this.props.elems.children[0].div}>
-          {(this.state.tools).map(item => addElems(item))}
+          {(this.props.elems.children[0].children).map((item, index) => <FlowItem elem={item} number={index}/>)}
         </div>
       </article>;
     }
   }
+
+  class FlowItem extends React.Component {
+    constructor(props) {
+      super(props);
+      const elemsArr = (props.elem);
+      const time = (props.number);
+      console.log(props.number)
+      this.state = { arr: elemsArr, tools: 0, time: time }
+    };
+
+    componentDidMount() {
+      this.timer = setTimeout(() => this.count(), (this.state.time)*2500);
+      //dodać ładowanie każdego elementu w odstepie czasu
+    }
+
+    componentWillUnmount() {
+      //clearInterval(this.timer);
+    }
+
+    count() {
+
+      let changeTools = ((this.state.tools) === 0 ? this.state.arr : 0);
+      //let a =  (this.props.elems.children).map(item => addElems(item));
+      this.setState({ tools: changeTools });
+    }
+
+    render() {
+
+      return (this.state.tools !== 0 && addElems(this.state.tools));
+    }
+  }
+
+
 
   class Article extends React.Component {
     render() {

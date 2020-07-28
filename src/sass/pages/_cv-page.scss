@@ -494,6 +494,10 @@
           position: relative;
           width: 100%;
           height: 200px;
+
+          @media screen and (min-width: $min-md) {
+            height: 400px;
+          }
         }
 
         .articleTitle {
@@ -510,6 +514,10 @@
           //animation: flowTools 10s linear infinite;
           //-webkit-animation: flowTools 10s linear infinite;
 
+          @media screen and (min-width: $min-md) {
+            height: 400px;
+          }
+
           @keyframes flowTools {
             from {
               left: 0;
@@ -522,10 +530,13 @@
 
           .flow-tools__box {
             position: absolute;
+            @include flex-column;
+            justify-content: center;
             padding: 20px;
-            width: 100px;
-            left: 100%;
-            //background-color: royalblue;
+            width: 25%;
+            left: 0%;
+            margin: 10px;
+            background-color: royalblue;
             animation: flowTool 15s linear infinite;
             -webkit-animation: flowTool 15s linear infinite;
 
@@ -537,6 +548,22 @@
               to {
                 left: -100%;
               }
+            }
+
+            @media screen and (min-width: $min-md) {
+              width: 20%;
+              animation: flowTool 30s linear infinite;
+              -webkit-animation: flowTool 30s linear infinite;
+            }
+
+            @media screen and (min-width: $min-lg) {
+              animation: flowTool 35s linear infinite;
+              -webkit-animation: flowTool 35s linear infinite;
+            }
+
+            @media screen and (min-width: $min-xl) {
+              animation: flowTool 40s linear infinite;
+              -webkit-animation: flowTool 40s linear infinite;
             }
           }
         }

@@ -2779,6 +2779,12 @@ header {
   height: 200px;
 }
 
+@media screen and (min-width: 768px) {
+  .cv-page .main2Page .section__tools-n-techs .article:nth-of-type(2) {
+    height: 400px;
+  }
+}
+
 .cv-page .main2Page .section__tools-n-techs .article .articleTitle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2801,6 +2807,12 @@ header {
   background-color: palevioletred;
 }
 
+@media screen and (min-width: 768px) {
+  .cv-page .main2Page .section__tools-n-techs .article .flow-tools__container {
+    height: 400px;
+  }
+}
+
 @-webkit-keyframes flowTools {
   from {
     left: 0;
@@ -2821,9 +2833,21 @@ header {
 
 .cv-page .main2Page .section__tools-n-techs .article .flow-tools__container .flow-tools__box {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
-  width: 100px;
-  left: 100%;
+  width: 25%;
+  left: 0%;
+  margin: 10px;
+  background-color: royalblue;
   animation: flowTool 15s linear infinite;
   -webkit-animation: flowTool 15s linear infinite;
 }
@@ -2843,6 +2867,28 @@ header {
   }
   to {
     left: -100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cv-page .main2Page .section__tools-n-techs .article .flow-tools__container .flow-tools__box {
+    width: 20%;
+    animation: flowTool 30s linear infinite;
+    -webkit-animation: flowTool 30s linear infinite;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .cv-page .main2Page .section__tools-n-techs .article .flow-tools__container .flow-tools__box {
+    animation: flowTool 35s linear infinite;
+    -webkit-animation: flowTool 35s linear infinite;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cv-page .main2Page .section__tools-n-techs .article .flow-tools__container .flow-tools__box {
+    animation: flowTool 40s linear infinite;
+    -webkit-animation: flowTool 40s linear infinite;
   }
 }
 /*# sourceMappingURL=style.css.map */
