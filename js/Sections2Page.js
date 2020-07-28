@@ -459,43 +459,11 @@ var addSections2Page = function addSections2Page() {
       var _this14 = _possibleConstructorReturn(this, (FlowToolsBox.__proto__ || Object.getPrototypeOf(FlowToolsBox)).call(this, props));
 
       var elemsArr = props.elems.children[0].children;
-      //const fullArr = elemsArr.fill(0).map((item, i) => i);
-      console.log(elemsArr);
       _this14.state = { tools: elemsArr };
       return _this14;
     }
 
     _createClass(FlowToolsBox, [{
-      key: "componentDidMount",
-      value: function componentDidMount() {
-        var _this15 = this;
-
-        this.timer = setInterval(function () {
-          return _this15.count();
-        }, 2000);
-        //dodać ładowanie każdego elementu w odstepie czasu
-      }
-    }, {
-      key: "componentWillUnmount",
-      value: function componentWillUnmount() {
-        clearInterval(this.timer);
-      }
-    }, {
-      key: "count",
-      value: function count() {
-        function changeArr(arr) {
-          var a = arr[0];
-          //console.log(a);
-          arr.push(a);
-          arr.shift();
-          return arr;
-        }
-
-        var newArr = changeArr(this.state.tools);
-        //let a =  (this.props.elems.children).map(item => addElems(item));
-        this.setState({ tools: newArr });
-      }
-    }, {
       key: "render",
       value: function render() {
 
@@ -505,8 +473,8 @@ var addSections2Page = function addSections2Page() {
           React.createElement(
             "div",
             { className: this.props.elems.children[0].div },
-            this.state.tools.map(function (item) {
-              return addElems(item);
+            this.props.elems.children[0].children.map(function (item, index) {
+              return React.createElement(FlowItem, { elem: item, number: index });
             })
           )
         );
@@ -516,8 +484,57 @@ var addSections2Page = function addSections2Page() {
     return FlowToolsBox;
   }(React.Component);
 
-  var Article = function (_React$Component14) {
-    _inherits(Article, _React$Component14);
+  var FlowItem = function (_React$Component14) {
+    _inherits(FlowItem, _React$Component14);
+
+    function FlowItem(props) {
+      _classCallCheck(this, FlowItem);
+
+      var _this15 = _possibleConstructorReturn(this, (FlowItem.__proto__ || Object.getPrototypeOf(FlowItem)).call(this, props));
+
+      var elemsArr = props.elem;
+      var time = props.number;
+      console.log(props.number);
+      _this15.state = { arr: elemsArr, tools: 0, time: time };
+      return _this15;
+    }
+
+    _createClass(FlowItem, [{
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        var _this16 = this;
+
+        this.timer = setTimeout(function () {
+          return _this16.count();
+        }, this.state.time * 2500);
+        //dodać ładowanie każdego elementu w odstepie czasu
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        //clearInterval(this.timer);
+      }
+    }, {
+      key: "count",
+      value: function count() {
+
+        var changeTools = this.state.tools === 0 ? this.state.arr : 0;
+        //let a =  (this.props.elems.children).map(item => addElems(item));
+        this.setState({ tools: changeTools });
+      }
+    }, {
+      key: "render",
+      value: function render() {
+
+        return this.state.tools !== 0 && addElems(this.state.tools);
+      }
+    }]);
+
+    return FlowItem;
+  }(React.Component);
+
+  var Article = function (_React$Component15) {
+    _inherits(Article, _React$Component15);
 
     function Article() {
       _classCallCheck(this, Article);
@@ -541,8 +558,8 @@ var addSections2Page = function addSections2Page() {
     return Article;
   }(React.Component);
 
-  var Section = function (_React$Component15) {
-    _inherits(Section, _React$Component15);
+  var Section = function (_React$Component16) {
+    _inherits(Section, _React$Component16);
 
     function Section() {
       _classCallCheck(this, Section);
@@ -591,27 +608,27 @@ var addSections2Page = function addSections2Page() {
     return tag;
   }
 
-  var Main = function (_React$Component16) {
-    _inherits(Main, _React$Component16);
+  var Main = function (_React$Component17) {
+    _inherits(Main, _React$Component17);
 
     function Main(props) {
       _classCallCheck(this, Main);
 
-      var _this18 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+      var _this19 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-      _this18.state = { data: [] };
-      return _this18;
+      _this19.state = { data: [] };
+      return _this19;
     }
 
     _createClass(Main, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this19 = this;
+        var _this20 = this;
 
         fetch(URL).then(function (response) {
           return response.json();
         }).then(function (json) {
-          return _this19.setState({ data: json });
+          return _this20.setState({ data: json });
         });
       }
     }, {
