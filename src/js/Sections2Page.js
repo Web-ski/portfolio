@@ -220,7 +220,7 @@ const addSections2Page = function () {
 
     render() {
 
-      return <article className={this.props.elems.article}>
+      return <article className={this.props.elems.article + " article__flow"}>
         <div className={this.props.elems.children[0].div}>
           {(this.props.elems.children[0].children).map((item, index) => <FlowItem elem={item} number={index}/>)}
         </div>
@@ -238,7 +238,7 @@ const addSections2Page = function () {
     };
 
     componentDidMount() {
-      this.timer = setTimeout(() => this.count(), (this.state.time)*2500);
+      this.timer = setTimeout(() => this.count(), (this.state.time)*4000);
       //dodać ładowanie każdego elementu w odstepie czasu
     }
 

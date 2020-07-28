@@ -489,82 +489,61 @@
           width: 100%;
         }
 
-        &:nth-of-type(2) {
-          padding: 0;
-          position: relative;
-          width: 100%;
-          height: 200px;
-
-          @media screen and (min-width: $min-md) {
-            height: 400px;
-          }
-        }
-
         .articleTitle {
           justify-content: center;
         }
+      }
+
+      .article__flow {
+        padding: 0;
+        position: relative;
+        width: 100%;
+        height: 300px;
+
+        @media screen and (min-width: $min-md) {
+          min-height: 320px;
+        }
 
         .flow-tools__container {
-          //position: absolute;
+          position: absolute;
           @include flex-row;
           height: 100%;
-          width: 100%;
+          width: 1600px;
+          right: 0;
           justify-content: space-between;
-          background-color: palevioletred;
-          //animation: flowTools 10s linear infinite;
-          //-webkit-animation: flowTools 10s linear infinite;
+          //background-color: palevioletred;
 
           @media screen and (min-width: $min-md) {
-            height: 400px;
-          }
-
-          @keyframes flowTools {
-            from {
-              left: 0;
-            }
-
-            to {
-              left: -100%;
-            }
+            height: 320px;
           }
 
           .flow-tools__box {
             position: absolute;
             @include flex-column;
             justify-content: center;
-            padding: 20px;
-            width: 25%;
+            padding: 20px 0;
+            width: 180px;
             left: 0%;
             margin: 10px;
-            background-color: royalblue;
-            animation: flowTool 15s linear infinite;
-            -webkit-animation: flowTool 15s linear infinite;
+            //background-color: royalblue;
+            animation: flowTool 32s linear infinite;
+            -webkit-animation: flowTool 32s linear infinite;
 
             @keyframes flowTool {
               from {
-                left: 100%;
+                left: 1600px;
               }
 
               to {
-                left: -100%;
+                left: -200px;
               }
             }
 
-            @media screen and (min-width: $min-md) {
-              width: 20%;
-              animation: flowTool 30s linear infinite;
-              -webkit-animation: flowTool 30s linear infinite;
-            }
+            @media screen and (min-width: $min-md) {}
 
-            @media screen and (min-width: $min-lg) {
-              animation: flowTool 35s linear infinite;
-              -webkit-animation: flowTool 35s linear infinite;
-            }
+            @media screen and (min-width: $min-lg) {}
 
-            @media screen and (min-width: $min-xl) {
-              animation: flowTool 40s linear infinite;
-              -webkit-animation: flowTool 40s linear infinite;
-            }
+            @media screen and (min-width: $min-xl) {}
           }
         }
       }

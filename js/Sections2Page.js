@@ -469,7 +469,7 @@ var addSections2Page = function addSections2Page() {
 
         return React.createElement(
           "article",
-          { className: this.props.elems.article },
+          { className: this.props.elems.article + " article__flow" },
           React.createElement(
             "div",
             { className: this.props.elems.children[0].div },
@@ -506,7 +506,7 @@ var addSections2Page = function addSections2Page() {
 
         this.timer = setTimeout(function () {
           return _this16.count();
-        }, this.state.time * 2500);
+        }, this.state.time * 4000);
         //dodać ładowanie każdego elementu w odstepie czasu
       }
     }, {

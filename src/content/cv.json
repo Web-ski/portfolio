@@ -368,12 +368,16 @@
                     "text": "EXtra"
                   },
                   {
-                    "p": "flow-text",
-                    "text": "8"
+                    "img": "article__icon",
+                    "src": "./images/icons/figma.png"
                   },
                   {
-                    "p": "flow-text",
-                    "text": "8"
+                    "img": "article__icon",
+                    "src": "./images/icons/invision.png"
+                  },
+                  {
+                    "img": "article__icon",
+                    "src": "./images/icons/balsamiq-logo-noborder-screen.png"
                   }
                 ]
               }
