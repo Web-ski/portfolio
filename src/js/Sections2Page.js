@@ -83,6 +83,14 @@ const addSections2Page = function () {
     }
   }
 
+  class Icon extends React.Component {
+    render() {
+      return <div className={"icon__box"}>
+        <img className={this.props.elems.icon} src={this.props.elems.src} />
+      </div>
+    }
+  }
+
   class ViewerBox extends React.Component {
 
     render() {
@@ -222,7 +230,7 @@ const addSections2Page = function () {
 
       return <article className={this.props.elems.article + " article__flow"}>
         <div className={this.props.elems.children[0].div}>
-          {(this.props.elems.children[0].children).map((item, index) => <FlowItem elem={item} number={index}/>)}
+          {(this.props.elems.children[0].children).map((item, index) => <FlowItem elem={item} number={index} />)}
         </div>
       </article>;
     }
@@ -238,7 +246,7 @@ const addSections2Page = function () {
     };
 
     componentDidMount() {
-      this.timer = setTimeout(() => this.count(), (this.state.time)*4000);
+      this.timer = setTimeout(() => this.count(), (this.state.time) * 4000);
       //dodać ładowanie każdego elementu w odstepie czasu
     }
 
@@ -299,7 +307,7 @@ const addSections2Page = function () {
     elem.img !== undefined && (tag = <Picture elems={elem} />);
     elem.aside !== undefined && (tag = <Aside elems={elem} />);
     elem.span !== undefined && (tag = <Span elems={elem} />);
-
+    elem.icon !== undefined && (tag = <Icon elems={elem} />);
     return tag;
   }
 

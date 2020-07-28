@@ -595,6 +595,26 @@ header {
   }
 }
 
+.icon__box {
+  margin: 10px auto;
+}
+
+.icon__box .article__icon {
+  height: 30px;
+}
+
+@media screen and (min-width: 960px) {
+  .icon__box .article__icon {
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon__box .article__icon {
+    height: 50px;
+  }
+}
+
 .photos .photo__link {
   position: relative;
   width: 80%;
@@ -2850,5 +2870,9 @@ header {
   to {
     left: -200px;
   }
+}
+
+.cv-page .main2Page .section__tools-n-techs .article__flow .flow-tools__container .flow-tools__box .article__text, .cv-page .main2Page .section__tools-n-techs .article__flow .flow-tools__container .flow-tools__box .footer__text {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -220,8 +220,31 @@ var addSections2Page = function addSections2Page() {
     return Picture;
   }(React.Component);
 
-  var ViewerBox = function (_React$Component9) {
-    _inherits(ViewerBox, _React$Component9);
+  var Icon = function (_React$Component9) {
+    _inherits(Icon, _React$Component9);
+
+    function Icon() {
+      _classCallCheck(this, Icon);
+
+      return _possibleConstructorReturn(this, (Icon.__proto__ || Object.getPrototypeOf(Icon)).apply(this, arguments));
+    }
+
+    _createClass(Icon, [{
+      key: "render",
+      value: function render() {
+        return React.createElement(
+          "div",
+          { className: "icon__box" },
+          React.createElement("img", { className: this.props.elems.icon, src: this.props.elems.src })
+        );
+      }
+    }]);
+
+    return Icon;
+  }(React.Component);
+
+  var ViewerBox = function (_React$Component10) {
+    _inherits(ViewerBox, _React$Component10);
 
     function ViewerBox() {
       _classCallCheck(this, ViewerBox);
@@ -259,26 +282,26 @@ var addSections2Page = function addSections2Page() {
   //--SLIDER--
 
 
-  var SliderBox = function (_React$Component10) {
-    _inherits(SliderBox, _React$Component10);
+  var SliderBox = function (_React$Component11) {
+    _inherits(SliderBox, _React$Component11);
 
     function SliderBox(props) {
       _classCallCheck(this, SliderBox);
 
-      var _this10 = _possibleConstructorReturn(this, (SliderBox.__proto__ || Object.getPrototypeOf(SliderBox)).call(this, props));
+      var _this11 = _possibleConstructorReturn(this, (SliderBox.__proto__ || Object.getPrototypeOf(SliderBox)).call(this, props));
 
       var elemsArr = new Array(props.elems.children.length);
       var fullArr = elemsArr.fill(0).map(function (item, i) {
         return i;
       });
       //console.log(fullArr);
-      _this10.state = {
+      _this11.state = {
         slides: fullArr,
         animationToggle: '',
         modalToogle: true
       };
       //this.handleClick = this.handleClick.bind(this);
-      return _this10;
+      return _this11;
     }
 
     _createClass(SliderBox, [{
@@ -315,7 +338,7 @@ var addSections2Page = function addSections2Page() {
     }, {
       key: "render",
       value: function render() {
-        var _this11 = this;
+        var _this12 = this;
 
         //const activeSlide1 = (this.state.toggleSlide ? '' : 'show');
         //const activeSlide = (this.state.toggleSlide ? 'show-slide' : '');
@@ -328,7 +351,7 @@ var addSections2Page = function addSections2Page() {
             "div",
             { className: "slides__container" },
             this.props.elems.children.map(function (item, index) {
-              return index === _this11.state.slides[0] && React.createElement("div", { className: "slide " + _this11.state.animationToggle, style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
+              return index === _this12.state.slides[0] && React.createElement("div", { className: "slide " + _this12.state.animationToggle, style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
             })
           ),
           React.createElement("button", { onClick: this.handleClick.bind(this, 1), className: "slider__arrow slider__arrow--right" }),
@@ -341,7 +364,7 @@ var addSections2Page = function addSections2Page() {
               "div",
               { className: "slides__container" },
               this.props.elems.children.map(function (item, index) {
-                return index === _this11.state.slides[0] && React.createElement("div", { className: "slide " + _this11.state.animationToggle, style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
+                return index === _this12.state.slides[0] && React.createElement("div", { className: "slide " + _this12.state.animationToggle, style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
               })
             ),
             React.createElement("button", { onClick: this.handleClick.bind(this, 1), className: "slider__arrow slider__arrow--right" }),
@@ -357,8 +380,8 @@ var addSections2Page = function addSections2Page() {
   //--TIME LINE--
 
 
-  var TimeLineItem = function (_React$Component11) {
-    _inherits(TimeLineItem, _React$Component11);
+  var TimeLineItem = function (_React$Component12) {
+    _inherits(TimeLineItem, _React$Component12);
 
     function TimeLineItem() {
       _classCallCheck(this, TimeLineItem);
@@ -394,17 +417,17 @@ var addSections2Page = function addSections2Page() {
     return TimeLineItem;
   }(React.Component);
 
-  var TimeLineBox = function (_React$Component12) {
-    _inherits(TimeLineBox, _React$Component12);
+  var TimeLineBox = function (_React$Component13) {
+    _inherits(TimeLineBox, _React$Component13);
 
     function TimeLineBox(props) {
       _classCallCheck(this, TimeLineBox);
 
-      var _this13 = _possibleConstructorReturn(this, (TimeLineBox.__proto__ || Object.getPrototypeOf(TimeLineBox)).call(this, props));
+      var _this14 = _possibleConstructorReturn(this, (TimeLineBox.__proto__ || Object.getPrototypeOf(TimeLineBox)).call(this, props));
 
-      _this13.state = { toggleOn: true };
-      _this13.handleClick = _this13.handleClick.bind(_this13);
-      return _this13;
+      _this14.state = { toggleOn: true };
+      _this14.handleClick = _this14.handleClick.bind(_this14);
+      return _this14;
     }
 
     _createClass(TimeLineBox, [{
@@ -450,17 +473,17 @@ var addSections2Page = function addSections2Page() {
     return TimeLineBox;
   }(React.Component);
 
-  var FlowToolsBox = function (_React$Component13) {
-    _inherits(FlowToolsBox, _React$Component13);
+  var FlowToolsBox = function (_React$Component14) {
+    _inherits(FlowToolsBox, _React$Component14);
 
     function FlowToolsBox(props) {
       _classCallCheck(this, FlowToolsBox);
 
-      var _this14 = _possibleConstructorReturn(this, (FlowToolsBox.__proto__ || Object.getPrototypeOf(FlowToolsBox)).call(this, props));
+      var _this15 = _possibleConstructorReturn(this, (FlowToolsBox.__proto__ || Object.getPrototypeOf(FlowToolsBox)).call(this, props));
 
       var elemsArr = props.elems.children[0].children;
-      _this14.state = { tools: elemsArr };
-      return _this14;
+      _this15.state = { tools: elemsArr };
+      return _this15;
     }
 
     _createClass(FlowToolsBox, [{
@@ -484,28 +507,28 @@ var addSections2Page = function addSections2Page() {
     return FlowToolsBox;
   }(React.Component);
 
-  var FlowItem = function (_React$Component14) {
-    _inherits(FlowItem, _React$Component14);
+  var FlowItem = function (_React$Component15) {
+    _inherits(FlowItem, _React$Component15);
 
     function FlowItem(props) {
       _classCallCheck(this, FlowItem);
 
-      var _this15 = _possibleConstructorReturn(this, (FlowItem.__proto__ || Object.getPrototypeOf(FlowItem)).call(this, props));
+      var _this16 = _possibleConstructorReturn(this, (FlowItem.__proto__ || Object.getPrototypeOf(FlowItem)).call(this, props));
 
       var elemsArr = props.elem;
       var time = props.number;
       console.log(props.number);
-      _this15.state = { arr: elemsArr, tools: 0, time: time };
-      return _this15;
+      _this16.state = { arr: elemsArr, tools: 0, time: time };
+      return _this16;
     }
 
     _createClass(FlowItem, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this16 = this;
+        var _this17 = this;
 
         this.timer = setTimeout(function () {
-          return _this16.count();
+          return _this17.count();
         }, this.state.time * 4000);
         //dodać ładowanie każdego elementu w odstepie czasu
       }
@@ -533,8 +556,8 @@ var addSections2Page = function addSections2Page() {
     return FlowItem;
   }(React.Component);
 
-  var Article = function (_React$Component15) {
-    _inherits(Article, _React$Component15);
+  var Article = function (_React$Component16) {
+    _inherits(Article, _React$Component16);
 
     function Article() {
       _classCallCheck(this, Article);
@@ -558,8 +581,8 @@ var addSections2Page = function addSections2Page() {
     return Article;
   }(React.Component);
 
-  var Section = function (_React$Component16) {
-    _inherits(Section, _React$Component16);
+  var Section = function (_React$Component17) {
+    _inherits(Section, _React$Component17);
 
     function Section() {
       _classCallCheck(this, Section);
@@ -604,31 +627,31 @@ var addSections2Page = function addSections2Page() {
     elem.img !== undefined && (tag = React.createElement(Picture, { elems: elem }));
     elem.aside !== undefined && (tag = React.createElement(Aside, { elems: elem }));
     elem.span !== undefined && (tag = React.createElement(Span, { elems: elem }));
-
+    elem.icon !== undefined && (tag = React.createElement(Icon, { elems: elem }));
     return tag;
   }
 
-  var Main = function (_React$Component17) {
-    _inherits(Main, _React$Component17);
+  var Main = function (_React$Component18) {
+    _inherits(Main, _React$Component18);
 
     function Main(props) {
       _classCallCheck(this, Main);
 
-      var _this19 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+      var _this20 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-      _this19.state = { data: [] };
-      return _this19;
+      _this20.state = { data: [] };
+      return _this20;
     }
 
     _createClass(Main, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this20 = this;
+        var _this21 = this;
 
         fetch(URL).then(function (response) {
           return response.json();
         }).then(function (json) {
-          return _this20.setState({ data: json });
+          return _this21.setState({ data: json });
         });
       }
     }, {

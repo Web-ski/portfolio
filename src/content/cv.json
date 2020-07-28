@@ -226,7 +226,7 @@
         "children": [
           {
             "h1": "articleTitle",
-            "text": "TOOLS & TECHOLOGIES"
+            "text": "TOOLS & TECHNOLOGIES"
           }
         ]
       },
@@ -242,15 +242,40 @@
                 "children": [
                   {
                     "p": "article__text",
-                    "text": "Frameworks"
+                    "text": "Languages"
                   },
                   {
-                    "p": "flow-text",
-                    "text": "jeden"
+                    "icon": "article__icon",
+                    "src": "./images/icons/html5.png"
                   },
                   {
-                    "p": "flow-text",
-                    "text": "jeden"
+                    "icon": "article__icon",
+                    "src": "./images/icons/js.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/php.png"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Styling"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/css3.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/sass.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/Bootstrap.png"
                   }
                 ]
               },
@@ -262,12 +287,33 @@
                     "text": "Libraries"
                   },
                   {
-                    "p": "flow-text",
-                    "text": "dwa"
+                    "icon": "article__icon",
+                    "src": "./images/icons/jQuery.png"
                   },
                   {
-                    "p": "flow-text",
-                    "text": "dwa"
+                    "icon": "article__icon",
+                    "src": "./images/icons/react.png"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Repositories"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/git.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/github.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/gitlab.png"
                   }
                 ]
               },
@@ -279,12 +325,12 @@
                     "text": "Tools"
                   },
                   {
-                    "p": "flow-text",
-                    "text": "trzy"
+                    "icon": "article__icon",
+                    "src": "./images/icons/npm.png"
                   },
                   {
-                    "p": "flow-text",
-                    "text": "trzey"
+                    "icon": "article__icon",
+                    "src": "./images/icons/gulp.png"
                   }
                 ]
               },
@@ -293,15 +339,15 @@
                 "children": [
                   {
                     "p": "article__text",
-                    "text": "Languages"
+                    "text": "Tools"
                   },
                   {
-                    "p": "flow-text",
-                    "text": "4"
+                    "icon": "article__icon",
+                    "src": "./images/icons/slack.png"
                   },
                   {
-                    "p": "flow-text",
-                    "text": "4"
+                    "icon": "article__icon",
+                    "src": "./images/icons/jira.png"
                   }
                 ]
               },
@@ -310,74 +356,40 @@
                 "children": [
                   {
                     "p": "article__text",
-                    "text": "Design"
+                    "text": "UX-Tools"
                   },
                   {
-                    "p": "flow-text",
-                    "text": "5"
-                  },
-                  {
-                    "p": "flow-text",
-                    "text": "5"
-                  }
-                ]
-              },
-              {
-                "div": "flow-tools__box",
-                "children": [
-                  {
-                    "p": "article__text",
-                    "text": "GIMP"
-                  },
-                  {
-                    "p": "flow-text",
-                    "text": "6"
-                  },
-                  {
-                    "p": "flow-text",
-                    "text": "6"
-                  }
-                ]
-              },
-              {
-                "div": "flow-tools__box",
-                "children": [
-                  {
-                    "p": "article__text",
-                    "text": "Figma"
-                  },
-                  {
-                    "p": "flow-text",
-                    "text": "7"
-                  },
-                  {
-                    "p": "flow-text",
-                    "text": "7"
-                  },
-                  {
-                    "p": "flow-text",
-                    "text": "7"
-                  }
-                ]
-              },
-              {
-                "div": "flow-tools__box",
-                "children": [
-                  {
-                    "p": "article__text",
-                    "text": "EXtra"
-                  },
-                  {
-                    "img": "article__icon",
+                    "icon": "article__icon",
                     "src": "./images/icons/figma.png"
                   },
                   {
-                    "img": "article__icon",
+                    "icon": "article__icon",
                     "src": "./images/icons/invision.png"
                   },
                   {
-                    "img": "article__icon",
+                    "icon": "article__icon",
                     "src": "./images/icons/balsamiq-logo-noborder-screen.png"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "UI-Tools"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/gimp.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/inkscape.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/sketchbook.png"
                   }
                 ]
               }

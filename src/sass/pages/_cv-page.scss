@@ -539,6 +539,10 @@
               }
             }
 
+            .article__text {
+              text-align: center;
+            }
+
             @media screen and (min-width: $min-md) {}
 
             @media screen and (min-width: $min-lg) {}
