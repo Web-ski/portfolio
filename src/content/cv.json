@@ -321,6 +321,61 @@
                     "text": "5"
                   }
                 ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "GIMP"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "6"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "6"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Figma"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "7"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "7"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "7"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "EXtra"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "8"
+                  },
+                  {
+                    "p": "flow-text",
+                    "text": "8"
+                  }
+                ]
               }
             ]
           }

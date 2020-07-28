@@ -530,6 +530,8 @@
 
           .flow-tools__box {
             position: absolute;
+            @include flex-column;
+            justify-content: center;
             padding: 20px;
             width: 25%;
             left: 0%;
@@ -549,12 +551,21 @@
             }
 
             @media screen and (min-width: $min-md) {
-              width: 300px;
+              width: 20%;
               animation: flowTool 30s linear infinite;
               -webkit-animation: flowTool 30s linear infinite;
             }
-          }
 
+            @media screen and (min-width: $min-lg) {
+              animation: flowTool 35s linear infinite;
+              -webkit-animation: flowTool 35s linear infinite;
+            }
+
+            @media screen and (min-width: $min-xl) {
+              animation: flowTool 40s linear infinite;
+              -webkit-animation: flowTool 40s linear infinite;
+            }
+          }
         }
       }
     }
