@@ -288,7 +288,7 @@
           },
           {
             "p": "article__text",
-            "text": "Apart my own repositories, look at repositories and site of Zeton project, in wich I'm engaging. It help me to learn cooperation's skills and technologies."
+            "text": "Apart my own repositories, look at repositories and the website of Zeton project, in wich I'm engaging. It help me to learn cooperation's skills and technologies."
           },
           {
             "a": "article__link",
@@ -417,11 +417,6 @@
           {
             "p": "article__text",
             "text": "Please, send me an email, look at my LinkedIn profile or find me in Zeton project's team."
-          },
-          {
-            "a": "article__link",
-            "href": "find.html",
-            "text": "Go for details..."
           },
           {
             "div": "article__icons",

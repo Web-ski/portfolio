@@ -11,16 +11,20 @@ const addFooter = function () {
 
   class FooterLink extends React.Component {
     render() {
-      return <a className="footer__link" href={this.props.data.href}>{
+      //console.log(this.props.key);
+      console.log(this.props.data);
+      return (        
+      <a className="footer__link" href={this.props.data.href}>{
         ((this.props.data.href).split("."))[0]
       }</a>
+      )
     }
   }
 
   const findLink = (elem) => {
     return (
       elem.children !== undefined && (
-        (elem.children).map(item => (item.a !== undefined && item.a === "article__link") ? (<FooterLink data={item} />) : findLink(item))
+        (elem.children).map((item, index) => (item.a !== undefined && item.a === "article__link") ? (<FooterLink key={"footerLink" + index} data={item} />) : findLink(item))
       )
     )
   }

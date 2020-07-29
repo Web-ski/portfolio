@@ -46,6 +46,8 @@ var addFooter = function addFooter() {
     _createClass(FooterLink, [{
       key: "render",
       value: function render() {
+        //console.log(this.props.key);
+        console.log(this.props.data);
         return React.createElement(
           "a",
           { className: "footer__link", href: this.props.data.href },
@@ -58,8 +60,8 @@ var addFooter = function addFooter() {
   }(React.Component);
 
   var findLink = function findLink(elem) {
-    return elem.children !== undefined && elem.children.map(function (item) {
-      return item.a !== undefined && item.a === "article__link" ? React.createElement(FooterLink, { data: item }) : findLink(item);
+    return elem.children !== undefined && elem.children.map(function (item, index) {
+      return item.a !== undefined && item.a === "article__link" ? React.createElement(FooterLink, { key: "footerLink" + index, data: item }) : findLink(item);
     });
   };
 

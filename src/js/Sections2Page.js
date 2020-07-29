@@ -23,7 +23,7 @@ const addSections2Page = function () {
           this.props.elems.text !== undefined && this.props.elems.text
         }
         {
-          this.props.elems.children !== undefined && (this.props.elems.children).map(item => addElems(item))
+          this.props.elems.children !== undefined && (this.props.elems.children).map((item, index) => addElems(item))
         }
       </p>;
     }
@@ -54,7 +54,7 @@ const addSections2Page = function () {
     render() {
       return <div className={this.props.elems.div} data-viewer={this.props.elems.data}>
         {
-          this.props.elems.children !== undefined && (this.props.elems.children).map(item => addElems(item))
+          this.props.elems.children !== undefined && (this.props.elems.children).map((item, index) => addElems(item, (this.props.elems.div + index)))
         }
       </div>;
     }
@@ -96,11 +96,11 @@ const addSections2Page = function () {
     render() {
       return <article className={this.props.elems.article + ' photo__box'}>
         {(this.props.elems.children).map((item, index) =>
-          item.container !== undefined ? (<div className={item.container}>
+          item.container !== undefined ? (<div key={"div" + index} className={item.container}>
             {(item.children).map((item, index) =>
-              <Picture elems={item} />
+              <Picture key={"ViewerBoxPicture" + index} elems={item} />
             )}
-          </div>) : <Picture elems={item} />
+          </div>) : <Picture key={"ViewerBoxPicture" + index} elems={item} />
         )}
         <div className="article__pattern">
           <div className="pattern"></div>
@@ -180,7 +180,7 @@ const addSections2Page = function () {
     render() {
       return <div className={this.props.elems.div}>
         <div className="time-line__item time-line__item--1">
-          {(this.props.elems.children).map(item => addElems(item))}
+          {(this.props.elems.children).map((item, index) => addElems(item))}
         </div>
         <div className="time-line__item time-line__item--2">
           <div className="item-circle"></div>
@@ -228,7 +228,7 @@ const addSections2Page = function () {
     render() {
       return <article className={this.props.elems.article + " article__flow"}>
         <div className={this.props.elems.children[0].div}>
-          {(this.props.elems.children[0].children).map((item, index) => <FlowItem elem={item} number={index} />)}
+          {(this.props.elems.children[0].children).map((item, index) => <FlowItem key={"FlowItem" + index} elem={item} />)}
         </div>
       </article>;
     }
@@ -267,7 +267,7 @@ const addSections2Page = function () {
   class Article extends React.Component {
     render() {
       return <article className={this.props.elems.article}>
-        {(this.props.elems.children).map(item => addElems(item))}
+        {(this.props.elems.children).map((item, index) => addElems(item, (this.props.elems.article + index)))}
       </article>;
     }
   }
@@ -275,23 +275,23 @@ const addSections2Page = function () {
   class Section extends React.Component {
     render() {
       return <section className={this.props.elems.section}>
-        {(this.props.elems.children).map(item => addElems(item))}
+        {(this.props.elems.children).map((item, index) => addElems(item, (this.props.elems.section + index)))}
       </section>;
     }
   }
 
-  function addElems(elem) {
-
+  function addElems(elem, key) {
+    let newKey;
     let tag;
     if (elem.article !== undefined) {
       if (elem.data !== undefined) {
-        (elem.data === 'viewer-box' && (tag = <ViewerBox elems={elem} />));
+        (elem.data === 'viewer-box' && ((newKey = "ViewerBox" + key) && (tag = <ViewerBox elems={elem} />)));
         (elem.data === 'slider-box' && (tag = <SliderBox elems={elem} />));
         (elem.data === 'time-line-box' && (tag = <TimeLineBox elems={elem} />));
         (elem.data === 'flow-tools-box' && (tag = <FlowToolsBox elems={elem} />));
       }
       else {
-        (tag = <Article elems={elem} />);
+        ((newKey = "Article" + key) && (tag = <Article key={"Article" + key} elems={elem} />));
       }
     }
     elem.div !== undefined && (tag = <Div elems={elem} />);
@@ -318,8 +318,8 @@ const addSections2Page = function () {
     }
 
     render() {
-      return <div id={this.props.id} className="main2Page">
-        {(this.state.data).map(item => (item.section !== undefined && <Section elems={item} />))}
+      return <div key={this.props.id} id={this.props.id} className="main2Page">
+        {(this.state.data).map((item, index) => (item.section !== undefined && <Section key={"sectionMain" + index} elems={item} />))}
       </div>;
     }
   }

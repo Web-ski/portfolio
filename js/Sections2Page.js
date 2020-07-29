@@ -72,7 +72,7 @@ var addSections2Page = function addSections2Page() {
           "p",
           { className: this.props.elems.p },
           this.props.elems.text !== undefined && this.props.elems.text,
-          this.props.elems.children !== undefined && this.props.elems.children.map(function (item) {
+          this.props.elems.children !== undefined && this.props.elems.children.map(function (item, index) {
             return addElems(item);
           })
         );
@@ -163,11 +163,13 @@ var addSections2Page = function addSections2Page() {
     _createClass(Div, [{
       key: "render",
       value: function render() {
+        var _this8 = this;
+
         return React.createElement(
           "div",
           { className: this.props.elems.div, "data-viewer": this.props.elems.data },
-          this.props.elems.children !== undefined && this.props.elems.children.map(function (item) {
-            return addElems(item);
+          this.props.elems.children !== undefined && this.props.elems.children.map(function (item, index) {
+            return addElems(item, _this8.props.elems.div + index);
           })
         );
       }
@@ -182,11 +184,11 @@ var addSections2Page = function addSections2Page() {
     function Picture(props) {
       _classCallCheck(this, Picture);
 
-      var _this8 = _possibleConstructorReturn(this, (Picture.__proto__ || Object.getPrototypeOf(Picture)).call(this, props));
+      var _this9 = _possibleConstructorReturn(this, (Picture.__proto__ || Object.getPrototypeOf(Picture)).call(this, props));
 
-      _this8.state = { toggleOn: true };
-      _this8.handleClick = _this8.handleClick.bind(_this8);
-      return _this8;
+      _this9.state = { toggleOn: true };
+      _this9.handleClick = _this9.handleClick.bind(_this9);
+      return _this9;
     }
 
     _createClass(Picture, [{
@@ -261,11 +263,11 @@ var addSections2Page = function addSections2Page() {
           this.props.elems.children.map(function (item, index) {
             return item.container !== undefined ? React.createElement(
               "div",
-              { className: item.container },
+              { key: "div" + index, className: item.container },
               item.children.map(function (item, index) {
-                return React.createElement(Picture, { elems: item });
+                return React.createElement(Picture, { key: "ViewerBoxPicture" + index, elems: item });
               })
-            ) : React.createElement(Picture, { elems: item });
+            ) : React.createElement(Picture, { key: "ViewerBoxPicture" + index, elems: item });
           }),
           React.createElement(
             "div",
@@ -288,20 +290,20 @@ var addSections2Page = function addSections2Page() {
     function SliderBox(props) {
       _classCallCheck(this, SliderBox);
 
-      var _this11 = _possibleConstructorReturn(this, (SliderBox.__proto__ || Object.getPrototypeOf(SliderBox)).call(this, props));
+      var _this12 = _possibleConstructorReturn(this, (SliderBox.__proto__ || Object.getPrototypeOf(SliderBox)).call(this, props));
 
       var elemsArr = new Array(props.elems.children.length);
       var fullArr = elemsArr.fill(0).map(function (item, i) {
         return i;
       });
       //console.log(fullArr);
-      _this11.state = {
+      _this12.state = {
         slides: fullArr,
         animationToggle: '',
         modalToogle: true
       };
 
-      return _this11;
+      return _this12;
     }
 
     _createClass(SliderBox, [{
@@ -337,7 +339,7 @@ var addSections2Page = function addSections2Page() {
     }, {
       key: "render",
       value: function render() {
-        var _this12 = this;
+        var _this13 = this;
 
         return React.createElement(
           "article",
@@ -347,7 +349,7 @@ var addSections2Page = function addSections2Page() {
             "div",
             { className: "slides__container" },
             this.props.elems.children.map(function (item, index) {
-              return index === _this12.state.slides[0] && React.createElement("div", { className: "slide " + _this12.state.animationToggle, style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
+              return index === _this13.state.slides[0] && React.createElement("div", { className: "slide " + _this13.state.animationToggle, style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
             })
           ),
           React.createElement("button", { onClick: this.handleClick.bind(this, 1), className: "slider__arrow slider__arrow--right" }),
@@ -360,7 +362,7 @@ var addSections2Page = function addSections2Page() {
               "div",
               { className: "slides__container" },
               this.props.elems.children.map(function (item, index) {
-                return index === _this12.state.slides[0] && React.createElement("div", { className: "slide " + _this12.state.animationToggle, style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
+                return index === _this13.state.slides[0] && React.createElement("div", { className: "slide " + _this13.state.animationToggle, style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
               })
             ),
             React.createElement("button", { onClick: this.handleClick.bind(this, 1), className: "slider__arrow slider__arrow--right" }),
@@ -394,7 +396,7 @@ var addSections2Page = function addSections2Page() {
           React.createElement(
             "div",
             { className: "time-line__item time-line__item--1" },
-            this.props.elems.children.map(function (item) {
+            this.props.elems.children.map(function (item, index) {
               return addElems(item);
             })
           ),
@@ -419,11 +421,11 @@ var addSections2Page = function addSections2Page() {
     function TimeLineBox(props) {
       _classCallCheck(this, TimeLineBox);
 
-      var _this14 = _possibleConstructorReturn(this, (TimeLineBox.__proto__ || Object.getPrototypeOf(TimeLineBox)).call(this, props));
+      var _this15 = _possibleConstructorReturn(this, (TimeLineBox.__proto__ || Object.getPrototypeOf(TimeLineBox)).call(this, props));
 
-      _this14.state = { toggleOn: true };
-      _this14.handleClick = _this14.handleClick.bind(_this14);
-      return _this14;
+      _this15.state = { toggleOn: true };
+      _this15.handleClick = _this15.handleClick.bind(_this15);
+      return _this15;
     }
 
     _createClass(TimeLineBox, [{
@@ -475,13 +477,13 @@ var addSections2Page = function addSections2Page() {
     function FlowToolsBox(props) {
       _classCallCheck(this, FlowToolsBox);
 
-      var _this15 = _possibleConstructorReturn(this, (FlowToolsBox.__proto__ || Object.getPrototypeOf(FlowToolsBox)).call(this, props));
+      var _this16 = _possibleConstructorReturn(this, (FlowToolsBox.__proto__ || Object.getPrototypeOf(FlowToolsBox)).call(this, props));
 
       var elemsArr = props.elems.children[0].children;
-      _this15.state = {
+      _this16.state = {
         tools: elemsArr
       };
-      return _this15;
+      return _this16;
     }
 
     _createClass(FlowToolsBox, [{
@@ -494,7 +496,7 @@ var addSections2Page = function addSections2Page() {
             "div",
             { className: this.props.elems.children[0].div },
             this.props.elems.children[0].children.map(function (item, index) {
-              return React.createElement(FlowItem, { elem: item, number: index });
+              return React.createElement(FlowItem, { key: "FlowItem" + index, elem: item });
             })
           )
         );
@@ -510,25 +512,25 @@ var addSections2Page = function addSections2Page() {
     function FlowItem(props) {
       _classCallCheck(this, FlowItem);
 
-      var _this16 = _possibleConstructorReturn(this, (FlowItem.__proto__ || Object.getPrototypeOf(FlowItem)).call(this, props));
+      var _this17 = _possibleConstructorReturn(this, (FlowItem.__proto__ || Object.getPrototypeOf(FlowItem)).call(this, props));
 
       var elemsArr = props.elem;
       var time = props.number;
-      _this16.state = {
+      _this17.state = {
         arr: elemsArr,
         tools: 0,
         time: time
       };
-      return _this16;
+      return _this17;
     }
 
     _createClass(FlowItem, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this17 = this;
+        var _this18 = this;
 
         this.timer = setTimeout(function () {
-          return _this17.count();
+          return _this18.count();
         }, this.state.time * 5000);
       }
     }, {
@@ -564,11 +566,13 @@ var addSections2Page = function addSections2Page() {
     _createClass(Article, [{
       key: "render",
       value: function render() {
+        var _this20 = this;
+
         return React.createElement(
           "article",
           { className: this.props.elems.article },
-          this.props.elems.children.map(function (item) {
-            return addElems(item);
+          this.props.elems.children.map(function (item, index) {
+            return addElems(item, _this20.props.elems.article + index);
           })
         );
       }
@@ -589,11 +593,13 @@ var addSections2Page = function addSections2Page() {
     _createClass(Section, [{
       key: "render",
       value: function render() {
+        var _this22 = this;
+
         return React.createElement(
           "section",
           { className: this.props.elems.section },
-          this.props.elems.children.map(function (item) {
-            return addElems(item);
+          this.props.elems.children.map(function (item, index) {
+            return addElems(item, _this22.props.elems.section + index);
           })
         );
       }
@@ -602,17 +608,17 @@ var addSections2Page = function addSections2Page() {
     return Section;
   }(React.Component);
 
-  function addElems(elem) {
-
+  function addElems(elem, key) {
+    var newKey = void 0;
     var tag = void 0;
     if (elem.article !== undefined) {
       if (elem.data !== undefined) {
-        elem.data === 'viewer-box' && (tag = React.createElement(ViewerBox, { elems: elem }));
+        elem.data === 'viewer-box' && (newKey = "ViewerBox" + key) && (tag = React.createElement(ViewerBox, { elems: elem }));
         elem.data === 'slider-box' && (tag = React.createElement(SliderBox, { elems: elem }));
         elem.data === 'time-line-box' && (tag = React.createElement(TimeLineBox, { elems: elem }));
         elem.data === 'flow-tools-box' && (tag = React.createElement(FlowToolsBox, { elems: elem }));
       } else {
-        tag = React.createElement(Article, { elems: elem });
+        (newKey = "Article" + key) && (tag = React.createElement(Article, { key: "Article" + key, elems: elem }));
       }
     }
     elem.div !== undefined && (tag = React.createElement(Div, { elems: elem }));
@@ -633,21 +639,21 @@ var addSections2Page = function addSections2Page() {
     function Main(props) {
       _classCallCheck(this, Main);
 
-      var _this20 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+      var _this23 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-      _this20.state = { data: [] };
-      return _this20;
+      _this23.state = { data: [] };
+      return _this23;
     }
 
     _createClass(Main, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this21 = this;
+        var _this24 = this;
 
         fetch(URL).then(function (response) {
           return response.json();
         }).then(function (json) {
-          return _this21.setState({ data: json });
+          return _this24.setState({ data: json });
         });
       }
     }, {
@@ -655,9 +661,9 @@ var addSections2Page = function addSections2Page() {
       value: function render() {
         return React.createElement(
           "div",
-          { id: this.props.id, className: "main2Page" },
-          this.state.data.map(function (item) {
-            return item.section !== undefined && React.createElement(Section, { elems: item });
+          { key: this.props.id, id: this.props.id, className: "main2Page" },
+          this.state.data.map(function (item, index) {
+            return item.section !== undefined && React.createElement(Section, { key: "sectionMain" + index, elems: item });
           })
         );
       }
