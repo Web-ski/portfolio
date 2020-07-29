@@ -300,14 +300,13 @@ var addSections2Page = function addSections2Page() {
         animationToggle: '',
         modalToogle: true
       };
-      //this.handleClick = this.handleClick.bind(this);
+
       return _this11;
     }
 
     _createClass(SliderBox, [{
       key: "handleClick",
       value: function handleClick(i) {
-        //this.setState(state => ({ toggleSlide: !state.toggleSlide }))      
         function moveRight(arr) {
           var A = arr[0];
           arr.push(A);
@@ -339,9 +338,6 @@ var addSections2Page = function addSections2Page() {
       key: "render",
       value: function render() {
         var _this12 = this;
-
-        //const activeSlide1 = (this.state.toggleSlide ? '' : 'show');
-        //const activeSlide = (this.state.toggleSlide ? 'show-slide' : '');
 
         return React.createElement(
           "article",
@@ -482,14 +478,15 @@ var addSections2Page = function addSections2Page() {
       var _this15 = _possibleConstructorReturn(this, (FlowToolsBox.__proto__ || Object.getPrototypeOf(FlowToolsBox)).call(this, props));
 
       var elemsArr = props.elems.children[0].children;
-      _this15.state = { tools: elemsArr };
+      _this15.state = {
+        tools: elemsArr
+      };
       return _this15;
     }
 
     _createClass(FlowToolsBox, [{
       key: "render",
       value: function render() {
-
         return React.createElement(
           "article",
           { className: this.props.elems.article + " article__flow" },
@@ -517,8 +514,11 @@ var addSections2Page = function addSections2Page() {
 
       var elemsArr = props.elem;
       var time = props.number;
-      console.log(props.number);
-      _this16.state = { arr: elemsArr, tools: 0, time: time };
+      _this16.state = {
+        arr: elemsArr,
+        tools: 0,
+        time: time
+      };
       return _this16;
     }
 
@@ -530,25 +530,21 @@ var addSections2Page = function addSections2Page() {
         this.timer = setTimeout(function () {
           return _this17.count();
         }, this.state.time * 4000);
-        //dodać ładowanie każdego elementu w odstepie czasu
       }
     }, {
       key: "componentWillUnmount",
       value: function componentWillUnmount() {
-        //clearInterval(this.timer);
+        clearInterval(this.timer);
       }
     }, {
       key: "count",
       value: function count() {
-
         var changeTools = this.state.tools === 0 ? this.state.arr : 0;
-        //let a =  (this.props.elems.children).map(item => addElems(item));
         this.setState({ tools: changeTools });
       }
     }, {
       key: "render",
       value: function render() {
-
         return this.state.tools !== 0 && addElems(this.state.tools);
       }
     }]);

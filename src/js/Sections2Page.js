@@ -122,10 +122,9 @@ const addSections2Page = function () {
         animationToggle: '',
         modalToogle: true
       };
-      //this.handleClick = this.handleClick.bind(this);
+      
     };
     handleClick(i) {
-      //this.setState(state => ({ toggleSlide: !state.toggleSlide }))      
       function moveRight(arr) {
         let A = arr[0];
         arr.push(A);
@@ -152,8 +151,6 @@ const addSections2Page = function () {
       this.setState({ modalToogle: !this.state.modalToogle })
     }
     render() {
-      //const activeSlide1 = (this.state.toggleSlide ? '' : 'show');
-      //const activeSlide = (this.state.toggleSlide ? 'show-slide' : '');
 
       return <article className={this.props.elems.article + ' photo__box'}>
         <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow slider__arrow--left"></button>
@@ -223,11 +220,12 @@ const addSections2Page = function () {
     constructor(props) {
       super(props);
       const elemsArr = (props.elems.children[0].children);
-      this.state = { tools: elemsArr }
+      this.state = {
+        tools: elemsArr,
+      }
     };
 
     render() {
-
       return <article className={this.props.elems.article + " article__flow"}>
         <div className={this.props.elems.children[0].div}>
           {(this.props.elems.children[0].children).map((item, index) => <FlowItem elem={item} number={index} />)}
@@ -241,33 +239,30 @@ const addSections2Page = function () {
       super(props);
       const elemsArr = (props.elem);
       const time = (props.number);
-      console.log(props.number)
-      this.state = { arr: elemsArr, tools: 0, time: time }
+      this.state = {
+        arr: elemsArr,
+        tools: 0,
+        time: time
+      };
     };
 
     componentDidMount() {
       this.timer = setTimeout(() => this.count(), (this.state.time) * 4000);
-      //dodać ładowanie każdego elementu w odstepie czasu
     }
 
     componentWillUnmount() {
-      //clearInterval(this.timer);
+      clearInterval(this.timer);
     }
 
     count() {
-
       let changeTools = ((this.state.tools) === 0 ? this.state.arr : 0);
-      //let a =  (this.props.elems.children).map(item => addElems(item));
       this.setState({ tools: changeTools });
     }
 
     render() {
-
       return (this.state.tools !== 0 && addElems(this.state.tools));
     }
   }
-
-
 
   class Article extends React.Component {
     render() {
@@ -335,7 +330,6 @@ const addSections2Page = function () {
     main,
     document.getElementById('main')
   );
-
 }
 
 addSections2Page();
