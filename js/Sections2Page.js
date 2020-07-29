@@ -529,7 +529,7 @@ var addSections2Page = function addSections2Page() {
 
         this.timer = setTimeout(function () {
           return _this17.count();
-        }, this.state.time * 4000);
+        }, this.state.time * 5000);
       }
     }, {
       key: "componentWillUnmount",

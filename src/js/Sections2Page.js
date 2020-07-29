@@ -247,7 +247,7 @@ const addSections2Page = function () {
     };
 
     componentDidMount() {
-      this.timer = setTimeout(() => this.count(), (this.state.time) * 4000);
+      this.timer = setTimeout(() => this.count(), (this.state.time) * 5000);
     }
 
     componentWillUnmount() {
