@@ -193,10 +193,12 @@
         max-width: 100%;
 
         @media screen and (min-width: $min-md) {
-          //height: 100%;
-          //align-items: stretch;
-          //justify-content: stretch;
           width: 100%;
+        }
+
+        &:nth-of-type(2) {
+          padding-left: 5px;
+          padding-right: 5px;
         }
 
         .articleTitle {
@@ -477,16 +479,21 @@
     .section__tools-n-techs {
       @include flex-column;
 
+      @media screen and (min-width: $min-md) {
+        min-height: 80vh;
+        justify-items: start;
+      }
+
       .article {
         width: 100%;
         max-width: 100%;
         overflow: hidden;
 
         @media screen and (min-width: $min-md) {
-          //height: 100%;
-          //align-items: stretch;
-          //justify-content: stretch;
+          padding-top: 0;
+          padding-bottom: 50px;
           width: 100%;
+          max-height: 200px;
         }
 
         .articleTitle {
@@ -499,6 +506,7 @@
         position: relative;
         width: 100%;
         height: 300px;
+        padding-bottom: 50px;
 
         @media screen and (min-width: $min-md) {
           min-height: 320px;
