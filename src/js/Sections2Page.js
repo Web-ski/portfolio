@@ -83,6 +83,14 @@ const addSections2Page = function () {
     }
   }
 
+  class Icon extends React.Component {
+    render() {
+      return <div className={"icon__box"}>
+        <img className={this.props.elems.icon} src={this.props.elems.src} />
+      </div>
+    }
+  }
+
   class ViewerBox extends React.Component {
 
     render() {
@@ -101,8 +109,162 @@ const addSections2Page = function () {
     }
   }
 
-  class Article extends React.Component {
+  //--SLIDER--
+  class SliderBox extends React.Component {
+    constructor(props) {
+      super(props);
+      const elemsArr = new Array((props.elems.children).length);
+      const fullArr = elemsArr.fill(0).map((item, i) => i);
+      //console.log(fullArr);
+      this.state =
+      {
+        slides: fullArr,
+        animationToggle: '',
+        modalToogle: true
+      };
+      
+    };
+    handleClick(i) {
+      function moveRight(arr) {
+        let A = arr[0];
+        arr.push(A);
+        arr.shift();
+        return arr;
+      }
 
+      function moveLeft(arr) {
+        let Z = arr[arr.length - 1];
+        arr.unshift(Z);
+        arr.pop();
+        return arr;
+      }
+
+      let slides;
+      let animation;
+      i === 0 && (slides = moveLeft(this.state.slides));
+      i === 0 && (animation = 'slide__move--toRight');
+      i === 1 && (slides = moveRight(this.state.slides));
+      i === 1 && (animation = 'slide__move--toLeft');
+      this.setState({ slides: slides, animationToggle: animation });
+    };
+    updateState() {
+      this.setState({ modalToogle: !this.state.modalToogle })
+    }
+    render() {
+
+      return <article className={this.props.elems.article + ' photo__box'}>
+        <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow slider__arrow--left"></button>
+        <div className='slides__container'>
+          {(this.props.elems.children).map((item, index) =>
+            index === this.state.slides[0] && <div className={"slide " + this.state.animationToggle} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
+          )}
+        </div>
+        <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow slider__arrow--right"></button>
+        <button onClick={this.updateState.bind(this)} className="slider__sizer"></button>
+        <div className={"slides__modal " + (this.state.modalToogle ? '' : 'modal--open')}>
+          <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow slider__arrow--left"></button>
+          <div className='slides__container'>
+            {(this.props.elems.children).map((item, index) =>
+              index === this.state.slides[0] && <div className={"slide " + this.state.animationToggle} style={{ backgroundImage: `url(./images/photos/${item.src})` }}></div>
+            )}
+          </div>
+          <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow slider__arrow--right"></button>
+          <button onClick={this.updateState.bind(this)} className="slider__resizer"></button>
+        </div>
+      </article>;
+    }
+  }
+
+  //--TIME LINE--
+  class TimeLineItem extends React.Component {
+    render() {
+      return <div className={this.props.elems.div}>
+        <div className="time-line__item time-line__item--1">
+          {(this.props.elems.children).map(item => addElems(item))}
+        </div>
+        <div className="time-line__item time-line__item--2">
+          <div className="item-circle"></div>
+          <div className="item-line"></div>
+          <div className="text-line"></div>
+        </div>
+        <div className="time-line__item time-line__item--3"></div>
+      </div>;
+    }
+  }
+
+  class TimeLineBox extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = { toggleOn: true }
+      this.handleClick = this.handleClick.bind(this);
+    };
+    handleClick() {
+      this.setState(state => ({ toggleOn: !state.toggleOn }))
+    }
+    render() {
+      return <article className={this.props.elems.article}>
+        <div className={this.props.elems.children[0].div + ' ' + (this.state.toggleOn ? 'time-line--off' : 'time-line--active')}>
+          {(this.props.elems.children[0].children).map(item => (<TimeLineItem elems={item} />))}
+        </div>
+        <div onClick={this.handleClick} className={"time-line__switcher " + (this.state.toggleOn ? 'switcher--top-left' : 'switcher--bottom-right')}>
+          <p className={"article__text " + (this.state.toggleOn ? 'text--top-left' : 'text--bottom-right')}>{this.state.toggleOn ? 'Before' : 'After'}</p>
+        </div>
+        <div className={this.props.elems.children[1].div + ' ' + (this.state.toggleOn ? 'time-line--active' : 'time-line--off')}>
+          {(this.props.elems.children[1].children).map(item => (<TimeLineItem elems={item} />))}
+        </div>
+      </article>;
+    }
+  }
+
+  class FlowToolsBox extends React.Component {
+    constructor(props) {
+      super(props);
+      const elemsArr = (props.elems.children[0].children);
+      this.state = {
+        tools: elemsArr,
+      }
+    };
+
+    render() {
+      return <article className={this.props.elems.article + " article__flow"}>
+        <div className={this.props.elems.children[0].div}>
+          {(this.props.elems.children[0].children).map((item, index) => <FlowItem elem={item} number={index} />)}
+        </div>
+      </article>;
+    }
+  }
+
+  class FlowItem extends React.Component {
+    constructor(props) {
+      super(props);
+      const elemsArr = (props.elem);
+      const time = (props.number);
+      this.state = {
+        arr: elemsArr,
+        tools: 0,
+        time: time
+      };
+    };
+
+    componentDidMount() {
+      this.timer = setTimeout(() => this.count(), (this.state.time) * 4000);
+    }
+
+    componentWillUnmount() {
+      clearInterval(this.timer);
+    }
+
+    count() {
+      let changeTools = ((this.state.tools) === 0 ? this.state.arr : 0);
+      this.setState({ tools: changeTools });
+    }
+
+    render() {
+      return (this.state.tools !== 0 && addElems(this.state.tools));
+    }
+  }
+
+  class Article extends React.Component {
     render() {
       return <article className={this.props.elems.article}>
         {(this.props.elems.children).map(item => addElems(item))}
@@ -121,7 +283,17 @@ const addSections2Page = function () {
   function addElems(elem) {
 
     let tag;
-    elem.article !== undefined && (elem.data !== undefined ? (tag = <ViewerBox elems={elem} />) : (tag = <Article elems={elem} />));
+    if (elem.article !== undefined) {
+      if (elem.data !== undefined) {
+        (elem.data === 'viewer-box' && (tag = <ViewerBox elems={elem} />));
+        (elem.data === 'slider-box' && (tag = <SliderBox elems={elem} />));
+        (elem.data === 'time-line-box' && (tag = <TimeLineBox elems={elem} />));
+        (elem.data === 'flow-tools-box' && (tag = <FlowToolsBox elems={elem} />));
+      }
+      else {
+        (tag = <Article elems={elem} />);
+      }
+    }
     elem.div !== undefined && (tag = <Div elems={elem} />);
     elem.h1 !== undefined && (tag = <ArticleTitle elems={elem} />);
     elem.a !== undefined && (tag = <ArticleLink elems={elem} />);
@@ -130,7 +302,7 @@ const addSections2Page = function () {
     elem.img !== undefined && (tag = <Picture elems={elem} />);
     elem.aside !== undefined && (tag = <Aside elems={elem} />);
     elem.span !== undefined && (tag = <Span elems={elem} />);
-
+    elem.icon !== undefined && (tag = <Icon elems={elem} />);
     return tag;
   }
 
@@ -158,7 +330,6 @@ const addSections2Page = function () {
     main,
     document.getElementById('main')
   );
-
 }
 
 addSections2Page();

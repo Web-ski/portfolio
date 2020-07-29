@@ -220,8 +220,31 @@ var addSections2Page = function addSections2Page() {
     return Picture;
   }(React.Component);
 
-  var ViewerBox = function (_React$Component9) {
-    _inherits(ViewerBox, _React$Component9);
+  var Icon = function (_React$Component9) {
+    _inherits(Icon, _React$Component9);
+
+    function Icon() {
+      _classCallCheck(this, Icon);
+
+      return _possibleConstructorReturn(this, (Icon.__proto__ || Object.getPrototypeOf(Icon)).apply(this, arguments));
+    }
+
+    _createClass(Icon, [{
+      key: "render",
+      value: function render() {
+        return React.createElement(
+          "div",
+          { className: "icon__box" },
+          React.createElement("img", { className: this.props.elems.icon, src: this.props.elems.src })
+        );
+      }
+    }]);
+
+    return Icon;
+  }(React.Component);
+
+  var ViewerBox = function (_React$Component10) {
+    _inherits(ViewerBox, _React$Component10);
 
     function ViewerBox() {
       _classCallCheck(this, ViewerBox);
@@ -256,8 +279,281 @@ var addSections2Page = function addSections2Page() {
     return ViewerBox;
   }(React.Component);
 
-  var Article = function (_React$Component10) {
-    _inherits(Article, _React$Component10);
+  //--SLIDER--
+
+
+  var SliderBox = function (_React$Component11) {
+    _inherits(SliderBox, _React$Component11);
+
+    function SliderBox(props) {
+      _classCallCheck(this, SliderBox);
+
+      var _this11 = _possibleConstructorReturn(this, (SliderBox.__proto__ || Object.getPrototypeOf(SliderBox)).call(this, props));
+
+      var elemsArr = new Array(props.elems.children.length);
+      var fullArr = elemsArr.fill(0).map(function (item, i) {
+        return i;
+      });
+      //console.log(fullArr);
+      _this11.state = {
+        slides: fullArr,
+        animationToggle: '',
+        modalToogle: true
+      };
+
+      return _this11;
+    }
+
+    _createClass(SliderBox, [{
+      key: "handleClick",
+      value: function handleClick(i) {
+        function moveRight(arr) {
+          var A = arr[0];
+          arr.push(A);
+          arr.shift();
+          return arr;
+        }
+
+        function moveLeft(arr) {
+          var Z = arr[arr.length - 1];
+          arr.unshift(Z);
+          arr.pop();
+          return arr;
+        }
+
+        var slides = void 0;
+        var animation = void 0;
+        i === 0 && (slides = moveLeft(this.state.slides));
+        i === 0 && (animation = 'slide__move--toRight');
+        i === 1 && (slides = moveRight(this.state.slides));
+        i === 1 && (animation = 'slide__move--toLeft');
+        this.setState({ slides: slides, animationToggle: animation });
+      }
+    }, {
+      key: "updateState",
+      value: function updateState() {
+        this.setState({ modalToogle: !this.state.modalToogle });
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var _this12 = this;
+
+        return React.createElement(
+          "article",
+          { className: this.props.elems.article + ' photo__box' },
+          React.createElement("button", { onClick: this.handleClick.bind(this, 0), className: "slider__arrow slider__arrow--left" }),
+          React.createElement(
+            "div",
+            { className: "slides__container" },
+            this.props.elems.children.map(function (item, index) {
+              return index === _this12.state.slides[0] && React.createElement("div", { className: "slide " + _this12.state.animationToggle, style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
+            })
+          ),
+          React.createElement("button", { onClick: this.handleClick.bind(this, 1), className: "slider__arrow slider__arrow--right" }),
+          React.createElement("button", { onClick: this.updateState.bind(this), className: "slider__sizer" }),
+          React.createElement(
+            "div",
+            { className: "slides__modal " + (this.state.modalToogle ? '' : 'modal--open') },
+            React.createElement("button", { onClick: this.handleClick.bind(this, 0), className: "slider__arrow slider__arrow--left" }),
+            React.createElement(
+              "div",
+              { className: "slides__container" },
+              this.props.elems.children.map(function (item, index) {
+                return index === _this12.state.slides[0] && React.createElement("div", { className: "slide " + _this12.state.animationToggle, style: { backgroundImage: "url(./images/photos/" + item.src + ")" } });
+              })
+            ),
+            React.createElement("button", { onClick: this.handleClick.bind(this, 1), className: "slider__arrow slider__arrow--right" }),
+            React.createElement("button", { onClick: this.updateState.bind(this), className: "slider__resizer" })
+          )
+        );
+      }
+    }]);
+
+    return SliderBox;
+  }(React.Component);
+
+  //--TIME LINE--
+
+
+  var TimeLineItem = function (_React$Component12) {
+    _inherits(TimeLineItem, _React$Component12);
+
+    function TimeLineItem() {
+      _classCallCheck(this, TimeLineItem);
+
+      return _possibleConstructorReturn(this, (TimeLineItem.__proto__ || Object.getPrototypeOf(TimeLineItem)).apply(this, arguments));
+    }
+
+    _createClass(TimeLineItem, [{
+      key: "render",
+      value: function render() {
+        return React.createElement(
+          "div",
+          { className: this.props.elems.div },
+          React.createElement(
+            "div",
+            { className: "time-line__item time-line__item--1" },
+            this.props.elems.children.map(function (item) {
+              return addElems(item);
+            })
+          ),
+          React.createElement(
+            "div",
+            { className: "time-line__item time-line__item--2" },
+            React.createElement("div", { className: "item-circle" }),
+            React.createElement("div", { className: "item-line" }),
+            React.createElement("div", { className: "text-line" })
+          ),
+          React.createElement("div", { className: "time-line__item time-line__item--3" })
+        );
+      }
+    }]);
+
+    return TimeLineItem;
+  }(React.Component);
+
+  var TimeLineBox = function (_React$Component13) {
+    _inherits(TimeLineBox, _React$Component13);
+
+    function TimeLineBox(props) {
+      _classCallCheck(this, TimeLineBox);
+
+      var _this14 = _possibleConstructorReturn(this, (TimeLineBox.__proto__ || Object.getPrototypeOf(TimeLineBox)).call(this, props));
+
+      _this14.state = { toggleOn: true };
+      _this14.handleClick = _this14.handleClick.bind(_this14);
+      return _this14;
+    }
+
+    _createClass(TimeLineBox, [{
+      key: "handleClick",
+      value: function handleClick() {
+        this.setState(function (state) {
+          return { toggleOn: !state.toggleOn };
+        });
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        return React.createElement(
+          "article",
+          { className: this.props.elems.article },
+          React.createElement(
+            "div",
+            { className: this.props.elems.children[0].div + ' ' + (this.state.toggleOn ? 'time-line--off' : 'time-line--active') },
+            this.props.elems.children[0].children.map(function (item) {
+              return React.createElement(TimeLineItem, { elems: item });
+            })
+          ),
+          React.createElement(
+            "div",
+            { onClick: this.handleClick, className: "time-line__switcher " + (this.state.toggleOn ? 'switcher--top-left' : 'switcher--bottom-right') },
+            React.createElement(
+              "p",
+              { className: "article__text " + (this.state.toggleOn ? 'text--top-left' : 'text--bottom-right') },
+              this.state.toggleOn ? 'Before' : 'After'
+            )
+          ),
+          React.createElement(
+            "div",
+            { className: this.props.elems.children[1].div + ' ' + (this.state.toggleOn ? 'time-line--active' : 'time-line--off') },
+            this.props.elems.children[1].children.map(function (item) {
+              return React.createElement(TimeLineItem, { elems: item });
+            })
+          )
+        );
+      }
+    }]);
+
+    return TimeLineBox;
+  }(React.Component);
+
+  var FlowToolsBox = function (_React$Component14) {
+    _inherits(FlowToolsBox, _React$Component14);
+
+    function FlowToolsBox(props) {
+      _classCallCheck(this, FlowToolsBox);
+
+      var _this15 = _possibleConstructorReturn(this, (FlowToolsBox.__proto__ || Object.getPrototypeOf(FlowToolsBox)).call(this, props));
+
+      var elemsArr = props.elems.children[0].children;
+      _this15.state = {
+        tools: elemsArr
+      };
+      return _this15;
+    }
+
+    _createClass(FlowToolsBox, [{
+      key: "render",
+      value: function render() {
+        return React.createElement(
+          "article",
+          { className: this.props.elems.article + " article__flow" },
+          React.createElement(
+            "div",
+            { className: this.props.elems.children[0].div },
+            this.props.elems.children[0].children.map(function (item, index) {
+              return React.createElement(FlowItem, { elem: item, number: index });
+            })
+          )
+        );
+      }
+    }]);
+
+    return FlowToolsBox;
+  }(React.Component);
+
+  var FlowItem = function (_React$Component15) {
+    _inherits(FlowItem, _React$Component15);
+
+    function FlowItem(props) {
+      _classCallCheck(this, FlowItem);
+
+      var _this16 = _possibleConstructorReturn(this, (FlowItem.__proto__ || Object.getPrototypeOf(FlowItem)).call(this, props));
+
+      var elemsArr = props.elem;
+      var time = props.number;
+      _this16.state = {
+        arr: elemsArr,
+        tools: 0,
+        time: time
+      };
+      return _this16;
+    }
+
+    _createClass(FlowItem, [{
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        var _this17 = this;
+
+        this.timer = setTimeout(function () {
+          return _this17.count();
+        }, this.state.time * 4000);
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        clearInterval(this.timer);
+      }
+    }, {
+      key: "count",
+      value: function count() {
+        var changeTools = this.state.tools === 0 ? this.state.arr : 0;
+        this.setState({ tools: changeTools });
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        return this.state.tools !== 0 && addElems(this.state.tools);
+      }
+    }]);
+
+    return FlowItem;
+  }(React.Component);
+
+  var Article = function (_React$Component16) {
+    _inherits(Article, _React$Component16);
 
     function Article() {
       _classCallCheck(this, Article);
@@ -281,8 +577,8 @@ var addSections2Page = function addSections2Page() {
     return Article;
   }(React.Component);
 
-  var Section = function (_React$Component11) {
-    _inherits(Section, _React$Component11);
+  var Section = function (_React$Component17) {
+    _inherits(Section, _React$Component17);
 
     function Section() {
       _classCallCheck(this, Section);
@@ -309,7 +605,16 @@ var addSections2Page = function addSections2Page() {
   function addElems(elem) {
 
     var tag = void 0;
-    elem.article !== undefined && (elem.data !== undefined ? tag = React.createElement(ViewerBox, { elems: elem }) : tag = React.createElement(Article, { elems: elem }));
+    if (elem.article !== undefined) {
+      if (elem.data !== undefined) {
+        elem.data === 'viewer-box' && (tag = React.createElement(ViewerBox, { elems: elem }));
+        elem.data === 'slider-box' && (tag = React.createElement(SliderBox, { elems: elem }));
+        elem.data === 'time-line-box' && (tag = React.createElement(TimeLineBox, { elems: elem }));
+        elem.data === 'flow-tools-box' && (tag = React.createElement(FlowToolsBox, { elems: elem }));
+      } else {
+        tag = React.createElement(Article, { elems: elem });
+      }
+    }
     elem.div !== undefined && (tag = React.createElement(Div, { elems: elem }));
     elem.h1 !== undefined && (tag = React.createElement(ArticleTitle, { elems: elem }));
     elem.a !== undefined && (tag = React.createElement(ArticleLink, { elems: elem }));
@@ -318,31 +623,31 @@ var addSections2Page = function addSections2Page() {
     elem.img !== undefined && (tag = React.createElement(Picture, { elems: elem }));
     elem.aside !== undefined && (tag = React.createElement(Aside, { elems: elem }));
     elem.span !== undefined && (tag = React.createElement(Span, { elems: elem }));
-
+    elem.icon !== undefined && (tag = React.createElement(Icon, { elems: elem }));
     return tag;
   }
 
-  var Main = function (_React$Component12) {
-    _inherits(Main, _React$Component12);
+  var Main = function (_React$Component18) {
+    _inherits(Main, _React$Component18);
 
     function Main(props) {
       _classCallCheck(this, Main);
 
-      var _this12 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+      var _this20 = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
-      _this12.state = { data: [] };
-      return _this12;
+      _this20.state = { data: [] };
+      return _this20;
     }
 
     _createClass(Main, [{
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this13 = this;
+        var _this21 = this;
 
         fetch(URL).then(function (response) {
           return response.json();
         }).then(function (json) {
-          return _this13.setState({ data: json });
+          return _this21.setState({ data: json });
         });
       }
     }, {
