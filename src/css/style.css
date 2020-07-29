@@ -2443,6 +2443,12 @@ header {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .cv-page .main2Page .section__time-line .article:nth-of-type(1) {
+    padding-bottom: 50px;
+  }
+}
+
 .cv-page .main2Page .section__time-line .article:nth-of-type(2) {
   padding-left: 5px;
   padding-right: 5px;
@@ -2485,18 +2491,18 @@ header {
     width: 10%;
   }
   .cv-page .main2Page .section__time-line .article .time-line__switcher .text--top-left {
-    transform: rotateZ(-90deg);
-    -webkit-transform: rotateZ(-90deg);
-    -moz-transform: rotateZ(-90deg);
-    -ms-transform: rotateZ(-90deg);
-    -o-transform: rotateZ(-90deg);
+    transform: translateY(-50%) rotateZ(-90deg);
+    -webkit-transform: translateY(-50%) rotateZ(-90deg);
+    -moz-transform: translateY(-50%) rotateZ(-90deg);
+    -ms-transform: translateY(-50%) rotateZ(-90deg);
+    -o-transform: translateY(-50%) rotateZ(-90deg);
   }
   .cv-page .main2Page .section__time-line .article .time-line__switcher .text--bottom-right {
-    transform: rotateZ(90deg);
-    -webkit-transform: rotateZ(90deg);
-    -moz-transform: rotateZ(90deg);
-    -ms-transform: rotateZ(90deg);
-    -o-transform: rotateZ(90deg);
+    transform: translateY(-50%) rotateZ(90deg);
+    -webkit-transform: translateY(-50%) rotateZ(90deg);
+    -moz-transform: translateY(-50%) rotateZ(90deg);
+    -ms-transform: translateY(-50%) rotateZ(90deg);
+    -o-transform: translateY(-50%) rotateZ(90deg);
   }
 }
 
@@ -2558,9 +2564,12 @@ header {
   background-color: orange;
 }
 
-.cv-page .main2Page .section__time-line .article .time-line__container .time-line__box:hover .time-line__item--1 .item-text,
-.cv-page .main2Page .section__time-line .article .time-line__container .time-line__box:hover .time-line__item--1 .item-link {
+.cv-page .main2Page .section__time-line .article .time-line__container .time-line__box:hover .time-line__item--1 .item-text {
   color: #000000;
+}
+
+.cv-page .main2Page .section__time-line .article .time-line__container .time-line__box:hover .time-line__item--1 .item-link {
+  color: #5f008b;
 }
 
 @media screen and (min-width: 768px) {
