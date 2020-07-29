@@ -1179,7 +1179,8 @@ header {
 
 .main2Page .section {
   min-height: auto;
-  background-image: radial-gradient(circle at right, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.4)), radial-gradient(circle at 70%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.4)), radial-gradient(circle at left, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.4));
+  background-image: none;
+  background-color: DimGrey;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
