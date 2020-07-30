@@ -1,43 +1,34 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "structure": "npm run init:dirs && npm run init:folders && npm run init:filesSrc && npm run init:filesDist",
-    "init:dirs": "mkdir -p src dist",
-    "init:folders": "mkdir -p src/app src/css src/sass src/js src/images src/lib",
-    "init:filesSrc": "touch src/index.html src/css/style.css src/js/app.js src/sass/style.scss src/sass/_variables.scss src/sass/_reset.scss",
-    "init:filesDist": "mkdir -p dist/css dist/images dist/js",
-    "dev": "webpack --mode development --watch",
-    "build": "webpack --mode production"
-  },
-  "browserslist": [
-    "last 1 version",
-    "> 1%"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Web-ski/portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Web-ski/portfolio/issues"
-  },
-  "homepage": "https://github.com/Web-ski/portfolio#readme",
-  "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^8.0.6",
-    "gulp": "^4.0.2",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
-  },
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "babel-preset-react-app": "^3.1.2"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
