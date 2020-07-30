@@ -21,19 +21,6 @@
         background-position: center, right bottom, right top, left bottom, left top;
         overflow: visible;
 
-        .article__pattern {
-          //background-image: url('../images/icons/circle.svg');
-          //background-image: radial-gradient(circle, transparent, $text-blue2);
-          //background-color: white;
-          //opacity: 0.5;
-          // left: calc(50%);
-          // transform: translateX(-50%);
-          // -webkit-transform: translateX(-50%);
-          // -moz-transform: translateX(-50%);
-          // -ms-transform: translateX(-50%);
-          // -o-transform: translateX(-50%);
-        }
-
         .viewer__box {
           width: 110px;
           height: 110px;
@@ -41,7 +28,6 @@
           display: grid;
           align-items: center;
           padding: 0;
-          //overflow: hidden;
 
           .article__photo {
             position: relative;
@@ -81,8 +67,6 @@
           justify-items: center;
           background-size: 280px, 10%, 10%, 10%, 10%;
 
-          .article__pattern {}
-
           .viewer__box {
             overflow: visible;
             width: 140px;
@@ -118,10 +102,6 @@
             }
           }
         }
-
-        @media screen and (min-width: $min-lg) {}
-
-        @media screen and (min-width: $min-xl) {}
 
         @media screen and (min-width: $min-xxl) {
           width: 33%;
@@ -250,7 +230,6 @@
                 .inner__picture {
                   animation: boxSwitcher1 12s infinite;
                   -webkit-animation: boxSwitcher1 12s infinite;
-                  //animation-delay: 10s;
                 }
               }
             }
@@ -292,7 +271,6 @@
                 .inner__picture {
                   animation: boxSwitcher1 12s 6s infinite;
                   -webkit-animation: boxSwitcher1 12s 6s infinite;
-                  //animation-delay: 10s;
                 }
               }
             }
