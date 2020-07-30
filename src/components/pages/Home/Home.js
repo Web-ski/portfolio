@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 //import './App.css';
 import Footer from "../../Footer/Footer";
@@ -9,11 +9,12 @@ import Main from '../../Main/Main';
 class Home extends React.Component {
   render() {
     console.log(URL_HOME)
-    return <div className="home">
+    return (
+    <Fragment>
       <StartHeader />
-      <Main data={ URL_HOME }/>
+      <Main url={ URL_HOME }/>
       <Footer />
-    </div>;
+    </Fragment>);
   }
 }
 

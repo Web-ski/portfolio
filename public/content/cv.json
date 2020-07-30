@@ -1,0 +1,526 @@
+[
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "sectionTitle",
+            "text": "PROFESSIONAL INFO"
+          },
+          {
+            "p": "sectionText",
+            "text": "I'm the junior front-end developer and UX/UI-designer."
+          },
+          {
+            "p": "sectionText",
+            "text": "For two years I have been gradually developing professionally in the direction of designing and programming websites and web applications."
+          },
+          {
+            "p": "sectionText",
+            "text": "I was prompted to enter this new career path by the willingness to use my own potential, through the possibility of further development and qualifications, my own interests in design, as well as searching for a work environment that is innovation-friendly and open to challenges."
+          },
+          {
+            "p": "sectionText",
+            "text": "In 2018, I completed my first online front-end course, and in 2019-2020 I was taking more advanced classroom courses. At the same time, I used the experience gained in the implementation of the first website designs, so far 5."
+          },
+          {
+            "a": "article__link",
+            "href": "./content/Nieczuja CV 2020.pdf",
+            "target": "blank",
+            "text": "Take my CV"
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "data": "slider-box",
+        "children": [
+          {
+            "img": "slider__photo",
+            "src": "certyfikatUX.jpg"
+          },
+          {
+            "img": "slider__photo",
+            "src": "certyficatReact.png"
+          },
+          {
+            "img": "slider__photo",
+            "src": "Hack4Change.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "section section__time-line",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "articleTitle",
+            "text": "TIME-LINE"
+          }
+        ]
+      },
+      {
+        "article": "article article__time-line",
+        "data": "time-line-box",
+        "children": [
+          {
+            "div": "time-line__container",
+            "children": [
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "since 2005"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "research & studies on social questions"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "since 2010"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "lecturer at universities"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "since 2011"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "design of covers & logos"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "2015-2018"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "design of websites (by CMS)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "div": "time-line__container",
+            "children": [
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "2018/2019"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "first front-end courses"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "2019"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "websites of RIEP, EJTS & IBO"
+                  },
+                  {
+                    "a": "item-link",
+                    "href": "webs.html",
+                    "text": "see more"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "2019"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "join to 'Żeton' team"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "2019"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "end of 'UX Design' course"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "2019"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "end of 'JavaScript + React' course"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "p": "item-text",
+                    "text": "2020"
+                  },
+                  {
+                    "p": "item-text",
+                    "text": "website of 'Kosmopolis'"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "section section__tools-n-techs",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "h1": "articleTitle",
+            "text": "TOOLS & TECHNOLOGIES"
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "data": "flow-tools-box",
+        "children": [
+          {
+            "div": "flow-tools__container",
+            "children": [
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Languages"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/html5.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/js.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/php.png"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Styling"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/css3.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/sass.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/Bootstrap.png"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Libraries"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/react.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/jQuery.png"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Repositories"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/git.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/github.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/gitlab.png"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "JS-Tools"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/npm.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/gulp.png"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "Cooperation"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/jira.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/slack.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/trello-mark-blue.png"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "UX-Tools"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/figma.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/invision.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/balsamiq-logo-noborder-screen.png"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "p": "article__text",
+                    "text": "UI-Tools"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/gimp.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/inkscape.png"
+                  },
+                  {
+                    "icon": "article__icon",
+                    "src": "./images/icons/sketchbook.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article",
+        "children": [
+          {
+            "abbr": "article__text",
+            "title": "HyperText Markup Language",
+            "text": "HTML"
+          },
+          {
+            "abbr": "article__text",
+            "title": "JavaScript",
+            "text": "JS"
+          },
+          {
+            "abbr": "article__text",
+            "title": "general-purpose scripting language (oryginally: Personal Home Page, next: Hypertext Preprocessor)",
+            "text": "PHP"
+          },
+          {
+            "abbr": "article__text",
+            "title": "Cascading Style Sheets",
+            "text": "CSS"
+          },
+          {
+            "abbr": "article__text",
+            "title": "Sassy CSS",
+            "text": "SCSS"
+          },
+          {
+            "abbr": "article__text",
+            "title": "CSS framework",
+            "text": "Bootstrap4"
+          },
+          {
+            "abbr": "article__text",
+            "title": "JavaScript library",
+            "text": "React"
+          },
+          {
+            "abbr": "article__text",
+            "title": "JavaScript library",
+            "text": "jQuery"
+          },
+          {
+            "abbr": "article__text",
+            "title": "distributed version-control system",
+            "text": "GIT"
+          },
+          {
+            "abbr": "article__text",
+            "title": "platform for software development version control",
+            "text": "GitHub"
+          },
+          {
+            "abbr": "article__text",
+            "title": "platform for software development version control",
+            "text": "GitLab"
+          },
+          {
+            "abbr": "article__text",
+            "title": "Node Package Manager",
+            "text": "npm"
+          },
+          {
+            "abbr": "article__text",
+            "title": "a toolkit to automate & enhance your workflow",
+            "text": "Gulp"
+          },
+          {
+            "abbr": "article__text",
+            "title": "a tool for issue tracking and project management",
+            "text": "Jira"
+          },
+          {
+            "abbr": "article__text",
+            "title": "a tool for team communication and collaboration",
+            "text": "Slack"
+          },
+          {
+            "abbr": "article__text",
+            "title": "a web-based Kanban-style list-making application",
+            "text": "Trello"
+          },
+          {
+            "abbr": "article__text",
+            "title": "a vector graphics editor and prototyping tool",
+            "text": "Figma"
+          },
+          {
+            "abbr": "article__text",
+            "title": "a platform for designing and prototyping",
+            "text": "InVision"
+          },
+          {
+            "abbr": "article__text",
+            "title": "a wireframing tool",
+            "text": "Balsamiq"
+          },
+          {
+            "abbr": "article__text",
+            "title": "a cross-platform image editor",
+            "text": "GIMP"
+          },
+          {
+            "abbr": "article__text",
+            "title": "a vector graphics editor",
+            "text": "Inkscape"
+          },
+          {
+            "abbr": "article__text",
+            "title": "Autodesk ScetchBook - a drawing, painting, and illustration software",
+            "text": "SketchBook"
+          },
+          {
+            "abbr": "article__text",
+            "title": "Visual Studio Code",
+            "text": "VSCode"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,461 @@
+[
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article description",
+        "children": [
+          {
+            "h1": "sectionTitle"
+          },
+          {
+            "p": "article__text",
+            "text": "Here you can see my last realizations of websites. From 2018 I done some courses in front-end technologies for get professional skills."
+          },
+          {
+            "p": "article__text",
+            "text": "I have been started do websites in 2015, but at first on ",
+            "children": [
+              {
+                "abbr": "article__abbr--last",
+                "title": "Content Management System",
+                "text": "CMS"
+              },
+              {
+                "span": "span",
+                "text": ". Now, I make websites in front-end technologies: "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "HyperText Markup Language",
+                "text": "HTML"
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "Cascading Style Sheets",
+                "text": "CSS"
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "Sassy CSS",
+                "text": "SCSS"
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript",
+                "text": "JS"
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript library",
+                "text": "jQuery"
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript library",
+                "text": "React"
+              },
+              {
+                "abbr": "article__abbr--last",
+                "title": "general-purpose scripting language (oryginally: Personal Home Page, next: Hypertext Preprocessor)",
+                "text": "PHP."
+              }
+            ]
+          },
+          {
+            "a": "article__link",
+            "href": "webs.html",
+            "text": "Go for details..."
+          },
+          {
+            "div": "article__icons",
+            "children": [
+              {
+                "img": "article__icon",
+                "src": "./images/icons/html5.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/css3.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/sass.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/Bootstrap.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/jQuery.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/js.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/react.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/php.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article photos",
+        "children": [
+          {
+            "a": "photo__link",
+            "href": "http://www.kosmopolis-between.pl/",
+            "target": "blank",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/cosmopolis-screen.png"
+              }
+            ]
+          },
+          {
+            "a": "photo__link",
+            "href": "https://www.journal-transformation.org/",
+            "target": "blank",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/ejts-screen.png"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article description",
+        "children": [
+          {
+            "h1": "sectionTitle"
+          },
+          {
+            "p": "article__text",
+            "text": "Here you can see my last UX projects. If you want, you can find more realized projects and works, and more information about my experience in research conducting, wireframing, prototypin, etc."
+          },
+          {
+            "p": "article__text",
+            "text": "I'm engage in research works and designing for many yeras. In 2019 the course of UX-Designer was my next professional step in the area of IT."
+          },
+          {
+            "a": "article__link",
+            "href": "ux.html",
+            "text": "Go for details..."
+          },
+          {
+            "div": "article__icons",
+            "children": [
+              {
+                "img": "article__icon",
+                "src": "./images/icons/figma.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/invision.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/balsamiq-logo-noborder-screen.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article photos",
+        "children": [
+          {
+            "a": "photo__link",
+            "href": "https://www.figma.com/proto/3TXaZfAxlemdGzV3XROUMn/Between2020?node-id=1%3A4&viewport=411%2C-209%2C0.36153680086135864&scaling=min-zoom",
+            "target": "blank",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/cosmopolis-UX2.png"
+              }
+            ]
+          },
+          {
+            "a": "photo__link",
+            "href": "https://projects.invisionapp.com/prototype/Z-Pasj-Wypiekane-projekt-2-ck58hetm900307i01ttckoyjn/play/1dadc98b",
+            "target": "blank",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/zielone-slodzone-3.png"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article description",
+        "children": [
+          {
+            "h1": "sectionTitle"
+          },
+          {
+            "p": "article__text",
+            "text": "Here you can see my last visual projects. I have been involved in visual design for many years."
+          },
+          {
+            "p": "article__text",
+            "text": "I designed logos of organizations and events, icons for websites, posters, infographics, book covers, as well as the layouts of websites."
+          },
+          {
+            "a": "article__link",
+            "href": "ui.html",
+            "text": "Go for details..."
+          },
+          {
+            "div": "article__icons",
+            "children": [
+              {
+                "img": "article__icon",
+                "src": "./images/icons/gimp.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/inkscape.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/sketchbook.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article photos",
+        "children": [
+          {
+            "a": "photo__link",
+            "href": "ui.html",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/icons-set.png"
+              }
+            ]
+          },
+          {
+            "a": "photo__link",
+            "href": "ui.html",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/Apokalipsa-poster.jpg"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article description",
+        "children": [
+          {
+            "h1": "sectionTitle"
+          },
+          {
+            "p": "article__text",
+            "text": "Here you can see my front-end repositories. There are projects of websites and games, parts of code and steps of learning, on GitHub, GitLab and CodePen."
+          },
+          {
+            "p": "article__text",
+            "text": "Apart my own repositories, look at repositories and the website of Zeton project, in wich I'm engaging. It help me to learn cooperation's skills and technologies."
+          },
+          {
+            "a": "article__link",
+            "href": "repo.html",
+            "text": "Go for details..."
+          },
+          {
+            "div": "article__icons",
+            "children": [
+              {
+                "img": "article__icon",
+                "src": "./images/icons/git.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/github.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/gitlab.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/npm.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/gulp.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/slack.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/jira.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article photos",
+        "children": [
+          {
+            "a": "photo__link",
+            "href": "https://github.com/Web-ski",
+            "target": "blank",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/github-screen.png"
+              }
+            ]
+          },
+          {
+            "a": "photo__link",
+            "href": "https://gitlab.com/Web-ski",
+            "target": "blank",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/gitlab-screen.png"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article description",
+        "children": [
+          {
+            "h1": "sectionTitle"
+          },
+          {
+            "p": "article__text",
+            "text": "Here you can find my CV. And this is also the path to my certificates and diplomas."
+          },
+          {
+            "p": "article__text",
+            "text": "If you're looking for a person who wants to constantly develop, learn new technologies and work in an energetic team, you've come to the right place."
+          },
+          {
+            "a": "article__link",
+            "href": "cv.html",
+            "text": "Go for details..."
+          }
+        ]
+      },
+      {
+        "article": "article photos",
+        "children": [
+          {
+            "a": "photo__link",
+            "href": "content/Nieczuja CV 2020.pdf",
+            "target": "blank",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/Nieczuja CV 2020.png"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "section",
+    "children": [
+      {
+        "article": "article description",
+        "children": [
+          {
+            "h1": "sectionTitle"
+          },
+          {
+            "p": "article__text",
+            "text": "And here you can find contact with me."
+          },
+          {
+            "p": "article__text",
+            "text": "Please, send me an email, look at my LinkedIn profile or find me in Zeton project's team."
+          },
+          {
+            "div": "article__icons",
+            "children": [
+              {
+                "img": "article__icon",
+                "src": "./images/icons/linkedin.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article photos",
+        "children": [
+          {
+            "a": "photo__link",
+            "href": "mailto:pawel.nieczuja@onet.eu",
+            "target": "blank",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/mail.gif"
+              }
+            ]
+          },
+          {
+            "a": "photo__link",
+            "href": "https://www.linkedin.com/in/pawe%C5%82-nieczuja-ostrowski-6b084a88/",
+            "target": "blank",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/linkedin-screen.png"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
