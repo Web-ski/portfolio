@@ -4,13 +4,13 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 import Footer from "../../Footer/Footer"
 
 
-class Webs extends React.Component {
+class UI extends React.Component {
   render() {
-    return <div>Webs-site
+    return <div>UI-site
             <Link to="/">Home</Link>
         <Footer />
     </div>
   }
 }
 
-export default Webs;
+export default UI;
