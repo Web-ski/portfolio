@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 
 class Webs extends React.Component {
   render() {
-    return <div>Webs</div>;
+    return <div>Webs-site</div>
   }
 }
 

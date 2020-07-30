@@ -1,12 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 //import './App.css';
+import Footer from "../../Footer/Footer"
 
 class Home extends React.Component {
   render() {
     return <div>
-      Home
-      </div>;
+      Home-site
+      <Footer />
+    </div>;
   }
 }
 
