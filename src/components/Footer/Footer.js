@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from "react-router-dom";
-//import './App.css';
+import './Footer.scss';
 import { FOOTER_TEXT_AUTHOR } from '../../constans';
 import FooterInfo from './FooterInfo'
+import ArticleText from '../Texts/ArticleText'
 
 class Footer extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class Footer extends React.Component {
       <section className="footer">
         <FooterInfo id="footer-info" className="article" />
         <article id="footer-author" className="article">
-          <p className="article__text">{FOOTER_TEXT_AUTHOR}</p>
+          <ArticleText text={FOOTER_TEXT_AUTHOR} />
         </article>
       </section>
       </footer>

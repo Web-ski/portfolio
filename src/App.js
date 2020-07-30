@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import './App.css';
+import './App.scss';
 import Home from './components/pages/Home/Home'
 import Webs from './components/pages/Webs/Webs'
 import UX from './components/pages/UX/UX'
@@ -24,7 +24,7 @@ function App() {
           <UI />
         </Route>
         <Route path="/cv">
-          <UI />
+          <CV />
         </Route>
       </Switch>
     </BrowserRouter >

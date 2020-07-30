@@ -5,7 +5,7 @@ import Footer from "../../Footer/Footer"
 
 class Home extends React.Component {
   render() {
-    return <div>
+    return <div className="home">
       Home-site
       <Footer />
     </div>;
