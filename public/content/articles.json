@@ -32,9 +32,17 @@
                 "text": "HTML"
               },
               {
+                "span": "span",
+                "text": ", "
+              },
+              {
                 "abbr": "article__abbr",
                 "title": "Cascading Style Sheets",
                 "text": "CSS"
+              },
+              {
+                "span": "span",
+                "text": ", "
               },
               {
                 "abbr": "article__abbr",
@@ -42,9 +50,17 @@
                 "text": "SCSS"
               },
               {
+                "span": "span",
+                "text": ", "
+              },
+              {
                 "abbr": "article__abbr",
                 "title": "JavaScript",
                 "text": "JS"
+              },
+              {
+                "span": "span",
+                "text": ", "
               },
               {
                 "abbr": "article__abbr",
@@ -52,20 +68,32 @@
                 "text": "jQuery"
               },
               {
+                "span": "span",
+                "text": ", "
+              },
+              {
                 "abbr": "article__abbr",
                 "title": "JavaScript library",
                 "text": "React"
               },
               {
+                "span": "span",
+                "text": ", "
+              },
+              {
                 "abbr": "article__abbr--last",
                 "title": "general-purpose scripting language (oryginally: Personal Home Page, next: Hypertext Preprocessor)",
-                "text": "PHP."
+                "text": "PHP"
+              },
+              {
+                "span": "span",
+                "text": "."
               }
             ]
           },
           {
-            "a": "article__link",
-            "href": "webs.html",
+            "articleLink": "article__link",
+            "href": "/webs",
             "text": "Go for details..."
           },
           {
@@ -155,7 +183,7 @@
             "text": "I'm engage in research works and designing for many yeras. In 2019 the course of UX-Designer was my next professional step in the area of IT."
           },
           {
-            "a": "article__link",
+            "articleLink": "article__link",
             "href": "ux.html",
             "text": "Go for details..."
           },
@@ -226,7 +254,7 @@
             "text": "I designed logos of organizations and events, icons for websites, posters, infographics, book covers, as well as the layouts of websites."
           },
           {
-            "a": "article__link",
+            "articleLink": "article__link",
             "href": "ui.html",
             "text": "Go for details..."
           },
@@ -295,7 +323,7 @@
             "text": "Apart my own repositories, look at repositories and the website of Zeton project, in wich I'm engaging. It help me to learn cooperation's skills and technologies."
           },
           {
-            "a": "article__link",
+            "articleLink": "article__link",
             "href": "repo.html",
             "text": "Go for details..."
           },
@@ -382,7 +410,7 @@
             "text": "If you're looking for a person who wants to constantly develop, learn new technologies and work in an energetic team, you've come to the right place."
           },
           {
-            "a": "article__link",
+            "articleLink": "article__link",
             "href": "cv.html",
             "text": "Go for details..."
           }
