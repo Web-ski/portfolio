@@ -4,6 +4,7 @@ import PageTitle from '../Titles/PageTitle'
 import SectionTitle from '../Titles/SectionTitle'
 import ArticleText from '../Texts/ArticleText'
 import ArticleLink from '../Links/ArticleLink'
+import Div from './Div';
 
 class Article extends React.Component {
 
@@ -16,6 +17,7 @@ class Article extends React.Component {
           if (item.sectionTitle !== undefined) { return <SectionTitle key={item.sectionTitle + index} elem={item} /> };
           if (item.articleText !== undefined) { return <ArticleText key={item.articleText + index} elem={item} /> };
           if (item.articleLink !== undefined) { return <ArticleLink key={item.articleLink + index} elem={item} /> };
+          if (item.div !== undefined) { return <Div key={item.div + index} elem={item} /> };
         })
       )}
     </article>

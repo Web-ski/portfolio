@@ -101,7 +101,7 @@
             "children": [
               {
                 "img": "article__icon",
-                "src": "./images/icons/html5.png"
+                "src": "/images/icons/html5.png"
               },
               {
                 "img": "article__icon",
