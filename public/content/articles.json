@@ -3,7 +3,7 @@
     "section": "section",
     "children": [
       {
-        "article": "article description",
+        "article": "article article__description",
         "children": [
           {
             "h1": "sectionTitle"
@@ -107,7 +107,7 @@
         ]
       },
       {
-        "article": "article photos",
+        "article": "article article__photos",
         "children": [
           {
             "a": "photo__link",
@@ -139,7 +139,7 @@
     "section": "section",
     "children": [
       {
-        "article": "article description",
+        "article": "article article__description",
         "children": [
           {
             "h1": "sectionTitle"
@@ -177,7 +177,7 @@
         ]
       },
       {
-        "article": "article photos",
+        "article": "article article__photos",
         "children": [
           {
             "a": "photo__link",
@@ -209,7 +209,7 @@
     "section": "section",
     "children": [
       {
-        "article": "article description",
+        "article": "article article__description",
         "children": [
           {
             "h1": "sectionTitle"
@@ -247,7 +247,7 @@
         ]
       },
       {
-        "article": "article photos",
+        "article": "article article__photos",
         "children": [
           {
             "a": "photo__link",
@@ -277,7 +277,7 @@
     "section": "section",
     "children": [
       {
-        "article": "article description",
+        "article": "article article__description",
         "children": [
           {
             "h1": "sectionTitle"
@@ -331,7 +331,7 @@
         ]
       },
       {
-        "article": "article photos",
+        "article": "article article__photos",
         "children": [
           {
             "a": "photo__link",
@@ -363,7 +363,7 @@
     "section": "section",
     "children": [
       {
-        "article": "article description",
+        "article": "article article__description",
         "children": [
           {
             "h1": "sectionTitle"
@@ -384,7 +384,7 @@
         ]
       },
       {
-        "article": "article photos",
+        "article": "article article__photos",
         "children": [
           {
             "a": "photo__link",
@@ -405,7 +405,7 @@
     "section": "section",
     "children": [
       {
-        "article": "article description",
+        "article": "article article__description",
         "children": [
           {
             "h1": "sectionTitle"
@@ -430,7 +430,7 @@
         ]
       },
       {
-        "article": "article photos",
+        "article": "article article__photos",
         "children": [
           {
             "a": "photo__link",

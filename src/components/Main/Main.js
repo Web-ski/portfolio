@@ -17,9 +17,7 @@ class Main extends React.Component {
   render() {
     return <div className="main">
       {(this.state.data).map((item, index) => {
-
         if (item.section !== undefined) { return <Section key={item.section + index} elem={item}/> };
-
       })}
     </div>
   }

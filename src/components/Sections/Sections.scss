@@ -42,7 +42,7 @@
     }
   }
 
-  .description {
+  .article__description {
     background-color: $bg-wrapper;
     min-height: 60vh;
     transition: .3s;
@@ -60,7 +60,7 @@
     }
   }
 
-  .photos {
+  .article__photos {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(5, 5, 5, 0.3);

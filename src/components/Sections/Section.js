@@ -1,12 +1,18 @@
 import React from 'react';
-import { BrowserRouter, Route, Link, useParams } from "react-router-dom";
 import './Sections.scss';
-import PageTitle from '../Titles/PageTitle'
+import Article from './Article';
 
 class Section extends React.Component {
 
   render() {
-    return <section className={this.props.elem.section}>Hej</section>
+    return (<section className={this.props.elem.section}>
+      {(this.props.elem.children !== undefined) && (
+        (this.props.elem.children).map((item, index) => {
+         
+         if (item.article !== undefined) {return <Article key={item.article + index} elem={item}/>};
+        })
+      )}
+    </section>)
   }
 }
 
