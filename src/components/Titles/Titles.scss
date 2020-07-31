@@ -26,3 +26,27 @@
     font-size: 40px;
   }
 }
+
+.section__title {
+  font-family: $main-font;
+  color: $text-white;
+  text-transform: uppercase;
+  font-size: calc(25px + 1vh);
+  margin-bottom: 2vh;
+
+  @media screen and (min-width: $min-md) {
+    font-size: calc(25px + 1vw);
+  }
+
+  @media screen and (min-width: $min-lg) {
+    font-size: calc(30px + 1vw);
+  }
+
+  @media screen and (min-width: $min-xl) {
+    font-size: calc(35px + 1vw);
+  }
+
+  @media screen and (min-width: $min-xxl) {
+    font-size: calc(40px + 1vw);
+  }
+}

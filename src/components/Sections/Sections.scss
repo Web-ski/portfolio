@@ -47,14 +47,14 @@
     min-height: 60vh;
     transition: .3s;
 
-    .sectionTitle,
+    .section__title,
     .article__text,
     .article__link,
     .article__icons {
-      visibility: hidden;
+      //visibility: hidden;
     }
 
-    .sectionTitle--show {
+    .section__title--show {
       visibility: visible;
       animation: showElem 1s;
     }
@@ -71,7 +71,7 @@
       visibility: hidden;
     }
 
-    .sectionTitle--show {
+    .section__title--show {
       visibility: visible;
       animation: showElem 1s;
     }

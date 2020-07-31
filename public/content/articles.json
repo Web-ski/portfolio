@@ -6,14 +6,15 @@
         "article": "article article__description",
         "children": [
           {
-            "h1": "sectionTitle"
+            "sectionTitle": "section__title",
+            "text": "Webs"
           },
           {
-            "p": "article__text",
+            "articleText": "article__text",
             "text": "Here you can see my last realizations of websites. From 2018 I done some courses in front-end technologies for get professional skills."
           },
           {
-            "p": "article__text",
+            "articleText": "article__text",
             "text": "I have been started do websites in 2015, but at first on ",
             "children": [
               {
@@ -142,14 +143,15 @@
         "article": "article article__description",
         "children": [
           {
-            "h1": "sectionTitle"
+            "sectionTitle": "section__title",
+            "text": "UX"
           },
           {
-            "p": "article__text",
+            "articleText": "article__text",
             "text": "Here you can see my last UX projects. If you want, you can find more realized projects and works, and more information about my experience in research conducting, wireframing, prototypin, etc."
           },
           {
-            "p": "article__text",
+            "articleText": "article__text",
             "text": "I'm engage in research works and designing for many yeras. In 2019 the course of UX-Designer was my next professional step in the area of IT."
           },
           {
@@ -212,14 +214,15 @@
         "article": "article article__description",
         "children": [
           {
-            "h1": "sectionTitle"
+            "sectionTitle": "section__title",
+            "text": "UI"
           },
           {
-            "p": "article__text",
+            "articleText": "article__text",
             "text": "Here you can see my last visual projects. I have been involved in visual design for many years."
           },
           {
-            "p": "article__text",
+            "articleText": "article__text",
             "text": "I designed logos of organizations and events, icons for websites, posters, infographics, book covers, as well as the layouts of websites."
           },
           {
@@ -280,14 +283,15 @@
         "article": "article article__description",
         "children": [
           {
-            "h1": "sectionTitle"
+            "sectionTitle": "section__title",
+            "text": "Repo"
           },
           {
-            "p": "article__text",
+            "articleText": "article__text",
             "text": "Here you can see my front-end repositories. There are projects of websites and games, parts of code and steps of learning, on GitHub, GitLab and CodePen."
           },
           {
-            "p": "article__text",
+            "articleText": "article__text",
             "text": "Apart my own repositories, look at repositories and the website of Zeton project, in wich I'm engaging. It help me to learn cooperation's skills and technologies."
           },
           {
@@ -366,14 +370,15 @@
         "article": "article article__description",
         "children": [
           {
-            "h1": "sectionTitle"
+            "sectionTitle": "section__title",
+            "text": "CV"
           },
           {
-            "p": "article__text",
+            "articleText": "article__text",
             "text": "Here you can find my CV. And this is also the path to my certificates and diplomas."
           },
           {
-            "p": "article__text",
+            "articleText": "article__text",
             "text": "If you're looking for a person who wants to constantly develop, learn new technologies and work in an energetic team, you've come to the right place."
           },
           {
@@ -408,14 +413,15 @@
         "article": "article article__description",
         "children": [
           {
-            "h1": "sectionTitle"
+            "sectionTitle": "section__title",
+            "text": "Find"
           },
           {
-            "p": "article__text",
+            "articleText": "article__text",
             "text": "And here you can find contact with me."
           },
           {
-            "p": "article__text",
+            "articleText": "article__text",
             "text": "Please, send me an email, look at my LinkedIn profile or find me in Zeton project's team."
           },
           {
