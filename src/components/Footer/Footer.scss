@@ -1,0 +1,45 @@
+@import "../../styles/_reset.scss";
+@import '../../styles/_variables.scss';
+@import "../../styles/_extends.scss";
+@import "../../styles/_layout.scss";
+
+.footer {
+  height: 100%;
+  background-color: transparent;
+
+  .article {
+    min-height: 50px;
+    padding: 3% 2%;
+    background-color: $bg-black;
+  }
+
+  #footer-info {
+    @include flex-row;
+    justify-content: space-around;
+
+    .footer__link {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      flex: 1;
+      font-family: $brand-font;
+
+      &:hover {
+        font-weight: 700;
+      }
+    }
+
+    .footer__link--active {
+      font-weight: 700;
+    }
+  }
+
+  #footer-author {
+    background-color: $text-black;
+
+    .article__text {
+      //font-family: $brand-font;
+      text-align: center;
+    }
+  }
+}
