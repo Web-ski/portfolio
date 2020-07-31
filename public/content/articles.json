@@ -139,7 +139,7 @@
         "article": "article article__photos",
         "children": [
           {
-            "a": "photo__link",
+            "photoLink": "photo__link",
             "href": "http://www.kosmopolis-between.pl/",
             "target": "blank",
             "children": [
@@ -150,7 +150,7 @@
             ]
           },
           {
-            "a": "photo__link",
+            "photoLink": "photo__link",
             "href": "https://www.journal-transformation.org/",
             "target": "blank",
             "children": [
@@ -210,7 +210,7 @@
         "article": "article article__photos",
         "children": [
           {
-            "a": "photo__link",
+            "photoLink": "photo__link",
             "href": "https://www.figma.com/proto/3TXaZfAxlemdGzV3XROUMn/Between2020?node-id=1%3A4&viewport=411%2C-209%2C0.36153680086135864&scaling=min-zoom",
             "target": "blank",
             "children": [
@@ -221,7 +221,7 @@
             ]
           },
           {
-            "a": "photo__link",
+            "photoLink": "photo__link",
             "href": "https://projects.invisionapp.com/prototype/Z-Pasj-Wypiekane-projekt-2-ck58hetm900307i01ttckoyjn/play/1dadc98b",
             "target": "blank",
             "children": [
@@ -281,7 +281,7 @@
         "article": "article article__photos",
         "children": [
           {
-            "a": "photo__link",
+            "photoLink": "photo__link",
             "href": "ui.html",
             "children": [
               {
@@ -291,7 +291,7 @@
             ]
           },
           {
-            "a": "photo__link",
+            "photoLink": "photo__link",
             "href": "ui.html",
             "children": [
               {
@@ -366,7 +366,7 @@
         "article": "article article__photos",
         "children": [
           {
-            "a": "photo__link",
+            "photoLink": "photo__link",
             "href": "https://github.com/Web-ski",
             "target": "blank",
             "children": [
@@ -377,7 +377,7 @@
             ]
           },
           {
-            "a": "photo__link",
+            "photoLink": "photo__link",
             "href": "https://gitlab.com/Web-ski",
             "target": "blank",
             "children": [
@@ -420,7 +420,7 @@
         "article": "article article__photos",
         "children": [
           {
-            "a": "photo__link",
+            "photoLink": "photo__link",
             "href": "content/Nieczuja CV 2020.pdf",
             "target": "blank",
             "children": [
@@ -467,7 +467,7 @@
         "article": "article article__photos",
         "children": [
           {
-            "a": "photo__link",
+            "photoLink": "photo__link",
             "href": "mailto:pawel.nieczuja@onet.eu",
             "target": "blank",
             "children": [
@@ -478,7 +478,7 @@
             ]
           },
           {
-            "a": "photo__link",
+            "photoLink": "photo__link",
             "href": "https://www.linkedin.com/in/pawe%C5%82-nieczuja-ostrowski-6b084a88/",
             "target": "blank",
             "children": [
