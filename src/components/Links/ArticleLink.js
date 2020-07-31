@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, NavLink, Link } from "react-router-dom";
-//import './Footer.scss';
-
+import './Links.scss';
 
 class ArticleLink extends React.Component {
   render() {
