@@ -184,7 +184,7 @@
           },
           {
             "articleLink": "article__link",
-            "href": "ux.html",
+            "href": "/ux",
             "text": "Go for details..."
           },
           {
@@ -255,7 +255,7 @@
           },
           {
             "articleLink": "article__link",
-            "href": "ui.html",
+            "href": "/ui",
             "text": "Go for details..."
           },
           {
@@ -282,7 +282,7 @@
         "children": [
           {
             "photoLink": "photo__link",
-            "href": "ui.html",
+            "href": "/ui",
             "children": [
               {
                 "img": "article__photo",
@@ -292,7 +292,7 @@
           },
           {
             "photoLink": "photo__link",
-            "href": "ui.html",
+            "href": "/ui",
             "children": [
               {
                 "img": "article__photo",
@@ -321,11 +321,6 @@
           {
             "articleText": "article__text",
             "text": "Apart my own repositories, look at repositories and the website of Zeton project, in wich I'm engaging. It help me to learn cooperation's skills and technologies."
-          },
-          {
-            "articleLink": "article__link",
-            "href": "repo.html",
-            "text": "Go for details..."
           },
           {
             "div": "article__icons",
@@ -411,7 +406,7 @@
           },
           {
             "articleLink": "article__link",
-            "href": "cv.html",
+            "href": "/cv",
             "text": "Go for details..."
           }
         ]
