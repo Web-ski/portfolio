@@ -1,8 +1,6 @@
 import React from 'react';
 import './StartHeader.scss';
 import { BRAND_NAME } from '../../constans';
-import Brand from '../Brand/Brand'
-import PageTitle from '../Titles/PageTitle'
 
 class StartHeader extends React.Component {
   constructor(props) {
@@ -10,30 +8,38 @@ class StartHeader extends React.Component {
     const viewportHeight = window.innerHeight;
     const viewportWidth = window.innerWidth;
     const viewportOrientation = viewportHeight > viewportWidth ? 'mobile' : 'desktop';
-    this.state = { orientation: viewportOrientation, boxSize: 1 }
+    this.state = { orientation: viewportOrientation, elems: [], elemWidth: 0, elemHeight: 0 }
   }
 
-  componentDidMount(){
-   this.elems(this.state.orientation);
+  componentDidMount() {
+    this.elems(this.state.orientation);
   }
 
   elems(orientation) {
     const viewportHeight = window.innerHeight;
     const viewportWidth = window.innerWidth;
-    let boxSize;
-    orientation === 'mobile' && (boxSize = (viewportWidth / 9) && this.boxGenerator(boxSize, viewportHeight));
-    orientation === 'desktop' && (boxSize = (viewportHeight / 10) && this.boxGenerator(boxSize, viewportWidth));
+    orientation === 'mobile' && this.boxGenerator(9, Math.floor(viewportWidth / 9), viewportHeight);
+    orientation === 'desktop' && this.boxGenerator(10, Math.floor(viewportHeight / 10), viewportWidth);
   }
 
-  boxGenerator(size) {
-    console.log('hje')
+  boxGenerator(nmbr, size, lenght) {
+    let elemsNumber = nmbr * Math.floor(lenght / size);
+    let elemsArr = [];
+    for (let i = 0; i < elemsNumber; i++) { elemsArr[i] = i };
+    this.setState({ elems: elemsArr, elemHeight: size, elemWidth: size });
+    console.log(elemsArr);
   }
 
   render() {
-    //console.log(this.state.orientation)
-    return <header className="second-header">
-      <div className="hero">
+    const itemStyle = {
+      width: this.state.elemWidth,
+      height: this.state.elemHeight
+    };
 
+    return <header className="start-header">
+      <div className="hero">
+        {(this.state.elems).map((item) => 
+        <div className="hero__item" /*style={itemStyle}*/>{item}</div>)}
       </div>
     </header>
   }
