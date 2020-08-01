@@ -39,7 +39,7 @@ class StartHeader extends React.Component {
     return <header className="start-header">
       <div className="hero">
         {(this.state.elems).map((item) => 
-        <div className="hero__item" /*style={itemStyle}*/>{item}</div>)}
+        <div className="hero__item" /*style={itemStyle}*/>{"."}</div>)}
       </div>
     </header>
   }
