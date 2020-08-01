@@ -15,9 +15,19 @@ $main-blue: rgb(10, 10, 53);
 $text-light: rgb(252, 162, 211);
 
 /* Fonts */
-$main-font: Montserrat, sans-serif;
+@font-face {
+  font-family: myMainFont;
+  src: url('/lib/fonts/Montserrat-Regular.ttf')
+}
+
+@font-face {
+  font-family: myBrandFont;
+  src: url('/lib/fonts/Satisfy-Regular.ttf')
+}
+
+$main-font: myMainFont, Calibri, sans-serif;
 //$main-font: Roboto, sans-serif;
-$brand-font: Satisfy, sans-serif;
+$brand-font: myBrandFont, sans-serif;
 
 /* Borders */
 $brdr-radius: 5px;

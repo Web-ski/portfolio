@@ -22,7 +22,7 @@
       text-decoration: none;
       text-align: center;
       flex: 1;
-      font-family: $brand-font;
+      font-family: $main-font;
 
       &:hover {
         font-weight: 700;
@@ -38,7 +38,7 @@
     background-color: $text-black;
 
     .article__text {
-      //font-family: $brand-font;
+      font-family: $brand-font;
       text-align: center;
     }
   }
