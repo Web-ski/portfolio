@@ -1,7 +1,7 @@
 import React from 'react';
 import './StartHeader.scss';
-import { BRAND, MENU_NAME, PAGE_NAME } from '../../constans';
-import HeroElem from './HeroElem';
+import { BRAND, MENU, PAGE_NAME } from '../../constans';
+import HeroItem from './HeroItem';
 
 
 class StartHeader extends React.Component {
@@ -35,7 +35,7 @@ class StartHeader extends React.Component {
     let elemsArr = [];
     for (let i = 0; i < elemsNumber; i++) { elemsArr[i] = i }; 
     elemsArr[0] = BRAND;//--tu wsadzić litery
-    nmbr === 10 ? (elemsArr[(elemsArr.length - 10)] = MENU_NAME) : (elemsArr[8] = MENU_NAME);//--tu wsadzić litery
+    nmbr === 10 ? (elemsArr[(elemsArr.length - 10)] = MENU) : (elemsArr[8] = MENU);//--tu wsadzić litery
     this.setState({ elems: elemsArr, elemHeight: size, elemWidth: size });
     //console.log(elemsArr);
   }
@@ -48,7 +48,7 @@ class StartHeader extends React.Component {
 
     return <header className="start-header">
       <div className="hero">
-        {(this.state.elems).map((item, index) => <HeroElem elem={item}/> )}
+        {(this.state.elems).map((item, index) => <HeroItem elem={item}/> )}
       </div>
     </header>
   }

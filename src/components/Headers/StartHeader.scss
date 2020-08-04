@@ -61,6 +61,37 @@
         width: auto;
       }
 
+      .hero__brand, .hero__menu {
+        position: absolute;
+        color: $text-blue;
+        font-size: 18px;
+        font-family: $brand-font;
+        text-align: center;
+        line-height: 100%;
+        padding-top: 10px;
+        
+        @media screen and (min-width: $min-md) {
+          font-size: 22px;
+          padding-top: 0;
+        }
+      }
+      
+      .hero__menu {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        outline: 0;
+        transition: $transition;
+        -webkit-transition: $transition;
+        -moz-transition: $transition;
+        -ms-transition: $transition;
+        -o-transition: $transition;
+        
+        &:hover {
+          color: $text-white;
+        }
+      }
+
       // &:hover {
       //   box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
 

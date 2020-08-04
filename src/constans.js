@@ -4,12 +4,15 @@ export const MENU_NAME = "Menu";
 export const PAGE_NAME = ["Portfolio", ["of"], "Paweł", "Nieczuja-", "Ostrowski"];
 
 class HERO_ELEM {
-  constructor(name) {
+  constructor(text, tag, name) {
+    this.text =  text;
+    this.tag =  tag;
     this.name =  name;
   }
 }
 
-export const BRAND = new HERO_ELEM(BRAND_NAME);
+export const BRAND = new HERO_ELEM(BRAND_NAME, 'p', 'hero__brand');
+export const MENU = new HERO_ELEM(MENU_NAME, 'button', 'hero__menu');
 
 
 /*home page*/
