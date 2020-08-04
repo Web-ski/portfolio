@@ -13,13 +13,19 @@ class StartHeader extends React.Component {
 
   componentDidMount() {
     this.elems(this.state.orientation);
+    window.addEventListener('resize', () => this.elems(this.state.orientation));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', () => this.elems());
   }
 
   elems(orientation) {
     const viewportHeight = window.innerHeight;
     const viewportWidth = window.innerWidth;
-    orientation === 'mobile' && this.boxGenerator(9, Math.floor(viewportWidth / 9), viewportHeight);
-    orientation === 'desktop' && this.boxGenerator(10, Math.floor(viewportHeight / 10), viewportWidth);
+    const viewportOrientation = viewportHeight > viewportWidth ? 'mobile' : 'desktop';
+    viewportOrientation === 'mobile' && this.boxGenerator(9, Math.floor(viewportWidth / 9), viewportHeight);
+    viewportOrientation === 'desktop' && this.boxGenerator(10, Math.floor(viewportHeight / 10), viewportWidth);
   }
 
   boxGenerator(nmbr, size, lenght) {
