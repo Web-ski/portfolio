@@ -1,6 +1,8 @@
 import React from 'react';
 import './StartHeader.scss';
-import { BRAND_NAME, MENU_NAME, PAGE_NAME } from '../../constans';
+import { BRAND, MENU_NAME, PAGE_NAME } from '../../constans';
+import HeroElem from './HeroElem';
+
 
 class StartHeader extends React.Component {
   constructor(props) {
@@ -31,11 +33,11 @@ class StartHeader extends React.Component {
   boxGenerator(nmbr, size, lenght) {
     let elemsNumber = nmbr * Math.floor(lenght / size);
     let elemsArr = [];
-    for (let i = 0; i < elemsNumber; i++) { elemsArr[i] = " " }; 
-    elemsArr[0] = BRAND_NAME;//--tu wsadzić litery
+    for (let i = 0; i < elemsNumber; i++) { elemsArr[i] = i }; 
+    elemsArr[0] = BRAND;//--tu wsadzić litery
     nmbr === 10 ? (elemsArr[(elemsArr.length - 10)] = MENU_NAME) : (elemsArr[8] = MENU_NAME);//--tu wsadzić litery
     this.setState({ elems: elemsArr, elemHeight: size, elemWidth: size });
-    console.log(elemsArr);
+    //console.log(elemsArr);
   }
 
   render() {
@@ -46,8 +48,7 @@ class StartHeader extends React.Component {
 
     return <header className="start-header">
       <div className="hero">
-        {(this.state.elems).map((item, index) => 
-        <div className="hero__item" /*style={itemStyle}*/>{item}</div>)}
+        {(this.state.elems).map((item, index) => <HeroElem elem={item}/> )}
       </div>
     </header>
   }
