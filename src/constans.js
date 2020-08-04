@@ -1,5 +1,7 @@
 /*basic info*/
 export const BRAND_NAME = "Nieczuja";
+export const MENU_NAME = "Menu";
+export const PAGE_NAME = ["Portfolio", ["of"], "Paweł", "Nieczuja-", "Ostrowski"];
 
 /*home page*/
 export const URL_HOME = "content/articles.json";
