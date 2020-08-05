@@ -8,7 +8,7 @@
   max-width: 100vw;
   //width: 100%;
   height: 100vh;
-  overflow: hidden;  
+  overflow: hidden;
 
   @media screen and (min-width: $min-md) {
     height: 100vh;
@@ -61,7 +61,8 @@
         width: auto;
       }
 
-      .hero__brand, .hero__menu {
+      .hero__brand,
+      .hero__menu {
         position: absolute;
         color: $text-blue;
         font-size: 18px;
@@ -69,13 +70,13 @@
         text-align: center;
         line-height: 100%;
         padding-top: 10px;
-        
+
         @media screen and (min-width: $min-md) {
           font-size: 22px;
           padding-top: 0;
         }
       }
-      
+
       .hero__menu {
         cursor: pointer;
         background-color: transparent;
@@ -86,10 +87,22 @@
         -moz-transition: $transition;
         -ms-transition: $transition;
         -o-transition: $transition;
-        
+
         &:hover {
           color: $text-white;
         }
+      }
+
+      .page__title {
+        text-transform: uppercase;
+        color: $text-white;
+        position: absolute;
+      }
+
+      .page__title--of {
+        text-transform: none;
+        color: $text-white;
+        font-family: $brand-font;
       }
 
       // &:hover {

@@ -8,6 +8,9 @@ class HeroItem extends React.Component {
       if (elem.tag === 'p') {
         return <p className={elem.name}>{elem.text}</p>
       };
+      if (elem.tag === 'h1') {
+        return <h1 className={elem.name}>{elem.text}</h1>
+      };
       if (elem.tag === 'button') {
         return <button className={elem.name}>{elem.text}</button>
       };

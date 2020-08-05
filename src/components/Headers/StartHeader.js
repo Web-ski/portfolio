@@ -1,8 +1,7 @@
 import React from 'react';
 import './StartHeader.scss';
-import { BRAND, MENU, PAGE_NAME } from '../../constans';
+import { BRAND, MENU, PAGE_LETTERS } from '../../constans';
 import HeroItem from './HeroItem';
-
 
 class StartHeader extends React.Component {
   constructor(props) {
@@ -36,8 +35,27 @@ class StartHeader extends React.Component {
     for (let i = 0; i < elemsNumber; i++) { elemsArr[i] = i }; 
     elemsArr[0] = BRAND;//--tu wsadzić litery
     nmbr === 10 ? (elemsArr[(elemsArr.length - 10)] = MENU) : (elemsArr[8] = MENU);//--tu wsadzić litery
+    nmbr === 10 ? this.addLetters(10, elemsArr) : this.addLetters(9, elemsArr);
     this.setState({ elems: elemsArr, elemHeight: size, elemWidth: size });
     //console.log(elemsArr);
+  }
+
+  addLetters(nmbr, collection) {
+    if(nmbr === 10) { 
+      PAGE_LETTERS[0].map((item, index) => (collection[index + 1] = item));
+      PAGE_LETTERS[1].map((item, index) => (collection[index + 12] = item));
+      PAGE_LETTERS[2].map((item, index) => (collection[index + 13] = item));
+      PAGE_LETTERS[3].map((item, index) => (collection[(collection.length - 20) + index + 1] = item));
+      PAGE_LETTERS[4].map((item, index) => (collection[(collection.length - 10) + index + 1] = item));
+    };
+
+    if(nmbr === 9) { 
+      PAGE_LETTERS[0].map((item, index) => (collection[index + 9] = item));
+      PAGE_LETTERS[1].map((item, index) => (collection[index + 18] = item));
+      PAGE_LETTERS[2].map((item, index) => (collection[index + 20] = item));
+      PAGE_LETTERS[3].map((item, index) => (collection[(collection.length - 28) + index + 1] = item));
+      PAGE_LETTERS[4].map((item, index) => (collection[(collection.length - 19) + index + 1] = item));
+    };
   }
 
   render() {

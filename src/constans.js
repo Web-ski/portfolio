@@ -13,6 +13,14 @@ class HERO_ELEM {
 
 export const BRAND = new HERO_ELEM(BRAND_NAME, 'p', 'hero__brand');
 export const MENU = new HERO_ELEM(MENU_NAME, 'button', 'hero__menu');
+const PAGE1 = (PAGE_NAME[0].split('')).map((item) => new HERO_ELEM(item, 'h1', 'page__title'));
+const PAGE2 = PAGE_NAME[1].map((item) => new HERO_ELEM(item, 'h1', 'page__title page__title--of'));
+const PAGE3 = (PAGE_NAME[2].split('')).map((item) => new HERO_ELEM(item, 'h1', 'page__title'));
+const PAGE4 = (PAGE_NAME[3].split('')).map((item) => new HERO_ELEM(item, 'h1', 'page__title'));
+const PAGE5 = (PAGE_NAME[4].split('')).map((item) => new HERO_ELEM(item, 'h1', 'page__title'));
+
+export const PAGE_LETTERS = [PAGE1, PAGE2, PAGE3, PAGE4, PAGE5];
+
 
 
 /*home page*/
