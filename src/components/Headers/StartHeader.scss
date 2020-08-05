@@ -46,7 +46,7 @@
       @include flex-column;
       position: relative;
       background-color: $bg-wrapper;
-      width: calc(100% / 9);
+      width: calc(100% / 7);
       justify-content: center;
       align-items: center;
       margin: 0;
@@ -112,6 +112,40 @@
       //     text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
       //   }
       // }
+    }
+
+    .hero__menu {
+      position: absolute;
+      color: $text-blue;
+      top: 0;
+      right: 0;
+      font-size: 18px;
+      width: calc(100% / 7);
+      height: auto;
+      font-family: $brand-font;
+      text-align: center;
+      line-height: 100%;
+      padding-top: 10px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      outline: 0;
+      z-index: 99;
+      transition: $transition;
+      -webkit-transition: $transition;
+      -moz-transition: $transition;
+      -ms-transition: $transition;
+      -o-transition: $transition;
+
+      @media screen and (min-width: $min-md) {
+        font-size: 22px;
+        padding-top: 0;
+        height: calc(100% / 10);
+        width: auto;
+      }
+      &:hover {
+        color: $text-white;
+      }
     }
 
     .red {

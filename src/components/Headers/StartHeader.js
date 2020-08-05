@@ -25,7 +25,7 @@ class StartHeader extends React.Component {
     const viewportHeight = window.innerHeight;
     const viewportWidth = window.innerWidth;
     const viewportOrientation = viewportHeight > viewportWidth ? 'mobile' : 'desktop';
-    viewportOrientation === 'mobile' && this.boxGenerator(9, Math.floor(viewportWidth / 9), viewportHeight);
+    viewportOrientation === 'mobile' && this.boxGenerator(7, Math.floor(viewportWidth / 7), viewportHeight);
     viewportOrientation === 'desktop' && this.boxGenerator(10, Math.floor(viewportHeight / 10), viewportWidth);
   }
 
@@ -48,25 +48,13 @@ class StartHeader extends React.Component {
       PAGE_LETTERS[3].map((item, index) => (collection[(collection.length - 20) + index + 1] = item));
       PAGE_LETTERS[4].map((item, index) => (collection[(collection.length - 10) + index + 1] = item));
     };
-
-    if(nmbr === 9) { 
-      PAGE_LETTERS[0].map((item, index) => (collection[index + 9] = item));
-      PAGE_LETTERS[1].map((item, index) => (collection[index + 18] = item));
-      PAGE_LETTERS[2].map((item, index) => (collection[index + 20] = item));
-      PAGE_LETTERS[3].map((item, index) => (collection[(collection.length - 28) + index + 1] = item));
-      PAGE_LETTERS[4].map((item, index) => (collection[(collection.length - 19) + index + 1] = item));
-    };
   }
 
   render() {
-    const itemStyle = {
-      width: this.state.elemWidth,
-      height: this.state.elemHeight
-    };
-
     return <header className="start-header">
       <div className="hero">
-        {(this.state.elems).map((item, index) => <HeroItem elem={item}/> )}
+        {(this.state.elems).map((item, index) => <HeroItem key={item.name + index} elem={item}/> )}
+        <button className={MENU.name}>{MENU.text}</button>
       </div>
     </header>
   }
