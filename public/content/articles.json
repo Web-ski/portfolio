@@ -1,6 +1,7 @@
 [
   {
     "section": "section",
+    "id": "webs",
     "children": [
       {
         "article": "article article__description",
@@ -166,6 +167,7 @@
   },
   {
     "section": "section",
+    "id": "ux",
     "children": [
       {
         "article": "article article__description",
@@ -237,6 +239,7 @@
   },
   {
     "section": "section",
+    "id": "ui",
     "children": [
       {
         "article": "article article__description",
@@ -306,6 +309,7 @@
   },
   {
     "section": "section",
+    "id": "repo",
     "children": [
       {
         "article": "article article__description",
@@ -388,6 +392,7 @@
   },
   {
     "section": "section",
+    "id": "cv",
     "children": [
       {
         "article": "article article__description",
@@ -431,6 +436,7 @@
   },
   {
     "section": "section",
+    "id": "find",
     "children": [
       {
         "article": "article article__description",

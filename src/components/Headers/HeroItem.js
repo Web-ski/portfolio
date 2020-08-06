@@ -15,10 +15,18 @@ class HeroItem extends React.Component {
   }
   render() {
     const parent = this.props.elem[0];
-    const children = this.props.elem[1];
-    return <div className={parent.itemClass}>{
-      this.elem(children)
-    }</div>
+    const reverse = this.props.elem[1];
+    const children = this.props.elem[2];
+    console.log(reverse)
+    return <div className={parent.itemClass}>
+      {
+        this.elem(children)}
+      {
+        reverse !== undefined && <div className="item__reverse">
+          <a className="reverse__link page__title" href={"#"+reverse}>{reverse}</a>
+        </div>
+      }
+    </div>
   }
 }
 

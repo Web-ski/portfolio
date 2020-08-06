@@ -1,6 +1,6 @@
 import React from 'react';
 import './StartHeader.scss';
-import { BRAND, MENU, PAGE } from '../../constans';
+import { BRAND, MENU, PAGE, SECTION_NAME } from '../../constans';
 import HeroItem from './HeroItem';
 
 class StartHeader extends React.Component {
@@ -28,8 +28,8 @@ class StartHeader extends React.Component {
           <button onClick={this.handleClick} className={MENU.name}>{MENU.text}</button>
         </div>
         <HeroItem elem={ [itemData] }/>
-        {PAGE.map((item, index) => <HeroItem key={"page" + index} elem={[itemData, item]} />)}
-        <HeroItem elem={ [itemData] }/>
+        {PAGE.map((item, index) => <HeroItem key={"page" + index} elem={[itemData, SECTION_NAME[index], item]} />)}
+        <HeroItem elem={ [itemData, SECTION_NAME[5]] }/>
         <HeroItem elem={ [itemData] }/>
       </div>
     </header>

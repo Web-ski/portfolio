@@ -2,6 +2,7 @@
 export const BRAND_NAME = "Nieczuja";
 export const MENU_NAME = "Menu";
 export const PAGE_NAME = ["Portfolio", ["of"], "Paweł", "Nieczuja-", "Ostrowski"];
+export const SECTION_NAME = ["webs", "ux", "ui", "repo", "cv", "find"];
 
 class HERO_ELEM {
   constructor(text, tag, name) {
