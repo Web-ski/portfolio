@@ -14,8 +14,10 @@ class HeroItem extends React.Component {
     }
   }
   render() {
-    return <div className="hero__item">{
-      this.elem(this.props.elem)
+    const parent = this.props.elem[0];
+    const children = this.props.elem[1];
+    return <div className={parent.itemClass}>{
+      this.elem(children)
     }</div>
   }
 }
