@@ -104,52 +104,10 @@
         color: $text-white;
         font-family: $brand-font;
       }
-
-      // &:hover {
-      //   box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2);
-
-      //   div {
-      //     text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
-      //   }
-      // }
     }
 
-    // .hero__menu {
-    //   position: absolute;
-    //   color: $text-blue;
-    //   top: 0;
-    //   right: 0;
-    //   font-size: 18px;
-    //   width: calc(100% / 7);
-    //   height: auto;
-    //   font-family: $brand-font;
-    //   text-align: center;
-    //   line-height: 100%;
-    //   padding-top: 10px;
-    //   cursor: pointer;
-    //   background-color: transparent;
-    //   border: none;
-    //   outline: 0;
-    //   z-index: 99;
-    //   transition: $transition;
-    //   -webkit-transition: $transition;
-    //   -moz-transition: $transition;
-    //   -ms-transition: $transition;
-    //   -o-transition: $transition;
-
-    //   @media screen and (min-width: $min-md) {
-    //     font-size: 22px;
-    //     padding-top: 0;
-    //     height: calc(100% / 10);
-    //     width: auto;
-    //   }
-    //   &:hover {
-    //     color: $text-white;
-    //   }
-    // }
-
     .red {
-      background-color: lightgrey;
+      background-color: transparent;
       //box-shadow: inset 5px 0 5px grey;
     }
   }
