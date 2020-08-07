@@ -7,7 +7,8 @@ class StartHeader extends React.Component {
   constructor(props){
     super(props);
     this.state = { 
-      itemState: { itemClass: "hero__item" }
+      itemState: { itemClass: "hero__item" },
+      headerToggle: true
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -15,13 +16,13 @@ class StartHeader extends React.Component {
   handleClick() {
     let startState = this.state.itemState.itemClass;
     startState = (startState === "hero__item" ? "hero__item red" : "hero__item")
-    this.setState({ itemState: { itemClass: startState } });
+    this.setState(state => ({ itemState: { itemClass: startState }, headerToggle: !state.headerToggle }));
   }
 
   render() {
     const itemData = this.state.itemState;
    //console.log(itemData.itemClass)
-    return <header className="start-header">
+    return <header className={"start-header " + (this.state.headerToggle ? "" : "start-header--reverse")}>
       <div className="hero">
         <div className={ itemData.itemClass }>
           <p className={BRAND.name}>{BRAND.text}</p>

@@ -24,15 +24,15 @@
     justify-content: stretch;
     align-items: stretch;
     position: relative;
-    height: 99%;
-    width: 99%;
+    height: 100%;
+    width: 100%;
     min-width: 300px;
     //max-width: 100vw;
     margin: 0 auto;
     padding: 0;
     flex-wrap: wrap;
     //background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    background-image: radial-gradient(cyan, DarkCyan);
+    //background-image: radial-gradient(cyan, DarkCyan);
     //background-color: rgb(214, 76, 57);
     //background-color: red;
 
@@ -46,6 +46,7 @@
       @include flex-row;
       position: relative;
       background-color: $bg-wrapper;
+      //background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
       height: calc(100% / 9);
       width: 100%;
       justify-content: space-between;
@@ -73,7 +74,7 @@
         font-family: $brand-font;
         text-align: center;
         line-height: 100%;
-        padding-top: 10px;
+        padding: 15px;
 
         @media screen and (min-width: $min-md) {
           font-size: 22px;
@@ -97,21 +98,58 @@
         }
       }
 
-      .page__title {
-        text-transform: uppercase;
-        color: $text-white;
+      .item__averse {
         position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0 10%;
+        @include flex-row;
+        justify-content: space-between;
+        //left: 50%;
+        //transform: translateX(-50%);
         transition: .5s;
         -webkit-transition: .5s;
         -moz-transition: .5s;
         -ms-transition: .5s;
         -o-transition: .5s;
-      }
 
-      .page__title--of {
-        text-transform: none;
-        color: $text-white;
-        font-family: $brand-font;
+        .page__title {
+          text-transform: uppercase;
+          color: $text-white;
+          font-size: calc(25px + 1vh);
+          margin: 0 auto;
+
+          transition: .5s;
+          -webkit-transition: .5s;
+          -moz-transition: .5s;
+          -ms-transition: .5s;
+          -o-transition: .5s;
+
+          @media screen and (min-width: $min-md) {
+            font-size: calc(25px + 1vw);
+          }
+
+          @media screen and (min-width: $min-lg) {
+            font-size: calc(30px + 1vw);
+          }
+
+          @media screen and (min-width: $min-xl) {
+            font-size: calc(35px + 1vw);
+          }
+
+          @media screen and (min-width: $min-xxl) {
+            font-size: calc(40px + 1vw);
+          }
+        }
+
+        .page__title--of {
+          text-transform: none;
+          color: $text-white;
+          font-family: $brand-font;
+
+          font-size: calc(20px + 1vh);
+
+        }
       }
 
       .item__reverse {
@@ -121,7 +159,12 @@
         top: 0;
         width: 100%;
         height: 100%;
+        //background-color: rgb(5, 184, 184);
         background-color: $text-blue;
+        background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+        border: inset 1px dimgrey;
+
+        //background-color: $bg-wrapper;
         transition: .5s;
         -webkit-transition: .5s;
         -moz-transition: .5s;
@@ -130,6 +173,10 @@
 
         .reverse__link {
           color: $text-black;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: bold;
+          //color: $text-white;
           visibility: hidden;
           transform: rotateX(180deg);
           -webkit-transform: rotateX(180deg);
@@ -144,6 +191,10 @@
 
         .item__reverse {
           transition-delay: .1s;
+
+          .reverse__link {
+            transition-delay: .1s;
+          }
         }
       }
 
@@ -152,6 +203,10 @@
 
         .item__reverse {
           transition-delay: .2s;
+
+          .reverse__link {
+            transition-delay: .2s;
+          }
         }
       }
 
@@ -160,6 +215,10 @@
 
         .item__reverse {
           transition-delay: .3s;
+
+          .reverse__link {
+            transition-delay: .3s;
+          }
         }
       }
 
@@ -168,6 +227,10 @@
 
         .item__reverse {
           transition-delay: .4s;
+
+          .reverse__link {
+            transition-delay: .4s;
+          }
         }
       }
 
@@ -176,6 +239,10 @@
 
         .item__reverse {
           transition-delay: .5s;
+
+          .reverse__link {
+            transition-delay: .5s;
+          }
         }
       }
 
@@ -184,6 +251,10 @@
 
         .item__reverse {
           transition-delay: .6s;
+
+          .reverse__link {
+            transition-delay: .6s;
+          }
         }
       }
 
@@ -192,6 +263,10 @@
 
         .item__reverse {
           transition-delay: .7s;
+
+          .reverse__link {
+            transition-delay: .7s;
+          }
         }
       }
 
@@ -200,17 +275,18 @@
 
         .item__reverse {
           transition-delay: .8s;
+
+          .reverse__link {
+            transition-delay: .7s;
+          }
         }
       }
     }
 
     .red {
-      //background-color: transparent;
-      background-color: $text-blue;
 
-      //box-shadow: inset 5px 0 5px grey;
-      // animation: rowSpin .2;
-      // -webkit-animation: rowSpin .2;
+      background-color: $text-blue;
+      background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
       transform: rotateX(180deg);
       -webkit-transform: rotateX(180deg);
       -moz-transform: rotateX(180deg);
@@ -220,6 +296,7 @@
       .page__title {
         //height: 0;
         //font-size: 0;
+        visibility: hidden;
       }
 
       .hero__brand,
@@ -240,7 +317,7 @@
 
       .item__reverse {
         opacity: 1;
-        
+
         .reverse__link {
           visibility: visible;
         }
@@ -276,23 +353,47 @@
 
       &:nth-of-type(5) {
         transition-delay: .4s;
+
+        .item__reverse {
+          opacity: 1;
+        }
       }
 
       &:nth-of-type(6) {
         transition-delay: .5s;
+
+        .item__reverse {
+          opacity: 1;
+        }
       }
 
       &:nth-of-type(7) {
         transition-delay: .6s;
+
+        .item__reverse {
+          opacity: 1;
+        }
       }
 
       &:nth-of-type(8) {
         transition-delay: .7s;
+
+        .item__reverse {
+          opacity: 1;
+        }
       }
 
       &:nth-of-type(9) {
         transition-delay: .8s;
+
+        .item__reverse {
+          opacity: 1;
+        }
       }
     }
   }
+}
+
+.start-header--reverse {
+  //background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 }
