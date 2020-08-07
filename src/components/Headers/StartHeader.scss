@@ -118,14 +118,19 @@
           color: $text-white;
           font-size: calc(25px + 1vh);
           margin: 0 auto;
-
+          text-shadow: none;
+          //text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #00FFFF 0px 0px 20px, #00FFFF 0px 0px 30px, #00FFFF 0px 0px 40px;
+          //,#00FFFF0px0px50px,#00FFFF0px0px75px:;
+          animation: glowTitle 3s;
+          -webkit-animation: glowTitle 3s;
+          //animation: glowTitle2 1s 1s 1s;
           transition: .5s;
           -webkit-transition: .5s;
           -moz-transition: .5s;
           -ms-transition: .5s;
           -o-transition: .5s;
 
-          @media screen and (min-width: $min-md) {
+          @media screen and(min-width: $min-md) {
             font-size: calc(25px + 1vw);
           }
 
@@ -139,6 +144,23 @@
 
           @media screen and (min-width: $min-xxl) {
             font-size: calc(40px + 1vw);
+          }
+
+          @keyframes glowTitle {
+            0% {
+              opacity: 0;
+              text-shadow: #00FFFF 0px 0px 5px;
+            }
+
+            30% {
+              opacity: 1;
+              text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #00FFFF 0px 0px 20px, #00FFFF 0px 0px 30px, #00FFFF 0px 0px 40px; // , #00FFFF 0px 0px 50px , #00FFFF 0px 0px 75px;
+
+            }
+
+            100% {
+              text-shadow: #00FFFF 0px 0px 5px;
+            }
           }
         }
 
@@ -307,12 +329,6 @@
         -moz-transform: rotateX(180deg);
         -ms-transform: rotateX(180deg);
         -o-transform: rotateX(180deg);
-      }
-
-      @keyframes rowSpin {
-        from {}
-
-        to {}
       }
 
       .item__reverse {
