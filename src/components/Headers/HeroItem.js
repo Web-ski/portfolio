@@ -12,7 +12,7 @@ class HeroItem extends React.Component {
         let text = elem.text;
         let arr = text;
         typeof text === "string" && (arr = text.split(""));
-        console.log(arr);
+        //console.log(arr);
         return arr.map((item, index) => <h1 key={item.toString() + index} className={elem.name}>{item}</h1> )
       };
     }
