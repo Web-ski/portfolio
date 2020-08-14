@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Link, useParams } from "react-router-dom";
 import './Main.scss';
 import Section from '../Sections/Section'
+import MainRadio from '../Radio/MainRadio'
 
 class Main extends React.Component {
   constructor(props) {
@@ -19,6 +20,11 @@ class Main extends React.Component {
       {(this.state.data).map((item, index) => {
         if (item.section !== undefined) { return <Section key={item.section + index} elem={item}/> };
       })}
+      <div className="main-radio">
+      {(this.state.data).map((item, index) => {
+        if (item.section !== undefined) { return <MainRadio key={"radio" + item.section + index} elem={item}/> };
+      })}
+      </div>
     </div>
   }
 }

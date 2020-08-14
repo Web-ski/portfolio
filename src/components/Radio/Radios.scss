@@ -1,0 +1,94 @@
+@import "../../styles/_reset.scss";
+@import '../../styles/_variables.scss';
+@import "../../styles/_extends.scss";
+@import "../../styles/_layout.scss";
+
+.main-radio {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	left: 50%;
+	top: 11px;
+	padding: 0 5vw;
+	transform: translateX(-50%);
+
+	@media screen and (min-width: $min-md) {
+		top: 40px;
+		height: 30px;
+	}
+
+	@media screen and (min-width: $min-xxl) {
+		max-width: 700px;
+	}
+
+	.radio__elem {
+		position: relative;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: $text-blue;
+		cursor: pointer;
+		transition: $transition;
+		-webkit-transition: $transition;
+		-moz-transition: $transition;
+		-ms-transition: $transition;
+		-o-transition: $transition;
+
+		@media screen and(min-width: $min-md) {
+			width: 10px;
+			height: 10px;
+		}
+
+
+		&:before {
+			position: absolute;
+			content: '';
+			height: 20px;
+			width: 20px;
+			background-color: transparent;
+			border-radius: 50%;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		&:hover {
+			//height: 30px;
+			background-color: black;
+
+			&:before {
+				border: solid 1px $text-blue;
+			}
+		}
+	}
+
+	.radio__elem--active {
+		position: relative;
+		background-color: $text-blue;
+
+		&:after {
+			position: absolute;
+			content: '';
+			height: 20px;
+			width: 20px;
+			background-color: transparent;
+			border: solid 1px $text-blue;
+			border-radius: 50%;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+
+			@media screen and (min-width: $min-md) {
+				height: 25px;
+				width: 25px;
+
+			}
+		}
+
+		&:hover {
+			border: none;
+		}
+	}
+}
