@@ -11,9 +11,11 @@ class Article extends React.Component {
 
   render() {
     //console.log(this.props.elem)
-    return <article className={this.props.elem.article}>
-      {(this.props.elem.children !== undefined) && (
-        (this.props.elem.children).map((item, index) => {
+    const elem = this.props.elem[0];
+    const elemsOn = this.props.elem[1];
+    return <article className={elem.article + " " + elemsOn}>
+      {(elem.children !== undefined) && (
+        (elem.children).map((item, index) => {
           if (item.pageTitle !== undefined) { return <PageTitle key={item.pageTitle + index} elem={item} /> };
           if (item.sectionTitle !== undefined) { return <SectionTitle key={item.sectionTitle + index} elem={item} /> };
           if (item.articleText !== undefined) { return <ArticleText key={item.articleText + index} elem={item} /> };

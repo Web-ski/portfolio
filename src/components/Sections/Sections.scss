@@ -27,6 +27,7 @@
     height: 100%;
     flex: 1;
     padding: 25px;
+    opacity: 0;
 
     @media screen and (min-width: $min-lg) {
       padding: 30px;
@@ -77,6 +78,22 @@
     }
 
     @keyframes showElem {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  .articleOn {
+    opacity: 1;
+    animation: articleOn 1s;
+    -webkit-animation: articleOn 1s;
+
+    @keyframes articleOn {
       from {
         opacity: 0;
       }
