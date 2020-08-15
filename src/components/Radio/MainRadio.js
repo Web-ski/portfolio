@@ -8,7 +8,8 @@ class MainRadio extends React.Component {
 	}
 
 	componentDidMount() {
-		let startView = document.querySelector(".start-header").offsetHeight;
+		let startView = document.querySelector(".start-header");
+		let startViewHeight = startView.offsetHeight;
 		let sections = document.querySelectorAll(".section");
 		let prevSectionHeight = 0;
 		let thisSectionHeight = 0;
@@ -18,12 +19,27 @@ class MainRadio extends React.Component {
 				thisSectionHeight = sections[index].offsetHeight;
 			}
 		}
+		
 		)
+		console.log("A" + startViewHeight);
 		//console.log(sectionView.id)
-		window.addEventListener('scroll', () => this.handleScroll(startView + prevSectionHeight, thisSectionHeight));
+		window.addEventListener('resize', () => {
+			// 	startViewHeight = startView.offsetHeight;
+			// 	Array.from(sections).map((item, index) => {
+			// 		if (item.getAttribute('id') === this.props.elem.id) {
+			// 			(index > 0 && (prevSectionHeight = sections[index - 1].offsetHeight * index));
+			// 			thisSectionHeight = sections[index].offsetHeight;
+			// 		}
+			// 	}
+			// 	)
+			console.log("R" + startViewHeight);
+		});
+
+		window.addEventListener('scroll', () => this.handleScroll(startViewHeight + prevSectionHeight, thisSectionHeight));
 	}
 
 	componentWillUnmount() {
+		//window.removeEventListener('resize', () => {});
 		window.removeEventListener('scroll', () => this.handleScroll());
 	}
 
@@ -36,7 +52,6 @@ class MainRadio extends React.Component {
 			(this.state.radioOn === active && this.setState({ radioOn: "" }))
 		}
 	}
-
 
 	render() {
 		const elem = this.props.elem;

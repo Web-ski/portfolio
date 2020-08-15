@@ -7,26 +7,31 @@ class Section extends React.Component {
     super(props);
     this.state = { sectionOn: "" }
   }
-  
+
   componentDidMount() {
     let startView = document.querySelector(".start-header").offsetHeight;
-    let sections = document.querySelectorAll(".section");
-    let prevSectionHeight = 0;
-    Array.from(sections).map((item, index) => 
-      item.getAttribute('id') === this.props.elem.id && 
-      (index > 0 && (prevSectionHeight = sections[index - 1].offsetHeight * index))
-    ) 
-    //console.log(sectionView.id)
-    window.addEventListener('scroll', () => this.handleScroll(startView + prevSectionHeight));
+    let sections = Array.from(document.querySelectorAll(".section"));
+    let sectionsHeight = [startView];
+    sections.map((item, index) => (sectionsHeight.push(item.offsetHeight)))
+    let distance = 0;
+    sections.map((item, index) => {
+      
+      item.getAttribute('id') === this.props.elem.id && (
+        sectionsHeight.splice(index + 1, (sectionsHeight.length - (index + 1))) && (distance = sectionsHeight.reduce(function (total, nmbr) { return total + nmbr; }))
+        ) //połączyć długości do bieżącej sekcji 
+      }
+    )
+    console.log(distance)
+    window.addEventListener('scroll', () => this.handleScroll(distance));
   }
-  
+
   componentWillUnmount() {
     window.removeEventListener('scroll', () => this.handleScroll());
   }
-  
-  handleScroll(distance) {
-    (window.scrollY > (distance - 100) && 
-    ( this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" }) ))
+
+  handleScroll(distance) {    
+    (window.scrollY > (distance - 50) &&
+      (this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" })))
     //(window.scrollY <= 500 && visibility === false) && (this.setState({ visible: true }))
   }
 
