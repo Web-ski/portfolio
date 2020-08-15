@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from "react-router-dom";
 import './Footer.scss';
 import { FOOTER_TEXT_AUTHOR } from '../../constans';
 import FooterInfo from './FooterInfo'
