@@ -8,34 +8,40 @@ class MainRadio extends React.Component {
 	}
 
 	componentDidMount() {
-		let startView = document.querySelector(".start-header");
-		let startViewHeight = startView.offsetHeight;
-		let sections = document.querySelectorAll(".section");
-		let prevSectionHeight = 0;
+    let startView = document.querySelector(".start-header");
+    let sections = Array.from(document.querySelectorAll(".section"));
+    let distance = 0;
+    let startViewHeight = startView.offsetHeight;
+		let sectionsHeight = [startViewHeight];
 		let thisSectionHeight = 0;
-		Array.from(sections).map((item, index) => {
-			if (item.getAttribute('id') === this.props.elem.id) {
-				(index > 0 && (prevSectionHeight = sections[index - 1].offsetHeight * index));
-				thisSectionHeight = sections[index].offsetHeight;
+    sections.map((item, index) => (sectionsHeight.push(item.offsetHeight)));
+    sections.map((item, index) => {
+      item.getAttribute('id') === this.props.elem.id && (
+				sectionsHeight.splice(index + 1, (sectionsHeight.length - (index + 1))) && 
+				((distance = sectionsHeight.reduce(function (total, nmbr) { return total + nmbr; })) &&
+				(thisSectionHeight = sections[index].offsetHeight)
+				)
+      ) //połączyć długości do bieżącej sekcji 
+    }
+    )
+    window.addEventListener('resize', () => {
+      let startViewHeight = startView.offsetHeight;
+      let sectionsHeight = [startViewHeight];
+      sections.map((item, index) => (sectionsHeight.push(item.offsetHeight)));
+			sections.map((item, index) => {
+				item.getAttribute('id') === this.props.elem.id && (
+					sectionsHeight.splice(index + 1, (sectionsHeight.length - (index + 1))) && 
+					((distance = sectionsHeight.reduce(function (total, nmbr) { return total + nmbr; })) &&
+					(thisSectionHeight = sections[index].offsetHeight)
+					)
+				) //połączyć długości do bieżącej sekcji 
 			}
-		}
-		
-		)
-		console.log("A" + startViewHeight);
-		//console.log(sectionView.id)
-		window.addEventListener('resize', () => {
-			// 	startViewHeight = startView.offsetHeight;
-			// 	Array.from(sections).map((item, index) => {
-			// 		if (item.getAttribute('id') === this.props.elem.id) {
-			// 			(index > 0 && (prevSectionHeight = sections[index - 1].offsetHeight * index));
-			// 			thisSectionHeight = sections[index].offsetHeight;
-			// 		}
-			// 	}
-			// 	)
-			console.log("R" + startViewHeight);
-		});
+      )
+      console.log("M" + distance);
+      this.handleScroll(distance);
+    });
 
-		window.addEventListener('scroll', () => this.handleScroll(startViewHeight + prevSectionHeight, thisSectionHeight));
+		window.addEventListener('scroll', () => this.handleScroll(distance, thisSectionHeight));
 	}
 
 	componentWillUnmount() {
@@ -45,7 +51,7 @@ class MainRadio extends React.Component {
 
 	handleScroll(distance, sectionHeight) {
 		let active = "radio__elem--active";
-		let newDistance = distance - 50;
+		let newDistance = distance - 10;
 		if ((window.scrollY > newDistance) && (window.scrollY < (newDistance + sectionHeight))) {
 			(this.state.radioOn !== active && this.setState({ radioOn: active }))
 		} else {

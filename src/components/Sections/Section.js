@@ -9,19 +9,31 @@ class Section extends React.Component {
   }
 
   componentDidMount() {
-    let startView = document.querySelector(".start-header").offsetHeight;
+    let startView = document.querySelector(".start-header");
     let sections = Array.from(document.querySelectorAll(".section"));
-    let sectionsHeight = [startView];
-    sections.map((item, index) => (sectionsHeight.push(item.offsetHeight)))
     let distance = 0;
+    let startViewHeight = startView.offsetHeight;
+    let sectionsHeight = [startViewHeight];
+    sections.map((item, index) => (sectionsHeight.push(item.offsetHeight)));
     sections.map((item, index) => {
-      
       item.getAttribute('id') === this.props.elem.id && (
         sectionsHeight.splice(index + 1, (sectionsHeight.length - (index + 1))) && (distance = sectionsHeight.reduce(function (total, nmbr) { return total + nmbr; }))
+      ) //połączyć długości do bieżącej sekcji 
+    }
+    )
+    window.addEventListener('resize', () => {
+      let startViewHeight = startView.offsetHeight;
+      let sectionsHeight = [startViewHeight];
+      sections.map((item, index) => (sectionsHeight.push(item.offsetHeight)));
+      sections.map((item, index) => {
+        item.getAttribute('id') === this.props.elem.id && (
+          sectionsHeight.splice(index + 1, (sectionsHeight.length - (index + 1))) && (distance = sectionsHeight.reduce(function (total, nmbr) { return total + nmbr; }))
         ) //połączyć długości do bieżącej sekcji 
       }
-    )
-    console.log(distance)
+      )
+      console.log("M" + distance);
+      this.handleScroll(distance);
+    });
     window.addEventListener('scroll', () => this.handleScroll(distance));
   }
 
@@ -29,8 +41,8 @@ class Section extends React.Component {
     window.removeEventListener('scroll', () => this.handleScroll());
   }
 
-  handleScroll(distance) {    
-    (window.scrollY > (distance - 50) &&
+  handleScroll(distance) {
+    (window.scrollY > (distance) &&
       (this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" })))
     //(window.scrollY <= 500 && visibility === false) && (this.setState({ visible: true }))
   }
