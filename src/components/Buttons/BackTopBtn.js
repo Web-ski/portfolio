@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter, Route, NavLink, Link } from "react-router-dom";
 import './Buttons.scss';
 
 class BackTopBtn extends React.Component {
@@ -22,7 +21,7 @@ class BackTopBtn extends React.Component {
   }
 
   handleScroll(visibility) {
-    console.log(visibility);
+    //console.log(visibility);
     (window.scrollY > 500 && visibility === true) && (this.setState({ visible: false }));
     (window.scrollY <= 500 && visibility === false) && (this.setState({ visible: true }))
   }

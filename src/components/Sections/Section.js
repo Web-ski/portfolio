@@ -35,7 +35,7 @@ class Section extends React.Component {
     return (<section id={elem.id} className={elem.section}>
       {(elem.children !== undefined) && (
         (elem.children).map((item, index) => {
-          if (item.article !== undefined) { return <Article key={item.article + index} elem={[item, this.state.sectionOn]} /> };
+          if (item.article !== undefined) { return <Article key={item.toString() + index} elem={[item, this.state.sectionOn]} /> };
         })
       )}
     </section>)

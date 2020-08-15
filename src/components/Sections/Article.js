@@ -16,12 +16,12 @@ class Article extends React.Component {
     return <article className={elem.article + " " + elemsOn}>
       {(elem.children !== undefined) && (
         (elem.children).map((item, index) => {
-          if (item.pageTitle !== undefined) { return <PageTitle key={item.pageTitle + index} elem={item} /> };
-          if (item.sectionTitle !== undefined) { return <SectionTitle key={item.sectionTitle + index} elem={item} /> };
-          if (item.articleText !== undefined) { return <ArticleText key={item.articleText + index} elem={item} /> };
-          if (item.articleLink !== undefined) { return <ArticleLink key={item.articleLink + index} elem={item} /> };
-          if (item.photoLink !== undefined) { return <PhotoLink key={item.articleLink + index} elem={item} /> };
-          if (item.div !== undefined) { return <Div key={item.div + index} elem={item} /> };
+          if (item.pageTitle !== undefined) { return <PageTitle key={item.toString() + index} elem={item} /> };
+          if (item.sectionTitle !== undefined) { return <SectionTitle key={item.toString() + index} elem={item} /> };
+          if (item.articleText !== undefined) { return <ArticleText key={item.toString() + index} elem={item} /> };
+          if (item.articleLink !== undefined) { return <ArticleLink key={item.toString() + index} elem={item} /> };
+          if (item.photoLink !== undefined) { return <PhotoLink key={item.toString() + index} elem={item} /> };
+          if (item.div !== undefined) { return <Div key={item.toString() + index} elem={item} /> };
         })
       )}
     </article>
