@@ -88,6 +88,30 @@
     }
   }
 
+  .photo__box {
+    position: relative;
+    display: flex;
+    min-height: 50vh;
+    width: 100%;
+
+    .article__pattern {
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 85%;
+      //z-index: 0;
+
+      .pattern {}
+
+      @media screen and (min-width: $min-md) {
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 85%;
+      }
+    }
+  }
+
   .articleOn {
     opacity: 1;
     animation: articleOn 1s;

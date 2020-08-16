@@ -1,0 +1,211 @@
+@import "../../styles/_reset.scss";
+@import '../../styles/_variables.scss';
+@import "../../styles/_extends.scss";
+@import "../../styles/_layout.scss";
+
+.webs {
+  background-color: DimGrey;
+  background-image: none;
+
+  .page__title {
+    display: flex;
+    color: $text-white;
+    font-size: 20px;
+    font-family: $main-font;
+    text-transform: uppercase;
+    //font-weight: bold;
+    height: 100%;
+    width: 100%;
+    justify-content: left;
+    align-items: center; //animation: glow 1s ease-in-out infinite alternate;
+    margin-bottom: 2vh;
+
+    @media screen and (min-width: $min-md) {
+      font-size: calc(22px + 1vw);
+    }
+
+    @media screen and (min-width: $min-lg) {}
+
+    @media screen and (min-width: $min-xl) {}
+
+    @media screen and (min-width: $min-xxl) {
+      font-size: 45px;
+    }
+  }
+
+  .section__title {
+    display: flex;
+    color: $text-blue; //$text-white;
+    font-size: 20px;
+    font-family: $main-font;
+    //font-weight: bold;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center; //animation: glow 1s ease-in-out infinite alternate;
+
+    @media screen and (min-width: $min-md) {
+      font-size: calc(20px + 1vw);
+    }
+
+    @media screen and (min-width: $min-lg) {}
+
+    @media screen and (min-width: $min-xl) {}
+
+    @media screen and (min-width: $min-xxl) {
+      font-size: 40px;
+    }
+  }
+
+  .article__text {
+    color: $text-white;
+    line-height: 180%;
+    margin-bottom: 2vh;
+
+    @media screen and (min-width: $min-md) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $min-lg) {
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: $min-xl) {}
+
+    @media screen and (min-width: $min-xxl) {
+      font-size: 20px;
+    }
+  }
+
+  .photo__box {
+    @include flex;
+
+    .article__pattern {
+      position: absolute;
+      display: block;
+      height: 250px;
+      width: 100%;
+      border-radius: 2px;
+      left: 0;
+      top: 0;
+      //background-color: $text-blue2;
+      background-size: 200%;
+      background-attachment: fixed;
+      border: solid 1px $text-blue2;
+    }
+
+    .viewer__box {
+      width: 90%;
+      margin: 0px auto 20px;
+      height: auto;
+      //min-height: 200px;
+      cursor: pointer;
+
+      .picture__box {
+        width: 100%;
+
+        .article__photo {
+          padding: 10px;
+          border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          -o-border-radius: 2px;
+        }
+      }
+    }
+
+    @media screen and (min-width: $min-md) {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(auto-fill, 1fr);
+      align-items: stretch;
+      justify-items: stretch;
+      height: 90%;
+      min-height: 50vh;
+      max-height: 60vh;
+
+      .viewer__box {
+        overflow: hidden;
+        display: grid;
+        align-items: stretch;
+        height: 100%;
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        border-radius: 2px;
+
+        .picture_box {
+          width: 100%;
+
+          .article__photo {}
+
+        }
+        &:nth-of-type(1),
+        &:nth-of-type(5) {
+          grid-column-start: 2;
+          grid-column-end: 6;
+        }
+
+        &:nth-of-type(2),
+        &:nth-of-type(6) {
+          grid-column-start: 4;
+          grid-column-end: 6;
+          grid-row: 1fr;
+        }
+
+        &:nth-of-type(3) {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+
+        &:nth-of-type(4) {
+          grid-column-start: 3;
+          grid-column-end: 6;
+        }
+      }
+
+
+      .article__pattern {
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 80%;
+        border-radius: 2px;
+        left: 10%; //left: 20%;
+        background-size: 100%;
+        background-attachment: fixed;
+        background-position: left;
+
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+      }
+    }
+
+    @media screen and (min-width: $min-xxl) {
+      width: 33%;
+    }
+  }
+
+  @media screen and (min-width: $min-md) {
+
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:nth-of-type(4),
+    &:nth-of-type(5) {
+      .photo__box {
+        .viewer__box {
+          &:nth-of-type(3) {
+            grid-column-start: 1;
+            grid-column-end: 6;
+          }
+        }
+      }
+    }
+  }
+
+}

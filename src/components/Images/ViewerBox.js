@@ -1,6 +1,6 @@
 import React from 'react';
 import './Images.scss';
-import ArticlePhoto from './ArticlePhoto';
+import ViewerPicture from './ViewerPicture';
 
 class ViewerBox extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class ViewerBox extends React.Component {
     return <div className={elem.viewerBox}>
       {(elem.children !== undefined) && (
         (elem.children).map((item, index) => {
-          if (item.img !== undefined) { return <ArticlePhoto key={item.toString() + index} elem={item} /> };
+          if (item.img !== undefined) { return <ViewerPicture key={item.toString() + index} elem={item} /> };
         })
       )}
     </div>

@@ -1,12 +1,12 @@
 [
   {
-    "section": "section",
+    "section": "section webs",
     "children": [
       {
         "article": "article",
         "children": [
           {
-            "sectionTitle": "section__title",
+            "sectionTitle": "page__title",
             "text": "My Websites"
           },
           {
@@ -127,7 +127,7 @@
         ]
       },
       {
-        "article": "article",
+        "article": "article photo__box",
         "children": [
           {
             "viewerBox": "viewer__box",
@@ -163,7 +163,7 @@
     ]
   },
   {
-    "section": "section",
+    "section": "section webs",
     "children": [
       {
         "article": "article",
@@ -193,7 +193,7 @@
         ]
       },
       {
-        "article": "article",
+        "article": "article photo__box",
         "children": [
           {
             "viewerBox": "viewer__box",
@@ -221,7 +221,7 @@
     ]
   },
   {
-    "section": "section",
+    "section": "section webs",
     "children": [
       {
         "article": "article",
@@ -251,7 +251,7 @@
         ]
       },
       {
-        "article": "article",
+        "article": "article photo__box",
         "children": [
           {
             "viewerBox": "viewer__box",
@@ -279,7 +279,7 @@
     ]
   },
   {
-    "section": "section",
+    "section": "section webs",
     "children": [
       {
         "article": "article",
@@ -309,7 +309,7 @@
         ]
       },
       {
-        "article": "article",
+        "article": "article photo__box",
         "children": [
           {
             "viewerBox": "viewer__box",
@@ -337,7 +337,7 @@
     ]
   },
   {
-    "section": "section",
+    "section": "section webs",
     "children": [
       {
         "article": "article",
@@ -367,7 +367,7 @@
         ]
       },
       {
-        "article": "article",
+        "article": "article photo__box",
         "children": [
           {
             "viewerBox": "viewer__box",
