@@ -7,12 +7,12 @@ import ArticleLink from '../Links/ArticleLink'
 import Div from './Div';
 import PhotoLink from '../Links/PhotoLink';
 import ViewerBox from '../Images/ViewerBox';
+import AsideNumber from '../Titles/AsideNumber';
 
 class Article extends React.Component {
 
   render() {
     const elem = this.props.elem[0];
-    console.log("ARTICLE", elem)
     const elemsOn = this.props.elem[1];
     return <article className={elem.article + " " + elemsOn}>
       {(elem.children !== undefined) && (
@@ -20,6 +20,7 @@ class Article extends React.Component {
           if (item.pageTitle !== undefined) { return <PageTitle key={item.toString() + index} elem={item} /> };
           if (item.sectionTitle !== undefined) { return <SectionTitle key={item.toString() + index} elem={item} /> };
           if (item.articleText !== undefined) { return <ArticleText key={item.toString() + index} elem={item} /> };
+          if (item.asideNumber !== undefined) { return <AsideNumber key={item.toString() + index} elem={item} /> };
           if (item.articleLink !== undefined) { return <ArticleLink key={item.toString() + index} elem={item} /> };
           if (item.photoLink !== undefined) { return <PhotoLink key={item.toString() + index} elem={item} /> };
           if (item.div !== undefined) { return <Div key={item.toString() + index} elem={item} /> };

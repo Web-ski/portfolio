@@ -7,76 +7,6 @@
   background-color: DimGrey;
   background-image: none;
 
-  .page__title {
-    display: flex;
-    color: $text-white;
-    font-size: 20px;
-    font-family: $main-font;
-    text-transform: uppercase;
-    //font-weight: bold;
-    height: 100%;
-    width: 100%;
-    justify-content: left;
-    align-items: center; //animation: glow 1s ease-in-out infinite alternate;
-    margin-bottom: 2vh;
-
-    @media screen and (min-width: $min-md) {
-      font-size: calc(22px + 1vw);
-    }
-
-    @media screen and (min-width: $min-lg) {}
-
-    @media screen and (min-width: $min-xl) {}
-
-    @media screen and (min-width: $min-xxl) {
-      font-size: 45px;
-    }
-  }
-
-  .section__title {
-    display: flex;
-    color: $text-blue; //$text-white;
-    font-size: 20px;
-    font-family: $main-font;
-    //font-weight: bold;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center; //animation: glow 1s ease-in-out infinite alternate;
-
-    @media screen and (min-width: $min-md) {
-      font-size: calc(20px + 1vw);
-    }
-
-    @media screen and (min-width: $min-lg) {}
-
-    @media screen and (min-width: $min-xl) {}
-
-    @media screen and (min-width: $min-xxl) {
-      font-size: 40px;
-    }
-  }
-
-  .article__text {
-    color: $text-white;
-    line-height: 180%;
-    margin-bottom: 2vh;
-
-    @media screen and (min-width: $min-md) {
-      font-size: 16px;
-    }
-
-    @media screen and (min-width: $min-lg) {
-      font-size: 18px;
-    }
-
-    @media screen and (min-width: $min-xl) {}
-
-    @media screen and (min-width: $min-xxl) {
-      font-size: 20px;
-    }
-  }
-
   .photo__box {
     @include flex;
     overflow: hidden;
@@ -84,7 +14,7 @@
     .article__pattern {
       position: absolute;
       display: block;
-      height: 250px;
+      height: 100%;//250px;
       width: 100%;
       border-radius: 2px;
       left: 0;
@@ -97,7 +27,7 @@
 
     .viewer__box {
       width: 100%;
-      height: 250px;
+      height: 100%;//250px;
 
       //overflow;
       margin: 0px auto 20px;

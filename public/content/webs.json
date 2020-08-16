@@ -6,15 +6,15 @@
         "article": "article",
         "children": [
           {
-            "sectionTitle": "page__title",
+            "sectionTitle": "page__title--second",
             "text": "My Websites"
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "This site presents websites made by me."
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "I started creating the first websites eight years ago using ",
             "children": [
               {
@@ -29,7 +29,7 @@
             ]
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "In 2018, I started learning how to create websites professionally. In 2019, I also started creating the first pages myself, using: ",
             "children": [
               {
@@ -169,23 +169,23 @@
         "article": "article",
         "children": [
           {
-            "sectionTitle": "section__title",
+            "sectionTitle": "section__title--second",
             "text": "XI Festival of Literature and Theatre: Kosmopolis 2020"
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "In 2020 I made the website for the experimental online edition of the bilingual Festival of Literature and Theatre: Between.Pomiędzy."
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "It was an extraordinary project in the unusual situation of the world coronavirus epidemic."
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "I used the front-end technologies and tools, such as: HTML5, SCSS, JavaScript, React, Git, GitHub, VSCode. I was also UX and UI designer of this website."
           },
           {
-            "a": "article__link",
+            "articleLink": "article__link--second",
             "href": "https://www.kosmopolis-between.pl/",
             "target": "blank",
             "text": "Go to the website"
@@ -215,7 +215,7 @@
         ]
       },
       {
-        "aside": "articleNumber",
+        "asideNumber": "article__number--aside",
         "text": "2020"
       }
     ]
@@ -227,23 +227,23 @@
         "article": "article",
         "children": [
           {
-            "sectionTitle": "section__title",
+            "sectionTitle": "section__title--second",
             "text": "Research Institute of Armenian Studies"
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "In 2019 I made the website of the academic association 'Research Institute of Armenian Studies' (originally: 'Instytut Badań Ormiańskich')."
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "In the first version I had created this project by CMS wix in 2018. It was a part of my professional activity at that time."
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
           },
           {
-            "a": "article__link",
+            "articleLink": "article__link--second",
             "href": "https://www.armenian-institute-ibo.org/",
             "target": "blank",
             "text": "Go to the website"
@@ -273,7 +273,7 @@
         ]
       },
       {
-        "aside": "articleNumber",
+        "asideNumber": "article__number--aside",
         "text": "2019"
       }
     ]
@@ -285,23 +285,23 @@
         "article": "article",
         "children": [
           {
-            "sectionTitle": "section__title",
+            "sectionTitle": "section__title--second",
             "text": "European Journal of Transformation Studies"
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "In 2018 I made the website of the academic journal 'European Journal of Transformation Studies'."
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "In the first version I had created this project by CMS wix in 2018. It was a part of my professional activity at that time."
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
           },
           {
-            "a": "article__link",
+            "articleLink": "article__link--second",
             "href": "https://www.journal-transformation.org/",
             "target": "blank",
             "text": "Go to the website"
@@ -331,7 +331,7 @@
         ]
       },
       {
-        "aside": "articleNumber",
+        "asideNumber": "article__number--aside",
         "text": "2019"
       }
     ]
@@ -343,23 +343,23 @@
         "article": "article",
         "children": [
           {
-            "sectionTitle": "section__title",
+            "sectionTitle": "section__title--second",
             "text": "Research Institute for European Policy"
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "In 2019 I made the website of the academic association 'Research Institute for European Policy' (originally: 'Instytut Badań nad Polityką Europejską'). It was may first website made by front-end technologies."
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "At the beginning, in 2015 I had created this project by CMS of home.pl, and recreated on CMS wix in 2016. It was a part of my professional activity at that time."
           },
           {
-            "articleText": "section__text",
+            "articleText": "article__text--second",
             "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, jQuery, Git, GitHub, VSCode. I was also UX and UI designer of this website."
           },
           {
-            "a": "article__link",
+            "articleLink": "article__link--second",
             "href": "https://www.riep.org/",
             "target": "blank",
             "text": "Go to the website"
@@ -389,7 +389,7 @@
         ]
       },
       {
-        "aside": "articleNumber",
+        "asideNumber": "article__number--aside",
         "text": "2019"
       }
     ]
