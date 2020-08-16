@@ -12,7 +12,7 @@ class Section extends React.Component {
     let startView = document.querySelector(".start-header");
     let sections = Array.from(document.querySelectorAll(".section"));
     let distance = 0;
-    let startViewHeight = startView.offsetHeight;
+    let startViewHeight = (startView !== null ? startView.offsetHeight : 100);//startView.offsetHeight; //<---- tu poprawić
     let sectionsHeight = [startViewHeight];
     sections.map((item, index) => (sectionsHeight.push(item.offsetHeight)));
     sections.map((item, index) => {
@@ -22,7 +22,7 @@ class Section extends React.Component {
     }
     )
     window.addEventListener('resize', () => {
-      let startViewHeight = startView.offsetHeight;
+      let startViewHeight = (startView !== null ? startView.offsetHeight : 100);
       let sectionsHeight = [startViewHeight];
       sections.map((item, index) => (sectionsHeight.push(item.offsetHeight)));
       sections.map((item, index) => {
@@ -42,13 +42,14 @@ class Section extends React.Component {
   }
 
   handleScroll(distance) {
-    (window.scrollY > (distance) &&
+    (window.scrollY > (distance - 20) &&
       (this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" })))
     //(window.scrollY <= 500 && visibility === false) && (this.setState({ visible: true }))
   }
 
   render() {
     const elem = this.props.elem;
+    console.log("SECTION", elem)
     return (<section id={elem.id} className={elem.section}>
       {(elem.children !== undefined) && (
         (elem.children).map((item, index) => {

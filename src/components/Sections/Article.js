@@ -6,12 +6,13 @@ import ArticleText from '../Texts/ArticleText'
 import ArticleLink from '../Links/ArticleLink'
 import Div from './Div';
 import PhotoLink from '../Links/PhotoLink';
+import ViewerBox from '../Images/ViewerBox';
 
 class Article extends React.Component {
 
   render() {
-    //console.log(this.props.elem)
     const elem = this.props.elem[0];
+    console.log("ARTICLE", elem)
     const elemsOn = this.props.elem[1];
     return <article className={elem.article + " " + elemsOn}>
       {(elem.children !== undefined) && (
@@ -22,6 +23,13 @@ class Article extends React.Component {
           if (item.articleLink !== undefined) { return <ArticleLink key={item.toString() + index} elem={item} /> };
           if (item.photoLink !== undefined) { return <PhotoLink key={item.toString() + index} elem={item} /> };
           if (item.div !== undefined) { return <Div key={item.toString() + index} elem={item} /> };
+          if (item.viewerBox !== undefined) { return <React.Fragment key={item.toString() + index}>
+              <ViewerBox elem={item} /> 
+              <div className="article__pattern">
+                <div className="pattern"></div>
+              </div>
+            </React.Fragment>
+          };
         })
       )}
     </article>
