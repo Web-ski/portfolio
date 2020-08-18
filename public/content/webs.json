@@ -185,7 +185,7 @@
             "text": "I used the front-end technologies and tools, such as: HTML5, SCSS, JavaScript, React, Git, GitHub, VSCode. I was also UX and UI designer of this website."
           },
           {
-            "articleLink": "article__link--second",
+            "outsideLink": "article__link--second",
             "href": "https://www.kosmopolis-between.pl/",
             "target": "blank",
             "text": "Go to the website"
@@ -243,7 +243,7 @@
             "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
           },
           {
-            "articleLink": "article__link--second",
+            "outsideLink": "article__link--second",
             "href": "https://www.armenian-institute-ibo.org/",
             "target": "blank",
             "text": "Go to the website"
@@ -301,7 +301,7 @@
             "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
           },
           {
-            "articleLink": "article__link--second",
+            "outsideLink": "article__link--second",
             "href": "https://www.journal-transformation.org/",
             "target": "blank",
             "text": "Go to the website"
@@ -359,7 +359,7 @@
             "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, jQuery, Git, GitHub, VSCode. I was also UX and UI designer of this website."
           },
           {
-            "articleLink": "article__link--second",
+            "outsideLink": "article__link--second",
             "href": "https://www.riep.org/",
             "target": "blank",
             "text": "Go to the website"
