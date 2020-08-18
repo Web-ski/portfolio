@@ -30,22 +30,26 @@
 .page__title--second {
   @extend .page__title;
   color: $text-white;
-  font-size: 22px;
   text-transform: uppercase;
   justify-content: left;
   align-items: center; //animation: glow 1s ease-in-out infinite alternate;
   margin-bottom: 2vh;
+  font-size: calc(22px + 1vh);
 
   @media screen and (min-width: $min-md) {
-    font-size: calc(22px + 1vw);
+    font-size: calc(25px + 1vw);
   }
 
-  @media screen and (min-width: $min-lg) {}
+  @media screen and (min-width: $min-lg) {
+    font-size: calc(30px + 1vw);
+  }
 
-  @media screen and (min-width: $min-xl) {}
+  @media screen and (min-width: $min-xl) {
+    font-size: calc(35px + 1vw);
+  }
 
   @media screen and (min-width: $min-xxl) {
-    font-size: 45px;
+    font-size: calc(40px + 1vw);
   }
 }
 
@@ -53,8 +57,8 @@
   font-family: $main-font;
   color: $text-white;
   text-transform: uppercase;
-  font-size: calc(25px + 1vh);
   margin-bottom: 2vh;
+  font-size: calc(25px + 1vh);
 
   @media screen and (min-width: $min-md) {
     font-size: calc(25px + 1vw);
@@ -76,10 +80,26 @@
 .section__title--second {
   @extend .section__title;
   color: $text-blue; //$text-white;
-  font-size: 20px;
   //font-weight: bold;
   justify-content: center;
   align-items: center; //animation: glow 1s ease-in-out infinite alternate;
+  font-size: calc(20px + 1vh);
+
+  @media screen and (min-width: $min-md) {
+    font-size: calc(22px + 1vw);
+  }
+
+  @media screen and (min-width: $min-lg) {
+    font-size: calc(25px + 1vw);
+  }
+
+  @media screen and (min-width: $min-xl) {
+    font-size: calc(28px + 1vw);
+  }
+
+  @media screen and (min-width: $min-xxl) {
+    font-size: calc(30px + 1vw);
+  }
 }
 
 .article__number--aside {
