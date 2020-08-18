@@ -13,8 +13,9 @@ class Section extends React.Component {
     let startView = document.querySelector(".start-header");
     let sections = Array.from(document.querySelectorAll(".section"));
     let distance = 0;
-    let startViewHeight = (startView !== null ? startView.offsetHeight : 100);//startView.offsetHeight; //<---- tu poprawić
+    let startViewHeight = (startView !== null ? startView.offsetHeight : 0);//startView.offsetHeight; //<---- tu poprawić
     let sectionsHeight = [startViewHeight];
+    startView === null && (this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" }));
     sections.map((item, index) => (sectionsHeight.push(item.offsetHeight)));
     sections.map((item, index) => {
       item.getAttribute('id') === this.props.elem.id && (
@@ -23,7 +24,7 @@ class Section extends React.Component {
     }
     )
     window.addEventListener('resize', () => {
-      let startViewHeight = (startView !== null ? startView.offsetHeight : 100);
+      let startViewHeight = (startView !== null ? startView.offsetHeight : 0);
       let sectionsHeight = [startViewHeight];
       sections.map((item, index) => (sectionsHeight.push(item.offsetHeight)));
       sections.map((item, index) => {
@@ -40,6 +41,7 @@ class Section extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener('scroll', () => this.handleScroll());
+    window.removeEventListener('resize', () => {});
   }
 
   handleScroll(distance) {

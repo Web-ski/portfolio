@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import './Links.scss';
 
 class OutsideLink extends React.Component {
