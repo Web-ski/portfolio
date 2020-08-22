@@ -23,7 +23,8 @@ export const PAGE = PAGE_NAME.map((item, index) => (index !== 1 ? new HERO_ELEM(
 export const URL_HOME = "content/articles.json";
 /*webs page*/
 export const URL_WEBS = "content/webs.json";
-
+/*ux page*/
+export const URL_UX = "content/ux.json";
 
 /*section "footer"*/
 

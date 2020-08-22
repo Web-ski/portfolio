@@ -10,9 +10,9 @@ import BackTopBtn from '../Buttons/BackTopBtn';
 class Webs extends React.Component {
   render() {
     return <div>
-            <SecondHeader />
-            <BackTopBtn />
-            <SecondMain url={ URL_WEBS }/>
+      <SecondHeader />
+      <BackTopBtn />
+      <SecondMain url={ URL_WEBS }/>
       <Footer />
     </div>
   }
