@@ -35,27 +35,27 @@
             "children": [
               {
                 "img": "article__photo",
-                "src": "booksUX.png"
+                "src": "./images/photos/booksUX.png"
               },
               {
                 "img": "article__photo",
-                "src": "personaUX.jpg"
+                "src": "./images/photos/personaUX.jpg"
               },
               {
                 "img": "article__photo",
-                "src": "mapa-emaptiiUX.jpg"
+                "src": "./images/photos/mapa-emaptiiUX.jpg"
               },
               {
                 "img": "article__photo",
-                "src": "UXproject1.png"
+                "src": "./images/photos/UXproject1.png"
               },
               {
                 "img": "article__photo",
-                "src": "ux-course.jpg"
+                "src": "./images/photos/ux-course.jpg"
               },
               {
                 "img": "article__photo",
-                "src": "certyfikatUX.jpg"
+                "src": "./images/photos/certyfikatUX.jpg"
               }
             ]
           }
@@ -112,15 +112,15 @@
             "children": [
               {
                 "img": "article__photo",
-                "src": "cosmopolis-screen.png"
+                "src": "./images/photos/cosmopolis-screen.png"
               },
               {
                 "img": "article__photo",
-                "src": "cosmopolis-UX2.png"
+                "src": "./images/photos/cosmopolis-UX2.png"
               },
               {
                 "img": "article__photo",
-                "src": "cosmopolis3-screen.png"
+                "src": "./images/photos/cosmopolis3-screen.png"
               }
             ]
           }
@@ -170,15 +170,15 @@
             "children": [
               {
                 "img": "article__photo",
-                "src": "zeton-landing-page-v2.jpg"
+                "src": "./images/photos/zeton-landing-page-v2.jpg"
               },
               {
                 "img": "article__photo",
-                "src": "zeton-landing-page-v2b.jpg"
+                "src": "./images/photos/zeton-landing-page-v2b.jpg"
               },
               {
                 "img": "article__photo",
-                "src": "zeton-landing-page-v1b.jpg"
+                "src": "./images/photos/zeton-landing-page-v1b.jpg"
               }
             ]
           }
@@ -232,27 +232,27 @@
             "children": [
               {
                 "img": "article__photo",
-                "src": "zielone-slodzone.png"
+                "src": "./images/photos/zielone-slodzone.png"
               },
               {
                 "img": "article__photo",
-                "src": "zielone-slodzone-1.png"
+                "src": "./images/photos/zielone-slodzone-1.png"
               },
               {
                 "img": "article__photo",
-                "src": "zielone-slodzone-2.png"
+                "src": "./images/photos/zielone-slodzone-2.png"
               },
               {
                 "img": "article__photo",
-                "src": "zielone-slodzone-3.png"
+                "src": "./images/photos/zielone-slodzone-3.png"
               },
               {
                 "img": "article__photo",
-                "src": "zielone-slodzone-4.png"
+                "src": "./images/photos/zielone-slodzone-4.png"
               },
               {
                 "img": "article__photo",
-                "src": "zielone-slodzone-5.png"
+                "src": "./images/photos/zielone-slodzone-5.png"
               }
             ]
           }
@@ -321,27 +321,27 @@
             "children": [
               {
                 "img": "article__photo",
-                "src": "sky-cash-UX1.png"
+                "src": "./images/photos/sky-cash-UX1.png"
               },
               {
                 "img": "article__photo",
-                "src": "sky-cash-UX2.png"
+                "src": "./images/photos/sky-cash-UX2.png"
               },
               {
                 "img": "article__photo",
-                "src": "sky-cash-UX2-1.png"
+                "src": "./images/photos/sky-cash-UX2-1.png"
               },
               {
                 "img": "article__photo",
-                "src": "sky-cash-UX2-2.png"
+                "src": "./images/photos/sky-cash-UX2-2.png"
               },
               {
                 "img": "article__photo",
-                "src": "sky-cash-UX3.png"
+                "src": "./images/photos/sky-cash-UX3.png"
               },
               {
                 "img": "article__photo",
-                "src": "sky-cash-UX4.jpg"
+                "src": "./images/photos/sky-cash-UX4.jpg"
               }
             ]
           }
