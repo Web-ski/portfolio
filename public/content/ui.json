@@ -77,25 +77,25 @@
             "div": "container",
             "children": [
               {
-                "a": "article__link",
+                "outsideLink": "article__link--second",
                 "href": "https://www.riep.org",
                 "target": "blank",
                 "text": "Website of RIEP"
               },
               {
-                "a": "article__link",
+                "outsideLink": "article__link--second",
                 "href": "https://www.journal-transformation.org/",
                 "target": "blank",
                 "text": "Website of EJTS"
               },
               {
-                "a": "article__link",
+                "outsideLink": "article__link--second",
                 "href": "https://www.armenian-institute-ibo.org/",
                 "target": "blank",
                 "text": "Website of IBO"
               },
               {
-                "a": "article__link",
+                "outsideLink": "article__link--second",
                 "href": "https://www.kosmopolis-between.pl/",
                 "target": "blank",
                 "text": "Website of Kosmopolis"
@@ -258,19 +258,19 @@
             "div": "container",
             "children": [
               {
-                "a": "article__link",
+                "outsideLink": "article__link--second",
                 "href": "https://historia.org.pl/2010/11/25/elbing-1945%E2%80%A6-t-stezala-recenzja/",
                 "target": "blank",
                 "text": "Book review 'Elbing 1945'"
               },
               {
-                "a": "article__link",
+                "outsideLink": "article__link--second",
                 "href": "https://www.journal-transformation.org/issues.html",
                 "target": "blank",
                 "text": "Issues of 'EJTS'"
               },
               {
-                "a": "article__link",
+                "outsideLink": "article__link--second",
                 "href": "https://www.armenian-institute-ibo.org/publications.html",
                 "target": "blank",
                 "text": "Issues of 'BIBO'"
@@ -357,25 +357,25 @@
             "div": "container",
             "children": [
               {
-                "a": "article__link",
+                "outsideLink": "article__link--second",
                 "href": "https://pawelnieczuja.wixsite.com/missionart",
                 "target": "blank",
                 "text": "First project of my online exhibition"
               },
               {
-                "a": "article__link",
+                "outsideLink": "article__link--second",
                 "href": "http://archiwalna.galeria-el.pl/artysta/pawel-nieczuja-ostrowski.html",
                 "target": "blank",
                 "text": "Galeria El"
               },
               {
-                "a": "article__link",
+                "outsideLink": "article__link--second",
                 "href": "http://archiwalna.galeria-el.pl/klub-srodowisk-tworczych.html",
                 "target": "blank",
                 "text": "'Klub Środowisk Twórczych'"
               },
               {
-                "a": "article__link",
+                "outsideLink": "article__link--second",
                 "href": "https://www.portel.pl/kultura/czlowiek-i-materia/36921",
                 "target": "blank",
                 "text": "About exhibition in Galeria Nobilis"
