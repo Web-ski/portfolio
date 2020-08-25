@@ -8,6 +8,7 @@ import OutsideLink from '../Links/OutsideLink'
 import Div from './Div';
 import PhotoLink from '../Links/PhotoLink';
 import ViewerBox from '../Images/ViewerBox';
+import SliderBox from '../Sliders/SliderBox';
 import AsideNumber from '../Titles/AsideNumber';
 
 class Article extends React.Component {
@@ -26,6 +27,7 @@ class Article extends React.Component {
           if (item.outsideLink !== undefined) { return <OutsideLink key={item.toString() + index} elem={item} /> };
           if (item.photoLink !== undefined) { return <PhotoLink key={item.toString() + index} elem={item} /> };
           if (item.div !== undefined) { return <Div key={item.toString() + index} elem={item} /> };
+          if (item.sliderBox!== undefined) { return <SliderBox key={item.toString() + index} elem={item} /> };
           if (item.viewerBox !== undefined) { return <React.Fragment key={item.toString() + index}>
               <ViewerBox elem={item} /> 
               <div className="article__pattern">

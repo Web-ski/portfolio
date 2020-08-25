@@ -1,32 +1,32 @@
 [
   {
-    "section": "section",
+    "section": "section cv",
     "children": [
       {
         "article": "article",
         "children": [
           {
-            "h1": "sectionTitle",
+            "sectionTitle": "page__title--second",
             "text": "PROFESSIONAL INFO"
           },
           {
-            "p": "sectionText",
+            "articleText": "article__text--second",
             "text": "I'm the junior front-end developer and UX/UI-designer."
           },
           {
-            "p": "sectionText",
+            "articleText": "article__text--second",
             "text": "For two years I have been gradually developing professionally in the direction of designing and programming websites and web applications."
           },
           {
-            "p": "sectionText",
+            "articleText": "article__text--second",
             "text": "I was prompted to enter this new career path by the willingness to use my own potential, through the possibility of further development and qualifications, my own interests in design, as well as searching for a work environment that is innovation-friendly and open to challenges."
           },
           {
-            "p": "sectionText",
+            "articleText": "article__text--second",
             "text": "In 2018, I completed my first online front-end course, and in 2019-2020 I was taking more advanced classroom courses. At the same time, I used the experience gained in the implementation of the first website designs, so far 5."
           },
           {
-            "a": "article__link",
+            "outsideLink": "article__link--second",
             "href": "./content/Nieczuja CV 2020.pdf",
             "target": "blank",
             "text": "Take my CV"
@@ -34,33 +34,37 @@
         ]
       },
       {
-        "article": "article",
-        "data": "slider-box",
+        "article": "article photo__box",
         "children": [
           {
-            "img": "slider__photo",
-            "src": "certyfikatUX.jpg"
-          },
-          {
-            "img": "slider__photo",
-            "src": "certyficatReact.png"
-          },
-          {
-            "img": "slider__photo",
-            "src": "Hack4Change.jpg"
+            "sliderBox": "slider__box",
+            "children": [
+              {
+                "img": "slider__photo",
+                "src": "./images/photos/certyfikatUX.jpg"
+              },
+              {
+                "img": "slider__photo",
+                "src": "./images/photos/certyficatReact.png"
+              },
+              {
+                "img": "slider__photo",
+                "src": "./images/photos/Hack4Change.jpg"
+              }
+            ]
           }
         ]
       }
     ]
   },
   {
-    "section": "section section__time-line",
+    "section": "section section__time-line cv",
     "children": [
       {
         "article": "article",
         "children": [
           {
-            "h1": "articleTitle",
+            "sectionTitle": "section__title--second",
             "text": "TIME-LINE"
           }
         ]
@@ -219,13 +223,13 @@
     ]
   },
   {
-    "section": "section section__tools-n-techs",
+    "section": "section section__tools-n-techs cv",
     "children": [
       {
         "article": "article",
         "children": [
           {
-            "h1": "articleTitle",
+            "sectionTitle": "section__title--second",
             "text": "TOOLS & TECHNOLOGIES"
           }
         ]

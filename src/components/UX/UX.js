@@ -8,7 +8,7 @@ import BackTopBtn from '../Buttons/BackTopBtn';
 
 class UX extends React.Component {
   render() {
-    return <div>UX-site
+    return <div>
       <SecondHeader />
       <BackTopBtn />
       <SecondMain url={ URL_UX }/>
