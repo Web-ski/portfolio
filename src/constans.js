@@ -25,6 +25,10 @@ export const URL_HOME = "content/articles.json";
 export const URL_WEBS = "content/webs.json";
 /*ux page*/
 export const URL_UX = "content/ux.json";
+/*ui page*/
+export const URL_UI = "content/ui.json";
+/*cv page*/
+export const URL_CV = "content/cv.json";
 
 /*section "footer"*/
 

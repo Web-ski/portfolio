@@ -1,0 +1,31 @@
+@import "../../styles/_reset.scss";
+@import '../../styles/_variables.scss';
+@import "../../styles/_extends.scss";
+@import "../../styles/_layout.scss";
+
+.ui {
+  background-color: DimGrey;
+  background-image: none;
+
+  .photo__box {
+    @include flex;
+    overflow: hidden;
+
+    .article__pattern {}
+
+    .viewer__box {}
+
+    @media screen and (min-width: $min-md) {
+
+
+      .viewer__box {
+
+
+        .picture_box {}
+
+      }
+
+      .article__pattern {}
+    }
+  }
+}
