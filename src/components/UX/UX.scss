@@ -6,4 +6,64 @@
 .ux {
   background-color: DimGrey;
   background-image: none;
+
+  .photo__box {
+    @include flex;
+    overflow: hidden;
+
+    .article__pattern {
+      position: absolute;
+      display: block;
+      height: 250px;
+      width: 100%;
+      border-radius: 5%;
+      box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.308);
+      left: 0;
+      top: 0;
+      background-image: radial-gradient(circle at 50%, cyan 20%, rgba(0, 255, 255, 0.671) 50%, rgba(128, 128, 128, 0.11)),
+        radial-gradient(circle at 10% 10%, rgba(0, 255, 255, 0.2) 10%, darkorchid 40%);
+      background-size: 100%;
+      background-attachment: fixed;
+    }
+
+    @media screen and (min-width: $min-md) {
+
+      .article__pattern {
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 85%;
+        border-radius: 5%;
+        left: 15%;
+        background-image: radial-gradient(circle at center, cyan, rgba(0, 255, 255, 0.2)),
+          radial-gradient(circle at bottom, rgba(0, 255, 255, .1), darkorchid 10%),
+          linear-gradient(to top, darkorchid, purple);
+        background-size: 100%;
+        background-attachment: fixed;
+        background-position: center;
+
+        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        -o-transform: rotateZ(0deg);
+
+        animation: pulsar 4s infinite;
+
+        @keyframes pulsar {
+          0% {
+            background-size: 100%;
+          }
+
+          50% {
+            background-size: 150%;
+          }
+
+          100% {
+            background-size: 100%;
+          }
+        }
+      }
+    }
+  }
 }
