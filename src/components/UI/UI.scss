@@ -23,7 +23,7 @@
       justify-items: center;
 
       @include img;
-      //background-image: url('../images/icons/plus-cyan.svg'), url('../images/icons/plus-cyan.svg'), url('../images/icons/plus-cyan.svg'), url('../images/icons/plus-cyan.svg'), url('../images/icons/plus-cyan.svg');
+      background-image: url('/images/icons/plus-cyan.svg'), url('/images/icons/plus-cyan.svg'), url('/images/icons/plus-cyan.svg'), url('/images/icons/plus-cyan.svg'), url('/images/icons/plus-cyan.svg');
       background-size: 220px, 10%, 10%, 10%, 10%;
       background-position: center, right bottom, right top, left bottom, left top;
       overflow: visible;

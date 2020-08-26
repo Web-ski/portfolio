@@ -77,48 +77,51 @@
     width: 35px;
     height: 35px;
     background-color: rgba(0, 0, 0, .1);
-   // background-image: url('../images/icons/arrow.svg');
+    background-image: url('/images/icons/arrow.svg');
     @include img;
     background-size: 85%;
     border: none;
     transition: $transition;
     border-radius: 50%;
     cursor: pointer;
-
+    
     @media screen and (min-width: $min-md) {
       width: 50px;
       height: 50px;
       background-size: 60%;
     }
-
+    
     &:hover {
       background-color: $bg-black;
       background-size: 85%;
     }
   }
-
+  
   .slider__arrow--left {
+    top: 50%;
+    transform: translateY(-50%);
     left: 1%;
   }
 
   .slider__arrow--right {
-    transform: rotateZ(180deg);
+    top: 50%;
+    transform: translateY(-50%) rotateZ(180deg);
     right: 1%;
   }
 
   .slider__sizer,
   .slider__resizer {
     @extend .slider__arrow;
-   // background-image: url('../images/icons/full-screen.svg');
+    background-image: url('/images/icons/full-screen.svg');
     margin: 0 auto;
-    bottom: 10%;
+    bottom: 0%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
   }
 
   .slider__resizer {
-   // background-image: url('../images/icons/small-screen.svg');
+    background-image: url('/images/icons/small-screen.svg');
   }
 
   .slides__modal {
