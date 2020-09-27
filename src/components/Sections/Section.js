@@ -3,6 +3,7 @@ import './Sections.scss';
 import Article from './Article';
 import AsideNumber from '../Titles/AsideNumber';
 import TimeLineBox from '../CV/TimeLineBox';
+import FlowToolsBox from '../CV/FlowToolsBox';
 
 class Section extends React.Component {
   constructor(props) {
@@ -59,6 +60,7 @@ class Section extends React.Component {
           if (item.article !== undefined) { return <Article key={item.toString() + index} elem={[item, this.state.sectionOn]} /> };
           if (item.asideNumber !== undefined) { return <AsideNumber key={item.toString() + index} elem={item} /> };
           if (item.timeLineBox !== undefined) { return <TimeLineBox key={item.toString() + index} elem={item} /> };
+          if (item.flowToolsBox !== undefined) { return <FlowToolsBox key={item.toString() + index} elem={item} /> };
         })
       )}
     </section>)

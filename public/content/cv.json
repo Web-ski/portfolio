@@ -234,8 +234,7 @@
         ]
       },
       {
-        "article": "article",
-        "data": "flow-tools-box",
+        "flowToolsBox": "article",
         "children": [
           {
             "div": "flow-tools__container",
@@ -244,19 +243,19 @@
                 "div": "flow-tools__box",
                 "children": [
                   {
-                    "p": "article__text",
+                    "articleText": "article__text",
                     "text": "Languages"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/html5.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/js.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/php.png"
                   }
                 ]
@@ -265,19 +264,19 @@
                 "div": "flow-tools__box",
                 "children": [
                   {
-                    "p": "article__text",
+                    "articleText": "article__text",
                     "text": "Styling"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/css3.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/sass.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/Bootstrap.png"
                   }
                 ]
@@ -286,15 +285,15 @@
                 "div": "flow-tools__box",
                 "children": [
                   {
-                    "p": "article__text",
+                    "articleText": "article__text",
                     "text": "Libraries"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/react.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/jQuery.png"
                   }
                 ]
@@ -303,19 +302,19 @@
                 "div": "flow-tools__box",
                 "children": [
                   {
-                    "p": "article__text",
+                    "articleText": "article__text",
                     "text": "Repositories"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/git.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/github.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/gitlab.png"
                   }
                 ]
@@ -324,15 +323,15 @@
                 "div": "flow-tools__box",
                 "children": [
                   {
-                    "p": "article__text",
+                    "articleText": "article__text",
                     "text": "JS-Tools"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/npm.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/gulp.png"
                   }
                 ]
@@ -341,19 +340,19 @@
                 "div": "flow-tools__box",
                 "children": [
                   {
-                    "p": "article__text",
+                    "articleText": "article__text",
                     "text": "Cooperation"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/jira.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/slack.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/trello-mark-blue.png"
                   }
                 ]
@@ -362,19 +361,19 @@
                 "div": "flow-tools__box",
                 "children": [
                   {
-                    "p": "article__text",
+                    "articleText": "article__text",
                     "text": "UX-Tools"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/figma.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/invision.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/balsamiq-logo-noborder-screen.png"
                   }
                 ]
@@ -383,19 +382,19 @@
                 "div": "flow-tools__box",
                 "children": [
                   {
-                    "p": "article__text",
+                    "articleText": "article__text",
                     "text": "UI-Tools"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/gimp.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/inkscape.png"
                   },
                   {
-                    "icon": "article__icon",
+                    "img": "article__icon",
                     "src": "./images/icons/sketchbook.png"
                   }
                 ]
