@@ -1,5 +1,6 @@
 import React from 'react';
 import './CV.scss';
+import './TimeLine.scss';
 import Footer from "../Footer/Footer"
 import SecondHeader from '../Headers/SecondHeader';
 import { URL_CV } from "../../constans";

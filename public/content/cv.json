@@ -80,11 +80,11 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "since 2005"
                   },
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "research & studies on social questions"
                   }
                 ]
@@ -93,11 +93,11 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "since 2010"
                   },
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "lecturer at universities"
                   }
                 ]
@@ -106,11 +106,11 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "since 2011"
                   },
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "design of covers & logos"
                   }
                 ]
@@ -119,11 +119,11 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "2015-2018"
                   },
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "design of websites (by CMS)"
                   }
                 ]
@@ -137,11 +137,11 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "2018/2019"
                   },
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "first front-end courses"
                   }
                 ]
@@ -150,15 +150,15 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "2019"
                   },
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "websites of RIEP, EJTS & IBO"
                   },
                   {
-                    "a": "item-link",
+                    "articleLink": "item-link",
                     "href": "webs.html",
                     "text": "see more"
                   }
@@ -168,11 +168,11 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "2019"
                   },
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "join to 'Żeton' team"
                   }
                 ]
@@ -181,11 +181,11 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "2019"
                   },
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "end of 'UX Design' course"
                   }
                 ]
@@ -194,11 +194,11 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "2019"
                   },
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "end of 'JavaScript + React' course"
                   }
                 ]
@@ -207,11 +207,11 @@
                 "div": "time-line__box",
                 "children": [
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "2020"
                   },
                   {
-                    "p": "item-text",
+                    "articleText": "item-text",
                     "text": "website of 'Kosmopolis'"
                   }
                 ]
