@@ -8,10 +8,17 @@
 
 .section__time-line {
   @include flex-column;
+  min-height: auto;
+
+  @media screen and (min-width: $min-md) {
+    min-height: auto;
+  }
 
   .article {
     width: 100%;
     max-width: 100%;
+    padding-bottom: 0;
+    flex: none;
 
     @media screen and (min-width: $min-md) {
       width: 100%;
@@ -52,26 +59,36 @@
           color: white;
         }
       }
+    }
 
-      @media screen and (min-width: $min-md) {
-        display: block;
-        height: 10%;
-        width: 10%;
+    @media screen and (min-width: $min-md) {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: center;
+
+      .time-line__switcher {
+        display: flex;
+        height: 100%;
+        width: 50px;
+        align-items: center;
+        justify-content: center;
+        //margin: 0 auto;
 
         .text--top-left {
-          transform: translateY(-50%) rotateZ(-90deg);
-          -webkit-transform: translateY(-50%) rotateZ(-90deg);
-          -moz-transform: translateY(-50%) rotateZ(-90deg);
-          -ms-transform: translateY(-50%) rotateZ(-90deg);
-          -o-transform: translateY(-50%) rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+          -webkit-transform: rotateZ(-90deg);
+          -moz-transform: rotateZ(-90deg);
+          -ms-transform: rotateZ(-90deg);
+          -o-transform: rotateZ(-90deg);
         }
 
         .text--bottom-right {
-          transform: translateY(-50%) rotateZ(90deg);
-          -webkit-transform: translateY(-50%) rotateZ(90deg);
-          -moz-transform: translateY(-50%) rotateZ(90deg);
-          -ms-transform: translateY(-50%) rotateZ(90deg);
-          -o-transform: translateY(-50%) rotateZ(90deg);
+          transform: rotateZ(90deg);
+          -webkit-transform: rotateZ(90deg);
+          -moz-transform: rotateZ(90deg);
+          -ms-transform: rotateZ(90deg);
+          -o-transform: rotateZ(90deg);
         }
       }
     }
@@ -85,7 +102,8 @@
         height: 100%;
         align-items: stretch;
         justify-content: flex-end;
-        width: max-content;
+        margin: 0;
+        width: 90%;
       }
 
       //--!! TIME-LINE BOX !!---
