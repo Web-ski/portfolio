@@ -2,6 +2,7 @@ import React from 'react';
 import './Sections.scss';
 import Article from './Article';
 import AsideNumber from '../Titles/AsideNumber';
+import TimeLineBox from '../CV/TimeLineBox';
 
 class Section extends React.Component {
   constructor(props) {
@@ -57,6 +58,7 @@ class Section extends React.Component {
         (elem.children).map((item, index) => {
           if (item.article !== undefined) { return <Article key={item.toString() + index} elem={[item, this.state.sectionOn]} /> };
           if (item.asideNumber !== undefined) { return <AsideNumber key={item.toString() + index} elem={item} /> };
+          if (item.timeLineBox !== undefined) { return <TimeLineBox key={item.toString() + index} elem={item} /> };
         })
       )}
     </section>)

@@ -70,8 +70,7 @@
         ]
       },
       {
-        "article": "article article__time-line",
-        "data": "time-line-box",
+        "timeLineBox": "article article__time-line",
         "children": [
           {
             "div": "time-line__container",
