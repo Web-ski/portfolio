@@ -7,12 +7,12 @@
 
 .section__tools-n-techs {
   @include flex-column;
-  
+
   @media screen and (min-width: $min-md) {
     min-height: 80vh;
     justify-items: start;
   }
-  
+
   .article {
     opacity: 1;
     width: 100%;
@@ -115,6 +115,16 @@
           margin: 10px;
         }
       }
+    }
+  }
+
+  .article__tools-names {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .article__text--second {
+      cursor: help;
     }
   }
 }

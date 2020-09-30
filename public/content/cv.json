@@ -417,122 +417,247 @@
         ]
       },
       {
-        "article": "article",
+        "article": "article article__tools-names",
         "children": [
           {
-            "abbr": "article__text",
-            "title": "HyperText Markup Language",
-            "text": "HTML"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "HyperText Markup Language",
+                "text": "HTML"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "JavaScript",
-            "text": "JS"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "JavaScript",
+                "text": "JS"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "general-purpose scripting language (oryginally: Personal Home Page, next: Hypertext Preprocessor)",
-            "text": "PHP"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "general-purpose scripting language (oryginally: Personal Home Page, next: Hypertext Preprocessor)",
+                "text": "PHP"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "Cascading Style Sheets",
-            "text": "CSS"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "Cascading Style Sheets",
+                "text": "CSS"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "Sassy CSS",
-            "text": "SCSS"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "Sassy CSS",
+                "text": "SCSS"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "CSS framework",
-            "text": "Bootstrap4"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "CSS framework",
+                "text": "Bootstrap4"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "JavaScript library",
-            "text": "React"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "JavaScript library",
+                "text": "React"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "JavaScript library",
-            "text": "jQuery"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "React-based framework",
+                "text": "Gatsby"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "distributed version-control system",
-            "text": "GIT"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "JavaScript library",
+                "text": "jQuery"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "platform for software development version control",
-            "text": "GitHub"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "distributed version-control system",
+                "text": "GIT"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "platform for software development version control",
-            "text": "GitLab"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "platform for software development version control",
+                "text": "GitHub"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "Node Package Manager",
-            "text": "npm"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "platform for software development version control",
+                "text": "GitLab"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "a toolkit to automate & enhance your workflow",
-            "text": "Gulp"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "Node Package Manager",
+                "text": "npm"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "a tool for issue tracking and project management",
-            "text": "Jira"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a toolkit to automate & enhance your workflow",
+                "text": "Gulp"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "a tool for team communication and collaboration",
-            "text": "Slack"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a tool for issue tracking and project management",
+                "text": "Jira"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "a web-based Kanban-style list-making application",
-            "text": "Trello"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a tool for team communication and collaboration",
+                "text": "Slack"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "a vector graphics editor and prototyping tool",
-            "text": "Figma"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a web-based Kanban-style list-making application",
+                "text": "Trello"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "a platform for designing and prototyping",
-            "text": "InVision"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a vector graphics editor and prototyping tool",
+                "text": "Figma"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "a wireframing tool",
-            "text": "Balsamiq"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a platform for designing and prototyping",
+                "text": "InVision"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "a cross-platform image editor",
-            "text": "GIMP"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a wireframing tool",
+                "text": "Balsamiq"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "a vector graphics editor",
-            "text": "Inkscape"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a cross-platform image editor",
+                "text": "GIMP"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "Autodesk ScetchBook - a drawing, painting, and illustration software",
-            "text": "SketchBook"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a vector graphics editor",
+                "text": "Inkscape"
+              }
+            ]
           },
           {
-            "abbr": "article__text",
-            "title": "Visual Studio Code",
-            "text": "VSCode"
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "Autodesk ScetchBook - a drawing, painting, and illustration software",
+                "text": "SketchBook"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "Visual Studio Code",
+                "text": "VSCode"
+              }
+            ]
           }
         ]
       }
