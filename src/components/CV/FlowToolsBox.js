@@ -9,13 +9,15 @@ class FlowToolsBox extends React.Component {
     const elemsArr = (props.elem.children[0].children);
     this.state = {
       tools: elemsArr,
+      divNumber: 0
     }
   };
+
 
   render() {
     return <article className={this.props.elem.flowToolsBox + " article__flow"}>
       <div className={this.props.elem.children[0].div}>
-        {(this.props.elem.children[0].children).map((item, index) => <FlowItem key={"FlowItem" + index} elem={item} />)}
+        {(this.state.tools).map((item, index) => <FlowItem key={"tool" + index} elem={[this.state.tools[index], index]} /> )}
       </div>
     </article>;
   }

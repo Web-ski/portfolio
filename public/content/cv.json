@@ -286,6 +286,19 @@
                 "children": [
                   {
                     "articleText": "article__text",
+                    "text": "Frameworks"
+                  },
+                  {
+                    "img": "article__icon",
+                    "src": "./images/icons/react.png"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "articleText": "article__text",
                     "text": "Libraries"
                   },
                   {
@@ -295,6 +308,23 @@
                   {
                     "img": "article__icon",
                     "src": "./images/icons/jQuery.png"
+                  }
+                ]
+              },
+              {
+                "div": "flow-tools__box",
+                "children": [
+                  {
+                    "articleText": "article__text",
+                    "text": "JS-Tools"
+                  },
+                  {
+                    "img": "article__icon",
+                    "src": "./images/icons/npm.png"
+                  },
+                  {
+                    "img": "article__icon",
+                    "src": "./images/icons/gulp.png"
                   }
                 ]
               },
@@ -316,23 +346,6 @@
                   {
                     "img": "article__icon",
                     "src": "./images/icons/gitlab.png"
-                  }
-                ]
-              },
-              {
-                "div": "flow-tools__box",
-                "children": [
-                  {
-                    "articleText": "article__text",
-                    "text": "JS-Tools"
-                  },
-                  {
-                    "img": "article__icon",
-                    "src": "./images/icons/npm.png"
-                  },
-                  {
-                    "img": "article__icon",
-                    "src": "./images/icons/gulp.png"
                   }
                 ]
               },

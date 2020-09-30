@@ -18,6 +18,8 @@
     width: 100%;
     max-width: 100%;
     overflow: hidden;
+    height: 100px;
+    max-height: 130px;
 
     @media screen and (min-width: $min-md) {
       padding-top: 0;
@@ -59,8 +61,9 @@
     padding: 0;
     position: relative;
     width: 100%;
-    height: 300px;
-    padding-bottom: 50px;
+    height: 350px;
+    max-height: 350px;
+    padding-bottom: 0px;
 
     @media screen and (min-width: $min-md) {
       min-height: 350px;
@@ -70,8 +73,8 @@
       position: absolute;
       @include flex-row;
       height: 100%;
-      width: 1600px;
-      right: 0;
+      width: 2000px;
+      right: -200px;
       justify-content: space-between;
 
       @media screen and (min-width: $min-md) {
@@ -81,26 +84,35 @@
       .flow-tools__box {
         position: absolute;
         @include flex-column;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
         padding: 20px 0;
         width: 180px;
-        left: 0%;
+        height: 200px;
+        right: 0;
         margin: 10px;
-        animation: flowTool 40s linear infinite;
-        -webkit-animation: flowTool 40s linear infinite;
+        animation: flowTool 45s linear infinite;
+        -webkit-animation: flowTool 45s linear infinite;
 
         @keyframes flowTool {
           from {
-            transform: translateX(1600px);
+            transform: translateX(0px);
           }
 
           to {
-            transform: translateX(-200px);
+            transform: translateX(-2000px);
           }
         }
 
         .article__text {
           text-align: center;
+        }
+
+        .article__icon {
+          //height: 50px;
+          height: max-content;
+          min-height: 40px;
+          margin: 10px;
         }
       }
     }

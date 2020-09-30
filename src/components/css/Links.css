@@ -1,0 +1,325 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  outline: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* colors */
+/* Fonts */
+@font-face {
+  font-family: myMainFont;
+  src: url("/lib/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: myBrandFont;
+  src: url("/lib/fonts/Satisfy-Regular.ttf");
+}
+
+/* Borders */
+/*Media*/
+/* Actions */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #111111;
+  height: auto;
+  min-height: 100vh;
+  max-width: 100vw;
+  width: 100%;
+}
+
+.wrapper {
+  background-color: #050505;
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar__link {
+  font-family: myMainFont, Calibri, sans-serif;
+  color: #000000;
+}
+
+.project__link {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+
+.article__link, .article__link--second {
+  font-family: myMainFont, Calibri, sans-serif;
+  color: #FFFFFF;
+  font-size: 14px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 2vh;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+@media screen and (min-width: 768px) {
+  .article__link, .article__link--second {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .article__link, .article__link--second {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .article__link, .article__link--second {
+    font-size: 20px;
+  }
+}
+
+.article__link:hover, .article__link--second:hover {
+  font-weight: bold;
+}
+
+.article__link--second {
+  background-color: rgba(0, 255, 255, 0.8);
+  color: #000000;
+  padding: 10px 15px;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.article__link--second:hover {
+  background-color: #000000;
+  color: cyan;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .article__link--second {
+    margin: 10px 10px 10px 0;
+  }
+}
+
+.section__radio {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  left: 50%;
+  top: 11px;
+  padding: 0 5vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .section__radio {
+    top: 40px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .section__radio {
+    max-width: 700px;
+  }
+}
+
+.section__radio .radio__elem {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: cyan;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .section__radio .radio__elem {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.section__radio .radio__elem:hover {
+  border: solid 3px cyan;
+}
+
+.section__radio .radio__elem--active {
+  position: relative;
+  background-color: cyan;
+}
+
+.section__radio .radio__elem--active:after {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: solid 1px cyan;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+  .section__radio .radio__elem--active:after {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.section__radio .radio__elem--active:hover {
+  border: none;
+}
+/*# sourceMappingURL=Links.css.map */
