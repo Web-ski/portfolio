@@ -27,6 +27,7 @@ class Article extends React.Component {
           if (item.outsideLink !== undefined) { return <OutsideLink key={item.toString() + index} elem={item} /> };
           if (item.photoLink !== undefined) { return <PhotoLink key={item.toString() + index} elem={item} /> };
           if (item.div !== undefined) { return <Div key={item.toString() + index} elem={item} /> };
+          if (item.text !== undefined) { return item.text };
           if (item.sliderBox!== undefined) { return <SliderBox key={item.toString() + index} elem={item} /> };
           if (item.viewerBox !== undefined) { return <React.Fragment key={item.toString() + index}>
               <ViewerBox elem={item} /> 

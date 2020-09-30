@@ -23,7 +23,6 @@
                 "text": "CMS "
               },
               {
-                "span": "span",
                 "text": "for my own needs and for my professional activity. Mainly it was conceptual work and involved the creation and addition of visual and substantive content. I've created 6 such websites in wix CMS. However, CMS quickly showed its limitations."
               }
             ]
@@ -38,7 +37,6 @@
                 "text": "HTML5"
               },
               {
-                "span": "span",
                 "text": ", "
               },
               {
@@ -47,7 +45,6 @@
                 "text": "CSS"
               },
               {
-                "span": "span",
                 "text": ", "
               },
               {
@@ -56,7 +53,6 @@
                 "text": "SCSS"
               },
               {
-                "span": "span",
                 "text": ", "
               },
               {
@@ -65,7 +61,6 @@
                 "text": "ES6"
               },
               {
-                "span": "span",
                 "text": ", "
               },
               {
@@ -74,7 +69,6 @@
                 "text": "jQuery"
               },
               {
-                "span": "span",
                 "text": ", "
               },
               {
@@ -83,16 +77,15 @@
                 "text": "Bootstrap4"
               },
               {
-                "span": "span",
                 "text": ", "
               },
               {
-                "abbr": "article__abbr",
-                "title": "JavaScript library",
-                "text": "React"
-              },
+                "abbr": "article__abbr--last",
+                "title": "Visual Studio Code",
+                "text": "VSCode"
+              }
+              ,
               {
-                "span": "span",
                 "text": ", "
               },
               {
@@ -101,26 +94,31 @@
                 "text": "Git"
               },
               {
-                "span": "span",
                 "text": ", "
               },
               {
                 "abbr": "article__abbr",
                 "title": "platform for software development version control",
                 "text": "GitHub"
+              },              
+              {
+                "text": ". Now I'm using also "
               },
               {
-                "span": "span",
-                "text": ", "
+                "abbr": "article__abbr",
+                "title": "JavaScript library",
+                "text": "React"
               },
               {
-                "abbr": "article__abbr--last",
-                "title": "Visual Studio Code",
-                "text": "VSCode"
+                "text": " and "
               },
               {
-                "span": "span",
-                "text": ". I present my works in sections below."
+                "abbr": "article__abbr",
+                "title": "React-based framework",
+                "text": "Gatsby.js"
+              },
+              {
+                "text": ". See my works in sections below."
               }
             ]
           }

@@ -14,6 +14,7 @@ class ArticleText extends React.Component {
           (elem.children).map((item, index) => {
             if (item.abbr !== undefined) { return <AbbrText key={item.abbr + index} elem={item} /> };
             if (item.span !== undefined) { return <SpanText key={item.span + index} elem={item} /> };
+            if (item.text !== undefined) { return item.text };
           })
         )
       ))}

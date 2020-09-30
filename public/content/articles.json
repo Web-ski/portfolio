@@ -82,6 +82,15 @@
                 "text": ", "
               },
               {
+                "abbr": "article__abbr",
+                "title": "React-based framework",
+                "text": "Gatsby"
+              },
+              {
+                "span": "span",
+                "text": ", "
+              },
+              {
                 "abbr": "article__abbr--last",
                 "title": "general-purpose scripting language (oryginally: Personal Home Page, next: Hypertext Preprocessor)",
                 "text": "PHP"
@@ -127,6 +136,10 @@
               {
                 "img": "article__icon",
                 "src": "./images/icons/react.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/Gatsby.png"
               },
               {
                 "img": "article__icon",
