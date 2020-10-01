@@ -94,6 +94,7 @@
         margin: 10px;
         animation: flowTool 45s linear infinite;
         -webkit-animation: flowTool 45s linear infinite;
+        object-fit: scale-down;
 
         @keyframes flowTool {
           from {
@@ -110,10 +111,14 @@
         }
 
         .article__icon {
-          //height: 50px;
-          height: max-content;
-          min-height: 40px;
+          height: 45px;
+
+          //min-height: 40px;
           margin: 10px;
+
+          @media screen and (min-width: $min-md) {
+            height: 50px;
+          }
         }
       }
     }
