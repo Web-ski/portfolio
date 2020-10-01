@@ -16,18 +16,19 @@ class Section extends React.Component {
     let secondView = document.querySelector(".second-header");
     let sections = Array.from(document.querySelectorAll(".section"));
     let distance = 0;
-    //console.log(distance);
     let startViewHeight = (startView !== null ? startView.offsetHeight : secondView.offsetHeight);//startView.offsetHeight; //<---- tu poprawić
     let sectionsHeight = [startViewHeight];
-    //startView === null && (this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" }));
-    //this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" });
-    sections.map((item, index) => (sectionsHeight.push(item.offsetHeight)));
+
+
+    sections.map(item => (sectionsHeight.push(item.offsetHeight)));
+
     sections.map((item, index) => {
       item.getAttribute('id') === this.props.elem.id && (
         sectionsHeight.splice(index + 1, (sectionsHeight.length - (index + 1))) && (distance = sectionsHeight.reduce(function (total, nmbr) { return total + nmbr; }))
       ) //połączyć długości do bieżącej sekcji 
     }
     )
+
     window.addEventListener('resize', () => {
       let startViewHeight = (startView !== null ? startView.offsetHeight : 0);
       let sectionsHeight = [startViewHeight];
@@ -38,20 +39,22 @@ class Section extends React.Component {
         ) //połączyć długości do bieżącej sekcji 
       }
       )
-      console.log("M" + distance);
+      //console.log("M" + distance);
       this.handleScroll(distance);
     });
+
+    this.props.elem.id === "start" && (this.state.sectionOn !== "articleOn" && this.setState({ sectionOn: "articleOn" }))
     window.addEventListener('scroll', () => this.handleScroll(distance));
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', () => this.handleScroll());
-    window.removeEventListener('resize', () => {});
+    window.removeEventListener('resize', () => { });
   }
 
   handleScroll(distance) {
     (window.scrollY > (distance - 100) &&
-      (this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" })))
+      (this.state.sectionOn !== "articleOn" && this.setState({ sectionOn: "articleOn" })))
     //(window.scrollY <= 500 && visibility === false) && (this.setState({ visible: true }))
   }
 
