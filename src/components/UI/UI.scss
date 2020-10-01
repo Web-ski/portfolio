@@ -4,8 +4,6 @@
 @import "../../styles/_layout.scss";
 
 .ui {
-  background-color: DimGrey;
-  background-image: none;
   
   .photo__box {
     @include flex;

@@ -7,6 +7,11 @@
   min-height: 100vh;
 }
 
+#start, #sect-1, #sect-2, #sect-3, #sect-4 {
+  //background-color: d;
+  //background-image: none;
+}
+
 .section {
   @include flex;
   position: relative;
