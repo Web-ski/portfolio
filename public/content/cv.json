@@ -1,6 +1,7 @@
 [
   {
     "section": "section cv",
+    "id": "start",
     "children": [
       {
         "article": "article",
@@ -59,6 +60,7 @@
   },
   {
     "section": "section section__time-line cv",
+    "id": "sect-1",
     "children": [
       {
         "article": "article",
@@ -223,6 +225,7 @@
   },
   {
     "section": "section section__tools-n-techs cv",
+    "id": "sect-2",
     "children": [
       {
         "article": "article",

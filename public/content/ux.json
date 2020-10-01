@@ -1,6 +1,7 @@
 [
   {
     "section": "section ux",
+    "id": "start",
     "children": [
       {
         "article": "article",
@@ -65,6 +66,7 @@
   },
   {
     "section": "section ux",
+    "id": "sect-1",
     "children": [
       {
         "article": "article",
@@ -138,6 +140,7 @@
   },
   {
     "section": "section ux",
+    "id": "sect-2",
     "children": [
       {
         "article": "article",
@@ -200,6 +203,7 @@
   },
   {
     "section": "section ux",
+    "id": "sect-3",
     "children": [
       {
         "article": "article",
@@ -274,6 +278,7 @@
   },
   {
     "section": "section ux",
+    "id": "sect-4",
     "children": [
       {
         "article": "article",

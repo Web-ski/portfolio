@@ -13,12 +13,14 @@ class Section extends React.Component {
 
   componentDidMount() {
     let startView = document.querySelector(".start-header");
+    let secondView = document.querySelector(".second-header");
     let sections = Array.from(document.querySelectorAll(".section"));
     let distance = 0;
-    console.log(distance);
-    let startViewHeight = (startView !== null ? startView.offsetHeight : 0);//startView.offsetHeight; //<---- tu poprawić
+    //console.log(distance);
+    let startViewHeight = (startView !== null ? startView.offsetHeight : secondView.offsetHeight);//startView.offsetHeight; //<---- tu poprawić
     let sectionsHeight = [startViewHeight];
-    startView === null && (this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" }));
+    //startView === null && (this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" }));
+    //this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" });
     sections.map((item, index) => (sectionsHeight.push(item.offsetHeight)));
     sections.map((item, index) => {
       item.getAttribute('id') === this.props.elem.id && (
@@ -48,7 +50,7 @@ class Section extends React.Component {
   }
 
   handleScroll(distance) {
-    (window.scrollY > (distance - 20) &&
+    (window.scrollY > (distance - 100) &&
       (this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" })))
     //(window.scrollY <= 500 && visibility === false) && (this.setState({ visible: true }))
   }
