@@ -15,6 +15,7 @@ class Section extends React.Component {
     let startView = document.querySelector(".start-header");
     let sections = Array.from(document.querySelectorAll(".section"));
     let distance = 0;
+    console.log(distance);
     let startViewHeight = (startView !== null ? startView.offsetHeight : 0);//startView.offsetHeight; //<---- tu poprawić
     let sectionsHeight = [startViewHeight];
     startView === null && (this.state.sectionOn !== "sectionOn" && this.setState({ sectionOn: "articleOn" }));

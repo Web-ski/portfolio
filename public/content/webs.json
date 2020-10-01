@@ -207,6 +207,10 @@
               {
                 "img": "article__photo",
                 "src": "./images/photos/cosmopolis3-screen.png"
+              },
+              {
+                "img": "article__photo",
+                "src": "./images/photos/cosmopolis4-screen.png"
               }
             ]
           }
@@ -265,6 +269,10 @@
               {
                 "img": "article__photo",
                 "src": "./images/photos/ibo3-screen.png"
+              },
+              {
+                "img": "article__photo",
+                "src": "./images/photos/ibo4-screen.png"
               }
             ]
           }
@@ -323,6 +331,10 @@
               {
                 "img": "article__photo",
                 "src": "./images/photos/ejts3-screen.png"
+              },
+              {
+                "img": "article__photo",
+                "src": "./images/photos/ejts4-screen.png"
               }
             ]
           }
@@ -381,6 +393,10 @@
               {
                 "img": "article__photo",
                 "src": "./images/photos/riep3-screen.png"
+              },
+              {
+                "img": "article__photo",
+                "src": "./images/photos/riep4-screen.png"
               }
             ]
           }

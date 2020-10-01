@@ -121,6 +121,10 @@
               {
                 "img": "article__photo",
                 "src": "./images/photos/cosmopolis3-screen.png"
+              },
+              {
+                "img": "article__photo",
+                "src": "./images/photos/cosmopolis4-screen.png"
               }
             ]
           }
@@ -179,6 +183,10 @@
               {
                 "img": "article__photo",
                 "src": "./images/photos/zeton-landing-page-v1b.jpg"
+              },
+              {
+                "img": "article__photo",
+                "src": "./images/photos/zeton-landing-page-v3.png"
               }
             ]
           }
