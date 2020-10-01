@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/webs">
+        <Route path="/front">
           <Webs />
         </Route>
         <Route path="/ux">

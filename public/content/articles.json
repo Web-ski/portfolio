@@ -1,14 +1,14 @@
 [
   {
     "section": "section",
-    "id": "webs",
+    "id": "front",
     "children": [
       {
         "article": "article article__description",
         "children": [
           {
             "sectionTitle": "section__title",
-            "text": "Webs"
+            "text": "Front"
           },
           {
             "articleText": "article__text",
@@ -25,7 +25,7 @@
               },
               {
                 "span": "span",
-                "text": ". Now, I make websites in front-end technologies: "
+                "text": ". Since 2018, I make websites in front-end technologies: "
               },
               {
                 "abbr": "article__abbr",
@@ -103,7 +103,7 @@
           },
           {
             "articleLink": "article__link",
-            "href": "/webs",
+            "href": "/front",
             "text": "Go for details..."
           },
           {
@@ -456,7 +456,7 @@
         "children": [
           {
             "sectionTitle": "section__title",
-            "text": "Find"
+            "text": "Find me"
           },
           {
             "articleText": "article__text",

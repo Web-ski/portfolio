@@ -2,7 +2,7 @@
 export const BRAND_NAME = "Nieczuja";
 export const MENU_NAME = "Menu";
 export const PAGE_NAME = ["Portfolio", ["of"], "‧ Paweł ‧", "Nieczuja-", "Ostrowski"];
-export const SECTION_NAME = ["webs", "ux", "ui", "repo", "cv", "find"];
+export const SECTION_NAME = ["front", "ux", "ui", "repo", "cv", "find"];
 
 class HERO_ELEM {
   constructor(text, tag, name) {
@@ -22,7 +22,7 @@ export const PAGE = PAGE_NAME.map((item, index) => (index !== 1 ? new HERO_ELEM(
 /*home page*/
 export const URL_HOME = "content/articles.json";
 /*webs page*/
-export const URL_WEBS = "content/webs.json";
+export const URL_WEBS = "content/front.json";
 /*ux page*/
 export const URL_UX = "content/ux.json";
 /*ui page*/

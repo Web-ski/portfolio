@@ -1,6 +1,6 @@
 [
   {
-    "section": "section webs",
+    "section": "section front",
     "id": "start",
     "children": [
       {
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "section": "section webs",
+    "section": "section front",
     "id": "sect-1",
     "children": [
       {
@@ -225,7 +225,7 @@
     ]
   },
   {
-    "section": "section webs",
+    "section": "section front",
     "id": "sect-2",
     "children": [
       {
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "section": "section webs",
+    "section": "section front",
     "id": "sect-3",
     "children": [
       {
@@ -351,7 +351,7 @@
     ]
   },
   {
-    "section": "section webs",
+    "section": "section front",
     "id": "sect-4",
     "children": [
       {
