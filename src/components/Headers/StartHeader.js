@@ -32,6 +32,7 @@ class StartHeader extends React.Component {
         {PAGE.map((item, index) => <HeroItem key={"page" + index} elem={[itemData, SECTION_NAME[index], item]} />)}
         <HeroItem elem={ [itemData, SECTION_NAME[5]] }/>
         <HeroItem elem={ [itemData] }/>
+        <div className="bg-box"></div>
       </div>
     </header>
   }
