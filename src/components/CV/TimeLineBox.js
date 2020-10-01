@@ -13,15 +13,17 @@ class TimeLineBox extends React.Component {
     this.setState(state => ({ toggleOn: !state.toggleOn }))
   }
   render() {
-    return <article className={this.props.elem.timeLineBox}>
-      <div className={this.props.elem.children[0].div + ' ' + (this.state.toggleOn ? 'time-line--off' : 'time-line--active')}>
-        {(this.props.elem.children[0].children).map(item => (<TimeLineItem elem={item} />))}
+    const elem = this.props.elem[0];
+    const elemsOn = this.props.elem[1];
+    return <article className={elem.timeLineBox + " " + elemsOn}>
+      <div className={elem.children[0].div + ' ' + (this.state.toggleOn ? 'time-line--off' : 'time-line--active')}>
+        {(elem.children[0].children).map(item => (<TimeLineItem elem={item} />))}
       </div>
       <div onClick={this.handleClick} className={"time-line__switcher " + (this.state.toggleOn ? 'switcher--top-left' : 'switcher--bottom-right')}>
         <p className={"article__text " + (this.state.toggleOn ? 'text--top-left' : 'text--bottom-right')}>{this.state.toggleOn ? 'Before' : 'After'}</p>
       </div>
-      <div className={this.props.elem.children[1].div + ' ' + (this.state.toggleOn ? 'time-line--active' : 'time-line--off')}>
-        {(this.props.elem.children[1].children).map(item => (<TimeLineItem elem={item} />))}
+      <div className={elem.children[1].div + ' ' + (this.state.toggleOn ? 'time-line--active' : 'time-line--off')}>
+        {(elem.children[1].children).map(item => (<TimeLineItem elem={item} />))}
       </div>
     </article>;
   }

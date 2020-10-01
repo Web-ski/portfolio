@@ -61,9 +61,9 @@ class Section extends React.Component {
       {(elem.children !== undefined) && (
         (elem.children).map((item, index) => {
           if (item.article !== undefined) { return <Article key={item.toString() + index} elem={[item, this.state.sectionOn]} /> };
-          if (item.asideNumber !== undefined) { return <AsideNumber key={item.toString() + index} elem={item} /> };
-          if (item.timeLineBox !== undefined) { return <TimeLineBox key={item.toString() + index} elem={item} /> };
-          if (item.flowToolsBox !== undefined) { return <FlowToolsBox key={item.toString() + index} elem={item} /> };
+          if (item.asideNumber !== undefined) { return <AsideNumber key={item.toString() + index} elem={[item, this.state.sectionOn]} /> };
+          if (item.timeLineBox !== undefined) { return <TimeLineBox key={item.toString() + index} elem={[item, this.state.sectionOn]} /> };
+          if (item.flowToolsBox !== undefined) { return <FlowToolsBox key={item.toString() + index} elem={[item, this.state.sectionOn]} /> };
         })
       )}
     </section>)

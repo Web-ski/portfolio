@@ -3,8 +3,9 @@ import './Titles.scss';
 
 class AsideNumber extends React.Component {
   render() {
-    let elem = this.props.elem;
-    return <h4 className={elem.asideNumber}>{ elem.text }</h4>
+    const elem = this.props.elem[0];
+    const elemsOn = this.props.elem[1];
+    return <h4 className={elem.asideNumber + " " + elemsOn}>{ elem.text }</h4>
   }
 }
 

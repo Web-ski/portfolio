@@ -14,7 +14,7 @@
   }
 
   .article {
-    opacity: 1;
+    //opacity: 0;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
@@ -89,7 +89,7 @@
         align-items: center;
         padding: 20px 0;
         width: 180px;
-        height: 200px;
+        height: 260px;
         right: 0;
         margin: 10px;
         animation: flowTool 45s linear infinite;
