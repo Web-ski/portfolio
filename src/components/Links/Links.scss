@@ -15,10 +15,11 @@
 }
 
 .article__link {
+  display: flex;
   font-family: $main-font;
-  color: $text-white;
+  color: $text-blue;
   font-size: 14px;
-  width: max-content;
+  //width: 100%;
   margin-bottom: 2vh;
   transition: .2s;
 
@@ -38,6 +39,45 @@
 
   &:hover {
     font-weight: bold;
+  }
+
+  .link__points {
+    display: flex;
+    width: max-content;
+
+    .point {
+      width: 10px;
+      height: 90%;
+      margin-left: 5px;
+      //background-color: cyan;
+      background-image: url('/images/icons/arrow-right.svg');
+      @include img;
+      border-radius: 50%;
+      animation: arrowMove 1s infinite;
+      -webkit-animation: arrowMove 1s infinite;
+
+      &:nth-of-type(1) {
+        animation-delay: .0s;
+      }
+
+      &:nth-of-type(2) {
+        animation-delay: .1s;
+      }
+
+      &:nth-of-type(3) {
+        animation-delay: .2s;
+      }
+    }
+
+    @keyframes arrowMove {
+      from {
+        opacity: 0.5;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
   }
 }
 

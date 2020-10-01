@@ -53,7 +53,7 @@ class Section extends React.Component {
   }
 
   handleScroll(distance) {
-    (window.scrollY > (distance - 100) &&
+    (window.scrollY > (distance - (window.innerHeight * 0.3)) &&
       (this.state.sectionOn !== "articleOn" && this.setState({ sectionOn: "articleOn" })))
     //(window.scrollY <= 500 && visibility === false) && (this.setState({ visible: true }))
   }

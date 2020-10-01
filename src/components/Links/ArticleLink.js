@@ -6,6 +6,11 @@ class ArticleLink extends React.Component {
   render() {
     return <Link to={this.props.elem.href} className={this.props.elem.articleLink}>
       {this.props.elem.text}
+      <span className="link__points">
+        <span className="point"></span>
+        <span className="point"></span>
+        <span className="point"></span>
+      </span>
     </Link>
   }
 }
