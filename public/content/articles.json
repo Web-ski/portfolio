@@ -12,21 +12,12 @@
           },
           {
             "articleText": "article__text",
-            "text": "Here you can see my last realizations of websites. From 2018 I done some courses in front-end technologies for get professional skills."
+            "text": "This section presents some websites created by me."
           },
           {
             "articleText": "article__text",
-            "text": "I have been started do websites in 2015, but at first on ",
+            "text": "Since 2018 I have completed several courses in front-end technologies and improved professional skills. Ever since then, I have worked in languages and tools such as: ",
             "children": [
-              {
-                "abbr": "article__abbr--last",
-                "title": "Content Management System",
-                "text": "CMS"
-              },
-              {
-                "span": "span",
-                "text": ". Since 2018, I make websites in front-end technologies: "
-              },
               {
                 "abbr": "article__abbr",
                 "title": "HyperText Markup Language",
@@ -104,7 +95,7 @@
           {
             "articleLink": "article__link",
             "href": "/front",
-            "text": "Go for details..."
+            "text": "See more"
           },
           {
             "div": "article__icons",
@@ -191,16 +182,16 @@
           },
           {
             "articleText": "article__text",
-            "text": "Here you can see my last UX projects. If you want, you can find more realized projects and works, and more information about my experience in research conducting, wireframing, prototypin, etc."
+            "text": "This section presents my latest UX projects. You can see here my projects and works, and more information about my experience in research conducting, wireframing, prototypin, etc."
           },
           {
             "articleText": "article__text",
-            "text": "I'm engage in research works and designing for many yeras. In 2019 the course of UX-Designer was my next professional step in the area of IT."
+            "text": "I've been engaged in research and designing for several years. Completing the course of UX-Designer in 2019 was my next professional step in the area of IT."
           },
           {
             "articleLink": "article__link",
             "href": "/ux",
-            "text": "Go for details..."
+            "text": "See more"
           },
           {
             "div": "article__icons",
@@ -263,7 +254,7 @@
           },
           {
             "articleText": "article__text",
-            "text": "Here you can see my last visual projects. I have been involved in visual design for many years."
+            "text": "This section presents my latest analogue and digital projects. I have been involved in visual design for many years, which is proven by several art exhibitions in Gdańsk, Olsztyn and Koln (Germany)."
           },
           {
             "articleText": "article__text",
@@ -272,7 +263,7 @@
           {
             "articleLink": "article__link",
             "href": "/ui",
-            "text": "Go for details..."
+            "text": "See more"
           },
           {
             "div": "article__icons",
@@ -333,11 +324,11 @@
           },
           {
             "articleText": "article__text",
-            "text": "Here you can see my front-end repositories. There are projects of websites and games, parts of code and steps of learning, on GitHub, GitLab and CodePen."
+            "text": "This section presents my front-end repositories. There are projects of websites and games, parts of code and steps of learning, on GitHub, GitLab and CodePen."
           },
           {
             "articleText": "article__text",
-            "text": "Apart my own repositories, look at repositories and the website of Zeton project, in wich I'm engaging. It help me to learn cooperation's skills and technologies."
+            "text": "Apart from my own repositories, look at repositories and the website of Zeton project, in which I'm engaged. It helped me to learn cooperation skills and technologies."
           },
           {
             "div": "article__icons",
@@ -416,7 +407,7 @@
           },
           {
             "articleText": "article__text",
-            "text": "Here you can find my CV. And this is also the path to my certificates and diplomas."
+            "text": "This section presents my CV. And this is also the path to my certificates and diplomas."
           },
           {
             "articleText": "article__text",
@@ -425,7 +416,7 @@
           {
             "articleLink": "article__link",
             "href": "/cv",
-            "text": "Go for details..."
+            "text": "See more"
           }
         ]
       },
@@ -460,11 +451,11 @@
           },
           {
             "articleText": "article__text",
-            "text": "And here you can find contact with me."
+            "text": "And here you can find my contact details."
           },
           {
             "articleText": "article__text",
-            "text": "Please, send me an email, look at my LinkedIn profile or find me in Zeton project's team."
+            "text": "Send me an email, look at my LinkedIn profile or find me in Zeton project's team."
           },
           {
             "div": "article__icons",

@@ -12,25 +12,29 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "I'm the junior front-end developer and UX/UI-designer."
+            "text": "I'm a front-end developer and UX/UI-designer."
           },
           {
             "articleText": "article__text--second",
-            "text": "For two years I have been gradually developing professionally in the direction of designing and programming websites and web applications."
+            "text": "My personal strengths are the following:"
           },
           {
             "articleText": "article__text--second",
-            "text": "I was prompted to enter this new career path by the willingness to use my own potential, through the possibility of further development and qualifications, my own interests in design, as well as searching for a work environment that is innovation-friendly and open to challenges."
+            "text": "1) visual artistic background that may be easily applied to the IT environment,"
           },
           {
             "articleText": "article__text--second",
-            "text": "In 2018, I completed my first online front-end course, and in 2019-2020 I was taking more advanced classroom courses. At the same time, I used the experience gained in the implementation of the first website designs, so far 5."
+            "text": "2) proven ability to work strictly to tight deadlines,"
+          },
+          {
+            "articleText": "article__text--second",
+            "text": "3) ability to work in collaboration with international academic, cultural and professional institutions."
           },
           {
             "outsideLink": "article__link--second",
             "href": "./content/CV_Nieczuja_2020.pdf",
             "target": "blank",
-            "text": "Take my CV"
+            "text": "See my CV"
           }
         ]
       },
@@ -112,7 +116,7 @@
                   },
                   {
                     "articleText": "item-text",
-                    "text": "design of covers & logos"
+                    "text": "designing of covers & logos"
                   }
                 ]
               },
@@ -125,7 +129,7 @@
                   },
                   {
                     "articleText": "item-text",
-                    "text": "design of websites (by CMS)"
+                    "text": "designing of websites (by CMS)"
                   }
                 ]
               }
@@ -174,7 +178,7 @@
                   },
                   {
                     "articleText": "item-text",
-                    "text": "join to 'Żeton' team"
+                    "text": "member of 'Żeton' team"
                   }
                 ]
               },
@@ -187,7 +191,7 @@
                   },
                   {
                     "articleText": "item-text",
-                    "text": "end of 'UX Design' course"
+                    "text": "completing 'UX Design' course"
                   }
                 ]
               },
@@ -200,7 +204,7 @@
                   },
                   {
                     "articleText": "item-text",
-                    "text": "end of 'JavaScript + React' course"
+                    "text": "completing 'JavaScript + React' course"
                   }
                 ]
               },

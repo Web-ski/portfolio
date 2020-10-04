@@ -16,7 +16,7 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "When creating websites, it is crucial to define the user and his needs, capabilities, functionality and design the website in such a way as to best suit the product to them."
+            "text": "When creating websites, it is crucial to define the user and his needs, capabilities, functionality and design the website so as to best suit the product."
           },
           {
             "articleText": "article__text--second",
@@ -81,11 +81,7 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "It was an extraordinary project in the unusual situation of the world coronavirus epidemic. The festival lasted only one week and contained incoming materials. Its layout and design had to be prepared for quickly placing various elements."
-          },
-          {
-            "articleText": "article__text--second",
-            "text": "I prepared the prototype in Figma."
+            "text": "It was an extraordinary project in the unusual situation of the world coronavirus epidemic. The festival lasted only one week and contained incoming materials. Its layout and design had to be prepared in an extremely short deadline, when working with the team from Poland, Ireland, Romania, Greece, Brasil, Mexico, and the USA. The project was supported by International Theatre Intitute, agenda of UNESCO. "
           },
           {
             "div": "container",
@@ -94,13 +90,13 @@
                 "outsideLink": "article__link--second",
                 "href": "https://www.figma.com/proto/3TXaZfAxlemdGzV3XROUMn/Between2020?node-id=1%3A4&viewport=411%2C-209%2C0.36153680086135864&scaling=min-zoom",
                 "target": "blank",
-                "text": "Go to the prototype"
+                "text": "See the prototype"
               },
               {
                 "outsideLink": "article__link--second",
                 "href": "https://www.kosmopolis-between.pl/",
                 "target": "blank",
-                "text": "Go to the website"
+                "text": "See the website"
               }
             ]
           }
@@ -151,11 +147,11 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "Since 2019 I'am a member of the 'Żeton' team working on the application developing children's social competences."
+            "text": "Since 2019 I've been a member of the 'Żeton' team working on the application developing children's social competences."
           },
           {
             "articleText": "article__text--second",
-            "text": "In early 2020, I made a design for the website of the application that the team started working on. During content consultation with therapists, we decided to redesign some elements."
+            "text": "In early 2020, I made a design for the website of the application that the team started working on. When consulting with therapists, we decided to redesign some elements."
           },
           {
             "articleText": "article__text--second",
@@ -165,7 +161,7 @@
             "outsideLink": "article__link--second",
             "href": "https://www.figma.com/proto/DXcTKUZn5tQlgpQBuDQedR/%C5%BBeton?node-id=161%3A42&viewport=601%2C-1855%2C0.26817017793655396&scaling=min-zoom",
             "target": "blank",
-            "text": "Go to the prototype"
+            "text": "See the prototype"
           }
         ]
       },
@@ -218,7 +214,7 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "Brief UX helped me know the client's needs, and 'screener' and 'persona' helped identify the specifics of potential customers."
+            "text": "Brief UX helped me recognise the client's needs, and 'screener' and 'persona' helped me identify the specifics of potential customers."
           },
           {
             "articleText": "article__text--second",
@@ -232,7 +228,7 @@
             "outsideLink": "article__link--second",
             "href": "https://projects.invisionapp.com/prototype/Z-Pasj-Wypiekane-projekt-2-ck58hetm900307i01ttckoyjn/play/1dadc98b",
             "target": "blank",
-            "text": "Go to the prototype"
+            "text": "See the prototype"
           }
         ]
       },
@@ -293,7 +289,7 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "The team included: Paweł Nieczuja-Ostrowski, Marta Gołyszyn, Krzysztof Osiak, Sylwia Tokarska, Magdalena Mańko."
+            "text": "The team included: Paweł Nieczuja-Ostrowski, Marta Gołyszyn, Krzysztof Osiak, Sylwia Tokarska, and Magdalena Mańko."
           },
           {
             "articleText": "article__text--second",
@@ -314,13 +310,13 @@
                 "outsideLink": "article__link--second",
                 "href": "https://www.figma.com/proto/GebAOBKbK8USdqcghdviHq/skycash_v3?node-id=1%3A2&scaling=scale-down",
                 "target": "blank",
-                "text": "Go to the prototype"
+                "text": "See the prototype"
               },
               {
                 "outsideLink": "article__link--second",
                 "href": "https://web-ski.github.io/skyFace/",
                 "target": "blank",
-                "text": "Go to SkyFace"
+                "text": "See SkyFace"
               }
             ]
           }

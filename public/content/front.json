@@ -12,10 +12,6 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "This site presents websites made by me."
-          },
-          {
-            "articleText": "article__text--second",
             "text": "I started creating the first websites eight years ago using ",
             "children": [
               {
@@ -188,7 +184,7 @@
             "outsideLink": "article__link--second",
             "href": "https://www.kosmopolis-between.pl/",
             "target": "blank",
-            "text": "Go to the website"
+            "text": "See the website"
           }
         ]
       },
@@ -251,7 +247,7 @@
             "outsideLink": "article__link--second",
             "href": "https://www.armenian-institute-ibo.org/",
             "target": "blank",
-            "text": "Go to the website"
+            "text": "See the website"
           }
         ]
       },
@@ -314,7 +310,7 @@
             "outsideLink": "article__link--second",
             "href": "https://www.journal-transformation.org/",
             "target": "blank",
-            "text": "Go to the website"
+            "text": "See the website"
           }
         ]
       },
@@ -377,7 +373,7 @@
             "outsideLink": "article__link--second",
             "href": "https://www.riep.org/",
             "target": "blank",
-            "text": "Go to the website"
+            "text": "See the website"
           }
         ]
       },
