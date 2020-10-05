@@ -3,6 +3,7 @@ import './Sections.scss';
 import PageTitle from '../Titles/PageTitle'
 import SectionTitle from '../Titles/SectionTitle'
 import ArticleText from '../Texts/ArticleText'
+import ArticleList from '../Texts/ArticleList'
 import ArticleLink from '../Links/ArticleLink'
 import OutsideLink from '../Links/OutsideLink'
 import Div from './Div';
@@ -22,6 +23,7 @@ class Article extends React.Component {
           if (item.pageTitle !== undefined) { return <PageTitle key={item.toString() + index} elem={item} /> };
           if (item.sectionTitle !== undefined) { return <SectionTitle key={item.toString() + index} elem={item} /> };
           if (item.articleText !== undefined) { return <ArticleText key={item.toString() + index} elem={item} /> };
+          if (item.articleList !== undefined) { return <ArticleList key={item.toString() + index} elem={item} /> };
           if (item.asideNumber !== undefined) { return <AsideNumber key={item.toString() + index} elem={item} /> };
           if (item.articleLink !== undefined) { return <ArticleLink key={item.toString() + index} elem={item} /> };
           if (item.outsideLink !== undefined) { return <OutsideLink key={item.toString() + index} elem={item} /> };

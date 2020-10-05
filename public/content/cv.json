@@ -19,16 +19,21 @@
             "text": "My personal strengths are the following:"
           },
           {
-            "articleText": "article__text--second",
-            "text": "1) visual artistic background that may be easily applied to the IT environment,"
-          },
-          {
-            "articleText": "article__text--second",
-            "text": "2) proven ability to work strictly to tight deadlines,"
-          },
-          {
-            "articleText": "article__text--second",
-            "text": "3) ability to work in collaboration with international academic, cultural and professional institutions."
+            "articleList": "article__list",
+            "children": [
+              {
+                "listElem": "article__text--second",
+                "text": "visual artistic background that may be easily applied to the IT environment,"
+              },
+              {
+                "listElem": "article__text--second",
+                "text": "proven ability to work strictly to tight deadlines,"
+              },
+              {
+                "listElem": "article__text--second",
+                "text": "ability to work in collaboration with international academic, cultural and professional institutions."
+              }
+            ]
           },
           {
             "outsideLink": "article__link--second",
@@ -164,7 +169,7 @@
                   },
                   {
                     "articleLink": "item-link",
-                    "href": "webs",
+                    "href": "front",
                     "text": "see more"
                   }
                 ]
@@ -218,6 +223,11 @@
                   {
                     "articleText": "item-text",
                     "text": "website of 'Kosmopolis'"
+                  },
+                  {
+                    "articleLink": "item-link",
+                    "href": "front",
+                    "text": "see more"
                   }
                 ]
               }
