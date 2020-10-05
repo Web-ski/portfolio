@@ -8,7 +8,7 @@ class ViewerBox extends React.Component {
     return <div className={elem.viewerBox}>
       {(elem.children !== undefined) && (
         (elem.children).map((item, index) => {
-          if (item.img !== undefined) { return <ViewerPicture key={item.toString() + index} elem={item} /> };
+          if (item.img !== undefined) { return <ViewerPicture key={item.toString() + index} elem={[item, elem.children, index]} /> };
         })
       )}
     </div>

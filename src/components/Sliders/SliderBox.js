@@ -12,7 +12,7 @@ class SliderBox extends React.Component {
       slides: fullArr,
       animationToggle: '',
       modalToogle: true
-    };    
+    };
   };
 
   handleClick(i) {
@@ -46,15 +46,6 @@ class SliderBox extends React.Component {
     const elem = this.props.elem;
 
     return <div className={elem.sliderBox}>
-    <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow slider__arrow--left"></button>
-    <div className='slides__container'>
-      {(elem.children).map((item, index) =>
-        index === this.state.slides[0] && <div className={"slide " + this.state.animationToggle} style={{ backgroundImage: `url(${item.src})` }}></div>
-      )}
-    </div>
-    <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow slider__arrow--right"></button>
-    <button onClick={this.updateState.bind(this)} className="slider__sizer"></button>
-    <div className={"slides__modal " + (this.state.modalToogle ? '' : 'modal--open')}>
       <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow slider__arrow--left"></button>
       <div className='slides__container'>
         {(elem.children).map((item, index) =>
@@ -62,9 +53,18 @@ class SliderBox extends React.Component {
         )}
       </div>
       <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow slider__arrow--right"></button>
-      <button onClick={this.updateState.bind(this)} className="slider__resizer"></button>
-    </div>
-  </div>;
+      <button onClick={this.updateState.bind(this)} className="slider__sizer"></button>
+      <div className={"slides__modal " + (this.state.modalToogle ? '' : 'modal--open')}>
+        <button onClick={this.handleClick.bind(this, 0)} className="slider__arrow slider__arrow--left"></button>
+        <div className='slides__container'>
+          {(elem.children).map((item, index) =>
+            index === this.state.slides[0] && <div className={"slide " + this.state.animationToggle} style={{ backgroundImage: `url(${item.src})` }}></div>
+          )}
+        </div>
+        <button onClick={this.handleClick.bind(this, 1)} className="slider__arrow slider__arrow--right"></button>
+        <button onClick={this.updateState.bind(this)} className="slider__resizer"></button>
+      </div>
+    </div>;
   }
 }
 
