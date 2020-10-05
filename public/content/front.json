@@ -97,7 +97,7 @@
                 "abbr": "article__abbr",
                 "title": "platform for software development version control",
                 "text": "GitHub"
-              },              
+              },
               {
                 "text": ". Now I'm using also "
               },
@@ -237,11 +237,7 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "In the first version I had created this project by CMS wix in 2018. It was a part of my professional activity at that time."
-          },
-          {
-            "articleText": "article__text--second",
-            "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+            "text": "In the first version I had created this project by CMS wix in 2018. It was a part of my professional activity at that time. In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
           },
           {
             "outsideLink": "article__link--second",
@@ -296,15 +292,11 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "In 2018 I made the website of the academic journal 'European Journal of Transformation Studies'."
+            "text": "In 2019 I made the website of the academic journal 'European Journal of Transformation Studies'."
           },
           {
             "articleText": "article__text--second",
-            "text": "In the first version I had created this project by CMS wix in 2018. It was a part of my professional activity at that time."
-          },
-          {
-            "articleText": "article__text--second",
-            "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+            "text": "In the first version I had created this project by CMS wix in 2018. It was a part of my professional activity at that time. In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, JavaScript, Git, GitHub, VSCode. I was also UX and UI designer of this website."
           },
           {
             "outsideLink": "article__link--second",
@@ -363,11 +355,7 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "At the beginning, in 2015 I had created this project by CMS of home.pl, and recreated on CMS wix in 2016. It was a part of my professional activity at that time."
-          },
-          {
-            "articleText": "article__text--second",
-            "text": "In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, jQuery, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+            "text": "At the beginning, in 2015 I had created this project by CMS of home.pl, and recreated on CMS wix in 2016. It was a part of my professional activity at that time. In the new version I used the basic front-end technologies and tools, such as: HTML5, SCSS, jQuery, Git, GitHub, VSCode. I was also UX and UI designer of this website."
           },
           {
             "outsideLink": "article__link--second",

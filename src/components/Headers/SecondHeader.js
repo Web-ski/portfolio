@@ -16,7 +16,7 @@ class SecondHeader extends React.Component {
 
   render() {
     return <header className="second-header">
-      <Link to="/"><Brand /></Link>
+      <Link to="/"><Brand name="Back to Start"/></Link>
       <PageTitle text={this.state.parent} />
     </header>
   }

@@ -114,7 +114,7 @@
 
         .page__title {
           text-transform: uppercase;
-          color: $text-white;
+          color: $text-blue;
           font-size: calc(25px + 1vh);
           margin: 0 auto;
           text-shadow: none;
@@ -165,11 +165,10 @@
 
         .page__title--of {
           text-transform: none;
-          color: $text-white;
+          color: $text-blue;
           font-family: $brand-font;
-
           font-size: calc(20px + 1vh);
-
+          font-weight: 100;
         }
       }
 
@@ -196,7 +195,7 @@
           color: $text-blue;//$text-black;
           text-transform: uppercase;
           letter-spacing: 2px;
-          font-weight: bold;
+          font-weight: 100;
           //color: $text-white;
           visibility: hidden;
           transform: rotateX(180deg);
