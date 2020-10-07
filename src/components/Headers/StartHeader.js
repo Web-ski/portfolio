@@ -1,6 +1,6 @@
 import React from 'react';
 import './StartHeader.scss';
-import { BRAND, MENU, PAGE_NAME, SECTION_NAME } from '../../constans';
+import { BRAND, MENU, PAGE_NAME, SECTION_NAME, NAME, NAV } from '../../constans';
 import HeroItem from './HeroItem';
 import Main from '../Main/Main';
 import { URL_HOME } from "../../constans";
@@ -28,10 +28,10 @@ class StartHeader extends React.Component {
       <header className={"start-header " + (this.state.headerToggle ? "" : "start-header--reverse")}>
         <div className="hero">
           <nav className="navbar">
-            {SECTION_NAME.map((item, index) => <button key={"section" + index} className="nav__btn">{item}</button>)}
+            {NAV.map((item, index) => <HeroItem key={"section" + index} elem={item}/>)}
           </nav>
           <div className="page__name">
-            {PAGE_NAME.map((item, index) => <h1 key={"page" + index} className="page__title">{item}</h1>)}
+            {NAME.map((item, index) => <HeroItem key={"page" + index} elem={item}/>)}
           </div>
         </div>
         <aside className="menu">

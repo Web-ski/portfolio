@@ -3,34 +3,26 @@ import React from 'react';
 
 class HeroItem extends React.Component {
 
-  elem(elem) {
-    if (typeof elem === 'object') {
-      if (elem.tag === 'p') {
-        return <p className={elem.name}>{elem.text}</p>
-      };
-      if (elem.tag === 'h1') {
-        let text = elem.text;
-        let arr = text;
-        typeof text === "string" && (arr = text.split(""));
-        //console.log(arr);
-        return arr.map((item, index) => <h1 key={item.toString() + index} className={elem.name}>{item}</h1> )
-      };
-    }
-  }
   render() {
-    const parent = this.props.elem[0];
-    const reverse = this.props.elem[1];
-    const children = this.props.elem[2];
+    const elem = this.props.elem;
+    const letters = elem.text.split('');
+    console.log(elem)
     //console.log(children)
-    return <div className={parent.itemClass}>
-      <div className="item__averse">
-        {this.elem(children)}
-      </div>
-      <div className="item__reverse">
-        {reverse !== undefined && <a className="reverse__link page__title" href={"#" + reverse}>{reverse}</a>}
-      </div>
 
-    </div>
+    const LetterItem = ({ letter }) => {
+      if (elem.tag === 'h1') { return <h1 className={elem.name}>{letter}</h1> }
+      if (elem.tag === 'span') { return <span className={elem.name}>{letter}</span> }
+    }
+
+    return (
+      elem.tag !== 'span' ?
+        <div className="hero__item">
+          {letters.map((item, index) => <LetterItem key={"item" + index} letter={item} />)}
+        </div> :
+        <button className="nav__btn">
+          {letters.map((item, index) => <LetterItem key={"item" + index} letter={item} />)}
+        </button>
+    )
   }
 }
 

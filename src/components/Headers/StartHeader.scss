@@ -5,6 +5,9 @@
 @import "../Texts/Texts.scss";
 
 .start-header {
+  @include flex;
+  justify-content: space-around;
+  align-items: center;
   max-width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -16,7 +19,10 @@
 
   .navbar {
     position: absolute;
-    height: 100px;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
 
     .nav__btn {
       @extend .article__text;
@@ -31,6 +37,22 @@
     }
   }
 
+  .page__name {
+
+    .hero__item {
+      @include flex-row;
+      justify-content: space-between;
+
+      .page__title {
+        text-transform: uppercase;
+        width: 25px;
+
+        @media screen and (min-width: $min-md) {
+          width: 40px;
+        }
+      }
+    }
+  }
 }
 
 .start-header--reverse {
