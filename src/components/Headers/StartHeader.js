@@ -9,16 +9,20 @@ class StartHeader extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      itemState: { itemClass: "nav__btn" },
+      navClass: "",
+      navBtnClass: "",
+      menuBtnClass: "",
       headerToggle: true
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
-    let startState = this.state.itemState.itemClass;
-    startState = (startState === "nav__btn" ? "nav__btn nav__btn--top" : "nav__btn")
-    this.setState(state => ({ itemState: { itemClass: startState }, headerToggle: !state.headerToggle }));
+    //this.state.itemState.itemClass === "nav__btn" ? 
+    this.state.navClass === "" ? this.setState({ navClass: "navbar--top" }) : this.setState({ navClass: "" });
+    this.state.navBtnClass === "" ? this.setState({ navBtnClass: "nav__btn--top" }) : this.setState({ navBtnClass: "" });
+    this.state.menuBtnClass === "" ? this.setState({ menuBtnClass: "menu__btn--off" }) : this.setState({ menuBtnClass: "" });
+
   }
 
   render() {
@@ -32,9 +36,9 @@ class StartHeader extends React.Component {
           </div>
         </div>
         <div className="menu">
-          <button onClick={() => this.handleClick} className="menu__btn">{MENU.text}</button>
-          <nav className="navbar">
-            {NAV.map((item, index) => <HeroItem key={"section" + index} elem={[item, this.state.itemState.itemClass]} />)}
+          <button onClick={this.handleClick} className={"menu__btn " + this.state.menuBtnClass}>{MENU.text}</button>
+          <nav className={"navbar " + this.state.navClass}>
+            {NAV.map((item, index) => <HeroItem key={"section" + index} elem={[item, "nav__btn " + this.state.navBtnClass]} />)}
           </nav>
         </div>
       </header>
