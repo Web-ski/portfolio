@@ -19,11 +19,6 @@ class Main extends React.Component {
       {(this.state.data).map((item, index) => {
         if (item.section !== undefined) { return <Section key={(item.id + index).toString()} elem={item}/> };
       })}
-      <div className="main-radio">
-      {(this.state.data).map((item, index) => {
-        if (item.section !== undefined) { return <MainRadio key={item.toString() + index} elem={item}/> };
-      })}
-      </div>
     </div>
   }
 }

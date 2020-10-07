@@ -1,12 +1,14 @@
 import React from 'react';
 import './StartHeader.scss';
-import { BRAND, MENU, PAGE, SECTION_NAME } from '../../constans';
+import { BRAND, MENU, PAGE_NAME, SECTION_NAME } from '../../constans';
 import HeroItem from './HeroItem';
+import Main from '../Main/Main';
+import { URL_HOME } from "../../constans";
 
 class StartHeader extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
       itemState: { itemClass: "hero__item" },
       headerToggle: true
     };
@@ -21,20 +23,23 @@ class StartHeader extends React.Component {
 
   render() {
     const itemData = this.state.itemState;
-   //console.log(itemData.itemClass)
-    return <header className={"start-header " + (this.state.headerToggle ? "" : "start-header--reverse")}>
-      <div className="hero">
-        <div className={ itemData.itemClass }>
-          <p className={BRAND.name}>{BRAND.text}</p>
-          <button onClick={this.handleClick} className={MENU.name}>{MENU.text}</button>
+    //console.log(itemData.itemClass)
+    return <>
+      <header className={"start-header " + (this.state.headerToggle ? "" : "start-header--reverse")}>
+        <div className="hero">
+          <nav className="navbar">
+            {SECTION_NAME.map((item, index) => <button key={"section" + index} className="nav__btn">{item}</button>)}
+          </nav>
+          <div className="page__name">
+            {PAGE_NAME.map((item, index) => <h1 key={"page" + index} className="page__title">{item}</h1>)}
+          </div>
         </div>
-        <HeroItem elem={ [itemData] }/>
-        {PAGE.map((item, index) => <HeroItem key={"page" + index} elem={[itemData, SECTION_NAME[index], item]} />)}
-        <HeroItem elem={ [itemData, SECTION_NAME[5]] }/>
-        <HeroItem elem={ [itemData] }/>
-        <div className="bg-box"></div>
-      </div>
-    </header>
+        <aside className="menu">
+          <button className="menu__btn">{MENU.text}</button>
+        </aside>
+      </header>
+      <Main url={URL_HOME} />
+    </>
   }
 }
 
