@@ -9,7 +9,7 @@ class StartHeader extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      itemState: { itemClass: "hero__item" },
+      itemState: { itemClass: "nav__btn" },
       headerToggle: true
     };
     this.handleClick = this.handleClick.bind(this);
@@ -17,7 +17,7 @@ class StartHeader extends React.Component {
 
   handleClick() {
     let startState = this.state.itemState.itemClass;
-    startState = (startState === "hero__item" ? "hero__item red" : "hero__item")
+    startState = (startState === "nav__btn" ? "nav__btn nav__btn--top" : "nav__btn")
     this.setState(state => ({ itemState: { itemClass: startState }, headerToggle: !state.headerToggle }));
   }
 
@@ -27,16 +27,16 @@ class StartHeader extends React.Component {
     return <>
       <header className={"start-header " + (this.state.headerToggle ? "" : "start-header--reverse")}>
         <div className="hero">
-          <nav className="navbar">
-            {NAV.map((item, index) => <HeroItem key={"section" + index} elem={item}/>)}
-          </nav>
           <div className="page__name">
-            {NAME.map((item, index) => <HeroItem key={"page" + index} elem={item}/>)}
+            {NAME.map((item, index) => <HeroItem key={"page" + index} elem={[item, "hero__title"]} />)}
           </div>
         </div>
-        <aside className="menu">
-          <button className="menu__btn">{MENU.text}</button>
-        </aside>
+        <div className="menu">
+          <button onClick={() => this.handleClick} className="menu__btn">{MENU.text}</button>
+          <nav className="navbar">
+            {NAV.map((item, index) => <HeroItem key={"section" + index} elem={[item, this.state.itemState.itemClass]} />)}
+          </nav>
+        </div>
       </header>
       <Main url={URL_HOME} />
     </>

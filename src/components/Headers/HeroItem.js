@@ -1,27 +1,30 @@
 import React from 'react';
 //import './Texts.scss';
+import './StartHeader.scss';
+
 
 class HeroItem extends React.Component {
 
   render() {
-    const elem = this.props.elem;
+    const elem = this.props.elem[0];
+    const elemName = this.props.elem[1];
     const letters = elem.text.split('');
     console.log(elem)
     //console.log(children)
 
     const LetterItem = ({ letter }) => {
-      if (elem.tag === 'h1') { return <h1 className={elem.name}>{letter}</h1> }
-      if (elem.tag === 'span') { return <span className={elem.name}>{letter}</span> }
+      return <span className={elem.name}>{letter}</span>
     }
 
     return (
-      elem.tag !== 'span' ?
-        <div className="hero__item">
-          {letters.map((item, index) => <LetterItem key={"item" + index} letter={item} />)}
-        </div> :
-        <button className="nav__btn">
-          {letters.map((item, index) => <LetterItem key={"item" + index} letter={item} />)}
-        </button>
+      <>{
+        elemName === 'hero__title' &&
+        <h1 className={elemName}>{letters.map((item, index) => <LetterItem key={"item" + index} letter={item} />)}</h1>
+        }
+        {elemName === 'nav__btn' &&
+          letters.map((item, index) => <LetterItem key={"item" + index} letter={item} />)
+        }
+      </>
     )
   }
 }
