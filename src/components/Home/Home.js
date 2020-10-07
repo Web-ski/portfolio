@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-//import './App.css';
+import '../../styles/_layout.scss';
 import Footer from "../Footer/Footer";
 import { URL_HOME } from "../../constans";
 import StartHeader from '../Headers/StartHeader';
@@ -11,6 +11,7 @@ class Home extends React.Component {
     //console.log(URL_HOME)
     return (
     <Fragment>
+      <aside className="parallax"></aside>
       <StartHeader />
       <BackTopBtn />
       <Main url={ URL_HOME }/>

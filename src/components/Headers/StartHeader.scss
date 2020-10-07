@@ -4,17 +4,13 @@
 @import "../../styles/_layout.scss";
 
 .start-header {
-  background-color: $bg-wrapper;
   max-width: 100vw;
-  //width: 100%;
   height: 100vh;
   overflow: hidden;
 
   @media screen and (min-width: $min-md) {
     height: 100vh;
-    //width: 100vw;
     overflow: hidden;
-    // max-height: 100vh;
   }
 
   .hero {
@@ -26,7 +22,6 @@
     height: 100%;
     width: 100%;
     min-width: 300px;
-    //max-width: 100vw;
     margin: 0 auto;
     padding: 0;
     flex-wrap: wrap;
@@ -44,7 +39,7 @@
     .hero__item {
       @include flex-row;
       position: relative;
-      background-color: $bg-wrapper;
+      //background-color: $bg-wrapper;
       //background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
       height: calc(100% / 9);
       width: 100%;
@@ -180,7 +175,7 @@
         width: 100%;
         height: 100%;
         //background-color: rgb(5, 184, 184);
-        background-color: $bg-wrapper; //$text-blue;
+        //background-color: $bg-wrapper; //$text-blue;
         //background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
         //border: inset 1px dimgrey;
 
@@ -310,7 +305,7 @@
     }
 
     .red {
-      background-color: $bg-wrapper;//$text-blue;
+      //background-color: $bg-wrapper;//$text-blue;
       //background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
       transform: rotateX(180deg);
       -webkit-transform: rotateX(180deg);
