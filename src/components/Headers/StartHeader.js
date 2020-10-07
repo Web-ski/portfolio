@@ -1,5 +1,6 @@
 import React from 'react';
 import './StartHeader.scss';
+import './Menu.scss';
 import { BRAND, MENU, PAGE_NAME, SECTION_NAME, NAME, NAV } from '../../constans';
 import HeroItem from './HeroItem';
 import Main from '../Main/Main';
