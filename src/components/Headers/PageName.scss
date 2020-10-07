@@ -1,0 +1,242 @@
+@import "../../styles/_reset.scss";
+@import '../../styles/_variables.scss';
+@import "../../styles/_extends.scss";
+@import "../../styles/_layout.scss";
+@import "../Texts/Texts.scss";
+
+.page__name {
+
+  .hero__title {
+    position: relative;
+    @include flex-row;
+    justify-content: space-between;
+    width: calc(25px * 9);
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 100%;
+      width: 10%;
+      background-color: $bg-black;
+      top: 0;
+      left: -15%;
+    }
+
+    &:nth-of-type(1) {
+
+      .page__title {
+
+        @for $i from 1 through 9 {
+          &:nth-child(#{$i}) {
+            animation: nameBtnShow1 .1s * $i forwards;
+            -webkit-animation: nameBtnShow1 .1s * $i forwards;
+            //transform: translate(-100vh, -70vh);
+           // animation-delay: .5s;
+
+            @keyframes nameBtnShow1 {
+              from {
+                transform: translate(-100vh, -70vh);
+              }
+
+              to {
+                transform: translate(0, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+
+      .page__title {
+
+        @for $i from 1 through 9 {
+          &:nth-child(#{$i}) {
+            animation: nameBtnShow2 .1s * $i forwards;
+            -webkit-animation: nameBtnShow2 .1s * $i forwards;
+            //transform: translate(-100vh, -30vh);
+            //animation-delay: .5s;
+
+            @keyframes nameBtnShow2 {
+              from {
+                transform: translate(-100vh, -30vh);
+              }
+
+              to {
+                transform: translate(0, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+
+      .page__title {
+
+        @for $i from 1 through 9 {
+          &:nth-child(#{$i}) {
+            animation: nameBtnShow3 .1s * $i forwards;
+            -webkit-animation: nameBtnShow3 .1s * $i forwards;
+            //transform: translate(-100vh, 30vh);
+            //animation-delay: .5s;
+
+            @keyframes nameBtnShow3 {
+              from {
+                transform: translate(-100vh, 30vh);
+              }
+
+              to {
+                transform: translate(0, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(4) {
+
+      .page__title {
+
+        @for $i from 1 through 9 {
+          &:nth-child(#{$i}) {
+            animation: nameBtnShow4 .1s * $i forwards;
+            -webkit-animation: nameBtnShow4 .1s * $i forwards;
+            //transform: translate(-100vh, 70vh);
+            //animation-delay: .5s;
+
+            @keyframes nameBtnShow4 {
+              from {
+                transform: translate(-100vh, 70vh);
+              }
+
+              to {
+                transform: translate(0, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    .page__title {
+      text-transform: uppercase;
+      width: 25px;
+    }
+
+    @media screen and (min-width: $min-md) {
+      width: calc(40px * 9);
+
+      .page__title {
+        width: 40px;
+      }
+    }
+  }
+}
+
+.page__name--off {
+
+  .hero__title {
+
+    &:nth-of-type(1) {
+
+      .page__title {
+
+        @for $i from 1 through 9 {
+          &:nth-child(#{$i}) {
+            animation: nameBtnOff1 .1s * $i backwards;
+            //transform: translate(-100vh, -70vh);
+           // animation-delay: .5s;
+
+            @keyframes nameBtnOff1 {
+              from {
+                transform: translate(-100vh, -70vh);
+              }
+
+              to {
+                transform: translate(0, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+
+      .page__title {
+
+        @for $i from 1 through 9 {
+          &:nth-child(#{$i}) {
+            animation: nameBtnOff2 .1s * $i backwards;
+            //transform: translate(-100vh, -30vh);
+            //animation-delay: .5s;
+
+            @keyframes nameBtnOff2 {
+              from {
+                transform: translate(-100vh, -30vh);
+              }
+
+              to {
+                transform: translate(0, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+
+      .page__title {
+
+        @for $i from 1 through 9 {
+          &:nth-child(#{$i}) {
+            animation: nameBtnOff3 .1s * $i backwards;
+            //transform: translate(-100vh, 30vh);
+            //animation-delay: .5s;
+
+            @keyframes nameBtnOff3 {
+              from {
+                transform: translate(-100vh, 30vh);
+              }
+
+              to {
+                transform: translate(0, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(4) {
+
+      .page__title {
+
+        @for $i from 1 through 9 {
+          &:nth-child(#{$i}) {
+            animation: nameBtnOff4 .1s * $i backwards;
+            //transform: translate(-100vh, 70vh);
+            //animation-delay: .5s;
+
+            @keyframes nameBtnOff4 {
+              from {
+                transform: translate(-100vh, 70vh);
+              }
+
+              to {
+                transform: translate(0, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

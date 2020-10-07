@@ -18,23 +18,6 @@
     overflow: hidden;
     padding: 2vh 5vw;
   }
-
-  .page__name {
-
-    .hero__title {
-      @include flex-row;
-      justify-content: space-between;
-
-      .page__title {
-        text-transform: uppercase;
-        width: 25px;
-
-        @media screen and (min-width: $min-md) {
-          width: 40px;
-        }
-      }
-    }
-  }
 }
 
 .start-header--reverse {

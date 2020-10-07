@@ -1,6 +1,7 @@
 import React from 'react';
 import './StartHeader.scss';
 import './Menu.scss';
+import './PageName.scss';
 import { BRAND, MENU, PAGE_NAME, SECTION_NAME, NAME, NAV } from '../../constans';
 import HeroItem from './HeroItem';
 import Main from '../Main/Main';
@@ -13,6 +14,7 @@ class StartHeader extends React.Component {
       navClass: "",
       navBtnClass: "",
       menuBtnClass: "",
+      pageNameClass: "",
       headerToggle: true
     };
     this.handleClick = this.handleClick.bind(this);
@@ -23,16 +25,15 @@ class StartHeader extends React.Component {
     this.state.navClass === "" ? this.setState({ navClass: "navbar--top" }) : this.setState({ navClass: "" });
     this.state.navBtnClass === "" ? this.setState({ navBtnClass: "nav__btn--top" }) : this.setState({ navBtnClass: "" });
     this.state.menuBtnClass === "" ? this.setState({ menuBtnClass: "menu__btn--off" }) : this.setState({ menuBtnClass: "" });
-
+    this.state.pageNameClass === "" ? this.setState({ pageNameClass: "page__name--off" }) : this.setState({ pageNameClass: "" });
   }
 
   render() {
-    const itemData = this.state.itemState;
     //console.log(itemData.itemClass)
     return <>
       <header className={"start-header " + (this.state.headerToggle ? "" : "start-header--reverse")}>
         <div className="hero">
-          <div className="page__name">
+          <div className={"page__name " + this.state.pageNameClass}>
             {NAME.map((item, index) => <HeroItem key={"page" + index} elem={[item, "hero__title"]} />)}
           </div>
         </div>
