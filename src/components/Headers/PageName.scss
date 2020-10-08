@@ -3,6 +3,7 @@
 @import "../../styles/_extends.scss";
 @import "../../styles/_layout.scss";
 @import "../Texts/Texts.scss";
+@import "../Titles/Titles.scss";
 
 .page__name {
   position: relative;
@@ -12,7 +13,7 @@
     display: block;
     content: '';
     height: 50%;
-    width: 10%;
+    width: 25px;
     background-color: $bg-black;
     top: 0;
     left: -20px;
@@ -20,6 +21,7 @@
 
     @media screen and (min-width: $min-md) {
       left: -40px;
+      width: 35px;
     }
 
     @keyframes slideBlockStoneTop {
@@ -38,7 +40,7 @@
     display: block;
     content: '';
     height: 50%;
-    width: 10%;
+    width: 25px;
     background-color: $bg-black;
     bottom: 0;
     left: -20px;
@@ -46,6 +48,7 @@
 
     @media screen and (min-width: $min-md) {
       left: -40px;
+      width: 35px;
     }
 
     @keyframes slideBlockStoneBottom {
@@ -67,7 +70,7 @@
     padding-left: 20px;
     overflow: hidden;
 
-    .page__title {
+    .hero-title__elem {
 
       @for $i from 1 through 36 {
         &:nth-child(#{$i}) {
@@ -89,7 +92,8 @@
       }
     }
 
-    .page__title {
+    .hero-title__elem {
+      @extend .page__title;
       text-transform: uppercase;
       width: 25px;
     }
@@ -97,7 +101,7 @@
     @media screen and (min-width: $min-md) {
       width: calc(40px * 9);
 
-      .page__title {
+      .hero-title__elem {
         width: 40px;
       }
     }
@@ -107,21 +111,35 @@
 /* PAGE NAME OFF */
 .page__name--off {
   position: relative;
+  animation: pageName-off .1s forwards;
+  animation-delay: 3s;
+
+  @keyframes pageName-off {
+    from {
+      height: auto;
+    }
+    
+    to {
+      height: 0;
+      display: none;
+    }
+  }
 
   .block-stone-top {
     position: absolute;
     display: block;
     content: '';
     height: 50%;
-    width: 10%;
+    width: 25px;
     background-color: $bg-black;
     top: 0;
     left: -20px;
     animation: slideBlockStoneTop-off .4s forwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
 
     @media screen and (min-width: $min-md) {
       left: -40px;
+      width: 35px;
     }
 
     @keyframes slideBlockStoneTop-off {
@@ -130,7 +148,7 @@
       }
       
       to {
-        transform: translateY(-80vh);
+        transform: translateY(0);
         display: none;
       }
     }
@@ -141,15 +159,16 @@
     display: block;
     content: '';
     height: 50%;
-    width: 10%;
+    width: 25px;
     background-color: $bg-black;
     bottom: 0;
     left: -20px;
     animation: slideBlockStoneBottom-off .4s forwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
 
     @media screen and (min-width: $min-md) {
       left: -40px;
+      width: 35px;
     }
 
     @keyframes slideBlockStoneBottom-off {
@@ -158,7 +177,7 @@
       }
       
       to {
-        transform: translateY(80vh);
+        transform: translateY(0);
         display: none;
       }
     }
@@ -171,8 +190,10 @@
     width: calc(25px * 9 + 40px);
     padding-left: 20px;
     overflow: hidden;
+    animation: pageName-off .1s forwards;
+    animation-delay: 2s;
 
-    .page__title {
+    .hero-title__elem {
 
       @for $i from 1 through 36 {
         &:nth-child(#{$i}) {
@@ -194,7 +215,8 @@
       }
     }
 
-    .page__title {
+    .hero-title__elem {
+      @extend .page__title;
       text-transform: uppercase;
       width: 25px;
     }
@@ -202,7 +224,7 @@
     @media screen and (min-width: $min-md) {
       width: calc(40px * 9);
 
-      .page__title {
+      .hero-title__elem {
         width: 40px;
       }
     }

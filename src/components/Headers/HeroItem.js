@@ -16,13 +16,26 @@ class HeroItem extends React.Component {
       return <span className={elem.name}>{letter}</span>
     }
 
+    const NavBtn = ({ letter }) => {
+      return <span className={"btn__letter"}>{letter}</span>
+    }
+
     return (
       <>{
         elemName === 'hero__title' &&
         <h1 className={elemName}>{letters.map((item, index) => <LetterItem key={"item" + index} letter={item} />)}</h1>
-        }
-        {(elemName === 'circle__elem ' ||  elemName === 'circle__elem circle__elem--top') &&
+      }
+        {(elemName === 'circle__elem ' || elemName === 'circle__elem circle__elem--top') &&
           letters.map((item, index) => <LetterItem key={"item" + index} letter={item} />)
+        }
+        {(elemName === 'nav__btn') && <>
+          <div className={"block-stone"}></div>
+          <div className="nav__box">
+            <button className={elemName}>
+              {letters.map((item, index) => <NavBtn key={"item" + index} letter={item}/>)}
+            </button>
+          </div>
+        </>
         }
       </>
     )

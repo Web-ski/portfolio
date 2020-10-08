@@ -1,0 +1,55 @@
+@import "../../styles/_reset.scss";
+@import '../../styles/_variables.scss';
+@import "../../styles/_extends.scss";
+@import "../../styles/_layout.scss";
+@import "../Texts/Texts.scss";
+@import "../Titles/Titles.scss";
+
+.jumbotron {
+  position: absolute;
+  width: 120vh;
+  height: 120vh;
+  //background-color: $text-blue;//$bg-black;
+  border: solid 2px $text-blue;
+  bottom: -120vh;
+  border-radius: 50%;
+  animation: jumboShow 2s forwards;
+  animation-delay: 2s;
+
+  @keyframes jumboShow {
+    from {
+      bottom: -120vh;
+    }
+
+    to {
+      bottom: -80vh;
+    }
+  }
+
+  .jumbotron__elem {
+    height: 100%;
+    width: 100%;
+    border: solid 2px $text-blue;
+    border-radius: 50%;
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        bottom: $i * -10vh;
+      }
+    }
+    
+  }
+
+  @media screen and (min-width: $min-md) {
+
+    right: -60vh;
+    bottom: -10vh;
+    border-radius: 50%;
+  }
+
+}
+
+.jumbotron--off {
+  position: absolute;
+  display: none;
+}

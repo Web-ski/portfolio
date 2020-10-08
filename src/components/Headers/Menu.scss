@@ -106,7 +106,6 @@
 
     .circle__elem {
       @extend .article__text;
-      @include clean-btn;
       position: absolute;
       width: 14px;
       left: 93px;
@@ -164,11 +163,13 @@
             from {
               height: 100px;
               top: 0;
+              z-index: inherit;
             }
 
             to {
               height: 200vh;
               top: -200vh;
+              z-index: -1;
             }
           }
         }
