@@ -10,43 +10,118 @@
   width: 120vh;
   height: 120vh;
   //background-color: $text-blue;//$bg-black;
-  border: solid 2px $text-blue;
-  bottom: -120vh;
+  //border: solid 5px $text-blue;
+  bottom: -80vh;
   border-radius: 50%;
-  animation: jumboShow 2s forwards;
-  animation-delay: 2s;
+  animation: jumboShow 3s;
 
   @keyframes jumboShow {
     from {
-      bottom: -120vh;
+      opacity: 0;
     }
 
     to {
-      bottom: -80vh;
+      bottom: 1;
     }
   }
 
   .jumbotron__elem {
+    position: absolute;
     height: 100%;
     width: 100%;
-    border: solid 2px $text-blue;
     border-radius: 50%;
-
-    @for $i from 1 through 6 {
+    
+    @for $i from 1 through 12 {
       &:nth-child(#{$i}) {
-        bottom: $i * -10vh;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        border: solid 5px $text-blue;
+        animation: moveCircle1 12s ease-in-out infinite;
+        animation-delay: 1s * $i;
+      }
+
+      @keyframes moveCircle1 {
+        from {
+          top: 60%;
+          height: 50%;
+          width: 50%;
+          left: 25%;
+          opacity: 1;
+        }
+
+        to {
+          top: 0%;
+          height: 100%;
+          width: 100%;
+          left: 0%;
+          opacity: 0;
+        }
       }
     }
-    
   }
 
   @media screen and (min-width: $min-md) {
-
-    right: -60vh;
-    bottom: -10vh;
+    right: -60vw;
     border-radius: 50%;
+    bottom: -10vh;
+    width: 120vh;
+    height: 120vh;
+    
+    .jumbotron__elem {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      
+      @for $i from 1 through 12 {
+        &:nth-child(#{$i}) {
+          height: 100%;
+          width: 100%;
+          top: 0%;
+          left: 60%;
+          border: solid 5px $text-blue;
+          animation: moveCircle1 none;
+          animation: moveCircle2 12s ease-in-out infinite;
+          animation-delay: 1s * $i;
+        }
+  
+        @keyframes moveCircle2 {
+          from {
+            height: 50%;
+            width: 50%;
+            left: 60%;
+            top: 25%;
+            opacity: 1;
+          }
+  
+          to {
+            height: 100%;
+            width: 100%;
+            left: 0%;
+            top: 0%;
+            opacity: 0;
+          }
+        }
+      }
+    }
   }
 
+  @media screen and (min-width: $min-xl) {
+    right: -40vw;
+    border-radius: 50%;
+    bottom: -25vh;
+    width: 150vh;
+    height: 150vh;    
+  }
+
+  @media screen and (min-width: $min-xxl) {
+    right: -40vw;
+    border-radius: 50%;
+    bottom: -50vh;
+    width: 200vh;
+    height: 200vh;    
+  }
 }
 
 .jumbotron--off {
