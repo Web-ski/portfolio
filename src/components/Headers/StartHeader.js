@@ -38,7 +38,9 @@ class StartHeader extends React.Component {
           </div>
         </div>
         <div className="menu">
-          <button onClick={this.handleClick} className={"menu__btn " + this.state.menuBtnClass}>{MENU.text}</button>
+          <button onClick={this.handleClick} className={"menu__btn " + this.state.menuBtnClass}>
+            {MENU.text}
+          </button>
           <nav className={"navbar " + this.state.navClass}>
             {NAV.map((item, index) => <HeroItem key={"section" + index} elem={[item, "nav__btn " + this.state.navBtnClass]} />)}
           </nav>

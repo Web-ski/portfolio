@@ -31,12 +31,12 @@
           &:nth-child(#{$i}) {
             animation: nameBtnShow1 .1s * $i forwards;
             -webkit-animation: nameBtnShow1 .1s * $i forwards;
-            //transform: translate(-100vh, -70vh);
-           // animation-delay: .5s;
+            transform: translate(-80vh, -80vh);
+            animation-delay: .8s;
 
             @keyframes nameBtnShow1 {
               from {
-                transform: translate(-100vh, -70vh);
+                transform: translate((-80vh + $i), -80vh);
               }
 
               to {
@@ -56,8 +56,8 @@
           &:nth-child(#{$i}) {
             animation: nameBtnShow2 .1s * $i forwards;
             -webkit-animation: nameBtnShow2 .1s * $i forwards;
-            //transform: translate(-100vh, -30vh);
-            //animation-delay: .5s;
+            transform: translate(-100vh, -30vh);
+            animation-delay: .8s;
 
             @keyframes nameBtnShow2 {
               from {
@@ -81,8 +81,8 @@
           &:nth-child(#{$i}) {
             animation: nameBtnShow3 .1s * $i forwards;
             -webkit-animation: nameBtnShow3 .1s * $i forwards;
-            //transform: translate(-100vh, 30vh);
-            //animation-delay: .5s;
+            transform: translate(-100vh, 30vh);
+            animation-delay: .8s;
 
             @keyframes nameBtnShow3 {
               from {
@@ -106,8 +106,8 @@
           &:nth-child(#{$i}) {
             animation: nameBtnShow4 .1s * $i forwards;
             -webkit-animation: nameBtnShow4 .1s * $i forwards;
-            //transform: translate(-100vh, 70vh);
-            //animation-delay: .5s;
+            transform: translate(-100vh, 70vh);
+            animation-delay: .8s;
 
             @keyframes nameBtnShow4 {
               from {
@@ -151,7 +151,7 @@
           &:nth-child(#{$i}) {
             animation: nameBtnOff1 .1s * $i backwards;
             //transform: translate(-100vh, -70vh);
-           // animation-delay: .5s;
+            // animation-delay: .5s;
 
             @keyframes nameBtnOff1 {
               from {

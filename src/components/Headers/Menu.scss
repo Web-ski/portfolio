@@ -16,13 +16,14 @@
     @extend .article__text;
     @include clean-btn;
     transition: .3s;
-    width: 100px;
-    height: 100px;
+    background-color: transparent;
+    color: transparent;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background-color: $bg-black;
-    color: $text-blue;
     z-index: 99;
-    animation: menuBtnShow 1s;
+    animation: menuBtnShow 1s forwards;
+    animation-delay: 2s;
 
     @keyframes menuBtnShow {
       from {
@@ -44,10 +45,27 @@
       position: absolute;
       @extend .article__text;
       content: "click";
+      visibility: hidden;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      height: 90px;
+      width: 90px;
+      line-height: 90px;
       color: transparent;
+      border-radius: 50%;
+      animation: afterShow 1s forwards;
+      animation-delay: 3s;
+
+      @keyframes afterShow {
+        from {
+          visibility: hidden;
+        }
+
+        to {
+          visibility: visible;
+        }
+      }
     }
   }
 
@@ -62,6 +80,7 @@
 
       &:after {
         color: $text-black;
+        background-color: $text-blue;
       }
     }
   }
@@ -89,10 +108,10 @@
       @extend .article__text;
       @include clean-btn;
       position: absolute;
-      height: 100px;
       width: 14px;
       left: 93px;
-      top: 0;
+      height: 200vh;
+      top: -200vh;
       transform-origin: bottom center;
       //transform: translateX(-50%);
 
@@ -102,7 +121,8 @@
         }
       }
 
-      animation: goLettersDown 1s;
+      animation: goLettersDown 1s forwards;
+      animation-delay: 2s;
 
       @keyframes goLettersDown {
         from {
