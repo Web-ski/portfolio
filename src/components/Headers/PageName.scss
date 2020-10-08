@@ -15,8 +15,12 @@
     width: 10%;
     background-color: $bg-black;
     top: 0;
-    left: -15%;
+    left: -20px;
     animation: slideBlockStoneTop .8s;
+
+    @media screen and (min-width: $min-md) {
+      left: -40px;
+    }
 
     @keyframes slideBlockStoneTop {
       from {
@@ -37,8 +41,12 @@
     width: 10%;
     background-color: $bg-black;
     bottom: 0;
-    left: -15%;
+    left: -20px;
     animation: slideBlockStoneBottom .8s;
+
+    @media screen and (min-width: $min-md) {
+      left: -40px;
+    }
 
     @keyframes slideBlockStoneBottom {
       from {
@@ -55,108 +63,31 @@
     position: relative;
     @include flex-row;
     justify-content: space-between;
-    width: calc(25px * 9);
+    width: calc(25px * 9 + 40px);
+    padding-left: 20px;
+    overflow: hidden;
 
-    &:nth-of-type(1) {
+    .page__title {
 
-      .page__title {
+      @for $i from 1 through 36 {
+        &:nth-child(#{$i}) {
+          animation: nameBtnShow1 .8s forwards;
+          -webkit-animation: nameBtnShow1 .8s forwards;
+          transform: translateX(-40px * 9);
+          animation-delay: 1s;
 
-        @for $i from 1 through 9 {
-          &:nth-child(#{$i}) {
-            animation: nameBtnShow1 .1s * $i forwards;
-            -webkit-animation: nameBtnShow1 .1s * $i forwards;
-            transform: translate(-80vh, -80vh);
-            animation-delay: .8s;
+          @keyframes nameBtnShow1 {
+            from {
+              transform: translateX(-40px * 9);
+            }
 
-            @keyframes nameBtnShow1 {
-              from {
-                transform: translate((-80vh + $i), -80vh);
-              }
-
-              to {
-                transform: translate(0, 0);
-              }
+            to {
+              transform: translateX(0);
             }
           }
         }
       }
     }
-
-    &:nth-of-type(2) {
-
-      .page__title {
-
-        @for $i from 1 through 9 {
-          &:nth-child(#{$i}) {
-            animation: nameBtnShow2 .1s * $i forwards;
-            -webkit-animation: nameBtnShow2 .1s * $i forwards;
-            transform: translate(-100vh, -30vh);
-            animation-delay: .8s;
-
-            @keyframes nameBtnShow2 {
-              from {
-                transform: translate(-100vh, -30vh);
-              }
-
-              to {
-                transform: translate(0, 0);
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &:nth-of-type(3) {
-
-      .page__title {
-
-        @for $i from 1 through 9 {
-          &:nth-child(#{$i}) {
-            animation: nameBtnShow3 .1s * $i forwards;
-            -webkit-animation: nameBtnShow3 .1s * $i forwards;
-            transform: translate(-100vh, 30vh);
-            animation-delay: .8s;
-
-            @keyframes nameBtnShow3 {
-              from {
-                transform: translate(-100vh, 30vh);
-              }
-
-              to {
-                transform: translate(0, 0);
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &:nth-of-type(4) {
-
-      .page__title {
-
-        @for $i from 1 through 9 {
-          &:nth-child(#{$i}) {
-            animation: nameBtnShow4 .1s * $i forwards;
-            -webkit-animation: nameBtnShow4 .1s * $i forwards;
-            transform: translate(-100vh, 70vh);
-            animation-delay: .8s;
-
-            @keyframes nameBtnShow4 {
-              from {
-                transform: translate(-100vh, 70vh);
-              }
-
-              to {
-                transform: translate(0, 0);
-              }
-            }
-          }
-        }
-      }
-    }
-
 
     .page__title {
       text-transform: uppercase;
@@ -177,7 +108,7 @@
 .page__name--off {
   position: relative;
 
-  &:before {
+  .block-stone-top {
     position: absolute;
     display: block;
     content: '';
@@ -185,21 +116,27 @@
     width: 10%;
     background-color: $bg-black;
     top: 0;
-    left: -15%;
-    animation: slideBlackStoneTop .8s;
+    left: -20px;
+    animation: slideBlockStoneTop-off .4s forwards;
+    animation-delay: 1s;
 
-    @keyframes slideBlackStoneTop {
+    @media screen and (min-width: $min-md) {
+      left: -40px;
+    }
+
+    @keyframes slideBlockStoneTop-off {
       from {
-        transform: translateY(-80vh);
-      }
-
-      to {
         transform: translateY(0);
+      }
+      
+      to {
+        transform: translateY(-80vh);
+        display: none;
       }
     }
   }
 
-  &:after {
+  .block-stone-bottom {
     position: absolute;
     display: block;
     content: '';
@@ -207,16 +144,22 @@
     width: 10%;
     background-color: $bg-black;
     bottom: 0;
-    left: -15%;
-    animation: slideBlackStoneBottom .8s;
+    left: -20px;
+    animation: slideBlockStoneBottom-off .4s forwards;
+    animation-delay: 1s;
 
-    @keyframes slideBlackStoneBottom {
+    @media screen and (min-width: $min-md) {
+      left: -40px;
+    }
+
+    @keyframes slideBlockStoneBottom-off {
       from {
-        transform: translateY(80vh);
-      }
-
-      to {
         transform: translateY(0);
+      }
+      
+      to {
+        transform: translateY(80vh);
+        display: none;
       }
     }
   }
@@ -225,104 +168,31 @@
     position: relative;
     @include flex-row;
     justify-content: space-between;
-    width: calc(25px * 9);
+    width: calc(25px * 9 + 40px);
+    padding-left: 20px;
+    overflow: hidden;
 
-    &:nth-of-type(1) {
+    .page__title {
 
-      .page__title {
+      @for $i from 1 through 36 {
+        &:nth-child(#{$i}) {
+          animation: nameBtnShow1 .7s forwards;
+          -webkit-animation: nameBtnShow2.7s forwards;
+          transform: translateX(0);
+          animation-delay: .2s;
 
-        @for $i from 1 through 9 {
-          &:nth-child(#{$i}) {
-            animation: nameBtnOff1 .1s * $i forwards;
-            //transform: translate(-100vh, -70vh);
-            animation-delay: .2s;
+          @keyframes nameBtnShow2 {
+            from {
+              transform: translateX(0);
+            }
 
-            @keyframes nameBtnOff1 {
-              from {
-                transform: translate(0, 0);
-              }
-
-              to {
-                transform: translate(-100vh, -70vh);
-              }
+            to {
+              transform: translateX(-40px * 9);
             }
           }
         }
       }
     }
-
-    &:nth-of-type(2) {
-
-      .page__title {
-
-        @for $i from 1 through 9 {
-          &:nth-child(#{$i}) {
-            animation: nameBtnOff2 .1s * $i forwards;
-            //transform: translate(-100vh, -30vh);
-            animation-delay: .2s;
-
-            @keyframes nameBtnOff2 {
-              from {
-                transform: translate(0, 0);
-              }
-
-              to {
-                transform: translate(-100vh, -30vh);
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &:nth-of-type(3) {
-
-      .page__title {
-
-        @for $i from 1 through 9 {
-          &:nth-child(#{$i}) {
-            animation: nameBtnOff3 .1s * $i forwards;
-            //transform: translate(-100vh, 30vh);
-            animation-delay: .2s;
-
-            @keyframes nameBtnOff3 {
-              from {
-                transform: translate(0, 0);
-              }
-
-              to {
-                transform: translate(-100vh, 30vh);
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &:nth-of-type(4) {
-
-      .page__title {
-
-        @for $i from 1 through 9 {
-          &:nth-child(#{$i}) {
-            animation: nameBtnOff4 .1s * $i forwards;
-            //transform: translate(-100vh, 70vh);
-            animation-delay: .2s;
-
-            @keyframes nameBtnOff4 {
-              from {
-                transform: translate(0, 0);
-              }
-
-              to {
-                transform: translate(-100vh, 70vh);
-              }
-            }
-          }
-        }
-      }
-    }
-
 
     .page__title {
       text-transform: uppercase;

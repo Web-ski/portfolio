@@ -21,7 +21,7 @@ class HeroItem extends React.Component {
         elemName === 'hero__title' &&
         <h1 className={elemName}>{letters.map((item, index) => <LetterItem key={"item" + index} letter={item} />)}</h1>
         }
-        {(elemName === 'nav__btn ' ||  elemName === 'nav__btn nav__btn--top') &&
+        {(elemName === 'circle__elem ' ||  elemName === 'circle__elem circle__elem--top') &&
           letters.map((item, index) => <LetterItem key={"item" + index} letter={item} />)
         }
       </>

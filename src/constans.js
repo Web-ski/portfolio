@@ -16,6 +16,7 @@ export const BRAND = new HERO_ELEM(BRAND_NAME, 'p', 'hero__brand');
 export const MENU = new HERO_ELEM(MENU_NAME, 'button', 'hero__menu');
 export const NAME = PAGE_NAME.map(item => new HERO_ELEM(item, 'h1', 'page__title'));
 export const NAV = SECTION_NAME.map(item => new HERO_ELEM(item, 'span', 'nav__btn'));
+export const NAV_CIRCLE = SECTION_NAME.map(item => new HERO_ELEM(item, 'span', 'circle__elem'));
 
 //export const PAGE_LETTERS = [PAGE1, PAGE2, PAGE3, PAGE4, PAGE5];
 
