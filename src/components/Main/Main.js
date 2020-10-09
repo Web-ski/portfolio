@@ -1,12 +1,13 @@
 import React from 'react';
 import './Main.scss';
-import Section from '../Sections/Section'
-import MainRadio from '../Radio/MainRadio'
+import Section from '../Sections/Section';
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { data: [] }
+    this.state = { 
+      data: []
+     }
   }
 
   componentDidMount() {
@@ -17,7 +18,8 @@ class Main extends React.Component {
   render() {
     return <div className="main">
       {(this.state.data).map((item, index) => {
-        if (item.section !== undefined) { return <Section key={(item.id + index).toString()} elem={item}/> };
+        if (item.section !== undefined) 
+        { return <Section key={(item.id + index).toString()} elem={item} sectionDisplay={this.props.sectionDisplay}/> };
       })}
     </div>
   }

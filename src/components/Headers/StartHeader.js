@@ -19,12 +19,19 @@ class StartHeader extends React.Component {
       menuBtnClass: "",
       pageNameClass: "page__name",
       jumboClass: "jumbotron--off",
-      headerToggle: true
+      headerToggle: true,
+      sectionData: ''
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleMenu = this.handleMenu.bind(this);
+    this.btnSectionData = this.btnSectionData.bind(this);
   }
 
-  handleClick() {
+  btnSectionData(btnData) {
+    this.setState({ sectionData: btnData });
+    console.log(btnData);
+  }
+
+  handleMenu() {
     //this.state.itemState.itemClass === "nav__btn" ? 
     this.state.circleClass === "" ? this.setState({ circleClass: "menu-circle--top" }) : this.setState({ circleClass: "" });
     this.state.circleBtnClass === "" ? this.setState({ circleBtnClass: "circle__elem--top" }) : this.setState({ circleBtnClass: "" });
@@ -45,11 +52,11 @@ class StartHeader extends React.Component {
             {NAME.map((item, index) => <HeroItem key={"page" + index} elem={[item, "hero__title"]} />)}
           </article>
           <nav className={this.state.navbarClass}>
-            {NAV.map((item, index) => <HeroItem key={"page" + index} elem={[item, "nav__btn"]} />)}
+            {NAV.map((item, index) => <HeroItem key={"page" + index} elem={[item, "nav__btn"]} btnSectionData={this.btnSectionData}/>)}
           </nav>
         </section>
         <section className="menu">
-          <button onClick={this.handleClick} className={"menu__btn " + this.state.menuBtnClass}>
+          <button onClick={this.handleMenu} className={"menu__btn " + this.state.menuBtnClass}>
             {MENU.text}
           </button>
           <div className={"menu-circle " + this.state.circleClass}>
@@ -60,7 +67,7 @@ class StartHeader extends React.Component {
           {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(() => <div className="jumbotron__elem"></div>)}
         </section>
       </header>
-      <Main url={URL_HOME} />
+      {/* <Main url={URL_HOME} sectionDisplay={'...'} /> */}
     </>
   }
 }
