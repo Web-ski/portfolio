@@ -4,12 +4,24 @@ import './StartHeader.scss';
 
 
 class HeroItem extends React.Component {
+  constructor(props) {
+    super(props);
+    const sectionName = (this.props.elem[0]).text;
+    this.state = {
+      section: sectionName
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(){
+    console.log(this.state.section)
+  }
 
   render() {
     const elem = this.props.elem[0];
     const elemName = this.props.elem[1];
     const letters = elem.text.split('');
-    console.log(elem)
+   // console.log(elem)
     //console.log(children)
 
     const LetterItem = ({ letter }) => {
@@ -31,7 +43,7 @@ class HeroItem extends React.Component {
         {(elemName === 'nav__btn') && <>
           <div className={"block-stone"}></div>
           <div className="nav__box">
-            <button className={elemName}>
+            <button onClick={this.handleClick} className={elemName}>
               {letters.map((item, index) => <NavBtn key={"item" + index} letter={item}/>)}
             </button>
           </div>
