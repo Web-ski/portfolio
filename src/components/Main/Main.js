@@ -19,7 +19,6 @@ class Main extends React.Component {
     const sectionName = this.props.sectionDisplay;
     return <main className={this.props.name}>
       <div className="jumbo__container">
-
         {(this.state.data).map((item, index) => {
           if (item.id === sectionName) { return <SectionStart key={(item.id + index).toString()} elem={item} /> }
           // if (item.section !== undefined) 

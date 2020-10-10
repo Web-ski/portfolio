@@ -33,6 +33,7 @@
     height: 80%;
     width: 80%;
     border: dashed 3px $text-blue;
+    overflow: hidden;
   }
 
   @media screen and (min-width: $min-md) {

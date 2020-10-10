@@ -1,0 +1,46 @@
+@import "../../styles/_reset.scss";
+@import '../../styles/_variables.scss';
+@import "../../styles/_extends.scss";
+@import "../../styles/_layout.scss";
+
+#front.section,
+#ui.section,
+#ux.section,
+#find.section,
+#cv.section,
+#repo.section {
+  min-height: 100vh;
+
+  .section {
+    height: 100%;
+    width: 100%;
+
+    .article {
+      height: 100%;
+      width: 100%;
+    }
+
+    .article__description {
+      height: 100%;
+      width: 100%;
+    }
+
+    .article__photos {}
+
+    .articleOn {
+      opacity: 1;
+      animation: articleOn 1s;
+      -webkit-animation: articleOn 1s;
+
+      @keyframes articleOn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,6 @@
 import React from 'react';
-import './Sections.scss';
+import './SectionsStart.scss';
 import Article from './Article';
-import AsideNumber from '../Titles/AsideNumber';
-import TimeLineBox from '../CV/TimeLineBox';
-import FlowToolsBox from '../CV/FlowToolsBox';
 
 class SectionStart extends React.Component {
   constructor(props) {
@@ -20,9 +17,6 @@ class SectionStart extends React.Component {
       {(elem.children !== undefined) && (
         (elem.children).map((item, index) => {
           if (item.article !== undefined) { return <Article key={item.toString() + index} elem={[item, this.state.sectionOn]} /> };
-          if (item.asideNumber !== undefined) { return <AsideNumber key={item.toString() + index} elem={[item, this.state.sectionOn]} /> };
-          if (item.timeLineBox !== undefined) { return <TimeLineBox key={item.toString() + index} elem={[item, this.state.sectionOn]} /> };
-          if (item.flowToolsBox !== undefined) { return <FlowToolsBox key={item.toString() + index} elem={[item, this.state.sectionOn]} /> };
         })
       )}
     </section>)
