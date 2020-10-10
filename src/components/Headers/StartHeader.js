@@ -3,7 +3,6 @@ import './StartHeader.scss';
 import './Menu.scss';
 import './PageName.scss';
 import './NavbarStart.scss';
-import './Jumbotron.scss';
 import { BRAND, MENU, PAGE_NAME, SECTION_NAME, NAME, NAV, NAV_CIRCLE } from '../../constans';
 import HeroItem from './HeroItem';
 import Main from '../Main/Main';

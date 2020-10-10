@@ -4,8 +4,12 @@
     "id": "front",
     "children": [
       {
-        "article": "article__description",
+        "article": "article article__description",
         "children": [
+          {
+            "sectionTitle": "section__title",
+            "text": "Front"
+          },
           {
             "articleText": "article__text",
             "text": "This section presents some websites created by me."

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Main.scss';
+import '../Headers/Jumbotron.scss';
 import SectionStart from '../Sections/SectionStart';
 
 class Main extends React.Component {
