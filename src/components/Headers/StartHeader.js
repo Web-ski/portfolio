@@ -22,13 +22,13 @@ class StartHeader extends React.Component {
       headerToggle: true,
       sectionData: ''
     };
-    this.handleMenu = this.handleMenu.bind(this);
     this.btnSectionData = this.btnSectionData.bind(this);
+    this.handleMenu = this.handleMenu.bind(this);
   }
 
   btnSectionData(btnData) {
     this.setState({ sectionData: btnData });
-    console.log(btnData);
+    //console.log(btnData);
   }
 
   handleMenu(e) {
@@ -57,7 +57,7 @@ class StartHeader extends React.Component {
           </nav>
         </section>
         <section className="menu">
-          <button onClick={this.handleMenu} className={"menu__btn " + this.state.menuBtnClass}>
+          <button onClickCapture={this.handleMenu} className={"menu__btn " + this.state.menuBtnClass}>
             {MENU.text}
           </button>
           <div className={"menu-circle " + this.state.circleClass}>
@@ -65,10 +65,10 @@ class StartHeader extends React.Component {
           </div>
         </section>
         <section className={this.state.jumboClass}>
-
+          {/* {...blok dodatkowy} */}
         </section>
       </header>
-      {/* <Main url={URL_HOME} sectionDisplay={'...'} /> */}
+      <Main url={URL_HOME} sectionDisplay={'...'} />
     </>
   }
 }

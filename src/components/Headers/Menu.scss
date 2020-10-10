@@ -142,7 +142,7 @@
     width: 200px;
     left: 0;
 
-    .circle__elem{
+    .circle__elem {
       @extend .article__text;
       @include clean-btn;
       height: 100px;
@@ -173,6 +173,19 @@
             }
           }
         }
+      }
+    }
+
+    animation: menuOf 2s forwards;
+    animation-delay: .1s;
+
+    @keyframes menuOf {
+      from {
+        visibility: visible;
+      }
+
+      to {
+        visibility: hidden;
       }
     }
   }

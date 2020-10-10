@@ -7,51 +7,10 @@
 
 .jumbotron {
   position: absolute;
-  width: 120vh;
-  height: 120vh;
+  width: 10px;
+  height: 10px;
   //background-color: $text-blue;//$bg-black;
   //border: solid 5px $text-blue;
-  bottom: -80vh;
-  border-radius: 50%;
-  animation: jumboShow 2s;
-
-  @keyframes jumboShow {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      bottom: 1;
-    }
-  }
-
-  @media screen and (min-width: $min-md) {
-    right: -60vw;
-    border-radius: 50%;
-    bottom: -10vh;
-    width: 120vh;
-    height: 120vh;
-
-    @media screen and (min-width: $min-lg) {
-      right: -40vw;
-    }
-
-    @media screen and (min-width: $min-xl) {
-      right: -50vw;
-      border-radius: 50%;
-      bottom: -25vh;
-      width: 150vh;
-      height: 150vh;
-    }
-
-    @media screen and (min-width: $min-xxl) {
-      right: -40vw;
-      border-radius: 50%;
-      bottom: -50vh;
-      width: 200vh;
-      height: 200vh;
-    }
-  }
 }
 
 .jumbotron--off {
