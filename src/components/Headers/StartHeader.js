@@ -31,7 +31,7 @@ class StartHeader extends React.Component {
     console.log(btnData);
   }
 
-  handleMenu() {
+  handleMenu(e) {
     //this.state.itemState.itemClass === "nav__btn" ? 
     this.state.circleClass === "" ? this.setState({ circleClass: "menu-circle--top" }) : this.setState({ circleClass: "" });
     this.state.circleBtnClass === "" ? this.setState({ circleBtnClass: "circle__elem--top" }) : this.setState({ circleBtnClass: "" });
@@ -39,6 +39,7 @@ class StartHeader extends React.Component {
     this.state.pageNameClass === "page__name" ? this.setState({ pageNameClass: "page__name--off" }) : this.setState({ pageNameClass: "page__name" });
     this.state.navbarClass === "navbar" ? this.setState({ navbarClass: "navbar--off" }) : this.setState({ navbarClass: "navbar" });
     this.state.jumboClass === "jumbotron" ? this.setState({ jumboClass: "jumbotron--off" }) : this.setState({ jumboClass: "jumbotron" });
+    e.preventDefault();
   }
 
   render() {
@@ -64,7 +65,7 @@ class StartHeader extends React.Component {
           </div>
         </section>
         <section className={this.state.jumboClass}>
-          
+
         </section>
       </header>
       {/* <Main url={URL_HOME} sectionDisplay={'...'} /> */}

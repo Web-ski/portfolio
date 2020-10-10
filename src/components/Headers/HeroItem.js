@@ -13,8 +13,9 @@ class HeroItem extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(){
-    this.props.btnSectionData(this.state.section)
+  handleClick(e){
+    this.props.btnSectionData(this.state.section);
+    e.preventDefault();
   }
 
   render() {
