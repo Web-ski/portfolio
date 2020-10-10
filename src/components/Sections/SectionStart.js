@@ -5,7 +5,7 @@ import AsideNumber from '../Titles/AsideNumber';
 import TimeLineBox from '../CV/TimeLineBox';
 import FlowToolsBox from '../CV/FlowToolsBox';
 
-class Section extends React.Component {
+class SectionStart extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
@@ -29,4 +29,4 @@ class Section extends React.Component {
   }
 }
 
-export default Section;
+export default SectionStart;

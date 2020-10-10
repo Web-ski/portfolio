@@ -20,7 +20,7 @@ class StartHeader extends React.Component {
       pageNameClass: "page__name",
       jumboClass: "jumbotron--off",
       headerToggle: true,
-      sectionData: ''
+      sectionData: ""
     };
     this.btnSectionData = this.btnSectionData.bind(this);
     this.handleMenu = this.handleMenu.bind(this);
@@ -53,7 +53,7 @@ class StartHeader extends React.Component {
             {NAME.map((item, index) => <HeroItem key={"page" + index} elem={[item, "hero__title"]} />)}
           </article>
           <nav className={this.state.navbarClass}>
-            {NAV.map((item, index) => <HeroItem key={"page" + index} elem={[item, "nav__btn"]} btnSectionData={this.btnSectionData}/>)}
+            {NAV.map((item, index) => <HeroItem key={"page" + index} elem={[item, "nav__btn"]} btnSectionData={this.btnSectionData} />)}
           </nav>
         </section>
         <section className="menu">
@@ -64,11 +64,8 @@ class StartHeader extends React.Component {
             {NAV_CIRCLE.map((item, index) => <HeroItem key={"section" + index} elem={[item, "circle__elem " + this.state.circleBtnClass]} />)}
           </div>
         </section>
-        <section className={this.state.jumboClass}>
-          {/* {...blok dodatkowy} */}
-        </section>
       </header>
-      <Main url={URL_HOME} sectionDisplay={'...'} />
+      <Main url={URL_HOME} name={this.state.jumboClass} sectionDisplay={this.state.sectionData} />
     </>
   }
 }

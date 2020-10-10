@@ -1,13 +1,13 @@
 import React from 'react';
 import './Main.scss';
-import Section from '../Sections/Section';
+import SectionStart from '../Sections/SectionStart';
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
       data: []
-     }
+    }
   }
 
   componentDidMount() {
@@ -16,12 +16,17 @@ class Main extends React.Component {
   }
 
   render() {
-    return <div className="main">
-      {(this.state.data).map((item, index) => {
-        if (item.section !== undefined) 
-        { return <Section key={(item.id + index).toString()} elem={item} sectionDisplay={this.props.sectionDisplay}/> };
-      })}
-    </div>
+    const sectionName = this.props.sectionDisplay;
+    return <main className={this.props.name}>
+      <div className="jumbo__container">
+
+        {(this.state.data).map((item, index) => {
+          if (item.id === sectionName) { return <SectionStart key={(item.id + index).toString()} elem={item} /> }
+          // if (item.section !== undefined) 
+          // { return <Section key={(item.id + index).toString()} elem={item} sectionDisplay={this.props.sectionDisplay}/> };
+        })}
+      </div>
+    </main>
   }
 }
 
