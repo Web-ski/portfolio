@@ -64,7 +64,7 @@ class StartHeader extends React.Component {
           </div>
         </section>
         <section className={this.state.jumboClass}>
-          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(() => <div className="jumbotron__elem"></div>)}
+          
         </section>
       </header>
       {/* <Main url={URL_HOME} sectionDisplay={'...'} /> */}
