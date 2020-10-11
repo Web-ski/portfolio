@@ -7,96 +7,19 @@
         "article": "article article__description",
         "children": [
           {
-            "sectionTitle": "section__title",
-            "text": "Front"
-          },
-          {
             "articleText": "article__text",
-            "text": "This section presents some websites created by me."
-          },
-          {
-            "articleText": "article__text",
-            "text": "Since 2018 I have completed several courses in front-end technologies and improved professional skills. Ever since then, I have worked in languages and tools such as: ",
-            "children": [
-              {
-                "abbr": "article__abbr",
-                "title": "HyperText Markup Language",
-                "text": "HTML"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "Cascading Style Sheets",
-                "text": "CSS"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "Sassy CSS",
-                "text": "SCSS"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "JavaScript",
-                "text": "JS"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "JavaScript library",
-                "text": "jQuery"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "JavaScript library",
-                "text": "React"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "React-based framework",
-                "text": "Gatsby"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr--last",
-                "title": "general-purpose scripting language (oryginally: Personal Home Page, next: Hypertext Preprocessor)",
-                "text": "PHP"
-              },
-              {
-                "span": "span",
-                "text": "."
-              }
-            ]
+            "text": "This section presents some websites created by me in front-end technologies."
           },
           {
             "articleLink": "article__link",
             "href": "/front",
             "text": "See more"
-          },
+          }
+        ]
+      },
+      {
+        "article": "article article__description",
+        "children": [
           {
             "div": "article__icons",
             "children": [
@@ -139,6 +62,10 @@
             ]
           }
         ]
+      },
+      {
+        "article": "article article__description",
+        "children": []
       },
       {
         "article": "article article__photos",

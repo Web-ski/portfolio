@@ -32,7 +32,8 @@
   .jumbo__container {
     height: 80%;
     width: 80%;
-    border: dashed 3px $text-blue;
+    //border: dashed 1px $text-blue;
+    //background-color: $text-blue;
     overflow: hidden;
   }
 
@@ -56,9 +57,9 @@
     }
 
     .jumbo__container {
-      height: 50%;
+      height: 60%;
       width: 70%;
-      border: dashed 4px $text-blue;
+      //border: dashed 1px $text-blue;
     }
   }
 }
