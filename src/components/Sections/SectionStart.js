@@ -6,22 +6,15 @@ class SectionStart extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sectionOn: "",
-      articleNumber: 0,
-      sectionDisplay: ""
+      articleOn: 0,
+      btnOn: 0
     };
   }
 
-  articleActive(nmbr) {
-    return (nmbr === this.state.articleNumber ? this.setState({ sectionOn: "articleOn" }) : this.setState({ sectionOn: "" }));
-  }
-
-  componentDidMount() {
-    this.setState({ sectionOn: "articleOn" })
-  }
-
-  handleClick = (nmbr) => {
-    this.setState({ articleNumber: nmbr })
+  articleActive(number) {
+    console.log("gienek", number);
+    this.setState({ btnOn: number })
+    this.setState({ articleOn: number })
   }
 
   render() {
@@ -31,13 +24,17 @@ class SectionStart extends React.Component {
         (elem.children).map((item, index) => {
           if (item.article !== undefined) 
           { return <Article key={item.toString() + index} 
-          elem={[item, (this.state.articleNumber === index ? "articleOn" : "")]} /> };
+          elem={[item, (this.state.articleOn === index ? "articleOn" : "")]} /> };
         })
       )}
       <nav className="section-navigation">
         {(elem.children !== undefined) && (
           (elem.children).map((item, index) => {
-            if (item.article !== undefined) { return <button onClick={this.handleClick(index)} key={item.toString() + index} className={"navigation__btn"}></button> };
+            if (item.article !== undefined) 
+            { return <button onClick={() => this.articleActive(index)}
+            key={item.toString() + index} 
+            className={"navigation__btn " + (this.state.btnOn === index ? "navigation__btn--active" : "")
+          }></button> };
           })
         )}
       </nav>
