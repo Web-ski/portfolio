@@ -9,11 +9,6 @@
           {
             "articleText": "article__text",
             "text": "This section presents some websites created by me in front-end technologies."
-          },
-          {
-            "articleLink": "article__link",
-            "href": "/front",
-            "text": "See more"
           }
         ]
       },
@@ -64,10 +59,6 @@
         ]
       },
       {
-        "article": "article article__description",
-        "children": []
-      },
-      {
         "article": "article article__photos",
         "children": [
           {
@@ -91,6 +82,16 @@
                 "src": "./images/photos/ejts-screen.png"
               }
             ]
+          }
+        ]
+      },
+      {
+        "article": "article article__description",
+        "children": [
+          {
+            "articleLink": "article__link",
+            "href": "/front",
+            "text": "See more"
           }
         ]
       }
