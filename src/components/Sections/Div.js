@@ -4,6 +4,7 @@ import ArticleIcon from '../Icons/ArticleIcon';
 import OutsideLink from '../Links/OutsideLink'
 import ArticleText from '../Texts/ArticleText'
 import ArticleLink from '../Links/ArticleLink'
+import PhotoLink from '../Links/PhotoLink';
 
 class Div extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class Div extends React.Component {
           if (item.div !== undefined) { return <Div key={item.toString() + index} elem={item} /> };
           if (item.articleText !== undefined) { return <ArticleText key={item.toString() + index} elem={item} /> };
           if (item.articleLink !== undefined) { return <ArticleLink key={item.toString() + index} elem={item} /> };
+          if (item.photoLink !== undefined) { return <PhotoLink key={item.toString() + index} elem={item} /> };
         })
       )}
     </div>

@@ -7,6 +7,10 @@
         "article": "article article__description",
         "children": [
           {
+            "sectionTitle": "section__title",
+            "text": "FRONT-END"
+          },
+          {
             "articleText": "article__text",
             "text": "This section presents some websites created by me in front-end technologies."
           }
@@ -62,36 +66,50 @@
         "article": "article article__photos",
         "children": [
           {
-            "photoLink": "photo__link",
-            "href": "http://www.kosmopolis-between.pl/",
-            "target": "blank",
-            "children": [
-              {
-                "img": "article__photo",
-                "src": "./images/photos/cosmopolis-screen.png"
-              }
-            ]
+            "sectionTitle": "article__text",
+            "text": "See last projects..."
           },
           {
-            "photoLink": "photo__link",
-            "href": "https://www.journal-transformation.org/",
-            "target": "blank",
+            "div": "article__box",
             "children": [
               {
-                "img": "article__photo",
-                "src": "./images/photos/ejts-screen.png"
+                "photoLink": "photo__link",
+                "href": "http://www.kosmopolis-between.pl/",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/cosmopolis-screen.png"
+                  }
+                ]
+              },
+              {
+                "photoLink": "photo__link",
+                "href": "https://www.journal-transformation.org/",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/ejts-screen.png"
+                  }
+                ]
               }
             ]
           }
         ]
       },
       {
-        "article": "article article__description",
+        "article": "article article__goMore",
         "children": [
           {
-            "articleLink": "article__link",
-            "href": "/front",
-            "text": "See more"
+            "div": "article__box",
+            "children": [
+              {
+                "articleLink": "article__link",
+                "href": "/front",
+                "text": "See more"
+              }
+            ]
           }
         ]
       }
@@ -106,21 +124,17 @@
         "children": [
           {
             "sectionTitle": "section__title",
-            "text": "UX"
+            "text": "UX-DESIGN"
           },
           {
             "articleText": "article__text",
-            "text": "This section presents my latest UX projects. You can see here my projects and works, and more information about my experience in research conducting, wireframing, prototypin, etc."
-          },
-          {
-            "articleText": "article__text",
-            "text": "I've been engaged in research and designing for several years. Completing the course of UX-Designer in 2019 was my next professional step in the area of IT."
-          },
-          {
-            "articleLink": "article__link",
-            "href": "/ux",
-            "text": "See more"
-          },
+            "text": "This section presents my latest UX projects. You can see here also more information about my experience in research conducting, wireframing, prototypin, etc."
+          }
+        ]
+      },
+      {
+        "article": "article article__description",
+        "children": [
           {
             "div": "article__icons",
             "children": [
@@ -144,24 +158,48 @@
         "article": "article article__photos",
         "children": [
           {
-            "photoLink": "photo__link",
-            "href": "https://www.figma.com/proto/3TXaZfAxlemdGzV3XROUMn/Between2020?node-id=1%3A4&viewport=411%2C-209%2C0.36153680086135864&scaling=min-zoom",
-            "target": "blank",
-            "children": [
-              {
-                "img": "article__photo",
-                "src": "./images/photos/cosmopolis-UX2.png"
-              }
-            ]
+            "sectionTitle": "article__text",
+            "text": "See last projects..."
           },
           {
-            "photoLink": "photo__link",
-            "href": "https://projects.invisionapp.com/prototype/Z-Pasj-Wypiekane-projekt-2-ck58hetm900307i01ttckoyjn/play/1dadc98b",
-            "target": "blank",
+            "div": "article__box",
             "children": [
               {
-                "img": "article__photo",
-                "src": "./images/photos/zielone-slodzone-3.png"
+                "photoLink": "photo__link",
+                "href": "https://www.figma.com/proto/3TXaZfAxlemdGzV3XROUMn/Between2020?node-id=1%3A4&viewport=411%2C-209%2C0.36153680086135864&scaling=min-zoom",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/cosmopolis-UX2.png"
+                  }
+                ]
+              },
+              {
+                "photoLink": "photo__link",
+                "href": "https://projects.invisionapp.com/prototype/Z-Pasj-Wypiekane-projekt-2-ck58hetm900307i01ttckoyjn/play/1dadc98b",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/zielone-slodzone-3.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article article__goMore",
+        "children": [
+          {
+            "div": "article__box",
+            "children": [
+              {
+                "articleLink": "article__link",
+                "href": "/ux",
+                "text": "See more"
               }
             ]
           }
@@ -178,21 +216,17 @@
         "children": [
           {
             "sectionTitle": "section__title",
-            "text": "UI"
+            "text": "UI-DESIGN"
           },
           {
             "articleText": "article__text",
-            "text": "This section presents my latest analogue and digital projects. I have been involved in visual design for many years, which is proven by several art exhibitions in Gdańsk, Olsztyn and Koln (Germany)."
-          },
-          {
-            "articleText": "article__text",
-            "text": "I designed logos of organizations and events, icons for websites, posters, infographics, book covers, as well as the layouts of websites."
-          },
-          {
-            "articleLink": "article__link",
-            "href": "/ui",
-            "text": "See more"
-          },
+            "text": "This section presents my latest analogue and digital projects. I have been involved in visual design for many years, which is proven by several art exhibitions."
+          }
+        ]
+      },
+      {
+        "article": "article article__description",
+        "children": [
           {
             "div": "article__icons",
             "children": [
@@ -216,22 +250,46 @@
         "article": "article article__photos",
         "children": [
           {
-            "photoLink": "photo__link",
-            "href": "/ui",
-            "children": [
-              {
-                "img": "article__photo",
-                "src": "./images/photos/icons-set.png"
-              }
-            ]
+            "sectionTitle": "article__text",
+            "text": "See projects..."
           },
           {
-            "photoLink": "photo__link",
-            "href": "/ui",
+            "div": "article__box",
             "children": [
               {
-                "img": "article__photo",
-                "src": "./images/photos/Apokalipsa-poster.jpg"
+                "photoLink": "photo__link",
+                "href": "/ui",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/icons-set.png"
+                  }
+                ]
+              },
+              {
+                "photoLink": "photo__link",
+                "href": "/ui",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/Apokalipsa-poster.jpg"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article article__goMore",
+        "children": [
+          {
+            "div": "article__box",
+            "children": [
+              {
+                "articleLink": "article__link",
+                "href": "/ui",
+                "text": "See more"
               }
             ]
           }
@@ -248,16 +306,17 @@
         "children": [
           {
             "sectionTitle": "section__title",
-            "text": "Repo"
+            "text": "Repositories"
           },
           {
             "articleText": "article__text",
             "text": "This section presents my front-end repositories. There are projects of websites and games, parts of code and steps of learning, on GitHub, GitLab and CodePen."
-          },
-          {
-            "articleText": "article__text",
-            "text": "Apart from my own repositories, look at repositories and the website of Zeton project, in which I'm engaged. It helped me to learn cooperation skills and technologies."
-          },
+          }
+        ]
+      },
+      {
+        "article": "article article__description",
+        "children": [
           {
             "div": "article__icons",
             "children": [
@@ -297,24 +356,33 @@
         "article": "article article__photos",
         "children": [
           {
-            "photoLink": "photo__link",
-            "href": "https://github.com/Web-ski",
-            "target": "blank",
-            "children": [
-              {
-                "img": "article__photo",
-                "src": "./images/photos/github-screen.png"
-              }
-            ]
+            "sectionTitle": "article__text",
+            "text": "See repositories"
           },
           {
-            "photoLink": "photo__link",
-            "href": "https://gitlab.com/Web-ski",
-            "target": "blank",
+            "div": "article__box",
             "children": [
               {
-                "img": "article__photo",
-                "src": "./images/photos/gitlab-screen.png"
+                "photoLink": "photo__link",
+                "href": "https://github.com/Web-ski",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/github-screen.png"
+                  }
+                ]
+              },
+              {
+                "photoLink": "photo__link",
+                "href": "https://gitlab.com/Web-ski",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/gitlab-screen.png"
+                  }
+                ]
               }
             ]
           }
@@ -331,20 +399,11 @@
         "children": [
           {
             "sectionTitle": "section__title",
-            "text": "CV"
+            "text": "PROFESIONAL INFO"
           },
           {
             "articleText": "article__text",
             "text": "This section presents my CV. And this is also the path to my certificates and diplomas."
-          },
-          {
-            "articleText": "article__text",
-            "text": "If you're looking for a person who wants to constantly develop, learn new technologies and work in an energetic team, you've come to the right place."
-          },
-          {
-            "articleLink": "article__link",
-            "href": "/cv",
-            "text": "See more"
           }
         ]
       },
@@ -352,13 +411,33 @@
         "article": "article article__photos",
         "children": [
           {
-            "photoLink": "photo__link",
-            "href": "content/CV_Nieczuja_2020.pdf",
-            "target": "blank",
+            "div": "article__box",
             "children": [
               {
-                "img": "article__photo",
-                "src": "./images/photos/Nieczuja CV 2020.png"
+                "photoLink": "photo__link",
+                "href": "content/CV_Nieczuja_2020.pdf",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/Nieczuja CV 2020.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article article__goMore",
+        "children": [
+          {
+            "div": "article__box",
+            "children": [
+              {
+                "articleLink": "article__link",
+                "href": "/cv",
+                "text": "See more"
               }
             ]
           }
@@ -379,20 +458,7 @@
           },
           {
             "articleText": "article__text",
-            "text": "And here you can find my contact details."
-          },
-          {
-            "articleText": "article__text",
-            "text": "Send me an email, look at my LinkedIn profile or find me in Zeton project's team."
-          },
-          {
-            "div": "article__icons",
-            "children": [
-              {
-                "img": "article__icon",
-                "src": "./images/icons/linkedin.png"
-              }
-            ]
+            "text": "And here you can find my contact details. Send me an email, look at my LinkedIn profile or find me in Zeton project's team."
           }
         ]
       },
@@ -400,24 +466,29 @@
         "article": "article article__photos",
         "children": [
           {
-            "photoLink": "photo__link",
-            "href": "mailto:pawel.nieczuja@onet.eu",
-            "target": "blank",
+            "div": "article__box",
             "children": [
               {
-                "img": "article__photo",
-                "src": "./images/photos/mail.gif"
-              }
-            ]
-          },
-          {
-            "photoLink": "photo__link",
-            "href": "https://www.linkedin.com/in/pawe%C5%82-nieczuja-ostrowski-6b084a88/",
-            "target": "blank",
-            "children": [
+                "photoLink": "photo__link",
+                "href": "mailto:pawel.nieczuja@onet.eu",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/mail.gif"
+                  }
+                ]
+              },
               {
-                "img": "article__photo",
-                "src": "./images/photos/linkedin-screen.png"
+                "photoLink": "photo__link",
+                "href": "https://www.linkedin.com/in/pawe%C5%82-nieczuja-ostrowski-6b084a88/",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/linkedin-screen.png"
+                  }
+                ]
               }
             ]
           }
