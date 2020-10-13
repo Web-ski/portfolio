@@ -27,7 +27,7 @@ class StartHeader extends React.Component {
 
   btnSectionData(btnData) {
     this.setState({ sectionData: btnData });
-    //console.log(btnData);
+    //console.log(btnData, "dwa", this.state.sectionData);
   }
 
   handleMenu(e) {
@@ -52,7 +52,10 @@ class StartHeader extends React.Component {
             {NAME.map((item, index) => <HeroItem key={"page" + index} elem={[item, "hero__title"]} />)}
           </article>
           <nav className={this.state.navbarClass}>
-            {NAV.map((item, index) => <HeroItem key={"page" + index} elem={[item, "nav__btn"]} btnSectionData={this.btnSectionData} />)}
+            {NAV.map((item, index) => <HeroItem key={"page" + index} 
+            elem={[item, "nav__btn"]} 
+            btnSectionData={this.btnSectionData} 
+            sectionActive={this.state.sectionData}/>)}
           </nav>
         </section>
         <section className="menu">

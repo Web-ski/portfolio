@@ -89,6 +89,7 @@
     background-color: $bg-black;
     top: 0;
     left: -20px;
+    transition: .5s;
 
     @media screen and (min-width: $min-md) {
       left: -40px;
@@ -100,6 +101,16 @@
         top: 17% * $i / 2;
       }
     }
+  }
+
+  .block-stone--active {
+    //transform: scale(.5);
+    //border: double 2px $text-blue;
+    background-color: rgba(0,0,0,.3);
+    //transform: rotateZ(15deg);
+    @include img;
+    background-image: url('/images/icons/arrow-right.svg');
+    background-size: cover;
   }
 }
 

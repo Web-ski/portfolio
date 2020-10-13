@@ -8,7 +8,9 @@ class HeroItem extends React.Component {
     super(props);
     const sectionName = (this.props.elem[0]).text;
     this.state = {
-      section: sectionName
+      section: sectionName,
+      //sectionActive: this.props.sectionActive,
+      stoneActive: false
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -23,7 +25,6 @@ class HeroItem extends React.Component {
     const elemName = this.props.elem[1];
     const letters = elem.text.split('');
    // console.log(elem)
-    //console.log(children)
 
     const LetterItem = ({ letter }) => {
       return <span className={elem.name}>{letter}</span>
@@ -42,7 +43,7 @@ class HeroItem extends React.Component {
           letters.map((item, index) => <LetterItem key={"item" + index} letter={item} />)
         }
         {(elemName === 'nav__btn') && <>
-          <div className={"block-stone"}></div>
+          <div className={"block-stone " + (this.props.sectionActive === this.state.section ? "block-stone--active" : "")}></div>
           <div className="nav__box">
             <button onClick={this.handleClick} className={elemName}>
               {letters.map((item, index) => <NavBtn key={"item" + index} letter={item}/>)}

@@ -12,7 +12,7 @@ class SectionStart extends React.Component {
   }
 
   articleActive(number) {
-    console.log("gienek", number);
+    //console.log("gienek", number);
     this.setState({ btnOn: number })
     this.setState({ articleOn: number })
   }
