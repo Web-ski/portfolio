@@ -4,7 +4,7 @@
     "id": "front",
     "children": [
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "sectionTitle": "section__title",
@@ -17,7 +17,7 @@
         ]
       },
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "div": "article__icons",
@@ -63,7 +63,7 @@
         ]
       },
       {
-        "article": "article article__photos",
+        "article": "article-start article__photos",
         "children": [
           {
             "sectionTitle": "article__text",
@@ -99,7 +99,7 @@
         ]
       },
       {
-        "article": "article article__goMore",
+        "article": "article-start article__goMore",
         "children": [
           {
             "div": "article__box",
