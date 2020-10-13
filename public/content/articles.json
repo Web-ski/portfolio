@@ -24,39 +24,39 @@
             "children": [
               {
                 "img": "article__icon",
-                "src": "/images/icons/html5.png"
+                "src": "/images/icons/html5-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/css3.png"
+                "src": "./images/icons/css3-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/sass.png"
+                "src": "./images/icons/sass-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/Bootstrap.png"
+                "src": "./images/icons/Bootstrap-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/jQuery.png"
+                "src": "./images/icons/jQuery-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/js.png"
+                "src": "./images/icons/js-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/react.png"
+                "src": "./images/icons/react-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/Gatsby.png"
+                "src": "./images/icons/Gatsby-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/php.png"
+                "src": "./images/icons/php-black.png"
               }
             ]
           }
@@ -120,7 +120,7 @@
     "id": "ux",
     "children": [
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "sectionTitle": "section__title",
@@ -133,7 +133,7 @@
         ]
       },
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "div": "article__icons",
@@ -155,7 +155,7 @@
         ]
       },
       {
-        "article": "article article__photos",
+        "article": "article-start article__photos",
         "children": [
           {
             "sectionTitle": "article__text",
@@ -191,7 +191,7 @@
         ]
       },
       {
-        "article": "article article__goMore",
+        "article": "article-start article__goMore",
         "children": [
           {
             "div": "article__box",
@@ -212,7 +212,7 @@
     "id": "ui",
     "children": [
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "sectionTitle": "section__title",
@@ -225,7 +225,7 @@
         ]
       },
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "div": "article__icons",
@@ -247,7 +247,7 @@
         ]
       },
       {
-        "article": "article article__photos",
+        "article": "article-start article__photos",
         "children": [
           {
             "sectionTitle": "article__text",
@@ -281,7 +281,7 @@
         ]
       },
       {
-        "article": "article article__goMore",
+        "article": "article-start article__goMore",
         "children": [
           {
             "div": "article__box",
@@ -302,7 +302,7 @@
     "id": "repo",
     "children": [
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "sectionTitle": "section__title",
@@ -315,45 +315,45 @@
         ]
       },
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "div": "article__icons",
             "children": [
               {
                 "img": "article__icon",
-                "src": "./images/icons/git.png"
+                "src": "./images/icons/git-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/github.png"
+                "src": "./images/icons/github-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/gitlab.png"
+                "src": "./images/icons/gitlab-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/npm.png"
+                "src": "./images/icons/npm-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/gulp.png"
+                "src": "./images/icons/gulp-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/slack.png"
+                "src": "./images/icons/slack-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/jira.png"
+                "src": "./images/icons/jira-black.png"
               }
             ]
           }
         ]
       },
       {
-        "article": "article article__photos",
+        "article": "article-start article__photos",
         "children": [
           {
             "sectionTitle": "article__text",
@@ -395,7 +395,7 @@
     "id": "cv",
     "children": [
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "sectionTitle": "section__title",
@@ -408,7 +408,7 @@
         ]
       },
       {
-        "article": "article article__photos",
+        "article": "article-start article__photos",
         "children": [
           {
             "div": "article__box",
@@ -429,7 +429,7 @@
         ]
       },
       {
-        "article": "article article__goMore",
+        "article": "article-start article__goMore",
         "children": [
           {
             "div": "article__box",
@@ -450,7 +450,7 @@
     "id": "find",
     "children": [
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "sectionTitle": "section__title",
@@ -463,7 +463,7 @@
         ]
       },
       {
-        "article": "article article__photos",
+        "article": "article-start article__photos",
         "children": [
           {
             "div": "article__box",
