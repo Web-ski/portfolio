@@ -90,7 +90,7 @@
 
             .article__icon {
               margin: 10px;
-              
+
               @media screen and (min-width: $min-md) {
                 height: 40px;
               }
@@ -126,7 +126,13 @@
             }
 
             .article__link {
+              @include flex-column;
+              justify-content: center;
+              align-items: center;
               margin: 0;
+              height: 100%;
+              width: 100%;
+              line-height: 150%;
             }
           }
         }
