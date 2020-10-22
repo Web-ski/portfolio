@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './CV.scss';
 import './TimeLine.scss';
 import Footer from "../Footer/Footer"
@@ -9,12 +9,15 @@ import BackTopBtn from '../Buttons/BackTopBtn';
 
 class CV extends React.Component {
   render() {
-    return <div>
-      <SecondHeader />
-      <BackTopBtn />
-      <SecondMain url={URL_CV} />
-      <Footer />
-    </div>
+    return <Fragment>
+      <aside className="parallax parallax-second"></aside>
+      <div>
+        <SecondHeader />
+        <BackTopBtn />
+        <SecondMain url={URL_CV} />
+        <Footer />
+      </div>
+    </Fragment>
   }
 }
 

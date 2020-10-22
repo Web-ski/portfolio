@@ -5,7 +5,7 @@ class JumboAnim extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      jumboAnim: ["", "", "", ""]
+      jumboAnim: ["", "", "", "", "", ""]
     }
   }
 
