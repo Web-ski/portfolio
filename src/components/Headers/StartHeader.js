@@ -52,12 +52,17 @@ class StartHeader extends React.Component {
             {NAME.map((item, index) => <HeroItem key={"page" + index} elem={[item, "hero__title"]} />)}
           </article>
           <nav className={this.state.navbarClass}>
-            {NAV.map((item, index) => <HeroItem key={"page" + index} 
-            elem={[item, "nav__btn"]} 
-            btnSectionData={this.btnSectionData} 
-            sectionActive={this.state.sectionData}/>)}
+            {NAV.map((item, index) => <HeroItem key={"page" + index}
+              elem={[item, "nav__btn"]}
+              btnSectionData={this.btnSectionData}
+              sectionActive={this.state.sectionData} />)}
           </nav>
         </section>
+        {/* <aside className={"alternate-" + this.state.navbarClass}>
+          <div className="alternate-container">
+            {NAV.map(() => <div className="alternate-stone"></div>)}
+          </div>
+        </aside> */}
         <section className="menu">
           <button onClickCapture={this.handleMenu} className={"menu__btn " + this.state.menuBtnClass}>
             {MENU.text}

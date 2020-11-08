@@ -106,7 +106,7 @@
   .block-stone--active {
     //transform: scale(.5);
     //border: double 2px $text-blue;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
     //transform: rotateZ(15deg);
     @include img;
     background-image: url('/images/icons/arrow-right.svg');
@@ -118,3 +118,109 @@
 .navbar--off {
   display: none;
 }
+
+/*
+.alternate-navbar {
+  position: absolute;
+  height: 40%;
+  bottom: 0;
+  width: 280px;
+
+  @media screen and (min-width: $min-md) {
+    height: 400px;
+    width: 40%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .alternate-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (min-width: $min-md) {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    .alternate-stone {
+      position: relative;
+      display: flex;
+      height: 100%;
+      width: 14%;
+      transition: .5s;
+
+      &:before {
+        position: absolute;
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        // background-color: $bg-black;
+       // background-color: $light-blue;
+        //background-color: rgba(0, 0, 0, .1);
+      }
+
+      &:after {
+        position: absolute;
+        display: block;
+        width: 2px;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        // background-color: $bg-black;
+        background-color: $light-blue;
+        //background-color: rgba(0, 0, 0, .1);
+      }
+
+      @media screen and (min-width: $min-md) {
+        width: 100%;
+        height: 14%;
+
+        &:before {
+          position: absolute;
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          content: "";
+          // background-color: $bg-black;
+          //background-color: $light-blue;
+          //background-color: rgba(0, 0, 0, .1);
+        }
+  
+        &:after {
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 2px;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          content: "";
+          // background-color: $bg-black;
+          background-color: $light-blue;
+          //background-color: rgba(0, 0, 0, .1);
+        }
+      }
+    }
+  }
+}
+
+.alternate-navbar--off {
+  display: none;
+}
+*/
