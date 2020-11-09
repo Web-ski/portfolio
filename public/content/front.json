@@ -118,6 +118,16 @@
                 "text": ". See my works in sections below."
               }
             ]
+          },
+          {
+            "articleText": "article__text--second",
+            "text": "Also visit the website of Zeton, a project I'm participating in."
+          },
+          {
+            "outsideLink": "article__link--second",
+            "href": "https://www.projekt-zeton.pl/",
+            "target": "blank",
+            "text": "See the Zeton website"
           }
         ]
       },
@@ -170,7 +180,7 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "In 2020 I made the website for the educational project of the ..."
+            "text": "In 2020 I made the website for the theatre and literature educational project Between.Edukacja, as part of the National Culture Center program 'Kultura w sieci'."
           },
           {
             "articleText": "article__text--second",

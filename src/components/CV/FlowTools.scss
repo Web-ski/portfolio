@@ -96,6 +96,10 @@
         -webkit-animation: flowTool 45s linear infinite;
         object-fit: scale-down;
 
+        @media screen and (min-width: $min-xl) {
+          height: 300px;
+        }
+
         @keyframes flowTool {
           from {
             transform: translateX(0px);
