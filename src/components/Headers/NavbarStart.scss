@@ -78,6 +78,10 @@
         }
       }
     }
+
+    .nav__btn--active {
+      color: white;
+    }
   }
 
   .block-stone {
@@ -106,12 +110,12 @@
   .block-stone--active {
     //transform: scale(.5);
     //border: double 2px $text-blue;
-    background-color: rgba(0, 0, 0, .3);
-    //transform: rotateZ(15deg);
-    @include img;
-    background-image: url('/images/icons/arrow-right.svg');
-    background-size: cover;
-    background-position: right;
+    // background-color: rgba(0, 0, 0, .3);
+    // //transform: rotateZ(15deg);
+    // @include img;
+    // background-image: url('/images/icons/arrow-right.svg');
+    // background-size: cover;
+    // background-position: right;
   }
 }
 

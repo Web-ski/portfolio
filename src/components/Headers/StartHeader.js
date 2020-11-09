@@ -3,7 +3,7 @@ import './StartHeader.scss';
 import './Menu.scss';
 import './PageName.scss';
 import './NavbarStart.scss';
-import { BRAND, MENU, PAGE_NAME, SECTION_NAME, NAME, NAV, NAV_CIRCLE } from '../../constans';
+import { MENU, NAME, NAV, NAV_CIRCLE } from '../../constans';
 import HeroItem from './HeroItem';
 import Main from '../Main/Main';
 import { URL_HOME } from "../../constans";
@@ -42,7 +42,6 @@ class StartHeader extends React.Component {
   }
 
   render() {
-    //console.log(itemData.itemClass)
     return <>
       <header className={"start-header " + (this.state.headerToggle ? "" : "start-header--reverse")}>
         <section className="hero">
@@ -58,11 +57,6 @@ class StartHeader extends React.Component {
               sectionActive={this.state.sectionData} />)}
           </nav>
         </section>
-        {/* <aside className={"alternate-" + this.state.navbarClass}>
-          <div className="alternate-container">
-            {NAV.map(() => <div className="alternate-stone"></div>)}
-          </div>
-        </aside> */}
         <section className="menu">
           <button onClickCapture={this.handleMenu} className={"menu__btn " + this.state.menuBtnClass}>
             {MENU.text}

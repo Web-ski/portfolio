@@ -7,7 +7,7 @@
   display: flex;
   color: $text-black;
   font-size: 22px;
-  font-family: $main-font;
+  font-family: $black-font;
   //font-weight: bold;
   height: 100%;
   width: 100%;
@@ -55,7 +55,7 @@
 
 .section__title {
   font-family: $main-font;
-  color: $text-blue;
+  color: $light-blue;
   text-transform: uppercase;
   margin-bottom: 2vh;
   font-size: calc(25px + 1vh);
@@ -79,7 +79,7 @@
 
 .section__title--second {
   @extend .section__title;
-  color: $text-blue; //$text-white;
+  color: $light-blue; //$text-white;
   //font-weight: bold;
   justify-content: center;
   align-items: center; //animation: glow 1s ease-in-out infinite alternate;

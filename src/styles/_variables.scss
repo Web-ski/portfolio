@@ -26,9 +26,15 @@ $light-blue: rgb(123, 253, 253);
   src: url('/lib/fonts/Satisfy-Regular.ttf')
 }
 
+@font-face {
+  font-family: myBlackFont;
+  src: url('/lib/fonts/Raleway-Black.ttf')
+}
+
 $main-font: myMainFont, Calibri, sans-serif;
 //$main-font: Roboto, sans-serif;
 $brand-font: myBrandFont, sans-serif;
+$black-font: myBlackFont;
 
 /* Borders */
 $brdr-radius: 5px;

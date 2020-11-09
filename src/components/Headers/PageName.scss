@@ -69,6 +69,7 @@
     width: calc(25px * 9 + 40px);
     padding-left: 20px;
     overflow: hidden;
+    text-transform: uppercase;
 
     .hero-title__elem {
 
@@ -94,7 +95,7 @@
 
     .hero-title__elem {
       @extend .page__title;
-      text-transform: uppercase;
+      //text-transform: uppercase;
       width: 25px;
     }
 
@@ -103,6 +104,13 @@
 
       .hero-title__elem {
         width: 40px;
+      }
+    }
+
+    &:first-of-type {
+      
+      .hero-title__elem {
+        color: white;
       }
     }
   }
@@ -192,6 +200,7 @@
     overflow: hidden;
     animation: pageName-off .1s forwards;
     animation-delay: 2s;
+    text-transform: uppercase;
 
     .hero-title__elem {
 
@@ -217,7 +226,7 @@
 
     .hero-title__elem {
       @extend .page__title;
-      text-transform: uppercase;
+      //text-transform: uppercase;
       width: 25px;
     }
 
@@ -226,6 +235,13 @@
 
       .hero-title__elem {
         width: 40px;
+      }
+    }
+
+    &:first-of-type {
+      
+      .hero-title__elem {
+        color: white;
       }
     }
   }
