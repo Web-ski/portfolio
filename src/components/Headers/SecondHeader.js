@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './SecondHeader.scss';
 import { BRAND_NAME } from '../../constans';
 import Brand from '../Brand/Brand'
@@ -16,7 +16,7 @@ class SecondHeader extends React.Component {
 
   render() {
     return <header className="second-header">
-      <Link to="/"><Brand /></Link>
+      <Link to="/"><Brand name="Back to Start"/></Link>
       <PageTitle text={this.state.parent} />
     </header>
   }

@@ -15,19 +15,23 @@
 }
 
 .article__link {
+  display: flex;
   font-family: $main-font;
-  color: $text-white;
+  color: $text-blue;
   font-size: 14px;
-  width: max-content;
+  //width: 100%;
   margin-bottom: 2vh;
+  line-height: 12px;
   transition: .2s;
 
   @media screen and (min-width: $min-md) {
     font-size: 16px;
+    line-height: 14px;
   }
 
   @media screen and (min-width: $min-lg) {
     font-size: 18px;
+    line-height: 16px;
   }
 
   @media screen and (min-width: $min-xl) {}
@@ -38,6 +42,74 @@
 
   &:hover {
     font-weight: bold;
+  }
+
+  .link__points {
+    display: flex;
+    width: max-content;
+    height: 14px;
+
+    @media screen and (min-width: $min-md) {
+      height: 16px;
+    }
+
+    @media screen and (min-width: $min-lg) {
+      height: 18px;
+    }
+
+    .point {
+      width: 10px;
+      height: 90%;
+      margin-left: 5px;
+      //background-color: cyan;
+      background-image: url('/images/icons/arrow-right.svg');
+      @include img;
+      border-radius: 50%;
+      animation: arrowMove 1s infinite;
+      -webkit-animation: arrowMove 1s infinite;
+
+      &:nth-of-type(1) {
+        animation-delay: .0s;
+      }
+
+      &:nth-of-type(2) {
+        animation-delay: .1s;
+      }
+
+      &:nth-of-type(3) {
+        animation-delay: .2s;
+      }
+    }
+
+    @keyframes arrowMove {
+      from {
+        opacity: 0.5;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.article__link--second {
+  @extend .article__link;
+  background-color: $text-blue2;
+  color: $text-black;
+  padding: 10px 15px;
+  display: inline-block;
+  margin: 20px auto;
+  width: max-content;
+
+  &:hover {
+    background-color: $text-black;
+    color: $text-blue;
+    font-weight: normal;
+  }
+
+  @media screen and (min-width: $min-md) {
+    margin: 10px 10px 10px 0;
   }
 }
 

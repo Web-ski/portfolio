@@ -6,13 +6,15 @@ import SpanText from './SpanText';
 class ArticleText extends React.Component {
 
   render() {
-    return <p className="article__text">
-      {this.props.elem !== undefined ? this.props.elem.text : this.props.text}
-      {(this.props.elem !== undefined && (
-        this.props.elem.children !== undefined && (
-          (this.props.elem.children).map((item, index) => {
+    const elem = this.props.elem;
+    return <p className={elem !== undefined ? elem.articleText : "article__text"}>
+      {elem !== undefined ? elem.text : this.props.text}
+      {(elem !== undefined && (
+        elem.children !== undefined && (
+          (elem.children).map((item, index) => {
             if (item.abbr !== undefined) { return <AbbrText key={item.abbr + index} elem={item} /> };
             if (item.span !== undefined) { return <SpanText key={item.span + index} elem={item} /> };
+            if (item.text !== undefined) { return item.text };
           })
         )
       ))}

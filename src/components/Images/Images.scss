@@ -2,6 +2,7 @@
 @import '../../styles/_variables.scss';
 @import "../../styles/_extends.scss";
 @import "../../styles/_layout.scss";
+@import "../Titles/Titles.scss";
 
 .picture {
   display: none;
@@ -126,13 +127,10 @@
         transform: scale(1)
       }
     }
-
+    
     @media screen and (min-width: $min-xl) {
-      width: auto;
-    }
-
-    @media screen and (min-width: $min-xl) {
-      height: 80vh;
+      max-width: 80vw;
+      //height: 80vh;
 
       @keyframes sizeMover {
         from {
@@ -144,5 +142,74 @@
         }
       }
     }
+  }
+
+  .viewer__arrow {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, .1);
+    background-image: url('/images/icons/arrow.svg');
+    @include img;
+    background-size: 85%;
+    border: none;
+    transition: $transition;
+    border-radius: 50%;
+    z-index: 101;
+    cursor: pointer;
+
+    @media screen and (min-width: $min-md) {
+      width: 50px;
+      height: 50px;
+      background-size: 60%;
+    }
+
+    &:hover {
+      background-color: $bg-black;
+      background-size: 85%;
+    }
+  }
+
+  .viewer__arrow--left {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+
+    @media screen and (min-width: $min-xl) {
+      left: 2%;
+    }
+  }
+
+  .viewer__arrow--right {
+    top: 50%;
+    transform: translateY(-50%) rotateZ(180deg);
+    right: 1%;
+
+    @media screen and (min-width: $min-xl) {
+      right: 2%;
+    }
+  }
+
+  .viewer__resizer {
+    @extend .viewer__arrow;
+    background-image: url('/images/icons/small-screen.svg');
+    margin: 0 auto;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }
+
+  .modal__text {
+    z-index: 101;
+    position: absolute;
+    @extend .section__title--second;
+    margin: 0 auto;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, .1);
+    padding: 15px 15px 15px;
+    border-radius: 0 0 50% 50%;
   }
 }

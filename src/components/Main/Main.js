@@ -1,12 +1,16 @@
-import React from 'react';
-import { BrowserRouter, Route, Link, useParams } from "react-router-dom";
+import React, { Suspense } from 'react';
 import './Main.scss';
-import Section from '../Sections/Section'
+import '../Headers/Jumbotron.scss';
+import SectionStart from '../Sections/SectionStart';
+//import JumboAnim from '../Images/JumboAnim';
+const JumboAnim = React.lazy(() => import('../Images/JumboAnim'));
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { data: [] }
+    this.state = {
+      data: []
+    }
   }
 
   componentDidMount() {
@@ -15,11 +19,19 @@ class Main extends React.Component {
   }
 
   render() {
-    return <div className="main">
-      {(this.state.data).map((item, index) => {
-        if (item.section !== undefined) { return <Section key={item.section + index} elem={item}/> };
-      })}
-    </div>
+    const sectionName = this.props.sectionDisplay;
+    return <main className={this.props.name}>
+      <div className="jumbo__container">
+        {(this.state.data).map((item, index) => {
+          if (item.id === sectionName) { return <SectionStart key={(item.id + index).toString()} elem={item} /> }
+          // if (item.section !== undefined) 
+          // { return <Section key={(item.id + index).toString()} elem={item} sectionDisplay={this.props.sectionDisplay}/> };
+        })}
+        <Suspense fallback={<div>Loading...</div>}>
+          <JumboAnim name={"jumbo-anim"} />
+        </Suspense>
+      </div>
+    </main>
   }
 }
 

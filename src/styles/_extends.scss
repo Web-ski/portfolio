@@ -24,3 +24,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@mixin clean-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0;
+}

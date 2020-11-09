@@ -7,9 +7,21 @@
   @include flex-row;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 80px;
   padding: 0 20px;
   min-width: 300px;
+  background-color: $bg-black;
+  animation: headerDown .5s ease-in-out;
+
+  @keyframes headerDown {
+    from{transform: translateY(-100%)}
+    to{transform: translateY(0);}
+  }
+
+  @media screen and (min-width: $min-md) {
+    height: 100px;
+    padding: 0 calc(20px + 5vw);
+  }
 
   .brand {}
 

@@ -5,8 +5,8 @@
 
 .page__title {
   display: flex;
-  color: $text-blue; //$text-white;
-  font-size: 20px;
+  color: $text-black;
+  font-size: 22px;
   font-family: $main-font;
   //font-weight: bold;
   height: 100%;
@@ -15,7 +15,7 @@
   align-items: center; //animation: glow 1s ease-in-out infinite alternate;
 
   @media screen and (min-width: $min-md) {
-    font-size: calc(20px + 1vw);
+    font-size: calc(22px + 1vw);
   }
 
   @media screen and (min-width: $min-lg) {}
@@ -27,12 +27,14 @@
   }
 }
 
-.section__title {
-  font-family: $main-font;
+.page__title--second {
+  @extend .page__title;
   color: $text-white;
   text-transform: uppercase;
-  font-size: calc(25px + 1vh);
+  justify-content: left;
+  align-items: center; //animation: glow 1s ease-in-out infinite alternate;
   margin-bottom: 2vh;
+  font-size: calc(22px + 1vh);
 
   @media screen and (min-width: $min-md) {
     font-size: calc(25px + 1vw);
@@ -48,5 +50,94 @@
 
   @media screen and (min-width: $min-xxl) {
     font-size: calc(40px + 1vw);
+  }
+}
+
+.section__title {
+  font-family: $main-font;
+  color: $text-blue;
+  text-transform: uppercase;
+  margin-bottom: 2vh;
+  font-size: calc(25px + 1vh);
+
+  @media screen and (min-width: $min-md) {
+    font-size: calc(25px + 1vw);
+  }
+
+  @media screen and (min-width: $min-lg) {
+    font-size: calc(30px + 1vw);
+  }
+
+  @media screen and (min-width: $min-xl) {
+    font-size: calc(35px + 1vw);
+  }
+
+  @media screen and (min-width: $min-xxl) {
+    font-size: calc(40px + 1vw);
+  }
+}
+
+.section__title--second {
+  @extend .section__title;
+  color: $text-blue; //$text-white;
+  //font-weight: bold;
+  justify-content: center;
+  align-items: center; //animation: glow 1s ease-in-out infinite alternate;
+  font-size: calc(20px + 1vh);
+
+  @media screen and (min-width: $min-md) {
+    font-size: calc(22px + 1vw);
+  }
+
+  @media screen and (min-width: $min-lg) {
+    font-size: calc(25px + 1vw);
+  }
+
+  @media screen and (min-width: $min-xl) {
+    font-size: calc(28px + 1vw);
+  }
+
+  @media screen and (min-width: $min-xxl) {
+    font-size: calc(30px + 1vw);
+  }
+}
+
+.article__number--aside {
+  opacity: 0;
+  color: $text-blue;
+  background-color: $bg-black;
+  font-family: $main-font;
+  position: absolute;
+  transform: rotateZ(-90deg);
+  padding: 5px 10px;
+  font-size: 20px;
+  height: calc(20px + 5vw);
+  width: 80px;
+  //line-height: 90px;
+  left: -25px;
+  top: calc(45px + 5vh);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media screen and (min-width: $min-md) {
+    left: -15px;
+    font-size: 30px;
+    height: 100px;
+    width: 90px;
+    top: calc(20px + 25px + 5vh);
+  }
+
+  @media screen and (min-width: $min-lg) {
+    top: calc(20px + 30px + 5vh);
+  }
+
+  @media screen and (min-width: $min-xl) {
+    top: calc(20px + 40px + 5vh);
+
+  }
+
+  @media screen and (min-width: $min-xxl) {
+    top: calc(20px + 50px + 5vh);
   }
 }

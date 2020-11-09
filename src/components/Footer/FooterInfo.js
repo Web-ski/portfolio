@@ -1,13 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Route, NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './Footer.scss';
 
 
 class FooterInfo extends React.Component {
   render() {
     return <article id={this.props.id} className={this.props.className}>
-      <NavLink to="/webs" activeClassName="footer__link--active" className="footer__link">
-        Webs
+      <NavLink to="/front" activeClassName="footer__link--active" className="footer__link">
+        Front
       </NavLink>
       <NavLink to="/ux" activeClassName="footer__link--active" className="footer__link">
         UX

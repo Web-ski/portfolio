@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.scss';
-import Home from './components/pages/Home/Home'
-import Webs from './components/pages/Webs/Webs'
-import UX from './components/pages/UX/UX'
-import UI from './components/pages/UI/UI'
-import CV from './components/pages/CV/CV'
+import Home from './components/Home/Home'
+import Webs from './components/Webs/Webs'
+import UX from './components/UX/UX'
+import UI from './components/UI/UI'
+import CV from './components/CV/CV'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/webs">
+        <Route path="/front">
           <Webs />
         </Route>
         <Route path="/ux">

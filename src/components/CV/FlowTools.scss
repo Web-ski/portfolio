@@ -1,0 +1,147 @@
+@import "../../styles/_reset.scss";
+@import '../../styles/_variables.scss';
+@import "../../styles/_extends.scss";
+@import "../../styles/_layout.scss";
+
+//--!! FLOW-TOOLS SECTION !!--
+
+.section__tools-n-techs {
+  @include flex-column;
+
+  @media screen and (min-width: $min-md) {
+    min-height: 80vh;
+    justify-items: start;
+  }
+
+  .article {
+    //opacity: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 100px;
+    max-height: 130px;
+
+    @media screen and (min-width: $min-md) {
+      padding-top: 0;
+      padding-bottom: 50px;
+      width: 100%;
+      max-height: 200px;
+    }
+
+    .articleTitle {
+      justify-content: center;
+    }
+
+    &:nth-of-type(3) {
+      max-height: auto;
+
+      .article__text {
+        text-decoration: none;
+        margin: 0;
+        padding: 10px;
+        line-height: 100%;
+      }
+
+      .article__text--active {
+        color: $text-light;
+
+      }
+
+      @media screen and (min-width: $min-md) {
+        height: 100%;
+        max-height: 100%;
+        min-height: 200px;
+        padding-top: 50px;
+        justify-content: center;
+      }
+    }
+  }
+
+  .article__flow {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 320px;
+    max-height: 320px;
+    padding-bottom: 0px;
+    flex: none;
+
+    @media screen and (min-width: $min-md) {
+      min-height: 350px;
+    }
+
+    .flow-tools__container {
+      position: absolute;
+      @include flex-row;
+      height: 100%;
+      width: 2000px;
+      right: -200px;
+      justify-content: space-between;
+
+      @media screen and (min-width: $min-md) {
+        height: 320px;
+      }
+
+      .flow-tools__box {
+        position: absolute;
+        @include flex-column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 0;
+        width: 180px;
+        height: 260px;
+        right: 0;
+        margin: 10px;
+        animation: flowTool 45s linear infinite;
+        -webkit-animation: flowTool 45s linear infinite;
+        object-fit: scale-down;
+
+        @keyframes flowTool {
+          from {
+            transform: translateX(0px);
+          }
+
+          to {
+            transform: translateX(-2000px);
+          }
+        }
+
+        .article__text {
+          text-align: center;
+        }
+
+        .article__icon {
+          height: 45px;
+
+          //min-height: 40px;
+          margin: 10px;
+
+          @media screen and (min-width: $min-md) {
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .article__tools-names {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: max-content;
+    max-height: 100%;
+    flex: none;
+
+    .article__text--second {
+      cursor: help;
+
+      &:hover {
+
+        .article__text {
+
+          color: white;
+        }
+      }
+    }
+  }
+}
