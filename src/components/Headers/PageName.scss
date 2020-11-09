@@ -1,0 +1,232 @@
+@import "../../styles/_reset.scss";
+@import '../../styles/_variables.scss';
+@import "../../styles/_extends.scss";
+@import "../../styles/_layout.scss";
+@import "../Texts/Texts.scss";
+@import "../Titles/Titles.scss";
+
+.page__name {
+  position: relative;
+
+  .block-stone-top {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 50%;
+    width: 25px;
+    background-color: $bg-black;
+    top: 0;
+    left: -20px;
+    animation: slideBlockStoneTop .8s;
+
+    @media screen and (min-width: $min-md) {
+      left: -40px;
+      width: 35px;
+    }
+
+    @keyframes slideBlockStoneTop {
+      from {
+        transform: translateY(-80vh);
+      }
+
+      to {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .block-stone-bottom {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 50%;
+    width: 25px;
+    background-color: $bg-black;
+    bottom: 0;
+    left: -20px;
+    animation: slideBlockStoneBottom .8s;
+
+    @media screen and (min-width: $min-md) {
+      left: -40px;
+      width: 35px;
+    }
+
+    @keyframes slideBlockStoneBottom {
+      from {
+        transform: translateY(80vh);
+      }
+
+      to {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .hero__title {
+    position: relative;
+    @include flex-row;
+    justify-content: space-between;
+    width: calc(25px * 9 + 40px);
+    padding-left: 20px;
+    overflow: hidden;
+
+    .hero-title__elem {
+
+      @for $i from 1 through 36 {
+        &:nth-child(#{$i}) {
+          animation: nameBtnShow1 .8s forwards;
+          -webkit-animation: nameBtnShow1 .8s forwards;
+          transform: translateX(-40px * 9);
+          animation-delay: 1s;
+
+          @keyframes nameBtnShow1 {
+            from {
+              transform: translateX(-40px * 9);
+            }
+
+            to {
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+    }
+
+    .hero-title__elem {
+      @extend .page__title;
+      text-transform: uppercase;
+      width: 25px;
+    }
+
+    @media screen and (min-width: $min-md) {
+      width: calc(40px * 9);
+
+      .hero-title__elem {
+        width: 40px;
+      }
+    }
+  }
+}
+
+/* PAGE NAME OFF */
+.page__name--off {
+  position: relative;
+  animation: pageName-off .1s forwards;
+  animation-delay: 3s;
+
+  @keyframes pageName-off {
+    from {
+      height: auto;
+    }
+    
+    to {
+      height: 0;
+      display: none;
+    }
+  }
+
+  .block-stone-top {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 50%;
+    width: 25px;
+    background-color: $bg-black;
+    top: 0;
+    left: -20px;
+    animation: slideBlockStoneTop-off .4s forwards;
+    animation-delay: 2s;
+
+    @media screen and (min-width: $min-md) {
+      left: -40px;
+      width: 35px;
+    }
+
+    @keyframes slideBlockStoneTop-off {
+      from {
+        transform: translateY(0);
+      }
+      
+      to {
+        transform: translateY(0);
+        display: none;
+      }
+    }
+  }
+
+  .block-stone-bottom {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 50%;
+    width: 25px;
+    background-color: $bg-black;
+    bottom: 0;
+    left: -20px;
+    animation: slideBlockStoneBottom-off .4s forwards;
+    animation-delay: 2s;
+
+    @media screen and (min-width: $min-md) {
+      left: -40px;
+      width: 35px;
+    }
+
+    @keyframes slideBlockStoneBottom-off {
+      from {
+        transform: translateY(0);
+      }
+      
+      to {
+        transform: translateY(0);
+        display: none;
+      }
+    }
+  }
+
+  .hero__title {
+    position: relative;
+    @include flex-row;
+    justify-content: space-between;
+    width: calc(25px * 9 + 40px);
+    padding-left: 20px;
+    overflow: hidden;
+    animation: pageName-off .1s forwards;
+    animation-delay: 2s;
+
+    .hero-title__elem {
+
+      @for $i from 1 through 36 {
+        &:nth-child(#{$i}) {
+          animation: nameBtnShow1 .7s forwards;
+          -webkit-animation: nameBtnShow2.7s forwards;
+          transform: translateX(0);
+          animation-delay: .2s;
+
+          @keyframes nameBtnShow2 {
+            from {
+              transform: translateX(0);
+            }
+
+            to {
+              transform: translateX(-40px * 9);
+            }
+          }
+        }
+      }
+    }
+
+    .hero-title__elem {
+      @extend .page__title;
+      text-transform: uppercase;
+      width: 25px;
+    }
+
+    @media screen and (min-width: $min-md) {
+      width: calc(40px * 9);
+
+      .hero-title__elem {
+        width: 40px;
+      }
+    }
+  }
+}

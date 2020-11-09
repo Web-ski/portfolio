@@ -3,32 +3,6 @@
 @import "../../styles/_extends.scss";
 @import "../../styles/_layout.scss";
 
-.brand {
-  color: $text-blue;
-  font-size: 18px;
-  font-family: $brand-font;
-  text-align: center;
-  line-height: 100%;
-  padding-top: 10px;
-  cursor: pointer;
-
-  @media screen and (min-width: $min-md) {
-    font-size: 22px;
-    padding-top: 0;
-  }
-
-  @media screen and (min-width: $min-lg) {}
-
-  @media screen and (min-width: $min-xl) {}
-
-  @media screen and (min-width: $min-xxl) {}
-
-  &:active {
-    color: $text-navy;
-    text-shadow: none;
-  }
-}
-
 .textConnector {
   color: $text-blue;
   font-size: 16px;
@@ -50,7 +24,7 @@
 }
 
 .article__text {
-  color: $text-white;
+  color: $text-black;
   font-family: $main-font;
   line-height: 180%;
   margin-bottom: 2vh;
@@ -72,11 +46,11 @@
 
 .article__text--second {
   @extend .article__text;
-  color: $text-white;
+  //color: $text-white;
 }
 
 .article__abbr, .article__abbr--last {
-  color: $text-light;
+  color: $light-blue;
   text-decoration: underline dotted;
   cursor: help;
 }

@@ -4,164 +4,110 @@
     "id": "front",
     "children": [
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "sectionTitle": "section__title",
-            "text": "Front"
+            "text": "FRONT-END"
           },
           {
             "articleText": "article__text",
-            "text": "This section presents some websites created by me."
-          },
-          {
-            "articleText": "article__text",
-            "text": "Since 2018 I have completed several courses in front-end technologies and improved professional skills. Ever since then, I have worked in languages and tools such as: ",
-            "children": [
-              {
-                "abbr": "article__abbr",
-                "title": "HyperText Markup Language",
-                "text": "HTML"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "Cascading Style Sheets",
-                "text": "CSS"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "Sassy CSS",
-                "text": "SCSS"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "JavaScript",
-                "text": "JS"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "JavaScript library",
-                "text": "jQuery"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "JavaScript library",
-                "text": "React"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr",
-                "title": "React-based framework",
-                "text": "Gatsby"
-              },
-              {
-                "span": "span",
-                "text": ", "
-              },
-              {
-                "abbr": "article__abbr--last",
-                "title": "general-purpose scripting language (oryginally: Personal Home Page, next: Hypertext Preprocessor)",
-                "text": "PHP"
-              },
-              {
-                "span": "span",
-                "text": "."
-              }
-            ]
-          },
-          {
-            "articleLink": "article__link",
-            "href": "/front",
-            "text": "See more"
-          },
+            "text": "This section presents some websites created by me in front-end technologies."
+          }
+        ]
+      },
+      {
+        "article": "article-start article__description",
+        "children": [
           {
             "div": "article__icons",
             "children": [
               {
                 "img": "article__icon",
-                "src": "/images/icons/html5.png"
+                "src": "/images/icons/html5-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/css3.png"
+                "src": "./images/icons/css3-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/sass.png"
+                "src": "./images/icons/sass-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/Bootstrap.png"
+                "src": "./images/icons/Bootstrap-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/jQuery.png"
+                "src": "./images/icons/jQuery-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/js.png"
+                "src": "./images/icons/js-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/react.png"
+                "src": "./images/icons/react-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/Gatsby.png"
+                "src": "./images/icons/Gatsby-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/php.png"
+                "src": "./images/icons/php-black.png"
               }
             ]
           }
         ]
       },
       {
-        "article": "article article__photos",
+        "article": "article-start article__photos",
         "children": [
           {
-            "photoLink": "photo__link",
-            "href": "http://www.kosmopolis-between.pl/",
-            "target": "blank",
-            "children": [
-              {
-                "img": "article__photo",
-                "src": "./images/photos/cosmopolis-screen.png"
-              }
-            ]
+            "sectionTitle": "article__text",
+            "text": "See last projects..."
           },
           {
-            "photoLink": "photo__link",
-            "href": "https://www.journal-transformation.org/",
-            "target": "blank",
+            "div": "article__box",
             "children": [
               {
-                "img": "article__photo",
-                "src": "./images/photos/ejts-screen.png"
+                "photoLink": "photo__link",
+                "href": "http://www.kosmopolis-between.pl/",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/cosmopolis-screen.png"
+                  }
+                ]
+              },
+              {
+                "photoLink": "photo__link",
+                "href": "https://www.journal-transformation.org/",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/ejts-screen.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article-start article__goMore",
+        "children": [
+          {
+            "div": "article__box",
+            "children": [
+              {
+                "articleLink": "article__link",
+                "href": "/front",
+                "text": "See more"
               }
             ]
           }
@@ -174,25 +120,21 @@
     "id": "ux",
     "children": [
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "sectionTitle": "section__title",
-            "text": "UX"
+            "text": "UX-DESIGN"
           },
           {
             "articleText": "article__text",
-            "text": "This section presents my latest UX projects. You can see here my projects and works, and more information about my experience in research conducting, wireframing, prototypin, etc."
-          },
-          {
-            "articleText": "article__text",
-            "text": "I've been engaged in research and designing for several years. Completing the course of UX-Designer in 2019 was my next professional step in the area of IT."
-          },
-          {
-            "articleLink": "article__link",
-            "href": "/ux",
-            "text": "See more"
-          },
+            "text": "This section presents my latest UX projects. You can see here also more information about my experience in research conducting, wireframing, prototypin, etc."
+          }
+        ]
+      },
+      {
+        "article": "article-start article__description",
+        "children": [
           {
             "div": "article__icons",
             "children": [
@@ -213,27 +155,51 @@
         ]
       },
       {
-        "article": "article article__photos",
+        "article": "article-start article__photos",
         "children": [
           {
-            "photoLink": "photo__link",
-            "href": "https://www.figma.com/proto/3TXaZfAxlemdGzV3XROUMn/Between2020?node-id=1%3A4&viewport=411%2C-209%2C0.36153680086135864&scaling=min-zoom",
-            "target": "blank",
-            "children": [
-              {
-                "img": "article__photo",
-                "src": "./images/photos/cosmopolis-UX2.png"
-              }
-            ]
+            "sectionTitle": "article__text",
+            "text": "See last projects..."
           },
           {
-            "photoLink": "photo__link",
-            "href": "https://projects.invisionapp.com/prototype/Z-Pasj-Wypiekane-projekt-2-ck58hetm900307i01ttckoyjn/play/1dadc98b",
-            "target": "blank",
+            "div": "article__box",
             "children": [
               {
-                "img": "article__photo",
-                "src": "./images/photos/zielone-slodzone-3.png"
+                "photoLink": "photo__link",
+                "href": "https://www.figma.com/proto/3TXaZfAxlemdGzV3XROUMn/Between2020?node-id=1%3A4&viewport=411%2C-209%2C0.36153680086135864&scaling=min-zoom",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/cosmopolis-UX2.png"
+                  }
+                ]
+              },
+              {
+                "photoLink": "photo__link",
+                "href": "https://projects.invisionapp.com/prototype/Z-Pasj-Wypiekane-projekt-2-ck58hetm900307i01ttckoyjn/play/1dadc98b",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/zielone-slodzone-3.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article-start article__goMore",
+        "children": [
+          {
+            "div": "article__box",
+            "children": [
+              {
+                "articleLink": "article__link",
+                "href": "/ux",
+                "text": "See more"
               }
             ]
           }
@@ -246,25 +212,21 @@
     "id": "ui",
     "children": [
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "sectionTitle": "section__title",
-            "text": "UI"
+            "text": "UI-DESIGN"
           },
           {
             "articleText": "article__text",
-            "text": "This section presents my latest analogue and digital projects. I have been involved in visual design for many years, which is proven by several art exhibitions in Gdańsk, Olsztyn and Koln (Germany)."
-          },
-          {
-            "articleText": "article__text",
-            "text": "I designed logos of organizations and events, icons for websites, posters, infographics, book covers, as well as the layouts of websites."
-          },
-          {
-            "articleLink": "article__link",
-            "href": "/ui",
-            "text": "See more"
-          },
+            "text": "This section presents my latest analogue and digital projects. I have been involved in visual design for many years, which is proven by several art exhibitions."
+          }
+        ]
+      },
+      {
+        "article": "article-start article__description",
+        "children": [
           {
             "div": "article__icons",
             "children": [
@@ -285,25 +247,49 @@
         ]
       },
       {
-        "article": "article article__photos",
+        "article": "article-start article__photos",
         "children": [
           {
-            "photoLink": "photo__link",
-            "href": "/ui",
-            "children": [
-              {
-                "img": "article__photo",
-                "src": "./images/photos/icons-set.png"
-              }
-            ]
+            "sectionTitle": "article__text",
+            "text": "See projects..."
           },
           {
-            "photoLink": "photo__link",
-            "href": "/ui",
+            "div": "article__box",
             "children": [
               {
-                "img": "article__photo",
-                "src": "./images/photos/Apokalipsa-poster.jpg"
+                "photoLink": "photo__link",
+                "href": "/ui",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/icons-set.png"
+                  }
+                ]
+              },
+              {
+                "photoLink": "photo__link",
+                "href": "/ui",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/Apokalipsa-poster.jpg"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article-start article__goMore",
+        "children": [
+          {
+            "div": "article__box",
+            "children": [
+              {
+                "articleLink": "article__link",
+                "href": "/ui",
+                "text": "See more"
               }
             ]
           }
@@ -316,77 +302,87 @@
     "id": "repo",
     "children": [
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "sectionTitle": "section__title",
-            "text": "Repo"
+            "text": "Repositories"
           },
           {
             "articleText": "article__text",
             "text": "This section presents my front-end repositories. There are projects of websites and games, parts of code and steps of learning, on GitHub, GitLab and CodePen."
-          },
-          {
-            "articleText": "article__text",
-            "text": "Apart from my own repositories, look at repositories and the website of Zeton project, in which I'm engaged. It helped me to learn cooperation skills and technologies."
-          },
+          }
+        ]
+      },
+      {
+        "article": "article-start article__description",
+        "children": [
           {
             "div": "article__icons",
             "children": [
               {
                 "img": "article__icon",
-                "src": "./images/icons/git.png"
+                "src": "./images/icons/git-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/github.png"
+                "src": "./images/icons/github-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/gitlab.png"
+                "src": "./images/icons/gitlab-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/npm.png"
+                "src": "./images/icons/npm-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/gulp.png"
+                "src": "./images/icons/gulp-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/slack.png"
+                "src": "./images/icons/slack-black.png"
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/jira.png"
+                "src": "./images/icons/jira-black.png"
               }
             ]
           }
         ]
       },
       {
-        "article": "article article__photos",
+        "article": "article-start article__photos",
         "children": [
           {
-            "photoLink": "photo__link",
-            "href": "https://github.com/Web-ski",
-            "target": "blank",
-            "children": [
-              {
-                "img": "article__photo",
-                "src": "./images/photos/github-screen.png"
-              }
-            ]
+            "sectionTitle": "article__text",
+            "text": "See repositories"
           },
           {
-            "photoLink": "photo__link",
-            "href": "https://gitlab.com/Web-ski",
-            "target": "blank",
+            "div": "article__box",
             "children": [
               {
-                "img": "article__photo",
-                "src": "./images/photos/gitlab-screen.png"
+                "photoLink": "photo__link",
+                "href": "https://github.com/Web-ski",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/github-screen.png"
+                  }
+                ]
+              },
+              {
+                "photoLink": "photo__link",
+                "href": "https://gitlab.com/Web-ski",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/gitlab-screen.png"
+                  }
+                ]
               }
             ]
           }
@@ -399,38 +395,49 @@
     "id": "cv",
     "children": [
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "sectionTitle": "section__title",
-            "text": "CV"
+            "text": "PROFESIONAL INFO"
           },
           {
             "articleText": "article__text",
             "text": "This section presents my CV. And this is also the path to my certificates and diplomas."
-          },
-          {
-            "articleText": "article__text",
-            "text": "If you're looking for a person who wants to constantly develop, learn new technologies and work in an energetic team, you've come to the right place."
-          },
-          {
-            "articleLink": "article__link",
-            "href": "/cv",
-            "text": "See more"
           }
         ]
       },
       {
-        "article": "article article__photos",
+        "article": "article-start article__photos",
         "children": [
           {
-            "photoLink": "photo__link",
-            "href": "content/CV_Nieczuja_2020.pdf",
-            "target": "blank",
+            "div": "article__box",
             "children": [
               {
-                "img": "article__photo",
-                "src": "./images/photos/Nieczuja CV 2020.png"
+                "photoLink": "photo__link",
+                "href": "content/CV_Nieczuja_2020.pdf",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/Nieczuja CV 2020.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article-start article__goMore",
+        "children": [
+          {
+            "div": "article__box",
+            "children": [
+              {
+                "articleLink": "article__link",
+                "href": "/cv",
+                "text": "See more"
               }
             ]
           }
@@ -443,7 +450,7 @@
     "id": "find",
     "children": [
       {
-        "article": "article article__description",
+        "article": "article-start article__description",
         "children": [
           {
             "sectionTitle": "section__title",
@@ -451,45 +458,37 @@
           },
           {
             "articleText": "article__text",
-            "text": "And here you can find my contact details."
-          },
-          {
-            "articleText": "article__text",
-            "text": "Send me an email, look at my LinkedIn profile or find me in Zeton project's team."
-          },
-          {
-            "div": "article__icons",
-            "children": [
-              {
-                "img": "article__icon",
-                "src": "./images/icons/linkedin.png"
-              }
-            ]
+            "text": "And here you can find my contact details. Send me an email, look at my LinkedIn profile or find me in Zeton project's team."
           }
         ]
       },
       {
-        "article": "article article__photos",
+        "article": "article-start article__photos",
         "children": [
           {
-            "photoLink": "photo__link",
-            "href": "mailto:pawel.nieczuja@onet.eu",
-            "target": "blank",
+            "div": "article__box",
             "children": [
               {
-                "img": "article__photo",
-                "src": "./images/photos/mail.gif"
-              }
-            ]
-          },
-          {
-            "photoLink": "photo__link",
-            "href": "https://www.linkedin.com/in/pawe%C5%82-nieczuja-ostrowski-6b084a88/",
-            "target": "blank",
-            "children": [
+                "photoLink": "photo__link",
+                "href": "mailto:pawel.nieczuja@onet.eu",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/mail.gif"
+                  }
+                ]
+              },
               {
-                "img": "article__photo",
-                "src": "./images/photos/linkedin-screen.png"
+                "photoLink": "photo__link",
+                "href": "https://www.linkedin.com/in/pawe%C5%82-nieczuja-ostrowski-6b084a88/",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/linkedin-screen.png"
+                  }
+                ]
               }
             ]
           }

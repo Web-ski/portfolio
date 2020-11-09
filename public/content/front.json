@@ -166,6 +166,65 @@
         "children": [
           {
             "sectionTitle": "section__title--second",
+            "text": "Between.Pomiędzy: Education"
+          },
+          {
+            "articleText": "article__text--second",
+            "text": "In 2020 I made the website for the educational project of the ..."
+          },
+          {
+            "articleText": "article__text--second",
+            "text": "I used the front-end technologies and tools, such as: Gatsby.js, SCSS, Git, GitHub, VSCode. I was also UX and UI designer of this website."
+          },
+          {
+            "outsideLink": "article__link--second",
+            "href": "https://www.between.org.pl/",
+            "target": "blank",
+            "text": "See the website"
+          }
+        ]
+      },
+      {
+        "article": "article photo__box",
+        "children": [
+          {
+            "viewerBox": "viewer__box",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/edukacja-screen.png"
+              },
+              {
+                "img": "article__photo",
+                "src": "./images/photos/edukacja2-screen.png"
+              },
+              {
+                "img": "article__photo",
+                "src": "./images/photos/edukacja3-screen.png"
+              },
+              {
+                "img": "article__photo",
+                "src": "./images/photos/edukacja4-screen.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "asideNumber": "article__number--aside",
+        "text": "2020"
+      }
+    ]
+  },
+  {
+    "section": "section front",
+    "id": "sect-2",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "sectionTitle": "section__title--second",
             "text": "XI Festival of Literature and Theatre: Kosmopolis 2020"
           },
           {
@@ -218,7 +277,7 @@
   },
   {
     "section": "section front",
-    "id": "sect-2",
+    "id": "sect-3",
     "children": [
       {
         "article": "article",
@@ -277,7 +336,7 @@
   },
   {
     "section": "section front",
-    "id": "sect-3",
+    "id": "sect-4",
     "children": [
       {
         "article": "article",
@@ -336,7 +395,7 @@
   },
   {
     "section": "section front",
-    "id": "sect-4",
+    "id": "sect-5",
     "children": [
       {
         "article": "article",

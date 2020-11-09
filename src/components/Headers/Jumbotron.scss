@@ -1,0 +1,73 @@
+@import "../../styles/_reset.scss";
+@import '../../styles/_variables.scss';
+@import "../../styles/_extends.scss";
+@import "../../styles/_layout.scss";
+@import "../Texts/Texts.scss";
+@import "../Titles/Titles.scss";
+
+.jumbotron {
+  position: absolute;
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  //background-color: $text-blue;//$bg-black;
+  //border: solid 5px $text-blue;
+
+  animation: jumboOn1 2s forwards;
+  animation-delay: 1s;
+
+  @keyframes jumboOn1 {
+    from {
+      height: 0%;
+    }
+
+    to {
+      height: 50%;
+    }
+  }
+
+  .jumbo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    //border: dashed 1px $text-blue;
+    //background-color: $text-blue;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: $min-md) {
+    width: 0%;
+    height: 100%;
+    right: 0;
+    justify-content: flex-start;
+
+    animation: jumboOn2 2s forwards;
+    animation-delay: 1s;
+
+    @keyframes jumboOn2 {
+      from {
+        width: 0%;
+      }
+
+      to {
+        width: 50%;
+      }
+    }
+
+    .jumbo__container {
+      height: 60%;
+      width: 70%;
+      //border: dashed 1px $text-blue;
+    }
+  }
+}
+
+.jumbotron--off {
+  position: absolute;
+  display: none;
+}
