@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './Main.scss';
 import '../Headers/Jumbotron.scss';
 import SectionStart from '../Sections/SectionStart';
-import JumboAnim from '../Images/JumboAnim';
+//import JumboAnim from '../Images/JumboAnim';
+const JumboAnim = React.lazy(() => import('../Images/JumboAnim'));
 
 class Main extends React.Component {
   constructor(props) {
@@ -26,7 +27,9 @@ class Main extends React.Component {
           // if (item.section !== undefined) 
           // { return <Section key={(item.id + index).toString()} elem={item} sectionDisplay={this.props.sectionDisplay}/> };
         })}
-        <JumboAnim name={"jumbo-anim"}/>
+        <Suspense fallback={<div>Loading...</div>}>
+          <JumboAnim name={"jumbo-anim"} />
+        </Suspense>
       </div>
     </main>
   }
