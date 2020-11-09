@@ -74,23 +74,23 @@
             "children": [
               {
                 "photoLink": "photo__link",
-                "href": "http://www.kosmopolis-between.pl/",
+                "href": "http://www.between.org.pl/",
                 "target": "blank",
                 "children": [
                   {
                     "img": "article__photo",
-                    "src": "./images/photos/cosmopolis-screen.png"
+                    "src": "./images/photos/edukacja-screen.png"
                   }
                 ]
               },
               {
                 "photoLink": "photo__link",
-                "href": "https://www.journal-transformation.org/",
+                "href": "http://www.kosmopolis-between.pl/",
                 "target": "blank",
                 "children": [
                   {
                     "img": "article__photo",
-                    "src": "./images/photos/ejts-screen.png"
+                    "src": "./images/photos/cosmopolis-screen-wide.png"
                   }
                 ]
               }
@@ -182,7 +182,7 @@
                 "children": [
                   {
                     "img": "article__photo",
-                    "src": "./images/photos/zielone-slodzone-3.png"
+                    "src": "./images/photos/zielone-slodzone-wide.png"
                   }
                 ]
               }
@@ -241,6 +241,18 @@
               {
                 "img": "article__icon",
                 "src": "./images/icons/sketchbook.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/Adobe_Photoshop_icon.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/Adobe_Illustrator_icon.png"
+              },
+              {
+                "img": "article__icon",
+                "src": "./images/icons/Adobe_InDesign_icon.png"
               }
             ]
           }
@@ -357,7 +369,7 @@
         "children": [
           {
             "sectionTitle": "article__text",
-            "text": "See repositories"
+            "text": "See repositories..."
           },
           {
             "div": "article__box",
@@ -381,6 +393,31 @@
                   {
                     "img": "article__photo",
                     "src": "./images/photos/gitlab-screen.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article-start article__photos",
+        "children": [
+          {
+            "sectionTitle": "article__text",
+            "text": "...and more"
+          },
+          {
+            "div": "article__box",
+            "children": [
+              {
+                "photoLink": "photo__link",
+                "href": "https://codepen.io/Web-ski",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/code-pen.png"
                   }
                 ]
               }
@@ -487,6 +524,31 @@
                   {
                     "img": "article__photo",
                     "src": "./images/photos/linkedin-screen.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article-start article__photos",
+        "children": [
+          {
+            "sectionTitle": "article__text",
+            "text": "Żeton App project"
+          },
+          {
+            "div": "article__box",
+            "children": [
+              {
+                "photoLink": "photo__link",
+                "href": "https://www.projekt-zeton.pl/",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/zeton-website.png"
                   }
                 ]
               }
