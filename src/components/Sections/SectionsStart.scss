@@ -41,11 +41,22 @@
         &:hover {
           background-color: $text-black;
         }
+
+        .dark-theme & {
+          background-color: rgba(255, 204, 255, .6);
+          &:hover {
+            background-color: $dark-theme-light;
+          }
+        }
       }
 
       .swiper-pagination-bullet-active {
         background-color: $text-black;
         transform: scaleX(1.5);
+
+        .dark-theme & {
+          background-color: $dark-theme-blue;
+        }
       }
     }
 
@@ -80,6 +91,12 @@
           background-color: transparent;
           text-align: center;
           justify-content: center;
+
+          .article__text {
+            .dark-theme & {
+              color: white;
+            }
+          }
 
           .article__icons {
             @include flex-row;
@@ -120,6 +137,10 @@
             background-color: $bg-black;
             border-radius: 50%;
 
+              .dark-theme & {
+                background-color: $dark-theme-blue;
+              }
+
             @media screen and (min-width: $min-md) {
               height: 180px;
               width: 180px;
@@ -148,6 +169,12 @@
               width: 45%;
 
               .article__photo {}
+            }
+          }
+
+          .article__text {
+            .dark-theme & {
+              color: white;
             }
           }
         }

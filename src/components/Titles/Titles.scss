@@ -60,6 +60,10 @@
   margin-bottom: 2vh;
   font-size: calc(25px + 1vh);
 
+  .dark-theme & {
+    color: $dark-theme-blue;
+  }
+
   @media screen and (min-width: $min-md) {
     font-size: calc(25px + 1vw);
   }

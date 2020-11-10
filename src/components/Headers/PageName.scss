@@ -157,6 +157,10 @@
     animation: slideBlockStoneTop-off .4s forwards;
     animation-delay: 2s;
 
+    .dark-theme & {
+      background-color: $dark-theme-blue;
+    }
+
     @media screen and (min-width: $min-md) {
       left: -40px;
       width: 35px;
@@ -185,6 +189,10 @@
     left: -20px;
     animation: slideBlockStoneBottom-off .4s forwards;
     animation-delay: 2s;
+
+    .dark-theme & {
+      background-color: $dark-theme-blue;
+    }
 
     @media screen and (min-width: $min-md) {
       left: -40px;
@@ -218,8 +226,8 @@
 
       @for $i from 1 through 36 {
         &:nth-child(#{$i}) {
-          animation: nameBtnShow1 .7s forwards;
-          -webkit-animation: nameBtnShow2.7s forwards;
+          animation: nameBtnShow1 .6s forwards;
+          -webkit-animation: nameBtnShow2.6s forwards;
           transform: translateX(0);
           animation-delay: .2s;
 
@@ -240,6 +248,10 @@
       @extend .page__title;
       //text-transform: uppercase;
       width: 25px;
+
+      .dark-theme & {
+        color: $dark-theme-blue;
+      }
     }
 
     @media screen and (min-width: $min-md) {

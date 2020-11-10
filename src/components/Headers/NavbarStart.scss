@@ -50,6 +50,10 @@
       text-transform: uppercase;
       transform: translateX(-80vw);
 
+      .dark-theme & {
+        color: $dark-theme-blue;
+      }
+
       @keyframes showNavBtn {
         from {
           transform: translateX(-80vw);
@@ -81,6 +85,10 @@
 
     .nav__btn--active {
       color: white;
+
+      .dark-theme & {
+        color: white;
+      }
     }
   }
 
@@ -94,6 +102,10 @@
     top: 0;
     left: -20px;
     transition: .5s;
+
+    .dark-theme & {
+      background-color: $dark-theme-blue;
+    }
 
     @media screen and (min-width: $min-md) {
       left: -40px;

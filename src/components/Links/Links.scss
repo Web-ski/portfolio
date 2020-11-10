@@ -24,6 +24,10 @@
   line-height: 12px;
   transition: .2s;
 
+  .dark-theme & {
+    color: black;
+  }
+
   @media screen and (min-width: $min-md) {
     font-size: 16px;
     line-height: 14px;
@@ -67,6 +71,10 @@
       border-radius: 50%;
       animation: arrowMove 1s infinite;
       -webkit-animation: arrowMove 1s infinite;
+
+      .dark-theme & {
+        background-image: url('/images/icons/arrow-right-black.svg');
+      }
 
       &:nth-of-type(1) {
         animation-delay: .0s;

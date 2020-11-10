@@ -51,6 +51,9 @@
 .article__text--second {
   @extend .article__text;
   //color: $text-white;
+  .dark-theme & {
+    color: $dark-theme-blue;
+  }
 }
 
 .article__abbr, .article__abbr--last {
