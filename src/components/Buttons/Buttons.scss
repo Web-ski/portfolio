@@ -72,3 +72,58 @@
     right: calc(25px + 5vw);
   }
 }
+
+.button__checkbox {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  top: 0;
+  left: calc(50% - 70px);
+  width: 140px;
+  height: 45px;
+  padding-top: 10px;
+  font-family: $main-font;
+
+  &:before {
+    display: flex;
+    content: 'light';
+  }
+
+  &:after {
+    display: flex;
+    content: 'mode';
+  }
+
+  .contrast {
+    display: flex;
+    margin: 0 5px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    @include img;
+    background-image: url('/images/icons/sun-transparent-2.svg');
+  }
+
+  .checked {
+    background-image: url('/images/icons/moon-transparent.svg');
+  }
+}
+
+.box-checked {
+  background-image: url('/images/icons/moon-transparent.svg');
+  color: white;
+
+  &:before {
+    display: flex;
+    content: 'dark';
+  }
+
+  &:after {
+    display: flex;
+    content: 'mode';
+  }
+}

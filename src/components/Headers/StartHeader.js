@@ -3,6 +3,7 @@ import './StartHeader.scss';
 import './Menu.scss';
 import './PageName.scss';
 import './NavbarStart.scss';
+import ContrastBtn from "../Buttons/ContrastBtn";
 import { MENU, NAME, NAV, NAV_CIRCLE } from '../../constans';
 import HeroItem from './HeroItem';
 import Main from '../Main/Main';
@@ -43,6 +44,7 @@ class StartHeader extends React.Component {
 
   render() {
     return <>
+      <ContrastBtn />
       <header className={"start-header " + (this.state.headerToggle ? "" : "start-header--reverse")}>
         <section className="hero">
           <article className={this.state.pageNameClass}>

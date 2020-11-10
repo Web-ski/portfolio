@@ -19,6 +19,10 @@
     left: -20px;
     animation: slideBlockStoneTop .8s;
 
+    .dark-theme & {
+      background-color: $dark-theme-blue;
+    }
+
     @media screen and (min-width: $min-md) {
       left: -40px;
       width: 35px;
@@ -45,6 +49,10 @@
     bottom: 0;
     left: -20px;
     animation: slideBlockStoneBottom .8s;
+
+    .dark-theme & {
+      background-color: $dark-theme-blue;
+    }
 
     @media screen and (min-width: $min-md) {
       left: -40px;
@@ -97,6 +105,10 @@
       @extend .page__title;
       //text-transform: uppercase;
       width: 25px;
+
+      .dark-theme & {
+        color: $dark-theme-blue;
+      }
     }
 
     @media screen and (min-width: $min-md) {
