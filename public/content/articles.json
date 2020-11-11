@@ -28,7 +28,10 @@
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/css3-black.png"
+                "children": [
+                  { "src": "./images/icons/css3-black.png"},
+                  { "src": "./images/icons/css3-white.png"}
+                ]
               },
               {
                 "img": "article__icon",

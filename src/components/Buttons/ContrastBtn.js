@@ -2,21 +2,22 @@ import React, { useState, useEffect }  from "react"
 
 import "./Buttons.scss"
 
-const ContrastBtn = () => {
+const ContrastBtn = ({ btnThemeData }) => {
   const [theme, setTheme] = useState("");
 
   const changeTheme = () => {
     if(typeof window !== `undefined`) {
       let doc = document.body;
       doc.classList.toggle('dark-theme');
-      console.log(doc) 
     }
-
+    
     const changeBtnTheme = () => {
-      theme === "" ? setTheme("checked") : setTheme("")
+      theme === "" ? setTheme("checked") : setTheme("");
+      //theme === "" ? (themeActive = "checked") : (themeActive = "");
     }
-
+    
     changeBtnTheme()
+    btnThemeData(theme)
   }
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './StartHeader.scss';
 import './Menu.scss';
 import './PageName.scss';
@@ -6,8 +6,8 @@ import './NavbarStart.scss';
 import ContrastBtn from "../Buttons/ContrastBtn";
 import { MENU, NAME, NAV, NAV_CIRCLE } from '../../constans';
 import HeroItem from './HeroItem';
-import Main from '../Main/Main';
 import { URL_HOME } from "../../constans";
+const Main = React.lazy(() => import('../Main/Main'));
 
 class StartHeader extends React.Component {
   constructor(props) {
@@ -20,15 +20,22 @@ class StartHeader extends React.Component {
       pageNameClass: "page__name",
       jumboClass: "jumbotron--off",
       headerToggle: true,
-      sectionData: ""
+      sectionData: "",
+      themeData: ""
     };
     this.btnSectionData = this.btnSectionData.bind(this);
+    this.btnThemeData = this.btnThemeData.bind(this);
     this.handleMenu = this.handleMenu.bind(this);
   }
 
   btnSectionData(btnData) {
     this.setState({ sectionData: btnData });
     //console.log(btnData, "dwa", this.state.sectionData);
+  }
+
+  btnThemeData(btnTheme) {
+    this.setState({ themeData: btnTheme });
+    console.log(btnTheme, "hola", this.state.themeData);
   }
 
   handleMenu(e) {
@@ -44,7 +51,7 @@ class StartHeader extends React.Component {
 
   render() {
     return <>
-      <ContrastBtn />
+      <ContrastBtn btnThemeData={this.btnThemeData} />
       <header className={"start-header " + (this.state.headerToggle ? "" : "start-header--reverse")}>
         <section className="hero">
           <article className={this.state.pageNameClass}>
@@ -68,7 +75,9 @@ class StartHeader extends React.Component {
           </div>
         </section>
       </header>
-      <Main url={URL_HOME} name={this.state.jumboClass} sectionDisplay={this.state.sectionData} />
+      <Suspense fallback={<div>Is loading...</div>}>
+        <Main url={URL_HOME} name={this.state.jumboClass} sectionDisplay={this.state.sectionData} />
+      </Suspense>
     </>
   }
 }

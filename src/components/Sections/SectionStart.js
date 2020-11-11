@@ -27,6 +27,7 @@ class SectionStart extends React.Component {
 
   render() {
     const elem = this.props.elem;
+    console.log(this.props.themeDisplay)
     return (<section id={elem.id} className={elem.section}>
       <Swiper
         spaceBetween={0}
@@ -43,7 +44,8 @@ class SectionStart extends React.Component {
             if (item.article !== undefined) {
               return <SwiperSlide style={{width: "100%"}} key={'slide' + index}>
                 <Article key={item.toString() + index}
-                  elem={[item, "articleOn"]} />
+                  elem={[item, "articleOn"]}
+                   />
               </SwiperSlide>
             };
           })
