@@ -20,22 +20,15 @@ class StartHeader extends React.Component {
       pageNameClass: "page__name",
       jumboClass: "jumbotron--off",
       headerToggle: true,
-      sectionData: "",
-      themeData: ""
+      sectionData: ""
     };
     this.btnSectionData = this.btnSectionData.bind(this);
-    this.btnThemeData = this.btnThemeData.bind(this);
     this.handleMenu = this.handleMenu.bind(this);
   }
 
   btnSectionData(btnData) {
     this.setState({ sectionData: btnData });
     //console.log(btnData, "dwa", this.state.sectionData);
-  }
-
-  btnThemeData(btnTheme) {
-    this.setState({ themeData: btnTheme });
-    console.log(btnTheme, "hola", this.state.themeData);
   }
 
   handleMenu(e) {

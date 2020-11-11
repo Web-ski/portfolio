@@ -2,7 +2,7 @@ import React, { useState, useEffect }  from "react"
 
 import "./Buttons.scss"
 
-const ContrastBtn = ({ btnThemeData }) => {
+const ContrastBtn = () => {
   const [theme, setTheme] = useState("");
 
   const changeTheme = () => {
@@ -17,7 +17,6 @@ const ContrastBtn = ({ btnThemeData }) => {
     }
     
     changeBtnTheme()
-    btnThemeData(theme)
   }
 
   useEffect(() => {
