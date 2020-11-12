@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Icons.scss';
+import { connect } from 'react-redux';
 
 const ArticleIcon = (props) => {
 
@@ -24,9 +25,13 @@ const ArticleIcon = (props) => {
   return (
     <img className={props.elem.img}
       src={props.elem.src !== undefined ? props.elem.src :
-        (theme === "checked" ? srcLink2 : srcLink1)
+        (props.themes.theme === "darkTheme" ? srcLink2 : srcLink1)
       }>
     </img>)
 }
 
-export default ArticleIcon;
+const mapStateToProps = state => ({
+  themes: state.themes
+})
+
+export default connect(mapStateToProps, {})(ArticleIcon);

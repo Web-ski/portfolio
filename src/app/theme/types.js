@@ -1,0 +1,7 @@
+const DARK_THEME_ON = 'DARK_THEME_ON';
+const DARK_THEME_OFF = 'DARK_THEME_OFF';
+
+export default {
+  DARK_THEME_ON,
+  DARK_THEME_OFF
+}
