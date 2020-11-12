@@ -24,42 +24,66 @@
             "children": [
               {
                 "img": "article__icon",
-                "src": "/images/icons/html5-black.png"
-              },
-              {
-                "img": "article__icon",
                 "children": [
-                  { "src": "./images/icons/css3-black.png"},
-                  { "src": "./images/icons/css3-white.png"}
+                  { "src": "/images/icons/html5-black.png"},
+                  { "src": "/images/icons/html5-violet.png"}
                 ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/sass-black.png"
+                "children": [
+                  { "src": "/images/icons/css3-black.png"},
+                  { "src": "/images/icons/css3-violet.png"}
+                ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/Bootstrap-black.png"
+                "children": [
+                  { "src": "/images/icons/sass-black.png"},
+                  { "src": "/images/icons/sass-violet.png"}
+                ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/jQuery-black.png"
+                "children": [
+                  { "src": "/images/icons/Bootstrap-black.png"},
+                  { "src": "/images/icons/Bootstrap-violet.png"}
+                ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/js-black.png"
+                "children": [
+                  { "src": "/images/icons/jQuery-black.png"},
+                  { "src": "/images/icons/jQuery-violet.png"}
+                ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/react-black.png"
+                "children": [
+                  { "src": "/images/icons/js-black.png"},
+                  { "src": "/images/icons/js-violet.png"}
+                ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/Gatsby-black.png"
+                "children": [
+                  { "src": "/images/icons/react-black.png"},
+                  { "src": "/images/icons/react-violet.png"}
+                ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/php-black.png"
+                "children": [
+                  { "src": "/images/icons/Gatsby-black.png"},
+                  { "src": "/images/icons/Gatsby-violet.png"}
+                ]
+              },
+              {
+                "img": "article__icon",
+                "children": [
+                  { "src": "/images/icons/php-black.png"},
+                  { "src": "/images/icons/php-violet.png"}
+                ]
               }
             ]
           }
@@ -325,7 +349,7 @@
           },
           {
             "articleText": "article__text",
-            "text": "This section presents my front-end repositories. There are projects of websites and games, parts of code and steps of learning, on GitHub, GitLab and CodePen."
+            "text": "This section presents my front-end repositories. There are projects of websites, parts of code and steps of learning, on GitHub, GitLab and CodePen."
           }
         ]
       },
@@ -337,31 +361,52 @@
             "children": [
               {
                 "img": "article__icon",
-                "src": "./images/icons/git-black.png"
+                "children": [
+                  { "src": "/images/icons/git-black.png"},
+                  { "src": "/images/icons/git-violet.png"}
+                ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/github-black.png"
+                "children": [
+                  { "src": "/images/icons/github-black.png"},
+                  { "src": "/images/icons/github-violet.png"}
+                ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/gitlab-black.png"
+                "children": [
+                  { "src": "/images/icons/gitlab-black.png"},
+                  { "src": "/images/icons/gitlab-violet.png"}
+                ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/npm-black.png"
+                "children": [
+                  { "src": "/images/icons/npm-black.png"},
+                  { "src": "/images/icons/npm-violet.png"}
+                ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/gulp-black.png"
+                "children": [
+                  { "src": "/images/icons/gulp-black.png"},
+                  { "src": "/images/icons/gulp-violet.png"}
+                ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/slack-black.png"
+                "children": [
+                  { "src": "/images/icons/slack-black.png"},
+                  { "src": "/images/icons/slack-violet.png"}
+                ]
               },
               {
                 "img": "article__icon",
-                "src": "./images/icons/jira-black.png"
+                "children": [
+                  { "src": "/images/icons/jira-black.png"},
+                  { "src": "/images/icons/jira-violet.png"}
+                ]
               }
             ]
           }

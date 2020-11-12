@@ -42,9 +42,6 @@ const ContrastBtn = (props) => {
 
 //redux
 const mapDispatchToProps = dispatch => ({
-  //add: theme => dispatch(themeActions.checked(theme)) //funckja którą chcemy wywołać na naszym storze
-  //updateThemeStore: () => dispatch(themeActions.chacked())
-  //store.dispatch(themeActions.toggler('darktheme'))
   toggler: item => dispatch(themeActions.toggler(item))
 })
 
