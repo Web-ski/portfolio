@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 
 //import { themeActions } from './app/theme'
 
-//store.dispatch(themeActions.chacked())
+//store.dispatch(themeActions.toggler('darktheme'))
 
 ReactDOM.render(
   <React.StrictMode>

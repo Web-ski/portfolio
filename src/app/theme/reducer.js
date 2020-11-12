@@ -7,13 +7,9 @@ const initialTheme = {
 const themeReducer = (state = initialTheme, action) => {
 
   switch (action.type) {
-    case types.DARK_THEME_ON:
+    case types.THEME_TOGGLE:
       return {
-        ...state, theme: 'darkTheme'
-      }
-    case types.DARK_THEME_OFF:
-      return {
-        ...state, theme: 'lightTheme'
+        ...state, theme: action.item
       }
     default:
       return state

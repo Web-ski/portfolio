@@ -18,13 +18,12 @@ const ContrastBtn = (props) => {
       //theme === "" ? (themeActive = "checked") : (themeActive = "");
     }
 
-    const updateThemeStore = () => {
-      //theme === "" ? "on" : "off";
-    }
+    //theme === "" ? props.toggler("lightTheme") : props.toggler("darkTheme");
     
-    console.log(props.add())
+    //console.log(props)
     changeBtnTheme()
-    updateThemeStore()
+    props.toggler(theme !== "" ? "lightTheme" : "darkTheme");
+
   }
 
   useEffect(() => {
@@ -44,8 +43,9 @@ const ContrastBtn = (props) => {
 //redux
 const mapDispatchToProps = dispatch => ({
   //add: theme => dispatch(themeActions.checked(theme)) //funckja którą chcemy wywołać na naszym storze
-  //store.dispatch(themeActions.chacked())
   //updateThemeStore: () => dispatch(themeActions.chacked())
+  //store.dispatch(themeActions.toggler('darktheme'))
+  toggler: item => dispatch(themeActions.toggler(item))
 })
 
 
