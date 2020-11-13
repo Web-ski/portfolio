@@ -12,6 +12,12 @@
 
   @media screen and (min-width: $min-md) {
     min-height: 80vh;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media screen and (min-width: $min-xl) {
+    padding: calc(20px + 3vh) calc(20px + 5vw);
   }
 
   .article {
@@ -22,6 +28,7 @@
 
     @media screen and (min-width: $min-md) {
       width: 100%;
+
     }
 
     &:nth-of-type(1) {
@@ -171,12 +178,37 @@
             color: $text-white;
             text-align: center;
             font-family: $main-font;
+
+            @media screen and (min-width: $min-md) {
+              font-size: 14px;
+            }
+
+            @media screen and (min-width: $min-lg) {
+              font-size: 16px;
+            }
+
+            @media screen and (min-width: $min-xl) {
+              font-size: 17px;
+            }
           }
 
           .item-link {
             color: $text-blue;
             font-family: $main-font;
             font-weight: bold;
+            text-align: center;
+
+            @media screen and (min-width: $min-md) {
+              font-size: 14px;
+            }
+
+            @media screen and (min-width: $min-lg) {
+              font-size: 16px;
+            }
+
+            @media screen and (min-width: $min-xl) {
+              font-size: 17px;
+            }
           }
 
           .item-circle {
