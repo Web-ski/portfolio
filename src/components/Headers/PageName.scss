@@ -17,6 +17,7 @@
     background-color: $bg-black;
     top: 0;
     left: -20px;
+    z-index: 99;
     animation: slideBlockStoneTop .8s;
 
     .dark-theme & {
