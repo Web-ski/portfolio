@@ -24,6 +24,10 @@
       background-size: 200%;
       background-attachment: fixed;
       border: solid 1px $text-blue2;
+
+      .dark-theme & {
+        border-color: $dark-theme-blue;
+      }
     }
 
     .viewer__box {

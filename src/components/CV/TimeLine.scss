@@ -59,6 +59,17 @@
           color: white;
         }
       }
+
+      .dark-theme & {
+
+        .article__text {
+          color: $dark-theme-blue;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
     }
 
     @media screen and (min-width: $min-md) {
@@ -191,6 +202,10 @@
             @media screen and (min-width: $min-md) {
               width: 100%;
               height: 5px;
+            }
+
+            .dark-theme & {
+              background-color: purple;
             }
           }
 

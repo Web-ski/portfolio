@@ -4,15 +4,15 @@
 @import "../../styles/_layout.scss";
 
 .ui {
-  
+
   .photo__box {
     @include flex;
     overflow: hidden;
     padding-left: 0;
     padding-right: 0;
-    
+
     .article__pattern {}
-    
+
     .viewer__box {
       position: relative;
       display: grid;
@@ -21,13 +21,13 @@
       grid-gap: 2px;
       align-items: center;
       justify-items: center;
-      
+
       @include img;
       background-image: url('/images/icons/plus-cyan.svg'), url('/images/icons/plus-cyan.svg'), url('/images/icons/plus-cyan.svg'), url('/images/icons/plus-cyan.svg'), url('/images/icons/plus-cyan.svg');
       background-size: 220px, 10%, 10%, 10%, 10%;
       background-position: center, right bottom, right top, left bottom, left top;
       overflow: visible;
-      
+
       .picture__box {
         width: 110px;
         height: 110px;
@@ -35,7 +35,7 @@
         display: grid;
         align-items: center;
         padding: 0;
-        
+
         .article__photo {
           position: relative;
           width: 110px;
@@ -43,7 +43,7 @@
           min-height: 100px;
           background-color: $bg-wrapper; //$text-blue2;
           box-shadow: none;
-          
+
           border-radius: 1%;
           -webkit-border-radius: 1%;
           -moz-border-radius: 1%;
@@ -52,8 +52,10 @@
 
           .inner__picture {
             opacity: 0;
+            background-size: cover;
+            min-height: auto;
           }
-          
+
           &:hover {
             .inner__picture {
               opacity: .5;
@@ -66,9 +68,9 @@
         }
       }
     }
-    
+
     @media screen and (min-width: $min-md) {
-      
+
       .viewer__box {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(auto, 1fr);
