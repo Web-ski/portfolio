@@ -43,9 +43,9 @@ class HeroItem extends React.Component {
           letters.map((item, index) => <LetterItem key={"item" + index} letter={item} />)
         }
         {(elemName === 'nav__btn') && <>
-          <div className={"block-stone " + (this.props.sectionActive === this.state.section ? "block-stone--active" : "")}></div>
+          <div className={"block-stone"}></div>
           <div className="nav__box">
-            <button onClick={this.handleClick} className={elemName}>
+            <button onClick={this.handleClick} className={elemName + ' ' + (this.props.sectionActive === this.state.section ? "nav__btn--active" : "")}>
               {letters.map((item, index) => <NavBtn key={"item" + index} letter={item}/>)}
             </button>
           </div>

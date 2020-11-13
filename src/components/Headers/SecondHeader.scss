@@ -9,7 +9,7 @@
   align-items: center;
   height: 80px;
   padding: 0 20px;
-  min-width: 300px;
+  min-width: 320px;
   background-color: $bg-black;
   animation: headerDown .5s ease-in-out;
 
@@ -23,7 +23,29 @@
     padding: 0 calc(20px + 5vw);
   }
 
-  .brand {}
+  .brand-box {
+    width: 30%;
+  }
+
+  .button__checkbox {
+    height: 70px;
+
+    &:before {
+      content: '';
+    }
+  
+    &:after {
+      content: '';
+    }
+
+    .contrast {
+      background-image: url('/images/icons/sun-transparent-blue.svg');
+    }
+
+    .checked {
+      background-image: url('/images/icons/moon-transparent.svg');
+    }
+  }
 
   .page__title {
     text-transform: uppercase;

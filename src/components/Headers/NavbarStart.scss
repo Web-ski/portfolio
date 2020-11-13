@@ -50,6 +50,10 @@
       text-transform: uppercase;
       transform: translateX(-80vw);
 
+      .dark-theme & {
+        color: $dark-theme-blue;
+      }
+
       @keyframes showNavBtn {
         from {
           transform: translateX(-80vw);
@@ -78,6 +82,14 @@
         }
       }
     }
+
+    .nav__btn--active {
+      color: white;
+
+      .dark-theme & {
+        color: white;
+      }
+    }
   }
 
   .block-stone {
@@ -90,6 +102,10 @@
     top: 0;
     left: -20px;
     transition: .5s;
+
+    .dark-theme & {
+      background-color: $dark-theme-blue;
+    }
 
     @media screen and (min-width: $min-md) {
       left: -40px;
@@ -106,12 +122,12 @@
   .block-stone--active {
     //transform: scale(.5);
     //border: double 2px $text-blue;
-    background-color: rgba(0, 0, 0, .3);
-    //transform: rotateZ(15deg);
-    @include img;
-    background-image: url('/images/icons/arrow-right.svg');
-    background-size: cover;
-    background-position: right;
+    // background-color: rgba(0, 0, 0, .3);
+    // //transform: rotateZ(15deg);
+    // @include img;
+    // background-image: url('/images/icons/arrow-right.svg');
+    // background-size: cover;
+    // background-position: right;
   }
 }
 
