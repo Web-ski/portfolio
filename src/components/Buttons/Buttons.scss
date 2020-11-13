@@ -100,8 +100,8 @@
   .contrast {
     display: flex;
     margin: 0 5px;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background-color: transparent;
     border: none;
     @include img;
@@ -111,10 +111,17 @@
   .checked {
     background-image: url('/images/icons/moon-transparent.svg');
   }
+
+  @media screen and (min-width: $min-md) {
+    .contrast {
+      width: 35px;
+      height: 35px;
+    }
+  }
 }
 
 .box-checked {
-  background-image: url('/images/icons/moon-transparent.svg');
+  //background-image: url('/images/icons/moon-transparent.svg');
   color: white;
 
   &:before {

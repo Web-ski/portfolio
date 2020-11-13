@@ -74,9 +74,10 @@
         display: grid;
         align-items: stretch;
         height: 100%;
-        width: 100%;
-        min-height: auto;
+        width: 90%;
         margin: 0;
+        margin-left: 5%;
+        min-height: auto;
         border-radius: 2px;
 
         .picture__box {
@@ -115,9 +116,9 @@
         position: absolute;
         display: block;
         height: 100%;
-        width: 80%;
+        width: 96%;
         border-radius: 2px;
-        left: 10%; //left: 20%;
+        left: 2%; //left: 20%;
         background-size: 100%;
         background-attachment: fixed;
         background-position: left;
@@ -128,6 +129,14 @@
         -ms-transform: rotateZ(0deg);
         -o-transform: rotateZ(0deg);
       }
+    }
+
+    @media screen and (min-width: $min-lg) {
+      width: 40%;
+    }
+
+    @media screen and (min-width: $min-xl) {
+      width: 35%;
     }
 
     @media screen and (min-width: $min-xxl) {

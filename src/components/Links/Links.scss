@@ -105,7 +105,7 @@
   @extend .article__link;
   background-color: $text-blue2;
   color: $text-black;
-  padding: 10px 15px;
+  padding: 15px 15px;
   display: inline-block;
   margin: 20px auto;
   width: max-content;
@@ -118,6 +118,16 @@
 
   @media screen and (min-width: $min-md) {
     margin: 10px 10px 10px 0;
+  }
+
+  .dark-theme & {
+    background-color: $dark-theme-blue;
+    color: $text-black;
+
+    &:hover {
+      background-color: $text-black;
+      color: $dark-theme-light;
+    }
   }
 }
 
