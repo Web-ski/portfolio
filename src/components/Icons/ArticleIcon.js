@@ -20,7 +20,7 @@ const ArticleIcon = (props) => {
 
   useEffect(() => {
   }, [])
-    
+
   //console.log(this.props.themeDisplay);
   return (
     <img className={props.elem.img}

@@ -12,8 +12,6 @@
   width: 200px;
   height: 200px;
 
-<<<<<<< HEAD
-=======
   .dark-theme & {
     .menu__btn {
       border: solid 2px $dark-theme-blue;
@@ -43,7 +41,6 @@
     }
   }
 
->>>>>>> develop
   .menu__btn {
     @extend .article__text;
     @include clean-btn;
@@ -55,11 +52,7 @@
     border-radius: 50%;
     z-index: 99;
     animation: menuBtnShow 1s forwards;
-<<<<<<< HEAD
-    animation-delay: 2s;
-=======
     //animation-delay: 2s;
->>>>>>> develop
 
     @keyframes menuBtnShow {
       from {
@@ -118,8 +111,6 @@
         color: $text-black;
         background-color: $text-blue;
       }
-<<<<<<< HEAD
-=======
 
       .dark-theme & {
 
@@ -127,7 +118,6 @@
           background-color: $dark-theme-light;
         }
       }
->>>>>>> develop
     }
   }
 
@@ -160,13 +150,10 @@
       transform-origin: bottom center;
       //transform: translateX(-50%);
 
-<<<<<<< HEAD
-=======
       .dark-theme & {
         color: &dark-theme-blue;
       }
 
->>>>>>> develop
       @for $i from 1 through 19 {
         &:nth-child(#{$i}) {
           transform: rotateZ($i * 19deg);
@@ -206,13 +193,10 @@
       transform-origin: bottom center;
       //transform: translateX(-50%);
 
-<<<<<<< HEAD
-=======
       .dark-theme & {
         color: &dark-theme-blue;
       }
 
->>>>>>> develop
       @for $i from 1 through 19 {
         &:nth-child(#{$i}) {
           transform: rotateZ($i * 19deg);

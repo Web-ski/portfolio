@@ -1,24 +1,13 @@
-<<<<<<< HEAD
-import React from 'react';
-=======
 import React, { Suspense } from 'react';
->>>>>>> develop
 import './StartHeader.scss';
 import './Menu.scss';
 import './PageName.scss';
 import './NavbarStart.scss';
-<<<<<<< HEAD
-import { BRAND, MENU, PAGE_NAME, SECTION_NAME, NAME, NAV, NAV_CIRCLE } from '../../constans';
-import HeroItem from './HeroItem';
-import Main from '../Main/Main';
-import { URL_HOME } from "../../constans";
-=======
 import ContrastBtn from "../Buttons/ContrastBtn";
 import { MENU, NAME, NAV, NAV_CIRCLE } from '../../constans';
 import HeroItem from './HeroItem';
 import { URL_HOME } from "../../constans";
 const Main = React.lazy(() => import('../Main/Main'));
->>>>>>> develop
 
 class StartHeader extends React.Component {
   constructor(props) {
@@ -39,7 +28,6 @@ class StartHeader extends React.Component {
 
   btnSectionData(btnData) {
     this.setState({ sectionData: btnData });
-    //console.log(btnData, "dwa", this.state.sectionData);
   }
 
   handleMenu(e) {
@@ -54,13 +42,8 @@ class StartHeader extends React.Component {
   }
 
   render() {
-<<<<<<< HEAD
-    //console.log(itemData.itemClass)
-    return <>
-=======
     return <>
       <ContrastBtn btnThemeData={this.btnThemeData} />
->>>>>>> develop
       <header className={"start-header " + (this.state.headerToggle ? "" : "start-header--reverse")}>
         <section className="hero">
           <article className={this.state.pageNameClass}>
@@ -75,14 +58,6 @@ class StartHeader extends React.Component {
               sectionActive={this.state.sectionData} />)}
           </nav>
         </section>
-<<<<<<< HEAD
-        {/* <aside className={"alternate-" + this.state.navbarClass}>
-          <div className="alternate-container">
-            {NAV.map(() => <div className="alternate-stone"></div>)}
-          </div>
-        </aside> */}
-=======
->>>>>>> develop
         <section className="menu">
           <button onClickCapture={this.handleMenu} className={"menu__btn " + this.state.menuBtnClass}>
             {MENU.text}
@@ -92,13 +67,9 @@ class StartHeader extends React.Component {
           </div>
         </section>
       </header>
-<<<<<<< HEAD
-      <Main url={URL_HOME} name={this.state.jumboClass} sectionDisplay={this.state.sectionData} />
-=======
       <Suspense fallback={<div>Is loading...</div>}>
         <Main url={URL_HOME} name={this.state.jumboClass} sectionDisplay={this.state.sectionData} />
       </Suspense>
->>>>>>> develop
     </>
   }
 }
