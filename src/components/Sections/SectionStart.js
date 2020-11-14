@@ -27,7 +27,7 @@ class SectionStart extends React.Component {
 
   render() {
     const elem = this.props.elem;
-    console.log(this.props.themeDisplay)
+    //console.log(this.props.themeDisplay)
     return (<section id={elem.id} className={elem.section}>
       <Swiper
         spaceBetween={0}
@@ -36,8 +36,8 @@ class SectionStart extends React.Component {
         //navigation
         pagination={{ clickable: true }}
         //scrollbar={{ draggable: true }}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        //onSlideChange={() => console.log('slide change')}
+        //onSwiper={(swiper) => console.log(swiper)}
       >
         {(elem.children !== undefined) && (
           (elem.children).map((item, index) => {

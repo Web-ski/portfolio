@@ -18,7 +18,7 @@ class Article extends React.Component {
     const elem = this.props.elem[0];
     const elemsOn = this.props.elem[1];
 
-    console.log(this.props.themeDisplay)
+    //console.log(this.props.themeDisplay)
 
     return <article className={elem.article + " " + elemsOn}>
       {(elem.children !== undefined) && (
