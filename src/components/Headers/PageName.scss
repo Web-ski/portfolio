@@ -17,7 +17,12 @@
     background-color: $bg-black;
     top: 0;
     left: -20px;
+    z-index: 99;
     animation: slideBlockStoneTop .8s;
+
+    .dark-theme & {
+      background-color: $dark-theme-blue;
+    }
 
     @media screen and (min-width: $min-md) {
       left: -40px;
@@ -44,7 +49,12 @@
     background-color: $bg-black;
     bottom: 0;
     left: -20px;
+    z-index: 99;
     animation: slideBlockStoneBottom .8s;
+
+    .dark-theme & {
+      background-color: $dark-theme-blue;
+    }
 
     @media screen and (min-width: $min-md) {
       left: -40px;
@@ -69,6 +79,7 @@
     width: calc(25px * 9 + 40px);
     padding-left: 20px;
     overflow: hidden;
+    text-transform: uppercase;
 
     .hero-title__elem {
 
@@ -94,8 +105,12 @@
 
     .hero-title__elem {
       @extend .page__title;
-      text-transform: uppercase;
+      //text-transform: uppercase;
       width: 25px;
+
+      .dark-theme & {
+        color: $dark-theme-blue;
+      }
     }
 
     @media screen and (min-width: $min-md) {
@@ -103,6 +118,13 @@
 
       .hero-title__elem {
         width: 40px;
+      }
+    }
+
+    &:first-of-type {
+
+      .hero-title__elem {
+        color: white;
       }
     }
   }
@@ -118,7 +140,7 @@
     from {
       height: auto;
     }
-    
+
     to {
       height: 0;
       display: none;
@@ -134,8 +156,13 @@
     background-color: $bg-black;
     top: 0;
     left: -20px;
-    animation: slideBlockStoneTop-off .4s forwards;
+    animation: slideBlockStoneTop-off .1s forwards;
     animation-delay: 2s;
+    z-index: 99;
+
+    .dark-theme & {
+      background-color: $dark-theme-blue;
+    }
 
     @media screen and (min-width: $min-md) {
       left: -40px;
@@ -146,7 +173,7 @@
       from {
         transform: translateY(0);
       }
-      
+
       to {
         transform: translateY(0);
         display: none;
@@ -163,8 +190,13 @@
     background-color: $bg-black;
     bottom: 0;
     left: -20px;
-    animation: slideBlockStoneBottom-off .4s forwards;
+    animation: slideBlockStoneBottom-off .1s forwards;
     animation-delay: 2s;
+    z-index: 99;
+
+    .dark-theme & {
+      background-color: $dark-theme-blue;
+    }
 
     @media screen and (min-width: $min-md) {
       left: -40px;
@@ -175,7 +207,7 @@
       from {
         transform: translateY(0);
       }
-      
+
       to {
         transform: translateY(0);
         display: none;
@@ -192,13 +224,14 @@
     overflow: hidden;
     animation: pageName-off .1s forwards;
     animation-delay: 2s;
+    text-transform: uppercase;
 
     .hero-title__elem {
 
       @for $i from 1 through 36 {
         &:nth-child(#{$i}) {
-          animation: nameBtnShow1 .7s forwards;
-          -webkit-animation: nameBtnShow2.7s forwards;
+          animation: nameBtnShow1 .6s forwards;
+          -webkit-animation: nameBtnShow2.6s forwards;
           transform: translateX(0);
           animation-delay: .2s;
 
@@ -217,8 +250,12 @@
 
     .hero-title__elem {
       @extend .page__title;
-      text-transform: uppercase;
+      //text-transform: uppercase;
       width: 25px;
+
+      .dark-theme & {
+        color: $dark-theme-blue;
+      }
     }
 
     @media screen and (min-width: $min-md) {
@@ -226,6 +263,13 @@
 
       .hero-title__elem {
         width: 40px;
+      }
+    }
+
+    &:first-of-type {
+
+      .hero-title__elem {
+        color: white;
       }
     }
   }

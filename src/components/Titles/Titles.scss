@@ -7,8 +7,7 @@
   display: flex;
   color: $text-black;
   font-size: 22px;
-  font-family: $main-font;
-  //font-weight: bold;
+  font-family: $black-font;
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -55,10 +54,14 @@
 
 .section__title {
   font-family: $main-font;
-  color: $text-blue;
+  color: $light-blue;
   text-transform: uppercase;
   margin-bottom: 2vh;
   font-size: calc(25px + 1vh);
+
+  .dark-theme & {
+    color: $dark-theme-blue;
+  }
 
   @media screen and (min-width: $min-md) {
     font-size: calc(25px + 1vw);
@@ -79,14 +82,22 @@
 
 .section__title--second {
   @extend .section__title;
-  color: $text-blue; //$text-white;
+  color: $light-blue; //$text-white;
   //font-weight: bold;
   justify-content: center;
   align-items: center; //animation: glow 1s ease-in-out infinite alternate;
   font-size: calc(20px + 1vh);
+  text-align: center;
+  margin-bottom: 5vh;
+
+  .dark-theme & {
+    color: $text-white;
+  }
 
   @media screen and (min-width: $min-md) {
     font-size: calc(22px + 1vw);
+    text-align: left;
+    margin-bottom: 2vh;
   }
 
   @media screen and (min-width: $min-lg) {
@@ -121,7 +132,7 @@
   align-items: flex-end;
 
   @media screen and (min-width: $min-md) {
-    left: -15px;
+    left: -30px;
     font-size: 30px;
     height: 100px;
     width: 90px;
@@ -133,11 +144,16 @@
   }
 
   @media screen and (min-width: $min-xl) {
+    left: -15px;
     top: calc(20px + 40px + 5vh);
 
   }
 
   @media screen and (min-width: $min-xxl) {
     top: calc(20px + 50px + 5vh);
+  }
+
+  .dark-theme & {
+    color: $dark-theme-blue;
   }
 }

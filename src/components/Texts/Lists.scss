@@ -10,4 +10,8 @@
   .list__elem {
     margin-left: 20px;
   }
+
+  .dark-theme & {
+    color: $dark-theme-blue;
+  }
 }

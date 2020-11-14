@@ -199,7 +199,11 @@
               },
               {
                 "img": "article__photo",
+<<<<<<< HEAD
                 "src": "./images/photos/logo riep 3.png"
+=======
+                "src": "./images/photos/logo-riep-short-white.png"
+>>>>>>> develop
               },
               {
                 "img": "article__photo",

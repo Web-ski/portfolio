@@ -24,6 +24,10 @@
   line-height: 12px;
   transition: .2s;
 
+  .dark-theme & {
+    color: black;
+  }
+
   @media screen and (min-width: $min-md) {
     font-size: 16px;
     line-height: 14px;
@@ -68,6 +72,10 @@
       animation: arrowMove 1s infinite;
       -webkit-animation: arrowMove 1s infinite;
 
+      .dark-theme & {
+        background-image: url('/images/icons/arrow-right-black.svg');
+      }
+
       &:nth-of-type(1) {
         animation-delay: .0s;
       }
@@ -97,7 +105,7 @@
   @extend .article__link;
   background-color: $text-blue2;
   color: $text-black;
-  padding: 10px 15px;
+  padding: 15px 15px;
   display: inline-block;
   margin: 20px auto;
   width: max-content;
@@ -110,6 +118,24 @@
 
   @media screen and (min-width: $min-md) {
     margin: 10px 10px 10px 0;
+  }
+
+  .dark-theme & {
+    background-color: $text-black;
+    color: $dark-theme-light;
+
+    &:hover {
+      background-color: $dark-theme-blue;
+      color: $text-black;
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+
+  @media screen and (min-width: $min-md) {
+    margin-left: 0;
   }
 }
 

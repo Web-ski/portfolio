@@ -50,6 +50,13 @@
       text-transform: uppercase;
       transform: translateX(-80vw);
 
+<<<<<<< HEAD
+=======
+      .dark-theme & {
+        color: $dark-theme-blue;
+      }
+
+>>>>>>> develop
       @keyframes showNavBtn {
         from {
           transform: translateX(-80vw);
@@ -78,6 +85,17 @@
         }
       }
     }
+<<<<<<< HEAD
+=======
+
+    .nav__btn--active {
+      color: white;
+
+      .dark-theme & {
+        color: white;
+      }
+    }
+>>>>>>> develop
   }
 
   .block-stone {
@@ -91,6 +109,13 @@
     left: -20px;
     transition: .5s;
 
+<<<<<<< HEAD
+=======
+    .dark-theme & {
+      background-color: $dark-theme-blue;
+    }
+
+>>>>>>> develop
     @media screen and (min-width: $min-md) {
       left: -40px;
       width: 35px;
@@ -106,12 +131,21 @@
   .block-stone--active {
     //transform: scale(.5);
     //border: double 2px $text-blue;
+<<<<<<< HEAD
     background-color: rgba(0, 0, 0, .3);
     //transform: rotateZ(15deg);
     @include img;
     background-image: url('/images/icons/arrow-right.svg');
     background-size: cover;
     background-position: right;
+=======
+    // background-color: rgba(0, 0, 0, .3);
+    // //transform: rotateZ(15deg);
+    // @include img;
+    // background-image: url('/images/icons/arrow-right.svg');
+    // background-size: cover;
+    // background-position: right;
+>>>>>>> develop
   }
 }
 

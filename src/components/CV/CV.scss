@@ -5,7 +5,20 @@
 
 .cv {
 
-  .photo__box {
+  .article {
+    padding: 25px;
 
+    @media screen and (min-width: $min-lg) {
+      padding: 30px;
+    }
+
+    @media screen and (min-width: $min-xl) {
+      padding: 40px;
+    }
+
+    @media screen and (min-width: $min-xxl) {
+      padding: 50px;
+      max-width: 700px;
+    }
   }
 }

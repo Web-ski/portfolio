@@ -27,6 +27,7 @@ class SectionStart extends React.Component {
 
   render() {
     const elem = this.props.elem;
+    //console.log(this.props.themeDisplay)
     return (<section id={elem.id} className={elem.section}>
       <Swiper
         spaceBetween={0}
@@ -35,15 +36,16 @@ class SectionStart extends React.Component {
         //navigation
         pagination={{ clickable: true }}
         //scrollbar={{ draggable: true }}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        //onSlideChange={() => console.log('slide change')}
+        //onSwiper={(swiper) => console.log(swiper)}
       >
         {(elem.children !== undefined) && (
           (elem.children).map((item, index) => {
             if (item.article !== undefined) {
               return <SwiperSlide style={{width: "100%"}} key={'slide' + index}>
                 <Article key={item.toString() + index}
-                  elem={[item, "articleOn"]} />
+                  elem={[item, "articleOn"]}
+                   />
               </SwiperSlide>
             };
           })
@@ -55,22 +57,3 @@ class SectionStart extends React.Component {
 }
 
 export default SectionStart;
-
-// {(elem.children !== undefined) && (
-//   (elem.children).map((item, index) => {
-//     if (item.article !== undefined) 
-//     { return <Article key={item.toString() + index} 
-//     elem={[item, (this.state.articleOn === index ? "articleOn" : "")]} /> };
-//   })
-// )}
-// <nav className="section-navigation">
-//   {(elem.children !== undefined) && (
-//     (elem.children).map((item, index) => {
-//       if (item.article !== undefined) 
-//       { return <button onClick={() => this.articleActive(index)}
-//       key={item.toString() + index} 
-//       className={"navigation__btn " + (this.state.btnOn === index ? "navigation__btn--active" : "")
-//     }></button> };
-//     })
-//   )}
-// </nav>

@@ -4,6 +4,7 @@ import './SecondHeader.scss';
 import { BRAND_NAME } from '../../constans';
 import Brand from '../Brand/Brand'
 import PageTitle from '../Titles/PageTitle'
+import ContrastBtn from "../Buttons/ContrastBtn";
 
 class SecondHeader extends React.Component {
 
@@ -15,10 +16,13 @@ class SecondHeader extends React.Component {
   }
 
   render() {
-    return <header className="second-header">
-      <Link to="/"><Brand name="Back to Start"/></Link>
-      <PageTitle text={this.state.parent} />
-    </header>
+    return <>
+      <header className="second-header">
+      <ContrastBtn btnThemeData={this.btnThemeData} />
+        <Link className="brand-box" to="/"><Brand name="Back to Start" /></Link>
+        <PageTitle text={this.state.parent} />
+      </header>
+    </>
   }
 }
 

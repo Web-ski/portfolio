@@ -39,7 +39,7 @@
             "outsideLink": "article__link--second",
             "href": "./content/CV_Nieczuja_2020.pdf",
             "target": "blank",
-            "text": "See my CV"
+            "text": "See my CV / Resume"
           }
         ]
       },
@@ -183,7 +183,13 @@
                   },
                   {
                     "articleText": "item-text",
-                    "text": "member of 'Żeton' team"
+                    "text": "member of 'Żeton' app project"
+                  },
+                  {
+                    "outsideLink": "item-link",
+                    "href": "https://www.projekt-zeton.pl/",
+                    "target": "blank",
+                    "text": "see more"
                   }
                 ]
               },
@@ -223,6 +229,24 @@
                   {
                     "articleText": "item-text",
                     "text": "website of 'Kosmopolis'"
+                  },
+                  {
+                    "articleLink": "item-link",
+                    "href": "front",
+                    "text": "see more"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "articleText": "item-text",
+                    "text": "2020"
+                  },
+                  {
+                    "articleText": "item-text",
+                    "text": "website of 'Between Edukacja'"
                   },
                   {
                     "articleLink": "item-link",
@@ -426,6 +450,10 @@
                   {
                     "img": "article__icon",
                     "src": "./images/icons/sketchbook.png"
+                  },
+                  {
+                    "img": "article__icon",
+                    "src": "./images/icons/Adobe3.png"
                   }
                 ]
               }
@@ -671,8 +699,48 @@
             "children": [
               {
                 "abbr": "article__text",
+                "title": "Adobe PhotoShop - a raster graphics editor",
+                "text": "PhotoShop"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "Adobe Illustrator - a vector graphics editor",
+                "text": "Illustrator"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "Adobe InDesign - a desktop publishing and typesetting software",
+                "text": "InDesign"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
                 "title": "Visual Studio Code",
                 "text": "VSCode"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "an open source code editor",
+                "text": "Brackets"
               }
             ]
           }
