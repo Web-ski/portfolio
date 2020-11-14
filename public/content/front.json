@@ -118,8 +118,6 @@
                 "text": ". See my works in sections below."
               }
             ]
-<<<<<<< HEAD
-=======
           },
           {
             "articleText": "article__text--second",
@@ -130,7 +128,6 @@
             "href": "https://www.projekt-zeton.pl/",
             "target": "blank",
             "text": "See the Zeton website"
->>>>>>> develop
           }
         ]
       },
@@ -183,11 +180,7 @@
           },
           {
             "articleText": "article__text--second",
-<<<<<<< HEAD
-            "text": "In 2020 I made the website for the educational project of the ..."
-=======
             "text": "In 2020 I made the website for the theatre and literature educational project Between.Edukacja, as part of the National Culture Center program 'Kultura w sieci'."
->>>>>>> develop
           },
           {
             "articleText": "article__text--second",
