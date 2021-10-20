@@ -25,64 +25,100 @@
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/html5-black.png"},
-                  { "src": "/images/icons/html5-violet.png"}
+                  {
+                    "src": "/images/icons/html5-black.png"
+                  },
+                  {
+                    "src": "/images/icons/html5-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/css3-black.png"},
-                  { "src": "/images/icons/css3-violet.png"}
+                  {
+                    "src": "/images/icons/css3-black.png"
+                  },
+                  {
+                    "src": "/images/icons/css3-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/sass-black.png"},
-                  { "src": "/images/icons/sass-violet.png"}
+                  {
+                    "src": "/images/icons/sass-black.png"
+                  },
+                  {
+                    "src": "/images/icons/sass-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/Bootstrap-black.png"},
-                  { "src": "/images/icons/Bootstrap-violet.png"}
+                  {
+                    "src": "/images/icons/Bootstrap-black.png"
+                  },
+                  {
+                    "src": "/images/icons/Bootstrap-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/jQuery-black.png"},
-                  { "src": "/images/icons/jQuery-violet.png"}
+                  {
+                    "src": "/images/icons/jQuery-black.png"
+                  },
+                  {
+                    "src": "/images/icons/jQuery-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/js-black.png"},
-                  { "src": "/images/icons/js-violet.png"}
+                  {
+                    "src": "/images/icons/js-black.png"
+                  },
+                  {
+                    "src": "/images/icons/js-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/react-black.png"},
-                  { "src": "/images/icons/react-violet.png"}
+                  {
+                    "src": "/images/icons/react-black.png"
+                  },
+                  {
+                    "src": "/images/icons/react-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/Gatsby-black.png"},
-                  { "src": "/images/icons/Gatsby-violet.png"}
+                  {
+                    "src": "/images/icons/Gatsby-black.png"
+                  },
+                  {
+                    "src": "/images/icons/Gatsby-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/php-black.png"},
-                  { "src": "/images/icons/php-violet.png"}
+                  {
+                    "src": "/images/icons/php-black.png"
+                  },
+                  {
+                    "src": "/images/icons/php-violet.png"
+                  }
                 ]
               }
             ]
@@ -362,50 +398,78 @@
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/git-black.png"},
-                  { "src": "/images/icons/git-violet.png"}
+                  {
+                    "src": "/images/icons/git-black.png"
+                  },
+                  {
+                    "src": "/images/icons/git-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/github-black.png"},
-                  { "src": "/images/icons/github-violet.png"}
+                  {
+                    "src": "/images/icons/github-black.png"
+                  },
+                  {
+                    "src": "/images/icons/github-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/gitlab-black.png"},
-                  { "src": "/images/icons/gitlab-violet.png"}
+                  {
+                    "src": "/images/icons/gitlab-black.png"
+                  },
+                  {
+                    "src": "/images/icons/gitlab-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/npm-black.png"},
-                  { "src": "/images/icons/npm-violet.png"}
+                  {
+                    "src": "/images/icons/npm-black.png"
+                  },
+                  {
+                    "src": "/images/icons/npm-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/gulp-black.png"},
-                  { "src": "/images/icons/gulp-violet.png"}
+                  {
+                    "src": "/images/icons/gulp-black.png"
+                  },
+                  {
+                    "src": "/images/icons/gulp-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/slack-black.png"},
-                  { "src": "/images/icons/slack-violet.png"}
+                  {
+                    "src": "/images/icons/slack-black.png"
+                  },
+                  {
+                    "src": "/images/icons/slack-violet.png"
+                  }
                 ]
               },
               {
                 "img": "article__icon",
                 "children": [
-                  { "src": "/images/icons/jira-black.png"},
-                  { "src": "/images/icons/jira-violet.png"}
+                  {
+                    "src": "/images/icons/jira-black.png"
+                  },
+                  {
+                    "src": "/images/icons/jira-violet.png"
+                  }
                 ]
               }
             ]
@@ -500,7 +564,7 @@
             "children": [
               {
                 "photoLink": "photo__link",
-                "href": "content/CV_Nieczuja_2020.pdf",
+                "href": "content/CV_Nieczuja_2021_10.pdf",
                 "target": "blank",
                 "children": [
                   {
