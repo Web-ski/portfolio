@@ -619,23 +619,44 @@
             "children": [
               {
                 "photoLink": "photo__link",
-                "href": "mailto:pawel.nieczuja@onet.eu",
-                "target": "blank",
-                "children": [
-                  {
-                    "img": "article__photo",
-                    "src": "./images/photos/mail.gif"
-                  }
-                ]
-              },
-              {
-                "photoLink": "photo__link",
                 "href": "https://www.linkedin.com/in/pawe%C5%82-nieczuja-ostrowski-6b084a88/",
                 "target": "blank",
                 "children": [
                   {
                     "img": "article__photo",
                     "src": "./images/photos/linkedin-screen.png"
+                  }
+                ]
+              },
+              {
+                "photoLink": "photo__link",
+                "href": "https://profile.codersrank.io/user/web-ski/",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/NieczujaCodersRank.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "article": "article-start article__photos",
+        "children": [
+          {
+            "div": "article__box",
+            "children": [
+              {
+                "photoLink": "photo__link",
+                "href": "mailto:pawel.nieczuja@onet.eu",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/mail.gif"
                   }
                 ]
               }
@@ -648,7 +669,7 @@
         "children": [
           {
             "sectionTitle": "article__text",
-            "text": "Żeton App project"
+            "text": "Read more..."
           },
           {
             "div": "article__box",
@@ -661,6 +682,17 @@
                   {
                     "img": "article__photo",
                     "src": "./images/photos/zeton-website.png"
+                  }
+                ]
+              },
+              {
+                "photoLink": "photo__link",
+                "href": "https://nowoczesny-frontend.pl/dwa-pierwsze-miesiace-czyli-nowicjusz-na-front-endowym-pokladzie/?fbclid=IwAR2rM6vixunBM0cm7XZYS-JlVktrB11auJRyQGcB-zDsW7Yib8v0y0dT6Po",
+                "target": "blank",
+                "children": [
+                  {
+                    "img": "article__photo",
+                    "src": "./images/photos/NieczujaFrontendPaper.png"
                   }
                 ]
               }
