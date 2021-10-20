@@ -120,6 +120,17 @@
                     "src": "/images/icons/php-violet.png"
                   }
                 ]
+              },
+              {
+                "img": "article__icon",
+                "children": [
+                  {
+                    "src": "/images/icons/vue-black.png"
+                  },
+                  {
+                    "src": "/images/icons/vue-violet.png"
+                  }
+                ]
               }
             ]
           }
