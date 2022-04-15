@@ -231,7 +231,7 @@
       @for $i from 1 through 36 {
         &:nth-child(#{$i}) {
           animation: nameBtnShow1 .6s forwards;
-          -webkit-animation: nameBtnShow2.6s forwards;
+          -webkit-animation: nameBtnShow 2.6s forwards;
           transform: translateX(0);
           animation-delay: .2s;
 
