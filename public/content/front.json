@@ -12,7 +12,7 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "I started creating the first websites eight years ago using ",
+            "text": "I started creating the first websites nine years ago using ",
             "children": [
               {
                 "abbr": "article__abbr",
@@ -20,13 +20,13 @@
                 "text": "CMS "
               },
               {
-                "text": "for my own needs and for my professional activity. Mainly it was conceptual work and involved the creation and addition of visual and substantive content. I've created 6 such websites in wix CMS. However, CMS quickly showed its limitations."
+                "text": "for my own needs and for my professional activity. Mainly it was conceptual work and involved the creation and addition of visual and substantive content."
               }
             ]
           },
           {
             "articleText": "article__text--second",
-            "text": "In 2018, I started learning how to create websites professionally. In 2019, I also started creating the first pages myself, using: ",
+            "text": "However, CMS quickly showed its limitations. In 2018, I started learning how to create websites professionally. In 2019, I relised early projects, using: ",
             "children": [
               {
                 "abbr": "article__abbr",
@@ -80,8 +80,7 @@
                 "abbr": "article__abbr--last",
                 "title": "Visual Studio Code",
                 "text": "VSCode"
-              }
-              ,
+              },
               {
                 "text": ", "
               },
@@ -100,6 +99,22 @@
               },
               {
                 "text": ". Now I'm using also "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript framework",
+                "text": "Vue"
+              },
+              {
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript framework",
+                "text": "Svelte"
+              },
+              {
+                "text": ", "
               },
               {
                 "abbr": "article__abbr",

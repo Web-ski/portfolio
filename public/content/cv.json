@@ -37,7 +37,7 @@
           },
           {
             "outsideLink": "article__link--second",
-            "href": "./content/CV_Nieczuja_2021_10.pdf",
+            "href": "./content/CV_Nieczuja_2022_04.pdf",
             "target": "blank",
             "text": "See my CV / Resume"
           }
@@ -148,11 +148,11 @@
                 "children": [
                   {
                     "articleText": "item-text",
-                    "text": "2018/2019"
+                    "text": "2018-2019"
                   },
                   {
                     "articleText": "item-text",
-                    "text": "first front-end courses"
+                    "text": "front-end courses"
                   }
                 ]
               },
@@ -198,32 +198,6 @@
                 "children": [
                   {
                     "articleText": "item-text",
-                    "text": "2019"
-                  },
-                  {
-                    "articleText": "item-text",
-                    "text": "completing 'UX Design' course"
-                  }
-                ]
-              },
-              {
-                "div": "time-line__box",
-                "children": [
-                  {
-                    "articleText": "item-text",
-                    "text": "2019"
-                  },
-                  {
-                    "articleText": "item-text",
-                    "text": "completing 'JavaScript + React' course"
-                  }
-                ]
-              },
-              {
-                "div": "time-line__box",
-                "children": [
-                  {
-                    "articleText": "item-text",
                     "text": "2020"
                   },
                   {
@@ -252,6 +226,19 @@
                     "articleLink": "item-link",
                     "href": "front",
                     "text": "see more"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "articleText": "item-text",
+                    "text": "since 2021"
+                  },
+                  {
+                    "articleText": "item-text",
+                    "text": "frontend developer at Blue Media SA"
                   }
                 ]
               }
@@ -328,6 +315,14 @@
                   {
                     "articleText": "article__text",
                     "text": "Frameworks"
+                  },
+                  {
+                    "img": "article__icon",
+                    "src": "./images/icons/vue.png"
+                  },
+                  {
+                    "img": "article__icon",
+                    "src": "./images/icons/svelte.png"
                   },
                   {
                     "img": "article__icon",
@@ -531,6 +526,26 @@
                 "abbr": "article__text",
                 "title": "JavaScript library",
                 "text": "React"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "Vue.js framework",
+                "text": "Vue"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "Svelte framework",
+                "text": "Svelte"
               }
             ]
           },
