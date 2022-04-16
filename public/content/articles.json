@@ -12,7 +12,7 @@
           },
           {
             "articleText": "article__text",
-            "text": "This section presents some websites created by me in front-end technologies."
+            "text": "I'm a front-and developer and this section presents my skills and some projects created by me."
           }
         ]
       },
@@ -131,6 +131,17 @@
                     "src": "/images/icons/vue-violet.png"
                   }
                 ]
+              },
+              {
+                "img": "article__icon",
+                "children": [
+                  {
+                    "src": "/images/icons/svelte-black.png"
+                  },
+                  {
+                    "src": "/images/icons/svelte-violet.png"
+                  }
+                ]
               }
             ]
           }
@@ -141,7 +152,7 @@
         "children": [
           {
             "sectionTitle": "article__text",
-            "text": "See last projects..."
+            "text": "Some projects..."
           },
           {
             "div": "article__box",
@@ -159,12 +170,12 @@
               },
               {
                 "photoLink": "photo__link",
-                "href": "http://www.kosmopolis-between.pl/",
+                "href": "https://web-ski.github.io/dungeons-game-project",
                 "target": "blank",
                 "children": [
                   {
                     "img": "article__photo",
-                    "src": "./images/photos/cosmopolis-screen-wide.png"
+                    "src": "./images/photos/dungeons.png"
                   }
                 ]
               }
@@ -202,7 +213,7 @@
           },
           {
             "articleText": "article__text",
-            "text": "This section presents my latest UX projects. You can see here also more information about my experience in research conducting, wireframing, prototypin, etc."
+            "text": "Here you can find information about my experience in UX-design, research conducting, wireframing, prototypin, etc."
           }
         ]
       },
@@ -233,7 +244,7 @@
         "children": [
           {
             "sectionTitle": "article__text",
-            "text": "See last projects..."
+            "text": "Some projects..."
           },
           {
             "div": "article__box",
@@ -294,7 +305,7 @@
           },
           {
             "articleText": "article__text",
-            "text": "This section presents my latest analogue and digital projects. I have been involved in visual design for many years, which is proven by several art exhibitions."
+            "text": "I have been involved in visual design for many years, which is proven by several art exhibitions."
           }
         ]
       },
@@ -337,7 +348,7 @@
         "children": [
           {
             "sectionTitle": "article__text",
-            "text": "See projects..."
+            "text": "Some projects..."
           },
           {
             "div": "article__box",
@@ -396,7 +407,7 @@
           },
           {
             "articleText": "article__text",
-            "text": "This section presents my front-end repositories. There are projects of websites, parts of code and steps of learning, on GitHub, GitLab and CodePen."
+            "text": "This is the way to my front-end repositories with projects of websites, with parts of code and steps of learning. And something more about my work tools."
           }
         ]
       },
@@ -482,6 +493,39 @@
                     "src": "/images/icons/jira-violet.png"
                   }
                 ]
+              },
+              {
+                "img": "article__icon",
+                "children": [
+                  {
+                    "src": "/images/icons/vscode-black.png"
+                  },
+                  {
+                    "src": "/images/icons/vscode-violet.png"
+                  }
+                ]
+              },
+              {
+                "img": "article__icon",
+                "children": [
+                  {
+                    "src": "/images/icons/webstorm-black.png"
+                  },
+                  {
+                    "src": "/images/icons/webstorm-violet.png"
+                  }
+                ]
+              },
+              {
+                "img": "article__icon",
+                "children": [
+                  {
+                    "src": "/images/icons/sourcetree-black.png"
+                  },
+                  {
+                    "src": "/images/icons/sourcetree-violet.png"
+                  }
+                ]
               }
             ]
           }
@@ -563,7 +607,7 @@
           },
           {
             "articleText": "article__text",
-            "text": "This section presents my CV. And this is also the path to my certificates and diplomas."
+            "text": "Here you can find my CV. And this is also the path to my certificates and diplomas."
           }
         ]
       },
@@ -575,7 +619,7 @@
             "children": [
               {
                 "photoLink": "photo__link",
-                "href": "content/CV_Nieczuja_2021_10.pdf",
+                "href": "content/CV_Nieczuja_2022_04.pdf",
                 "target": "blank",
                 "children": [
                   {
@@ -618,7 +662,7 @@
           },
           {
             "articleText": "article__text",
-            "text": "And here you can find my contact details. Send me an email, look at my LinkedIn profile or find me in Zeton project's team."
+            "text": "And here are contact details. Send me an email, look at my LinkedIn profile or find me in Zeton project's team."
           }
         ]
       },

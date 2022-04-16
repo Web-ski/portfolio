@@ -12,7 +12,11 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "I'm a front-end developer and UX/UI-designer."
+            "text": "I'm a front-end developer and UX/UI-designer. "
+          },
+          {
+            "articleText": "article__text--second",
+            "text": "I have experience in working with technologies such as: Vanilla JS, Vue, Vuex, React, Redux, Sass, Git, Figma, etc. (more below)."
           },
           {
             "articleText": "article__text--second",
@@ -23,7 +27,15 @@
             "children": [
               {
                 "listElem": "article__text--second",
-                "text": "visual artistic background that may be easily applied to the IT environment,"
+                "text": "ability to learn new technologies and skills,"
+              },
+              {
+                "listElem": "article__text--second",
+                "text": "curiosity and ability to find solutions,"
+              },
+              {
+                "listElem": "article__text--second",
+                "text": "ability to work in various teams,"
               },
               {
                 "listElem": "article__text--second",
@@ -31,13 +43,13 @@
               },
               {
                 "listElem": "article__text--second",
-                "text": "ability to work in collaboration with international academic, cultural and professional institutions."
+                "text": "visual artistic background that may be easily applied to the IT environment."
               }
             ]
           },
           {
             "outsideLink": "article__link--second",
-            "href": "./content/CV_Nieczuja_2021_10.pdf",
+            "href": "./content/CV_Nieczuja_2022_04.pdf",
             "target": "blank",
             "text": "See my CV / Resume"
           }
@@ -60,6 +72,10 @@
               {
                 "img": "slider__photo",
                 "src": "./images/photos/Hack4Change.jpg"
+              },
+              {
+                "img": "slider__photo",
+                "src": "./images/photos/wcag-certyficate.png"
               }
             ]
           }
@@ -91,11 +107,24 @@
                 "children": [
                   {
                     "articleText": "item-text",
-                    "text": "since 2005"
+                    "text": "1999"
                   },
                   {
                     "articleText": "item-text",
-                    "text": "research & studies on social questions"
+                    "text": "MA in political and social sciences (University of Gdańsk)"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "articleText": "item-text",
+                    "text": "2010"
+                  },
+                  {
+                    "articleText": "item-text",
+                    "text": "PhD in political science (University of Warsaw)"
                   }
                 ]
               },
@@ -148,11 +177,11 @@
                 "children": [
                   {
                     "articleText": "item-text",
-                    "text": "2018/2019"
+                    "text": "2018-2019"
                   },
                   {
                     "articleText": "item-text",
-                    "text": "first front-end courses"
+                    "text": "front-end & UX courses"
                   }
                 ]
               },
@@ -198,37 +227,11 @@
                 "children": [
                   {
                     "articleText": "item-text",
-                    "text": "2019"
-                  },
-                  {
-                    "articleText": "item-text",
-                    "text": "completing 'UX Design' course"
-                  }
-                ]
-              },
-              {
-                "div": "time-line__box",
-                "children": [
-                  {
-                    "articleText": "item-text",
-                    "text": "2019"
-                  },
-                  {
-                    "articleText": "item-text",
-                    "text": "completing 'JavaScript + React' course"
-                  }
-                ]
-              },
-              {
-                "div": "time-line__box",
-                "children": [
-                  {
-                    "articleText": "item-text",
                     "text": "2020"
                   },
                   {
                     "articleText": "item-text",
-                    "text": "website of 'Kosmopolis'"
+                    "text": "member of 'Kosmopolis' project"
                   },
                   {
                     "articleLink": "item-link",
@@ -246,11 +249,29 @@
                   },
                   {
                     "articleText": "item-text",
-                    "text": "website of 'Between Edukacja'"
+                    "text": "project  of 'Between Edukacja'"
                   },
                   {
                     "articleLink": "item-link",
                     "href": "front",
+                    "text": "see more"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "articleText": "item-text",
+                    "text": "since 2021"
+                  },
+                  {
+                    "articleText": "item-text",
+                    "text": "frontend developer at Blue Media SA"
+                  },
+                  {
+                    "articleLink": "item-link",
+                    "href": "https://bluemedia.eu/",
                     "text": "see more"
                   }
                 ]
@@ -318,6 +339,10 @@
                   },
                   {
                     "img": "article__icon",
+                    "src": "./images/icons/element.png"
+                  },
+                  {
+                    "img": "article__icon",
                     "src": "./images/icons/Bootstrap.png"
                   }
                 ]
@@ -328,6 +353,14 @@
                   {
                     "articleText": "article__text",
                     "text": "Frameworks"
+                  },
+                  {
+                    "img": "article__icon",
+                    "src": "./images/icons/vue.png"
+                  },
+                  {
+                    "img": "article__icon",
+                    "src": "./images/icons/svelte.png"
                   },
                   {
                     "img": "article__icon",
@@ -382,6 +415,10 @@
                   },
                   {
                     "img": "article__icon",
+                    "src": "./images/icons/sourcetree.png"
+                  },
+                  {
+                    "img": "article__icon",
                     "src": "./images/icons/github.png"
                   },
                   {
@@ -400,6 +437,10 @@
                   {
                     "img": "article__icon",
                     "src": "./images/icons/jira.png"
+                  },
+                  {
+                    "img": "article__icon",
+                    "src": "./images/icons/Teams.png"
                   },
                   {
                     "img": "article__icon",
@@ -529,8 +570,88 @@
             "children": [
               {
                 "abbr": "article__text",
+                "title": "React component library",
+                "text": "Material UI"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "desktop UI library",
+                "text": "Element UI"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a CSS-in-JS tool",
+                "text": "Styled Components"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
                 "title": "JavaScript library",
                 "text": "React"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "state container for JavaScript apps",
+                "text": "Redux"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "Vue.js framework",
+                "text": "Vue"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "state management pattern + library for Vue apps",
+                "text": "Vuex"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "state management for JS apps",
+                "text": "Pinia"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "Svelte framework",
+                "text": "Svelte"
               }
             ]
           },
@@ -569,6 +690,16 @@
             "children": [
               {
                 "abbr": "article__text",
+                "title": "a free Git client",
+                "text": "Sourcetree"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
                 "title": "platform for software development version control",
                 "text": "GitHub"
               }
@@ -581,6 +712,16 @@
                 "abbr": "article__text",
                 "title": "platform for software development version control",
                 "text": "GitLab"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "code review tool",
+                "text": "Crucible"
               }
             ]
           },
@@ -611,6 +752,16 @@
                 "abbr": "article__text",
                 "title": "a tool for issue tracking and project management",
                 "text": "Jira"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a hub for team collaboration",
+                "text": "MS Teams"
               }
             ]
           },
@@ -739,8 +890,38 @@
             "children": [
               {
                 "abbr": "article__text",
+                "title": "code editor by JetBrains",
+                "text": "WebStorm"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
                 "title": "an open source code editor",
                 "text": "Brackets"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "an accessibility tool for iOS",
+                "text": "VoiceOver"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "an accessibility tool for Windows",
+                "text": "Narrator"
               }
             ]
           }

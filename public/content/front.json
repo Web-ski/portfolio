@@ -8,11 +8,11 @@
         "children": [
           {
             "sectionTitle": "page__title--second",
-            "text": "My Websites"
+            "text": "My Projects"
           },
           {
             "articleText": "article__text--second",
-            "text": "I started creating the first websites eight years ago using ",
+            "text": "I started creating the first websites nine years ago using ",
             "children": [
               {
                 "abbr": "article__abbr",
@@ -20,13 +20,13 @@
                 "text": "CMS "
               },
               {
-                "text": "for my own needs and for my professional activity. Mainly it was conceptual work and involved the creation and addition of visual and substantive content. I've created 6 such websites in wix CMS. However, CMS quickly showed its limitations."
+                "text": "for my own needs and for my professional activity. Mainly it was conceptual work and involved the creation and addition of visual and substantive content."
               }
             ]
           },
           {
             "articleText": "article__text--second",
-            "text": "In 2018, I started learning how to create websites professionally. In 2019, I also started creating the first pages myself, using: ",
+            "text": "However, CMS quickly showed its limitations. In 2018, I started learning how to create websites professionally. In 2019, I relised early projects, using: ",
             "children": [
               {
                 "abbr": "article__abbr",
@@ -80,8 +80,7 @@
                 "abbr": "article__abbr--last",
                 "title": "Visual Studio Code",
                 "text": "VSCode"
-              }
-              ,
+              },
               {
                 "text": ", "
               },
@@ -103,6 +102,22 @@
               },
               {
                 "abbr": "article__abbr",
+                "title": "JavaScript framework",
+                "text": "Vue"
+              },
+              {
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr",
+                "title": "JavaScript framework",
+                "text": "Svelte"
+              },
+              {
+                "text": ", "
+              },
+              {
+                "abbr": "article__abbr",
                 "title": "JavaScript library",
                 "text": "React"
               },
@@ -121,13 +136,24 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "Also visit the website of Zeton, a project I'm participating in."
+            "text": "Since 2021 I have been working as a full time front-end developer at Blue Media SA. Also visit the website of Zeton, a project I'm participating in."
           },
           {
-            "outsideLink": "article__link--second",
-            "href": "https://www.projekt-zeton.pl/",
-            "target": "blank",
-            "text": "See the Zeton website"
+            "div": "container",
+            "children": [
+              {
+                "outsideLink": "article__link--second",
+                "href": "https://bluemedia.eu/",
+                "target": "blank",
+                "text": "See the Blue Media"
+              },
+              {
+                "outsideLink": "article__link--second",
+                "href": "https://www.projekt-zeton.pl/",
+                "target": "blank",
+                "text": "See the Zeton website"
+              }
+            ]
           }
         ]
       },
@@ -170,6 +196,65 @@
   {
     "section": "section front",
     "id": "sect-1",
+    "children": [
+      {
+        "article": "article",
+        "children": [
+          {
+            "sectionTitle": "section__title--second",
+            "text": "Dungeons, Monsters & Developers"
+          },
+          {
+            "articleText": "article__text--second",
+            "text": "In my spare time I work on a project of a simple browser adventure game. Mainly for fun and learning."
+          },
+          {
+            "articleText": "article__text--second",
+            "text": "I used the front-end technologies and tools, such as: Vue 3, Pinia, Git, GitHub, VSCode. I was also UX and UI designer of this game."
+          },
+          {
+            "outsideLink": "article__link--second",
+            "href": "https://web-ski.github.io/dungeons-game-project",
+            "target": "blank",
+            "text": "See the website"
+          }
+        ]
+      },
+      {
+        "article": "article photo__box",
+        "children": [
+          {
+            "viewerBox": "viewer__box",
+            "children": [
+              {
+                "img": "article__photo",
+                "src": "./images/photos/dungeons-screen.png"
+              },
+              {
+                "img": "article__photo",
+                "src": "./images/photos/dungeons2-screen.png"
+              },
+              {
+                "img": "article__photo",
+                "src": "./images/photos/dungeons3-screen.png"
+              },
+              {
+                "img": "article__photo",
+                "src": "./images/photos/dungeons4-screen.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "asideNumber": "article__number--aside",
+        "text": "2021"
+      }
+    ]
+  },
+  {
+    "section": "section front",
+    "id": "sect-2",
     "children": [
       {
         "article": "article",
@@ -228,7 +313,7 @@
   },
   {
     "section": "section front",
-    "id": "sect-2",
+    "id": "sect-3",
     "children": [
       {
         "article": "article",
@@ -239,7 +324,7 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "In 2020 I made the website for the experimental online edition of the bilingual international Festival of Literature and Theatre: Between.Pomiędzy. It was an extraordinary project in the unusual situation of the world coronavirus epidemic."
+            "text": "In 2020 I made the website for the experimental online edition of the bilingual international Festival of Literature and Theatre: Between.Pomiędzy (currently as a part of between.org.pl). It was an extraordinary project in the unusual situation of the world coronavirus epidemic."
           },
           {
             "articleText": "article__text--second",
@@ -247,7 +332,7 @@
           },
           {
             "outsideLink": "article__link--second",
-            "href": "https://www.kosmopolis-between.pl/",
+            "href": "https://between.org.pl/festivals/kosmopolis/",
             "target": "blank",
             "text": "See the website"
           }
@@ -287,7 +372,7 @@
   },
   {
     "section": "section front",
-    "id": "sect-3",
+    "id": "sect-4",
     "children": [
       {
         "article": "article",
@@ -346,7 +431,7 @@
   },
   {
     "section": "section front",
-    "id": "sect-4",
+    "id": "sect-5",
     "children": [
       {
         "article": "article",
@@ -405,7 +490,7 @@
   },
   {
     "section": "section front",
-    "id": "sect-5",
+    "id": "sect-6",
     "children": [
       {
         "article": "article",
