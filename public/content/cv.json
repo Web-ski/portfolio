@@ -339,6 +339,10 @@
                   },
                   {
                     "img": "article__icon",
+                    "src": "./images/icons/element.png"
+                  },
+                  {
+                    "img": "article__icon",
                     "src": "./images/icons/Bootstrap.png"
                   }
                 ]
@@ -411,6 +415,10 @@
                   },
                   {
                     "img": "article__icon",
+                    "src": "./images/icons/sourcetree.png"
+                  },
+                  {
+                    "img": "article__icon",
                     "src": "./images/icons/github.png"
                   },
                   {
@@ -429,6 +437,10 @@
                   {
                     "img": "article__icon",
                     "src": "./images/icons/jira.png"
+                  },
+                  {
+                    "img": "article__icon",
+                    "src": "./images/icons/Teams.png"
                   },
                   {
                     "img": "article__icon",
@@ -558,6 +570,36 @@
             "children": [
               {
                 "abbr": "article__text",
+                "title": "React component library",
+                "text": "Material UI"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "desktop UI library",
+                "text": "Element UI"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a CSS-in-JS tool",
+                "text": "Styled Components"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
                 "title": "JavaScript library",
                 "text": "React"
               }
@@ -568,8 +610,38 @@
             "children": [
               {
                 "abbr": "article__text",
+                "title": "state container for JavaScript apps",
+                "text": "Redux"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
                 "title": "Vue.js framework",
                 "text": "Vue"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "state management pattern + library for Vue apps",
+                "text": "Vuex"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "state management for JS apps",
+                "text": "Pinia"
               }
             ]
           },
@@ -618,6 +690,16 @@
             "children": [
               {
                 "abbr": "article__text",
+                "title": "a free Git client",
+                "text": "Sourcetree"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
                 "title": "platform for software development version control",
                 "text": "GitHub"
               }
@@ -630,6 +712,16 @@
                 "abbr": "article__text",
                 "title": "platform for software development version control",
                 "text": "GitLab"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "code review tool",
+                "text": "Crucible"
               }
             ]
           },
@@ -660,6 +752,16 @@
                 "abbr": "article__text",
                 "title": "a tool for issue tracking and project management",
                 "text": "Jira"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "a hub for team collaboration",
+                "text": "MS Teams"
               }
             ]
           },
@@ -788,8 +890,38 @@
             "children": [
               {
                 "abbr": "article__text",
+                "title": "code editor by JetBrains",
+                "text": "WebStorm"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
                 "title": "an open source code editor",
                 "text": "Brackets"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "an accessibility tool for iOS",
+                "text": "VoiceOver"
+              }
+            ]
+          },
+          {
+            "articleText": "article__text--second",
+            "children": [
+              {
+                "abbr": "article__text",
+                "title": "an accessibility tool for Windows",
+                "text": "Narrator"
               }
             ]
           }
