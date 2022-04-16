@@ -77,7 +77,7 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "In 2020 I made the website for the experimental online edition of the bilingual Festival of Literature and Theatre: Between.Pomiędzy. It was an extraordinary project in the unusual situation of the world coronavirus epidemic. The festival lasted only one week and contained incoming materials. Its layout and design had to be prepared in an extremely short deadline, when working with the team from Poland, Ireland, Romania, Greece, Brasil, Mexico, and the USA. The project was supported by International Theatre Intitute, agenda of UNESCO. "
+            "text": "In 2020 I made the website for the experimental online edition of the bilingual Festival of Literature and Theatre: Between.Pomiędzy (currently as a part of between.org.pl). It was an extraordinary project in the unusual situation of the world coronavirus epidemic. The festival lasted only one week and contained incoming materials. Its layout and design had to be prepared in an extremely short deadline, when working with the team from Poland, Ireland, Romania, Greece, Brasil, Mexico, and the USA. The project was supported by International Theatre Intitute, agenda of UNESCO. "
           },
           {
             "div": "container",
@@ -90,7 +90,7 @@
               },
               {
                 "outsideLink": "article__link--second",
-                "href": "https://www.kosmopolis-between.pl/",
+                "href": "https://between.org.pl/festivals/kosmopolis/",
                 "target": "blank",
                 "text": "See the website"
               }

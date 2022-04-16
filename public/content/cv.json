@@ -12,7 +12,11 @@
           },
           {
             "articleText": "article__text--second",
-            "text": "I'm a front-end developer and UX/UI-designer."
+            "text": "I'm a front-end developer and UX/UI-designer. "
+          },
+          {
+            "articleText": "article__text--second",
+            "text": "I have experience in working with technologies such as: Vanilla JS, Vue, Vuex, React, Redux, Sass, Git, Figma, etc. (more below)."
           },
           {
             "articleText": "article__text--second",
@@ -23,7 +27,15 @@
             "children": [
               {
                 "listElem": "article__text--second",
-                "text": "visual artistic background that may be easily applied to the IT environment,"
+                "text": "ability to learn new technologies and skills,"
+              },
+              {
+                "listElem": "article__text--second",
+                "text": "curiosity and ability to find solutions,"
+              },
+              {
+                "listElem": "article__text--second",
+                "text": "ability to work in various teams,"
               },
               {
                 "listElem": "article__text--second",
@@ -31,7 +43,7 @@
               },
               {
                 "listElem": "article__text--second",
-                "text": "ability to work in collaboration with international academic, cultural and professional institutions."
+                "text": "visual artistic background that may be easily applied to the IT environment."
               }
             ]
           },
@@ -91,11 +103,24 @@
                 "children": [
                   {
                     "articleText": "item-text",
-                    "text": "since 2005"
+                    "text": "1999"
                   },
                   {
                     "articleText": "item-text",
-                    "text": "research & studies on social questions"
+                    "text": "MA in political and social sciences (University of Gdańsk)"
+                  }
+                ]
+              },
+              {
+                "div": "time-line__box",
+                "children": [
+                  {
+                    "articleText": "item-text",
+                    "text": "2010"
+                  },
+                  {
+                    "articleText": "item-text",
+                    "text": "PhD in political science (University of Warsaw)"
                   }
                 ]
               },
@@ -152,7 +177,7 @@
                   },
                   {
                     "articleText": "item-text",
-                    "text": "front-end courses"
+                    "text": "front-end & UX courses"
                   }
                 ]
               },
@@ -202,7 +227,7 @@
                   },
                   {
                     "articleText": "item-text",
-                    "text": "website of 'Kosmopolis'"
+                    "text": "member of 'Kosmopolis' project"
                   },
                   {
                     "articleLink": "item-link",
@@ -220,7 +245,7 @@
                   },
                   {
                     "articleText": "item-text",
-                    "text": "website of 'Between Edukacja'"
+                    "text": "project  of 'Between Edukacja'"
                   },
                   {
                     "articleLink": "item-link",
@@ -239,6 +264,11 @@
                   {
                     "articleText": "item-text",
                     "text": "frontend developer at Blue Media SA"
+                  },
+                  {
+                    "articleLink": "item-link",
+                    "href": "https://bluemedia.eu/",
+                    "text": "see more"
                   }
                 ]
               }
