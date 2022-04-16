@@ -72,6 +72,10 @@
               {
                 "img": "slider__photo",
                 "src": "./images/photos/Hack4Change.jpg"
+              },
+              {
+                "img": "slider__photo",
+                "src": "./images/photos/wcag-certyficate.png"
               }
             ]
           }
