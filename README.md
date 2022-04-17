@@ -27,9 +27,13 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-for Deployment
-
 ### `npx serve -s build`
+
+or
+
+### `npx serve -s build -p 8000`
+
+for Deployment
 
 ### `npm run eject`
 
